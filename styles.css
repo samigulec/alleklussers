@@ -291,9 +291,16 @@ em {
   font-weight: 300;
 }
 
-/* Logo image — mix-blend strips white background of PNG */
+/* Logo image — the source PNG is square with the wordmark sitting in a
+   narrow horizontal band; aspect-ratio + object-fit crop the white
+   margin visually without touching the file. mix-blend-mode removes
+   any remaining white so the mark melds with the page. */
 .logo-img {
   display: block;
+  aspect-ratio: 1080 / 275;
+  width: auto;
+  object-fit: cover;
+  object-position: center 48%;
   mix-blend-mode: multiply;
 }
 .logo-img--inverted {
