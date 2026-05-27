@@ -261,6 +261,17 @@ em.editorial {
   font-weight: 300;
 }
 
+/* Logo image — kills the white background of a non-transparent PNG so the
+   mark melds with the page; the inverted version flips it for the dark footer. */
+.logo-img {
+  display: block;
+  mix-blend-mode: multiply;
+}
+.logo-img--inverted {
+  filter: invert(1);
+  mix-blend-mode: screen;
+}
+
 /* Responsive type ramp via clamp */
 .h-display {
   font-size: clamp(2.5rem, 7vw, 6rem);
