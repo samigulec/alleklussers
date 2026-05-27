@@ -1,0 +1,276 @@
+/* KlusRegie 010 — editorial design tokens */
+:root {
+  --ink: #0a0a0a;
+  --paper: #fafafa;
+  --rule: #e5e5e5;
+  --rule-strong: #cfcfcf;
+  --muted: #6b6b6b;
+}
+
+* {
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  background: var(--paper);
+  color: var(--ink);
+  font-family: 'Manrope', system-ui, sans-serif;
+  font-feature-settings: "ss01", "cv11";
+  font-weight: 400;
+  line-height: 1.55;
+}
+
+.font-serif {
+  font-family: 'Fraunces', 'Times New Roman', serif;
+  font-feature-settings: "ss01";
+  letter-spacing: -0.02em;
+}
+
+/* Brutal section transitions — no fade, just swap */
+.view {
+  display: none;
+}
+.view.is-active {
+  display: block;
+  animation: rise 320ms cubic-bezier(.22,.61,.36,1);
+}
+@keyframes rise {
+  from { opacity: 0; transform: translateY(6px); }
+  to   { opacity: 1; transform: translateY(0); }
+}
+
+/* Drop cap on About */
+.dropcap::first-letter {
+  font-family: 'Fraunces', serif;
+  font-weight: 500;
+  font-style: italic;
+  float: left;
+  font-size: 5.5rem;
+  line-height: 0.85;
+  padding: 0.4rem 0.9rem 0 0;
+  color: var(--ink);
+}
+
+/* Nav links — hairline underline that grows */
+.navlink {
+  position: relative;
+  padding: 0.25rem 0;
+}
+.navlink::after {
+  content: "";
+  position: absolute;
+  left: 0; right: 0; bottom: -2px;
+  height: 1px;
+  background: var(--ink);
+  transform: scaleX(0);
+  transform-origin: right center;
+  transition: transform 320ms cubic-bezier(.22,.61,.36,1);
+}
+.navlink:hover::after,
+.navlink.is-active::after {
+  transform: scaleX(1);
+  transform-origin: left center;
+}
+
+/* Language pill */
+.lang-pill {
+  border: 1px solid var(--ink);
+  border-radius: 999px;
+  display: inline-flex;
+  overflow: hidden;
+  font-size: 0.7rem;
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
+}
+.lang-pill button {
+  padding: 0.35rem 0.7rem;
+  background: transparent;
+  color: var(--ink);
+  transition: background 200ms ease, color 200ms ease;
+  font-weight: 600;
+}
+.lang-pill button.is-active {
+  background: var(--ink);
+  color: var(--paper);
+}
+
+/* Numbered service rows */
+.service-row {
+  display: grid;
+  grid-template-columns: 4rem 1fr auto;
+  align-items: baseline;
+  gap: 1.5rem;
+  padding: 1.75rem 0;
+  border-top: 1px solid var(--rule);
+  position: relative;
+  cursor: pointer;
+  transition: padding-left 380ms cubic-bezier(.22,.61,.36,1);
+}
+.service-row:last-of-type {
+  border-bottom: 1px solid var(--rule);
+}
+.service-row .arrow {
+  display: inline-block;
+  transition: transform 380ms cubic-bezier(.22,.61,.36,1);
+  font-size: 1.5rem;
+}
+.service-row:hover {
+  padding-left: 1rem;
+}
+.service-row:hover .arrow {
+  transform: translateX(0.5rem);
+}
+.service-row:hover .service-title {
+  font-style: italic;
+}
+
+/* Project cards — bare bones */
+.project-card {
+  border-top: 1px solid var(--ink);
+  padding-top: 1.25rem;
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+}
+
+/* Quote block */
+.quote {
+  border-left: 1px solid var(--ink);
+  padding-left: 1.25rem;
+}
+
+/* Forms */
+.field {
+  display: flex;
+  flex-direction: column;
+  gap: 0.35rem;
+}
+.field label {
+  font-size: 0.7rem;
+  letter-spacing: 0.16em;
+  text-transform: uppercase;
+  color: var(--muted);
+}
+.field input,
+.field select,
+.field textarea {
+  background: transparent;
+  border: 0;
+  border-bottom: 1px solid var(--ink);
+  padding: 0.6rem 0;
+  font-family: inherit;
+  font-size: 1rem;
+  color: var(--ink);
+  outline: none;
+  transition: border-color 200ms ease;
+}
+.field textarea {
+  resize: vertical;
+  min-height: 6rem;
+}
+.field input:focus,
+.field select:focus,
+.field textarea:focus {
+  border-color: var(--ink);
+  border-bottom-width: 2px;
+  padding-bottom: calc(0.6rem - 1px);
+}
+.field select {
+  appearance: none;
+  background-image: linear-gradient(45deg, transparent 50%, var(--ink) 50%), linear-gradient(135deg, var(--ink) 50%, transparent 50%);
+  background-position: calc(100% - 14px) 50%, calc(100% - 8px) 50%;
+  background-size: 6px 6px;
+  background-repeat: no-repeat;
+}
+
+.btn-ink {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.75rem;
+  background: var(--ink);
+  color: var(--paper);
+  padding: 1rem 1.5rem;
+  font-size: 0.8rem;
+  letter-spacing: 0.16em;
+  text-transform: uppercase;
+  font-weight: 600;
+  transition: background 200ms ease, transform 200ms ease;
+}
+.btn-ink:hover {
+  background: #000;
+  transform: translateY(-1px);
+}
+.btn-ink .arrow {
+  transition: transform 200ms ease;
+}
+.btn-ink:hover .arrow {
+  transform: translateX(0.25rem);
+}
+
+/* Footer inverted */
+.footer-dark {
+  background: var(--ink);
+  color: var(--paper);
+}
+.footer-dark a:hover {
+  text-decoration: underline;
+  text-underline-offset: 4px;
+}
+
+/* Hide / show via [lang] attribute */
+[data-lang="en"] .lang-nl,
+[data-lang="nl"] .lang-en {
+  display: none !important;
+}
+
+/* Small caps eyebrow */
+.eyebrow {
+  font-size: 0.7rem;
+  letter-spacing: 0.22em;
+  text-transform: uppercase;
+  color: var(--muted);
+  font-weight: 500;
+}
+
+/* Hairline separators */
+.hairline {
+  height: 1px;
+  background: var(--ink);
+  width: 100%;
+}
+
+/* Process step grid */
+.process-num {
+  font-family: 'Fraunces', serif;
+  font-size: 2.5rem;
+  font-weight: 300;
+  font-style: italic;
+  line-height: 1;
+  color: var(--ink);
+}
+
+/* Hero italic emphasis */
+em.editorial {
+  font-style: italic;
+  font-family: 'Fraunces', serif;
+  font-weight: 300;
+}
+
+/* Responsive type ramp via clamp */
+.h-display {
+  font-size: clamp(2.5rem, 7vw, 6rem);
+  line-height: 1;
+  letter-spacing: -0.035em;
+  font-weight: 300;
+}
+.h-section {
+  font-size: clamp(2rem, 4.5vw, 3.5rem);
+  line-height: 1.05;
+  letter-spacing: -0.025em;
+  font-weight: 300;
+}
