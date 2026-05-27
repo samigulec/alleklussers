@@ -4,37 +4,25 @@
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
   <title>alleklussers</title>
-  <meta name="description" content="Eén aanspreekpunt, vaste prijzen, vertrouwde vakmensen. Wij coördineren uw verbouwing van A tot Z." />
+  <meta name="description" content="Eén aanspreekpunt voor uw verbouwing. Vaste prijzen, vertrouwde vakmensen." />
   <link rel="icon" href="logo.png" type="image/png" />
 
-  <!-- Fonts -->
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-  <link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,300;0,9..144,400;0,9..144,500;1,9..144,300;1,9..144,400;1,9..144,500&family=Manrope:wght@300;400;500;600;700&display=swap" rel="stylesheet" />
+  <link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,300;0,9..144,400;0,9..144,500;1,9..144,300;1,9..144,400&family=Manrope:wght@300;400;500;600&display=swap" rel="stylesheet" />
 
-  <!-- Tailwind via CDN (fine for this static editorial site) -->
   <script src="https://cdn.tailwindcss.com"></script>
   <script>
     tailwind.config = {
       theme: {
         extend: {
-          colors: {
-            ink: '#0a0a0a',
-            paper: '#fafafa',
-            rule: '#e5e5e5',
-            muted: '#6b6b6b',
-          },
-          fontFamily: {
-            serif: ['Fraunces', 'serif'],
-            sans: ['Manrope', 'system-ui', 'sans-serif'],
-          },
+          colors: { ink: '#0a0a0a', paper: '#fafafa', rule: '#e5e5e5', muted: '#6b6b6b' },
+          fontFamily: { serif: ['Fraunces', 'serif'], sans: ['Manrope', 'system-ui', 'sans-serif'] },
           borderRadius: { none: '0' },
         },
       },
-      corePlugins: { preflight: true },
     };
   </script>
-
   <link rel="stylesheet" href="styles.css" />
 </head>
 <body class="bg-paper text-ink antialiased">
@@ -42,21 +30,17 @@
   <!-- ========== HEADER ========== -->
   <header class="border-b border-rule sticky top-0 z-40 bg-paper/95 backdrop-blur">
     <div class="max-w-[1400px] mx-auto px-6 lg:px-12 py-4 flex items-center justify-between gap-6">
-      <!-- Logo top-left. Commit your actual logo as /logo.png at the repo root. -->
       <a href="#home" data-nav="home" class="flex items-center shrink-0">
         <img src="logo.png" alt="alleklussers" class="logo-img h-12 md:h-14 lg:h-16 w-auto" />
       </a>
 
-      <!-- Desktop nav -->
-      <nav class="hidden md:flex items-center gap-8 text-sm">
-        <a href="#home" data-nav="home" class="navlink"><span class="lang-nl">Start</span><span class="lang-en">Home</span></a>
-        <a href="#about" data-nav="about" class="navlink"><span class="lang-nl">Over ons</span><span class="lang-en">About</span></a>
+      <nav class="hidden md:flex items-center gap-10 text-sm">
+        <a href="#about" data-nav="about" class="navlink"><span class="lang-nl">Over</span><span class="lang-en">About</span></a>
         <a href="#services" data-nav="services" class="navlink"><span class="lang-nl">Diensten</span><span class="lang-en">Services</span></a>
-        <a href="#references" data-nav="references" class="navlink"><span class="lang-nl">Referenties</span><span class="lang-en">References</span></a>
-        <a href="#contact" data-nav="contact" class="navlink"><span class="lang-nl">Contact</span><span class="lang-en">Contact</span></a>
+        <a href="#references" data-nav="references" class="navlink"><span class="lang-nl">Referenties</span><span class="lang-en">Work</span></a>
+        <a href="#contact" data-nav="contact" class="navlink">Contact</a>
       </nav>
 
-      <!-- Right cluster: language + mobile menu -->
       <div class="flex items-center gap-4">
         <div class="lang-pill" role="group" aria-label="Language">
           <button type="button" data-lang-set="nl">NL</button>
@@ -64,20 +48,16 @@
         </div>
         <button id="menu-btn" class="md:hidden p-2 -mr-2" aria-label="Menu">
           <svg width="22" height="22" viewBox="0 0 22 22" fill="none" stroke="currentColor" stroke-width="1.5">
-            <line x1="2" y1="6" x2="20" y2="6"/>
-            <line x1="2" y1="11" x2="20" y2="11"/>
-            <line x1="2" y1="16" x2="20" y2="16"/>
+            <line x1="2" y1="6" x2="20" y2="6"/><line x1="2" y1="11" x2="20" y2="11"/><line x1="2" y1="16" x2="20" y2="16"/>
           </svg>
         </button>
       </div>
     </div>
-    <!-- Mobile menu -->
     <div id="mobile-menu" class="md:hidden hidden border-t border-rule">
-      <nav class="px-6 py-4 flex flex-col gap-4 text-base">
-        <a href="#home" data-nav="home" class="navlink"><span class="lang-nl">Start</span><span class="lang-en">Home</span></a>
-        <a href="#about" data-nav="about" class="navlink"><span class="lang-nl">Over ons</span><span class="lang-en">About</span></a>
+      <nav class="px-6 py-5 flex flex-col gap-4 text-base">
+        <a href="#about" data-nav="about" class="navlink"><span class="lang-nl">Over</span><span class="lang-en">About</span></a>
         <a href="#services" data-nav="services" class="navlink"><span class="lang-nl">Diensten</span><span class="lang-en">Services</span></a>
-        <a href="#references" data-nav="references" class="navlink"><span class="lang-nl">Referenties</span><span class="lang-en">References</span></a>
+        <a href="#references" data-nav="references" class="navlink"><span class="lang-nl">Referenties</span><span class="lang-en">Work</span></a>
         <a href="#contact" data-nav="contact" class="navlink">Contact</a>
       </nav>
     </div>
@@ -85,558 +65,279 @@
 
   <main class="max-w-[1400px] mx-auto px-6 lg:px-12">
 
-    <!-- ========================================================= HOME ========================================================= -->
+    <!-- ============ HOME ============ -->
     <section id="view-home" class="view">
+
       <!-- HERO -->
-      <div class="grid grid-cols-12 gap-6 pt-16 lg:pt-28 pb-20 lg:pb-32">
-        <div class="col-span-12 lg:col-span-8">
-          <h1 class="font-serif h-display">
-            <span class="lang-nl">Uw verbouwing, <em class="editorial">zonder de stress</em>.</span>
-            <span class="lang-en">Your renovation, <em class="editorial">without the stress</em>.</span>
-          </h1>
-          <p class="mt-10 text-lg lg:text-xl max-w-2xl text-ink/80 leading-relaxed">
-            <span class="lang-nl">Wij zijn geen aannemer. Wij coördineren vertrouwde vakmensen voor opdrachtgevers die zich niet willen bemoeien met de uitvoering. Eén aanspreekpunt, vaste prijzen, geen verrassingen.</span>
-            <span class="lang-en">We're not a contractor. We coordinate trusted craftsmen for clients who don't want to micro-manage a renovation. One point of contact, fixed prices, no surprises.</span>
-          </p>
-          <div class="mt-12 flex flex-wrap items-center gap-6">
-            <a href="#contact" data-nav="contact" class="btn-ink">
-              <span class="lang-nl">Plan een gesprek</span>
-              <span class="lang-en">Schedule a call</span>
-              <span class="arrow">→</span>
-            </a>
-            <a href="#services" data-nav="services" class="text-sm navlink">
-              <span class="lang-nl">Bekijk onze diensten</span>
-              <span class="lang-en">Browse our services</span>
-            </a>
-          </div>
+      <div class="min-h-[78vh] flex flex-col justify-center py-20">
+        <h1 class="font-serif h-display max-w-[14ch]">
+          <span class="lang-nl">Uw verbouwing, <em>zonder gedoe</em>.</span>
+          <span class="lang-en">Your renovation, <em>without the hassle</em>.</span>
+        </h1>
+        <div class="mt-14 flex items-center gap-10">
+          <a href="#contact" data-nav="contact" class="btn-ink">
+            <span class="lang-nl">Plan een gesprek</span>
+            <span class="lang-en">Get in touch</span>
+            <span class="arrow">→</span>
+          </a>
+          <a href="#services" data-nav="services" class="text-sm navlink hidden sm:inline">
+            <span class="lang-nl">Onze diensten</span>
+            <span class="lang-en">Services</span>
+          </a>
         </div>
-        <aside class="col-span-12 lg:col-span-4 lg:pl-8 lg:border-l lg:border-rule flex flex-col justify-end">
-          <p class="font-serif italic text-2xl leading-snug text-ink/90">
-            <span class="lang-nl">&ldquo;Eén telefoonnummer. Eén factuur. Eén partij die het overzicht houdt.&rdquo;</span>
-            <span class="lang-en">&ldquo;One phone number. One invoice. One party keeping the overview.&rdquo;</span>
-          </p>
-          <p class="eyebrow mt-4">— alleklussers</p>
-        </aside>
       </div>
 
       <div class="hairline"></div>
 
-      <!-- 3 VALUE PROPS -->
-      <div class="grid grid-cols-1 md:grid-cols-3 gap-10 lg:gap-16 py-20 lg:py-28">
+      <!-- VALUES — three quiet columns -->
+      <div class="grid grid-cols-1 md:grid-cols-3 gap-12 lg:gap-20 py-24 lg:py-32">
         <div>
-          <p class="process-num">01</p>
-          <h3 class="font-serif text-2xl mt-4 mb-3 leading-tight">
-            <span class="lang-nl">Eén <em>aanspreekpunt</em></span>
-            <span class="lang-en">One <em>point of contact</em></span>
-          </h3>
-          <p class="text-ink/75 leading-relaxed text-[15px]">
-            <span class="lang-nl">U belt ons, wij regelen de rest. Geen drie aannemers, geen verwarrende offertes, geen dubbele afspraken.</span>
-            <span class="lang-en">You call us — we handle everything. No three contractors, no confusing quotes, no double bookings.</span>
+          <p class="eyebrow mb-3">01</p>
+          <p class="font-serif text-3xl lg:text-4xl leading-[1.1]">
+            <span class="lang-nl">Eén <em>aanspreekpunt</em>.</span>
+            <span class="lang-en">One <em>point of contact</em>.</span>
           </p>
         </div>
         <div>
-          <p class="process-num">02</p>
-          <h3 class="font-serif text-2xl mt-4 mb-3 leading-tight">
-            <span class="lang-nl">Vaste <em>prijzen</em></span>
-            <span class="lang-en">Fixed <em>pricing</em></span>
-          </h3>
-          <p class="text-ink/75 leading-relaxed text-[15px]">
-            <span class="lang-nl">Vooraf afgesproken, schriftelijk vastgelegd. Wij rekenen geen meerwerk dat we vooraf hadden kunnen zien.</span>
-            <span class="lang-en">Agreed upfront, documented in writing. We don't charge for &ldquo;extras&rdquo; we should have foreseen.</span>
+          <p class="eyebrow mb-3">02</p>
+          <p class="font-serif text-3xl lg:text-4xl leading-[1.1]">
+            <span class="lang-nl">Vaste <em>prijzen</em>.</span>
+            <span class="lang-en">Fixed <em>prices</em>.</span>
           </p>
         </div>
         <div>
-          <p class="process-num">03</p>
-          <h3 class="font-serif text-2xl mt-4 mb-3 leading-tight">
-            <span class="lang-nl">Vertrouwde <em>vakmensen</em></span>
-            <span class="lang-en">Trusted <em>craftsmen</em></span>
-          </h3>
-          <p class="text-ink/75 leading-relaxed text-[15px]">
-            <span class="lang-nl">Een vast netwerk van specialisten waar wij al jaren mee samenwerken. Geen Marktplaats-roulette.</span>
-            <span class="lang-en">A steady network of specialists we've worked with for years. Not a Marktplaats lottery.</span>
+          <p class="eyebrow mb-3">03</p>
+          <p class="font-serif text-3xl lg:text-4xl leading-[1.1]">
+            <span class="lang-nl">Vertrouwde <em>vakmensen</em>.</span>
+            <span class="lang-en">Trusted <em>craftsmen</em>.</span>
           </p>
         </div>
       </div>
 
       <div class="hairline"></div>
 
-      <!-- 4-STEP PROCESS -->
-      <div class="py-20 lg:py-28">
-        <p class="eyebrow mb-6">
-          <span class="lang-nl">Hoe het werkt</span><span class="lang-en">How it works</span>
-        </p>
-        <h2 class="font-serif h-section max-w-3xl">
-          <span class="lang-nl">Van eerste gesprek tot <em>opgeleverd resultaat</em>.</span>
-          <span class="lang-en">From first call to <em>finished result</em>.</span>
-        </h2>
-
-        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-10 mt-16">
-          <div class="border-t border-ink pt-5">
-            <p class="process-num">01 —</p>
-            <h4 class="font-serif text-xl mt-3 mb-2">
-              <span class="lang-nl">Kennismaking</span>
-              <span class="lang-en">Intake</span>
-            </h4>
-            <p class="text-[15px] text-ink/75 leading-relaxed">
-              <span class="lang-nl">Een vrijblijvend gesprek bij u thuis. Wij luisteren, kijken, stellen vragen.</span>
-              <span class="lang-en">A no-obligation conversation at your home. We listen, look, ask the right questions.</span>
-            </p>
-          </div>
-          <div class="border-t border-ink pt-5">
-            <p class="process-num">02 —</p>
-            <h4 class="font-serif text-xl mt-3 mb-2">
-              <span class="lang-nl">Voorstel</span>
-              <span class="lang-en">Proposal</span>
-            </h4>
-            <p class="text-[15px] text-ink/75 leading-relaxed">
-              <span class="lang-nl">Binnen een week een helder plan, met vakmensen, planning en vaste prijs.</span>
-              <span class="lang-en">Within a week: a clear plan, with team, schedule and fixed price.</span>
-            </p>
-          </div>
-          <div class="border-t border-ink pt-5">
-            <p class="process-num">03 —</p>
-            <h4 class="font-serif text-xl mt-3 mb-2">
-              <span class="lang-nl">Uitvoering</span>
-              <span class="lang-en">Execution</span>
-            </h4>
-            <p class="text-[15px] text-ink/75 leading-relaxed">
-              <span class="lang-nl">Wij coördineren elke vakman, elke levering, elke deadline. U houdt uw rust.</span>
-              <span class="lang-en">We coordinate every craftsman, every delivery, every deadline. You keep your calm.</span>
-            </p>
-          </div>
-          <div class="border-t border-ink pt-5">
-            <p class="process-num">04 —</p>
-            <h4 class="font-serif text-xl mt-3 mb-2">
-              <span class="lang-nl">Oplevering</span>
-              <span class="lang-en">Delivery</span>
-            </h4>
-            <p class="text-[15px] text-ink/75 leading-relaxed">
-              <span class="lang-nl">Samen lopen we het werk na. Pas tevreden, dan factuur. Zo simpel.</span>
-              <span class="lang-en">We walk through the work together. Only when satisfied: the invoice. Simple.</span>
-            </p>
-          </div>
-        </div>
+      <!-- PROCESS — minimal -->
+      <div class="py-24 lg:py-32">
+        <p class="eyebrow mb-12"><span class="lang-nl">Werkwijze</span><span class="lang-en">Process</span></p>
+        <ol class="grid grid-cols-2 md:grid-cols-4 gap-y-10 gap-x-8">
+          <li class="flex flex-col gap-3">
+            <span class="font-serif italic text-5xl font-light text-ink/35 leading-none">01</span>
+            <span class="font-serif text-xl"><span class="lang-nl">Kennismaking</span><span class="lang-en">Intake</span></span>
+          </li>
+          <li class="flex flex-col gap-3">
+            <span class="font-serif italic text-5xl font-light text-ink/35 leading-none">02</span>
+            <span class="font-serif text-xl"><span class="lang-nl">Voorstel</span><span class="lang-en">Proposal</span></span>
+          </li>
+          <li class="flex flex-col gap-3">
+            <span class="font-serif italic text-5xl font-light text-ink/35 leading-none">03</span>
+            <span class="font-serif text-xl"><span class="lang-nl">Uitvoering</span><span class="lang-en">Execution</span></span>
+          </li>
+          <li class="flex flex-col gap-3">
+            <span class="font-serif italic text-5xl font-light text-ink/35 leading-none">04</span>
+            <span class="font-serif text-xl"><span class="lang-nl">Oplevering</span><span class="lang-en">Delivery</span></span>
+          </li>
+        </ol>
       </div>
     </section>
 
-    <!-- ========================================================= ABOUT ========================================================= -->
+    <!-- ============ ABOUT ============ -->
     <section id="view-about" class="view">
-      <div class="grid grid-cols-12 gap-8 pt-16 lg:pt-28 pb-20 lg:pb-32">
+      <div class="grid grid-cols-12 gap-10 pt-20 lg:pt-32 pb-24 lg:pb-32">
         <div class="col-span-12 lg:col-span-8">
-          <p class="eyebrow mb-8">
-            <span class="lang-nl">Over alleklussers</span>
-            <span class="lang-en">About alleklussers</span>
-          </p>
-          <h1 class="font-serif h-display max-w-3xl">
-            <span class="lang-nl">Een verbouwing is niet alleen <em>bouwen</em>.</span>
-            <span class="lang-en">A renovation isn't only <em>building</em>.</span>
+          <p class="eyebrow mb-10"><span class="lang-nl">Over ons</span><span class="lang-en">About</span></p>
+          <h1 class="font-serif h-display max-w-[14ch]">
+            <span class="lang-nl">Wij regisseren. <em>U ontspant.</em></span>
+            <span class="lang-en">We coordinate. <em>You relax.</em></span>
           </h1>
-
-          <div class="mt-12 max-w-2xl text-lg leading-[1.7] text-ink/85 space-y-6">
-            <p class="dropcap">
-              <span class="lang-nl">alleklussers ontstond uit een simpele ergernis. Te veel mensen begonnen aan een badkamer of keuken en raakten verstrikt in offertes, no-shows van schilders, miscommunicatie tussen loodgieter en tegelzetter. Een werkdag verloren omdat de tegels niet pasten. Een weekend kwijt aan WhatsApp-berichten.</span>
-              <span class="lang-en">alleklussers grew out of a simple frustration. Too many people started a bathroom or kitchen and ended up tangled in quotes, no-show painters, miscommunication between plumber and tiler. A workday lost because the tiles didn't fit. A weekend gone to WhatsApp threads.</span>
-            </p>
-            <p>
-              <span class="lang-nl">Wij zagen iets ontbreken: een neutrale partij die het hele traject regisseert zonder zelf de schroevendraaier vast te houden. Geen aannemer met eigen winstmarge op elke deelopdracht, maar een coördinator die uitsluitend voor u werkt.</span>
-              <span class="lang-en">We saw something missing: a neutral party that directs the whole process without holding the screwdriver themselves. Not a contractor with their own margin baked into every sub-task — a coordinator working only for you.</span>
-            </p>
-            <p>
-              <span class="lang-nl">In de afgelopen jaren bouwden wij een vast netwerk van vakmensen op die we persoonlijk kennen. We weten welke loodgieter op tijd komt, welke schilder schone randen achterlaat, welke elektricien zijn rommel opruimt. Dat netwerk verhuren wij niet — wij coördineren het.</span>
-              <span class="lang-en">Over the past years we've built a steady network of craftsmen we know personally. We know which plumber shows up on time, which painter leaves clean edges, which electrician cleans up after themselves. That network isn't rented out — it's directed.</span>
-            </p>
-            <p class="font-serif italic text-xl leading-snug pt-4">
-              <span class="lang-nl">Onze maatstaf is eenvoudig: zou de oplevering goed genoeg zijn voor ons eigen huis?</span>
-              <span class="lang-en">Our standard is simple: would the delivery be good enough for our own home?</span>
-            </p>
-          </div>
+          <p class="mt-12 font-serif text-2xl lg:text-3xl leading-snug max-w-2xl text-ink/85">
+            <span class="lang-nl">Wij zijn geen aannemer. Wij coördineren een vast netwerk van vakmensen voor wie geen tijd of zin heeft om de hele dag op de bouw te staan.</span>
+            <span class="lang-en">We are not a contractor. We coordinate a steady network of craftsmen for people who don't want to spend every day on a building site.</span>
+          </p>
         </div>
 
-        <!-- SIDEBAR -->
-        <aside class="col-span-12 lg:col-span-4 lg:pl-8 lg:border-l lg:border-rule">
-          <p class="eyebrow mb-6">
-            <span class="lang-nl">Feiten</span><span class="lang-en">At a glance</span>
-          </p>
-          <dl class="space-y-6 text-sm">
-            <div class="border-t border-ink pt-4">
+        <aside class="col-span-12 lg:col-span-4 lg:pl-10 lg:border-l lg:border-rule mt-8 lg:mt-0 flex flex-col justify-end">
+          <dl class="space-y-8 text-sm">
+            <div>
               <dt class="eyebrow mb-1"><span class="lang-nl">Opgericht</span><span class="lang-en">Founded</span></dt>
-              <dd class="font-serif text-2xl">2021</dd>
+              <dd class="font-serif text-3xl">2021</dd>
             </div>
-            <div class="border-t border-rule pt-4">
-              <dt class="eyebrow mb-1"><span class="lang-nl">Werkgebied</span><span class="lang-en">Service area</span></dt>
-              <dd class="font-serif text-xl">
-                <span class="lang-nl">Heel Nederland</span>
-                <span class="lang-en">Throughout the Netherlands</span>
-              </dd>
+            <div>
+              <dt class="eyebrow mb-1"><span class="lang-nl">Projecten</span><span class="lang-en">Projects</span></dt>
+              <dd class="font-serif text-3xl">120+</dd>
             </div>
-            <div class="border-t border-rule pt-4">
+            <div>
               <dt class="eyebrow mb-1"><span class="lang-nl">Talen</span><span class="lang-en">Languages</span></dt>
-              <dd class="font-serif text-xl">Nederlands · English · Türkçe</dd>
-            </div>
-            <div class="border-t border-rule pt-4">
-              <dt class="eyebrow mb-1"><span class="lang-nl">Projecten begeleid</span><span class="lang-en">Projects coordinated</span></dt>
-              <dd class="font-serif text-2xl">120+</dd>
-            </div>
-            <div class="border-t border-rule pt-4">
-              <dt class="eyebrow mb-1"><span class="lang-nl">Vaste vakmensen</span><span class="lang-en">Regular craftsmen</span></dt>
-              <dd class="font-serif text-2xl">18</dd>
-            </div>
-            <div class="border-t border-rule pt-4">
-              <dt class="eyebrow mb-1"><span class="lang-nl">Wat wij niet zijn</span><span class="lang-en">What we are not</span></dt>
-              <dd class="text-ink/80 leading-relaxed">
-                <span class="lang-nl">Geen aannemer. Geen makelaar. Geen tussenpersoon op commissie.</span>
-                <span class="lang-en">Not a contractor. Not a broker. Not a middleman on commission.</span>
-              </dd>
+              <dd class="font-serif text-xl">NL · EN · TR</dd>
             </div>
           </dl>
         </aside>
       </div>
     </section>
 
-    <!-- ========================================================= SERVICES ========================================================= -->
+    <!-- ============ SERVICES ============ -->
     <section id="view-services" class="view">
-      <div class="grid grid-cols-12 gap-8 pt-16 lg:pt-28 pb-12">
-        <div class="col-span-12 lg:col-span-7">
-          <p class="eyebrow mb-8">
-            <span class="lang-nl">Diensten</span><span class="lang-en">Services</span>
-          </p>
-          <h1 class="font-serif h-display">
-            <span class="lang-nl">Wat wij voor u <em>regisseren</em>.</span>
-            <span class="lang-en">What we <em>coordinate</em> for you.</span>
-          </h1>
-        </div>
-        <div class="col-span-12 lg:col-span-5 lg:pl-8 lg:border-l lg:border-rule flex items-end">
-          <p class="text-ink/80 leading-relaxed">
-            <span class="lang-nl">Per project stellen wij het juiste team samen uit ons netwerk. Voor één discipline of een complete verbouwing — onze rol blijft gelijk: u heeft één aanspreekpunt.</span>
-            <span class="lang-en">For each project we assemble the right team from our network. For one discipline or a full renovation — our role stays the same: you get a single point of contact.</span>
-          </p>
-        </div>
+      <div class="pt-20 lg:pt-32 pb-12">
+        <p class="eyebrow mb-10"><span class="lang-nl">Diensten</span><span class="lang-en">Services</span></p>
+        <h1 class="font-serif h-display max-w-[14ch]">
+          <span class="lang-nl">Wat wij <em>regisseren</em>.</span>
+          <span class="lang-en">What we <em>coordinate</em>.</span>
+        </h1>
       </div>
 
-      <!-- Numbered service rows -->
-      <div class="pb-24" id="services-list">
-        <a href="#contact" data-nav="contact" class="service-row" data-svc="01">
-          <span class="font-serif text-2xl text-ink/60">01 —</span>
-          <div>
-            <h3 class="service-title font-serif text-2xl lg:text-3xl leading-tight">
-              <span class="lang-nl">Badkamerrenovatie</span>
-              <span class="lang-en">Bathroom renovation</span>
+      <ol class="pb-28">
+        <li>
+          <a href="#contact" data-nav="contact" class="service-row">
+            <span class="font-serif text-xl text-ink/40">01</span>
+            <h3 class="service-title font-serif text-3xl lg:text-4xl leading-tight">
+              <span class="lang-nl">Badkamer</span><span class="lang-en">Bathroom</span>
             </h3>
-            <p class="text-[15px] text-ink/65 mt-1 max-w-xl">
-              <span class="lang-nl">Tegelwerk, sanitair, ventilatie, elektra — als één samenhangend traject.</span>
-              <span class="lang-en">Tiling, plumbing, ventilation, electrics — as one coherent project.</span>
-            </p>
-          </div>
-          <span class="arrow">→</span>
-        </a>
-
-        <a href="#contact" data-nav="contact" class="service-row" data-svc="02">
-          <span class="font-serif text-2xl text-ink/60">02 —</span>
-          <div>
-            <h3 class="service-title font-serif text-2xl lg:text-3xl leading-tight">
-              <span class="lang-nl">Keukenrenovatie</span>
-              <span class="lang-en">Kitchen renovation</span>
+            <span class="arrow">→</span>
+          </a>
+        </li>
+        <li>
+          <a href="#contact" data-nav="contact" class="service-row">
+            <span class="font-serif text-xl text-ink/40">02</span>
+            <h3 class="service-title font-serif text-3xl lg:text-4xl leading-tight">
+              <span class="lang-nl">Keuken</span><span class="lang-en">Kitchen</span>
             </h3>
-            <p class="text-[15px] text-ink/65 mt-1 max-w-xl">
-              <span class="lang-nl">Van uitbreken tot inmeten, monteren, aansluiten en afwerken.</span>
-              <span class="lang-en">From demolition to measuring, installation, hook-ups and finishing.</span>
-            </p>
-          </div>
-          <span class="arrow">→</span>
-        </a>
-
-        <a href="#contact" data-nav="contact" class="service-row" data-svc="03">
-          <span class="font-serif text-2xl text-ink/60">03 —</span>
-          <div>
-            <h3 class="service-title font-serif text-2xl lg:text-3xl leading-tight">
-              <span class="lang-nl">Elektra</span>
-              <span class="lang-en">Electrical work</span>
+            <span class="arrow">→</span>
+          </a>
+        </li>
+        <li>
+          <a href="#contact" data-nav="contact" class="service-row">
+            <span class="font-serif text-xl text-ink/40">03</span>
+            <h3 class="service-title font-serif text-3xl lg:text-4xl leading-tight">
+              <span class="lang-nl">Elektra</span><span class="lang-en">Electrical</span>
             </h3>
-            <p class="text-[15px] text-ink/65 mt-1 max-w-xl">
-              <span class="lang-nl">Groepenkast, bedrading, verlichting en stopcontacten — door gecertificeerde elektriciens.</span>
-              <span class="lang-en">Fuse box, wiring, lighting and sockets — by certified electricians.</span>
-            </p>
-          </div>
-          <span class="arrow">→</span>
-        </a>
-
-        <a href="#contact" data-nav="contact" class="service-row" data-svc="04">
-          <span class="font-serif text-2xl text-ink/60">04 —</span>
-          <div>
-            <h3 class="service-title font-serif text-2xl lg:text-3xl leading-tight">
-              <span class="lang-nl">Schilderwerk</span>
-              <span class="lang-en">Painting</span>
+            <span class="arrow">→</span>
+          </a>
+        </li>
+        <li>
+          <a href="#contact" data-nav="contact" class="service-row">
+            <span class="font-serif text-xl text-ink/40">04</span>
+            <h3 class="service-title font-serif text-3xl lg:text-4xl leading-tight">
+              <span class="lang-nl">Schilderwerk</span><span class="lang-en">Painting</span>
             </h3>
-            <p class="text-[15px] text-ink/65 mt-1 max-w-xl">
-              <span class="lang-nl">Binnen- en buitenwerk, behang, kit- en sausklaar opleveren.</span>
-              <span class="lang-en">Interior and exterior, wallpaper, sealing and finish-ready delivery.</span>
-            </p>
-          </div>
-          <span class="arrow">→</span>
-        </a>
-
-        <a href="#contact" data-nav="contact" class="service-row" data-svc="05">
-          <span class="font-serif text-2xl text-ink/60">05 —</span>
-          <div>
-            <h3 class="service-title font-serif text-2xl lg:text-3xl leading-tight">
-              <span class="lang-nl">Vloeren</span>
-              <span class="lang-en">Flooring</span>
+            <span class="arrow">→</span>
+          </a>
+        </li>
+        <li>
+          <a href="#contact" data-nav="contact" class="service-row">
+            <span class="font-serif text-xl text-ink/40">05</span>
+            <h3 class="service-title font-serif text-3xl lg:text-4xl leading-tight">
+              <span class="lang-nl">Vloeren</span><span class="lang-en">Flooring</span>
             </h3>
-            <p class="text-[15px] text-ink/65 mt-1 max-w-xl">
-              <span class="lang-nl">Hout, PVC, tegel en gietvloeren — incl. egaliseren en plinten.</span>
-              <span class="lang-en">Wood, PVC, tile and poured floors — incl. leveling and skirting.</span>
-            </p>
-          </div>
-          <span class="arrow">→</span>
-        </a>
-
-        <a href="#contact" data-nav="contact" class="service-row" data-svc="06">
-          <span class="font-serif text-2xl text-ink/60">06 —</span>
-          <div>
-            <h3 class="service-title font-serif text-2xl lg:text-3xl leading-tight">
-              <span class="lang-nl">Mutatieonderhoud</span>
-              <span class="lang-en">Turnover maintenance</span>
+            <span class="arrow">→</span>
+          </a>
+        </li>
+        <li>
+          <a href="#contact" data-nav="contact" class="service-row">
+            <span class="font-serif text-xl text-ink/40">06</span>
+            <h3 class="service-title font-serif text-3xl lg:text-4xl leading-tight">
+              <span class="lang-nl">Mutatieonderhoud</span><span class="lang-en">Turnover maintenance</span>
             </h3>
-            <p class="text-[15px] text-ink/65 mt-1 max-w-xl">
-              <span class="lang-nl">Voor verhuurders: woning verhuur-klaar tussen huurders, binnen één week.</span>
-              <span class="lang-en">For landlords: rental-ready between tenants, within a single week.</span>
-            </p>
-          </div>
-          <span class="arrow">→</span>
-        </a>
-
-        <a href="#contact" data-nav="contact" class="service-row" data-svc="07">
-          <span class="font-serif text-2xl text-ink/60">07 —</span>
-          <div>
-            <h3 class="service-title font-serif text-2xl lg:text-3xl leading-tight">
-              <span class="lang-nl">Complete verbouwing</span>
-              <span class="lang-en">Full home renovation</span>
+            <span class="arrow">→</span>
+          </a>
+        </li>
+        <li>
+          <a href="#contact" data-nav="contact" class="service-row">
+            <span class="font-serif text-xl text-ink/40">07</span>
+            <h3 class="service-title font-serif text-3xl lg:text-4xl leading-tight">
+              <span class="lang-nl">Complete verbouwing</span><span class="lang-en">Full renovation</span>
             </h3>
-            <p class="text-[15px] text-ink/65 mt-1 max-w-xl">
-              <span class="lang-nl">Een woning van A tot Z — wij regisseren alle disciplines en de planning.</span>
-              <span class="lang-en">A home from A to Z — we coordinate every discipline and the schedule.</span>
-            </p>
-          </div>
-          <span class="arrow">→</span>
-        </a>
-      </div>
+            <span class="arrow">→</span>
+          </a>
+        </li>
+      </ol>
     </section>
 
-    <!-- ========================================================= REFERENCES ========================================================= -->
+    <!-- ============ REFERENCES ============ -->
     <section id="view-references" class="view">
-      <div class="grid grid-cols-12 gap-8 pt-16 lg:pt-28 pb-16">
-        <div class="col-span-12 lg:col-span-8">
-          <p class="eyebrow mb-8">
-            <span class="lang-nl">Referenties</span><span class="lang-en">References</span>
-          </p>
-          <h1 class="font-serif h-display">
-            <span class="lang-nl">Wat opdrachtgevers <em>zeggen</em>.</span>
-            <span class="lang-en">What clients <em>say</em>.</span>
-          </h1>
-        </div>
+      <div class="pt-20 lg:pt-32 pb-20">
+        <p class="eyebrow mb-10"><span class="lang-nl">Referenties</span><span class="lang-en">Work</span></p>
+        <h1 class="font-serif h-display max-w-[14ch]">
+          <span class="lang-nl">Wat klanten <em>zeggen</em>.</span>
+          <span class="lang-en">What clients <em>say</em>.</span>
+        </h1>
       </div>
 
-      <!-- Quotes -->
-      <div class="grid grid-cols-1 md:grid-cols-2 gap-x-16 gap-y-14 pb-24">
-        <figure class="quote">
-          <blockquote class="font-serif text-xl lg:text-2xl leading-snug">
-            <span class="lang-nl">&ldquo;Wij hadden geen tijd om elke dag op de bouw te staan. alleklussers deed dat voor ons — én belde alleen als er écht iets aan ons gevraagd moest worden.&rdquo;</span>
-            <span class="lang-en">&ldquo;We didn't have time to be on site every day. alleklussers did it for us — and only called when something actually needed our decision.&rdquo;</span>
+      <div class="space-y-20 lg:space-y-28 pb-28 max-w-4xl">
+        <figure>
+          <blockquote class="font-serif text-3xl lg:text-4xl leading-[1.2]">
+            <span class="lang-nl">&ldquo;Eén nummer bellen, en alles werd geregeld. Precies wat ik nodig had.&rdquo;</span>
+            <span class="lang-en">&ldquo;One number to call, and everything was handled. Exactly what I needed.&rdquo;</span>
           </blockquote>
-          <figcaption class="mt-4 eyebrow">— Marleen &amp; Tom · <span class="lang-nl">Particulier</span><span class="lang-en">Homeowners</span></figcaption>
+          <figcaption class="eyebrow mt-6">— Marleen &amp; Tom</figcaption>
         </figure>
 
-        <figure class="quote">
-          <blockquote class="font-serif text-xl lg:text-2xl leading-snug">
-            <span class="lang-nl">&ldquo;De prijs die in week één werd afgesproken, was ook de prijs op de eindfactuur. Geen kleine lettertjes.&rdquo;</span>
+        <figure>
+          <blockquote class="font-serif text-3xl lg:text-4xl leading-[1.2]">
+            <span class="lang-nl">&ldquo;De prijs in week één was ook de prijs op de eindfactuur. Geen kleine lettertjes.&rdquo;</span>
             <span class="lang-en">&ldquo;The price agreed in week one was the price on the final invoice. No fine print.&rdquo;</span>
           </blockquote>
-          <figcaption class="mt-4 eyebrow">— Familie Yılmaz · <span class="lang-nl">Particulier</span><span class="lang-en">Homeowners</span></figcaption>
+          <figcaption class="eyebrow mt-6">— Familie Yılmaz</figcaption>
         </figure>
 
-        <figure class="quote">
-          <blockquote class="font-serif text-xl lg:text-2xl leading-snug">
-            <span class="lang-nl">&ldquo;Als verhuurder van vier panden gebruik ik ze nu standaard tussen huurders. Geen gedoe, snelle oplevering, nette afhandeling.&rdquo;</span>
-            <span class="lang-en">&ldquo;As a landlord with four properties I use them standard between tenants. No fuss, fast turnaround, tidy handover.&rdquo;</span>
+        <figure>
+          <blockquote class="font-serif text-3xl lg:text-4xl leading-[1.2]">
+            <span class="lang-nl">&ldquo;Eindelijk een partij die de loodgieter en de tegelzetter laat samenwerken.&rdquo;</span>
+            <span class="lang-en">&ldquo;Finally — a party that gets the plumber and the tiler to work together.&rdquo;</span>
           </blockquote>
-          <figcaption class="mt-4 eyebrow">— R. de Vries · <span class="lang-nl">Verhuurder</span><span class="lang-en">Landlord</span></figcaption>
+          <figcaption class="eyebrow mt-6">— S. Bakker</figcaption>
         </figure>
-
-        <figure class="quote">
-          <blockquote class="font-serif text-xl lg:text-2xl leading-snug">
-            <span class="lang-nl">&ldquo;Eindelijk een partij die de loodgieter en de tegelzetter laat samenwerken in plaats van naar elkaar wijzen.&rdquo;</span>
-            <span class="lang-en">&ldquo;Finally — a party that gets the plumber and the tiler to work together instead of pointing at each other.&rdquo;</span>
-          </blockquote>
-          <figcaption class="mt-4 eyebrow">— S. Bakker · <span class="lang-nl">Particulier</span><span class="lang-en">Homeowner</span></figcaption>
-        </figure>
-      </div>
-
-      <div class="hairline"></div>
-
-      <!-- Project cards -->
-      <div class="py-20">
-        <p class="eyebrow mb-6">
-          <span class="lang-nl">Recente projecten</span><span class="lang-en">Recent projects</span>
-        </p>
-        <h2 class="font-serif h-section max-w-3xl">
-          <span class="lang-nl">Drie kort uitgelichte <em>opdrachten</em>.</span>
-          <span class="lang-en">Three briefly highlighted <em>projects</em>.</span>
-        </h2>
-
-        <div class="grid grid-cols-1 md:grid-cols-3 gap-10 lg:gap-16 mt-14">
-          <article class="project-card">
-            <p class="eyebrow">Project 01</p>
-            <h3 class="font-serif text-2xl leading-tight mt-1">
-              <span class="lang-nl">Badkamer &amp; toilet, jaren-30 woning</span>
-              <span class="lang-en">Bathroom &amp; toilet, 1930s home</span>
-            </h3>
-            <dl class="text-[13px] grid grid-cols-2 gap-y-2 gap-x-4 mt-4 text-ink/75">
-              <dt class="eyebrow"><span class="lang-nl">Duur</span><span class="lang-en">Duration</span></dt>
-              <dd>3 <span class="lang-nl">weken</span><span class="lang-en">weeks</span></dd>
-              <dt class="eyebrow"><span class="lang-nl">Disciplines</span><span class="lang-en">Disciplines</span></dt>
-              <dd>4</dd>
-              <dt class="eyebrow"><span class="lang-nl">Budget</span><span class="lang-en">Budget</span></dt>
-              <dd>€ 18.500</dd>
-              <dt class="eyebrow"><span class="lang-nl">Opgeleverd</span><span class="lang-en">Delivered</span></dt>
-              <dd>2025</dd>
-            </dl>
-          </article>
-
-          <article class="project-card">
-            <p class="eyebrow">Project 02</p>
-            <h3 class="font-serif text-2xl leading-tight mt-1">
-              <span class="lang-nl">Open keuken &amp; nieuwe gietvloer</span>
-              <span class="lang-en">Open kitchen &amp; new poured floor</span>
-            </h3>
-            <dl class="text-[13px] grid grid-cols-2 gap-y-2 gap-x-4 mt-4 text-ink/75">
-              <dt class="eyebrow"><span class="lang-nl">Duur</span><span class="lang-en">Duration</span></dt>
-              <dd>5 <span class="lang-nl">weken</span><span class="lang-en">weeks</span></dd>
-              <dt class="eyebrow"><span class="lang-nl">Disciplines</span><span class="lang-en">Disciplines</span></dt>
-              <dd>6</dd>
-              <dt class="eyebrow"><span class="lang-nl">Budget</span><span class="lang-en">Budget</span></dt>
-              <dd>€ 42.000</dd>
-              <dt class="eyebrow"><span class="lang-nl">Opgeleverd</span><span class="lang-en">Delivered</span></dt>
-              <dd>2024</dd>
-            </dl>
-          </article>
-
-          <article class="project-card">
-            <p class="eyebrow">Project 03</p>
-            <h3 class="font-serif text-2xl leading-tight mt-1">
-              <span class="lang-nl">Mutatie 3-kamer appartement</span>
-              <span class="lang-en">Turnover 3-room apartment</span>
-            </h3>
-            <dl class="text-[13px] grid grid-cols-2 gap-y-2 gap-x-4 mt-4 text-ink/75">
-              <dt class="eyebrow"><span class="lang-nl">Duur</span><span class="lang-en">Duration</span></dt>
-              <dd>1 <span class="lang-nl">week</span><span class="lang-en">week</span></dd>
-              <dt class="eyebrow"><span class="lang-nl">Disciplines</span><span class="lang-en">Disciplines</span></dt>
-              <dd>3</dd>
-              <dt class="eyebrow"><span class="lang-nl">Budget</span><span class="lang-en">Budget</span></dt>
-              <dd>€ 4.800</dd>
-              <dt class="eyebrow"><span class="lang-nl">Opgeleverd</span><span class="lang-en">Delivered</span></dt>
-              <dd>2025</dd>
-            </dl>
-          </article>
-        </div>
       </div>
     </section>
 
-    <!-- ========================================================= CONTACT ========================================================= -->
+    <!-- ============ CONTACT ============ -->
     <section id="view-contact" class="view">
-      <div class="grid grid-cols-12 gap-8 pt-16 lg:pt-28 pb-12">
-        <div class="col-span-12 lg:col-span-8">
-          <p class="eyebrow mb-8">Contact</p>
-          <h1 class="font-serif h-display">
-            <span class="lang-nl">Eerst even <em>kennismaken</em>.</span>
-            <span class="lang-en">Let's <em>meet first</em>.</span>
-          </h1>
-          <p class="mt-8 text-lg max-w-2xl text-ink/80 leading-relaxed">
-            <span class="lang-nl">Een gesprek bij u thuis is altijd vrijblijvend. Wij komen langs, kijken rond en sturen daarna een helder voorstel — of niet, als wij geen toegevoegde waarde leveren.</span>
-            <span class="lang-en">A conversation at your home is always without obligation. We come by, take a look, and follow up with a clear proposal — or we don't, if we wouldn't add value.</span>
-          </p>
-        </div>
+      <div class="pt-20 lg:pt-32 pb-12">
+        <p class="eyebrow mb-10">Contact</p>
+        <h1 class="font-serif h-display max-w-[14ch]">
+          <span class="lang-nl">Laten we <em>praten</em>.</span>
+          <span class="lang-en">Let's <em>talk</em>.</span>
+        </h1>
       </div>
 
-      <div class="grid grid-cols-12 gap-8 lg:gap-16 pb-24">
-        <!-- Info column -->
-        <aside class="col-span-12 lg:col-span-4 lg:border-r lg:border-rule lg:pr-12">
-          <dl class="space-y-8">
-            <div class="border-t border-ink pt-4">
-              <dt class="eyebrow mb-2"><span class="lang-nl">Telefoon</span><span class="lang-en">Phone</span></dt>
-              <dd class="font-serif text-2xl"><a href="tel:+31600000000" class="hover:italic">06 — 0000 0000</a></dd>
-            </div>
-            <div class="border-t border-rule pt-4">
-              <dt class="eyebrow mb-2">E-mail</dt>
-              <dd class="font-serif text-xl"><a href="mailto:hallo@alleklussers.nl" class="hover:italic">hallo@alleklussers.nl</a></dd>
-            </div>
-            <div class="border-t border-rule pt-4">
-              <dt class="eyebrow mb-2"><span class="lang-nl">Bereikbaar</span><span class="lang-en">Hours</span></dt>
-              <dd class="font-serif text-lg leading-snug">
-                <span class="lang-nl">Ma–vr · 08:00–18:00</span>
-                <span class="lang-en">Mon–Fri · 08:00–18:00</span>
-              </dd>
-              <dd class="text-ink/70 text-sm mt-1">
-                <span class="lang-nl">Zaterdag op afspraak</span>
-                <span class="lang-en">Saturday by appointment</span>
-              </dd>
-            </div>
-            <div class="border-t border-rule pt-4">
-              <dt class="eyebrow mb-2"><span class="lang-nl">Werkgebied</span><span class="lang-en">Service area</span></dt>
-              <dd class="font-serif text-lg leading-snug">
-                <span class="lang-nl">Heel Nederland</span>
-                <span class="lang-en">Throughout the Netherlands</span>
-              </dd>
-            </div>
-          </dl>
-        </aside>
+      <div class="grid grid-cols-12 gap-10 lg:gap-20 pb-28">
+        <div class="col-span-12 lg:col-span-5 space-y-10">
+          <div>
+            <p class="eyebrow mb-2">E-mail</p>
+            <a href="mailto:hallo@alleklussers.nl" class="font-serif text-2xl lg:text-3xl hover:italic">hallo@alleklussers.nl</a>
+          </div>
+          <div>
+            <p class="eyebrow mb-2"><span class="lang-nl">Telefoon</span><span class="lang-en">Phone</span></p>
+            <a href="tel:+31600000000" class="font-serif text-2xl lg:text-3xl hover:italic">06 — 0000 0000</a>
+          </div>
+          <div>
+            <p class="eyebrow mb-2"><span class="lang-nl">Bereikbaar</span><span class="lang-en">Hours</span></p>
+            <p class="font-serif text-xl"><span class="lang-nl">Ma–vr · 08:00–18:00</span><span class="lang-en">Mon–Fri · 08:00–18:00</span></p>
+          </div>
+        </div>
 
-        <!-- Form -->
-        <div class="col-span-12 lg:col-span-8">
-          <form id="contact-form" class="grid grid-cols-1 md:grid-cols-2 gap-x-10 gap-y-8" novalidate>
-            <div class="field md:col-span-1">
+        <div class="col-span-12 lg:col-span-7 lg:border-l lg:border-rule lg:pl-20">
+          <form id="contact-form" class="space-y-10" novalidate>
+            <div class="field">
               <label for="f-name"><span class="lang-nl">Naam</span><span class="lang-en">Name</span></label>
               <input type="text" id="f-name" name="name" required autocomplete="name" />
             </div>
-            <div class="field md:col-span-1">
+            <div class="field">
               <label for="f-email">E-mail</label>
               <input type="email" id="f-email" name="email" required autocomplete="email" />
             </div>
-            <div class="field md:col-span-1">
-              <label for="f-phone"><span class="lang-nl">Telefoon</span><span class="lang-en">Phone</span></label>
-              <input type="tel" id="f-phone" name="phone" autocomplete="tel" />
-            </div>
-            <div class="field md:col-span-1">
-              <label for="f-type"><span class="lang-nl">Type project</span><span class="lang-en">Project type</span></label>
-              <select id="f-type" name="type" required>
-                <option value="" disabled selected hidden></option>
-                <option value="badkamer">Badkamer · Bathroom</option>
-                <option value="keuken">Keuken · Kitchen</option>
-                <option value="elektra">Elektra · Electrical</option>
-                <option value="schilderwerk">Schilderwerk · Painting</option>
-                <option value="vloeren">Vloeren · Flooring</option>
-                <option value="mutatie">Mutatieonderhoud · Turnover</option>
-                <option value="verbouwing">Complete verbouwing · Full renovation</option>
-                <option value="anders">Anders · Other</option>
-              </select>
-            </div>
-            <div class="field md:col-span-2">
+            <div class="field">
               <label for="f-message"><span class="lang-nl">Bericht</span><span class="lang-en">Message</span></label>
-              <textarea id="f-message" name="message" rows="5" required></textarea>
+              <textarea id="f-message" name="message" rows="4" required></textarea>
             </div>
-            <div class="md:col-span-2 flex flex-wrap items-center gap-6 mt-2">
+            <div class="pt-2">
               <button type="submit" class="btn-ink">
                 <span class="lang-nl">Verstuur</span>
                 <span class="lang-en">Send</span>
                 <span class="arrow">→</span>
               </button>
-              <p class="text-[13px] text-ink/65 max-w-md">
-                <span class="lang-nl">Wij reageren binnen één werkdag. Geen nieuwsbrieven, geen doorverkoop.</span>
-                <span class="lang-en">We respond within one business day. No newsletters, no reselling of data.</span>
-              </p>
             </div>
-            <p id="form-status" class="hidden md:col-span-2 font-serif italic text-xl pt-4 border-t border-ink">
-              <span class="lang-nl">Dank u — uw bericht is ontvangen. Wij nemen binnen één werkdag contact op.</span>
-              <span class="lang-en">Thank you — your message has been received. We'll be in touch within one business day.</span>
+            <p id="form-status" class="hidden font-serif italic text-xl pt-6 border-t border-ink">
+              <span class="lang-nl">Dank u — wij nemen binnen één werkdag contact op.</span>
+              <span class="lang-en">Thank you — we'll be in touch within one business day.</span>
             </p>
           </form>
         </div>
@@ -645,49 +346,27 @@
 
   </main>
 
-  <!-- ========== FOOTER (inverted) ========== -->
+  <!-- ========== FOOTER ========== -->
   <footer class="footer-dark mt-12">
-    <div class="max-w-[1400px] mx-auto px-6 lg:px-12 py-16 grid grid-cols-12 gap-8">
-      <div class="col-span-12 lg:col-span-5">
-        <a href="#home" data-nav="home" class="flex items-center">
-          <img src="logo.png" alt="alleklussers" class="logo-img logo-img--inverted h-14 md:h-16 w-auto" />
-        </a>
-        <p class="mt-6 text-paper/70 text-sm leading-relaxed max-w-sm">
-          <span class="lang-nl">Eén aanspreekpunt, vaste prijzen, vertrouwde vakmensen.</span>
-          <span class="lang-en">One point of contact, fixed prices, trusted craftsmen.</span>
-        </p>
+    <div class="max-w-[1400px] mx-auto px-6 lg:px-12 py-16">
+      <div class="grid grid-cols-12 gap-8 items-end">
+        <div class="col-span-12 lg:col-span-6">
+          <a href="#home" data-nav="home" class="inline-flex items-center">
+            <img src="logo.png" alt="alleklussers" class="logo-img logo-img--inverted h-14 md:h-16 w-auto" />
+          </a>
+        </div>
+        <div class="col-span-12 lg:col-span-6 lg:text-right">
+          <p class="text-paper/90 text-sm space-x-4">
+            <a href="mailto:hallo@alleklussers.nl">hallo@alleklussers.nl</a>
+            <span class="text-paper/30">·</span>
+            <a href="tel:+31600000000">06 — 0000 0000</a>
+          </p>
+        </div>
       </div>
 
-      <div class="col-span-6 lg:col-span-3">
-        <p class="eyebrow text-paper/60 mb-4"><span class="lang-nl">Navigatie</span><span class="lang-en">Navigate</span></p>
-        <ul class="space-y-2 text-paper/90 text-sm">
-          <li><a href="#home" data-nav="home"><span class="lang-nl">Start</span><span class="lang-en">Home</span></a></li>
-          <li><a href="#about" data-nav="about"><span class="lang-nl">Over ons</span><span class="lang-en">About</span></a></li>
-          <li><a href="#services" data-nav="services"><span class="lang-nl">Diensten</span><span class="lang-en">Services</span></a></li>
-          <li><a href="#references" data-nav="references"><span class="lang-nl">Referenties</span><span class="lang-en">References</span></a></li>
-          <li><a href="#contact" data-nav="contact">Contact</a></li>
-        </ul>
-      </div>
-
-      <div class="col-span-6 lg:col-span-4">
-        <p class="eyebrow text-paper/60 mb-4">Contact</p>
-        <ul class="space-y-2 text-paper/90 text-sm">
-          <li>06 — 0000 0000</li>
-          <li>hallo@alleklussers.nl</li>
-          <li>
-            <span class="lang-nl">Nederland</span>
-            <span class="lang-en">The Netherlands</span>
-          </li>
-        </ul>
-      </div>
-
-      <div class="col-span-12 border-t border-paper/15 pt-6 mt-6 flex flex-wrap items-center justify-between gap-4 text-[12px] text-paper/55">
+      <div class="border-t border-paper/15 pt-6 mt-12 flex flex-wrap items-center justify-between gap-4 text-[12px] text-paper/55">
         <p>© <span id="year">2026</span> alleklussers</p>
         <p>KvK 00000000 · BTW NL000000000B00</p>
-        <p>
-          <span class="lang-nl">Ontworpen in Nederland</span>
-          <span class="lang-en">Designed in the Netherlands</span>
-        </p>
       </div>
     </div>
   </footer>

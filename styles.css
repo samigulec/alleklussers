@@ -3,7 +3,6 @@
   --ink: #0a0a0a;
   --paper: #fafafa;
   --rule: #e5e5e5;
-  --rule-strong: #cfcfcf;
   --muted: #6b6b6b;
 }
 
@@ -12,48 +11,30 @@
   -moz-osx-font-smoothing: grayscale;
 }
 
-html {
-  scroll-behavior: smooth;
-}
+html { scroll-behavior: smooth; }
 
 body {
   background: var(--paper);
   color: var(--ink);
   font-family: 'Manrope', system-ui, sans-serif;
-  font-feature-settings: "ss01", "cv11";
   font-weight: 400;
   line-height: 1.55;
 }
 
 .font-serif {
   font-family: 'Fraunces', 'Times New Roman', serif;
-  font-feature-settings: "ss01";
   letter-spacing: -0.02em;
 }
 
-/* Brutal section transitions — no fade, just swap */
-.view {
-  display: none;
-}
+/* Section swaps */
+.view { display: none; }
 .view.is-active {
   display: block;
-  animation: rise 320ms cubic-bezier(.22,.61,.36,1);
+  animation: rise 380ms cubic-bezier(.22,.61,.36,1);
 }
 @keyframes rise {
-  from { opacity: 0; transform: translateY(6px); }
+  from { opacity: 0; transform: translateY(8px); }
   to   { opacity: 1; transform: translateY(0); }
-}
-
-/* Drop cap on About */
-.dropcap::first-letter {
-  font-family: 'Fraunces', serif;
-  font-weight: 500;
-  font-style: italic;
-  float: left;
-  font-size: 5.5rem;
-  line-height: 0.85;
-  padding: 0.4rem 0.9rem 0 0;
-  color: var(--ink);
 }
 
 /* Nav links — hairline underline that grows */
@@ -88,7 +69,7 @@ body {
   text-transform: uppercase;
 }
 .lang-pill button {
-  padding: 0.35rem 0.7rem;
+  padding: 0.35rem 0.75rem;
   background: transparent;
   color: var(--ink);
   transition: background 200ms ease, color 200ms ease;
@@ -99,118 +80,80 @@ body {
   color: var(--paper);
 }
 
-/* Numbered service rows */
+/* Service rows — title-only with arrow that slides on hover */
 .service-row {
   display: grid;
-  grid-template-columns: 4rem 1fr auto;
-  align-items: baseline;
+  grid-template-columns: 3rem 1fr auto;
+  align-items: center;
   gap: 1.5rem;
   padding: 1.75rem 0;
   border-top: 1px solid var(--rule);
-  position: relative;
   cursor: pointer;
-  transition: padding-left 380ms cubic-bezier(.22,.61,.36,1);
+  transition: padding-left 420ms cubic-bezier(.22,.61,.36,1),
+              color 200ms ease;
 }
-.service-row:last-of-type {
+ol li:last-child .service-row {
   border-bottom: 1px solid var(--rule);
 }
 .service-row .arrow {
   display: inline-block;
-  transition: transform 380ms cubic-bezier(.22,.61,.36,1);
   font-size: 1.5rem;
+  transition: transform 420ms cubic-bezier(.22,.61,.36,1);
 }
-.service-row:hover {
-  padding-left: 1rem;
-}
-.service-row:hover .arrow {
-  transform: translateX(0.5rem);
-}
-.service-row:hover .service-title {
-  font-style: italic;
-}
+.service-row:hover { padding-left: 1rem; }
+.service-row:hover .arrow { transform: translateX(0.6rem); }
+.service-row:hover .service-title { font-style: italic; }
 
-/* Project cards — bare bones */
-.project-card {
-  border-top: 1px solid var(--ink);
-  padding-top: 1.25rem;
+/* Form fields */
+.field {
   display: flex;
   flex-direction: column;
   gap: 0.5rem;
 }
-
-/* Quote block */
-.quote {
-  border-left: 1px solid var(--ink);
-  padding-left: 1.25rem;
-}
-
-/* Forms */
-.field {
-  display: flex;
-  flex-direction: column;
-  gap: 0.35rem;
-}
 .field label {
   font-size: 0.7rem;
-  letter-spacing: 0.16em;
+  letter-spacing: 0.18em;
   text-transform: uppercase;
   color: var(--muted);
 }
 .field input,
-.field select,
 .field textarea {
   background: transparent;
   border: 0;
   border-bottom: 1px solid var(--ink);
   padding: 0.6rem 0;
   font-family: inherit;
-  font-size: 1rem;
+  font-size: 1.1rem;
   color: var(--ink);
   outline: none;
-  transition: border-color 200ms ease;
 }
 .field textarea {
   resize: vertical;
-  min-height: 6rem;
+  min-height: 5rem;
 }
 .field input:focus,
-.field select:focus,
 .field textarea:focus {
-  border-color: var(--ink);
   border-bottom-width: 2px;
   padding-bottom: calc(0.6rem - 1px);
 }
-.field select {
-  appearance: none;
-  background-image: linear-gradient(45deg, transparent 50%, var(--ink) 50%), linear-gradient(135deg, var(--ink) 50%, transparent 50%);
-  background-position: calc(100% - 14px) 50%, calc(100% - 8px) 50%;
-  background-size: 6px 6px;
-  background-repeat: no-repeat;
-}
 
+/* Primary button */
 .btn-ink {
   display: inline-flex;
   align-items: center;
   gap: 0.75rem;
   background: var(--ink);
   color: var(--paper);
-  padding: 1rem 1.5rem;
-  font-size: 0.8rem;
-  letter-spacing: 0.16em;
+  padding: 1rem 1.6rem;
+  font-size: 0.75rem;
+  letter-spacing: 0.18em;
   text-transform: uppercase;
   font-weight: 600;
-  transition: background 200ms ease, transform 200ms ease;
+  transition: background 200ms ease;
 }
-.btn-ink:hover {
-  background: #000;
-  transform: translateY(-1px);
-}
-.btn-ink .arrow {
-  transition: transform 200ms ease;
-}
-.btn-ink:hover .arrow {
-  transform: translateX(0.25rem);
-}
+.btn-ink:hover { background: #000; }
+.btn-ink .arrow { transition: transform 200ms ease; }
+.btn-ink:hover .arrow { transform: translateX(0.3rem); }
 
 /* Footer inverted */
 .footer-dark {
@@ -222,13 +165,11 @@ body {
   text-underline-offset: 4px;
 }
 
-/* Hide / show via [lang] attribute */
+/* Bilingual visibility */
 [data-lang="en"] .lang-nl,
-[data-lang="nl"] .lang-en {
-  display: none !important;
-}
+[data-lang="nl"] .lang-en { display: none !important; }
 
-/* Small caps eyebrow */
+/* Eyebrow label */
 .eyebrow {
   font-size: 0.7rem;
   letter-spacing: 0.22em;
@@ -237,32 +178,16 @@ body {
   font-weight: 500;
 }
 
-/* Hairline separators */
-.hairline {
-  height: 1px;
-  background: var(--ink);
-  width: 100%;
-}
+.hairline { height: 1px; background: var(--ink); width: 100%; }
 
-/* Process step grid */
-.process-num {
-  font-family: 'Fraunces', serif;
-  font-size: 2.5rem;
-  font-weight: 300;
-  font-style: italic;
-  line-height: 1;
-  color: var(--ink);
-}
-
-/* Hero italic emphasis */
-em.editorial {
+/* Italic emphasis in serif headlines */
+em {
   font-style: italic;
   font-family: 'Fraunces', serif;
   font-weight: 300;
 }
 
-/* Logo image — kills the white background of a non-transparent PNG so the
-   mark melds with the page; the inverted version flips it for the dark footer. */
+/* Logo image — mix-blend strips white background of PNG */
 .logo-img {
   display: block;
   mix-blend-mode: multiply;
@@ -272,16 +197,10 @@ em.editorial {
   mix-blend-mode: screen;
 }
 
-/* Responsive type ramp via clamp */
+/* Responsive display type */
 .h-display {
-  font-size: clamp(2.5rem, 7vw, 6rem);
-  line-height: 1;
-  letter-spacing: -0.035em;
-  font-weight: 300;
-}
-.h-section {
-  font-size: clamp(2rem, 4.5vw, 3.5rem);
-  line-height: 1.05;
-  letter-spacing: -0.025em;
+  font-size: clamp(2.75rem, 8.5vw, 7.5rem);
+  line-height: 0.95;
+  letter-spacing: -0.04em;
   font-weight: 300;
 }
