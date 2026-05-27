@@ -51,7 +51,7 @@
     if (!waFab) return;
     const ctx = (WA_CONTEXT[currentLang] || WA_CONTEXT.nl);
     const tail = ctx[currentView] || ctx.home;
-    const msg = `${timeGreeting(currentLang)} alleklussers, ${tail}`;
+    const msg = `${timeGreeting(currentLang)} AlleKlussers, ${tail}`;
     waFab.href = `https://wa.me/${WA_PHONE}?text=${encodeURIComponent(msg)}`;
   }
 
