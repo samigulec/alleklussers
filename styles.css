@@ -262,10 +262,14 @@ em.editorial {
 }
 
 /* Logo image — kills the white background of a non-transparent PNG so the
-   mark melds with the page; the inverted version flips it for the dark footer. */
+   mark melds with the page; the inverted version flips it for the dark footer.
+   Zooms in slightly to compensate for whitespace around the mark in the
+   source PNG. If the logo still looks small, recommit a tightly cropped PNG. */
 .logo-img {
   display: block;
   mix-blend-mode: multiply;
+  transform: scale(1.35);
+  transform-origin: left center;
 }
 .logo-img--inverted {
   filter: invert(1);
