@@ -1,11 +1,15 @@
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 420 420" fill="none" stroke="currentColor" stroke-width="22" stroke-linejoin="round" stroke-linecap="round">
-  <!-- House silhouette with lightning bolt cutout on the right -->
-  <path d="M 70 200 L 70 360 L 215 360 L 245 290 L 305 300 L 250 380 L 285 380 L 360 240 L 295 250 L 320 195 L 205 80 Z" stroke-linejoin="miter" />
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100" fill="none" stroke="currentColor" stroke-width="6.5" stroke-linejoin="miter" stroke-linecap="round">
+  <!-- House + lightning bolt drawn as ONE continuous closed silhouette.
+       Clockwise from the roof apex:
+       apex → bolt upper-right → waist inner notch → waist outer kick
+       → bolt bottom tip → back up to house bottom-right
+       → house bottom → house left wall → close back to apex (roof slope) -->
+  <path d="M 55 14 L 82 42 L 62 48 L 78 56 L 42 94 L 56 80 L 16 80 L 16 36 Z" />
   <!-- Plug prongs -->
-  <line x1="135" y1="190" x2="135" y2="215" />
-  <line x1="170" y1="190" x2="170" y2="215" />
+  <line x1="28" y1="44" x2="28" y2="52" />
+  <line x1="38" y1="44" x2="38" y2="52" />
   <!-- Plug body -->
-  <rect x="120" y="215" width="65" height="55" stroke-linejoin="miter" />
-  <!-- Cable curve -->
-  <path d="M 152 270 C 152 310 175 320 200 320" />
+  <rect x="22" y="52" width="22" height="16" />
+  <!-- Plug cord curving out and right -->
+  <path d="M 33 68 C 33 80 38 83 46 83" stroke-linecap="round" />
 </svg>
