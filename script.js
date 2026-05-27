@@ -83,6 +83,29 @@
     more.querySelectorAll('a').forEach(a => a.addEventListener('click', closeMore));
   }
 
+  // Floating contact widget — toggle popover, close on outside click / Esc
+  const widget = document.getElementById('contact-widget');
+  if (widget) {
+    const fab = widget.querySelector('#contact-fab');
+    const pop = widget.querySelector('#contact-pop');
+    const closeBtn = widget.querySelector('#contact-pop-close');
+    const setOpen = (open) => {
+      widget.classList.toggle('is-open', open);
+      fab.setAttribute('aria-expanded', open ? 'true' : 'false');
+    };
+    fab.addEventListener('click', e => {
+      e.stopPropagation();
+      setOpen(!widget.classList.contains('is-open'));
+    });
+    closeBtn.addEventListener('click', () => setOpen(false));
+    document.addEventListener('click', e => {
+      if (!widget.contains(e.target)) setOpen(false);
+    });
+    document.addEventListener('keydown', e => {
+      if (e.key === 'Escape') setOpen(false);
+    });
+  }
+
   // Editorial scroll progress bar
   const progressEl = document.getElementById('scroll-progress');
   if (progressEl) {
