@@ -69,11 +69,11 @@
           </button>
           <div class="nav-more__menu" role="menu">
             <a href="#contact" data-nav="contact" role="menuitem">Contact</a>
-            <a href="https://wa.me/31600000000" target="_blank" rel="noopener noreferrer" role="menuitem" class="nav-more__ext">
-              WhatsApp <span aria-hidden="true">↗</span>
-            </a>
             <a href="mailto:hallo@alleklussers.nl" role="menuitem" class="nav-more__ext">
               E-mail <span aria-hidden="true">↗</span>
+            </a>
+            <a href="tel:+31600000000" role="menuitem" class="nav-more__ext">
+              <span class="lang-nl">Bel ons</span><span class="lang-en">Call us</span> <span aria-hidden="true">↗</span>
             </a>
           </div>
         </div>
@@ -99,8 +99,8 @@
         <a href="#about" data-nav="about" class="navlink"><span class="lang-nl">Over ons</span><span class="lang-en">About us</span></a>
         <a href="#contact" data-nav="contact" class="navlink">Contact</a>
         <div class="pt-2 border-t border-rule mt-2 flex flex-col gap-3 text-sm">
-          <a href="https://wa.me/31600000000" target="_blank" rel="noopener noreferrer">WhatsApp ↗</a>
           <a href="mailto:hallo@alleklussers.nl">hallo@alleklussers.nl ↗</a>
+          <a href="tel:+31600000000"><span class="lang-nl">06 — 0000 0000</span><span class="lang-en">+31 6 0000 0000</span> ↗</a>
         </div>
       </nav>
     </div>
@@ -333,7 +333,7 @@
 
     <!-- ============ CONTACT ============ -->
     <section id="view-contact" class="view">
-      <div class="pt-20 lg:pt-32 pb-12">
+      <div class="pt-20 lg:pt-32 pb-16">
         <p class="eyebrow mb-10">Contact</p>
         <h1 class="font-serif h-display max-w-[14ch]">
           <span class="lang-nl">Laten we <em>praten</em>.</span>
@@ -341,48 +341,26 @@
         </h1>
       </div>
 
-      <div class="grid grid-cols-12 gap-10 lg:gap-20 pb-28">
-        <div class="col-span-12 lg:col-span-5 space-y-10">
-          <div>
-            <p class="eyebrow mb-2">E-mail</p>
-            <a href="mailto:hallo@alleklussers.nl" class="font-serif text-2xl lg:text-3xl hover:italic">hallo@alleklussers.nl</a>
-          </div>
-          <div>
-            <p class="eyebrow mb-2"><span class="lang-nl">Telefoon</span><span class="lang-en">Phone</span></p>
-            <a href="tel:+31600000000" class="font-serif text-2xl lg:text-3xl hover:italic">06 — 0000 0000</a>
-          </div>
-          <div>
-            <p class="eyebrow mb-2"><span class="lang-nl">Bereikbaar</span><span class="lang-en">Hours</span></p>
-            <p class="font-serif text-xl"><span class="lang-nl">Ma–vr · 08:00–18:00</span><span class="lang-en">Mon–Fri · 08:00–18:00</span></p>
-          </div>
+      <!-- Two halves: e-mail + button | phone + button. Hairline divider between them on desktop. -->
+      <div class="contact-split pb-28">
+        <div class="contact-half">
+          <p class="eyebrow mb-6">E-mail</p>
+          <a href="mailto:hallo@alleklussers.nl" class="contact-value font-serif">hallo@alleklussers.nl</a>
+          <a href="mailto:hallo@alleklussers.nl" class="btn-ink mt-10">
+            <span class="lang-nl">Stuur een mail</span>
+            <span class="lang-en">Send an e-mail</span>
+            <span class="arrow">→</span>
+          </a>
         </div>
 
-        <div class="col-span-12 lg:col-span-7 lg:border-l lg:border-rule lg:pl-20">
-          <form id="contact-form" class="space-y-10">
-            <div class="field">
-              <label for="f-name"><span class="lang-nl">Naam</span><span class="lang-en">Name</span></label>
-              <input type="text" id="f-name" name="name" required autocomplete="name" />
-            </div>
-            <div class="field">
-              <label for="f-email">E-mail</label>
-              <input type="email" id="f-email" name="email" required autocomplete="email" />
-            </div>
-            <div class="field">
-              <label for="f-message"><span class="lang-nl">Bericht</span><span class="lang-en">Message</span></label>
-              <textarea id="f-message" name="message" rows="4" required></textarea>
-            </div>
-            <div class="pt-2">
-              <button type="submit" class="btn-ink">
-                <span class="lang-nl">Verstuur</span>
-                <span class="lang-en">Send</span>
-                <span class="arrow">→</span>
-              </button>
-            </div>
-            <p id="form-status" class="hidden font-serif italic text-xl pt-6 border-t border-ink">
-              <span class="lang-nl">Dank u — wij nemen binnen één werkdag contact op.</span>
-              <span class="lang-en">Thank you — we'll be in touch within one business day.</span>
-            </p>
-          </form>
+        <div class="contact-half">
+          <p class="eyebrow mb-6"><span class="lang-nl">Telefoon</span><span class="lang-en">Phone</span></p>
+          <a href="tel:+31600000000" class="contact-value font-serif">06 — 0000 0000</a>
+          <a href="tel:+31600000000" class="btn-ink mt-10">
+            <span class="lang-nl">Bel ons</span>
+            <span class="lang-en">Call us</span>
+            <span class="arrow">→</span>
+          </a>
         </div>
       </div>
     </section>
@@ -413,21 +391,6 @@
       </div>
     </div>
   </footer>
-
-  <!-- ========== WhatsApp FAB (floating chat) ========== -->
-  <a id="wa-fab"
-     href="https://wa.me/31600000000"
-     target="_blank"
-     rel="noopener noreferrer"
-     aria-label="WhatsApp">
-    <svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true" class="wa-icon">
-      <path d="M19.05 4.91A10.04 10.04 0 0 0 12 2C6.5 2 2 6.5 2 12c0 1.76.46 3.46 1.34 4.97L2 22l5.18-1.32A9.99 9.99 0 0 0 12 22c5.5 0 10-4.5 10-10 0-2.67-1.04-5.18-2.95-7.09zM12 20.13c-1.5 0-2.99-.4-4.28-1.18l-.3-.18-3.07.78.82-2.99-.2-.31A8.13 8.13 0 0 1 3.87 12C3.87 7.52 7.52 3.87 12 3.87c2.18 0 4.23.85 5.77 2.39A8.06 8.06 0 0 1 20.13 12c0 4.48-3.65 8.13-8.13 8.13zm4.48-6.09c-.25-.12-1.45-.71-1.67-.8-.22-.08-.39-.12-.55.12-.16.25-.62.8-.76.96-.14.16-.28.18-.52.06-.25-.12-1.04-.38-1.97-1.22-.73-.65-1.22-1.45-1.36-1.7-.14-.25-.02-.38.11-.5.11-.11.25-.28.37-.43.12-.14.16-.25.25-.41.08-.16.04-.31-.02-.43-.06-.12-.55-1.33-.76-1.82-.2-.48-.4-.41-.55-.42-.14-.01-.31-.01-.47-.01-.16 0-.43.06-.66.31-.22.25-.86.84-.86 2.05 0 1.21.88 2.38 1 2.55.12.16 1.74 2.66 4.22 3.73.59.26 1.05.41 1.41.52.59.19 1.13.16 1.56.1.48-.07 1.45-.59 1.66-1.16.2-.57.2-1.06.14-1.16-.06-.1-.22-.16-.47-.28z"/>
-    </svg>
-    <span class="wa-label">
-      <span class="lang-nl">Vraag stellen</span>
-      <span class="lang-en">Ask a question</span>
-    </span>
-  </a>
 
   <script src="script.js"></script>
   <script>document.getElementById('year').textContent = new Date().getFullYear();</script>
