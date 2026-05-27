@@ -1,4 +1,4 @@
-// KlusRegie 010 — minimal nav + language toggle
+// alleklussers — minimal nav + language toggle
 
 (function () {
   const root = document.documentElement;
@@ -27,7 +27,7 @@
     root.setAttribute('data-lang', lang);
     document.documentElement.lang = lang;
     langButtons.forEach(b => b.classList.toggle('is-active', b.dataset.langSet === lang));
-    try { localStorage.setItem('kr010_lang', lang); } catch (e) {}
+    try { localStorage.setItem('ak_lang', lang); } catch (e) {}
   }
 
   langButtons.forEach(b => {
@@ -37,7 +37,7 @@
   // Init language
   let initialLang = 'nl';
   try {
-    const saved = localStorage.getItem('kr010_lang');
+    const saved = localStorage.getItem('ak_lang');
     if (saved === 'en' || saved === 'nl') initialLang = saved;
   } catch (e) {}
   setLang(initialLang);
