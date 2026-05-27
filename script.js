@@ -91,6 +91,33 @@
     menuBtn.addEventListener('click', () => menu.classList.toggle('hidden'));
   }
 
+  // "Meer" dropdown — click to toggle, outside-click and Escape close.
+  // Selecting any item inside also closes (handled below via nav-link click).
+  const more = document.querySelector('[data-more]');
+  if (more) {
+    const trigger = more.querySelector('.nav-more__trigger');
+    const closeMore = () => {
+      more.classList.remove('is-open');
+      trigger.setAttribute('aria-expanded', 'false');
+    };
+    const toggleMore = () => {
+      const open = more.classList.toggle('is-open');
+      trigger.setAttribute('aria-expanded', open ? 'true' : 'false');
+    };
+    trigger.addEventListener('click', e => {
+      e.stopPropagation();
+      toggleMore();
+    });
+    document.addEventListener('click', e => {
+      if (!more.contains(e.target)) closeMore();
+    });
+    document.addEventListener('keydown', e => {
+      if (e.key === 'Escape') closeMore();
+    });
+    // Close after any internal navigation
+    more.querySelectorAll('a').forEach(a => a.addEventListener('click', closeMore));
+  }
+
   // Contact form — client-side only for now.
   // Falls back to WhatsApp if the user prefers that channel.
   const form = document.getElementById('contact-form');

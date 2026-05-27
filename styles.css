@@ -58,6 +58,63 @@ body {
   transform-origin: left center;
 }
 
+/* Nav "Meer" dropdown */
+.nav-more {
+  position: relative;
+}
+.nav-more__trigger {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.4rem;
+  background: transparent;
+  color: var(--ink);
+  font: inherit;
+  cursor: pointer;
+}
+.nav-more__caret {
+  transition: transform 220ms cubic-bezier(.22,.61,.36,1);
+}
+.nav-more.is-open .nav-more__caret {
+  transform: rotate(180deg);
+}
+.nav-more__menu {
+  position: absolute;
+  top: calc(100% + 1.1rem);
+  right: 0;
+  min-width: 180px;
+  background: var(--paper);
+  border: 1px solid var(--ink);
+  padding: 0.35rem 0;
+  display: flex;
+  flex-direction: column;
+  opacity: 0;
+  pointer-events: none;
+  transform: translateY(-4px);
+  transition: opacity 200ms ease, transform 200ms ease;
+  z-index: 50;
+}
+.nav-more.is-open .nav-more__menu {
+  opacity: 1;
+  pointer-events: auto;
+  transform: translateY(0);
+}
+.nav-more__menu a {
+  padding: 0.65rem 1.1rem;
+  font-size: 0.85rem;
+  color: var(--ink);
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 0.5rem;
+  transition: background 160ms ease, padding-left 220ms cubic-bezier(.22,.61,.36,1);
+}
+.nav-more__menu a:hover {
+  background: var(--ink);
+  color: var(--paper);
+  padding-left: 1.35rem;
+}
+.nav-more__ext span { opacity: 0.6; }
+
 /* Language pill */
 .lang-pill {
   border: 1px solid var(--ink);

@@ -35,10 +35,27 @@
       </a>
 
       <nav class="hidden md:flex items-center gap-10 text-sm">
-        <a href="#about" data-nav="about" class="navlink"><span class="lang-nl">Over</span><span class="lang-en">About</span></a>
-        <a href="#services" data-nav="services" class="navlink"><span class="lang-nl">Diensten</span><span class="lang-en">Services</span></a>
-        <a href="#references" data-nav="references" class="navlink"><span class="lang-nl">Referenties</span><span class="lang-en">Work</span></a>
-        <a href="#contact" data-nav="contact" class="navlink">Contact</a>
+        <a href="#home" data-nav="home" class="navlink"><span class="lang-nl">Startpagina</span><span class="lang-en">Home</span></a>
+        <a href="#references" data-nav="references" class="navlink"><span class="lang-nl">Projecten</span><span class="lang-en">Projects</span></a>
+        <a href="#services" data-nav="services" class="navlink"><span class="lang-nl">Onze Diensten</span><span class="lang-en">Our Services</span></a>
+        <a href="#about" data-nav="about" class="navlink"><span class="lang-nl">Over ons</span><span class="lang-en">About us</span></a>
+        <div class="nav-more" data-more>
+          <button type="button" class="navlink nav-more__trigger" aria-haspopup="true" aria-expanded="false">
+            <span class="lang-nl">Meer</span><span class="lang-en">More</span>
+            <svg class="nav-more__caret" width="10" height="6" viewBox="0 0 10 6" fill="none" stroke="currentColor" stroke-width="1.5" aria-hidden="true">
+              <polyline points="1 1 5 5 9 1"/>
+            </svg>
+          </button>
+          <div class="nav-more__menu" role="menu">
+            <a href="#contact" data-nav="contact" role="menuitem">Contact</a>
+            <a href="https://wa.me/31600000000" target="_blank" rel="noopener noreferrer" role="menuitem" class="nav-more__ext">
+              WhatsApp <span aria-hidden="true">↗</span>
+            </a>
+            <a href="mailto:hallo@alleklussers.nl" role="menuitem" class="nav-more__ext">
+              E-mail <span aria-hidden="true">↗</span>
+            </a>
+          </div>
+        </div>
       </nav>
 
       <div class="flex items-center gap-4">
@@ -55,10 +72,15 @@
     </div>
     <div id="mobile-menu" class="md:hidden hidden border-t border-rule">
       <nav class="px-6 py-5 flex flex-col gap-4 text-base">
-        <a href="#about" data-nav="about" class="navlink"><span class="lang-nl">Over</span><span class="lang-en">About</span></a>
-        <a href="#services" data-nav="services" class="navlink"><span class="lang-nl">Diensten</span><span class="lang-en">Services</span></a>
-        <a href="#references" data-nav="references" class="navlink"><span class="lang-nl">Referenties</span><span class="lang-en">Work</span></a>
+        <a href="#home" data-nav="home" class="navlink"><span class="lang-nl">Startpagina</span><span class="lang-en">Home</span></a>
+        <a href="#references" data-nav="references" class="navlink"><span class="lang-nl">Projecten</span><span class="lang-en">Projects</span></a>
+        <a href="#services" data-nav="services" class="navlink"><span class="lang-nl">Onze Diensten</span><span class="lang-en">Our Services</span></a>
+        <a href="#about" data-nav="about" class="navlink"><span class="lang-nl">Over ons</span><span class="lang-en">About us</span></a>
         <a href="#contact" data-nav="contact" class="navlink">Contact</a>
+        <div class="pt-2 border-t border-rule mt-2 flex flex-col gap-3 text-sm">
+          <a href="https://wa.me/31600000000" target="_blank" rel="noopener noreferrer">WhatsApp ↗</a>
+          <a href="mailto:hallo@alleklussers.nl">hallo@alleklussers.nl ↗</a>
+        </div>
       </nav>
     </div>
   </header>
@@ -254,7 +276,7 @@
     <!-- ============ REFERENCES ============ -->
     <section id="view-references" class="view">
       <div class="pt-20 lg:pt-32 pb-20">
-        <p class="eyebrow mb-10"><span class="lang-nl">Referenties</span><span class="lang-en">Work</span></p>
+        <p class="eyebrow mb-10"><span class="lang-nl">Projecten</span><span class="lang-en">Projects</span></p>
         <h1 class="font-serif h-display max-w-[14ch]">
           <span class="lang-nl">Wat klanten <em>zeggen</em>.</span>
           <span class="lang-en">What clients <em>say</em>.</span>
