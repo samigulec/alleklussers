@@ -10,22 +10,36 @@
   // Replace with the real number when known.
   const WA_PHONE = '31600000000';
 
-  // Pre-filled openers per language and per section. The current section
-  // tailors the message so the conversation starts with context.
-  const WA_MESSAGES = {
+  // Time-aware greeting so the WA opener starts naturally ("Goedemorgen"
+  // before noon, "Goedemiddag" until 18:00, "Goedenavond" after).
+  function timeGreeting(lang) {
+    const h = new Date().getHours();
+    if (lang === 'nl') {
+      if (h < 6)  return 'Goedenacht';
+      if (h < 12) return 'Goedemorgen';
+      if (h < 18) return 'Goedemiddag';
+      return 'Goedenavond';
+    }
+    if (h < 12) return 'Good morning';
+    if (h < 18) return 'Good afternoon';
+    return 'Good evening';
+  }
+
+  // Per-section conversation opener (greeting prepended at build time).
+  const WA_CONTEXT = {
     nl: {
-      home:       'Hallo alleklussers, ik heb een vraag.',
-      about:      'Hallo alleklussers, ik wil graag meer weten over jullie.',
-      services:   'Hallo alleklussers, ik heb een vraag over jullie diensten.',
-      references: 'Hallo alleklussers, ik heb een vraag naar aanleiding van jullie referenties.',
-      contact:    'Hallo alleklussers, ik wil graag contact opnemen.',
+      home:       'ik heb een vraag.',
+      about:      'ik wil graag meer weten over jullie.',
+      services:   'ik heb een vraag over jullie diensten.',
+      references: 'ik heb een vraag naar aanleiding van een project.',
+      contact:    'ik wil graag contact opnemen.',
     },
     en: {
-      home:       'Hi alleklussers, I have a question.',
-      about:      "Hi alleklussers, I'd like to know more about you.",
-      services:   'Hi alleklussers, I have a question about your services.',
-      references: 'Hi alleklussers, I have a question regarding your work.',
-      contact:    "Hi alleklussers, I'd like to get in touch.",
+      home:       'I have a question.',
+      about:      "I'd like to know more about you.",
+      services:   'I have a question about your services.',
+      references: 'I have a question about one of your projects.',
+      contact:    "I'd like to get in touch.",
     },
   };
 
@@ -35,8 +49,9 @@
 
   function updateWaLink() {
     if (!waFab) return;
-    const msg = (WA_MESSAGES[currentLang] || WA_MESSAGES.nl)[currentView]
-             || WA_MESSAGES[currentLang].home;
+    const ctx = (WA_CONTEXT[currentLang] || WA_CONTEXT.nl);
+    const tail = ctx[currentView] || ctx.home;
+    const msg = `${timeGreeting(currentLang)} alleklussers, ${tail}`;
     waFab.href = `https://wa.me/${WA_PHONE}?text=${encodeURIComponent(msg)}`;
   }
 
@@ -118,17 +133,56 @@
     more.querySelectorAll('a').forEach(a => a.addEventListener('click', closeMore));
   }
 
-  // Contact form — client-side only for now.
-  // Falls back to WhatsApp if the user prefers that channel.
+  // Contact form — until a backend is wired up, hand off to the user's
+  // mail client with all fields prefilled. Works on every device without
+  // a server roundtrip and degrades gracefully.
   const form = document.getElementById('contact-form');
   if (form) {
     form.addEventListener('submit', e => {
       e.preventDefault();
+      const data = new FormData(form);
+      const name    = (data.get('name')    || '').toString().trim();
+      const email   = (data.get('email')   || '').toString().trim();
+      const message = (data.get('message') || '').toString().trim();
+      const subject = currentLang === 'en'
+        ? `New enquiry from ${name || 'website'}`
+        : `Nieuwe aanvraag van ${name || 'website'}`;
+      const body = currentLang === 'en'
+        ? `Name: ${name}\nE-mail: ${email}\n\n${message}`
+        : `Naam: ${name}\nE-mail: ${email}\n\n${message}`;
+      const href = `mailto:hallo@alleklussers.nl`
+        + `?subject=${encodeURIComponent(subject)}`
+        + `&body=${encodeURIComponent(body)}`;
+      window.location.href = href;
+
       const status = document.getElementById('form-status');
       if (status) {
         status.classList.remove('hidden');
         form.reset();
       }
     });
+  }
+
+  // Editorial scroll progress bar — width tracks scroll position within
+  // the currently visible view (other views are display:none so they
+  // don't contribute to scrollHeight).
+  const progressEl = document.getElementById('scroll-progress');
+  if (progressEl) {
+    let ticking = false;
+    const updateProgress = () => {
+      const max = document.documentElement.scrollHeight - window.innerHeight;
+      const pct = max > 0 ? Math.min(100, (window.scrollY / max) * 100) : 0;
+      progressEl.style.width = pct + '%';
+      ticking = false;
+    };
+    const onScroll = () => {
+      if (!ticking) {
+        requestAnimationFrame(updateProgress);
+        ticking = true;
+      }
+    };
+    window.addEventListener('scroll', onScroll, { passive: true });
+    window.addEventListener('resize', onScroll);
+    updateProgress();
   }
 })();

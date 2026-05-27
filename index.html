@@ -3,9 +3,27 @@
 <head>
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <title>alleklussers</title>
-  <meta name="description" content="Eén aanspreekpunt voor uw verbouwing. Vaste prijzen, vertrouwde vakmensen." />
+  <title>alleklussers — Uw verbouwing, zonder gedoe.</title>
+  <meta name="description" content="Wij coördineren uw verbouwing van A tot Z. Eén aanspreekpunt, vaste prijzen, vertrouwde vakmensen." />
   <link rel="icon" href="logo.png" type="image/png" />
+  <link rel="apple-touch-icon" href="logo.png" />
+
+  <!-- Open Graph -->
+  <meta property="og:type" content="website" />
+  <meta property="og:locale" content="nl_NL" />
+  <meta property="og:locale:alternate" content="en_US" />
+  <meta property="og:site_name" content="alleklussers" />
+  <meta property="og:title" content="alleklussers — Uw verbouwing, zonder gedoe." />
+  <meta property="og:description" content="Wij coördineren uw verbouwing van A tot Z. Eén aanspreekpunt, vaste prijzen, vertrouwde vakmensen." />
+  <meta property="og:image" content="logo.png" />
+
+  <!-- Twitter / X -->
+  <meta name="twitter:card" content="summary_large_image" />
+  <meta name="twitter:title" content="alleklussers" />
+  <meta name="twitter:description" content="Eén aanspreekpunt voor uw verbouwing. Vaste prijzen, vertrouwde vakmensen." />
+  <meta name="twitter:image" content="logo.png" />
+
+  <meta name="theme-color" content="#0a0a0a" />
 
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
@@ -26,6 +44,9 @@
   <link rel="stylesheet" href="styles.css" />
 </head>
 <body class="bg-paper text-ink antialiased">
+
+  <!-- Editorial scroll progress indicator -->
+  <div id="scroll-progress" aria-hidden="true"></div>
 
   <!-- ========== HEADER ========== -->
   <header class="border-b border-rule sticky top-0 z-40 bg-paper/95 backdrop-blur">
@@ -284,7 +305,7 @@
       </div>
 
       <div class="space-y-20 lg:space-y-28 pb-28 max-w-4xl">
-        <figure>
+        <figure class="quote-figure"><span class="hanging-quote" aria-hidden="true">&ldquo;</span>
           <blockquote class="font-serif text-3xl lg:text-4xl leading-[1.2]">
             <span class="lang-nl">&ldquo;Eén nummer bellen, en alles werd geregeld. Precies wat ik nodig had.&rdquo;</span>
             <span class="lang-en">&ldquo;One number to call, and everything was handled. Exactly what I needed.&rdquo;</span>
@@ -292,7 +313,7 @@
           <figcaption class="eyebrow mt-6">— Marleen &amp; Tom</figcaption>
         </figure>
 
-        <figure>
+        <figure class="quote-figure"><span class="hanging-quote" aria-hidden="true">&ldquo;</span>
           <blockquote class="font-serif text-3xl lg:text-4xl leading-[1.2]">
             <span class="lang-nl">&ldquo;De prijs in week één was ook de prijs op de eindfactuur. Geen kleine lettertjes.&rdquo;</span>
             <span class="lang-en">&ldquo;The price agreed in week one was the price on the final invoice. No fine print.&rdquo;</span>
@@ -300,7 +321,7 @@
           <figcaption class="eyebrow mt-6">— Familie Yılmaz</figcaption>
         </figure>
 
-        <figure>
+        <figure class="quote-figure"><span class="hanging-quote" aria-hidden="true">&ldquo;</span>
           <blockquote class="font-serif text-3xl lg:text-4xl leading-[1.2]">
             <span class="lang-nl">&ldquo;Eindelijk een partij die de loodgieter en de tegelzetter laat samenwerken.&rdquo;</span>
             <span class="lang-en">&ldquo;Finally — a party that gets the plumber and the tiler to work together.&rdquo;</span>
@@ -337,7 +358,7 @@
         </div>
 
         <div class="col-span-12 lg:col-span-7 lg:border-l lg:border-rule lg:pl-20">
-          <form id="contact-form" class="space-y-10" novalidate>
+          <form id="contact-form" class="space-y-10">
             <div class="field">
               <label for="f-name"><span class="lang-nl">Naam</span><span class="lang-en">Name</span></label>
               <input type="text" id="f-name" name="name" required autocomplete="name" />
