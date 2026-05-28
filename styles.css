@@ -680,17 +680,17 @@ em {
   background-repeat: no-repeat;
   /* B&W editorial treatment — grayscale, slight contrast lift to keep depth */
   filter: grayscale(1) contrast(1.08);
-  opacity: 0.34;                /* mobile: atmospheric, well behind the text */
-  /* Sharper mask so the left third stays pure paper for the headline */
+  opacity: 0.28;                /* mobile: atmospheric, well behind the text */
+  /* Photo lives in the right third on mobile so the headline column is clean */
   mask-image: linear-gradient(to right,
     transparent 0%,
-    transparent 22%,
-    #000 62%,
+    transparent 35%,
+    #000 70%,
     #000 100%);
   -webkit-mask-image: linear-gradient(to right,
     transparent 0%,
-    transparent 22%,
-    #000 62%,
+    transparent 35%,
+    #000 70%,
     #000 100%);
 }
 .hero-content {
@@ -714,25 +714,32 @@ em {
 }
 @media (min-width: 1024px) {
   .hero-grid {
-    grid-template-columns: 1.5fr 1fr;
+    grid-template-columns: 1.55fr 1fr;
     grid-template-areas: "content art";
-    gap: 3rem;
+    gap: 1.5rem;                /* tighter so the bulb sits closer to the text */
   }
   .hero-grid::before {
-    opacity: 0.22;              /* desktop: quieter still, bulb is the focal point */
+    opacity: 0.22;
     background-position: right center;
+    /* Mask shifts further right so the photo concentrates near the bulb
+       and the gap between headline and image stops feeling empty. */
     mask-image: linear-gradient(to right,
       transparent 0%,
-      transparent 32%,
-      #000 72%,
+      transparent 42%,
+      #000 78%,
       #000 100%);
     -webkit-mask-image: linear-gradient(to right,
       transparent 0%,
-      transparent 32%,
-      #000 72%,
+      transparent 42%,
+      #000 78%,
       #000 100%);
   }
-  .hero-art { display: block; }
+  .hero-art { display: block; max-width: none; }
+  .hero-art svg {
+    width: 100%;
+    max-width: 100%;             /* fills the column, no artificial gap on the left */
+    margin: 0 auto;
+  }
 }
 
 /* Pendant bulb behaviour — filament breath, glow, hover wake-up, click flash.
