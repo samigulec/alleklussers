@@ -791,10 +791,13 @@ em {
   padding-top: 5rem;
   padding-bottom: 2rem;
 }
-.hero-art {
-  grid-area: art;
-  display: none;
+.hero-art-col {
+  display: none; /* shown only on desktop via media query */
   color: var(--ink);
+  width: 100%;
+}
+.hero-art {
+  display: block;
   width: 100%;
 }
 .hero-art svg {
@@ -806,12 +809,13 @@ em {
 }
 @media (min-width: 1024px) {
   .hero-grid {
-    grid-template-columns: 1.45fr 1fr;
+    grid-template-columns: 1.5fr 1fr;
     grid-template-areas: "content art";
     gap: 0;
     min-height: 78vh;
     min-height: 78dvh;
   }
+  /* 1 — photo sits strictly in the right half; left text zone stays clean */
   .hero-grid::before {
     content: '';
     position: absolute;
@@ -819,40 +823,107 @@ em {
     z-index: -1;
     background-image: url('hero.png');
     background-size: cover;
-    background-position: right 20% center;
+    background-position: right center;
     background-repeat: no-repeat;
-    filter: grayscale(1) contrast(1.2) brightness(0.82);
-    opacity: 0.72;
-    /* Full-bleed: photo spans the entire hero top to bottom, edge to edge.
-       Gradient mask melts it away on the left so the text column stays clean. */
+    /* 3 — punchy contrast: fuse box and craftsman read clearly, not washed out */
+    filter: grayscale(1) contrast(1.5) brightness(0.78);
+    opacity: 0.85;
     mask-image: linear-gradient(to right,
       transparent 0%,
-      transparent 28%,
-      rgba(0,0,0,0.25) 42%,
-      rgba(0,0,0,0.75) 56%,
-      #000 70%,
+      transparent 48%,
+      rgba(0,0,0,0.2) 55%,
+      rgba(0,0,0,0.8) 64%,
+      #000 74%,
       #000 100%);
     -webkit-mask-image: linear-gradient(to right,
       transparent 0%,
-      transparent 28%,
-      rgba(0,0,0,0.25) 42%,
-      rgba(0,0,0,0.75) 56%,
-      #000 70%,
+      transparent 48%,
+      rgba(0,0,0,0.2) 55%,
+      rgba(0,0,0,0.8) 64%,
+      #000 74%,
       #000 100%);
+  }
+  /* 2 — luxury white paper shield keeps heading crisp over the photo edge */
+  .hero-grid::after {
+    content: '';
+    position: absolute;
+    inset: 0;
+    z-index: 0;
+    pointer-events: none;
+    background: linear-gradient(to right,
+      var(--paper) 0%,
+      var(--paper) 40%,
+      rgba(250,250,250,0.75) 52%,
+      transparent 64%);
   }
   .hero-photo { display: none; }
   .hero-content {
+    position: relative;
+    z-index: 1;
     padding-top: 0;
     padding-bottom: 0;
+  }
+  /* 4 — right column wrapper: bulb shrunk, trust cards in empty space below */
+  .hero-art-col {
+    grid-area: art;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    padding: 3rem 0 3rem 1rem;
+    position: relative;
+    z-index: 1;
   }
   .hero-art {
     display: block;
     max-width: none;
   }
   .hero-art svg {
-    width: 100%;
-    max-width: 100%;
-    margin: 0;                   /* left-aligned in the column; bulb already sits on the left within its viewBox */
+    width: 55%;
+    max-width: 220px;
+    margin-left: auto;
+    margin-right: 0;
+    display: block;
+  }
+}
+
+/* 5 — desktop trust mini-cards below the bulb in the right column */
+.hero-trust-mini { display: none; }
+@media (min-width: 1024px) {
+  .hero-trust-mini {
+    display: flex;
+    flex-direction: column;
+    gap: 0;
+    margin-top: 2rem;
+  }
+  .hero-trust-mini li {
+    display: flex;
+    align-items: flex-start;
+    gap: 0.75rem;
+    padding: 0.85rem 0;
+    border-top: 1px solid rgba(10,10,10,0.13);
+  }
+  .hero-trust-mini li:last-child {
+    border-bottom: 1px solid rgba(10,10,10,0.13);
+  }
+  .hero-trust-mini__icon {
+    width: 1rem;
+    height: 1rem;
+    flex-shrink: 0;
+    margin-top: 0.2rem;
+    color: var(--accent);
+  }
+  .hero-trust-mini__title {
+    display: block;
+    font-size: 0.8rem;
+    font-weight: 500;
+    color: var(--ink);
+    letter-spacing: -0.01em;
+  }
+  .hero-trust-mini__sub {
+    display: block;
+    font-size: 0.7rem;
+    color: var(--muted);
+    margin-top: 0.12rem;
   }
 }
 
