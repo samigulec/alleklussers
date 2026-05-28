@@ -66,6 +66,9 @@ body {
   font-family: 'Manrope', system-ui, sans-serif;
   font-weight: 400;
   line-height: 1.55;
+  /* Safety net — clip any accidental horizontal overflow without breaking
+     position: sticky on the header (which 'hidden' would). */
+  overflow-x: clip;
 }
 
 .font-serif {
@@ -140,13 +143,16 @@ body {
 .menu-btn.is-open .menu-icon__bar:nth-child(2) { opacity: 0; transform: scaleX(0); }
 .menu-btn.is-open .menu-icon__bar:nth-child(3) { transform: translateY(-7.25px) rotate(-45deg); }
 
-/* Full-screen mobile menu — slides down from top with fade */
+/* Full-screen mobile menu — inverted (ink on paper for the rest of the site,
+   so this is paper on ink). Strong contrast vs the page below so the open
+   state reads instantly as "I'm in the menu now". */
 .mobile-menu {
   position: fixed;
   top: 0; left: 0; right: 0;
   bottom: 0;
-  background: var(--paper);
-  z-index: 45;        /* below the menu button (60) so the X stays tappable */
+  background: var(--ink);
+  color: var(--paper);
+  z-index: 45;
   padding: 6rem 1.5rem max(2rem, env(safe-area-inset-bottom));
   display: flex;
   flex-direction: column;
@@ -174,9 +180,9 @@ body {
   letter-spacing: -0.025em;
   line-height: 1.1;
   padding: 1rem 0;
-  border-bottom: 1px solid var(--rule);
+  border-bottom: 1px solid rgba(250, 250, 250, 0.14);
   display: block;
-  color: var(--ink);
+  color: var(--paper);
   transition: padding-left 360ms cubic-bezier(.22,.61,.36,1),
               font-style 200ms ease;
 }
@@ -190,10 +196,12 @@ body {
   flex-direction: column;
   gap: 0.85rem;
   font-size: 0.95rem;
-  color: var(--muted);
+  color: rgba(250, 250, 250, 0.55);
+  border-top: 1px solid rgba(250, 250, 250, 0.14);
+  padding-top: 1.5rem;
 }
 .mobile-menu__contact {
-  color: var(--ink);
+  color: var(--paper);
   padding: 0.4rem 0;
 }
 /* Stagger nav links into view when menu opens */
@@ -211,7 +219,9 @@ body {
 }
 
 /* When menu is open: lock body scroll, hide floating chrome so the overlay
-   reads as a focused, dedicated nav surface */
+   reads as a focused, dedicated nav surface. Header fades to transparent
+   so the dark menu reads as one continuous surface; hamburger morph
+   recolours to paper to stay visible against ink. */
 body.menu-open { overflow: hidden; }
 body.menu-open #contact-widget,
 body.menu-open #scroll-progress {
@@ -219,6 +229,20 @@ body.menu-open #scroll-progress {
   pointer-events: none;
   transition: opacity 200ms ease;
 }
+body.menu-open header {
+  background: transparent !important;
+  border-color: transparent;
+  backdrop-filter: none;
+  -webkit-backdrop-filter: none;
+}
+body.menu-open header > div > a:first-child,
+body.menu-open header .lang-pill {
+  opacity: 0;
+  pointer-events: none;
+  transition: opacity 200ms ease;
+}
+body.menu-open .menu-btn { color: var(--paper); }
+body.menu-open .menu-icon__bar { background: var(--paper); }
 
 /* Nav "Meer" dropdown */
 .nav-more {
@@ -396,6 +420,9 @@ em {
   line-height: 0.95;
   letter-spacing: -0.04em;
   font-weight: 300;
+  overflow-wrap: break-word;
+  word-break: normal;
+  hyphens: manual;
 }
 .h-section {
   font-size: clamp(2rem, 5vw, 4rem);
