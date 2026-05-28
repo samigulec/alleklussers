@@ -455,7 +455,7 @@ body.menu-open header {
   -webkit-backdrop-filter: none;
 }
 body.menu-open header > div > a:first-child,
-body.menu-open header .lang-pill {
+body.menu-open header .lang-select {
   opacity: 0;
   pointer-events: none;
   transition: opacity 200ms ease;
@@ -520,26 +520,87 @@ body.menu-open .menu-icon__bar { background: var(--paper); }
 }
 .nav-more__ext span { opacity: 0.6; }
 
-/* Language pill */
-.lang-pill {
+/* Language selector — compact globe + 2-letter code trigger, dropdown of 6 langs */
+.lang-select {
+  position: relative;
+}
+.lang-select__trigger {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.4rem;
+  padding: 0.4rem 0.65rem;
   border: 1px solid var(--ink);
   border-radius: 999px;
-  display: inline-flex;
-  overflow: hidden;
+  background: transparent;
+  color: var(--ink);
   font-size: 0.7rem;
   letter-spacing: 0.12em;
   text-transform: uppercase;
-}
-.lang-pill button {
-  padding: 0.35rem 0.75rem;
-  background: transparent;
-  color: var(--ink);
-  transition: background 200ms ease, color 200ms ease;
   font-weight: 600;
+  cursor: pointer;
+  transition: background 200ms ease, color 200ms ease;
 }
-.lang-pill button.is-active {
+.lang-select__trigger:hover { background: var(--ink); color: var(--paper); }
+.lang-select.is-open .lang-select__trigger { background: var(--ink); color: var(--paper); }
+.lang-select__globe { width: 14px; height: 14px; }
+.lang-select__caret {
+  width: 8px; height: 5px;
+  transition: transform 220ms ease;
+}
+.lang-select.is-open .lang-select__caret { transform: rotate(180deg); }
+.lang-select__menu {
+  position: absolute;
+  top: calc(100% + 0.5rem);
+  right: 0;
+  background: var(--paper);
+  border: 1px solid var(--ink);
+  min-width: 200px;
+  padding: 0.4rem 0;
+  z-index: 100;
+  opacity: 0;
+  visibility: hidden;
+  transform: translateY(-6px);
+  transition: opacity 220ms ease, transform 220ms ease, visibility 220ms ease;
+}
+.lang-select.is-open .lang-select__menu {
+  opacity: 1;
+  visibility: visible;
+  transform: translateY(0);
+}
+.lang-select__menu button {
+  display: flex;
+  align-items: center;
+  gap: 0.85rem;
+  width: 100%;
+  padding: 0.65rem 1rem;
+  background: transparent;
+  border: 0;
+  text-align: left;
+  font-size: 0.85rem;
+  color: var(--ink);
+  cursor: pointer;
+  transition: background 160ms ease;
+}
+.lang-select__menu button:hover { background: rgba(0,0,0,0.04); }
+.lang-select__menu button.is-active {
   background: var(--ink);
   color: var(--paper);
+}
+.lang-select__menu button > span {
+  font-size: 0.65rem;
+  letter-spacing: 0.15em;
+  font-weight: 600;
+  text-transform: uppercase;
+  min-width: 22px;
+  opacity: 0.55;
+}
+.lang-select__menu button.is-active > span { opacity: 1; }
+[dir="rtl"] .lang-select__menu {
+  right: auto;
+  left: 0;
+}
+[dir="rtl"] .lang-select__menu button {
+  text-align: right;
 }
 
 /* Service rows — title-only with arrow that slides on hover */
@@ -594,9 +655,45 @@ ol li:last-child .service-row {
   text-underline-offset: 4px;
 }
 
-/* Bilingual visibility */
-[data-lang="en"] .lang-nl,
-[data-lang="nl"] .lang-en { display: none !important; }
+/* Multilingual visibility — hide all language spans by default,
+   then show only the one matching the active <html data-lang>. */
+.lang-nl, .lang-en, .lang-tr, .lang-ar, .lang-pl, .lang-de { display: none; }
+[data-lang="nl"] .lang-nl,
+[data-lang="en"] .lang-en,
+[data-lang="tr"] .lang-tr,
+[data-lang="ar"] .lang-ar,
+[data-lang="pl"] .lang-pl,
+[data-lang="de"] .lang-de { display: inline; }
+
+/* Arabic: render in Noto Naskh, drop italic emphasis (Arabic has no italic), */
+/* lean a little heavier instead, and flip arrow glyphs to point the right way. */
+[data-lang="ar"] body,
+[data-lang="ar"] .font-serif,
+[data-lang="ar"] em {
+  font-family: 'Noto Naskh Arabic', 'Fraunces', serif;
+}
+[data-lang="ar"] em {
+  font-style: normal;
+  font-weight: 700;
+}
+[dir="rtl"] .arrow {
+  display: inline-block;
+  transform: scaleX(-1);
+}
+[dir="rtl"] .nav-more__caret,
+[dir="rtl"] .lang-select__caret {
+  /* These already point downward — leave them. */
+}
+/* In RTL the editorial photo strip should fade from the opposite side */
+[dir="rtl"] .hero-grid::before {
+  background-position: left 20% center;
+  mask-image: linear-gradient(to left,
+    transparent 0%, transparent 28%, rgba(0,0,0,0.25) 42%,
+    rgba(0,0,0,0.75) 56%, #000 70%, #000 100%);
+  -webkit-mask-image: linear-gradient(to left,
+    transparent 0%, transparent 28%, rgba(0,0,0,0.25) 42%,
+    rgba(0,0,0,0.75) 56%, #000 70%, #000 100%);
+}
 
 /* Eyebrow label */
 .eyebrow {

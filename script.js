@@ -5,7 +5,12 @@
   const navLinks = document.querySelectorAll('[data-nav]');
   const views = document.querySelectorAll('.view');
   const langButtons = document.querySelectorAll('[data-lang-set]');
+  const langSelect = document.querySelector('[data-lang-select]');
+  const langSelectTrigger = langSelect && langSelect.querySelector('.lang-select__trigger');
+  const langCodeLabel = document.querySelector('[data-lang-code]');
 
+  const SUPPORTED_LANGS = ['nl', 'en', 'tr', 'ar', 'pl', 'de'];
+  const RTL_LANGS = ['ar'];
   let currentLang = 'nl';
   let currentView = 'home';
 
@@ -26,10 +31,14 @@
   });
 
   function setLang(lang) {
+    if (!SUPPORTED_LANGS.includes(lang)) lang = 'nl';
     currentLang = lang;
     root.setAttribute('data-lang', lang);
-    document.documentElement.lang = lang;
+    root.setAttribute('lang', lang);
+    root.setAttribute('dir', RTL_LANGS.includes(lang) ? 'rtl' : 'ltr');
     langButtons.forEach(b => b.classList.toggle('is-active', b.dataset.langSet === lang));
+    if (langCodeLabel) langCodeLabel.textContent = lang.toUpperCase();
+    closeLangMenu();
     try { localStorage.setItem('ak_lang', lang); } catch (e) {}
   }
 
@@ -37,11 +46,36 @@
     b.addEventListener('click', () => setLang(b.dataset.langSet));
   });
 
-  // Init language
+  // Language dropdown — open/close, outside click, Escape
+  function closeLangMenu() {
+    if (!langSelect) return;
+    langSelect.classList.remove('is-open');
+    if (langSelectTrigger) langSelectTrigger.setAttribute('aria-expanded', 'false');
+  }
+  if (langSelect && langSelectTrigger) {
+    langSelectTrigger.addEventListener('click', e => {
+      e.stopPropagation();
+      const open = langSelect.classList.toggle('is-open');
+      langSelectTrigger.setAttribute('aria-expanded', open ? 'true' : 'false');
+    });
+    document.addEventListener('click', e => {
+      if (!langSelect.contains(e.target)) closeLangMenu();
+    });
+    document.addEventListener('keydown', e => {
+      if (e.key === 'Escape') closeLangMenu();
+    });
+  }
+
+  // Init language — prefer saved, then browser language, fallback nl
   let initialLang = 'nl';
   try {
     const saved = localStorage.getItem('ak_lang');
-    if (saved === 'en' || saved === 'nl') initialLang = saved;
+    if (SUPPORTED_LANGS.includes(saved)) {
+      initialLang = saved;
+    } else if (navigator.language) {
+      const browserLang = navigator.language.slice(0, 2).toLowerCase();
+      if (SUPPORTED_LANGS.includes(browserLang)) initialLang = browserLang;
+    }
   } catch (e) {}
   setLang(initialLang);
 
