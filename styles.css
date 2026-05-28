@@ -815,73 +815,62 @@ em {
     min-height: 78vh;
     min-height: 78dvh;
   }
-  /* Photo: full opacity so the right portion is crisp, all fading is done
-     purely by the mask — opacity 1 means no global wash on the vivid zone */
-  .hero-grid::before {
-    content: '';
-    position: absolute;
-    inset: 0;
-    z-index: -1;
-    background-image: url('hero.png');
-    background-size: cover;
-    background-position: right center;
-    background-repeat: no-repeat;
-    filter: grayscale(1) contrast(1.6) brightness(0.88);
-    opacity: 1;
-    /* Mask: left half invisible, sharp ramp from 46-60%, fully visible 60%+ */
-    mask-image: linear-gradient(to right,
-      transparent 0%,
-      transparent 44%,
-      rgba(0,0,0,0.08) 50%,
-      rgba(0,0,0,0.7) 57%,
-      #000 63%,
-      #000 100%);
-    -webkit-mask-image: linear-gradient(to right,
-      transparent 0%,
-      transparent 44%,
-      rgba(0,0,0,0.08) 50%,
-      rgba(0,0,0,0.7) 57%,
-      #000 63%,
-      #000 100%);
-  }
-  /* White shield: solid paper on the left, fades out before the photo starts */
-  .hero-grid::after {
-    content: '';
-    position: absolute;
-    inset: 0;
-    z-index: 0;
-    pointer-events: none;
-    background: linear-gradient(to right,
-      var(--paper) 0%,
-      var(--paper) 42%,
-      rgba(250,250,250,0.6) 50%,
-      rgba(250,250,250,0.05) 58%,
-      transparent 63%);
-  }
+  /* Photo is no longer full-bleed — it lives only in the right column.
+     Both pseudo-elements are cleared here. */
+  .hero-grid::before { content: none; }
+  .hero-grid::after  { content: none; }
   .hero-photo { display: none; }
   .hero-content {
-    position: relative;
-    z-index: 1;
     padding-top: 0;
     padding-bottom: 0;
+    /* Left column stays pure --paper, no z-index tricks needed */
   }
-  /* Right column: bulb top-right, trust cards anchored to the bottom */
+  /* Right column: photo fills exactly this box, zero bleed into text area */
   .hero-art-col {
     grid-area: art;
+    position: relative;
+    overflow: hidden;
     display: flex;
     flex-direction: column;
     justify-content: space-between;
     padding: 3rem 2rem 3rem 1.5rem;
-    position: relative;
+  }
+  /* Photo lives as a pseudo on the column — clipped by overflow: hidden */
+  .hero-art-col::before {
+    content: '';
+    position: absolute;
+    inset: 0;
+    background: url('hero.png') center / cover no-repeat;
+    filter: grayscale(1) contrast(1.6) brightness(0.88);
+    /* Feather the left edge 4% so there's no hard vertical cut */
+    mask-image: linear-gradient(to right, transparent 0%, #000 4%);
+    -webkit-mask-image: linear-gradient(to right, transparent 0%, #000 4%);
+    z-index: 0;
+  }
+  /* Bottom fade: trust cards get a clean readable background */
+  .hero-art-col::after {
+    content: '';
+    position: absolute;
+    inset: 0;
+    pointer-events: none;
+    background: linear-gradient(to bottom,
+      transparent 0%,
+      transparent 42%,
+      rgba(250,250,250,0.55) 65%,
+      rgba(250,250,250,0.92) 82%,
+      var(--paper) 100%);
     z-index: 1;
   }
+  /* All children above both pseudo layers */
   .hero-art {
     display: block;
     max-width: none;
+    position: relative;
+    z-index: 2;
   }
   .hero-art svg {
-    width: 55%;
-    max-width: 220px;
+    width: 52%;
+    max-width: 210px;
     margin-left: auto;
     margin-right: 0;
     display: block;
@@ -896,6 +885,8 @@ em {
     flex-direction: column;
     gap: 0;
     margin-top: 2rem;
+    position: relative;
+    z-index: 2;
   }
   .hero-trust-mini li {
     display: flex;
