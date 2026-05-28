@@ -48,6 +48,36 @@
   <!-- Editorial scroll progress indicator -->
   <div id="scroll-progress" aria-hidden="true"></div>
 
+  <!-- ========== TOP INFO BAR ========== -->
+  <div class="top-bar">
+    <div class="top-bar__inner">
+      <div class="top-bar__cluster">
+        <span class="top-bar__item">
+          <svg class="top-bar__icon" viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="1.2" stroke-linecap="round" stroke-linejoin="round">
+            <circle cx="8" cy="8" r="6.5"/><polyline points="8 4 8 8 10.5 9.5"/>
+          </svg>
+          <span class="lang-nl">24/7 Bereikbaar</span><span class="lang-en">24/7 Reachable</span>
+        </span>
+        <span class="top-bar__item top-bar__item--hide-sm">
+          <svg class="top-bar__icon" viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="1.2" stroke-linecap="round" stroke-linejoin="round">
+            <path d="M8 1.5C5.5 1.5 3.5 3.5 3.5 6c0 3.5 4.5 8 4.5 8s4.5-4.5 4.5-8c0-2.5-2-4.5-4.5-4.5z"/>
+            <circle cx="8" cy="6" r="1.4"/>
+          </svg>
+          <span class="lang-nl">Heel Nederland</span><span class="lang-en">Throughout NL</span>
+        </span>
+      </div>
+      <div class="top-bar__cluster">
+        <span class="top-bar__item">
+          <svg class="top-bar__icon" viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="1.2" stroke-linecap="round" stroke-linejoin="round">
+            <path d="M8 1.5L13 3.5v4c0 3.5-2.5 6-5 7-2.5-1-5-3.5-5-7v-4l5-2z"/>
+            <polyline points="5.5 8 7 9.5 10.5 6"/>
+          </svg>
+          <span class="lang-nl">Verzekerde vakmensen</span><span class="lang-en">Insured craftsmen</span>
+        </span>
+      </div>
+    </div>
+  </div>
+
   <!-- ========== HEADER ========== -->
   <header class="border-b border-rule sticky top-0 z-50 bg-paper/95 backdrop-blur">
     <div class="max-w-[1400px] mx-auto px-6 lg:px-12 py-4 flex items-center justify-between gap-6">
@@ -118,21 +148,59 @@
       <!-- HERO -->
       <div class="hero-grid py-20">
         <div class="hero-content">
+          <p class="eyebrow mb-6">
+            <span class="lang-nl">Veiligheid · Kwaliteit · Op tijd</span>
+            <span class="lang-en">Safety · Quality · On time</span>
+          </p>
           <h1 class="font-serif h-display max-w-[14ch]">
             <span class="lang-nl">Uw verbouwing, <em>zonder gedoe</em>.</span>
             <span class="lang-en">Your renovation, <em>without the hassle</em>.</span>
           </h1>
-          <div class="mt-14 flex items-center gap-10">
+          <p class="hero-lede mt-8 max-w-xl">
+            <span class="lang-nl">Met ons vaste netwerk van vakmensen leveren wij betrouwbare, snelle en kwalitatieve oplossingen — van complete verbouwingen tot kleine reparaties.</span>
+            <span class="lang-en">With our steady network of craftsmen we deliver reliable, fast and high-quality solutions — from full renovations to small repairs.</span>
+          </p>
+          <div class="mt-10 flex flex-wrap items-center gap-6">
             <a href="#contact" data-nav="contact" class="btn-ink">
-              <span class="lang-nl">Plan een gesprek</span>
-              <span class="lang-en">Get in touch</span>
+              <span class="lang-nl">Offerte aanvragen</span>
+              <span class="lang-en">Request a quote</span>
               <span class="arrow">→</span>
             </a>
-            <a href="#services" data-nav="services" class="text-sm navlink hidden sm:inline">
+            <a href="#services" data-nav="services" class="btn-outline">
               <span class="lang-nl">Onze diensten</span>
               <span class="lang-en">Services</span>
+              <span class="arrow">→</span>
             </a>
           </div>
+          <ul class="hero-badges mt-10">
+            <li>
+              <svg class="hero-badge__icon" viewBox="0 0 20 20" fill="none" stroke="currentColor" stroke-width="1.2" stroke-linecap="round" stroke-linejoin="round">
+                <circle cx="10" cy="10" r="8"/><polyline points="6 10 9 13 14 7"/>
+              </svg>
+              <div>
+                <span class="hero-badge__title"><span class="lang-nl">Vrijblijvend gesprek</span><span class="lang-en">No-obligation talk</span></span>
+                <span class="hero-badge__sub"><span class="lang-nl">Bij u thuis</span><span class="lang-en">At your home</span></span>
+              </div>
+            </li>
+            <li>
+              <svg class="hero-badge__icon" viewBox="0 0 20 20" fill="none" stroke="currentColor" stroke-width="1.2" stroke-linecap="round" stroke-linejoin="round">
+                <circle cx="10" cy="10" r="8"/><polyline points="10 5 10 10 13 12"/>
+              </svg>
+              <div>
+                <span class="hero-badge__title"><span class="lang-nl">Op tijd opgeleverd</span><span class="lang-en">Delivered on time</span></span>
+                <span class="hero-badge__sub"><span class="lang-nl">Zoals afgesproken</span><span class="lang-en">As agreed</span></span>
+              </div>
+            </li>
+            <li>
+              <svg class="hero-badge__icon" viewBox="0 0 20 20" fill="none" stroke="currentColor" stroke-width="1.2" stroke-linecap="round" stroke-linejoin="round">
+                <path d="M10 2l2.4 5 5.6.6-4 3.8 1 5.6L10 14.5 5 17l1-5.6L2 7.6l5.6-.6z"/>
+              </svg>
+              <div>
+                <span class="hero-badge__title"><span class="lang-nl">100% Tevredenheid</span><span class="lang-en">100% Satisfaction</span></span>
+                <span class="hero-badge__sub"><span class="lang-nl">Kwaliteitsgarantie</span><span class="lang-en">Quality guarantee</span></span>
+              </div>
+            </li>
+          </ul>
         </div>
 
         <!-- Hero composition: a pendant Edison bulb hanging from a cord.
@@ -228,6 +296,30 @@
           </svg>
         </div>
       </div>
+
+      <!-- STATS — proof at a glance, four big serif numbers -->
+      <ul class="stats-row py-16 lg:py-20">
+        <li>
+          <span class="stats-row__num">24/7</span>
+          <span class="stats-row__label"><span class="lang-nl">Bereikbaar</span><span class="lang-en">Reachable</span></span>
+          <span class="stats-row__sub"><span class="lang-nl">Mail of WhatsApp</span><span class="lang-en">Mail or WhatsApp</span></span>
+        </li>
+        <li>
+          <span class="stats-row__num">120<span class="stats-row__plus">+</span></span>
+          <span class="stats-row__label"><span class="lang-nl">Projecten</span><span class="lang-en">Projects</span></span>
+          <span class="stats-row__sub"><span class="lang-nl">Succesvol opgeleverd</span><span class="lang-en">Successfully delivered</span></span>
+        </li>
+        <li>
+          <span class="stats-row__num">4,9<span class="stats-row__den">/5</span></span>
+          <span class="stats-row__label"><span class="lang-nl">Beoordeling</span><span class="lang-en">Rating</span></span>
+          <span class="stats-row__sub"><span class="lang-nl">Op basis van reviews</span><span class="lang-en">Based on reviews</span></span>
+        </li>
+        <li>
+          <span class="stats-row__num">100<span class="stats-row__den">%</span></span>
+          <span class="stats-row__label"><span class="lang-nl">Verzekerd</span><span class="lang-en">Insured</span></span>
+          <span class="stats-row__sub"><span class="lang-nl">Vakmensen met certificaat</span><span class="lang-en">Certified craftsmen</span></span>
+        </li>
+      </ul>
 
       <div class="hairline"></div>
 
@@ -582,6 +674,48 @@
     </section>
 
   </main>
+
+  <!-- ========== TRUST BAR (above footer, every page) ========== -->
+  <section class="trust-bar" aria-label="Reasons to choose us">
+    <div class="trust-bar__inner">
+      <div class="trust-bar__item">
+        <svg class="trust-bar__icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.3" stroke-linecap="round" stroke-linejoin="round">
+          <path d="M3 8l9-5 9 5"/><rect x="5" y="10" width="14" height="10"/><line x1="9" y1="14" x2="9" y2="20"/><line x1="15" y1="14" x2="15" y2="20"/>
+        </svg>
+        <div>
+          <span class="trust-bar__title"><span class="lang-nl">Transparante prijzen</span><span class="lang-en">Transparent pricing</span></span>
+          <span class="trust-bar__sub"><span class="lang-nl">Geen verborgen kosten</span><span class="lang-en">No hidden costs</span></span>
+        </div>
+      </div>
+      <div class="trust-bar__item">
+        <svg class="trust-bar__icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.3" stroke-linecap="round" stroke-linejoin="round">
+          <rect x="3" y="5" width="18" height="16" rx="0"/><line x1="3" y1="10" x2="21" y2="10"/><line x1="8" y1="3" x2="8" y2="7"/><line x1="16" y1="3" x2="16" y2="7"/>
+        </svg>
+        <div>
+          <span class="trust-bar__title"><span class="lang-nl">Gratis kennismaking</span><span class="lang-en">Free intake</span></span>
+          <span class="trust-bar__sub"><span class="lang-nl">Vrijblijvend bij u thuis</span><span class="lang-en">At your home, no strings</span></span>
+        </div>
+      </div>
+      <div class="trust-bar__item">
+        <svg class="trust-bar__icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.3" stroke-linecap="round" stroke-linejoin="round">
+          <path d="M12 2l8 4v6c0 5-3.5 9-8 10-4.5-1-8-5-8-10V6l8-4z"/><polyline points="8.5 12.5 11 15 16 9.5"/>
+        </svg>
+        <div>
+          <span class="trust-bar__title"><span class="lang-nl">1 Jaar garantie</span><span class="lang-en">1 Year warranty</span></span>
+          <span class="trust-bar__sub"><span class="lang-nl">Op alle werkzaamheden</span><span class="lang-en">On all work</span></span>
+        </div>
+      </div>
+      <div class="trust-bar__item">
+        <svg class="trust-bar__icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.3" stroke-linecap="round" stroke-linejoin="round">
+          <path d="M13 2L4 14h7l-1 8 9-12h-7l1-8z"/>
+        </svg>
+        <div>
+          <span class="trust-bar__title"><span class="lang-nl">24/7 Bereikbaar</span><span class="lang-en">24/7 Reachable</span></span>
+          <span class="trust-bar__sub"><span class="lang-nl">Altijd antwoord via chat</span><span class="lang-en">Always answered via chat</span></span>
+        </div>
+      </div>
+    </div>
+  </section>
 
   <!-- ========== FOOTER ========== -->
   <footer class="footer-dark mt-12">
