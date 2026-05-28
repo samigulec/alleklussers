@@ -678,20 +678,19 @@ em {
   background-size: cover;
   background-position: center right;
   background-repeat: no-repeat;
-  /* B&W editorial treatment — grayscale, slight contrast lift to keep depth */
-  filter: grayscale(1) contrast(1.08);
-  opacity: 0.28;                /* mobile: atmospheric, well behind the text */
-  /* Photo lives in the right third on mobile so the headline column is clean */
-  mask-image: linear-gradient(to right,
+  filter: grayscale(1) contrast(1.15) brightness(0.9);
+  opacity: 0.45;
+  mix-blend-mode: multiply;
+  mask-image: linear-gradient(135deg,
     transparent 0%,
-    transparent 35%,
-    #000 70%,
-    #000 100%);
-  -webkit-mask-image: linear-gradient(to right,
+    transparent 30%,
+    rgba(0,0,0,0.6) 55%,
+    #000 80%);
+  -webkit-mask-image: linear-gradient(135deg,
     transparent 0%,
-    transparent 35%,
-    #000 70%,
-    #000 100%);
+    transparent 30%,
+    rgba(0,0,0,0.6) 55%,
+    #000 80%);
 }
 .hero-content {
   grid-area: content;
@@ -719,17 +718,20 @@ em {
     gap: 0;                     /* the bulb's viewBox already supplies its own breathing room */
   }
   .hero-grid::before {
-    opacity: 0.22;
+    opacity: 0.55;
     background-position: right center;
+    background-size: cover;
+    mix-blend-mode: multiply;
+    filter: grayscale(1) contrast(1.12) brightness(0.92);
     mask-image: linear-gradient(to right,
       transparent 0%,
-      transparent 42%,
-      #000 78%,
+      transparent 40%,
+      rgba(0,0,0,0.7) 65%,
       #000 100%);
     -webkit-mask-image: linear-gradient(to right,
       transparent 0%,
-      transparent 42%,
-      #000 78%,
+      transparent 40%,
+      rgba(0,0,0,0.7) 65%,
       #000 100%);
   }
   .hero-art {
