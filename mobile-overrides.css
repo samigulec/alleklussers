@@ -1,0 +1,295 @@
+/* Mobile-first refinements for AlleKlussers.
+   Keeps the premium desktop look, but makes phone screens faster, clearer and more conversion-focused. */
+
+@media (max-width: 767px) {
+  body {
+    overflow-x: hidden;
+  }
+
+  .top-bar {
+    font-size: 0.72rem;
+  }
+
+  .top-bar__inner {
+    min-height: 32px;
+    padding-inline: 1.25rem;
+    justify-content: space-between;
+  }
+
+  .top-bar__item--hide-sm {
+    display: none !important;
+  }
+
+  header > div {
+    padding: 1.05rem 1.25rem !important;
+  }
+
+  .logo-img {
+    height: 46px !important;
+  }
+
+  .lang-select__trigger {
+    min-height: 38px;
+    padding-inline: 0.85rem;
+  }
+
+  .menu-btn {
+    width: 42px;
+    height: 42px;
+  }
+
+  main {
+    padding-inline: 1.35rem !important;
+  }
+
+  #view-home .hero-grid {
+    display: flex;
+    flex-direction: column;
+    gap: 1.65rem;
+    padding-top: 4.25rem !important;
+    padding-bottom: 2.75rem !important;
+    min-height: auto;
+  }
+
+  #view-home .hero-content {
+    max-width: none;
+  }
+
+  #view-home .eyebrow {
+    font-size: 0.68rem;
+    letter-spacing: 0.26em;
+    margin-bottom: 1.35rem !important;
+  }
+
+  #view-home .h-display {
+    max-width: 7.6ch !important;
+    font-size: clamp(4.15rem, 18vw, 5.45rem) !important;
+    line-height: 0.88 !important;
+    letter-spacing: -0.06em !important;
+  }
+
+  #view-home .h-display > span::after {
+    font-size: clamp(4.15rem, 18vw, 5.45rem) !important;
+    line-height: 0.88 !important;
+  }
+
+  #view-home .hero-lede {
+    margin-top: 1.6rem !important;
+    max-width: 100% !important;
+    font-size: 1.02rem !important;
+    line-height: 1.58 !important;
+  }
+
+  #view-home .hero-lede > span::after {
+    font-size: 1.02rem !important;
+    line-height: 1.58 !important;
+  }
+
+  #view-home .hero-content .mt-10.flex {
+    margin-top: 1.9rem !important;
+    display: grid !important;
+    grid-template-columns: 1fr;
+    gap: 0.9rem !important;
+  }
+
+  #view-home .btn-ink,
+  #view-home .btn-outline {
+    width: 100%;
+    min-height: 58px;
+    justify-content: center;
+    letter-spacing: 0.19em;
+    font-size: 0.72rem;
+  }
+
+  #view-home .hero-photo {
+    display: block !important;
+    order: 2;
+    height: clamp(230px, 64vw, 315px);
+    margin-top: 0.6rem;
+    border: 1px solid var(--rule);
+    background: linear-gradient(to bottom, rgba(250,250,250,0) 0%, rgba(250,250,250,0.18) 64%, var(--paper) 100%), url('hero.png') 48% center / cover no-repeat;
+    filter: grayscale(0.04) contrast(1.16) brightness(1) saturate(1.12);
+    box-shadow: 0 18px 42px rgba(10, 10, 10, 0.08);
+    -webkit-mask-image: none !important;
+    mask-image: none !important;
+  }
+
+  #view-home .hero-badges {
+    order: 3;
+    margin-top: 0.25rem !important;
+    padding-top: 1.25rem !important;
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 0;
+    border-top: 1px solid var(--rule);
+  }
+
+  #view-home .hero-badges li {
+    padding: 0.9rem 0;
+    border-bottom: 1px solid var(--rule);
+    align-items: flex-start;
+  }
+
+  #view-home .hero-badge__title {
+    font-size: 0.9rem;
+  }
+
+  #view-home .hero-badge__sub {
+    font-size: 0.76rem;
+  }
+
+  #view-home .hero-art-col {
+    display: none !important;
+  }
+
+  #view-home .stats-row {
+    padding-top: 3rem !important;
+    padding-bottom: 3rem !important;
+    display: grid;
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    gap: 1.4rem 1rem;
+  }
+
+  #view-home .home-services {
+    padding-top: 3.8rem !important;
+    padding-bottom: 4rem !important;
+  }
+
+  #view-home .home-services__head {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 1.8rem;
+  }
+
+  #view-home .home-services__head h2,
+  #view-home .h-section {
+    max-width: 8.4ch !important;
+    font-size: clamp(3.4rem, 16vw, 4.9rem) !important;
+    line-height: 0.9 !important;
+  }
+
+  #view-home .home-services__head h2 span::after {
+    font-size: clamp(3.4rem, 16vw, 4.9rem) !important;
+    line-height: 0.9 !important;
+  }
+
+  #view-home .home-photo {
+    width: 100%;
+    height: 230px;
+  }
+
+  #view-home .home-services__grid {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 0.9rem;
+    margin-top: 2rem;
+  }
+
+  #view-home .home-card {
+    min-height: auto;
+    padding: 1.55rem 1.35rem 1.2rem;
+  }
+
+  #view-home .home-card__title span::after,
+  #view-home .home-card__title {
+    font-size: 1.55rem !important;
+  }
+
+  #view-home .home-card__desc span::after,
+  #view-home .home-card__desc {
+    font-size: 0.9rem !important;
+    line-height: 1.55 !important;
+  }
+
+  #view-home .home-services__all {
+    margin-top: 1.6rem;
+    text-align: left;
+  }
+
+  #view-about .pt-20,
+  #view-services .pt-20,
+  #view-references .pt-20,
+  #view-contact .pt-20 {
+    padding-top: 4rem !important;
+  }
+
+  #view-about .h-display,
+  #view-services .h-display,
+  #view-references .h-display,
+  #view-contact .h-display {
+    max-width: 8ch !important;
+    font-size: clamp(3.75rem, 17vw, 5.2rem) !important;
+    line-height: 0.9 !important;
+  }
+
+  #view-about .h-display > span::after {
+    font-size: clamp(3.75rem, 17vw, 5.2rem) !important;
+    line-height: 0.9 !important;
+  }
+
+  #view-about .about-block {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 2rem;
+  }
+
+  #view-about .about-photo {
+    width: 100%;
+    height: 250px;
+  }
+
+  #view-about .about-stats {
+    display: grid;
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+    gap: 0;
+  }
+
+  .trust-bar__inner {
+    grid-template-columns: 1fr !important;
+    gap: 0;
+    padding-block: 1rem;
+  }
+
+  .trust-bar__item {
+    padding: 0.95rem 0;
+    border-bottom: 1px solid var(--rule);
+  }
+
+  .footer-dark .grid {
+    gap: 2.5rem !important;
+  }
+
+  #contact-widget {
+    right: 1rem;
+    bottom: 1rem;
+  }
+
+  #contact-fab {
+    width: 58px;
+    height: 58px;
+    border-radius: 999px;
+    padding: 0;
+    justify-content: center;
+    box-shadow: 0 18px 40px rgba(10,10,10,0.18);
+  }
+
+  #contact-fab .contact-fab__label {
+    display: none;
+  }
+
+  #contact-pop {
+    right: 0;
+    width: min(calc(100vw - 2rem), 360px);
+  }
+}
+
+@media (max-width: 390px) {
+  #view-home .h-display,
+  #view-home .h-display > span::after {
+    font-size: clamp(3.75rem, 17vw, 4.8rem) !important;
+  }
+
+  #view-home .hero-grid {
+    padding-top: 3.4rem !important;
+  }
+}
