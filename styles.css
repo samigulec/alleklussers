@@ -431,35 +431,47 @@ em {
   font-weight: 300;
 }
 
-/* Hero composition layout — text left, abstract SVG art right on desktop.
-   dvh is a progressive enhancement: vh covers older browsers, dvh tracks the
-   actual visible viewport on mobile Safari/Chrome (handles URL-bar shrink). */
+/* Hero composition layout. On mobile: bulb sits ABOVE the headline at a
+   smaller size, right-aligned. On desktop: side-by-side, bulb on the right.
+   Grid template areas swap the order at the lg breakpoint.
+   dvh is a progressive enhancement over vh for mobile Safari URL-bar shrink. */
 .hero-grid {
   display: grid;
   grid-template-columns: 1fr;
+  grid-template-areas:
+    "art"
+    "content";
   align-items: center;
-  gap: 4rem;
+  gap: 2rem;
   min-height: 78vh;
   min-height: 78dvh;
 }
 .hero-content {
+  grid-area: content;
   display: flex;
   flex-direction: column;
   justify-content: center;
 }
 .hero-art {
-  display: none;
+  grid-area: art;
+  display: block;
   color: var(--ink);
+  width: 100%;
+  max-width: 180px;
+  margin-left: auto;
 }
 .hero-art svg {
   width: 100%;
   height: auto;
-  max-width: 480px;
-  margin-left: auto;
+  display: block;
 }
 @media (min-width: 1024px) {
-  .hero-grid { grid-template-columns: 1.5fr 1fr; gap: 3rem; }
-  .hero-art  { display: block; }
+  .hero-grid {
+    grid-template-columns: 1.5fr 1fr;
+    grid-template-areas: "content art";
+    gap: 3rem;
+  }
+  .hero-art { max-width: 480px; }
 }
 
 /* Pendant bulb behaviour — filament breath, glow, hover wake-up, click flash.
@@ -573,6 +585,40 @@ em {
 }
 .hero-art.is-flashing .hero-cone {
   opacity: 0.55;
+}
+
+/* About — lede paragraph + editorial stat row */
+.about-lede {
+  font-size: clamp(1.4rem, 3.6vw, 2.2rem);
+  line-height: 1.25;
+  font-weight: 400;
+  letter-spacing: -0.015em;
+  color: var(--ink);
+}
+
+.about-stats {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 1rem;
+}
+.about-stats > div {
+  display: flex;
+  flex-direction: column;
+  gap: 0.35rem;
+}
+.about-stats dd {
+  font-size: clamp(1.5rem, 4vw, 2.5rem);
+  line-height: 1;
+  letter-spacing: -0.02em;
+  font-weight: 300;
+}
+@media (min-width: 768px) {
+  .about-stats { gap: 2.5rem; }
+  .about-stats > div { padding-left: 0; }
+  .about-stats > div + div {
+    border-left: 1px solid var(--rule);
+    padding-left: 2.5rem;
+  }
 }
 
 /* Service rows — icon + arrow group */
