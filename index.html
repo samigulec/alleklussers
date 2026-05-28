@@ -131,33 +131,58 @@
           </div>
         </div>
 
-        <!-- Editorial composition: a flowing power cable that loops across the
-             frame and ends in a plug, with a small lightning accent and a
-             balance dot. Hidden on mobile to keep the hero focused. -->
+        <!-- Hero composition: a pendant Edison bulb hanging from a cord.
+             Inside the glass, the filament is shaped like a house silhouette —
+             the spark we bring into your home. Four light particles float
+             around the bulb. Filament + particles pulse gently. -->
         <div class="hero-art" aria-hidden="true">
           <svg viewBox="0 0 400 520" fill="none" stroke="currentColor"
                stroke-linecap="round" stroke-linejoin="round">
 
-            <!-- Cable — two quadratic curves forming an S that travels from
-                 top-left, swings right, loops back left, then drops to plug -->
-            <path class="hero-cable" stroke-width="3.5"
-                  d="M 50 60 Q 380 120 200 260 Q 20 400 240 450" />
+            <!-- Hanging cord from the top of the frame -->
+            <line x1="200" y1="0" x2="200" y2="138" stroke-width="3" />
 
-            <!-- Plug body (filled rectangle at end of cable) -->
-            <rect x="215" y="448" width="50" height="30" fill="currentColor" stroke="none" />
-            <!-- Plug prongs sticking out the bottom -->
-            <rect x="225" y="478" width="6" height="22" fill="currentColor" stroke="none" />
-            <rect x="249" y="478" width="6" height="22" fill="currentColor" stroke="none" />
+            <!-- Bulb screw base — chunky rectangle with three thread lines -->
+            <path stroke-width="2.5" d="M 180 138 L 180 184 L 220 184 L 220 138" />
+            <line x1="180" y1="151" x2="220" y2="151" stroke-width="1.5" />
+            <line x1="180" y1="164" x2="220" y2="164" stroke-width="1.5" />
+            <line x1="180" y1="177" x2="220" y2="177" stroke-width="1.5" />
 
-            <!-- Lightning bolt — a small charge of energy in the empty top-right -->
-            <path fill="currentColor" stroke="none"
-                  d="M 332 88 L 360 88 L 342 124 L 366 124 L 316 188 L 340 144 L 318 144 Z" />
+            <!-- Bulb glass — Edison pear shape, single continuous curve -->
+            <path stroke-width="2.5" d="
+              M 180 184
+              C 158 202 128 234 120 300
+              C 112 372 154 444 200 444
+              C 246 444 288 372 280 300
+              C 272 234 242 202 220 184
+            " />
 
-            <!-- Balance dot — left margin, near bottom -->
-            <circle cx="78" cy="408" r="5" fill="currentColor" stroke="none" />
+            <!-- Filament — a continuous wire descending from the base,
+                 tracing a small house silhouette, then returning. -->
+            <path class="hero-filament" stroke-width="1.5" d="
+              M 188 198
+              Q 188 240, 173 270
+              L 168 320
+              L 168 384
+              L 232 384
+              L 232 320
+              L 227 270
+              Q 212 240, 212 198
+            " />
 
-            <!-- Quiet hairline mark, mid-left, as a horizontal counterweight -->
-            <line x1="50" y1="500" x2="170" y2="500" stroke-width="1.5" />
+            <!-- Tiny door inside the filament-house, drawn as a notch -->
+            <line class="hero-filament" x1="200" y1="384" x2="200" y2="356" stroke-width="1.2" />
+
+            <!-- Light particles drifting around the glass -->
+            <g class="hero-radiance">
+              <circle cx="72"  cy="278" r="3.5" fill="currentColor" stroke="none" />
+              <circle cx="332" cy="258" r="3"   fill="currentColor" stroke="none" />
+              <circle cx="346" cy="358" r="2.5" fill="currentColor" stroke="none" />
+              <circle cx="58"  cy="362" r="2"   fill="currentColor" stroke="none" />
+            </g>
+
+            <!-- Bottom hairline mark — horizontal counterweight -->
+            <line x1="80" y1="492" x2="210" y2="492" stroke-width="1.5" />
           </svg>
         </div>
       </div>
