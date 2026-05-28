@@ -151,8 +151,9 @@
             <!-- Group everything so we can swing it from the top of the cord -->
             <g class="hero-bulb">
 
-              <!-- Hanging cord from the top of the frame -->
-              <line x1="200" y1="0" x2="200" y2="138" stroke-width="3" />
+              <!-- Hanging cord — d is updated each frame by JS to flex
+                   slightly toward the cursor, like a flexible wire. -->
+              <path id="hero-cord" d="M 200 0 Q 200 69 200 138" stroke-width="3" />
 
               <!-- Bulb screw base — rectangle with three thread lines -->
               <path stroke-width="2.5" d="M 180 138 L 180 184 L 220 184 L 220 138" />

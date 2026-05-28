@@ -339,11 +339,12 @@ em {
   to { opacity: 1; }
 }
 @keyframes filament-glow {
-  0%, 100% { opacity: 0.55; }
-  50%      { opacity: 1; }
+  0%, 100% { opacity: 0.55; stroke: var(--ink); }
+  50%      { opacity: 1;    stroke: #3d2410; }
 }
 
-/* Glow halo behind the filament — blurred copy, fades in after the draw. */
+/* Glow halo behind the filament — blurred copy, fades in after the draw.
+   Picks up a slightly more saturated warm tone because the blur amplifies it. */
 .hero-filament-glow {
   opacity: 0;
   animation:
@@ -351,8 +352,25 @@ em {
     halo-glow 4.2s ease-in-out 2.6s infinite;
 }
 @keyframes halo-glow {
-  0%, 100% { opacity: 0.25; }
-  50%      { opacity: 0.6; }
+  0%, 100% { opacity: 0.25; stroke: var(--ink); }
+  50%      { opacity: 0.65; stroke: #5a3414; }
+}
+
+/* Random sparks — spawned by JS at intervals. Each one fades up, peaks,
+   then fades out while scaling outward, like a brief electrical zap. */
+.hero-spark {
+  opacity: 0;
+  transform-box: fill-box;
+  transform-origin: center;
+}
+.hero-spark.is-active {
+  animation: spark-flash 1s cubic-bezier(.22,.61,.36,1) forwards;
+}
+@keyframes spark-flash {
+  0%   { opacity: 0;   transform: scale(0.4); }
+  25%  { opacity: 1;   transform: scale(1); }
+  60%  { opacity: 0.6; transform: scale(1.15); }
+  100% { opacity: 0;   transform: scale(1.4); }
 }
 
 /* Light cone on the floor — quiet at rest, brighter on hover. */

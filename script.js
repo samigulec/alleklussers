@@ -106,21 +106,24 @@
     });
   }
 
-  // Hero bulb interactivity — composes a slow pendulum sway with a
-  // mouse-tracking tilt and adds a click flash. SVG `transform` attribute
-  // is used (not CSS) so both rotations multiply into one matrix without
-  // fighting each other. Skipped entirely when prefers-reduced-motion.
+  // Hero bulb interactivity — pendulum sway, mouse-tracking tilt, cord
+  // bend toward the cursor, click flash, and random sparks at intervals.
+  // All rotations write to a single SVG `transform` attribute so they
+  // compose cleanly. Skipped entirely when prefers-reduced-motion.
   (function initHeroBulb() {
     const heroArt = document.querySelector('.hero-art');
     if (!heroArt) return;
     const reduceMotion = window.matchMedia('(prefers-reduced-motion: reduce)').matches;
     if (reduceMotion) return;
     const bulb = heroArt.querySelector('.hero-bulb');
-    if (!bulb) return;
+    const cord = heroArt.querySelector('#hero-cord');
+    const svg  = heroArt.querySelector('svg');
+    if (!bulb || !svg) return;
 
     let mouseInside = false;
     let mouseFrac = 0.5;       // 0 (left) to 1 (right) inside the art region
-    let currentTilt = 0;       // damped follow of mouseTilt target
+    let currentTilt = 0;       // damped tilt (degrees)
+    let currentCordBend = 0;   // damped cord-control-point x offset
 
     heroArt.addEventListener('mouseenter', () => { mouseInside = true; });
     heroArt.addEventListener('mouseleave', () => { mouseInside = false; });
@@ -135,17 +138,67 @@
     });
 
     function tick(t) {
-      // Base pendulum: ~7s period, ±0.6deg amplitude
       const sway = Math.sin(t / 1115) * 0.6;
-      // Mouse-aware tilt: up to ±4deg, only while cursor is inside
       const targetTilt = mouseInside ? (mouseFrac - 0.5) * 8 : 0;
       currentTilt += (targetTilt - currentTilt) * 0.06;
       const angle = (sway + currentTilt).toFixed(3);
-      // Rotate around (200, 0) — the top of the cord in viewBox space
       bulb.setAttribute('transform', `rotate(${angle} 200 0)`);
+
+      if (cord) {
+        // Cord flexes toward cursor with its own slower damping —
+        // the bend lags behind the rotation, like a wire catching up.
+        const targetBend = mouseInside ? (mouseFrac - 0.5) * 28 : 0;
+        currentCordBend += (targetBend - currentCordBend) * 0.045;
+        cord.setAttribute('d', `M 200 0 Q ${(200 + currentCordBend).toFixed(1)} 70 200 138`);
+      }
+
       requestAnimationFrame(tick);
     }
     requestAnimationFrame(tick);
+
+    // Random electrical sparks — small radial bursts that pop on briefly
+    // every 15-25s at one of a handful of positions around the bulb.
+    const SVG_NS = 'http://www.w3.org/2000/svg';
+    const sparkPositions = [
+      { x: 60,  y: 244 }, { x: 340, y: 250 },
+      { x: 80,  y: 360 }, { x: 322, y: 360 },
+      { x: 100, y: 208 }, { x: 304, y: 210 },
+      { x: 120, y: 420 }, { x: 282, y: 420 },
+      { x: 50,  y: 312 }, { x: 354, y: 312 },
+    ];
+    function buildSpark() {
+      const g = document.createElementNS(SVG_NS, 'g');
+      g.setAttribute('class', 'hero-spark');
+      g.setAttribute('stroke', 'currentColor');
+      g.setAttribute('stroke-width', '1.4');
+      g.setAttribute('stroke-linecap', 'round');
+      const lines = [
+        [0, -9, 0, -3], [0, 3, 0, 9],
+        [-9, 0, -3, 0], [3, 0, 9, 0],
+        [-6.5, -6.5, -2.5, -2.5], [2.5, 2.5, 6.5, 6.5],
+        [-6.5, 6.5, -2.5, 2.5], [2.5, -2.5, 6.5, -6.5],
+      ];
+      lines.forEach(([x1, y1, x2, y2]) => {
+        const l = document.createElementNS(SVG_NS, 'line');
+        l.setAttribute('x1', x1); l.setAttribute('y1', y1);
+        l.setAttribute('x2', x2); l.setAttribute('y2', y2);
+        g.appendChild(l);
+      });
+      return g;
+    }
+    function spawnSpark() {
+      const pos = sparkPositions[Math.floor(Math.random() * sparkPositions.length)];
+      const wrap = document.createElementNS(SVG_NS, 'g');
+      wrap.setAttribute('transform', `translate(${pos.x} ${pos.y})`);
+      const spark = buildSpark();
+      wrap.appendChild(spark);
+      svg.appendChild(wrap);
+      requestAnimationFrame(() => spark.classList.add('is-active'));
+      setTimeout(() => wrap.remove(), 1100);
+      // Next one in 15-25s
+      setTimeout(spawnSpark, 15000 + Math.random() * 10000);
+    }
+    setTimeout(spawnSpark, 5000);  // first spark ~5s after load
   })();
 
   // Editorial scroll progress bar
