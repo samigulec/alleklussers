@@ -131,16 +131,33 @@
           </div>
         </div>
 
-        <!-- Abstract editorial composition: outlined square + filled overlap +
-             diagonal + circle. Hidden on mobile to keep hero focused. -->
+        <!-- Editorial composition: a flowing power cable that loops across the
+             frame and ends in a plug, with a small lightning accent and a
+             balance dot. Hidden on mobile to keep the hero focused. -->
         <div class="hero-art" aria-hidden="true">
-          <svg viewBox="0 0 400 500" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linejoin="miter">
-            <rect x="60" y="60" width="220" height="220" stroke-width="2" />
-            <rect x="200" y="200" width="160" height="160" fill="currentColor" stroke="none" />
-            <line x1="40" y1="440" x2="360" y2="40" stroke-width="1" />
-            <circle cx="340" cy="80" r="40" />
-            <circle cx="80" cy="450" r="5" fill="currentColor" stroke="none" />
-            <line x1="40" y1="480" x2="200" y2="480" stroke-width="1.5" />
+          <svg viewBox="0 0 400 520" fill="none" stroke="currentColor"
+               stroke-linecap="round" stroke-linejoin="round">
+
+            <!-- Cable — two quadratic curves forming an S that travels from
+                 top-left, swings right, loops back left, then drops to plug -->
+            <path class="hero-cable" stroke-width="3.5"
+                  d="M 50 60 Q 380 120 200 260 Q 20 400 240 450" />
+
+            <!-- Plug body (filled rectangle at end of cable) -->
+            <rect x="215" y="448" width="50" height="30" fill="currentColor" stroke="none" />
+            <!-- Plug prongs sticking out the bottom -->
+            <rect x="225" y="478" width="6" height="22" fill="currentColor" stroke="none" />
+            <rect x="249" y="478" width="6" height="22" fill="currentColor" stroke="none" />
+
+            <!-- Lightning bolt — a small charge of energy in the empty top-right -->
+            <path fill="currentColor" stroke="none"
+                  d="M 332 88 L 360 88 L 342 124 L 366 124 L 316 188 L 340 144 L 318 144 Z" />
+
+            <!-- Balance dot — left margin, near bottom -->
+            <circle cx="78" cy="408" r="5" fill="currentColor" stroke="none" />
+
+            <!-- Quiet hairline mark, mid-left, as a horizontal counterweight -->
+            <line x1="50" y1="500" x2="170" y2="500" stroke-width="1.5" />
           </svg>
         </div>
       </div>
