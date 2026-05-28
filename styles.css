@@ -678,11 +678,20 @@ em {
   background-size: cover;
   background-position: center right;
   background-repeat: no-repeat;
-  filter: contrast(1.05) saturate(0.85);
-  opacity: 0.55;                /* mobile: photo carries the visual */
-  /* Soft fade to paper on the left so text reads cleanly */
-  mask-image: linear-gradient(to right, transparent 0%, #000 65%, #000 100%);
-  -webkit-mask-image: linear-gradient(to right, transparent 0%, #000 65%, #000 100%);
+  /* B&W editorial treatment — grayscale, slight contrast lift to keep depth */
+  filter: grayscale(1) contrast(1.08);
+  opacity: 0.34;                /* mobile: atmospheric, well behind the text */
+  /* Sharper mask so the left third stays pure paper for the headline */
+  mask-image: linear-gradient(to right,
+    transparent 0%,
+    transparent 22%,
+    #000 62%,
+    #000 100%);
+  -webkit-mask-image: linear-gradient(to right,
+    transparent 0%,
+    transparent 22%,
+    #000 62%,
+    #000 100%);
 }
 .hero-content {
   grid-area: content;
@@ -710,8 +719,18 @@ em {
     gap: 3rem;
   }
   .hero-grid::before {
-    opacity: 0.38;              /* desktop: quieter, bulb stays the focal point */
+    opacity: 0.22;              /* desktop: quieter still, bulb is the focal point */
     background-position: right center;
+    mask-image: linear-gradient(to right,
+      transparent 0%,
+      transparent 32%,
+      #000 72%,
+      #000 100%);
+    -webkit-mask-image: linear-gradient(to right,
+      transparent 0%,
+      transparent 32%,
+      #000 72%,
+      #000 100%);
   }
   .hero-art { display: block; }
 }
