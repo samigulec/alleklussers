@@ -105,6 +105,121 @@ body {
   transform-origin: left center;
 }
 
+/* Hamburger button — three bars that morph into an X when .is-open is added */
+.menu-btn {
+  padding: 0.75rem;
+  margin: -0.75rem;
+  margin-right: -0.5rem;
+  background: transparent;
+  border: 0;
+  cursor: pointer;
+  color: var(--ink);
+  position: relative;
+  z-index: 60;        /* sits above the overlay so the X is tappable */
+}
+.menu-icon {
+  display: block;
+  position: relative;
+  width: 22px;
+  height: 16px;
+}
+.menu-icon__bar {
+  position: absolute;
+  left: 0;
+  right: 0;
+  height: 1.5px;
+  background: currentColor;
+  transform-origin: center;
+  transition: transform 320ms cubic-bezier(.22,.61,.36,1),
+              opacity 220ms ease;
+}
+.menu-icon__bar:nth-child(1) { top: 0; }
+.menu-icon__bar:nth-child(2) { top: 50%; margin-top: -0.75px; }
+.menu-icon__bar:nth-child(3) { bottom: 0; }
+.menu-btn.is-open .menu-icon__bar:nth-child(1) { transform: translateY(7.25px) rotate(45deg); }
+.menu-btn.is-open .menu-icon__bar:nth-child(2) { opacity: 0; transform: scaleX(0); }
+.menu-btn.is-open .menu-icon__bar:nth-child(3) { transform: translateY(-7.25px) rotate(-45deg); }
+
+/* Full-screen mobile menu — slides down from top with fade */
+.mobile-menu {
+  position: fixed;
+  top: 0; left: 0; right: 0;
+  bottom: 0;
+  background: var(--paper);
+  z-index: 45;        /* below the menu button (60) so the X stays tappable */
+  padding: 6rem 1.5rem max(2rem, env(safe-area-inset-bottom));
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  gap: 2rem;
+  opacity: 0;
+  pointer-events: none;
+  transform: translateY(-12px);
+  transition: opacity 280ms ease,
+              transform 360ms cubic-bezier(.22,.61,.36,1);
+}
+.mobile-menu.is-open {
+  opacity: 1;
+  pointer-events: auto;
+  transform: translateY(0);
+}
+.mobile-menu__nav {
+  display: flex;
+  flex-direction: column;
+}
+.mobile-menu__link {
+  font-family: 'Fraunces', serif;
+  font-size: clamp(1.875rem, 7.5vw, 2.75rem);
+  font-weight: 300;
+  letter-spacing: -0.025em;
+  line-height: 1.1;
+  padding: 1rem 0;
+  border-bottom: 1px solid var(--rule);
+  display: block;
+  color: var(--ink);
+  transition: padding-left 360ms cubic-bezier(.22,.61,.36,1),
+              font-style 200ms ease;
+}
+.mobile-menu__link:active,
+.mobile-menu__link:hover {
+  padding-left: 0.75rem;
+  font-style: italic;
+}
+.mobile-menu__footer {
+  display: flex;
+  flex-direction: column;
+  gap: 0.85rem;
+  font-size: 0.95rem;
+  color: var(--muted);
+}
+.mobile-menu__contact {
+  color: var(--ink);
+  padding: 0.4rem 0;
+}
+/* Stagger nav links into view when menu opens */
+.mobile-menu.is-open .mobile-menu__link {
+  animation: menu-link-rise 460ms cubic-bezier(.22,.61,.36,1) backwards;
+}
+.mobile-menu.is-open .mobile-menu__link:nth-child(1) { animation-delay: 80ms; }
+.mobile-menu.is-open .mobile-menu__link:nth-child(2) { animation-delay: 140ms; }
+.mobile-menu.is-open .mobile-menu__link:nth-child(3) { animation-delay: 200ms; }
+.mobile-menu.is-open .mobile-menu__link:nth-child(4) { animation-delay: 260ms; }
+.mobile-menu.is-open .mobile-menu__link:nth-child(5) { animation-delay: 320ms; }
+@keyframes menu-link-rise {
+  from { opacity: 0; transform: translateY(8px); }
+  to   { opacity: 1; transform: translateY(0); }
+}
+
+/* When menu is open: lock body scroll, hide floating chrome so the overlay
+   reads as a focused, dedicated nav surface */
+body.menu-open { overflow: hidden; }
+body.menu-open #contact-widget,
+body.menu-open #scroll-progress {
+  opacity: 0;
+  pointer-events: none;
+  transition: opacity 200ms ease;
+}
+
 /* Nav "Meer" dropdown */
 .nav-more {
   position: relative;
@@ -289,12 +404,16 @@ em {
   font-weight: 300;
 }
 
-/* Hero composition layout — text left, abstract SVG art right on desktop */
+/* Hero composition layout — text left, abstract SVG art right on desktop.
+   dvh is a progressive enhancement: vh covers older browsers, dvh tracks the
+   actual visible viewport on mobile Safari/Chrome (handles URL-bar shrink). */
 .hero-grid {
   display: grid;
   grid-template-columns: 1fr;
   align-items: center;
   gap: 4rem;
+  min-height: 78vh;
+  min-height: 78dvh;
 }
 .hero-content {
   display: flex;
@@ -450,17 +569,51 @@ em {
 }
 @media (max-width: 640px) {
   .service-icon { width: 1.25rem; height: 1.25rem; }
-  .service-action { gap: 1rem; }
+  .service-action { gap: 0.85rem; }
+  /* Long titles like "Mutatieonderhoud" / "Complete verbouwing" need less air */
+  .service-row {
+    grid-template-columns: 2.25rem 1fr auto;
+    gap: 1rem;
+    padding: 1.4rem 0;
+  }
+  .service-title {
+    font-size: 1.625rem;
+    line-height: 1.15;
+    text-wrap: balance;
+  }
 }
 
-/* Project cards grid — placeholder media frames */
+/* Project cards grid — placeholder media frames.
+   On mobile this becomes a horizontal scroll-snap carousel so users swipe
+   through projects instead of scrolling a long vertical column. */
 .projects-grid {
-  display: grid;
-  grid-template-columns: 1fr;
-  gap: 2.5rem 2rem;
+  display: flex;
+  overflow-x: auto;
+  overflow-y: visible;
+  scroll-snap-type: x mandatory;
+  scroll-padding-left: 1.5rem;
+  gap: 1.25rem;
+  padding: 0.5rem 1.5rem 0.5rem 1.5rem;
+  margin: 0 -1.5rem;
+  scrollbar-width: none;
+  -webkit-overflow-scrolling: touch;
+}
+.projects-grid::-webkit-scrollbar { display: none; }
+.projects-grid > .project-card {
+  flex: 0 0 78%;
+  scroll-snap-align: start;
 }
 @media (min-width: 640px) {
-  .projects-grid { grid-template-columns: repeat(2, 1fr); }
+  /* Tablet+ — fall back to grid layout */
+  .projects-grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 2.5rem 2rem;
+    overflow: visible;
+    padding: 0;
+    margin: 0;
+  }
+  .projects-grid > .project-card { flex: initial; }
 }
 @media (min-width: 1024px) {
   .projects-grid { grid-template-columns: repeat(3, 1fr); gap: 3rem 2rem; }
@@ -516,8 +669,8 @@ em {
 /* Floating contact widget — pill button bottom-right + anchored popover */
 #contact-widget {
   position: fixed;
-  right: 1.25rem;
-  bottom: 1.25rem;
+  right: max(1.25rem, env(safe-area-inset-right));
+  bottom: max(1.25rem, env(safe-area-inset-bottom));
   z-index: 60;
 }
 
@@ -644,12 +797,14 @@ em {
 
 @media (max-width: 640px) {
   #contact-widget {
-    right: 1rem;
-    bottom: 1rem;
+    right: max(1rem, env(safe-area-inset-right));
+    bottom: max(1rem, env(safe-area-inset-bottom));
   }
-  #contact-fab { padding: 0.85rem; }
+  #contact-fab {
+    padding: 1rem;        /* 48x48 hit target — above the 44px iOS minimum */
+  }
   #contact-fab .contact-fab__label { display: none; }
-  #contact-fab svg { width: 1.35rem; height: 1.35rem; }
+  #contact-fab svg { width: 1.4rem; height: 1.4rem; }
   #contact-pop { width: calc(100vw - 2rem); }
 }
 

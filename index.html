@@ -49,7 +49,7 @@
   <div id="scroll-progress" aria-hidden="true"></div>
 
   <!-- ========== HEADER ========== -->
-  <header class="border-b border-rule sticky top-0 z-40 bg-paper/95 backdrop-blur">
+  <header class="border-b border-rule sticky top-0 z-50 bg-paper/95 backdrop-blur">
     <div class="max-w-[1400px] mx-auto px-6 lg:px-12 py-4 flex items-center justify-between gap-6">
       <a href="#home" data-nav="home" class="flex items-center shrink-0">
         <img src="logo.png" alt="AlleKlussers" class="logo-img h-12 md:h-14 lg:h-16 w-auto" />
@@ -84,25 +84,29 @@
           <button type="button" data-lang-set="nl">NL</button>
           <button type="button" data-lang-set="en">EN</button>
         </div>
-        <button id="menu-btn" class="md:hidden p-2 -mr-2" aria-label="Menu">
-          <svg width="22" height="22" viewBox="0 0 22 22" fill="none" stroke="currentColor" stroke-width="1.5">
-            <line x1="2" y1="6" x2="20" y2="6"/><line x1="2" y1="11" x2="20" y2="11"/><line x1="2" y1="16" x2="20" y2="16"/>
-          </svg>
+        <button id="menu-btn" class="menu-btn md:hidden" aria-label="Menu" aria-expanded="false" aria-controls="mobile-menu">
+          <span class="menu-icon" aria-hidden="true">
+            <span class="menu-icon__bar"></span>
+            <span class="menu-icon__bar"></span>
+            <span class="menu-icon__bar"></span>
+          </span>
         </button>
       </div>
     </div>
-    <div id="mobile-menu" class="md:hidden hidden border-t border-rule">
-      <nav class="px-6 py-5 flex flex-col gap-4 text-base">
-        <a href="#home" data-nav="home" class="navlink"><span class="lang-nl">Startpagina</span><span class="lang-en">Home</span></a>
-        <a href="#references" data-nav="references" class="navlink"><span class="lang-nl">Projecten</span><span class="lang-en">Projects</span></a>
-        <a href="#services" data-nav="services" class="navlink"><span class="lang-nl">Onze Diensten</span><span class="lang-en">Our Services</span></a>
-        <a href="#about" data-nav="about" class="navlink"><span class="lang-nl">Over ons</span><span class="lang-en">About us</span></a>
-        <a href="#contact" data-nav="contact" class="navlink">Contact</a>
-        <div class="pt-2 border-t border-rule mt-2 flex flex-col gap-3 text-sm">
-          <a href="mailto:hallo@alleklussers.nl">hallo@alleklussers.nl ↗</a>
-          <a href="https://wa.me/31600000000" target="_blank" rel="noopener noreferrer">WhatsApp ↗</a>
-        </div>
+
+    <!-- Mobile menu — full-screen overlay slides in from top. Hamburger morphs to X. -->
+    <div id="mobile-menu" class="mobile-menu md:hidden" role="dialog" aria-modal="true">
+      <nav class="mobile-menu__nav">
+        <a href="#home" data-nav="home" class="mobile-menu__link"><span class="lang-nl">Startpagina</span><span class="lang-en">Home</span></a>
+        <a href="#references" data-nav="references" class="mobile-menu__link"><span class="lang-nl">Projecten</span><span class="lang-en">Projects</span></a>
+        <a href="#services" data-nav="services" class="mobile-menu__link"><span class="lang-nl">Onze Diensten</span><span class="lang-en">Our Services</span></a>
+        <a href="#about" data-nav="about" class="mobile-menu__link"><span class="lang-nl">Over ons</span><span class="lang-en">About us</span></a>
+        <a href="#contact" data-nav="contact" class="mobile-menu__link">Contact</a>
       </nav>
+      <div class="mobile-menu__footer">
+        <a href="mailto:hallo@alleklussers.nl" class="mobile-menu__contact">hallo@alleklussers.nl <span aria-hidden="true">↗</span></a>
+        <a href="https://wa.me/31600000000" target="_blank" rel="noopener noreferrer" class="mobile-menu__contact">WhatsApp <span aria-hidden="true">↗</span></a>
+      </div>
     </div>
   </header>
 
@@ -112,7 +116,7 @@
     <section id="view-home" class="view">
 
       <!-- HERO -->
-      <div class="hero-grid min-h-[78vh] py-20">
+      <div class="hero-grid py-20">
         <div class="hero-content">
           <h1 class="font-serif h-display max-w-[14ch]">
             <span class="lang-nl">Uw verbouwing, <em>zonder gedoe</em>.</span>

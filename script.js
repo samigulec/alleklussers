@@ -21,8 +21,7 @@
     link.addEventListener('click', e => {
       e.preventDefault();
       showView(link.dataset.nav);
-      const menu = document.getElementById('mobile-menu');
-      if (menu) menu.classList.add('hidden');
+      closeMobileMenu();
     });
   });
 
@@ -51,11 +50,36 @@
   const validViews = ['home', 'about', 'services', 'references', 'contact'];
   showView(validViews.includes(hash) ? hash : 'home');
 
-  // Mobile menu toggle
+  // Mobile menu — full overlay, hamburger morph, body scroll lock,
+  // outside click and Escape close.
   const menuBtn = document.getElementById('menu-btn');
-  const menu = document.getElementById('mobile-menu');
-  if (menuBtn && menu) {
-    menuBtn.addEventListener('click', () => menu.classList.toggle('hidden'));
+  const mobileMenu = document.getElementById('mobile-menu');
+  function openMobileMenu() {
+    if (!menuBtn || !mobileMenu) return;
+    mobileMenu.classList.add('is-open');
+    menuBtn.classList.add('is-open');
+    menuBtn.setAttribute('aria-expanded', 'true');
+    document.body.classList.add('menu-open');
+  }
+  function closeMobileMenu() {
+    if (!menuBtn || !mobileMenu) return;
+    mobileMenu.classList.remove('is-open');
+    menuBtn.classList.remove('is-open');
+    menuBtn.setAttribute('aria-expanded', 'false');
+    document.body.classList.remove('menu-open');
+  }
+  if (menuBtn && mobileMenu) {
+    menuBtn.addEventListener('click', () => {
+      if (mobileMenu.classList.contains('is-open')) closeMobileMenu();
+      else openMobileMenu();
+    });
+    document.addEventListener('keydown', e => {
+      if (e.key === 'Escape' && mobileMenu.classList.contains('is-open')) closeMobileMenu();
+    });
+    // Closing footer-contact links should also dismiss the menu
+    mobileMenu.querySelectorAll('.mobile-menu__contact').forEach(a =>
+      a.addEventListener('click', closeMobileMenu)
+    );
   }
 
   // "Meer" dropdown — click to toggle, outside-click and Escape close.
