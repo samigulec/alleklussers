@@ -106,6 +106,48 @@
     });
   }
 
+  // Hero bulb interactivity — composes a slow pendulum sway with a
+  // mouse-tracking tilt and adds a click flash. SVG `transform` attribute
+  // is used (not CSS) so both rotations multiply into one matrix without
+  // fighting each other. Skipped entirely when prefers-reduced-motion.
+  (function initHeroBulb() {
+    const heroArt = document.querySelector('.hero-art');
+    if (!heroArt) return;
+    const reduceMotion = window.matchMedia('(prefers-reduced-motion: reduce)').matches;
+    if (reduceMotion) return;
+    const bulb = heroArt.querySelector('.hero-bulb');
+    if (!bulb) return;
+
+    let mouseInside = false;
+    let mouseFrac = 0.5;       // 0 (left) to 1 (right) inside the art region
+    let currentTilt = 0;       // damped follow of mouseTilt target
+
+    heroArt.addEventListener('mouseenter', () => { mouseInside = true; });
+    heroArt.addEventListener('mouseleave', () => { mouseInside = false; });
+    heroArt.addEventListener('mousemove', e => {
+      const rect = heroArt.getBoundingClientRect();
+      mouseFrac = Math.max(0, Math.min(1, (e.clientX - rect.left) / rect.width));
+    });
+
+    heroArt.addEventListener('click', () => {
+      heroArt.classList.add('is-flashing');
+      setTimeout(() => heroArt.classList.remove('is-flashing'), 700);
+    });
+
+    function tick(t) {
+      // Base pendulum: ~7s period, ±0.6deg amplitude
+      const sway = Math.sin(t / 1115) * 0.6;
+      // Mouse-aware tilt: up to ±4deg, only while cursor is inside
+      const targetTilt = mouseInside ? (mouseFrac - 0.5) * 8 : 0;
+      currentTilt += (targetTilt - currentTilt) * 0.06;
+      const angle = (sway + currentTilt).toFixed(3);
+      // Rotate around (200, 0) — the top of the cord in viewBox space
+      bulb.setAttribute('transform', `rotate(${angle} 200 0)`);
+      requestAnimationFrame(tick);
+    }
+    requestAnimationFrame(tick);
+  })();
+
   // Editorial scroll progress bar
   const progressEl = document.getElementById('scroll-progress');
   if (progressEl) {

@@ -316,18 +316,10 @@ em {
   .hero-art  { display: block; }
 }
 
-/* Pendant bulb behaviour — pendulum sway, draw-in, glow, hover intensify.
-   Disabled in aggregate by prefers-reduced-motion lower in this file. */
-
-/* Whole bulb swings gently from the cord's anchor at the top of viewBox. */
-.hero-bulb {
-  transform-origin: 50% 0;
-  animation: bulb-sway 7s ease-in-out infinite;
-}
-@keyframes bulb-sway {
-  0%, 100% { transform: rotate(-0.6deg); }
-  50%      { transform: rotate(0.6deg); }
-}
+/* Pendant bulb behaviour — filament breath, glow, hover wake-up, click flash.
+   The pendulum sway and the mouse-tracking tilt are handled in script.js so
+   they compose smoothly into a single SVG rotate. Disabled in aggregate by
+   prefers-reduced-motion lower in this file. */
 
 /* Filament traces itself in on first load, then breathes. The path length
    is large enough to cover the longest stroke segment. */
@@ -385,10 +377,39 @@ em {
 
 /* Hover the hero-art region — the bulb "wakes up": faster glow, fatter
    filament, brighter halo, snappier particles, visible light cone. */
+.hero-art {
+  cursor: pointer;
+}
+.hero-art svg {
+  transition: transform 320ms cubic-bezier(.22,.61,.36,1);
+}
 .hero-art:hover .hero-filament       { stroke-width: 2; animation-duration: 1.6s, 600ms, 1.6s; }
 .hero-art:hover .hero-filament-glow  { animation-duration: 800ms, 1.6s; }
 .hero-art:hover .hero-radiance circle { animation-duration: 1.4s; }
 .hero-art:hover .hero-cone           { opacity: 0.35; }
+
+/* Click — full flash for ~700ms: everything jumps to peak, bulb scales up.
+   Triggered by JS adding .is-flashing to .hero-art. */
+.hero-art.is-flashing svg {
+  transform: scale(1.035);
+}
+.hero-art.is-flashing .hero-filament {
+  animation: none;
+  opacity: 1;
+  stroke-width: 2.6;
+  stroke-dashoffset: 0;
+}
+.hero-art.is-flashing .hero-filament-glow {
+  animation: none;
+  opacity: 0.95;
+}
+.hero-art.is-flashing .hero-radiance circle {
+  animation: none;
+  opacity: 1;
+}
+.hero-art.is-flashing .hero-cone {
+  opacity: 0.55;
+}
 
 /* Service rows — icon + arrow group */
 .service-action {
