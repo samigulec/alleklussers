@@ -316,29 +316,79 @@ em {
   .hero-art  { display: block; }
 }
 
-/* Subtle "live" feel — filament glows in and out, particles drift in and
-   out of opacity on staggered timing. Disabled by prefers-reduced-motion
-   via the global rule lower in this file. */
+/* Pendant bulb behaviour — pendulum sway, draw-in, glow, hover intensify.
+   Disabled in aggregate by prefers-reduced-motion lower in this file. */
+
+/* Whole bulb swings gently from the cord's anchor at the top of viewBox. */
+.hero-bulb {
+  transform-origin: 50% 0;
+  animation: bulb-sway 7s ease-in-out infinite;
+}
+@keyframes bulb-sway {
+  0%, 100% { transform: rotate(-0.6deg); }
+  50%      { transform: rotate(0.6deg); }
+}
+
+/* Filament traces itself in on first load, then breathes. The path length
+   is large enough to cover the longest stroke segment. */
 .hero-filament {
-  animation: filament-glow 4.2s ease-in-out infinite;
-  transform-origin: center;
+  stroke-dasharray: 800;
+  stroke-dashoffset: 800;
+  opacity: 0;
+  animation:
+    filament-draw 1.8s cubic-bezier(.25,1,.5,1) 600ms forwards,
+    filament-fade 600ms ease-out 600ms forwards,
+    filament-glow 4.2s ease-in-out 2.6s infinite;
+}
+@keyframes filament-draw {
+  to { stroke-dashoffset: 0; }
+}
+@keyframes filament-fade {
+  to { opacity: 1; }
 }
 @keyframes filament-glow {
   0%, 100% { opacity: 0.55; }
   50%      { opacity: 1; }
 }
+
+/* Glow halo behind the filament — blurred copy, fades in after the draw. */
+.hero-filament-glow {
+  opacity: 0;
+  animation:
+    filament-fade 800ms ease-out 1800ms forwards,
+    halo-glow 4.2s ease-in-out 2.6s infinite;
+}
+@keyframes halo-glow {
+  0%, 100% { opacity: 0.25; }
+  50%      { opacity: 0.6; }
+}
+
+/* Light cone on the floor — quiet at rest, brighter on hover. */
+.hero-cone { opacity: 0.18; transition: opacity 400ms ease; }
+
+/* Radiance particles — eight, staggered 0–2.4s, opacity 0.2–1. */
 .hero-radiance circle {
   animation: radiance-pulse 3.6s ease-in-out infinite;
-  transform-origin: center;
 }
 .hero-radiance circle:nth-child(1) { animation-delay: 0s; }
-.hero-radiance circle:nth-child(2) { animation-delay: 0.9s; }
-.hero-radiance circle:nth-child(3) { animation-delay: 1.8s; }
-.hero-radiance circle:nth-child(4) { animation-delay: 2.4s; }
+.hero-radiance circle:nth-child(2) { animation-delay: 0.4s; }
+.hero-radiance circle:nth-child(3) { animation-delay: 0.8s; }
+.hero-radiance circle:nth-child(4) { animation-delay: 1.2s; }
+.hero-radiance circle:nth-child(5) { animation-delay: 1.6s; }
+.hero-radiance circle:nth-child(6) { animation-delay: 2.0s; }
+.hero-radiance circle:nth-child(7) { animation-delay: 2.4s; }
+.hero-radiance circle:nth-child(8) { animation-delay: 2.8s; }
 @keyframes radiance-pulse {
-  0%, 100% { opacity: 0.25; }
+  0%, 100% { opacity: 0.2; }
   50%      { opacity: 1; }
 }
+
+/* Hover the hero-art region — the bulb "wakes up": faster glow, fatter
+   filament, brighter halo, snappier particles, visible light cone. */
+.hero-art:hover .hero-filament       { stroke-width: 2; animation-duration: 1.6s, 600ms, 1.6s; }
+.hero-art:hover .hero-filament-glow  { animation-duration: 800ms, 1.6s; }
+.hero-art:hover .hero-radiance circle { animation-duration: 1.4s; }
+.hero-art:hover .hero-cone           { opacity: 0.35; }
 
 /* Service rows — icon + arrow group */
 .service-action {
