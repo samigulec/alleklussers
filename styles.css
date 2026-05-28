@@ -833,7 +833,8 @@ em {
     display: flex;
     flex-direction: column;
     justify-content: space-between;
-    padding: 3rem 2rem 3rem 1.5rem;
+    /* Reduced top padding pushes bulb higher into the photo */
+    padding: 1.5rem 2rem 3rem 1.5rem;
   }
   /* Photo lives as a pseudo on the column — clipped by overflow: hidden */
   .hero-art-col::before {
@@ -841,7 +842,8 @@ em {
     position: absolute;
     inset: 0;
     background: url('hero.png') center / cover no-repeat;
-    filter: grayscale(1) contrast(1.6) brightness(0.88);
+    /* 25% desaturated — cable blues/yellows and screwdriver tip show through */
+    filter: grayscale(0.25) contrast(1.3) brightness(0.92) saturate(1.15);
     /* Feather the left edge 4% so there's no hard vertical cut */
     mask-image: linear-gradient(to right, transparent 0%, #000 4%);
     -webkit-mask-image: linear-gradient(to right, transparent 0%, #000 4%);
@@ -869,11 +871,13 @@ em {
     z-index: 2;
   }
   .hero-art svg {
-    width: 52%;
-    max-width: 210px;
+    width: 46%;
+    max-width: 190px;
+    /* pushed to top-right corner, away from the craftsman subject */
     margin-left: auto;
     margin-right: 0;
     display: block;
+    margin-top: 0;
   }
 }
 
@@ -887,17 +891,19 @@ em {
     margin-top: 2rem;
     position: relative;
     z-index: 2;
+    /* Solid white card — fully opaque, sharp edge, no photo bleed */
+    background: var(--paper);
+    border: 1px solid var(--rule);
+    padding: 0 1.1rem;
   }
   .hero-trust-mini li {
     display: flex;
     align-items: flex-start;
     gap: 0.9rem;
-    padding: 1rem 0;
-    border-top: 1px solid rgba(10,10,10,0.18);
+    padding: 0.95rem 0;
+    border-top: 1px solid var(--rule);
   }
-  .hero-trust-mini li:last-child {
-    border-bottom: 1px solid rgba(10,10,10,0.18);
-  }
+  .hero-trust-mini li:first-child { border-top: none; }
   .hero-trust-mini__icon {
     width: 1.25rem;
     height: 1.25rem;
