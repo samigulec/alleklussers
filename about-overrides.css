@@ -1,0 +1,85 @@
+/* About page refinements: make the about section read as an electrical company. */
+#view-about .about-photo {
+  background: var(--paper);
+  border: 1px solid var(--rule);
+  box-shadow: 0 18px 44px rgba(10, 10, 10, 0.06);
+}
+
+#view-about .about-photo::before {
+  background: linear-gradient(to bottom, rgba(10,10,10,0) 0%, rgba(10,10,10,0.2) 100%), url('hero.png') 48% center / cover no-repeat;
+  filter: grayscale(0.08) contrast(1.12) saturate(1.08);
+}
+
+#view-about .about-photo__label {
+  display: none;
+}
+
+#view-about .h-display > span,
+#view-about .about-lede > span,
+#view-about .about-body > p:nth-child(2) > span,
+#view-about .about-stats > div:nth-child(2) dt > span,
+#view-about .about-stats > div:nth-child(2) + div dt > span,
+#view-about .about-stats > div:nth-child(2) + div dd {
+  font-size: 0;
+}
+
+#view-about .h-display > span::after {
+  display: inline;
+  font-size: clamp(2.75rem, 8.5vw, 7.5rem);
+  line-height: 0.95;
+}
+
+#view-about .about-lede > span::after {
+  font-size: inherit;
+  line-height: inherit;
+}
+
+#view-about .about-body > p:nth-child(2) > span::after {
+  font-size: clamp(1.25rem, 2vw, 1.5rem);
+  line-height: 1.35;
+}
+
+#view-about .about-stats > div:nth-child(2) dt > span::after,
+#view-about .about-stats > div:nth-child(2) + div dt > span::after {
+  font-size: 0.7rem;
+}
+
+#view-about .about-stats > div:nth-child(2) + div dd::after {
+  font-size: clamp(1.5rem, 4vw, 2.5rem);
+  content: '24/7';
+}
+
+[data-lang="nl"] #view-about .h-display .lang-nl::after { content: 'Elektra veilig geregeld.'; }
+[data-lang="en"] #view-about .h-display .lang-en::after { content: 'Electrical work, safely handled.'; }
+[data-lang="tr"] #view-about .h-display .lang-tr::after { content: 'Elektriği biz çözeriz.'; }
+[data-lang="ar"] #view-about .h-display .lang-ar::after { content: 'ننجز أعمال الكهرباء بأمان.'; }
+[data-lang="pl"] #view-about .h-display .lang-pl::after { content: 'Elektryka wykonana bezpiecznie.'; }
+[data-lang="de"] #view-about .h-display .lang-de::after { content: 'Elektroarbeiten sicher erledigt.'; }
+
+[data-lang="nl"] #view-about .about-lede .lang-nl::after { content: 'AlleKlussers helpt met storingen, groepenkasten, verlichting, stopcontacten en veilige elektrische installaties. Eerst luisteren we telefonisch naar de situatie, daarna sturen we de juiste vakman.'; }
+[data-lang="en"] #view-about .about-lede .lang-en::after { content: 'AlleKlussers helps with faults, fuse boxes, lighting, sockets and safe electrical installations. First we assess the situation by phone, then we send the right professional.'; }
+[data-lang="tr"] #view-about .about-lede .lang-tr::after { content: 'AlleKlussers; arıza, sigorta panosu, aydınlatma, priz ve güvenli elektrik tesisatı işlerinde yardımcı olur. Önce telefonda durumu netleştirir, sonra doğru ustayı yönlendiririz.'; }
+[data-lang="ar"] #view-about .about-lede .lang-ar::after { content: 'تساعد AlleKlussers في الأعطال، لوحات التوزيع، الإضاءة، المقابس والتركيبات الكهربائية الآمنة. نبدأ بتقييم الحالة هاتفياً ثم نرسل المختص المناسب.'; }
+[data-lang="pl"] #view-about .about-lede .lang-pl::after { content: 'AlleKlussers pomaga przy awariach, rozdzielnicach, oświetleniu, gniazdkach i bezpiecznych instalacjach elektrycznych. Najpierw omawiamy sytuację telefonicznie, potem kierujemy właściwego fachowca.'; }
+[data-lang="de"] #view-about .about-lede .lang-de::after { content: 'AlleKlussers hilft bei Störungen, Sicherungskästen, Beleuchtung, Steckdosen und sicheren Elektroinstallationen. Zuerst klären wir die Situation telefonisch, danach schicken wir den passenden Fachmann.'; }
+
+[data-lang="nl"] #view-about .about-body > p:nth-child(2) .lang-nl::after { content: 'Heldere communicatie. Veilige montage. Netjes opgeleverd.'; }
+[data-lang="en"] #view-about .about-body > p:nth-child(2) .lang-en::after { content: 'Clear communication. Safe installation. Neatly delivered.'; }
+[data-lang="tr"] #view-about .about-body > p:nth-child(2) .lang-tr::after { content: 'Net iletişim. Güvenli işçilik. Zamanında teslim.'; }
+[data-lang="ar"] #view-about .about-body > p:nth-child(2) .lang-ar::after { content: 'تواصل واضح. تنفيذ آمن. تسليم مرتب.'; }
+[data-lang="pl"] #view-about .about-body > p:nth-child(2) .lang-pl::after { content: 'Jasna komunikacja. Bezpieczny montaż. Starannie oddane.'; }
+[data-lang="de"] #view-about .about-body > p:nth-child(2) .lang-de::after { content: 'Klare Kommunikation. Sichere Montage. Sauber übergeben.'; }
+
+[data-lang="nl"] #view-about .about-stats > div:nth-child(2) dt .lang-nl::after { content: 'Opdrachten'; }
+[data-lang="en"] #view-about .about-stats > div:nth-child(2) dt .lang-en::after { content: 'Jobs'; }
+[data-lang="tr"] #view-about .about-stats > div:nth-child(2) dt .lang-tr::after { content: 'Tamamlanan iş'; }
+[data-lang="ar"] #view-about .about-stats > div:nth-child(2) dt .lang-ar::after { content: 'أعمال منجزة'; }
+[data-lang="pl"] #view-about .about-stats > div:nth-child(2) dt .lang-pl::after { content: 'Zlecenia'; }
+[data-lang="de"] #view-about .about-stats > div:nth-child(2) dt .lang-de::after { content: 'Aufträge'; }
+
+[data-lang="nl"] #view-about .about-stats > div:nth-child(2) + div dt .lang-nl::after { content: 'Bereikbaarheid'; }
+[data-lang="en"] #view-about .about-stats > div:nth-child(2) + div dt .lang-en::after { content: 'Availability'; }
+[data-lang="tr"] #view-about .about-stats > div:nth-child(2) + div dt .lang-tr::after { content: 'Ulaşılabilirlik'; }
+[data-lang="ar"] #view-about .about-stats > div:nth-child(2) + div dt .lang-ar::after { content: 'التواصل'; }
+[data-lang="pl"] #view-about .about-stats > div:nth-child(2) + div dt .lang-pl::after { content: 'Dostępność'; }
+[data-lang="de"] #view-about .about-stats > div:nth-child(2) + div dt .lang-de::after { content: 'Erreichbarkeit'; }
