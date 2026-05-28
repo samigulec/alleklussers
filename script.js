@@ -1,4 +1,4 @@
-// AlleKlussers — nav, language toggle, contact widget and hero polish
+// AlleKlussers — nav, language toggle, contact widget and page polish
 
 (function () {
   const root = document.documentElement;
@@ -12,14 +12,16 @@
   const SUPPORTED_LANGS = ['nl', 'en', 'tr', 'ar', 'pl', 'de'];
   const RTL_LANGS = ['ar'];
 
-  function loadHeroPolish() {
-    if (document.querySelector('link[href="hero-overrides.css"]')) return;
-    const link = document.createElement('link');
-    link.rel = 'stylesheet';
-    link.href = 'hero-overrides.css';
-    document.head.appendChild(link);
+  function loadPolishStyles() {
+    ['hero-overrides.css', 'about-overrides.css'].forEach(href => {
+      if (document.querySelector(`link[href="${href}"]`)) return;
+      const link = document.createElement('link');
+      link.rel = 'stylesheet';
+      link.href = href;
+      document.head.appendChild(link);
+    });
   }
-  loadHeroPolish();
+  loadPolishStyles();
 
   function closeMobileMenu() {
     const menuBtn = document.getElementById('menu-btn');
