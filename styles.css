@@ -722,12 +722,26 @@ em {
     z-index: -1;
     background-image: url('hero.png');
     background-size: cover;
-    background-position: right center;
+    background-position: right 20% center;
     background-repeat: no-repeat;
-    filter: grayscale(1) contrast(1.18) brightness(0.85);
-    opacity: 0.6;
-    /* Clip strictly to the right art column — photo never bleeds under text */
-    clip-path: inset(0 0 0 56%);
+    filter: grayscale(1) contrast(1.2) brightness(0.82);
+    opacity: 0.72;
+    /* Full-bleed: photo spans the entire hero top to bottom, edge to edge.
+       Gradient mask melts it away on the left so the text column stays clean. */
+    mask-image: linear-gradient(to right,
+      transparent 0%,
+      transparent 28%,
+      rgba(0,0,0,0.25) 42%,
+      rgba(0,0,0,0.75) 56%,
+      #000 70%,
+      #000 100%);
+    -webkit-mask-image: linear-gradient(to right,
+      transparent 0%,
+      transparent 28%,
+      rgba(0,0,0,0.25) 42%,
+      rgba(0,0,0,0.75) 56%,
+      #000 70%,
+      #000 100%);
   }
   .hero-photo { display: none; }
   .hero-content {
