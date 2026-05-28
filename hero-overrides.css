@@ -143,3 +143,60 @@
     mask-image: linear-gradient(to bottom, #000 76%, transparent 100%);
   }
 }
+
+/* Electrical company copy refinements without touching the generated markup. */
+[data-lang="nl"] #view-home .hero-lede .lang-nl,
+[data-lang="en"] #view-home .hero-lede .lang-en,
+[data-lang="tr"] #view-home .hero-lede .lang-tr {
+  font-size: 0;
+}
+[data-lang="nl"] #view-home .hero-lede .lang-nl::after,
+[data-lang="en"] #view-home .hero-lede .lang-en::after,
+[data-lang="tr"] #view-home .hero-lede .lang-tr::after {
+  font-size: clamp(1.05rem, 1.25vw, 1.22rem);
+}
+[data-lang="nl"] #view-home .hero-lede .lang-nl::after {
+  content: 'Betrouwbare elektriciens voor storingen, groepenkasten, verlichting, bedrading en veilige installaties — snel, veilig en netjes afgewerkt.';
+}
+[data-lang="en"] #view-home .hero-lede .lang-en::after {
+  content: 'Reliable electricians for faults, fuse boxes, lighting, wiring and safe installations — fast, careful and neatly finished.';
+}
+[data-lang="tr"] #view-home .hero-lede .lang-tr::after {
+  content: 'Elektrik arızası, sigorta panosu, aydınlatma, kablolama ve güvenli tesisat işleri için hızlı ve temiz çözümler sunuyoruz.';
+}
+
+#view-home .hero-badges li:first-child .hero-badge__title span,
+#view-home .hero-badges li:first-child .hero-badge__sub span,
+#view-home .home-card:nth-child(4) .home-card__title span,
+#view-home .home-card:nth-child(4) .home-card__desc span {
+  font-size: 0;
+}
+#view-home .hero-badges li:first-child .hero-badge__title span::after,
+#view-home .home-card:nth-child(4) .home-card__title span::after {
+  font-size: 0.88rem;
+}
+#view-home .hero-badges li:first-child .hero-badge__sub span::after,
+#view-home .home-card:nth-child(4) .home-card__desc span::after {
+  font-size: 0.75rem;
+}
+#view-home .home-card:nth-child(4) .home-card__title span::after {
+  font-family: 'Fraunces', serif;
+  font-size: 1.5rem;
+  line-height: 1.15;
+}
+#view-home .home-card:nth-child(4) .home-card__desc span::after {
+  font-size: 0.85rem;
+  line-height: 1.55;
+}
+[data-lang="nl"] #view-home .hero-badges li:first-child .hero-badge__title .lang-nl::after { content: 'Gratis telefonisch advies'; }
+[data-lang="en"] #view-home .hero-badges li:first-child .hero-badge__title .lang-en::after { content: 'Free phone advice'; }
+[data-lang="tr"] #view-home .hero-badges li:first-child .hero-badge__title .lang-tr::after { content: 'Telefonda ücretsiz destek'; }
+[data-lang="nl"] #view-home .hero-badges li:first-child .hero-badge__sub .lang-nl::after { content: 'Eerst telefonisch'; }
+[data-lang="en"] #view-home .hero-badges li:first-child .hero-badge__sub .lang-en::after { content: 'By phone first'; }
+[data-lang="tr"] #view-home .hero-badges li:first-child .hero-badge__sub .lang-tr::after { content: 'Önce telefonda'; }
+[data-lang="nl"] #view-home .home-card:nth-child(4) .home-card__title .lang-nl::after { content: 'Groepenkast & storingen'; }
+[data-lang="en"] #view-home .home-card:nth-child(4) .home-card__title .lang-en::after { content: 'Fuse box & faults'; }
+[data-lang="tr"] #view-home .home-card:nth-child(4) .home-card__title .lang-tr::after { content: 'Sigorta panosu & arıza'; }
+[data-lang="nl"] #view-home .home-card:nth-child(4) .home-card__desc .lang-nl::after { content: 'Groepenkast vervangen, storingen oplossen en elektrische installaties veilig uitbreiden.'; }
+[data-lang="en"] #view-home .home-card:nth-child(4) .home-card__desc .lang-en::after { content: 'Fuse box replacement, fault finding and safe expansion of electrical installations.'; }
+[data-lang="tr"] #view-home .home-card:nth-child(4) .home-card__desc .lang-tr::after { content: 'Sigorta panosu yenileme, arıza tespiti ve elektrik tesisatını güvenli şekilde genişletme.'; }
