@@ -1,0 +1,83 @@
+/* Final services page polish: closer to the elegant reference mockup. */
+#view-services .h-display > span::after {
+  font-size: clamp(3.2rem, 7vw, 6.4rem) !important;
+  line-height: 0.98 !important;
+}
+
+#view-services .service-row {
+  padding-top: 1.55rem !important;
+  padding-bottom: 1.55rem !important;
+}
+
+#view-services .service-title > span::after {
+  font-size: clamp(1.5rem, 2.35vw, 2.05rem) !important;
+  line-height: 1.08 !important;
+}
+
+#view-services .service-action {
+  gap: 1.55rem !important;
+}
+
+#view-services .service-action::before {
+  width: 27px !important;
+  height: 27px !important;
+  opacity: .58 !important;
+}
+
+#view-services .service-row:hover {
+  background: rgba(166, 91, 40, 0.026) !important;
+  padding-inline: 0.55rem !important;
+}
+
+[data-lang="nl"] #view-services ol li:nth-child(1) .service-title .lang-nl::after { content: 'Storingen en spoed' !important; }
+[data-lang="en"] #view-services ol li:nth-child(1) .service-title .lang-en::after { content: 'Faults and urgent help' !important; }
+[data-lang="tr"] #view-services ol li:nth-child(1) .service-title .lang-tr::after { content: 'Ariza ve acil destek' !important; }
+[data-lang="de"] #view-services ol li:nth-child(1) .service-title .lang-de::after { content: 'Stoerungen und Notdienst' !important; }
+
+[data-lang="nl"] #view-services ol li:nth-child(4) .service-title .lang-nl::after { content: 'Stopcontacten en schakelaars' !important; }
+[data-lang="en"] #view-services ol li:nth-child(4) .service-title .lang-en::after { content: 'Sockets and switches' !important; }
+[data-lang="tr"] #view-services ol li:nth-child(4) .service-title .lang-tr::after { content: 'Prizler ve anahtarlar' !important; }
+[data-lang="de"] #view-services ol li:nth-child(4) .service-title .lang-de::after { content: 'Steckdosen und Schalter' !important; }
+
+[data-lang="nl"] #view-services ol li:nth-child(5) .service-title .lang-nl::after { content: 'Bedrading en aansluitingen' !important; }
+[data-lang="en"] #view-services ol li:nth-child(5) .service-title .lang-en::after { content: 'Wiring and connections' !important; }
+[data-lang="tr"] #view-services ol li:nth-child(5) .service-title .lang-tr::after { content: 'Kablolama ve baglantilar' !important; }
+[data-lang="de"] #view-services ol li:nth-child(5) .service-title .lang-de::after { content: 'Verkabelung und Anschluesse' !important; }
+
+[data-lang="nl"] #view-services ol li:nth-child(6) .service-title .lang-nl::after { content: 'Keuring en veiligheid' !important; }
+[data-lang="en"] #view-services ol li:nth-child(6) .service-title .lang-en::after { content: 'Inspection and safety' !important; }
+[data-lang="tr"] #view-services ol li:nth-child(6) .service-title .lang-tr::after { content: 'Kontrol ve guvenlik' !important; }
+[data-lang="de"] #view-services ol li:nth-child(6) .service-title .lang-de::after { content: 'Pruefung und Sicherheit' !important; }
+
+[data-lang="nl"] #view-services ol li:nth-child(7) .service-title .lang-nl::after { content: 'Laadpalen en slimme elektra' !important; }
+[data-lang="en"] #view-services ol li:nth-child(7) .service-title .lang-en::after { content: 'EV chargers and smart electrics' !important; }
+[data-lang="tr"] #view-services ol li:nth-child(7) .service-title .lang-tr::after { content: 'Sarj istasyonu ve akilli elektrik' !important; }
+[data-lang="de"] #view-services ol li:nth-child(7) .service-title .lang-de::after { content: 'Ladestationen und Smart-Elektro' !important; }
+
+@media (max-width: 767px) {
+  #view-services .h-display > span::after {
+    font-size: clamp(2.55rem, 11.5vw, 3.7rem) !important;
+    line-height: .97 !important;
+  }
+
+  #view-services .service-row {
+    grid-template-columns: 34px 1fr auto !important;
+    gap: .8rem !important;
+    padding-top: 1rem !important;
+    padding-bottom: 1rem !important;
+  }
+
+  #view-services .service-title > span::after {
+    font-size: clamp(1.2rem, 5.8vw, 1.62rem) !important;
+    line-height: 1.1 !important;
+  }
+
+  #view-services .service-action {
+    gap: .65rem !important;
+  }
+
+  #view-services .service-action::before {
+    width: 21px !important;
+    height: 21px !important;
+  }
+}
