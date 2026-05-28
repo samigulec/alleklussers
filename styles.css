@@ -637,20 +637,39 @@ em {
   font-weight: 300;
 }
 
-/* Hero composition layout. On mobile: bulb sits ABOVE the headline at a
-   smaller size, right-aligned. On desktop: side-by-side, bulb on the right.
-   Grid template areas swap the order at the lg breakpoint.
+/* Hero composition layout.
+   - Desktop: text on the left, bulb illustration on the right, with a very
+     subtle grayscale photo backdrop tinted behind the whole hero.
+   - Mobile: bulb is hidden (it looked cramped); the photo backdrop comes
+     forward as the brand visual and text sits cleanly on top.
+   The backdrop only appears if hero.jpg exists at the repo root — drop the
+   file in and it shows up. No <img> error if it's absent.
    dvh is a progressive enhancement over vh for mobile Safari URL-bar shrink. */
 .hero-grid {
+  position: relative;
+  isolation: isolate;
   display: grid;
   grid-template-columns: 1fr;
-  grid-template-areas:
-    "art"
-    "content";
+  grid-template-areas: "content";
   align-items: center;
   gap: 2rem;
   min-height: 78vh;
   min-height: 78dvh;
+}
+.hero-grid::before {
+  content: '';
+  position: absolute;
+  inset: 0;
+  z-index: -1;
+  background-image: url('hero.jpg');
+  background-size: cover;
+  background-position: center right;
+  background-repeat: no-repeat;
+  filter: grayscale(1) contrast(1.08);
+  opacity: 0.22;                /* mobile: stronger so it's clearly the visual */
+  /* Soft fade to paper on the left so text reads cleanly */
+  mask-image: linear-gradient(to right, transparent 0%, #000 60%, #000 100%);
+  -webkit-mask-image: linear-gradient(to right, transparent 0%, #000 60%, #000 100%);
 }
 .hero-content {
   grid-area: content;
@@ -660,15 +679,15 @@ em {
 }
 .hero-art {
   grid-area: art;
-  display: block;
+  display: none;
   color: var(--ink);
   width: 100%;
-  max-width: 180px;
-  margin-left: auto;
 }
 .hero-art svg {
   width: 100%;
   height: auto;
+  max-width: 480px;
+  margin-left: auto;
   display: block;
 }
 @media (min-width: 1024px) {
@@ -677,7 +696,11 @@ em {
     grid-template-areas: "content art";
     gap: 3rem;
   }
-  .hero-art { max-width: 480px; }
+  .hero-grid::before {
+    opacity: 0.16;              /* desktop: quieter, bulb is the real focal point */
+    background-position: right center;
+  }
+  .hero-art { display: block; }
 }
 
 /* Pendant bulb behaviour — filament breath, glow, hover wake-up, click flash.
