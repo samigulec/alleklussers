@@ -714,15 +714,13 @@ em {
 }
 @media (min-width: 1024px) {
   .hero-grid {
-    grid-template-columns: 1.55fr 1fr;
+    grid-template-columns: 1.45fr 1fr;
     grid-template-areas: "content art";
-    gap: 1.5rem;                /* tighter so the bulb sits closer to the text */
+    gap: 0;                     /* the bulb's viewBox already supplies its own breathing room */
   }
   .hero-grid::before {
     opacity: 0.22;
     background-position: right center;
-    /* Mask shifts further right so the photo concentrates near the bulb
-       and the gap between headline and image stops feeling empty. */
     mask-image: linear-gradient(to right,
       transparent 0%,
       transparent 42%,
@@ -734,11 +732,14 @@ em {
       #000 78%,
       #000 100%);
   }
-  .hero-art { display: block; max-width: none; }
+  .hero-art {
+    display: block;
+    max-width: none;
+  }
   .hero-art svg {
     width: 100%;
-    max-width: 100%;             /* fills the column, no artificial gap on the left */
-    margin: 0 auto;
+    max-width: 100%;
+    margin: 0;                   /* left-aligned in the column; bulb already sits on the left within its viewBox */
   }
 }
 

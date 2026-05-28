@@ -183,12 +183,14 @@
     // Random electrical sparks — small radial bursts that pop on briefly
     // every 15-25s at one of a handful of positions around the bulb.
     const SVG_NS = 'http://www.w3.org/2000/svg';
+    // Spark positions kept inside the shifted viewBox (x 80-480) so they
+    // never appear at the clipped left edge.
     const sparkPositions = [
-      { x: 60,  y: 244 }, { x: 340, y: 250 },
-      { x: 80,  y: 360 }, { x: 322, y: 360 },
-      { x: 100, y: 208 }, { x: 304, y: 210 },
-      { x: 120, y: 420 }, { x: 282, y: 420 },
-      { x: 50,  y: 312 }, { x: 354, y: 312 },
+      { x: 110, y: 244 }, { x: 360, y: 250 },
+      { x: 130, y: 360 }, { x: 380, y: 360 },
+      { x: 100, y: 208 }, { x: 340, y: 210 },
+      { x: 150, y: 420 }, { x: 400, y: 420 },
+      { x: 105, y: 312 }, { x: 420, y: 312 },
     ];
     function buildSpark() {
       const g = document.createElementNS(SVG_NS, 'g');
