@@ -112,21 +112,36 @@
     <section id="view-home" class="view">
 
       <!-- HERO -->
-      <div class="min-h-[78vh] flex flex-col justify-center py-20">
-        <h1 class="font-serif h-display max-w-[14ch]">
-          <span class="lang-nl">Uw verbouwing, <em>zonder gedoe</em>.</span>
-          <span class="lang-en">Your renovation, <em>without the hassle</em>.</span>
-        </h1>
-        <div class="mt-14 flex items-center gap-10">
-          <a href="#contact" data-nav="contact" class="btn-ink">
-            <span class="lang-nl">Plan een gesprek</span>
-            <span class="lang-en">Get in touch</span>
-            <span class="arrow">→</span>
-          </a>
-          <a href="#services" data-nav="services" class="text-sm navlink hidden sm:inline">
-            <span class="lang-nl">Onze diensten</span>
-            <span class="lang-en">Services</span>
-          </a>
+      <div class="hero-grid min-h-[78vh] py-20">
+        <div class="hero-content">
+          <h1 class="font-serif h-display max-w-[14ch]">
+            <span class="lang-nl">Uw verbouwing, <em>zonder gedoe</em>.</span>
+            <span class="lang-en">Your renovation, <em>without the hassle</em>.</span>
+          </h1>
+          <div class="mt-14 flex items-center gap-10">
+            <a href="#contact" data-nav="contact" class="btn-ink">
+              <span class="lang-nl">Plan een gesprek</span>
+              <span class="lang-en">Get in touch</span>
+              <span class="arrow">→</span>
+            </a>
+            <a href="#services" data-nav="services" class="text-sm navlink hidden sm:inline">
+              <span class="lang-nl">Onze diensten</span>
+              <span class="lang-en">Services</span>
+            </a>
+          </div>
+        </div>
+
+        <!-- Abstract editorial composition: outlined square + filled overlap +
+             diagonal + circle. Hidden on mobile to keep hero focused. -->
+        <div class="hero-art" aria-hidden="true">
+          <svg viewBox="0 0 400 500" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linejoin="miter">
+            <rect x="60" y="60" width="220" height="220" stroke-width="2" />
+            <rect x="200" y="200" width="160" height="160" fill="currentColor" stroke="none" />
+            <line x1="40" y1="440" x2="360" y2="40" stroke-width="1" />
+            <circle cx="340" cy="80" r="40" />
+            <circle cx="80" cy="450" r="5" fill="currentColor" stroke="none" />
+            <line x1="40" y1="480" x2="200" y2="480" stroke-width="1.5" />
+          </svg>
         </div>
       </div>
 
@@ -234,7 +249,15 @@
             <h3 class="service-title font-serif text-3xl lg:text-4xl leading-tight">
               <span class="lang-nl">Badkamer</span><span class="lang-en">Bathroom</span>
             </h3>
-            <span class="arrow">→</span>
+            <span class="service-action">
+              <svg class="service-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                <path d="M3 11h18v4a3 3 0 0 1-3 3H6a3 3 0 0 1-3-3v-4z"/>
+                <path d="M7 11V7a2 2 0 0 1 2-2"/>
+                <circle cx="10" cy="6.5" r="1.2"/>
+                <path d="M5 19l-1 2M19 19l1 2"/>
+              </svg>
+              <span class="arrow">→</span>
+            </span>
           </a>
         </li>
         <li>
@@ -243,7 +266,14 @@
             <h3 class="service-title font-serif text-3xl lg:text-4xl leading-tight">
               <span class="lang-nl">Keuken</span><span class="lang-en">Kitchen</span>
             </h3>
-            <span class="arrow">→</span>
+            <span class="service-action">
+              <svg class="service-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                <path d="M4 10h16v8a2 2 0 0 1-2 2H6a2 2 0 0 1-2-2v-8z"/>
+                <line x1="2" y1="10" x2="22" y2="10"/>
+                <path d="M9 6c0-1 .5-2 1-2.5M13 6c0-1 .5-2 1-2.5"/>
+              </svg>
+              <span class="arrow">→</span>
+            </span>
           </a>
         </li>
         <li>
@@ -252,7 +282,15 @@
             <h3 class="service-title font-serif text-3xl lg:text-4xl leading-tight">
               <span class="lang-nl">Elektra</span><span class="lang-en">Electrical</span>
             </h3>
-            <span class="arrow">→</span>
+            <span class="service-action">
+              <svg class="service-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                <line x1="9" y1="2" x2="9" y2="6"/>
+                <line x1="15" y1="2" x2="15" y2="6"/>
+                <path d="M6 6h12v4a6 6 0 0 1-12 0V6z"/>
+                <path d="M12 16v3a3 3 0 0 1-3 3"/>
+              </svg>
+              <span class="arrow">→</span>
+            </span>
           </a>
         </li>
         <li>
@@ -261,7 +299,14 @@
             <h3 class="service-title font-serif text-3xl lg:text-4xl leading-tight">
               <span class="lang-nl">Schilderwerk</span><span class="lang-en">Painting</span>
             </h3>
-            <span class="arrow">→</span>
+            <span class="service-action">
+              <svg class="service-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                <path d="M17 3l4 4-10 10-4 1 1-4 9-11z"/>
+                <line x1="7" y1="14" x2="3" y2="21"/>
+                <line x1="14" y1="6" x2="18" y2="10"/>
+              </svg>
+              <span class="arrow">→</span>
+            </span>
           </a>
         </li>
         <li>
@@ -270,7 +315,15 @@
             <h3 class="service-title font-serif text-3xl lg:text-4xl leading-tight">
               <span class="lang-nl">Vloeren</span><span class="lang-en">Flooring</span>
             </h3>
-            <span class="arrow">→</span>
+            <span class="service-action">
+              <svg class="service-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" aria-hidden="true">
+                <rect x="3" y="3" width="8" height="8"/>
+                <rect x="13" y="3" width="8" height="8"/>
+                <rect x="3" y="13" width="8" height="8"/>
+                <rect x="13" y="13" width="8" height="8"/>
+              </svg>
+              <span class="arrow">→</span>
+            </span>
           </a>
         </li>
         <li>
@@ -279,7 +332,15 @@
             <h3 class="service-title font-serif text-3xl lg:text-4xl leading-tight">
               <span class="lang-nl">Mutatieonderhoud</span><span class="lang-en">Turnover maintenance</span>
             </h3>
-            <span class="arrow">→</span>
+            <span class="service-action">
+              <svg class="service-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                <circle cx="7" cy="12" r="4"/>
+                <line x1="11" y1="12" x2="22" y2="12"/>
+                <line x1="18" y1="12" x2="18" y2="15"/>
+                <line x1="22" y1="12" x2="22" y2="14"/>
+              </svg>
+              <span class="arrow">→</span>
+            </span>
           </a>
         </li>
         <li>
@@ -288,7 +349,12 @@
             <h3 class="service-title font-serif text-3xl lg:text-4xl leading-tight">
               <span class="lang-nl">Complete verbouwing</span><span class="lang-en">Full renovation</span>
             </h3>
-            <span class="arrow">→</span>
+            <span class="service-action">
+              <svg class="service-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                <path d="M3 11l9-8 9 8v10a1 1 0 0 1-1 1h-5v-7H10v7H4a1 1 0 0 1-1-1V11z"/>
+              </svg>
+              <span class="arrow">→</span>
+            </span>
           </a>
         </li>
       </ol>
@@ -296,12 +362,68 @@
 
     <!-- ============ REFERENCES ============ -->
     <section id="view-references" class="view">
-      <div class="pt-20 lg:pt-32 pb-20">
+      <div class="pt-20 lg:pt-32 pb-16">
         <p class="eyebrow mb-10"><span class="lang-nl">Projecten</span><span class="lang-en">Projects</span></p>
         <h1 class="font-serif h-display max-w-[14ch]">
-          <span class="lang-nl">Wat klanten <em>zeggen</em>.</span>
-          <span class="lang-en">What clients <em>say</em>.</span>
+          <span class="lang-nl">Recent <em>werk</em>.</span>
+          <span class="lang-en">Recent <em>work</em>.</span>
         </h1>
+      </div>
+
+      <!-- Project cards — placeholder media frames ready to receive photos.
+           To add a photo, set the <img> src inside .project-card__media. -->
+      <div class="projects-grid pb-24">
+        <article class="project-card">
+          <div class="project-card__media"><span>Foto volgt</span></div>
+          <p class="eyebrow mt-5">01 · 2025</p>
+          <h3 class="font-serif"><span class="lang-nl">Badkamerrenovatie</span><span class="lang-en">Bathroom renovation</span></h3>
+          <p class="project-card__meta"><span class="lang-nl">3 weken · 4 vakmensen</span><span class="lang-en">3 weeks · 4 craftsmen</span></p>
+        </article>
+
+        <article class="project-card">
+          <div class="project-card__media"><span>Foto volgt</span></div>
+          <p class="eyebrow mt-5">02 · 2025</p>
+          <h3 class="font-serif"><span class="lang-nl">Open keuken</span><span class="lang-en">Open kitchen</span></h3>
+          <p class="project-card__meta"><span class="lang-nl">5 weken · jaren-30 woning</span><span class="lang-en">5 weeks · 1930s home</span></p>
+        </article>
+
+        <article class="project-card">
+          <div class="project-card__media"><span>Foto volgt</span></div>
+          <p class="eyebrow mt-5">03 · 2024</p>
+          <h3 class="font-serif"><span class="lang-nl">Complete verbouwing</span><span class="lang-en">Full renovation</span></h3>
+          <p class="project-card__meta"><span class="lang-nl">8 weken · 6 disciplines</span><span class="lang-en">8 weeks · 6 disciplines</span></p>
+        </article>
+
+        <article class="project-card">
+          <div class="project-card__media"><span>Foto volgt</span></div>
+          <p class="eyebrow mt-5">04 · 2024</p>
+          <h3 class="font-serif"><span class="lang-nl">Eiken parket</span><span class="lang-en">Oak parquet</span></h3>
+          <p class="project-card__meta"><span class="lang-nl">1 week · incl. egaliseren</span><span class="lang-en">1 week · incl. levelling</span></p>
+        </article>
+
+        <article class="project-card">
+          <div class="project-card__media"><span>Foto volgt</span></div>
+          <p class="eyebrow mt-5">05 · 2024</p>
+          <h3 class="font-serif"><span class="lang-nl">Mutatie appartement</span><span class="lang-en">Apartment turnover</span></h3>
+          <p class="project-card__meta"><span class="lang-nl">1 week · 3-kamer</span><span class="lang-en">1 week · 3-room</span></p>
+        </article>
+
+        <article class="project-card">
+          <div class="project-card__media"><span>Foto volgt</span></div>
+          <p class="eyebrow mt-5">06 · 2024</p>
+          <h3 class="font-serif"><span class="lang-nl">Buitenschilderwerk</span><span class="lang-en">Exterior painting</span></h3>
+          <p class="project-card__meta"><span class="lang-nl">2 weken · kit- &amp; sausklaar</span><span class="lang-en">2 weeks · sealed &amp; finished</span></p>
+        </article>
+      </div>
+
+      <div class="hairline"></div>
+
+      <div class="pt-20 pb-12">
+        <p class="eyebrow mb-10"><span class="lang-nl">Klanten</span><span class="lang-en">Clients</span></p>
+        <h2 class="font-serif h-section max-w-[14ch]">
+          <span class="lang-nl">Wat zij <em>zeggen</em>.</span>
+          <span class="lang-en">What they <em>say</em>.</span>
+        </h2>
       </div>
 
       <div class="space-y-20 lg:space-y-28 pb-28 max-w-4xl">

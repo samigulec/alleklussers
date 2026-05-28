@@ -282,6 +282,123 @@ em {
   letter-spacing: -0.04em;
   font-weight: 300;
 }
+.h-section {
+  font-size: clamp(2rem, 5vw, 4rem);
+  line-height: 1.05;
+  letter-spacing: -0.025em;
+  font-weight: 300;
+}
+
+/* Hero composition layout — text left, abstract SVG art right on desktop */
+.hero-grid {
+  display: grid;
+  grid-template-columns: 1fr;
+  align-items: center;
+  gap: 4rem;
+}
+.hero-content {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+.hero-art {
+  display: none;
+  color: var(--ink);
+}
+.hero-art svg {
+  width: 100%;
+  height: auto;
+  max-width: 480px;
+  margin-left: auto;
+}
+@media (min-width: 1024px) {
+  .hero-grid { grid-template-columns: 1.5fr 1fr; gap: 3rem; }
+  .hero-art  { display: block; }
+}
+
+/* Service rows — icon + arrow group */
+.service-action {
+  display: inline-flex;
+  align-items: center;
+  gap: 1.5rem;
+}
+.service-icon {
+  display: block;
+  width: 1.5rem;
+  height: 1.5rem;
+  color: var(--ink);
+  opacity: 0.32;
+  transition: opacity 220ms ease,
+              transform 460ms cubic-bezier(.22,.61,.36,1);
+}
+.service-row:hover .service-icon {
+  opacity: 1;
+  transform: rotate(-8deg);
+}
+@media (max-width: 640px) {
+  .service-icon { width: 1.25rem; height: 1.25rem; }
+  .service-action { gap: 1rem; }
+}
+
+/* Project cards grid — placeholder media frames */
+.projects-grid {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 2.5rem 2rem;
+}
+@media (min-width: 640px) {
+  .projects-grid { grid-template-columns: repeat(2, 1fr); }
+}
+@media (min-width: 1024px) {
+  .projects-grid { grid-template-columns: repeat(3, 1fr); gap: 3rem 2rem; }
+}
+.project-card {
+  display: flex;
+  flex-direction: column;
+  gap: 0.25rem;
+}
+.project-card__media {
+  aspect-ratio: 4 / 5;
+  background: var(--ink);
+  position: relative;
+  overflow: hidden;
+  transition: transform 600ms cubic-bezier(.22,.61,.36,1);
+}
+/* Diagonal-stripe pattern so empty frames still feel intentional */
+.project-card__media::before {
+  content: '';
+  position: absolute;
+  inset: 0;
+  background-image: repeating-linear-gradient(135deg,
+    rgba(250, 250, 250, 0.06) 0 14px,
+    transparent 14px 28px);
+}
+.project-card__media span {
+  position: absolute;
+  bottom: 1rem;
+  left: 1rem;
+  color: var(--paper);
+  opacity: 0.5;
+  font-size: 0.62rem;
+  letter-spacing: 0.22em;
+  text-transform: uppercase;
+  font-weight: 500;
+}
+.project-card:hover .project-card__media {
+  transform: scale(0.98);
+}
+.project-card h3 {
+  font-size: 1.4rem;
+  line-height: 1.2;
+  letter-spacing: -0.015em;
+  font-weight: 400;
+  margin-top: 0.25rem;
+}
+.project-card__meta {
+  font-size: 0.85rem;
+  color: var(--muted);
+  margin-top: 0.15rem;
+}
 
 /* Floating contact widget — pill button bottom-right + anchored popover */
 #contact-widget {
