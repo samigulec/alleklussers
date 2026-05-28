@@ -489,16 +489,25 @@
         </h1>
       </div>
 
-      <div class="about-body pb-16 max-w-3xl">
-        <p class="about-lede font-serif">
-          <span class="lang-nl">Wij zijn geen aannemer. Wij coördineren een vast netwerk van vakmensen — voor wie geen tijd of zin heeft om de hele dag op de bouw te staan.</span>
-          <span class="lang-en">We are not a contractor. We coordinate a steady network of craftsmen — for people who don't want to spend every day on a building site.</span>
-        </p>
+      <div class="about-block pb-16">
+        <div class="about-body max-w-2xl">
+          <p class="about-lede font-serif">
+            <span class="lang-nl">Wij zijn geen aannemer. Wij coördineren een vast netwerk van vakmensen — voor wie geen tijd of zin heeft om de hele dag op de bouw te staan.</span>
+            <span class="lang-en">We are not a contractor. We coordinate a steady network of craftsmen — for people who don't want to spend every day on a building site.</span>
+          </p>
 
-        <p class="font-serif italic text-ink/65 mt-10 max-w-xl text-xl lg:text-2xl leading-snug">
-          <span class="lang-nl">Eén nummer. Eén factuur. Eén partij die het regelt.</span>
-          <span class="lang-en">One number. One invoice. One party that handles it.</span>
-        </p>
+          <p class="font-serif italic text-ink/65 mt-10 max-w-xl text-xl lg:text-2xl leading-snug">
+            <span class="lang-nl">Eén nummer. Eén factuur. Eén partij die het regelt.</span>
+            <span class="lang-en">One number. One invoice. One party that handles it.</span>
+          </p>
+        </div>
+
+        <!-- Add a portrait or workshop photo at /about.jpg and it shows here.
+             Until then the dark frame + diagonal-stripe placeholder appears. -->
+        <figure class="about-photo">
+          <img src="about.jpg" alt="" onerror="this.style.display='none'" />
+          <span class="about-photo__label">Foto volgt</span>
+        </figure>
       </div>
 
       <div class="hairline"></div>
@@ -662,42 +671,60 @@
            To add a photo, set the <img> src inside .project-card__media. -->
       <div class="projects-grid pb-24">
         <article class="project-card">
-          <div class="project-card__media"><span>Foto volgt</span></div>
+          <div class="project-card__media">
+            <img src="projects/01.jpg" alt="" onerror="this.style.display='none'" />
+            <span>Foto volgt</span>
+          </div>
           <p class="eyebrow mt-5">01 · 2025</p>
           <h3 class="font-serif"><span class="lang-nl">Badkamerrenovatie</span><span class="lang-en">Bathroom renovation</span></h3>
           <p class="project-card__meta"><span class="lang-nl">3 weken · 4 vakmensen</span><span class="lang-en">3 weeks · 4 craftsmen</span></p>
         </article>
 
         <article class="project-card">
-          <div class="project-card__media"><span>Foto volgt</span></div>
+          <div class="project-card__media">
+            <img src="projects/02.jpg" alt="" onerror="this.style.display='none'" />
+            <span>Foto volgt</span>
+          </div>
           <p class="eyebrow mt-5">02 · 2025</p>
           <h3 class="font-serif"><span class="lang-nl">Open keuken</span><span class="lang-en">Open kitchen</span></h3>
           <p class="project-card__meta"><span class="lang-nl">5 weken · jaren-30 woning</span><span class="lang-en">5 weeks · 1930s home</span></p>
         </article>
 
         <article class="project-card">
-          <div class="project-card__media"><span>Foto volgt</span></div>
+          <div class="project-card__media">
+            <img src="projects/03.jpg" alt="" onerror="this.style.display='none'" />
+            <span>Foto volgt</span>
+          </div>
           <p class="eyebrow mt-5">03 · 2024</p>
           <h3 class="font-serif"><span class="lang-nl">Complete verbouwing</span><span class="lang-en">Full renovation</span></h3>
           <p class="project-card__meta"><span class="lang-nl">8 weken · 6 disciplines</span><span class="lang-en">8 weeks · 6 disciplines</span></p>
         </article>
 
         <article class="project-card">
-          <div class="project-card__media"><span>Foto volgt</span></div>
+          <div class="project-card__media">
+            <img src="projects/04.jpg" alt="" onerror="this.style.display='none'" />
+            <span>Foto volgt</span>
+          </div>
           <p class="eyebrow mt-5">04 · 2024</p>
           <h3 class="font-serif"><span class="lang-nl">Eiken parket</span><span class="lang-en">Oak parquet</span></h3>
           <p class="project-card__meta"><span class="lang-nl">1 week · incl. egaliseren</span><span class="lang-en">1 week · incl. levelling</span></p>
         </article>
 
         <article class="project-card">
-          <div class="project-card__media"><span>Foto volgt</span></div>
+          <div class="project-card__media">
+            <img src="projects/05.jpg" alt="" onerror="this.style.display='none'" />
+            <span>Foto volgt</span>
+          </div>
           <p class="eyebrow mt-5">05 · 2024</p>
           <h3 class="font-serif"><span class="lang-nl">Mutatie appartement</span><span class="lang-en">Apartment turnover</span></h3>
           <p class="project-card__meta"><span class="lang-nl">1 week · 3-kamer</span><span class="lang-en">1 week · 3-room</span></p>
         </article>
 
         <article class="project-card">
-          <div class="project-card__media"><span>Foto volgt</span></div>
+          <div class="project-card__media">
+            <img src="projects/06.jpg" alt="" onerror="this.style.display='none'" />
+            <span>Foto volgt</span>
+          </div>
           <p class="eyebrow mt-5">06 · 2024</p>
           <h3 class="font-serif"><span class="lang-nl">Buitenschilderwerk</span><span class="lang-en">Exterior painting</span></h3>
           <p class="project-card__meta"><span class="lang-nl">2 weken · kit- &amp; sausklaar</span><span class="lang-en">2 weeks · sealed &amp; finished</span></p>
