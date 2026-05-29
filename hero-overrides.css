@@ -96,7 +96,7 @@
 
 #view-home .home-photo { background: var(--paper); border: 1px solid var(--rule); box-shadow: 0 18px 44px rgba(10,10,10,0.06); }
 #view-home .home-photo::before {
-  background: linear-gradient(to bottom, rgba(10,10,10,0) 0%, rgba(10,10,10,0.18) 100%), url('hero.png') 48% center / cover no-repeat;
-  filter: grayscale(0.08) contrast(1.12) saturate(1.08);
+  background: linear-gradient(to bottom, rgba(10,10,10,0) 0%, rgba(10,10,10,0.18) 100%), url('ana-sayfa-asaga.png') 50% center / cover no-repeat;
+  filter: grayscale(0.04) contrast(1.1) saturate(1.08);
 }
 #view-home .home-photo__label { display: none; }
