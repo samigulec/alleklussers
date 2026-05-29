@@ -146,3 +146,43 @@
     line-height: 1.6 !important;
   }
 }
+
+/* ============================================================
+   Onze diensten — spacing fixes, cleaner lede, bigger/cropped photo
+   (loaded last; same specificity + later cascade ⇒ wins)
+   ============================================================ */
+
+/* 1) Title: force the injected second sentence onto its own line so
+   "regisseren." and "Onze elektrische diensten." never concatenate. */
+#view-home .home-services__head h2 .lang-nl::after,
+#view-home .home-services__head h2 .lang-en::after,
+#view-home .home-services__head h2 .lang-tr::after,
+#view-home .home-services__head h2 .lang-ar::after,
+#view-home .home-services__head h2 .lang-pl::after,
+#view-home .home-services__head h2 .lang-de::after {
+  display: block !important;
+}
+
+/* 2) Lede: hide the original markup text and show only one clean sentence. */
+#view-home .home-services__head .hero-lede > span {
+  font-size: 0 !important;
+}
+#view-home .home-services__head .hero-lede > span::after {
+  display: inline !important;
+}
+[data-lang="nl"] #view-home .home-services__head .hero-lede .lang-nl::after { content: 'Onze meest gevraagde elektrische diensten: storingen, groepenkasten, verlichting en aansluitpunten. Bekijk alle zeven diensten op de dienstenpagina.' !important; }
+[data-lang="en"] #view-home .home-services__head .hero-lede .lang-en::after { content: 'Our most requested electrical services: faults, fuse boxes, lighting and connection points. See all seven services on the services page.' !important; }
+[data-lang="tr"] #view-home .home-services__head .hero-lede .lang-tr::after { content: 'En çok talep edilen elektrik hizmetlerimiz: arıza, sigorta panosu, aydınlatma ve bağlantı noktaları. Tüm hizmetleri hizmetler sayfasında görün.' !important; }
+[data-lang="de"] #view-home .home-services__head .hero-lede .lang-de::after { content: 'Unsere gefragtesten Elektroarbeiten: Störungen, Sicherungskästen, Beleuchtung und Anschlüsse. Alle sieben Leistungen auf der Leistungsseite.' !important; }
+[data-lang="pl"] #view-home .home-services__head .hero-lede .lang-pl::after { content: 'Najczęściej wybierane usługi elektryczne: awarie, rozdzielnice, oświetlenie i punkty podłączeń. Zobacz wszystkie usługi na stronie usług.' !important; }
+[data-lang="ar"] #view-home .home-services__head .hero-lede .lang-ar::after { content: 'أكثر خدمات الكهرباء طلباً: الأعطال، لوحات التوزيع، الإضاءة ونقاط التوصيل. اطّلع على جميع الخدمات في صفحة الخدمات.' !important; }
+
+/* 3) Photo: ~12% taller, crop toward the electrician (less empty wall on the right). */
+@media (min-width: 1024px) {
+  #view-home .home-photo {
+    height: clamp(500px, 36vw, 565px) !important;
+  }
+  #view-home .home-photo::before {
+    background-position: 32% center !important;
+  }
+}
