@@ -11,6 +11,21 @@
 
   const SUPPORTED_LANGS = ['nl', 'en', 'tr', 'ar', 'pl', 'de'];
   const RTL_LANGS = ['ar'];
+  const GOOGLE_TAG_ID = 'G-BS4BHXX0XL';
+
+  function loadGoogleTag() {
+    if (window.gtag || document.querySelector(`script[src*="${GOOGLE_TAG_ID}"]`)) return;
+    window.dataLayer = window.dataLayer || [];
+    window.gtag = function gtag(){ window.dataLayer.push(arguments); };
+    window.gtag('js', new Date());
+    window.gtag('config', GOOGLE_TAG_ID);
+
+    const script = document.createElement('script');
+    script.async = true;
+    script.src = `https://www.googletagmanager.com/gtag/js?id=${GOOGLE_TAG_ID}`;
+    document.head.appendChild(script);
+  }
+  loadGoogleTag();
 
   function loadPolishStyles() {
     ['hero-overrides.css', 'about-overrides.css', 'mobile-overrides.css', 'services-overrides.css', 'services-polish.css', 'home-services-polish.css', 'home-services-fixes.css', 'topbar-polish.css', 'clients-polish.css'].forEach(href => {
