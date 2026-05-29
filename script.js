@@ -224,4 +224,58 @@
       else if (e.key === 'ArrowRight') showLightboxPhoto(currentIndex + 1);
     });
   }
+
+  // Project carousel — horizontal swipe with arrows + dots (Reels-style).
+  const carousel = document.querySelector('.project-carousel');
+  if (carousel) {
+    const track = carousel.querySelector('[data-carousel-track]');
+    const slides = Array.from(track.querySelectorAll('.project-slide'));
+    const prevBtn = carousel.querySelector('[data-carousel-prev]');
+    const nextBtn = carousel.querySelector('[data-carousel-next]');
+    const dotsWrap = carousel.querySelector('[data-carousel-dots]');
+    let active = 0;
+
+    // Build dots
+    const dots = slides.map((_, i) => {
+      const d = document.createElement('button');
+      d.type = 'button';
+      d.className = 'project-carousel__dot' + (i === 0 ? ' is-active' : '');
+      d.setAttribute('aria-label', 'Project ' + (i + 1));
+      d.addEventListener('click', () => goToSlide(i));
+      dotsWrap.appendChild(d);
+      return d;
+    });
+
+    function goToSlide(i) {
+      active = Math.max(0, Math.min(slides.length - 1, i));
+      track.scrollTo({ left: slides[active].offsetLeft - track.offsetLeft, behavior: 'smooth' });
+      updateControls();
+    }
+    function updateControls() {
+      dots.forEach((d, i) => d.classList.toggle('is-active', i === active));
+      if (prevBtn) prevBtn.disabled = active === 0;
+      if (nextBtn) nextBtn.disabled = active === slides.length - 1;
+    }
+    if (prevBtn) prevBtn.addEventListener('click', () => goToSlide(active - 1));
+    if (nextBtn) nextBtn.addEventListener('click', () => goToSlide(active + 1));
+
+    // Sync active dot when the user swipes/scrolls manually
+    let scrollTimer;
+    track.addEventListener('scroll', () => {
+      clearTimeout(scrollTimer);
+      scrollTimer = setTimeout(() => {
+        const center = track.scrollLeft + track.clientWidth / 2;
+        let nearest = 0, best = Infinity;
+        slides.forEach((s, i) => {
+          const sc = s.offsetLeft - track.offsetLeft + s.clientWidth / 2;
+          const dist = Math.abs(sc - center);
+          if (dist < best) { best = dist; nearest = i; }
+        });
+        active = nearest;
+        updateControls();
+      }, 90);
+    }, { passive: true });
+
+    updateControls();
+  }
 })();
