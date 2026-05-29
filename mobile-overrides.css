@@ -94,10 +94,42 @@
     min-height: auto !important;
     padding-top: 1.9rem !important;
     padding-bottom: 2.25rem !important;
+    position: relative;
+    isolation: isolate;
+  }
+  /* Electrician photo backdrop — bleeds full width behind the intro */
+  #view-home .hero-grid::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: -1rem;
+    right: -1rem;
+    height: 390px;
+    z-index: -2;
+    background: url('hero.png') right 15% / cover no-repeat;
+  }
+  /* Paper scrim: solid on the left (text stays crisp), clear on the right
+     (electrician visible), fading to paper at the bottom (buttons on white) */
+  #view-home .hero-grid::after {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: -1rem;
+    right: -1rem;
+    height: 390px;
+    z-index: -1;
+    pointer-events: none;
+    background:
+      linear-gradient(to right, var(--paper) 0%, var(--paper) 28%, rgba(250,250,250,0) 74%),
+      linear-gradient(to top, var(--paper) 3%, rgba(250,250,250,0) 44%);
   }
 
   #view-home .hero-content {
     display: contents;
+  }
+  /* Keep the subtitle within the left zone so the photo reads on the right */
+  #view-home .hero-lede {
+    max-width: 22ch !important;
   }
 
   #view-home .hero-content > .eyebrow {
@@ -138,22 +170,8 @@
 
   /* Clean editorial photo card — sits right after the lede, well-proportioned,
      subtle frame, with one small caption chip at the bottom. No heavy veil. */
-  #view-home .hero-photo {
-    display: block !important;
-    order: 4;
-    position: relative;
-    width: 100%;
-    aspect-ratio: 3 / 2;
-    height: auto;
-    margin: 1.6rem 0 0;
-    border: 1px solid var(--rule);
-    background: url('hero.png') 50% 25% / cover no-repeat;
-    filter: grayscale(0.1) contrast(1.18) brightness(1) saturate(1.12);
-    box-shadow: 0 18px 38px rgba(10, 10, 10, 0.07);
-    overflow: hidden;
-    -webkit-mask-image: none !important;
-    mask-image: none !important;
-  }
+  /* Photo card replaced by the hero-grid backdrop above */
+  #view-home .hero-photo { display: none !important; }
   /* gentle bottom fade just under the caption chip */
   #view-home .hero-photo::after {
     content: '';
@@ -189,11 +207,19 @@
 
   #view-home .hero-content .mt-10.flex {
     order: 5;
-    margin-top: 1.35rem !important;
+    margin-top: 1.6rem !important;
     display: grid !important;
     grid-template-columns: 1fr 1fr;
-    gap: 0.72rem !important;
+    gap: 0.6rem !important;
     width: 100%;
+  }
+  /* Offerte full width on top; WhatsApp + E-mail side by side below */
+  #view-home .hero-cta__quote { grid-column: 1 / -1; }
+  #view-home .hero-cta__services { display: none !important; }
+  #view-home .hero-cta__contact {
+    display: inline-flex !important;
+    background: #fff;
+    gap: 0.5rem;
   }
 
   #view-home .btn-ink,
@@ -207,32 +233,39 @@
     white-space: nowrap;
   }
 
+  /* Trust bar: 3 cards in one bordered row (check / clock / star) */
   #view-home .hero-badges {
     order: 6;
-    margin-top: 1.35rem !important;
+    margin-top: 1.75rem !important;
     padding-top: 0 !important;
     display: grid !important;
-    grid-template-columns: 1fr;
-    gap: 0.7rem;
-    border: 0;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 0 !important;
+    border: 1px solid var(--rule);
+    background: #fff;
   }
 
   #view-home .hero-badges li {
     display: flex;
-    align-items: center;
-    gap: 0.85rem;
-    padding: 0.9rem 0.95rem;
-    border: 1px solid var(--rule);
-    background: #fff;
-    box-shadow: 0 12px 26px rgba(10, 10, 10, 0.035);
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 0.5rem;
+    padding: 0.95rem 0.8rem;
+    border-left: 1px solid var(--rule);
+    background: transparent;
+    box-shadow: none;
   }
+  #view-home .hero-badges li:first-child { border-left: 0; }
 
   #view-home .hero-badge__icon {
-    width: 19px;
-    height: 19px;
-    flex: 0 0 19px;
+    width: 1.2rem;
+    height: 1.2rem;
+    flex: 0 0 auto;
     color: var(--accent);
+    margin: 0;
   }
+  #view-home .hero-badge__title { font-size: 0.72rem; line-height: 1.2; }
+  #view-home .hero-badge__sub { font-size: 0.64rem; line-height: 1.2; }
 
   #view-home .hero-badge__title,
   #view-home .hero-badges li:first-child .hero-badge__title span::after {
