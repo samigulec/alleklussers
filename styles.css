@@ -703,24 +703,6 @@ ol li:last-child .service-row {
   color: var(--muted);
   font-weight: 500;
 }
-/* Editorial eyebrow with a short leading dash (— LABEL) */
-.eyebrow--dash {
-  display: inline-flex;
-  align-items: center;
-  gap: 0.7rem;
-}
-.eyebrow--dash::before {
-  content: '';
-  width: 1.75rem;
-  height: 1px;
-  background: currentColor;
-  opacity: 0.55;
-  flex-shrink: 0;
-}
-
-/* WhatsApp / E-mail hero buttons — desktop hides them (shown on mobile only) */
-.hero-cta__contact { display: none; }
-.hero-cta__icon { width: 1.05rem; height: 1.05rem; flex-shrink: 0; }
 
 .hairline { height: 1px; background: var(--ink); width: 100%; }
 
