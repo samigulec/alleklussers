@@ -587,64 +587,118 @@
 
     <!-- ============ ABOUT ============ -->
     <section id="view-about" class="view">
-      <div class="pt-20 lg:pt-32 pb-12">
-        <p class="eyebrow mb-8"><span class="lang-nl">Over ons</span><span class="lang-en">About</span><span class="lang-tr">Hakkımızda</span><span class="lang-ar">من نحن</span><span class="lang-pl">O nas</span><span class="lang-de">Über uns</span></p>
-        <h1 class="font-serif h-display max-w-[16ch]">
-          <span class="lang-nl">Wij regisseren. <em>U ontspant.</em></span>
-          <span class="lang-en">We coordinate. <em>You relax.</em></span>
-          <span class="lang-tr">Biz yönetiyoruz. <em>Siz rahatlıyorsunuz.</em></span>
-          <span class="lang-ar">نحن ننسّق. <em>وأنتم تستريحون.</em></span>
-          <span class="lang-pl">My koordynujemy. <em>Ty odpoczywasz.</em></span>
-          <span class="lang-de">Wir koordinieren. <em>Sie entspannen.</em></span>
-        </h1>
-      </div>
 
-      <div class="about-block pb-16">
-        <div class="about-body max-w-2xl">
-          <p class="about-lede font-serif">
-            <span class="lang-nl">Wij zijn geen aannemer. Wij coördineren een vast netwerk van vakmensen — voor wie geen tijd of zin heeft om de hele dag op de bouw te staan.</span>
-            <span class="lang-en">We are not a contractor. We coordinate a steady network of craftsmen — for people who don't want to spend every day on a building site.</span>
-            <span class="lang-tr">Biz müteahhit değiliz. Sabit bir ustalar ağını yönetiyoruz — bütün gün şantiyede durmaya vakti ya da niyeti olmayanlar için.</span>
-            <span class="lang-ar">لسنا مقاولاً. نحن ننسّق شبكةً ثابتةً من الحرفيين — لمن لا يملك الوقت أو الرغبة في قضاء يومه كاملاً في موقع البناء.</span>
-            <span class="lang-pl">Nie jesteśmy wykonawcą. Koordynujemy stałą sieć fachowców — dla tych, którzy nie chcą spędzać całych dni na budowie.</span>
-            <span class="lang-de">Wir sind kein Bauunternehmen. Wir koordinieren ein festes Netzwerk aus Handwerkern — für alle, die keine Zeit oder Lust haben, den ganzen Tag auf der Baustelle zu stehen.</span>
-          </p>
-
-          <p class="font-serif italic text-ink/65 mt-10 max-w-xl text-xl lg:text-2xl leading-snug">
-            <span class="lang-nl">Eén nummer. Eén factuur. Eén partij die het regelt.</span>
-            <span class="lang-en">One number. One invoice. One party that handles it.</span>
-            <span class="lang-tr">Tek numara. Tek fatura. Her şeyi halleden tek bir taraf.</span>
-            <span class="lang-ar">رقمٌ واحد. فاتورةٌ واحدة. جهةٌ واحدةٌ تتولى الأمر.</span>
-            <span class="lang-pl">Jeden numer. Jedna faktura. Jedna firma, która wszystko załatwi.</span>
-            <span class="lang-de">Eine Nummer. Eine Rechnung. Ein Partner, der alles regelt.</span>
+      <!-- Top: editorial text on the left, electrician photo card on the right -->
+      <div class="about-intro">
+        <div class="about-intro__text">
+          <p class="eyebrow mb-8"><span class="lang-nl">Over ons</span><span class="lang-en">About us</span><span class="lang-tr">Hakkımızda</span><span class="lang-ar">من نحن</span><span class="lang-pl">O nas</span><span class="lang-de">Über uns</span></p>
+          <h1 class="font-serif h-display max-w-[14ch]">
+            <span class="lang-nl">Wij regelen uw elektra. <em>U blijft zorgeloos.</em></span>
+            <span class="lang-en">We handle your electrics. <em>You stay worry-free.</em></span>
+            <span class="lang-tr">Elektriğinizi biz çözeriz. <em>Siz rahat edin.</em></span>
+            <span class="lang-ar">ننجز أعمال الكهرباء. <em>وأنتم مطمئنون.</em></span>
+            <span class="lang-pl">Zajmiemy się elektryką. <em>Ty masz spokój.</em></span>
+            <span class="lang-de">Wir regeln Ihre Elektroarbeiten. <em>Sie bleiben sorgenfrei.</em></span>
+          </h1>
+          <p class="about-lede mt-8 max-w-xl">
+            <span class="lang-nl">Wij zijn uw betrouwbare elektrotechnisch specialist voor particulieren en bedrijven. Met veilige installaties, snelle communicatie en netjes werk zorgen wij voor zekerheid in elke situatie.</span>
+            <span class="lang-en">We provide reliable electrical solutions for homes and businesses. With safe installations, clear communication and tidy workmanship, we make every job feel secure.</span>
+            <span class="lang-tr">Ev ve iş yerleri için güvenilir elektrik çözümleri sunuyoruz. Güvenli tesisat, hızlı iletişim ve temiz işçilikle her durumda yanınızdayız.</span>
+            <span class="lang-ar">نوفّر حلولاً كهربائية موثوقة للمنازل والشركات. بتركيبات آمنة وتواصل واضح وعمل مرتّب، نضمن لكم الثقة في كل موقف.</span>
+            <span class="lang-pl">Oferujemy niezawodne rozwiązania elektryczne dla domów i firm. Dzięki bezpiecznym instalacjom, przejrzystej komunikacji i schludnemu wykonaniu każda praca daje poczucie pewności.</span>
+            <span class="lang-de">Wir sind Ihr zuverlässiger Elektrotechnik-Spezialist für Privat- und Geschäftskunden. Mit sicheren Installationen, klarer Kommunikation und sauberer Ausführung sorgen wir in jeder Situation für Verlässlichkeit.</span>
           </p>
         </div>
-
-        <!-- Add a portrait or workshop photo at /about.jpg and it shows here.
-             Until then the dark frame + diagonal-stripe placeholder appears. -->
-        <figure class="about-photo">
-          <img src="about.jpg" alt="" onerror="this.style.display='none'" />
-          <span class="about-photo__label">Foto</span>
+        <figure class="about-photo about-photo--wide">
+          <img src="hero.png" alt="Elektricien aan het werk" />
         </figure>
       </div>
 
       <div class="hairline"></div>
 
-      <!-- Editorial stat row — 3 columns at every breakpoint -->
-      <dl class="about-stats pb-28 pt-12">
+      <!-- Editorial stat row: label + value + supporting line -->
+      <dl class="about-stats about-stats--rich py-14 lg:py-16">
         <div>
-          <dt class="eyebrow"><span class="lang-nl">Opgericht</span><span class="lang-en">Founded</span><span class="lang-tr">Kuruluş</span><span class="lang-ar">تأسست</span><span class="lang-pl">Założono</span><span class="lang-de">Gegründet</span></dt>
+          <dt class="eyebrow"><span class="lang-nl">Ervaring</span><span class="lang-en">Experience</span><span class="lang-tr">Deneyim</span><span class="lang-ar">الخبرة</span><span class="lang-pl">Doświadczenie</span><span class="lang-de">Erfahrung</span></dt>
           <dd class="font-serif">2021</dd>
+          <p class="about-stats__sub">
+            <span class="lang-nl">Sinds 2021 actief in elektrotechniek.</span>
+            <span class="lang-en">Active in electrical work since 2021.</span>
+            <span class="lang-tr">2021'den beri elektrik teknolojisinde aktif.</span>
+            <span class="lang-ar">نعمل في الكهرباء منذ 2021.</span>
+            <span class="lang-pl">Działamy w elektrotechnice od 2021 roku.</span>
+            <span class="lang-de">Seit 2021 in der Elektrotechnik aktiv.</span>
+          </p>
         </div>
         <div>
           <dt class="eyebrow"><span class="lang-nl">Projecten</span><span class="lang-en">Projects</span><span class="lang-tr">Projeler</span><span class="lang-ar">المشاريع</span><span class="lang-pl">Projekty</span><span class="lang-de">Projekte</span></dt>
           <dd class="font-serif">120+</dd>
+          <p class="about-stats__sub">
+            <span class="lang-nl">Afgeronde elektra-opdrachten.</span>
+            <span class="lang-en">Completed electrical assignments.</span>
+            <span class="lang-tr">Tamamlanan elektrik işleri.</span>
+            <span class="lang-ar">مهام كهربائية مكتملة.</span>
+            <span class="lang-pl">Ukończone zlecenia elektryczne.</span>
+            <span class="lang-de">Abgeschlossene Elektroaufträge.</span>
+          </p>
         </div>
         <div>
           <dt class="eyebrow"><span class="lang-nl">Talen</span><span class="lang-en">Languages</span><span class="lang-tr">Diller</span><span class="lang-ar">اللغات</span><span class="lang-pl">Języki</span><span class="lang-de">Sprachen</span></dt>
-          <dd class="font-serif">NL · EN · TR · AR · PL · DE</dd>
+          <dd class="font-serif about-stats__lang">NL · EN · TR · AR · PL · DE</dd>
+          <p class="about-stats__sub">
+            <span class="lang-nl">Duidelijke communicatie voor elke klant.</span>
+            <span class="lang-en">Clear communication for every client.</span>
+            <span class="lang-tr">Her müşteri için net iletişim.</span>
+            <span class="lang-ar">تواصل واضح مع كل عميل.</span>
+            <span class="lang-pl">Przejrzysta komunikacja z każdym klientem.</span>
+            <span class="lang-de">Klare Kommunikation für jeden Kunden.</span>
+          </p>
         </div>
       </dl>
+
+      <!-- Soft trust pill — 4 outline-icon items in a tinted band -->
+      <ul class="about-trust pb-28">
+        <li>
+          <svg class="about-trust__icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+            <path d="M20 7l-8-4-8 4v6c0 4.5 3.5 8.5 8 9.5 4.5-1 8-5 8-9.5V7z"/>
+            <polyline points="9 12 11 14 15 10"/>
+          </svg>
+          <div>
+            <span class="about-trust__title"><span class="lang-nl">Transparante prijzen</span><span class="lang-en">Transparent pricing</span><span class="lang-tr">Şeffaf fiyatlar</span><span class="lang-ar">أسعار شفافة</span><span class="lang-pl">Przejrzyste ceny</span><span class="lang-de">Transparente Preise</span></span>
+            <span class="about-trust__sub"><span class="lang-nl">Geen verrassingen achteraf.</span><span class="lang-en">No surprises afterwards.</span><span class="lang-tr">Sonradan sürpriz yok.</span><span class="lang-ar">لا مفاجآت لاحقاً.</span><span class="lang-pl">Bez niespodzianek na końcu.</span><span class="lang-de">Keine Überraschungen danach.</span></span>
+          </div>
+        </li>
+        <li>
+          <svg class="about-trust__icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+            <path d="M21 15.5a2.5 2.5 0 0 1-2.5 2.5h-9L5 22V6.5A2.5 2.5 0 0 1 7.5 4h11A2.5 2.5 0 0 1 21 6.5v9z"/>
+            <line x1="9" y1="10" x2="17" y2="10"/>
+            <line x1="9" y1="13" x2="14" y2="13"/>
+          </svg>
+          <div>
+            <span class="about-trust__title"><span class="lang-nl">Gratis telefonisch advies</span><span class="lang-en">Free phone advice</span><span class="lang-tr">Ücretsiz telefonla danışma</span><span class="lang-ar">استشارة هاتفية مجانية</span><span class="lang-pl">Bezpłatna porada telefoniczna</span><span class="lang-de">Kostenlose Telefonberatung</span></span>
+            <span class="about-trust__sub"><span class="lang-nl">Snel antwoord op al uw vragen.</span><span class="lang-en">Quick answer to all your questions.</span><span class="lang-tr">Sorularınıza hızlı yanıt.</span><span class="lang-ar">إجابة سريعة على كل أسئلتكم.</span><span class="lang-pl">Szybka odpowiedź na wszystkie pytania.</span><span class="lang-de">Schnelle Antwort auf alle Fragen.</span></span>
+          </div>
+        </li>
+        <li>
+          <svg class="about-trust__icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+            <path d="M12 2l8 4v6c0 5-3.5 9-8 10-4.5-1-8-5-8-10V6l8-4z"/>
+            <polyline points="8.5 12.5 11 15 16 9.5"/>
+          </svg>
+          <div>
+            <span class="about-trust__title"><span class="lang-nl">Vakkundige installatie</span><span class="lang-en">Expert installation</span><span class="lang-tr">Uzman montaj</span><span class="lang-ar">تركيب احترافي</span><span class="lang-pl">Fachowy montaż</span><span class="lang-de">Fachgerechte Installation</span></span>
+            <span class="about-trust__sub"><span class="lang-nl">Veilig, netjes en volgens de norm.</span><span class="lang-en">Safe, tidy and to standard.</span><span class="lang-tr">Güvenli, temiz ve standartlara uygun.</span><span class="lang-ar">آمن ومرتّب ووفق المعايير.</span><span class="lang-pl">Bezpieczny, schludny i zgodny z normami.</span><span class="lang-de">Sicher, sauber und nach Norm.</span></span>
+          </div>
+        </li>
+        <li>
+          <svg class="about-trust__icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+            <path d="M13 2L4 14h7l-1 8 9-12h-7l1-8z"/>
+          </svg>
+          <div>
+            <span class="about-trust__title"><span class="lang-nl">24/7 bereikbaar</span><span class="lang-en">24/7 reachable</span><span class="lang-tr">7/24 ulaşılabilir</span><span class="lang-ar">متاحون 24/7</span><span class="lang-pl">Dostępni 24/7</span><span class="lang-de">24/7 erreichbar</span></span>
+            <span class="about-trust__sub"><span class="lang-nl">Hulp wanneer u het nodig hebt.</span><span class="lang-en">Help when you need it.</span><span class="lang-tr">İhtiyacınız olduğunda yanınızda.</span><span class="lang-ar">مساعدة وقتما تحتاجونها.</span><span class="lang-pl">Pomoc, gdy jej potrzebujesz.</span><span class="lang-de">Hilfe, wann immer Sie sie brauchen.</span></span>
+          </div>
+        </li>
+      </ul>
     </section>
 
     <!-- ============ SERVICES ============ -->

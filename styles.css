@@ -1171,6 +1171,157 @@ em {
   }
 }
 
+/* --- About: new editorial layout ---------------------------------------- */
+
+/* Top: text column on the left, photo card on the right */
+.about-intro {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 2.25rem;
+  padding-top: 4.5rem;
+  padding-bottom: 3rem;
+  align-items: center;
+}
+@media (min-width: 1024px) {
+  .about-intro {
+    grid-template-columns: 1.05fr 1fr;
+    gap: 4.5rem;
+    padding-top: 7rem;
+    padding-bottom: 5rem;
+  }
+}
+.about-intro__text {
+  display: flex;
+  flex-direction: column;
+}
+
+/* Wide photo card variant — used inside .about-intro */
+.about-photo--wide {
+  position: relative;
+  aspect-ratio: 4 / 3;
+  width: 100%;
+  max-width: none;
+  margin: 0;
+  background: var(--paper);
+  border: 1px solid var(--rule);
+  overflow: hidden;
+  box-shadow: 0 24px 56px rgba(10, 10, 10, 0.08);
+}
+.about-photo--wide::before { content: none; }
+.about-photo--wide img {
+  position: absolute;
+  inset: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: 45% center;
+  /* Touch of color, gentle contrast */
+  filter: contrast(1.06) saturate(1.08);
+}
+
+/* Rich stats: each block gets a supporting line of muted copy below */
+.about-stats--rich > div {
+  gap: 0.55rem;
+}
+.about-stats--rich dd {
+  font-weight: 300;
+}
+.about-stats__sub {
+  margin-top: 0.7rem;
+  font-size: 0.85rem;
+  color: var(--muted);
+  line-height: 1.45;
+  letter-spacing: 0;
+  max-width: 28ch;
+}
+/* The language list is long — let it shrink to fit the column without wrapping awkwardly */
+.about-stats__lang {
+  font-size: clamp(1.15rem, 2.5vw, 1.85rem) !important;
+  letter-spacing: 0.02em;
+  white-space: nowrap;
+}
+
+/* Bottom soft trust band — 4 outline items in a tinted rounded-free row */
+.about-trust {
+  list-style: none;
+  margin: 1.5rem 0 0;
+  padding: 0.4rem 1.25rem;
+  background: rgba(180, 83, 9, 0.045);
+  border: 1px solid rgba(180, 83, 9, 0.14);
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 0;
+}
+@media (min-width: 600px) {
+  .about-trust {
+    grid-template-columns: repeat(2, 1fr);
+    padding: 0.5rem 1.5rem;
+  }
+}
+@media (min-width: 1024px) {
+  .about-trust {
+    grid-template-columns: repeat(4, 1fr);
+    padding: 0.5rem 2rem;
+    margin-top: 2.25rem;
+  }
+}
+.about-trust li {
+  display: flex;
+  align-items: flex-start;
+  gap: 0.9rem;
+  padding: 1.15rem 0.5rem;
+  border-bottom: 1px solid rgba(180, 83, 9, 0.13);
+}
+.about-trust li:last-child { border-bottom: 0; }
+@media (min-width: 600px) {
+  .about-trust li {
+    padding: 1.2rem 1rem;
+  }
+  /* Reset bottom borders, apply right borders between adjacent cells.
+     We restore bottom borders on the first row at the 2-col breakpoint. */
+  .about-trust li:nth-child(odd) {
+    border-right: 1px solid rgba(180, 83, 9, 0.13);
+  }
+  .about-trust li:nth-child(1),
+  .about-trust li:nth-child(2) {
+    border-bottom: 1px solid rgba(180, 83, 9, 0.13);
+  }
+  .about-trust li:nth-child(3),
+  .about-trust li:nth-child(4) {
+    border-bottom: 0;
+  }
+}
+@media (min-width: 1024px) {
+  .about-trust li {
+    padding: 1.35rem 1.1rem;
+    border-bottom: 0 !important;
+    border-right: 1px solid rgba(180, 83, 9, 0.13) !important;
+  }
+  .about-trust li:last-child { border-right: 0 !important; }
+}
+.about-trust__icon {
+  width: 24px;
+  height: 24px;
+  flex-shrink: 0;
+  color: var(--accent);
+  margin-top: 0.15rem;
+}
+.about-trust__title {
+  display: block;
+  font-size: 0.92rem;
+  font-weight: 600;
+  color: var(--ink);
+  letter-spacing: -0.005em;
+  line-height: 1.25;
+}
+.about-trust__sub {
+  display: block;
+  font-size: 0.78rem;
+  color: var(--muted);
+  margin-top: 0.35rem;
+  line-height: 1.45;
+}
+
 /* Home services — featured 4 cards + small editorial photo */
 .home-services__head {
   display: grid;
