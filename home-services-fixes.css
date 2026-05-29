@@ -80,3 +80,69 @@
     margin-bottom: 1rem;
   }
 }
+
+/* ============================================================
+   Onze diensten — premium editorial refinement (desktop ≥1024px)
+   Loaded last, so these win over earlier home-services rules.
+   46% text / 54% photo, larger serif title, landscape photo,
+   bigger card titles & descriptions.
+   ============================================================ */
+@media (min-width: 1024px) {
+  #view-home .home-services__head {
+    grid-template-columns: 46fr 54fr !important;
+    gap: 4.5rem !important;
+    align-items: center !important;
+  }
+
+  /* Big editorial serif title: 84–104px, tight leading */
+  #view-home .home-services__head h2 {
+    max-width: 18ch !important;
+  }
+  #view-home .home-services__head h2 span::after {
+    font-size: clamp(5.25rem, 6.2vw, 6.5rem) !important;  /* ~84–104px */
+    line-height: 0.95 !important;
+    letter-spacing: -0.025em !important;
+  }
+
+  /* Description: 18–21px, airy leading */
+  #view-home .home-services__head .hero-lede {
+    max-width: 42ch !important;
+  }
+  #view-home .home-services__head .hero-lede span::after {
+    font-size: clamp(1.125rem, 1.35vw, 1.3rem) !important;  /* 18–21px */
+    line-height: 1.72 !important;
+  }
+
+  /* Landscape photo: ~700–760 wide × 440–500 tall, soft radius */
+  #view-home .home-photo {
+    aspect-ratio: auto !important;
+    height: clamp(440px, 32vw, 500px) !important;
+    max-width: none !important;
+    width: 100% !important;
+    margin: 0 !important;
+    border-radius: 6px !important;
+    border: 1px solid var(--rule) !important;
+  }
+  #view-home .home-photo::before {
+    border-radius: 6px !important;
+  }
+
+  /* Cards: roomier padding, bigger serif titles (28–38px) and copy (16–18px) */
+  #view-home .home-services__grid {
+    gap: 1.5rem !important;
+    margin-top: 4rem !important;
+  }
+  #view-home .home-card {
+    padding: 2.25rem 1.9rem 2rem !important;
+  }
+  #view-home .home-card__title > span::after,
+  #view-home .home-card__title span::after {
+    font-size: clamp(1.75rem, 1.9vw, 2.1rem) !important;  /* 28–38px */
+    line-height: 1.1 !important;
+  }
+  #view-home .home-card__desc > span::after,
+  #view-home .home-card__desc span::after {
+    font-size: clamp(1rem, 1.1vw, 1.125rem) !important;   /* 16–18px */
+    line-height: 1.6 !important;
+  }
+}
