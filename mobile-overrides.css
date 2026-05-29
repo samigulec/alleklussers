@@ -13,22 +13,8 @@
     background: var(--paper);
   }
 
-  .top-bar {
-    font-size: 0.68rem;
-    border-bottom: 1px solid var(--rule);
-  }
-
-  .top-bar__inner {
-    min-height: 30px;
-    padding-inline: 1rem;
-    justify-content: center;
-    gap: 1rem;
-  }
-
-  .top-bar__cluster:first-child .top-bar__item--hide-sm,
-  .top-bar__cluster:last-child {
-    display: none !important;
-  }
+  /* Top bar styling now lives in styles.css (dark + left-aligned).
+     No mobile override needed. */
 
   header {
     position: sticky;
