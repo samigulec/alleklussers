@@ -1,3 +1,8 @@
+/* Mobile-only trust row + photo badge — hidden by default; mobile-overrides
+   re-enables them under (max-width: 767px). */
+.hero-trust-row { display: none; }
+.hero-photo__badge { display: none; }
+
 /* Top info bar — global trust strip above the header */
 .top-bar {
   background: var(--paper);

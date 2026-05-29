@@ -1,8 +1,92 @@
-/* Services page redesign: electrical-company focused list with matching line icons. */
-#view-services .h-display > span,
-#view-services .service-title > span {
-  font-size: 0;
+/* Services page redesign: electrical-company focused list with matching line icons.
+   The list now uses .service-row__icon-wrap, .service-row__body (title + desc)
+   and .service-row__chevron — replace the older title-only layout. */
+
+#view-services .services-list { list-style: none; padding: 0; }
+
+#view-services .service-row {
+  display: grid;
+  grid-template-columns: 56px 1fr auto;
+  align-items: center;
+  gap: 1.1rem;
+  padding: 1.35rem 0.25rem;
+  border-top: 1px solid var(--rule);
+  cursor: pointer;
+  color: var(--ink);
+  transition: padding-left 360ms cubic-bezier(.22,.61,.36,1), background 200ms ease;
 }
+#view-services .services-list li:last-child .service-row {
+  border-bottom: 1px solid var(--rule);
+}
+#view-services .service-row__icon-wrap {
+  width: 44px; height: 44px;
+  display: inline-flex; align-items: center; justify-content: center;
+  background: rgba(180, 83, 9, 0.08);
+  color: var(--accent);
+  border-radius: 0;
+  flex-shrink: 0;
+}
+#view-services .service-row__icon {
+  width: 22px; height: 22px;
+}
+#view-services .service-row__body {
+  display: flex;
+  flex-direction: column;
+  gap: 0.2rem;
+  min-width: 0;
+}
+#view-services .service-row__title {
+  font-size: 1.15rem;
+  font-weight: 500;
+  line-height: 1.2;
+  letter-spacing: -0.015em;
+  color: var(--ink);
+}
+#view-services .service-row__desc {
+  font-size: 0.85rem;
+  line-height: 1.4;
+  color: var(--muted);
+}
+#view-services .service-row__chevron {
+  font-size: 1.25rem;
+  color: var(--muted);
+  transition: transform 360ms cubic-bezier(.22,.61,.36,1), color 200ms ease;
+}
+#view-services .service-row:hover {
+  background: rgba(180, 83, 9, 0.03);
+  padding-left: 0.85rem;
+}
+#view-services .service-row:hover .service-row__title { color: var(--accent); }
+#view-services .service-row:hover .service-row__chevron {
+  transform: translateX(6px);
+  color: var(--accent);
+}
+
+#view-services .services-list__all {
+  margin-top: 1.5rem;
+}
+#view-services .services-list__all a {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.5rem;
+  color: var(--accent);
+  font-weight: 500;
+}
+
+@media (min-width: 768px) {
+  #view-services .service-row {
+    grid-template-columns: 64px 1fr auto;
+    gap: 1.4rem;
+    padding: 1.55rem 0.5rem;
+  }
+  #view-services .service-row__icon-wrap { width: 50px; height: 50px; }
+  #view-services .service-row__icon { width: 26px; height: 26px; }
+  #view-services .service-row__title { font-size: 1.35rem; }
+  #view-services .service-row__desc { font-size: 0.9rem; }
+}
+
+/* ---- Older service-title overrides below are no longer used but harmless.
+   The new structure replaces .service-title with .service-row__title. ---- */
 
 #view-services .h-display > span::after {
   display: inline;
