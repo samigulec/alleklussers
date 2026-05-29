@@ -1,0 +1,343 @@
+/* Mobile concept polish based on the approved visual direction.
+   Scope: homepage hero + services only. Contact page/section is intentionally untouched. */
+
+@media (max-width: 767px) {
+  :root {
+    --mobile-page-x: 1rem;
+  }
+
+  body {
+    background: #fafafa;
+  }
+
+  .top-bar {
+    background: #0a0a0a;
+    color: #fff;
+    border: 0;
+  }
+
+  .top-bar__inner {
+    min-height: 30px;
+    padding-inline: var(--mobile-page-x);
+    justify-content: space-between;
+  }
+
+  .top-bar__item {
+    color: rgba(255,255,255,.92);
+  }
+
+  .top-bar svg {
+    color: rgba(255,255,255,.92);
+  }
+
+  header {
+    top: 0;
+    background: rgba(250,250,250,.98) !important;
+    border-bottom: 1px solid rgba(10,10,10,.08) !important;
+    box-shadow: 0 10px 28px rgba(10,10,10,.035);
+  }
+
+  header > div {
+    padding: .82rem var(--mobile-page-x) !important;
+  }
+
+  .logo-img {
+    height: 40px !important;
+  }
+
+  .lang-select__trigger {
+    min-height: 34px;
+    padding-inline: .75rem;
+    border-color: rgba(10,10,10,.22);
+    background: #fff;
+  }
+
+  .menu-btn {
+    width: 38px;
+    height: 38px;
+  }
+
+  main {
+    padding-inline: var(--mobile-page-x) !important;
+  }
+
+  #view-home .hero-grid {
+    display: grid !important;
+    grid-template-columns: 1fr !important;
+    min-height: auto !important;
+    padding-top: 2.2rem !important;
+    padding-bottom: 2.2rem !important;
+    gap: 0 !important;
+  }
+
+  #view-home .hero-content {
+    display: grid !important;
+  }
+
+  #view-home .hero-content > .eyebrow {
+    margin: 0 0 1rem !important;
+    color: var(--accent);
+    font-size: .62rem;
+    letter-spacing: .24em;
+    font-weight: 650;
+  }
+
+  #view-home .h-display {
+    max-width: 8.5ch !important;
+    margin: 0 !important;
+    font-size: clamp(3.05rem, 13vw, 4.15rem) !important;
+    line-height: .92 !important;
+    letter-spacing: -.055em !important;
+  }
+
+  #view-home .h-display > span::after {
+    font-size: clamp(3.05rem, 13vw, 4.15rem) !important;
+    line-height: .92 !important;
+  }
+
+  #view-home .hero-lede {
+    margin-top: 1.05rem !important;
+    max-width: 100% !important;
+    color: #444;
+    font-size: .98rem !important;
+    line-height: 1.58 !important;
+  }
+
+  #view-home .hero-lede > span::after {
+    font-size: .98rem !important;
+    line-height: 1.58 !important;
+  }
+
+  #view-home .hero-content .mt-10.flex {
+    margin-top: 1.35rem !important;
+    display: grid !important;
+    grid-template-columns: 1fr;
+    gap: .72rem !important;
+    width: 100%;
+  }
+
+  #view-home .btn-ink,
+  #view-home .btn-outline {
+    width: 100%;
+    min-height: 52px;
+    justify-content: center;
+    font-size: .68rem;
+    letter-spacing: .17em;
+    border-radius: 0;
+  }
+
+  #view-home .btn-ink {
+    box-shadow: 0 14px 30px rgba(10,10,10,.12);
+  }
+
+  #view-home .btn-outline {
+    background: #fff;
+  }
+
+  #view-home .hero-photo {
+    display: block !important;
+    order: 4;
+    height: clamp(220px, 61vw, 300px);
+    margin: 1.35rem 0 0;
+    position: relative;
+    overflow: hidden;
+    border: 1px solid rgba(10,10,10,.1);
+    background:
+      linear-gradient(to bottom, rgba(250,250,250,0) 0%, rgba(250,250,250,.06) 62%, rgba(250,250,250,.82) 100%),
+      url('hero.png') 48% center / cover no-repeat;
+    filter: grayscale(.03) contrast(1.16) brightness(1) saturate(1.12);
+    box-shadow: 0 20px 44px rgba(10,10,10,.09);
+    -webkit-mask-image: none !important;
+    mask-image: none !important;
+  }
+
+  #view-home .hero-photo::after {
+    content: 'Gecertificeerde elektriciens';
+    position: absolute;
+    left: .75rem;
+    bottom: .75rem;
+    padding: .55rem .7rem .52rem;
+    background: rgba(255,255,255,.94);
+    border: 1px solid rgba(166,91,40,.24);
+    color: #111;
+    font-size: .72rem;
+    line-height: 1.05;
+    font-weight: 650;
+    box-shadow: 0 10px 24px rgba(10,10,10,.08);
+  }
+
+  #view-home .hero-badges {
+    margin-top: 1rem !important;
+    padding-top: 0 !important;
+    display: grid !important;
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+    gap: .55rem;
+    border: 0;
+  }
+
+  #view-home .hero-badges li {
+    display: grid;
+    gap: .45rem;
+    justify-items: center;
+    text-align: center;
+    padding: .85rem .42rem;
+    background: #fff;
+    border: 1px solid rgba(10,10,10,.08);
+    box-shadow: 0 10px 22px rgba(10,10,10,.035);
+  }
+
+  #view-home .hero-badge__icon {
+    width: 20px;
+    height: 20px;
+    color: var(--accent);
+  }
+
+  #view-home .hero-badge__title,
+  #view-home .hero-badges li:first-child .hero-badge__title span::after {
+    font-size: .72rem !important;
+    line-height: 1.2 !important;
+    font-weight: 650;
+  }
+
+  #view-home .hero-badge__sub,
+  #view-home .hero-badges li:first-child .hero-badge__sub span::after {
+    font-size: .62rem !important;
+    line-height: 1.25 !important;
+  }
+
+  #view-home .hero-art-col {
+    display: none !important;
+  }
+
+  /* Home services: compact premium mobile cards */
+  #view-home .home-services {
+    margin-inline: calc(var(--mobile-page-x) * -1);
+    padding: 3.4rem var(--mobile-page-x) 3.6rem !important;
+    background: #fff;
+    border-top: 1px solid rgba(10,10,10,.08);
+    border-bottom: 1px solid rgba(10,10,10,.08);
+  }
+
+  #view-home .home-services__head {
+    display: grid !important;
+    grid-template-columns: 1fr !important;
+    gap: 1.1rem !important;
+  }
+
+  #view-home .home-services__head h2,
+  #view-home .home-services__head h2 span::after {
+    max-width: 9ch !important;
+    font-size: clamp(2.65rem, 12vw, 3.85rem) !important;
+    line-height: .96 !important;
+    letter-spacing: -.05em;
+  }
+
+  #view-home .home-services__head .hero-lede {
+    margin-top: .95rem !important;
+    color: #4b4b4b;
+  }
+
+  #view-home .home-photo {
+    display: none !important;
+  }
+
+  #view-home .home-services__grid {
+    display: grid !important;
+    grid-template-columns: 1fr !important;
+    gap: .7rem !important;
+    margin-top: 1.35rem !important;
+  }
+
+  #view-home .home-card {
+    position: relative;
+    display: grid;
+    grid-template-columns: 34px 1fr auto;
+    grid-template-areas:
+      'icon title arrow'
+      'icon desc arrow'
+      'cta cta cta';
+    column-gap: .85rem;
+    align-items: start;
+    min-height: 0 !important;
+    padding: 1rem .95rem .95rem !important;
+    background: #fafafa;
+    border: 1px solid rgba(10,10,10,.09);
+    box-shadow: none !important;
+    transform: none !important;
+  }
+
+  #view-home .home-card::before {
+    grid-area: icon;
+    width: 24px !important;
+    height: 24px !important;
+    margin: .1rem 0 0 !important;
+    opacity: .7;
+  }
+
+  #view-home .home-card::after {
+    content: '→';
+    grid-area: arrow;
+    align-self: center;
+    font-size: 1.08rem;
+    color: #111;
+  }
+
+  #view-home .home-card__title {
+    grid-area: title;
+    margin: 0 !important;
+  }
+
+  #view-home .home-card__title > span::after {
+    font-size: 1.28rem !important;
+    line-height: 1.1 !important;
+  }
+
+  #view-home .home-card__desc {
+    grid-area: desc;
+    margin-top: .18rem !important;
+  }
+
+  #view-home .home-card__desc > span::after {
+    color: #686868;
+    font-size: .78rem !important;
+    line-height: 1.4 !important;
+  }
+
+  #view-home .home-card__cta {
+    grid-area: cta;
+    margin-top: .75rem;
+    padding-top: .75rem;
+    font-size: .62rem;
+    letter-spacing: .16em;
+  }
+
+  #view-home .home-card__cta .arrow {
+    display: none;
+  }
+
+  #view-home .home-services__all {
+    margin-top: 1.3rem !important;
+    text-align: left;
+  }
+
+  #view-home .home-services__all a {
+    color: var(--accent);
+    font-weight: 650;
+  }
+}
+
+@media (max-width: 390px) {
+  #view-home .hero-badges {
+    grid-template-columns: 1fr;
+  }
+
+  #view-home .hero-badges li {
+    grid-template-columns: 22px 1fr;
+    justify-items: start;
+    text-align: left;
+  }
+
+  #view-home .hero-badge__icon {
+    grid-row: span 2;
+  }
+}
