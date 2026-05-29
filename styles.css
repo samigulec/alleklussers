@@ -1755,8 +1755,8 @@ em {
 }
 @media (min-width: 1024px) {
   .project-slide__detail {
-    padding: 2.75rem 2.5rem;
-    justify-content: center;
+    padding: 2.25rem 2.5rem;
+    justify-content: flex-start;
   }
 }
 .project-slide__index {
@@ -1803,14 +1803,14 @@ em {
   flex-wrap: wrap;
   align-items: center;
   gap: 0.75rem;
-  margin-top: 0.65rem;
+  margin-top: 0.4rem;
 }
 .project-slide__highlights {
   display: grid;
   grid-template-columns: repeat(3, minmax(0, 1fr));
   gap: 1rem;
-  margin-top: 1.75rem;
-  padding-top: 1.75rem;
+  margin-top: 1.25rem;
+  padding-top: 1.25rem;
   border-top: 1px solid var(--rule);
   list-style: none;
 }
@@ -1867,11 +1867,15 @@ em {
   gap: 0.6rem;
 }
 
-/* "+N more" overlay on the last thumbnail */
+/* "+N more" overlay on the last thumbnail — refined, premium look */
 .project-slide__photo--more::after {
   content: '';
   position: absolute;
   inset: 0;
+  background: rgba(10, 10, 10, 0.42);
+  transition: background 240ms ease;
+}
+.project-slide__photo--more:hover::after {
   background: rgba(10, 10, 10, 0.55);
 }
 .project-slide__count {
@@ -1882,8 +1886,10 @@ em {
   align-items: center;
   justify-content: center;
   color: var(--paper);
-  font-size: 1rem;
-  font-weight: 600;
+  font-size: 1.35rem;
+  font-weight: 300;
+  letter-spacing: 0.04em;
+  font-family: 'Fraunces', serif;
 }
 
 /* Duo gallery (Fitness — only 2 photos, stacked side by side) */
@@ -2033,10 +2039,28 @@ body.lightbox-open {
 .project-lightbox__nav svg { width: 20px; height: 20px; }
 
 /* Mobile */
+@media (max-width: 1023px) {
+  /* Reserve safe bottom space below the carousel on tablet/mobile so the
+     floating contact bubble never overlaps the last thumbnail or dots. */
+  .project-carousel { padding-bottom: 4.5rem; }
+  .project-carousel__dots { margin-bottom: 0.5rem; }
+}
+
 @media (max-width: 767px) {
   .project-slide__title { font-size: 1.4rem; }
   .project-slide__actions .btn-ink,
   .project-slide__actions .btn-outline { flex: 1; justify-content: center; }
+  /* Slightly tighter padding so the detail card doesn't dwarf the title */
+  .project-slide__detail { padding: 1.65rem 1.4rem; }
+  .project-slide__highlights {
+    margin-top: 1rem;
+    padding-top: 1rem;
+    gap: 0.6rem;
+  }
+  .project-slide__highlights li { font-size: 0.7rem; }
+  .project-slide__highlights svg { width: 1.45rem; height: 1.45rem; }
+  /* Extra room above the floating contact bubble */
+  .project-carousel { padding-bottom: 5.5rem; }
   .project-all-bar {
     padding: 1rem 1.25rem;
     font-size: 0.85rem;
