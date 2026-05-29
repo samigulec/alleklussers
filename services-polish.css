@@ -31,27 +31,28 @@
 
 [data-lang="nl"] #view-services ol li:nth-child(1) .service-title .lang-nl::after { content: 'Storingen en spoed' !important; }
 [data-lang="en"] #view-services ol li:nth-child(1) .service-title .lang-en::after { content: 'Faults and urgent help' !important; }
-[data-lang="tr"] #view-services ol li:nth-child(1) .service-title .lang-tr::after { content: 'Ariza ve acil destek' !important; }
-[data-lang="de"] #view-services ol li:nth-child(1) .service-title .lang-de::after { content: 'Stoerungen und Notdienst' !important; }
+[data-lang="tr"] #view-services ol li:nth-child(1) .service-title .lang-tr::after { content: 'Arıza ve acil destek' !important; }
+[data-lang="de"] #view-services ol li:nth-child(1) .service-title .lang-de::after { content: 'Störungen und Notdienst' !important; }
 
 [data-lang="nl"] #view-services ol li:nth-child(4) .service-title .lang-nl::after { content: 'Stopcontacten en schakelaars' !important; }
 [data-lang="en"] #view-services ol li:nth-child(4) .service-title .lang-en::after { content: 'Sockets and switches' !important; }
 [data-lang="tr"] #view-services ol li:nth-child(4) .service-title .lang-tr::after { content: 'Prizler ve anahtarlar' !important; }
 [data-lang="de"] #view-services ol li:nth-child(4) .service-title .lang-de::after { content: 'Steckdosen und Schalter' !important; }
+/* (nth-child 4 TR/EN/NL already correct) */
 
 [data-lang="nl"] #view-services ol li:nth-child(5) .service-title .lang-nl::after { content: 'Bedrading en aansluitingen' !important; }
 [data-lang="en"] #view-services ol li:nth-child(5) .service-title .lang-en::after { content: 'Wiring and connections' !important; }
-[data-lang="tr"] #view-services ol li:nth-child(5) .service-title .lang-tr::after { content: 'Kablolama ve baglantilar' !important; }
-[data-lang="de"] #view-services ol li:nth-child(5) .service-title .lang-de::after { content: 'Verkabelung und Anschluesse' !important; }
+[data-lang="tr"] #view-services ol li:nth-child(5) .service-title .lang-tr::after { content: 'Kablolama ve bağlantılar' !important; }
+[data-lang="de"] #view-services ol li:nth-child(5) .service-title .lang-de::after { content: 'Verkabelung und Anschlüsse' !important; }
 
 [data-lang="nl"] #view-services ol li:nth-child(6) .service-title .lang-nl::after { content: 'Keuring en veiligheid' !important; }
 [data-lang="en"] #view-services ol li:nth-child(6) .service-title .lang-en::after { content: 'Inspection and safety' !important; }
-[data-lang="tr"] #view-services ol li:nth-child(6) .service-title .lang-tr::after { content: 'Kontrol ve guvenlik' !important; }
-[data-lang="de"] #view-services ol li:nth-child(6) .service-title .lang-de::after { content: 'Pruefung und Sicherheit' !important; }
+[data-lang="tr"] #view-services ol li:nth-child(6) .service-title .lang-tr::after { content: 'Kontrol ve güvenlik' !important; }
+[data-lang="de"] #view-services ol li:nth-child(6) .service-title .lang-de::after { content: 'Prüfung und Sicherheit' !important; }
 
 [data-lang="nl"] #view-services ol li:nth-child(7) .service-title .lang-nl::after { content: 'Laadpalen en slimme elektra' !important; }
 [data-lang="en"] #view-services ol li:nth-child(7) .service-title .lang-en::after { content: 'EV chargers and smart electrics' !important; }
-[data-lang="tr"] #view-services ol li:nth-child(7) .service-title .lang-tr::after { content: 'Sarj istasyonu ve akilli elektrik' !important; }
+[data-lang="tr"] #view-services ol li:nth-child(7) .service-title .lang-tr::after { content: 'Şarj istasyonu ve akıllı elektrik' !important; }
 [data-lang="de"] #view-services ol li:nth-child(7) .service-title .lang-de::after { content: 'Ladestationen und Smart-Elektro' !important; }
 
 @media (max-width: 767px) {

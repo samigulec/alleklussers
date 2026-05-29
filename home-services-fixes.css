@@ -51,27 +51,27 @@
 
 [data-lang="nl"] #view-home .home-card:nth-child(1) .home-card__title .lang-nl::after { content: 'Storingen en spoed' !important; }
 [data-lang="en"] #view-home .home-card:nth-child(1) .home-card__title .lang-en::after { content: 'Faults and urgent help' !important; }
-[data-lang="tr"] #view-home .home-card:nth-child(1) .home-card__title .lang-tr::after { content: 'Ariza ve acil destek' !important; }
-[data-lang="de"] #view-home .home-card:nth-child(1) .home-card__title .lang-de::after { content: 'Stoerungen und Notdienst' !important; }
+[data-lang="tr"] #view-home .home-card:nth-child(1) .home-card__title .lang-tr::after { content: 'Arıza ve acil destek' !important; }
+[data-lang="de"] #view-home .home-card:nth-child(1) .home-card__title .lang-de::after { content: 'Störungen und Notdienst' !important; }
 [data-lang="pl"] #view-home .home-card:nth-child(1) .home-card__title .lang-pl::after { content: 'Awarie i pilna pomoc' !important; }
 
 [data-lang="nl"] #view-home .home-card:nth-child(2) .home-card__title .lang-nl::after { content: 'Groepenkasten' !important; }
 [data-lang="en"] #view-home .home-card:nth-child(2) .home-card__title .lang-en::after { content: 'Fuse boxes' !important; }
-[data-lang="tr"] #view-home .home-card:nth-child(2) .home-card__title .lang-tr::after { content: 'Sigorta panolari' !important; }
-[data-lang="de"] #view-home .home-card:nth-child(2) .home-card__title .lang-de::after { content: 'Sicherungskaesten' !important; }
+[data-lang="tr"] #view-home .home-card:nth-child(2) .home-card__title .lang-tr::after { content: 'Sigorta panoları' !important; }
+[data-lang="de"] #view-home .home-card:nth-child(2) .home-card__title .lang-de::after { content: 'Sicherungskästen' !important; }
 [data-lang="pl"] #view-home .home-card:nth-child(2) .home-card__title .lang-pl::after { content: 'Rozdzielnice' !important; }
 
 [data-lang="nl"] #view-home .home-card:nth-child(3) .home-card__title .lang-nl::after { content: 'Verlichting' !important; }
 [data-lang="en"] #view-home .home-card:nth-child(3) .home-card__title .lang-en::after { content: 'Lighting' !important; }
-[data-lang="tr"] #view-home .home-card:nth-child(3) .home-card__title .lang-tr::after { content: 'Aydinlatma' !important; }
+[data-lang="tr"] #view-home .home-card:nth-child(3) .home-card__title .lang-tr::after { content: 'Aydınlatma' !important; }
 [data-lang="de"] #view-home .home-card:nth-child(3) .home-card__title .lang-de::after { content: 'Beleuchtung' !important; }
-[data-lang="pl"] #view-home .home-card:nth-child(3) .home-card__title .lang-pl::after { content: 'Oswietlenie' !important; }
+[data-lang="pl"] #view-home .home-card:nth-child(3) .home-card__title .lang-pl::after { content: 'Oświetlenie' !important; }
 
 [data-lang="nl"] #view-home .home-card:nth-child(4) .home-card__title .lang-nl::after { content: 'Stopcontacten en schakelaars' !important; }
 [data-lang="en"] #view-home .home-card:nth-child(4) .home-card__title .lang-en::after { content: 'Sockets and switches' !important; }
 [data-lang="tr"] #view-home .home-card:nth-child(4) .home-card__title .lang-tr::after { content: 'Prizler ve anahtarlar' !important; }
 [data-lang="de"] #view-home .home-card:nth-child(4) .home-card__title .lang-de::after { content: 'Steckdosen und Schalter' !important; }
-[data-lang="pl"] #view-home .home-card:nth-child(4) .home-card__title .lang-pl::after { content: 'Gniazdka i przelaczniki' !important; }
+[data-lang="pl"] #view-home .home-card:nth-child(4) .home-card__title .lang-pl::after { content: 'Gniazdka i przełączniki' !important; }
 
 @media (max-width: 767px) {
   #view-home .home-card::before {

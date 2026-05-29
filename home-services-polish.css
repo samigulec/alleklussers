@@ -13,14 +13,14 @@
 [data-lang="en"] #view-home .home-services__head h2 .lang-en::after { content: 'Our electrical services.' !important; }
 [data-lang="tr"] #view-home .home-services__head h2 .lang-tr::after { content: 'Elektrik hizmetlerimiz.' !important; }
 [data-lang="de"] #view-home .home-services__head h2 .lang-de::after { content: 'Unsere Elektro-Leistungen.' !important; }
-[data-lang="pl"] #view-home .home-services__head h2 .lang-pl::after { content: 'Nasze uslugi elektryczne.' !important; }
+[data-lang="pl"] #view-home .home-services__head h2 .lang-pl::after { content: 'Nasze usługi elektryczne.' !important; }
 [data-lang="ar"] #view-home .home-services__head h2 .lang-ar::after { content: 'خدماتنا الكهربائية.' !important; }
 
 [data-lang="nl"] #view-home .home-services__head .hero-lede .lang-nl::after { content: 'De meest gevraagde elektrische diensten: storingen, groepenkasten, verlichting en aansluitpunten.' !important; }
 [data-lang="en"] #view-home .home-services__head .hero-lede .lang-en::after { content: 'Our most requested electrical services: faults, fuse boxes, lighting and connection points.' !important; }
-[data-lang="tr"] #view-home .home-services__head .hero-lede .lang-tr::after { content: 'En cok talep edilen elektrik hizmetleri: ariza, sigorta panosu, aydinlatma ve baglanti noktalari.' !important; }
-[data-lang="de"] #view-home .home-services__head .hero-lede .lang-de::after { content: 'Unsere gefragtesten Elektroarbeiten: Stoerungen, Sicherungskaesten, Beleuchtung und Anschluesse.' !important; }
-[data-lang="pl"] #view-home .home-services__head .hero-lede .lang-pl::after { content: 'Najczesciej wybierane uslugi elektryczne: awarie, rozdzielnice, oswietlenie i punkty podlaczen.' !important; }
+[data-lang="tr"] #view-home .home-services__head .hero-lede .lang-tr::after { content: 'En çok talep edilen elektrik hizmetleri: arıza, sigorta panosu, aydınlatma ve bağlantı noktaları.' !important; }
+[data-lang="de"] #view-home .home-services__head .hero-lede .lang-de::after { content: 'Unsere gefragtesten Elektroarbeiten: Störungen, Sicherungskästen, Beleuchtung und Anschlüsse.' !important; }
+[data-lang="pl"] #view-home .home-services__head .hero-lede .lang-pl::after { content: 'Najczęściej wybierane usługi elektryczne: awarie, rozdzielnice, oświetlenie i punkty podłączeń.' !important; }
 [data-lang="ar"] #view-home .home-services__head .hero-lede .lang-ar::after { content: 'أكثر خدمات الكهرباء طلباً: الأعطال، لوحات التوزيع، الإضاءة ونقاط التوصيل.' !important; }
 
 #view-home .home-card {
@@ -45,58 +45,58 @@
 
 [data-lang="nl"] #view-home .home-card:nth-child(1) .home-card__title .lang-nl::after { content: 'Storingen en spoed' !important; }
 [data-lang="en"] #view-home .home-card:nth-child(1) .home-card__title .lang-en::after { content: 'Faults and urgent help' !important; }
-[data-lang="tr"] #view-home .home-card:nth-child(1) .home-card__title .lang-tr::after { content: 'Ariza ve acil destek' !important; }
-[data-lang="de"] #view-home .home-card:nth-child(1) .home-card__title .lang-de::after { content: 'Stoerungen und Notdienst' !important; }
+[data-lang="tr"] #view-home .home-card:nth-child(1) .home-card__title .lang-tr::after { content: 'Arıza ve acil destek' !important; }
+[data-lang="de"] #view-home .home-card:nth-child(1) .home-card__title .lang-de::after { content: 'Störungen und Notdienst' !important; }
 [data-lang="pl"] #view-home .home-card:nth-child(1) .home-card__title .lang-pl::after { content: 'Awarie i pilna pomoc' !important; }
 [data-lang="ar"] #view-home .home-card:nth-child(1) .home-card__title .lang-ar::after { content: 'الأعطال والطوارئ' !important; }
 
 [data-lang="nl"] #view-home .home-card:nth-child(1) .home-card__desc .lang-nl::after { content: 'Snelle hulp bij stroomuitval, kortsluiting en urgente elektrische problemen.' !important; }
 [data-lang="en"] #view-home .home-card:nth-child(1) .home-card__desc .lang-en::after { content: 'Fast help with power outages, short circuits and urgent electrical issues.' !important; }
-[data-lang="tr"] #view-home .home-card:nth-child(1) .home-card__desc .lang-tr::after { content: 'Elektrik kesintisi, kisa devre ve acil elektrik sorunlarinda hizli destek.' !important; }
+[data-lang="tr"] #view-home .home-card:nth-child(1) .home-card__desc .lang-tr::after { content: 'Elektrik kesintisi, kısa devre ve acil elektrik sorunlarında hızlı destek.' !important; }
 [data-lang="de"] #view-home .home-card:nth-child(1) .home-card__desc .lang-de::after { content: 'Schnelle Hilfe bei Stromausfall, Kurzschluss und dringenden Elektroproblemen.' !important; }
-[data-lang="pl"] #view-home .home-card:nth-child(1) .home-card__desc .lang-pl::after { content: 'Szybka pomoc przy awarii pradu, zwarciu i pilnych problemach elektrycznych.' !important; }
+[data-lang="pl"] #view-home .home-card:nth-child(1) .home-card__desc .lang-pl::after { content: 'Szybka pomoc przy awarii prądu, zwarciu i pilnych problemach elektrycznych.' !important; }
 [data-lang="ar"] #view-home .home-card:nth-child(1) .home-card__desc .lang-ar::after { content: 'مساعدة سريعة عند انقطاع الكهرباء، القصر الكهربائي والمشاكل العاجلة.' !important; }
 
 [data-lang="nl"] #view-home .home-card:nth-child(2) .home-card__title .lang-nl::after { content: 'Groepenkasten' !important; }
 [data-lang="en"] #view-home .home-card:nth-child(2) .home-card__title .lang-en::after { content: 'Fuse boxes' !important; }
-[data-lang="tr"] #view-home .home-card:nth-child(2) .home-card__title .lang-tr::after { content: 'Sigorta panolari' !important; }
-[data-lang="de"] #view-home .home-card:nth-child(2) .home-card__title .lang-de::after { content: 'Sicherungskaesten' !important; }
+[data-lang="tr"] #view-home .home-card:nth-child(2) .home-card__title .lang-tr::after { content: 'Sigorta panoları' !important; }
+[data-lang="de"] #view-home .home-card:nth-child(2) .home-card__title .lang-de::after { content: 'Sicherungskästen' !important; }
 [data-lang="pl"] #view-home .home-card:nth-child(2) .home-card__title .lang-pl::after { content: 'Rozdzielnice' !important; }
 [data-lang="ar"] #view-home .home-card:nth-child(2) .home-card__title .lang-ar::after { content: 'لوحات التوزيع' !important; }
 
 [data-lang="nl"] #view-home .home-card:nth-child(2) .home-card__desc .lang-nl::after { content: 'Vervangen, uitbreiden en veilig aanpassen van groepenkasten en zekeringen.' !important; }
 [data-lang="en"] #view-home .home-card:nth-child(2) .home-card__desc .lang-en::after { content: 'Replacement, expansion and safe adjustment of fuse boxes and circuits.' !important; }
-[data-lang="tr"] #view-home .home-card:nth-child(2) .home-card__desc .lang-tr::after { content: 'Sigorta panosu yenileme, genisletme ve guvenli devre duzenlemeleri.' !important; }
-[data-lang="de"] #view-home .home-card:nth-child(2) .home-card__desc .lang-de::after { content: 'Austausch, Erweiterung und sichere Anpassung von Sicherungskaesten.' !important; }
+[data-lang="tr"] #view-home .home-card:nth-child(2) .home-card__desc .lang-tr::after { content: 'Sigorta panosu yenileme, genişletme ve güvenli devre düzenlemeleri.' !important; }
+[data-lang="de"] #view-home .home-card:nth-child(2) .home-card__desc .lang-de::after { content: 'Austausch, Erweiterung und sichere Anpassung von Sicherungskästen.' !important; }
 [data-lang="pl"] #view-home .home-card:nth-child(2) .home-card__desc .lang-pl::after { content: 'Wymiana, rozbudowa i bezpieczne dostosowanie rozdzielnic.' !important; }
 [data-lang="ar"] #view-home .home-card:nth-child(2) .home-card__desc .lang-ar::after { content: 'استبدال وتوسيع وضبط لوحات التوزيع والقواطع بأمان.' !important; }
 
 [data-lang="nl"] #view-home .home-card:nth-child(3) .home-card__title .lang-nl::after { content: 'Verlichting' !important; }
 [data-lang="en"] #view-home .home-card:nth-child(3) .home-card__title .lang-en::after { content: 'Lighting' !important; }
-[data-lang="tr"] #view-home .home-card:nth-child(3) .home-card__title .lang-tr::after { content: 'Aydinlatma' !important; }
+[data-lang="tr"] #view-home .home-card:nth-child(3) .home-card__title .lang-tr::after { content: 'Aydınlatma' !important; }
 [data-lang="de"] #view-home .home-card:nth-child(3) .home-card__title .lang-de::after { content: 'Beleuchtung' !important; }
-[data-lang="pl"] #view-home .home-card:nth-child(3) .home-card__title .lang-pl::after { content: 'Oswietlenie' !important; }
+[data-lang="pl"] #view-home .home-card:nth-child(3) .home-card__title .lang-pl::after { content: 'Oświetlenie' !important; }
 [data-lang="ar"] #view-home .home-card:nth-child(3) .home-card__title .lang-ar::after { content: 'الإضاءة' !important; }
 
 [data-lang="nl"] #view-home .home-card:nth-child(3) .home-card__desc .lang-nl::after { content: 'Binnen- en buitenverlichting, spots, dimmers en nette montage.' !important; }
 [data-lang="en"] #view-home .home-card:nth-child(3) .home-card__desc .lang-en::after { content: 'Indoor and outdoor lighting, spots, dimmers and clean installation.' !important; }
-[data-lang="tr"] #view-home .home-card:nth-child(3) .home-card__desc .lang-tr::after { content: 'Ic ve dis aydinlatma, spot, dimmer ve temiz montaj.' !important; }
-[data-lang="de"] #view-home .home-card:nth-child(3) .home-card__desc .lang-de::after { content: 'Innen- und Aussenbeleuchtung, Spots, Dimmer und saubere Montage.' !important; }
-[data-lang="pl"] #view-home .home-card:nth-child(3) .home-card__desc .lang-pl::after { content: 'Oswietlenie wewnetrzne i zewnetrzne, spoty, sci emniacze i czysty montaz.' !important; }
+[data-lang="tr"] #view-home .home-card:nth-child(3) .home-card__desc .lang-tr::after { content: 'İç ve dış aydınlatma, spot, dimmer ve temiz montaj.' !important; }
+[data-lang="de"] #view-home .home-card:nth-child(3) .home-card__desc .lang-de::after { content: 'Innen- und Außenbeleuchtung, Spots, Dimmer und saubere Montage.' !important; }
+[data-lang="pl"] #view-home .home-card:nth-child(3) .home-card__desc .lang-pl::after { content: 'Oświetlenie wewnętrzne i zewnętrzne, spoty, ściemniacze i czysty montaż.' !important; }
 [data-lang="ar"] #view-home .home-card:nth-child(3) .home-card__desc .lang-ar::after { content: 'إضاءة داخلية وخارجية، سبوتات، مخفتات وتركيب نظيف.' !important; }
 
 [data-lang="nl"] #view-home .home-card:nth-child(4) .home-card__title .lang-nl::after { content: 'Stopcontacten en schakelaars' !important; }
 [data-lang="en"] #view-home .home-card:nth-child(4) .home-card__title .lang-en::after { content: 'Sockets and switches' !important; }
 [data-lang="tr"] #view-home .home-card:nth-child(4) .home-card__title .lang-tr::after { content: 'Prizler ve anahtarlar' !important; }
 [data-lang="de"] #view-home .home-card:nth-child(4) .home-card__title .lang-de::after { content: 'Steckdosen und Schalter' !important; }
-[data-lang="pl"] #view-home .home-card:nth-child(4) .home-card__title .lang-pl::after { content: 'Gniazdka i przelaczniki' !important; }
+[data-lang="pl"] #view-home .home-card:nth-child(4) .home-card__title .lang-pl::after { content: 'Gniazdka i przełączniki' !important; }
 [data-lang="ar"] #view-home .home-card:nth-child(4) .home-card__title .lang-ar::after { content: 'المقابس والمفاتيح' !important; }
 
 [data-lang="nl"] #view-home .home-card:nth-child(4) .home-card__desc .lang-nl::after { content: 'Extra stopcontacten, schakelaars en aansluitpunten veilig geplaatst.' !important; }
 [data-lang="en"] #view-home .home-card:nth-child(4) .home-card__desc .lang-en::after { content: 'Extra sockets, switches and connection points installed safely.' !important; }
-[data-lang="tr"] #view-home .home-card:nth-child(4) .home-card__desc .lang-tr::after { content: 'Ek priz, anahtar ve baglanti noktalari guvenli sekilde kurulur.' !important; }
-[data-lang="de"] #view-home .home-card:nth-child(4) .home-card__desc .lang-de::after { content: 'Zusaetzliche Steckdosen, Schalter und Anschluesse sicher installiert.' !important; }
-[data-lang="pl"] #view-home .home-card:nth-child(4) .home-card__desc .lang-pl::after { content: 'Dodatkowe gniazdka, przelaczniki i punkty podlaczen montowane bezpiecznie.' !important; }
+[data-lang="tr"] #view-home .home-card:nth-child(4) .home-card__desc .lang-tr::after { content: 'Ek priz, anahtar ve bağlantı noktaları güvenli şekilde kurulur.' !important; }
+[data-lang="de"] #view-home .home-card:nth-child(4) .home-card__desc .lang-de::after { content: 'Zusätzliche Steckdosen, Schalter und Anschlüsse sicher installiert.' !important; }
+[data-lang="pl"] #view-home .home-card:nth-child(4) .home-card__desc .lang-pl::after { content: 'Dodatkowe gniazdka, przełączniki i punkty podłączeń montowane bezpiecznie.' !important; }
 [data-lang="ar"] #view-home .home-card:nth-child(4) .home-card__desc .lang-ar::after { content: 'تركيب مقابس ومفاتيح ونقاط توصيل إضافية بأمان.' !important; }
 
 #view-home .home-photo {
