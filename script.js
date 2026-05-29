@@ -13,7 +13,7 @@
   const RTL_LANGS = ['ar'];
 
   function loadPolishStyles() {
-    ['hero-overrides.css', 'about-overrides.css', 'mobile-overrides.css', 'services-overrides.css', 'services-polish.css', 'home-services-polish.css', 'home-services-fixes.css', 'topbar-polish.css'].forEach(href => {
+    ['hero-overrides.css', 'about-overrides.css', 'mobile-overrides.css', 'services-overrides.css', 'services-polish.css', 'home-services-polish.css', 'home-services-fixes.css', 'topbar-polish.css', 'clients-polish.css'].forEach(href => {
       if (document.querySelector(`link[href="${href}"]`)) return;
       const link = document.createElement('link');
       link.rel = 'stylesheet';
@@ -22,6 +22,76 @@
     });
   }
   loadPolishStyles();
+
+  function polishClientQuotes() {
+    const figures = Array.from(document.querySelectorAll('#view-references .quote-figure'));
+    if (!figures.length) return;
+    const wrap = figures[0].parentElement;
+    if (wrap) wrap.classList.add('clients-testimonials');
+
+    const quotes = [
+      {
+        name: '— Marleen & Tom',
+        service: {
+          nl: 'Storingen', en: 'Electrical fault', tr: 'Arıza', ar: 'أعطال كهربائية', pl: 'Awarie', de: 'Störung'
+        },
+        text: {
+          nl: '“Snel geholpen bij een storing. Rustige communicatie, nette afwerking en geen verrassingen achteraf.”',
+          en: '“Quick help with an electrical fault. Calm communication, tidy work and no surprises afterwards.”',
+          tr: '“Elektrik arızasında hızlı yardımcı oldular. Sakin iletişim, temiz işçilik ve sonradan sürpriz yok.”',
+          ar: '”ساعدونا بسرعة عند حدوث عطل كهربائي. تواصل واضح، عمل مرتب ولا مفاجآت لاحقاً.“',
+          pl: '„Szybka pomoc przy awarii elektrycznej. Spokojna komunikacja, schludne wykonanie i bez niespodzianek.”',
+          de: '„Schnelle Hilfe bei einer Störung. Ruhige Kommunikation, saubere Arbeit und keine Überraschungen danach.“'
+        }
+      },
+      {
+        name: '— Familie Yılmaz',
+        service: {
+          nl: 'Groepenkast', en: 'Consumer unit', tr: 'Sigorta panosu', ar: 'لوحة الكهرباء', pl: 'Rozdzielnica', de: 'Verteilerkasten'
+        },
+        text: {
+          nl: '“Groepenkast netjes vervangen en alles duidelijk uitgelegd. Binnen één dag geregeld.”',
+          en: '“The consumer unit was replaced neatly and everything was explained clearly. Arranged within one day.”',
+          tr: '“Sigorta panosu temiz şekilde değiştirildi ve her şey net anlatıldı. Bir gün içinde tamamlandı.”',
+          ar: '”تم استبدال لوحة الكهرباء بشكل مرتب وشرحوا كل شيء بوضوح. أُنجز العمل خلال يوم واحد.“',
+          pl: '„Rozdzielnica została schludnie wymieniona, a wszystko jasno wyjaśniono. Załatwione w jeden dzień.”',
+          de: '„Der Verteilerkasten wurde sauber ersetzt und alles klar erklärt. Innerhalb eines Tages erledigt.“'
+        }
+      },
+      {
+        name: '— S. Bakker',
+        service: {
+          nl: 'Verlichting', en: 'Lighting', tr: 'Aydınlatma', ar: 'إضاءة', pl: 'Oświetlenie', de: 'Beleuchtung'
+        },
+        text: {
+          nl: '“Nieuwe stopcontacten en verlichting laten plaatsen. Alles strak afgewerkt en schoon achtergelaten.”',
+          en: '“We had new sockets and lighting installed. Everything was finished sharply and left clean.”',
+          tr: '“Yeni prizler ve aydınlatma yaptırdık. Her şey özenli tamamlandı ve temiz bırakıldı.”',
+          ar: '”ركّبوا مقابس جديدة وإضاءة. كان التشطيب أنيقاً وتركوا المكان نظيفاً.“',
+          pl: '„Zamontowano nowe gniazdka i oświetlenie. Wszystko starannie wykończone i zostawione czysto.”',
+          de: '„Neue Steckdosen und Beleuchtung montieren lassen. Alles sauber ausgeführt und ordentlich hinterlassen.“'
+        }
+      }
+    ];
+
+    figures.forEach((figure, i) => {
+      const q = quotes[i];
+      if (!q) return;
+      const block = figure.querySelector('blockquote');
+      const caption = figure.querySelector('figcaption');
+      if (block) {
+        block.innerHTML = SUPPORTED_LANGS.map(lang => `<span class="lang-${lang}">${q.text[lang]}</span>`).join('');
+      }
+      if (caption) {
+        caption.textContent = q.name;
+        const service = document.createElement('span');
+        service.className = 'client-quote__service';
+        service.innerHTML = SUPPORTED_LANGS.map(lang => `<span class="lang-${lang}">${q.service[lang]}</span>`).join('');
+        caption.appendChild(service);
+      }
+    });
+  }
+  polishClientQuotes();
 
   function closeMobileMenu() {
     const menuBtn = document.getElementById('menu-btn');
