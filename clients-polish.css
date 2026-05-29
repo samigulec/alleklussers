@@ -1,117 +1,144 @@
-/* Klanten / client quotes — elektra-focused, compact and premium. */
+/* Klanten / client testimonials — premium editorial cards.
+   Top: small uppercase service tag (chip)
+   Middle: serif quote text with hanging quote mark
+   Bottom: hairline + italic author name */
+
 #view-references .clients-testimonials {
-  max-width: 1180px !important;
+  max-width: 1200px;
+  margin: 0 auto;
   display: grid !important;
   grid-template-columns: repeat(3, minmax(0, 1fr));
-  gap: 0 !important;
-  padding-bottom: 0 !important;
+  gap: 1.25rem !important;
+  padding-bottom: 4rem !important;
   background: transparent !important;
-  border: 1px solid rgba(10, 10, 10, 0.09);
-  border-right: 0;
+  border: 0 !important;
 }
 
 #view-references .clients-testimonials .quote-figure {
   position: relative;
   margin: 0 !important;
-  padding: 2.7rem 2.45rem 2.35rem !important;
+  padding: 2.25rem 2rem 1.85rem !important;
   background: var(--paper, #fafafa);
-  min-height: 305px;
+  border: 1px solid rgba(10, 10, 10, 0.09);
   display: flex;
   flex-direction: column;
-  justify-content: space-between;
-  border-right: 1px solid rgba(10, 10, 10, 0.09);
+  min-height: 320px;
+  transition: border-color 220ms ease, transform 260ms ease, box-shadow 260ms ease;
+}
+#view-references .clients-testimonials .quote-figure:hover {
+  border-color: rgba(180, 83, 9, 0.32);
+  transform: translateY(-2px);
+  box-shadow: 0 18px 36px rgba(10, 10, 10, 0.05);
 }
 
+/* Small uppercase service chip at the top — sets the context */
+#view-references .client-quote__service {
+  display: inline-flex !important;
+  align-items: center;
+  gap: 0.45rem;
+  width: fit-content;
+  margin: 0 0 1.4rem !important;
+  padding: 0.32rem 0.65rem !important;
+  border: 1px solid rgba(180, 83, 9, 0.28);
+  background: rgba(180, 83, 9, 0.05);
+  color: rgba(180, 83, 9, 0.92);
+  font-family: Manrope, system-ui, sans-serif;
+  font-size: 0.62rem;
+  font-weight: 600;
+  letter-spacing: 0.2em;
+  text-transform: uppercase;
+  line-height: 1;
+}
+
+/* Decorative hanging quote — sits subtly behind the text top-right */
 #view-references .clients-testimonials .hanging-quote {
   position: absolute;
-  top: 1.15rem;
-  left: 1.65rem;
+  top: 0.85rem;
+  right: 1rem;
+  left: auto;
   font-family: Fraunces, serif;
   font-size: 5.5rem;
   line-height: 1;
-  color: rgba(10, 10, 10, 0.052);
+  color: rgba(10, 10, 10, 0.055);
   transform: none !important;
   pointer-events: none;
+  user-select: none;
 }
 
+/* Quote text */
 #view-references .clients-testimonials blockquote {
   position: relative;
   z-index: 1;
-  font-size: clamp(1.55rem, 1.82vw, 2.12rem) !important;
-  line-height: 1.2 !important;
-  letter-spacing: -0.018em;
-  max-width: 12.3em;
+  margin: 0 !important;
+  font-size: clamp(1.05rem, 1.15vw, 1.18rem) !important;
+  line-height: 1.55 !important;
+  letter-spacing: -0.005em;
+  color: #1a1a1a;
+  font-weight: 400;
+  font-style: normal;
 }
 
+/* Author name — italic serif, after a thin top rule */
 #view-references .clients-testimonials figcaption {
   position: relative;
   z-index: 1;
-  margin-top: 2.4rem !important;
-  display: flex;
-  flex-direction: column;
-  align-items: flex-start;
-  gap: 0.85rem;
-  color: rgba(10, 10, 10, 0.55);
+  margin-top: auto !important;
+  padding-top: 1.4rem !important;
+  border-top: 1px solid rgba(10, 10, 10, 0.1);
+  font-family: Fraunces, serif !important;
+  font-style: italic;
+  font-size: 0.95rem !important;
+  font-weight: 400;
+  letter-spacing: 0 !important;
+  text-transform: none !important;
+  color: rgba(10, 10, 10, 0.72);
   white-space: normal;
 }
 
-#view-references .clients-testimonials figcaption::before {
-  content: '';
-  width: 72px;
-  height: 1px;
-  background: rgba(10, 10, 10, 0.12);
-  margin-bottom: 0.25rem;
-}
-
-#view-references .client-quote__service {
-  display: inline-flex;
-  align-items: center;
-  width: fit-content;
-  margin-top: 0 !important;
-  padding-top: 0 !important;
-  border-top: 0 !important;
-  font-family: Manrope, system-ui, sans-serif;
-  font-size: 0.66rem;
-  line-height: 1;
-  letter-spacing: 0.18em;
-  text-transform: uppercase;
-  color: rgba(10, 10, 10, 0.38);
-}
-
+/* Tablet: 2 columns; the 3rd quote spans the full row width */
 @media (max-width: 1024px) {
   #view-references .clients-testimonials {
-    grid-template-columns: 1fr !important;
-    max-width: 760px !important;
-    border-right: 1px solid rgba(10, 10, 10, 0.09);
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    max-width: 820px;
+    gap: 1rem !important;
   }
-
+  #view-references .clients-testimonials .quote-figure:last-child {
+    grid-column: 1 / -1;
+  }
   #view-references .clients-testimonials .quote-figure {
     min-height: auto;
-    padding: 2.25rem 1.85rem !important;
-    border-right: 0;
-    border-bottom: 1px solid rgba(10, 10, 10, 0.09);
-  }
-
-  #view-references .clients-testimonials .quote-figure:last-child {
-    border-bottom: 0;
-  }
-
-  #view-references .clients-testimonials blockquote {
-    max-width: 100%;
+    padding: 2rem 1.65rem 1.65rem !important;
   }
 }
 
+/* Mobile: single column */
 @media (max-width: 640px) {
   #view-references .clients-testimonials {
-    border-left: 0;
-    border-right: 0;
+    grid-template-columns: 1fr;
+    gap: 0.85rem !important;
+    padding-bottom: 3rem !important;
   }
-
+  #view-references .clients-testimonials .quote-figure:last-child {
+    grid-column: auto;
+  }
   #view-references .clients-testimonials .quote-figure {
-    padding: 1.85rem 1.35rem !important;
+    padding: 1.75rem 1.35rem 1.5rem !important;
+    min-height: auto;
   }
-
   #view-references .clients-testimonials blockquote {
-    font-size: 1.45rem !important;
+    font-size: 1.02rem !important;
   }
+  #view-references .clients-testimonials .hanging-quote {
+    font-size: 4rem;
+    top: 0.5rem;
+    right: 0.85rem;
+  }
+}
+
+/* Heading group: tighten breathing room above the cards */
+#view-references .pt-20.pb-12 {
+  padding-bottom: 1.5rem !important;
+}
+@media (max-width: 640px) {
+  #view-references .pt-20.pb-12 { padding-bottom: 1rem !important; }
 }

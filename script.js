@@ -97,12 +97,15 @@
       if (block) {
         block.innerHTML = SUPPORTED_LANGS.map(lang => `<span class="lang-${lang}">${q.text[lang]}</span>`).join('');
       }
+      // Service tag goes ABOVE the quote as a small category chip; name stays in figcaption.
+      const existingChip = figure.querySelector('.client-quote__service');
+      if (existingChip) existingChip.remove();
+      const chip = document.createElement('span');
+      chip.className = 'client-quote__service';
+      chip.innerHTML = SUPPORTED_LANGS.map(lang => `<span class="lang-${lang}">${q.service[lang]}</span>`).join('');
+      figure.insertBefore(chip, block || figure.firstChild);
       if (caption) {
         caption.textContent = q.name;
-        const service = document.createElement('span');
-        service.className = 'client-quote__service';
-        service.innerHTML = SUPPORTED_LANGS.map(lang => `<span class="lang-${lang}">${q.service[lang]}</span>`).join('');
-        caption.appendChild(service);
       }
     });
   }
