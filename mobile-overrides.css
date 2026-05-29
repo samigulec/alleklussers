@@ -430,16 +430,7 @@
     font-size: 0.82rem !important;
   }
 
-  /* Trust band on mobile: single column, paper bg keeps it light */
-  #view-about .about-trust {
-    grid-template-columns: 1fr !important;
-    padding: 0.35rem 1.1rem !important;
-    margin-top: 1rem !important;
-  }
-  #view-about .about-trust li {
-    padding: 1rem 0 !important;
-    border-right: 0 !important;
-  }
+  /* about-trust removed — items live in the global .trust-bar above the footer. */
 
   #view-services ol,
   #view-references .projects-grid,
