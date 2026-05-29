@@ -150,91 +150,55 @@
     line-height: 1.58 !important;
   }
 
-  /* Mobile hero photo card — electrician landing pattern:
-     clean color photo, white "Certified electricians" badge bottom-left.
-     Followed by a 3-icon trust row beneath the photo. */
+  /* Clean editorial photo card — sits right after the lede, well-proportioned,
+     subtle frame, with one small caption chip at the bottom. No heavy veil. */
   #view-home .hero-photo {
     display: block !important;
     order: 4;
     position: relative;
     width: 100%;
-    aspect-ratio: 4 / 3;
+    aspect-ratio: 3 / 2;
     height: auto;
     margin: 1.6rem 0 0;
     border: 1px solid var(--rule);
-    background: url('hero.png') 50% 22% / cover no-repeat;
-    filter: grayscale(0.05) contrast(1.16) brightness(1) saturate(1.15);
+    background: url('hero.png') 50% 25% / cover no-repeat;
+    filter: grayscale(0.1) contrast(1.18) brightness(1) saturate(1.12);
     box-shadow: 0 18px 38px rgba(10, 10, 10, 0.07);
     overflow: hidden;
+    -webkit-mask-image: none !important;
+    mask-image: none !important;
   }
-  #view-home .hero-photo::after { content: none; }
-  #view-home .hero-photo__bulb,
-  #view-home .hero-photo__tag { display: none !important; }
-
-  /* White rounded badge overlaid bottom-left, like a magazine call-out */
-  #view-home .hero-photo__badge {
+  /* gentle bottom fade just under the caption chip */
+  #view-home .hero-photo::after {
+    content: '';
     position: absolute;
-    left: 0.85rem;
-    bottom: 0.85rem;
+    left: 0; right: 0; bottom: 0;
+    height: 42%;
+    background: linear-gradient(to top, rgba(10,10,10,0.5) 0%, transparent 100%);
+  }
+  #view-home .hero-photo__tag {
+    position: absolute;
+    left: 1.1rem;
+    bottom: 1rem;
     z-index: 2;
-    display: inline-flex;
-    align-items: center;
-    gap: 0.55rem;
-    background: var(--paper);
-    border: 1px solid rgba(10,10,10,0.06);
-    padding: 0.55rem 0.85rem 0.55rem 0.65rem;
-    box-shadow: 0 8px 22px rgba(10,10,10,0.18);
-    max-width: calc(100% - 1.7rem);
-  }
-  #view-home .hero-photo__badge-icon {
-    width: 18px;
-    height: 18px;
-    flex: 0 0 18px;
-    color: var(--accent);
-  }
-  #view-home .hero-photo__badge-text {
-    font-size: 0.78rem;
-    font-weight: 600;
-    letter-spacing: -0.005em;
-    line-height: 1.15;
-    color: var(--ink);
-  }
-
-  /* Three trust badges in a row beneath the photo */
-  #view-home .hero-trust-row {
-    display: grid !important;
-    grid-template-columns: repeat(3, 1fr);
-    gap: 0;
-    order: 5;
-    margin: 1.1rem 0 0;
-    padding: 1.05rem 0;
-    border-top: 1px solid var(--rule);
-    border-bottom: 1px solid var(--rule);
-    list-style: none;
-  }
-  #view-home .hero-trust-row li {
     display: flex;
-    flex-direction: column;
     align-items: center;
-    text-align: center;
-    gap: 0.45rem;
-    padding: 0 0.4rem;
-    border-right: 1px solid var(--rule);
-  }
-  #view-home .hero-trust-row li:last-child {
-    border-right: none;
-  }
-  #view-home .hero-trust-row__icon {
-    width: 22px;
-    height: 22px;
-    color: var(--accent);
-  }
-  #view-home .hero-trust-row__title {
-    font-size: 0.66rem;
+    gap: 0.5rem;
+    color: var(--paper);
+    font-size: 0.62rem;
+    letter-spacing: 0.18em;
+    text-transform: uppercase;
     font-weight: 500;
-    color: var(--ink);
-    line-height: 1.25;
-    letter-spacing: -0.005em;
+  }
+  #view-home .hero-photo__tag::before {
+    content: '';
+    width: 1.25rem;
+    height: 1px;
+    background: var(--accent);
+  }
+  /* drop the overlaid bulb mark on mobile — keeps the photo clean */
+  #view-home .hero-photo__bulb {
+    display: none;
   }
 
   #view-home .hero-content .mt-10.flex {
@@ -257,9 +221,24 @@
     white-space: nowrap;
   }
 
-  /* Old vertical badge stack hidden on mobile — replaced by hero-trust-row */
   #view-home .hero-badges {
-    display: none !important;
+    order: 6;
+    margin-top: 1.35rem !important;
+    padding-top: 0 !important;
+    display: grid !important;
+    grid-template-columns: 1fr;
+    gap: 0.7rem;
+    border: 0;
+  }
+
+  #view-home .hero-badges li {
+    display: flex;
+    align-items: center;
+    gap: 0.85rem;
+    padding: 0.9rem 0.95rem;
+    border: 1px solid var(--rule);
+    background: #fff;
+    box-shadow: 0 12px 26px rgba(10, 10, 10, 0.035);
   }
 
   #view-home .hero-badge__icon {
