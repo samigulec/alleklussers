@@ -10,25 +10,7 @@
     background: #fafafa;
   }
 
-  .top-bar {
-    background: #0a0a0a;
-    color: #fff;
-    border: 0;
-  }
-
-  .top-bar__inner {
-    min-height: 30px;
-    padding-inline: var(--mobile-page-x);
-    justify-content: space-between;
-  }
-
-  .top-bar__item {
-    color: rgba(255,255,255,.92);
-  }
-
-  .top-bar svg {
-    color: rgba(255,255,255,.92);
-  }
+  /* Top bar styling intentionally left to mobile-overrides.css (subtle paper). */
 
   header {
     top: 0;
