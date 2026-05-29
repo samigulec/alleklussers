@@ -844,95 +844,142 @@
         </p>
       </div>
 
-      <!-- Featured project: left = detail card, right = photo gallery (1 large + 4 thumbs) -->
-      <article class="project-featured" data-project="badkamer">
-        <div class="project-featured__detail">
-          <h2 class="project-featured__title font-serif">
-            <span class="lang-nl">Badkamer renovatie met elektra en verlichting</span>
-            <span class="lang-en">Bathroom renovation with electrics and lighting</span>
-            <span class="lang-tr">Elektrik ve aydınlatma dahil banyo yenileme</span>
-            <span class="lang-ar">تجديد حمّام مع الكهرباء والإضاءة</span>
-            <span class="lang-pl">Remont łazienki z elektryką i oświetleniem</span>
-            <span class="lang-de">Badezimmerrenovierung mit Elektrik und Beleuchtung</span>
-          </h2>
-          <div class="project-featured__meta">
-            <span class="project-featured__meta-item">
-              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.4" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
-                <path d="M12 22s7-6.5 7-13a7 7 0 0 0-14 0c0 6.5 7 13 7 13z"/>
-                <circle cx="12" cy="9" r="2.5"/>
-              </svg>
-              Utrecht
-            </span>
-            <span class="project-featured__meta-divider" aria-hidden="true">|</span>
-            <span class="project-featured__meta-item">
-              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.4" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
-                <path d="M20.5 13.5L13 21 3 11V3h8z"/>
-                <circle cx="7.5" cy="7.5" r="1.2"/>
-              </svg>
-              <span class="lang-nl">Badkamer renovatie</span><span class="lang-en">Bathroom renovation</span><span class="lang-tr">Banyo yenileme</span><span class="lang-ar">تجديد حمّام</span><span class="lang-pl">Remont łazienki</span><span class="lang-de">Badezimmerrenovierung</span>
-            </span>
-          </div>
-          <div class="hairline project-featured__rule"></div>
-          <p class="project-featured__desc">
-            <span class="lang-nl">Complete badkamer renovatie inclusief nieuwe elektra, LED spiegelverlichting, verlichtingsplan en strakke afwerking.</span>
-            <span class="lang-en">Complete bathroom renovation including new electrics, LED mirror lighting, a lighting plan and crisp finishing.</span>
-            <span class="lang-tr">Yeni elektrik tesisatı, LED ayna aydınlatması, aydınlatma planı ve özenli işçilik dahil komple banyo yenileme.</span>
-            <span class="lang-ar">تجديد كامل للحمّام يشمل الكهرباء الجديدة، إضاءة المرآة LED، خطة إضاءة وتشطيب أنيق.</span>
-            <span class="lang-pl">Kompletny remont łazienki obejmujący nową elektrykę, oświetlenie LED lustra, plan oświetleniowy i staranne wykończenie.</span>
-            <span class="lang-de">Komplette Badrenovierung inkl. neuer Elektrik, LED-Spiegelbeleuchtung, Lichtplan und sauberer Ausführung.</span>
-          </p>
-          <button type="button" class="btn-outline project-featured__cta" data-open-gallery="badkamer">
-            <span class="lang-nl">Bekijk project</span><span class="lang-en">View project</span><span class="lang-tr">Projeyi gör</span><span class="lang-ar">عرض المشروع</span><span class="lang-pl">Zobacz projekt</span><span class="lang-de">Projekt ansehen</span>
-            <span class="arrow">→</span>
-          </button>
+      <!-- Projects — alternating left/right rows, each opens a lightbox gallery -->
+      <div class="project-rows">
 
-          <ul class="project-featured__highlights">
-            <li>
-              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.3" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
-                <path d="M9 18h6"/><path d="M10 21h4"/>
-                <path d="M12 3a6 6 0 0 0-4 10.5c.7.7 1 1.5 1 2.5h6c0-1 .3-1.8 1-2.5A6 6 0 0 0 12 3z"/>
-              </svg>
-              <span><span class="lang-nl">LED spiegelverlichting</span><span class="lang-en">LED mirror lighting</span><span class="lang-tr">LED ayna aydınlatması</span><span class="lang-ar">إضاءة مرآة LED</span><span class="lang-pl">Oświetlenie LED lustra</span><span class="lang-de">LED-Spiegelbeleuchtung</span></span>
-            </li>
-            <li>
-              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.3" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
-                <rect x="4" y="4" width="16" height="16"/>
-                <circle cx="10" cy="10" r="1.2" fill="currentColor"/>
-                <circle cx="14" cy="10" r="1.2" fill="currentColor"/>
-                <path d="M10 14h4"/>
-              </svg>
-              <span><span class="lang-nl">Nieuwe aansluitpunten</span><span class="lang-en">New connection points</span><span class="lang-tr">Yeni bağlantı noktaları</span><span class="lang-ar">نقاط توصيل جديدة</span><span class="lang-pl">Nowe punkty podłączeń</span><span class="lang-de">Neue Anschlusspunkte</span></span>
-            </li>
-            <li>
-              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.3" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
-                <path d="M3 18l4-4 4 4 4-6 6 8"/>
-                <path d="M3 6l18 0"/>
-              </svg>
-              <span><span class="lang-nl">Strakke afwerking</span><span class="lang-en">Crisp finishing</span><span class="lang-tr">Özenli işçilik</span><span class="lang-ar">تشطيب أنيق</span><span class="lang-pl">Staranne wykończenie</span><span class="lang-de">Saubere Ausführung</span></span>
-            </li>
-          </ul>
-        </div>
+        <!-- 1 — Badkamer (photo left, detail right) -->
+        <article class="project-row" data-project="badkamer">
+          <div class="project-row__gallery" data-gallery="badkamer">
+            <button type="button" class="project-row__photo project-row__photo--lead" data-photo-index="0">
+              <img src="badkamer/1.png" alt="Badkamer renovatie" loading="lazy" />
+            </button>
+            <div class="project-row__thumbs">
+              <button type="button" class="project-row__photo" data-photo-index="1"><img src="badkamer/2.png" alt="Badkamer detail" loading="lazy" /></button>
+              <button type="button" class="project-row__photo" data-photo-index="2"><img src="badkamer/3.png" alt="Badkamer detail" loading="lazy" /></button>
+              <button type="button" class="project-row__photo" data-photo-index="3"><img src="badkamer/4.png" alt="Badkamer detail" loading="lazy" /></button>
+              <button type="button" class="project-row__photo project-row__photo--more" data-photo-index="4">
+                <img src="badkamer/5.png" alt="Badkamer detail" loading="lazy" />
+                <span class="project-row__count">+1</span>
+              </button>
+            </div>
+          </div>
+          <div class="project-row__detail">
+            <p class="eyebrow">01 · Utrecht</p>
+            <h2 class="project-row__title font-serif">
+              <span class="lang-nl">Badkamer met elektra &amp; verlichting</span>
+              <span class="lang-en">Bathroom with electrics &amp; lighting</span>
+              <span class="lang-tr">Elektrik &amp; aydınlatmalı banyo</span>
+              <span class="lang-ar">حمّام بكهرباء وإضاءة</span>
+              <span class="lang-pl">Łazienka z elektryką i oświetleniem</span>
+              <span class="lang-de">Bad mit Elektrik &amp; Beleuchtung</span>
+            </h2>
+            <p class="project-row__desc">
+              <span class="lang-nl">Nieuwe elektra, LED spiegelverlichting en strakke afwerking.</span>
+              <span class="lang-en">New electrics, LED mirror lighting and crisp finishing.</span>
+              <span class="lang-tr">Yeni elektrik, LED ayna aydınlatması ve özenli işçilik.</span>
+              <span class="lang-ar">كهرباء جديدة، إضاءة مرآة LED وتشطيب أنيق.</span>
+              <span class="lang-pl">Nowa elektryka, oświetlenie LED lustra i staranne wykończenie.</span>
+              <span class="lang-de">Neue Elektrik, LED-Spiegelbeleuchtung und saubere Ausführung.</span>
+            </p>
+            <div class="project-row__actions">
+              <button type="button" class="btn-ink btn-ink--sm" data-open-gallery="badkamer">
+                <span class="lang-nl">Bekijk project</span><span class="lang-en">View project</span><span class="lang-tr">Projeyi gör</span><span class="lang-ar">عرض المشروع</span><span class="lang-pl">Zobacz projekt</span><span class="lang-de">Projekt ansehen</span>
+                <span class="arrow">→</span>
+              </button>
+              <a href="#contact" data-nav="contact" class="btn-outline btn-outline--sm">
+                <span class="lang-nl">Offerte aanvragen</span><span class="lang-en">Request a quote</span><span class="lang-tr">Teklif ver</span><span class="lang-ar">اطلب عرض سعر</span><span class="lang-pl">Poproś o wycenę</span><span class="lang-de">Angebot anfordern</span>
+              </a>
+            </div>
+          </div>
+        </article>
 
-        <div class="project-featured__gallery" data-gallery="badkamer">
-          <button type="button" class="project-featured__photo project-featured__photo--lead" data-photo-index="0">
-            <img src="badkamer/1.png" alt="Badkamer renovatie hoofdfoto" loading="lazy" />
-          </button>
-          <div class="project-featured__photo-grid">
-            <button type="button" class="project-featured__photo" data-photo-index="1">
-              <img src="badkamer/2.png" alt="Badkamer detail" loading="lazy" />
+        <!-- 2 — Eettafel / hanglampen (detail left, photo right) -->
+        <article class="project-row project-row--reverse" data-project="eettafel">
+          <div class="project-row__gallery" data-gallery="eettafel">
+            <button type="button" class="project-row__photo project-row__photo--lead" data-photo-index="0">
+              <img src="eettafel/1.png" alt="Eettafel verlichting" loading="lazy" />
             </button>
-            <button type="button" class="project-featured__photo" data-photo-index="2">
-              <img src="badkamer/3.png" alt="Badkamer detail" loading="lazy" />
+            <div class="project-row__thumbs">
+              <button type="button" class="project-row__photo" data-photo-index="1"><img src="eettafel/2.png" alt="Eettafel detail" loading="lazy" /></button>
+              <button type="button" class="project-row__photo" data-photo-index="2"><img src="eettafel/3.png" alt="Eettafel detail" loading="lazy" /></button>
+              <button type="button" class="project-row__photo" data-photo-index="3"><img src="eettafel/4.png" alt="Eettafel detail" loading="lazy" /></button>
+              <button type="button" class="project-row__photo project-row__photo--more" data-photo-index="4">
+                <img src="eettafel/5.png" alt="Eettafel detail" loading="lazy" />
+                <span class="project-row__count">+1</span>
+              </button>
+            </div>
+          </div>
+          <div class="project-row__detail">
+            <p class="eyebrow">02 · Amsterdam</p>
+            <h2 class="project-row__title font-serif">
+              <span class="lang-nl">Eettafelverlichting &amp; aansluitpunten</span>
+              <span class="lang-en">Dining-table lighting &amp; connections</span>
+              <span class="lang-tr">Yemek masası aydınlatması &amp; bağlantılar</span>
+              <span class="lang-ar">إضاءة طاولة الطعام والتوصيلات</span>
+              <span class="lang-pl">Oświetlenie nad stołem i przyłącza</span>
+              <span class="lang-de">Esstisch-Beleuchtung &amp; Anschlüsse</span>
+            </h2>
+            <p class="project-row__desc">
+              <span class="lang-nl">Hanglampen op maat geplaatst met nieuwe bedrading en dimbare schakeling.</span>
+              <span class="lang-en">Custom pendant lights with new wiring and dimmable switching.</span>
+              <span class="lang-tr">Yeni kablolama ve dim'li anahtarla özel sarkıt aydınlatma.</span>
+              <span class="lang-ar">إنارة معلّقة مخصّصة مع تمديدات جديدة وتحكّم خافت.</span>
+              <span class="lang-pl">Lampy wiszące na wymiar z nową instalacją i ściemnianiem.</span>
+              <span class="lang-de">Maßgefertigte Pendelleuchten mit neuer Verkabelung und Dimmer.</span>
+            </p>
+            <div class="project-row__actions">
+              <button type="button" class="btn-ink btn-ink--sm" data-open-gallery="eettafel">
+                <span class="lang-nl">Bekijk project</span><span class="lang-en">View project</span><span class="lang-tr">Projeyi gör</span><span class="lang-ar">عرض المشروع</span><span class="lang-pl">Zobacz projekt</span><span class="lang-de">Projekt ansehen</span>
+                <span class="arrow">→</span>
+              </button>
+              <a href="#contact" data-nav="contact" class="btn-outline btn-outline--sm">
+                <span class="lang-nl">Offerte aanvragen</span><span class="lang-en">Request a quote</span><span class="lang-tr">Teklif ver</span><span class="lang-ar">اطلب عرض سعر</span><span class="lang-pl">Poproś o wycenę</span><span class="lang-de">Angebot anfordern</span>
+              </a>
+            </div>
+          </div>
+        </article>
+
+        <!-- 3 — Fitness (photo left, detail right) -->
+        <article class="project-row" data-project="fitness">
+          <div class="project-row__gallery project-row__gallery--duo" data-gallery="fitness">
+            <button type="button" class="project-row__photo" data-photo-index="0">
+              <img src="fitness/1.png" alt="Fitnessruimte verlichting" loading="lazy" />
             </button>
-            <button type="button" class="project-featured__photo" data-photo-index="3">
-              <img src="badkamer/4.png" alt="Badkamer detail" loading="lazy" />
-            </button>
-            <button type="button" class="project-featured__photo" data-photo-index="4">
-              <img src="badkamer/5.png" alt="Badkamer detail" loading="lazy" />
+            <button type="button" class="project-row__photo" data-photo-index="1">
+              <img src="fitness/2.png" alt="Fitnessruimte detail" loading="lazy" />
             </button>
           </div>
-        </div>
-      </article>
+          <div class="project-row__detail">
+            <p class="eyebrow">03 · Rotterdam</p>
+            <h2 class="project-row__title font-serif">
+              <span class="lang-nl">Verlichting voor fitnessruimte</span>
+              <span class="lang-en">Lighting for a home gym</span>
+              <span class="lang-tr">Fitness odası aydınlatması</span>
+              <span class="lang-ar">إضاءة غرفة لياقة</span>
+              <span class="lang-pl">Oświetlenie siłowni domowej</span>
+              <span class="lang-de">Beleuchtung für Fitnessraum</span>
+            </h2>
+            <p class="project-row__desc">
+              <span class="lang-nl">Sfeervolle LED-verlichting en extra groepen voor apparatuur.</span>
+              <span class="lang-en">Atmospheric LED lighting and extra circuits for equipment.</span>
+              <span class="lang-tr">Atmosferik LED aydınlatma ve cihazlar için ek hatlar.</span>
+              <span class="lang-ar">إضاءة LED مريحة ودوائر إضافية للأجهزة.</span>
+              <span class="lang-pl">Klimatyczne oświetlenie LED i dodatkowe obwody dla sprzętu.</span>
+              <span class="lang-de">Stimmungsvolle LED-Beleuchtung und Extra-Stromkreise für Geräte.</span>
+            </p>
+            <div class="project-row__actions">
+              <button type="button" class="btn-ink btn-ink--sm" data-open-gallery="fitness">
+                <span class="lang-nl">Bekijk project</span><span class="lang-en">View project</span><span class="lang-tr">Projeyi gör</span><span class="lang-ar">عرض المشروع</span><span class="lang-pl">Zobacz projekt</span><span class="lang-de">Projekt ansehen</span>
+                <span class="arrow">→</span>
+              </button>
+              <a href="#contact" data-nav="contact" class="btn-outline btn-outline--sm">
+                <span class="lang-nl">Offerte aanvragen</span><span class="lang-en">Request a quote</span><span class="lang-tr">Teklif ver</span><span class="lang-ar">اطلب عرض سعر</span><span class="lang-pl">Poproś o wycenę</span><span class="lang-de">Angebot anfordern</span>
+              </a>
+            </div>
+          </div>
+        </article>
+
+      </div>
 
       <a href="#contact" data-nav="contact" class="project-all-bar">
         <span><span class="lang-nl">Alle projecten bekijken</span><span class="lang-en">View all projects</span><span class="lang-tr">Tüm projeleri gör</span><span class="lang-ar">عرض جميع المشاريع</span><span class="lang-pl">Zobacz wszystkie projekty</span><span class="lang-de">Alle Projekte ansehen</span></span>
