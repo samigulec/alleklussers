@@ -1,0 +1,95 @@
+/* Klanten / client quotes — keep the section, make it elektra-focused and more compact. */
+#view-references .clients-testimonials {
+  max-width: 1180px !important;
+  display: grid !important;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 1px !important;
+  padding-bottom: 7rem !important;
+  background: rgba(10, 10, 10, 0.08);
+  border: 1px solid rgba(10, 10, 10, 0.09);
+}
+
+#view-references .clients-testimonials .quote-figure {
+  position: relative;
+  margin: 0 !important;
+  padding: 2.35rem 2.15rem 2rem !important;
+  background: var(--paper, #fafafa);
+  min-height: 285px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+#view-references .clients-testimonials .hanging-quote {
+  position: absolute;
+  top: 1.1rem;
+  left: 1.55rem;
+  font-family: Fraunces, serif;
+  font-size: 5.5rem;
+  line-height: 1;
+  color: rgba(10, 10, 10, 0.055);
+  transform: none !important;
+  pointer-events: none;
+}
+
+#view-references .clients-testimonials blockquote {
+  position: relative;
+  z-index: 1;
+  font-size: clamp(1.55rem, 2vw, 2.25rem) !important;
+  line-height: 1.18 !important;
+  letter-spacing: -0.018em;
+  max-width: 11.5em;
+}
+
+#view-references .clients-testimonials figcaption {
+  position: relative;
+  z-index: 1;
+  margin-top: 2.1rem !important;
+}
+
+#view-references .client-quote__service {
+  display: inline-flex;
+  align-items: center;
+  width: fit-content;
+  margin-top: 1.15rem;
+  padding-top: 1rem;
+  border-top: 1px solid rgba(10, 10, 10, 0.12);
+  font-family: Manrope, system-ui, sans-serif;
+  font-size: 0.68rem;
+  line-height: 1;
+  letter-spacing: 0.18em;
+  text-transform: uppercase;
+  color: rgba(10, 10, 10, 0.55);
+}
+
+@media (max-width: 1024px) {
+  #view-references .clients-testimonials {
+    grid-template-columns: 1fr !important;
+    max-width: 760px !important;
+    gap: 0 !important;
+  }
+
+  #view-references .clients-testimonials .quote-figure {
+    min-height: auto;
+    padding: 2.1rem 1.8rem !important;
+  }
+
+  #view-references .clients-testimonials blockquote {
+    max-width: 100%;
+  }
+}
+
+@media (max-width: 640px) {
+  #view-references .clients-testimonials {
+    border-left: 0;
+    border-right: 0;
+  }
+
+  #view-references .clients-testimonials .quote-figure {
+    padding: 1.8rem 1.3rem !important;
+  }
+
+  #view-references .clients-testimonials blockquote {
+    font-size: 1.45rem !important;
+  }
+}
