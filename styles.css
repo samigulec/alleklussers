@@ -1684,3 +1684,273 @@ em {
   .contact-half:first-child { padding-left: 0; }
   .contact-half:last-child  { padding-right: 0; }
 }
+
+/* ============================================================
+   Projecten — featured project layout + lightbox
+   ============================================================ */
+
+/* Editorial eyebrow with a short rule under it (matches reference design) */
+.eyebrow--rule {
+  display: inline-block;
+  position: relative;
+  padding-bottom: 0.65rem;
+}
+.eyebrow--rule::after {
+  content: '';
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  width: 2.5rem;
+  height: 1px;
+  background: var(--ink);
+}
+
+/* Featured project: detail card on the left, photo gallery on the right */
+.project-featured {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 2rem;
+  margin-bottom: 2.5rem;
+}
+@media (min-width: 1024px) {
+  .project-featured {
+    grid-template-columns: 1fr 1.55fr;
+    gap: 2.5rem;
+    align-items: start;
+  }
+}
+.project-featured__detail {
+  border: 1px solid var(--rule);
+  padding: 2.25rem 2rem 2rem;
+  background: var(--paper);
+  display: flex;
+  flex-direction: column;
+  gap: 1.25rem;
+}
+@media (min-width: 1024px) {
+  .project-featured__detail {
+    padding: 2.75rem 2.5rem 2.25rem;
+    align-self: stretch;
+  }
+}
+.project-featured__title {
+  font-size: clamp(1.6rem, 2.2vw, 2.1rem);
+  line-height: 1.15;
+  letter-spacing: -0.02em;
+  font-weight: 400;
+  margin: 0;
+  max-width: 22ch;
+}
+.project-featured__meta {
+  display: flex;
+  align-items: center;
+  gap: 0.85rem;
+  font-size: 0.82rem;
+  color: var(--muted);
+}
+.project-featured__meta-item {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.45rem;
+}
+.project-featured__meta-item svg {
+  width: 1rem;
+  height: 1rem;
+  flex-shrink: 0;
+}
+.project-featured__meta-divider {
+  color: var(--rule);
+  font-weight: 300;
+}
+.project-featured__rule {
+  margin: 0.25rem 0 !important;
+}
+.project-featured__desc {
+  font-size: 0.95rem;
+  line-height: 1.6;
+  color: #333;
+  max-width: 38ch;
+}
+.project-featured__cta {
+  align-self: flex-start;
+  margin-top: 0.5rem;
+}
+.project-featured__highlights {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 1rem;
+  margin-top: auto;
+  padding-top: 1.5rem;
+  border-top: 1px solid var(--rule);
+  list-style: none;
+}
+.project-featured__highlights li {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  gap: 0.55rem;
+  font-size: 0.72rem;
+  color: var(--ink);
+  line-height: 1.3;
+}
+.project-featured__highlights svg {
+  width: 1.6rem;
+  height: 1.6rem;
+  color: var(--accent);
+}
+
+/* Gallery: 1 lead photo on top + 2×2 grid of thumbs */
+.project-featured__gallery {
+  display: grid;
+  gap: 0.75rem;
+}
+.project-featured__photo {
+  display: block;
+  width: 100%;
+  padding: 0;
+  margin: 0;
+  border: 0;
+  background: var(--rule);
+  cursor: pointer;
+  overflow: hidden;
+  position: relative;
+  aspect-ratio: 16 / 11;
+  transition: transform 320ms cubic-bezier(.22,.61,.36,1);
+}
+.project-featured__photo img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
+  transition: transform 540ms cubic-bezier(.22,.61,.36,1);
+}
+.project-featured__photo:hover img {
+  transform: scale(1.04);
+}
+.project-featured__photo--lead {
+  aspect-ratio: 16 / 9;
+}
+.project-featured__photo-grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 0.75rem;
+}
+
+/* "Alle projecten bekijken" — wide bar with right-aligned arrow */
+.project-all-bar {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 1rem;
+  padding: 1.25rem 1.75rem;
+  border: 1px solid var(--rule);
+  font-size: 0.95rem;
+  color: var(--ink);
+  transition: background 240ms ease, border-color 240ms ease;
+}
+.project-all-bar:hover {
+  background: rgba(180, 83, 9, 0.04);
+  border-color: var(--accent);
+  color: var(--accent);
+}
+.project-all-bar .arrow {
+  transition: transform 320ms cubic-bezier(.22,.61,.36,1);
+}
+.project-all-bar:hover .arrow {
+  transform: translateX(0.5rem);
+}
+
+/* Lightbox: fullscreen photo viewer */
+.project-lightbox {
+  position: fixed;
+  inset: 0;
+  background: rgba(10, 10, 10, 0.92);
+  z-index: 200;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  opacity: 0;
+  visibility: hidden;
+  transition: opacity 240ms ease, visibility 240ms ease;
+}
+.project-lightbox.is-open {
+  opacity: 1;
+  visibility: visible;
+}
+body.lightbox-open {
+  overflow: hidden;
+}
+.project-lightbox__figure {
+  max-width: min(95vw, 1400px);
+  max-height: 90vh;
+  margin: 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 1rem;
+}
+.project-lightbox__figure img {
+  max-width: 100%;
+  max-height: 82vh;
+  object-fit: contain;
+  display: block;
+}
+.project-lightbox__caption {
+  color: rgba(250, 250, 250, 0.7);
+  font-size: 0.78rem;
+  letter-spacing: 0.18em;
+  text-transform: uppercase;
+}
+.project-lightbox__close,
+.project-lightbox__nav {
+  position: absolute;
+  background: transparent;
+  border: 1px solid rgba(250, 250, 250, 0.25);
+  color: var(--paper);
+  width: 44px;
+  height: 44px;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  transition: background 200ms ease, border-color 200ms ease;
+}
+.project-lightbox__close:hover,
+.project-lightbox__nav:hover {
+  background: rgba(250, 250, 250, 0.1);
+  border-color: rgba(250, 250, 250, 0.5);
+}
+.project-lightbox__close { top: 1.25rem; right: 1.25rem; }
+.project-lightbox__nav--prev { left: 1.25rem; top: 50%; transform: translateY(-50%); }
+.project-lightbox__nav--next { right: 1.25rem; top: 50%; transform: translateY(-50%); }
+.project-lightbox__close svg,
+.project-lightbox__nav svg { width: 20px; height: 20px; }
+
+/* Mobile */
+@media (max-width: 767px) {
+  .project-featured__detail {
+    padding: 1.5rem 1.25rem;
+  }
+  .project-featured__title {
+    font-size: 1.4rem;
+  }
+  .project-featured__highlights {
+    gap: 0.5rem;
+  }
+  .project-featured__highlights li {
+    font-size: 0.65rem;
+  }
+  .project-all-bar {
+    padding: 1rem 1.25rem;
+    font-size: 0.85rem;
+  }
+  .project-lightbox__close,
+  .project-lightbox__nav {
+    width: 38px;
+    height: 38px;
+  }
+  .project-lightbox__close { top: 0.75rem; right: 0.75rem; }
+  .project-lightbox__nav--prev { left: 0.5rem; }
+  .project-lightbox__nav--next { right: 0.5rem; }
+}

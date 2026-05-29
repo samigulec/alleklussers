@@ -824,83 +824,122 @@
 
     <!-- ============ REFERENCES ============ -->
     <section id="view-references" class="view">
-      <div class="pt-20 lg:pt-32 pb-16">
-        <p class="eyebrow mb-10"><span class="lang-nl">Projecten</span><span class="lang-en">Projects</span><span class="lang-tr">Projeler</span><span class="lang-ar">المشاريع</span><span class="lang-pl">Projekty</span><span class="lang-de">Projekte</span></p>
-        <h1 class="font-serif h-display max-w-[14ch]">
-          <span class="lang-nl">Recent <em>werk</em>.</span>
-          <span class="lang-en">Recent <em>work</em>.</span>
-          <span class="lang-tr">Yakın zamandaki <em>işler</em>.</span>
-          <span class="lang-ar">أعمالٌ <em>حديثة</em>.</span>
-          <span class="lang-pl">Niedawne <em>prace</em>.</span>
-          <span class="lang-de">Aktuelle <em>Arbeiten</em>.</span>
+      <div class="pt-20 lg:pt-32 pb-10">
+        <p class="eyebrow eyebrow--rule mb-8"><span class="lang-nl">Projecten</span><span class="lang-en">Projects</span><span class="lang-tr">Projeler</span><span class="lang-ar">المشاريع</span><span class="lang-pl">Projekty</span><span class="lang-de">Projekte</span></p>
+        <h1 class="font-serif h-display max-w-[18ch]">
+          <span class="lang-nl">Projecten die netjes zijn afgewerkt.</span>
+          <span class="lang-en">Projects, neatly finished.</span>
+          <span class="lang-tr">Özenle tamamlanan projeler.</span>
+          <span class="lang-ar">مشاريع منجزة بإتقان.</span>
+          <span class="lang-pl">Projekty starannie wykończone.</span>
+          <span class="lang-de">Projekte, sauber abgeschlossen.</span>
         </h1>
+        <p class="hero-lede mt-8 max-w-2xl">
+          <span class="lang-nl">Bij AlleKlussers leveren we strak afgewerkt werk, van elektra tot renovatie. We denken mee, werken netjes en zorgen voor duurzame resultaten met oog voor detail, verlichting en moderne afwerking.</span>
+          <span class="lang-en">At AlleKlussers we deliver crisply finished work, from electrics to renovation. We think along, work tidy and ensure durable results with attention to detail, lighting and modern finishing.</span>
+          <span class="lang-tr">AlleKlussers olarak elektrikten yenilemeye kadar özenle tamamlanan işler sunuyoruz. Birlikte düşünür, temiz çalışır ve detaylara, aydınlatmaya ve modern bitirişe önem vererek kalıcı sonuçlar üretiriz.</span>
+          <span class="lang-ar">في AlleKlussers نقدّم أعمالاً منجزة بإتقان، من الكهرباء إلى التجديد. نُشارك بالأفكار ونعمل بترتيب ونضمن نتائج دائمة بعناية للتفاصيل والإضاءة واللمسات العصرية.</span>
+          <span class="lang-pl">W AlleKlussers wykonujemy prace z dbałością o detal, od elektryki po remont. Doradzamy, pracujemy schludnie i dbamy o trwałe efekty z myślą o szczegółach, oświetleniu i nowoczesnym wykończeniu.</span>
+          <span class="lang-de">Bei AlleKlussers liefern wir sauber abgeschlossene Arbeiten, von Elektrik bis Renovierung. Wir denken mit, arbeiten ordentlich und sorgen für langlebige Ergebnisse mit Blick fürs Detail, Beleuchtung und moderne Ausführung.</span>
+        </p>
       </div>
 
-      <!-- Project cards — placeholder media frames ready to receive photos.
-           To add a photo, set the <img> src inside .project-card__media. -->
-      <div class="projects-grid pb-24">
-        <article class="project-card">
-          <div class="project-card__media">
-            <img src="projects/01.jpg" alt="" onerror="this.style.display='none'" />
-            <span>Foto</span>
+      <!-- Featured project: left = detail card, right = photo gallery (1 large + 4 thumbs) -->
+      <article class="project-featured" data-project="badkamer">
+        <div class="project-featured__detail">
+          <h2 class="project-featured__title font-serif">
+            <span class="lang-nl">Badkamer renovatie met elektra en verlichting</span>
+            <span class="lang-en">Bathroom renovation with electrics and lighting</span>
+            <span class="lang-tr">Elektrik ve aydınlatma dahil banyo yenileme</span>
+            <span class="lang-ar">تجديد حمّام مع الكهرباء والإضاءة</span>
+            <span class="lang-pl">Remont łazienki z elektryką i oświetleniem</span>
+            <span class="lang-de">Badezimmerrenovierung mit Elektrik und Beleuchtung</span>
+          </h2>
+          <div class="project-featured__meta">
+            <span class="project-featured__meta-item">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.4" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                <path d="M12 22s7-6.5 7-13a7 7 0 0 0-14 0c0 6.5 7 13 7 13z"/>
+                <circle cx="12" cy="9" r="2.5"/>
+              </svg>
+              Utrecht
+            </span>
+            <span class="project-featured__meta-divider" aria-hidden="true">|</span>
+            <span class="project-featured__meta-item">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.4" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                <path d="M20.5 13.5L13 21 3 11V3h8z"/>
+                <circle cx="7.5" cy="7.5" r="1.2"/>
+              </svg>
+              <span class="lang-nl">Badkamer renovatie</span><span class="lang-en">Bathroom renovation</span><span class="lang-tr">Banyo yenileme</span><span class="lang-ar">تجديد حمّام</span><span class="lang-pl">Remont łazienki</span><span class="lang-de">Badezimmerrenovierung</span>
+            </span>
           </div>
-          <p class="eyebrow mt-5">01 · 2025</p>
-          <h3 class="font-serif"><span class="lang-nl">Badkamerrenovatie</span><span class="lang-en">Bathroom renovation</span><span class="lang-tr">Banyo yenileme</span><span class="lang-ar">تجديد الحمّام</span><span class="lang-pl">Remont łazienki</span><span class="lang-de">Badezimmerrenovierung</span></h3>
-          <p class="project-card__meta"><span class="lang-nl">3 weken · 4 vakmensen</span><span class="lang-en">3 weeks · 4 craftsmen</span><span class="lang-tr">3 hafta · 4 usta</span><span class="lang-ar">٣ أسابيع · ٤ حرفيين</span><span class="lang-pl">3 tygodnie · 4 fachowców</span><span class="lang-de">3 Wochen · 4 Handwerker</span></p>
-        </article>
+          <div class="hairline project-featured__rule"></div>
+          <p class="project-featured__desc">
+            <span class="lang-nl">Complete badkamer renovatie inclusief nieuwe elektra, LED spiegelverlichting, verlichtingsplan en strakke afwerking.</span>
+            <span class="lang-en">Complete bathroom renovation including new electrics, LED mirror lighting, a lighting plan and crisp finishing.</span>
+            <span class="lang-tr">Yeni elektrik tesisatı, LED ayna aydınlatması, aydınlatma planı ve özenli işçilik dahil komple banyo yenileme.</span>
+            <span class="lang-ar">تجديد كامل للحمّام يشمل الكهرباء الجديدة، إضاءة المرآة LED، خطة إضاءة وتشطيب أنيق.</span>
+            <span class="lang-pl">Kompletny remont łazienki obejmujący nową elektrykę, oświetlenie LED lustra, plan oświetleniowy i staranne wykończenie.</span>
+            <span class="lang-de">Komplette Badrenovierung inkl. neuer Elektrik, LED-Spiegelbeleuchtung, Lichtplan und sauberer Ausführung.</span>
+          </p>
+          <button type="button" class="btn-outline project-featured__cta" data-open-gallery="badkamer">
+            <span class="lang-nl">Bekijk project</span><span class="lang-en">View project</span><span class="lang-tr">Projeyi gör</span><span class="lang-ar">عرض المشروع</span><span class="lang-pl">Zobacz projekt</span><span class="lang-de">Projekt ansehen</span>
+            <span class="arrow">→</span>
+          </button>
 
-        <article class="project-card">
-          <div class="project-card__media">
-            <img src="projects/02.jpg" alt="" onerror="this.style.display='none'" />
-            <span>Foto</span>
+          <ul class="project-featured__highlights">
+            <li>
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.3" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                <path d="M9 18h6"/><path d="M10 21h4"/>
+                <path d="M12 3a6 6 0 0 0-4 10.5c.7.7 1 1.5 1 2.5h6c0-1 .3-1.8 1-2.5A6 6 0 0 0 12 3z"/>
+              </svg>
+              <span><span class="lang-nl">LED spiegelverlichting</span><span class="lang-en">LED mirror lighting</span><span class="lang-tr">LED ayna aydınlatması</span><span class="lang-ar">إضاءة مرآة LED</span><span class="lang-pl">Oświetlenie LED lustra</span><span class="lang-de">LED-Spiegelbeleuchtung</span></span>
+            </li>
+            <li>
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.3" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                <rect x="4" y="4" width="16" height="16"/>
+                <circle cx="10" cy="10" r="1.2" fill="currentColor"/>
+                <circle cx="14" cy="10" r="1.2" fill="currentColor"/>
+                <path d="M10 14h4"/>
+              </svg>
+              <span><span class="lang-nl">Nieuwe aansluitpunten</span><span class="lang-en">New connection points</span><span class="lang-tr">Yeni bağlantı noktaları</span><span class="lang-ar">نقاط توصيل جديدة</span><span class="lang-pl">Nowe punkty podłączeń</span><span class="lang-de">Neue Anschlusspunkte</span></span>
+            </li>
+            <li>
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.3" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                <path d="M3 18l4-4 4 4 4-6 6 8"/>
+                <path d="M3 6l18 0"/>
+              </svg>
+              <span><span class="lang-nl">Strakke afwerking</span><span class="lang-en">Crisp finishing</span><span class="lang-tr">Özenli işçilik</span><span class="lang-ar">تشطيب أنيق</span><span class="lang-pl">Staranne wykończenie</span><span class="lang-de">Saubere Ausführung</span></span>
+            </li>
+          </ul>
+        </div>
+
+        <div class="project-featured__gallery" data-gallery="badkamer">
+          <button type="button" class="project-featured__photo project-featured__photo--lead" data-photo-index="0">
+            <img src="badkamer/1.png" alt="Badkamer renovatie hoofdfoto" loading="lazy" />
+          </button>
+          <div class="project-featured__photo-grid">
+            <button type="button" class="project-featured__photo" data-photo-index="1">
+              <img src="badkamer/2.png" alt="Badkamer detail" loading="lazy" />
+            </button>
+            <button type="button" class="project-featured__photo" data-photo-index="2">
+              <img src="badkamer/3.png" alt="Badkamer detail" loading="lazy" />
+            </button>
+            <button type="button" class="project-featured__photo" data-photo-index="3">
+              <img src="badkamer/4.png" alt="Badkamer detail" loading="lazy" />
+            </button>
+            <button type="button" class="project-featured__photo" data-photo-index="4">
+              <img src="badkamer/5.png" alt="Badkamer detail" loading="lazy" />
+            </button>
           </div>
-          <p class="eyebrow mt-5">02 · 2025</p>
-          <h3 class="font-serif"><span class="lang-nl">Open keuken</span><span class="lang-en">Open kitchen</span><span class="lang-tr">Açık mutfak</span><span class="lang-ar">مطبخ مفتوح</span><span class="lang-pl">Otwarta kuchnia</span><span class="lang-de">Offene Küche</span></h3>
-          <p class="project-card__meta"><span class="lang-nl">5 weken · jaren-30 woning</span><span class="lang-en">5 weeks · 1930s home</span><span class="lang-tr">5 hafta · 1930'ların evi</span><span class="lang-ar">٥ أسابيع · منزل من ثلاثينيات القرن</span><span class="lang-pl">5 tygodni · dom z lat 30.</span><span class="lang-de">5 Wochen · 30er-Jahre-Haus</span></p>
-        </article>
+        </div>
+      </article>
 
-        <article class="project-card">
-          <div class="project-card__media">
-            <img src="projects/03.jpg" alt="" onerror="this.style.display='none'" />
-            <span>Foto</span>
-          </div>
-          <p class="eyebrow mt-5">03 · 2024</p>
-          <h3 class="font-serif"><span class="lang-nl">Complete verbouwing</span><span class="lang-en">Full renovation</span><span class="lang-tr">Komple tadilat</span><span class="lang-ar">تجديد شامل</span><span class="lang-pl">Pełny remont</span><span class="lang-de">Komplettrenovierung</span></h3>
-          <p class="project-card__meta"><span class="lang-nl">8 weken · 6 disciplines</span><span class="lang-en">8 weeks · 6 disciplines</span><span class="lang-tr">8 hafta · 6 disiplin</span><span class="lang-ar">٨ أسابيع · ٦ تخصصات</span><span class="lang-pl">8 tygodni · 6 dyscyplin</span><span class="lang-de">8 Wochen · 6 Gewerke</span></p>
-        </article>
+      <a href="#contact" data-nav="contact" class="project-all-bar">
+        <span><span class="lang-nl">Alle projecten bekijken</span><span class="lang-en">View all projects</span><span class="lang-tr">Tüm projeleri gör</span><span class="lang-ar">عرض جميع المشاريع</span><span class="lang-pl">Zobacz wszystkie projekty</span><span class="lang-de">Alle Projekte ansehen</span></span>
+        <span class="arrow" aria-hidden="true">→</span>
+      </a>
 
-        <article class="project-card">
-          <div class="project-card__media">
-            <img src="projects/04.jpg" alt="" onerror="this.style.display='none'" />
-            <span>Foto</span>
-          </div>
-          <p class="eyebrow mt-5">04 · 2024</p>
-          <h3 class="font-serif"><span class="lang-nl">Eiken parket</span><span class="lang-en">Oak parquet</span><span class="lang-tr">Meşe parke</span><span class="lang-ar">باركيه البلوط</span><span class="lang-pl">Parkiet dębowy</span><span class="lang-de">Eichenparkett</span></h3>
-          <p class="project-card__meta"><span class="lang-nl">1 week · incl. egaliseren</span><span class="lang-en">1 week · incl. levelling</span><span class="lang-tr">1 hafta · tesviye dahil</span><span class="lang-ar">أسبوع · بما في ذلك التسوية</span><span class="lang-pl">1 tydzień · z poziomowaniem</span><span class="lang-de">1 Woche · inkl. Nivellierung</span></p>
-        </article>
-
-        <article class="project-card">
-          <div class="project-card__media">
-            <img src="projects/05.jpg" alt="" onerror="this.style.display='none'" />
-            <span>Foto</span>
-          </div>
-          <p class="eyebrow mt-5">05 · 2024</p>
-          <h3 class="font-serif"><span class="lang-nl">Mutatie appartement</span><span class="lang-en">Apartment turnover</span><span class="lang-tr">Daire devir teslimi</span><span class="lang-ar">تسليم شقة</span><span class="lang-pl">Przekazanie mieszkania</span><span class="lang-de">Wohnungsübergabe</span></h3>
-          <p class="project-card__meta"><span class="lang-nl">1 week · 3-kamer</span><span class="lang-en">1 week · 3-room</span><span class="lang-tr">1 hafta · 3 odalı</span><span class="lang-ar">أسبوع · ٣ غرف</span><span class="lang-pl">1 tydzień · 3-pokojowe</span><span class="lang-de">1 Woche · 3-Zimmer</span></p>
-        </article>
-
-        <article class="project-card">
-          <div class="project-card__media">
-            <img src="projects/06.jpg" alt="" onerror="this.style.display='none'" />
-            <span>Foto</span>
-          </div>
-          <p class="eyebrow mt-5">06 · 2024</p>
-          <h3 class="font-serif"><span class="lang-nl">Buitenschilderwerk</span><span class="lang-en">Exterior painting</span><span class="lang-tr">Dış cephe boyama</span><span class="lang-ar">طلاء خارجي</span><span class="lang-pl">Malowanie elewacji</span><span class="lang-de">Außenanstrich</span></h3>
-          <p class="project-card__meta"><span class="lang-nl">2 weken · kit- &amp; sausklaar</span><span class="lang-en">2 weeks · sealed &amp; finished</span><span class="lang-tr">2 hafta · derz ve boya dahil</span><span class="lang-ar">أسبوعان · مختوم وجاهز</span><span class="lang-pl">2 tygodnie · uszczelnione i wykończone</span><span class="lang-de">2 Wochen · versiegelt &amp; fertig</span></p>
-        </article>
-      </div>
-
-      <div class="hairline"></div>
+      <div class="hairline mt-20"></div>
 
       <div class="pt-20 pb-12">
         <p class="eyebrow mb-10"><span class="lang-nl">Klanten</span><span class="lang-en">Clients</span><span class="lang-tr">Müşteriler</span><span class="lang-ar">العملاء</span><span class="lang-pl">Klienci</span><span class="lang-de">Kunden</span></p>
@@ -952,6 +991,31 @@
         </figure>
       </div>
     </section>
+
+    <!-- ============ PROJECT LIGHTBOX ============ -->
+    <div id="project-lightbox" class="project-lightbox" aria-hidden="true" role="dialog" aria-label="Project gallery">
+      <button type="button" class="project-lightbox__close" data-lightbox-close aria-label="Close">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" aria-hidden="true">
+          <line x1="6" y1="6" x2="18" y2="18"/><line x1="6" y1="18" x2="18" y2="6"/>
+        </svg>
+      </button>
+      <button type="button" class="project-lightbox__nav project-lightbox__nav--prev" data-lightbox-prev aria-label="Previous">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+          <polyline points="15 6 9 12 15 18"/>
+        </svg>
+      </button>
+      <button type="button" class="project-lightbox__nav project-lightbox__nav--next" data-lightbox-next aria-label="Next">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+          <polyline points="9 6 15 12 9 18"/>
+        </svg>
+      </button>
+      <figure class="project-lightbox__figure">
+        <img id="project-lightbox-img" src="" alt="" />
+        <figcaption class="project-lightbox__caption">
+          <span data-lightbox-counter></span>
+        </figcaption>
+      </figure>
+    </div>
 
     <!-- ============ CONTACT ============ -->
     <section id="view-contact" class="view">
