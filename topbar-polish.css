@@ -61,112 +61,56 @@
 
 @media (max-width: 767px) {
   .top-bar {
-    font-size: 0.69rem !important;
-    letter-spacing: 0.02em !important;
-  }
-
-  .top-bar__inner {
-    min-height: 30px !important;
-    padding-left: 1rem !important;
-    padding-right: 1rem !important;
-    gap: 0.75rem !important;
-    flex-wrap: nowrap !important;
-  }
-
-  .top-bar__cluster {
-    min-width: 0;
-    flex: 1 1 0;
-    flex-wrap: nowrap !important;
-  }
-
-  .top-bar__cluster:first-child {
-    justify-content: flex-start;
-  }
-
-  .top-bar__cluster:last-child {
-    justify-content: flex-end;
-  }
-
-  .top-bar__item {
-    min-height: 30px;
-    gap: 0.38rem !important;
-    max-width: 100%;
-  }
-
-  .top-bar__icon {
-    width: 13px !important;
-    height: 13px !important;
-    flex-basis: 13px;
-  }
-
-  .top-bar__item span[class^='lang-'] {
-    overflow: hidden;
-    text-overflow: ellipsis;
-    white-space: nowrap;
-  }
-}
-
-@media (max-width: 370px) {
-  .top-bar {
-    font-size: 0.64rem !important;
-  }
-  .top-bar__inner {
-    padding-left: 0.8rem !important;
-    padding-right: 0.8rem !important;
-  }
-}
-
-/* Mobile homepage hero polish only — scoped to the first home section. */
-@media (max-width: 767px) {
-  /* Cleaner, sharper trust strip on phones. */
-  .top-bar {
     background: #050505 !important;
-    font-size: 0.78rem !important;
-    letter-spacing: 0.01em !important;
+    font-size: 0.82rem !important;
+    letter-spacing: 0 !important;
     line-height: 1 !important;
   }
 
   .top-bar__inner {
     position: relative;
-    min-height: 42px !important;
-    padding-inline: 1.15rem !important;
+    min-height: 46px !important;
+    padding: 0 1.25rem !important;
     display: flex !important;
     align-items: center !important;
     justify-content: space-between !important;
-    gap: 0.9rem !important;
+    gap: 1rem !important;
+    flex-wrap: nowrap !important;
   }
 
   .top-bar__inner::before {
     content: '';
     position: absolute;
     left: 50%;
-    top: 10px;
-    bottom: 10px;
+    top: 12px;
+    bottom: 12px;
     width: 1px;
     background: rgba(250, 250, 250, 0.24);
     transform: translateX(-50%);
   }
 
   .top-bar__cluster {
-    flex: 1 1 0 !important;
     min-width: 0;
+    flex: 1 1 0 !important;
+    flex-wrap: nowrap !important;
   }
 
   .top-bar__cluster:first-child { justify-content: flex-start !important; }
   .top-bar__cluster:last-child { justify-content: flex-end !important; }
 
   .top-bar__item {
-    min-height: 42px !important;
-    gap: 0.55rem !important;
+    min-height: 46px !important;
+    gap: 0.62rem !important;
+    max-width: 100%;
     font-weight: 500 !important;
-    opacity: 0.94 !important;
-    letter-spacing: 0.005em !important;
+    opacity: 0.96 !important;
+    letter-spacing: 0 !important;
   }
 
   .top-bar__icon {
-    width: 17px !important;
-    height: 17px !important;
-    flex: 0 0 17px !important;
+    width: 18px !important;
+    height: 18px !important;
+    flex: 0 0 18px !important;
     stroke-width: 1.45 !important;
     transform: none !important;
   }
@@ -178,11 +122,14 @@
     text-overflow: ellipsis;
   }
 
-  /* Header and hero only on homepage/mobile. */
+  /* Mobile homepage hero only. Nothing below the first home block is touched. */
   #view-home .hero-grid {
-    padding-top: 2.1rem !important;
-    padding-bottom: 2rem !important;
+    display: grid !important;
+    grid-template-columns: 1fr;
+    gap: 0 !important;
     min-height: auto !important;
+    padding-top: 2.45rem !important;
+    padding-bottom: 1.9rem !important;
     position: relative;
     isolation: isolate;
   }
@@ -193,10 +140,10 @@
     top: 0;
     left: -1rem;
     right: -1rem;
-    height: 520px !important;
+    height: 420px !important;
     z-index: -2;
     background: url('hero.png') right top / auto 100% no-repeat !important;
-    filter: grayscale(0.08) contrast(1.16) brightness(0.98) saturate(1.04);
+    filter: grayscale(0.08) contrast(1.12) brightness(0.99) saturate(1.03);
   }
 
   #view-home .hero-grid::after {
@@ -205,20 +152,20 @@
     top: 0;
     left: -1rem;
     right: -1rem;
-    height: 520px !important;
+    height: 420px !important;
     z-index: -1;
     pointer-events: none;
     background:
       linear-gradient(to right,
-        rgba(250,250,250,0.98) 0%,
-        rgba(250,250,250,0.96) 34%,
-        rgba(250,250,250,0.72) 52%,
-        rgba(250,250,250,0.18) 76%,
+        rgba(250,250,250,0.99) 0%,
+        rgba(250,250,250,0.97) 39%,
+        rgba(250,250,250,0.68) 57%,
+        rgba(250,250,250,0.16) 77%,
         rgba(250,250,250,0.02) 100%),
       linear-gradient(to bottom,
-        rgba(250,250,250,0.12) 0%,
-        rgba(250,250,250,0.08) 55%,
-        var(--paper) 98%);
+        rgba(250,250,250,0.05) 0%,
+        rgba(250,250,250,0.05) 64%,
+        var(--paper) 100%);
   }
 
   #view-home .hero-content { display: contents !important; }
@@ -227,56 +174,62 @@
 
   #view-home .hero-content > .eyebrow {
     order: 1;
-    margin: 0 0 1rem !important;
-    font-size: 0.6rem !important;
-    letter-spacing: 0.25em !important;
-    color: #6b6b6b !important;
+    margin: 0 0 1.05rem !important;
+    font-size: 0.66rem !important;
+    line-height: 1 !important;
+    letter-spacing: 0.27em !important;
+    color: #686868 !important;
+  }
+
+  #view-home .eyebrow--dash {
+    gap: 0.9rem !important;
   }
 
   #view-home .eyebrow--dash::before {
-    width: 1.7rem !important;
+    width: 2rem !important;
     opacity: 0.55;
   }
 
   #view-home .h-display {
     order: 2;
     margin: 0 !important;
-    max-width: 9.3ch !important;
-    font-size: clamp(2.65rem, 10.4vw, 4.15rem) !important;
-    line-height: 0.98 !important;
-    letter-spacing: -0.052em !important;
+    max-width: 8.7ch !important;
+    font-size: clamp(3.6rem, 10.7vw, 5.2rem) !important;
+    line-height: 0.95 !important;
+    letter-spacing: -0.055em !important;
   }
 
   #view-home .h-display > span::after {
-    font-size: clamp(2.65rem, 10.4vw, 4.15rem) !important;
-    line-height: 0.98 !important;
+    font-size: clamp(3.6rem, 10.7vw, 5.2rem) !important;
+    line-height: 0.95 !important;
   }
 
   #view-home .hero-lede {
     order: 3;
-    margin-top: 1.2rem !important;
-    max-width: 55% !important;
-    font-size: clamp(0.92rem, 3.35vw, 1.08rem) !important;
-    line-height: 1.62 !important;
-    color: #4a4a4a !important;
+    margin-top: 1.45rem !important;
+    max-width: 48% !important;
+    font-size: clamp(1rem, 2.9vw, 1.18rem) !important;
+    line-height: 1.52 !important;
+    color: #555 !important;
     opacity: 1 !important;
   }
 
   #view-home .hero-lede > span::after {
-    font-size: clamp(0.92rem, 3.35vw, 1.08rem) !important;
-    line-height: 1.62 !important;
+    font-size: clamp(1rem, 2.9vw, 1.18rem) !important;
+    line-height: 1.52 !important;
   }
 
   #view-home .hero-content .mt-10.flex {
     order: 4;
-    margin-top: 4.4rem !important;
+    margin-top: 1.9rem !important;
     display: grid !important;
-    grid-template-columns: 1fr 1fr;
-    gap: 0.7rem !important;
+    grid-template-columns: 1fr 0.58fr 0.58fr;
+    gap: 0.78rem !important;
     width: 100%;
+    align-items: stretch;
   }
 
-  #view-home .hero-cta__quote { grid-column: 1 / -1; }
+  #view-home .hero-cta__quote { grid-column: auto !important; }
   #view-home .hero-cta__services { display: none !important; }
   #view-home .hero-cta__contact { display: inline-flex !important; }
 
@@ -287,16 +240,24 @@
     min-height: 58px !important;
     align-items: center;
     justify-content: center;
-    border-radius: 4px !important;
-    padding: 0 1rem !important;
-    letter-spacing: 0.16em !important;
-    font-size: 0.78rem !important;
+    border-radius: 6px !important;
+    padding: 0 0.95rem !important;
+    letter-spacing: 0.06em !important;
+    font-size: 0.83rem !important;
     font-weight: 600 !important;
+    text-transform: none !important;
     white-space: nowrap;
   }
 
+  #view-home .hero-cta .btn-ink {
+    background: #050505 !important;
+    color: #fff !important;
+    box-shadow: 0 14px 26px rgba(10,10,10,0.18);
+  }
+
   #view-home .hero-cta .btn-outline {
-    background: rgba(255,255,255,0.86) !important;
+    background: rgba(255,255,255,0.9) !important;
+    border-color: rgba(10,10,10,0.18) !important;
     backdrop-filter: blur(8px);
   }
 
@@ -308,7 +269,7 @@
 
   #view-home .hero-badges {
     order: 5;
-    margin-top: 1.55rem !important;
+    margin-top: 1.35rem !important;
     padding-top: 0 !important;
     display: grid !important;
     grid-template-columns: repeat(3, minmax(0, 1fr));
@@ -316,99 +277,97 @@
     width: 100%;
     max-width: none !important;
     border: 1px solid var(--rule) !important;
-    background: rgba(255,255,255,0.92) !important;
+    border-radius: 10px;
+    overflow: hidden;
+    background: rgba(255,255,255,0.9) !important;
     backdrop-filter: blur(10px);
   }
 
   #view-home .hero-badges li {
     min-width: 0;
-    padding: 0.95rem 0.72rem !important;
+    padding: 1rem 0.85rem !important;
     border-left: 1px solid var(--rule) !important;
-    display: flex !important;
-    flex-direction: column !important;
-    gap: 0.42rem !important;
+    display: grid !important;
+    grid-template-columns: auto 1fr;
+    align-items: center !important;
+    gap: 0.75rem !important;
   }
 
   #view-home .hero-badges li:first-child { border-left: 0 !important; }
 
   #view-home .hero-badge__icon {
-    width: 1.24rem !important;
-    height: 1.24rem !important;
+    width: 1.35rem !important;
+    height: 1.35rem !important;
     margin: 0 !important;
-    color: var(--accent) !important;
-    stroke-width: 1.35 !important;
+    color: var(--ink) !important;
+    stroke-width: 1.25 !important;
   }
 
   #view-home .hero-badge__title {
-    font-size: clamp(0.78rem, 3.05vw, 0.98rem) !important;
-    line-height: 1.22 !important;
+    display: block !important;
+    font-size: clamp(0.76rem, 2.15vw, 0.92rem) !important;
+    line-height: 1.18 !important;
     font-weight: 600 !important;
     letter-spacing: -0.015em;
   }
 
   #view-home .hero-badge__sub {
     display: block !important;
-    font-size: clamp(0.64rem, 2.5vw, 0.8rem) !important;
-    line-height: 1.2 !important;
+    margin-top: 0.18rem !important;
+    font-size: clamp(0.64rem, 1.9vw, 0.76rem) !important;
+    line-height: 1.16 !important;
     color: #686868 !important;
   }
 }
 
-@media (max-width: 420px) {
-  .top-bar {
-    font-size: 0.66rem !important;
-  }
-
-  .top-bar__inner {
-    min-height: 38px !important;
-    padding-inline: 0.8rem !important;
-  }
-
-  .top-bar__item { gap: 0.4rem !important; }
-  .top-bar__icon {
-    width: 14px !important;
-    height: 14px !important;
-    flex-basis: 14px !important;
-  }
-
+@media (max-width: 520px) {
   #view-home .hero-grid::before,
-  #view-home .hero-grid::after { height: 470px !important; }
+  #view-home .hero-grid::after { height: 500px !important; }
 
   #view-home .h-display {
-    max-width: 8.8ch !important;
-    font-size: clamp(2.4rem, 12vw, 3.25rem) !important;
+    max-width: 8.4ch !important;
+    font-size: clamp(3rem, 13vw, 3.85rem) !important;
   }
 
   #view-home .h-display > span::after {
-    font-size: clamp(2.4rem, 12vw, 3.25rem) !important;
+    font-size: clamp(3rem, 13vw, 3.85rem) !important;
   }
 
   #view-home .hero-lede {
     max-width: 62% !important;
-    font-size: 0.9rem !important;
+    font-size: 0.95rem !important;
   }
 
   #view-home .hero-content .mt-10.flex {
-    margin-top: 3.1rem !important;
+    grid-template-columns: 1fr 1fr !important;
+    margin-top: 2.4rem !important;
+  }
+
+  #view-home .hero-cta__quote {
+    grid-column: 1 / -1 !important;
   }
 
   #view-home .hero-cta .btn-ink,
   #view-home .hero-cta .btn-outline {
     height: 54px !important;
     min-height: 54px !important;
-    font-size: 0.68rem !important;
-    letter-spacing: 0.13em !important;
+    font-size: 0.72rem !important;
+    letter-spacing: 0.11em !important;
+    text-transform: uppercase !important;
   }
 
   #view-home .hero-badges li {
-    padding: 0.78rem 0.55rem !important;
+    grid-template-columns: 1fr !important;
+    gap: 0.42rem !important;
+    padding: 0.82rem 0.58rem !important;
   }
 
-  #view-home .hero-badge__title {
-    font-size: 0.72rem !important;
-  }
+  #view-home .hero-badge__title { font-size: 0.72rem !important; }
+  #view-home .hero-badge__sub { font-size: 0.62rem !important; }
+}
 
-  #view-home .hero-badge__sub {
-    font-size: 0.62rem !important;
-  }
+@media (max-width: 370px) {
+  .top-bar { font-size: 0.63rem !important; }
+  .top-bar__inner { padding-inline: 0.75rem !important; }
+  .top-bar__icon { width: 14px !important; height: 14px !important; flex-basis: 14px !important; }
 }
