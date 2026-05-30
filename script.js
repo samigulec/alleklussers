@@ -28,7 +28,7 @@
   loadGoogleTag();
 
   function loadPolishStyles() {
-    ['hero-overrides.css', 'about-overrides.css', 'mobile-overrides.css', 'services-overrides.css', 'services-polish.css', 'home-services-polish.css', 'home-services-fixes.css', 'topbar-polish.css', 'clients-polish.css'].forEach(href => {
+    ['hero-overrides.css', 'about-overrides.css', 'mobile-overrides.css', 'services-overrides.css', 'services-polish.css', 'home-services-polish.css', 'home-services-fixes.css', 'topbar-polish.css', 'clients-polish.css', 'tablet-polish.css'].forEach(href => {
       if (document.querySelector(`link[href="${href}"]`)) return;
       const link = document.createElement('link');
       link.rel = 'stylesheet';

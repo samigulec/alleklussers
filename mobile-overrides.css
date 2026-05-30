@@ -359,11 +359,22 @@
     font-size: 0.95rem !important;
   }
 
+  /* Editorial photo above the cards — wider, taller, crisper crop on the
+     electrician's working hands, subtle hairline frame */
   #view-home .home-photo {
-    width: 100%;
-    height: 210px;
-    margin-top: 0.25rem;
-    box-shadow: 0 16px 34px rgba(10,10,10,0.06);
+    width: calc(100% + 2rem);
+    margin-left: -1rem;
+    margin-right: -1rem;
+    height: clamp(230px, 56vw, 320px);
+    margin-top: 1rem;
+    border: 0 !important;
+    border-top: 1px solid var(--rule) !important;
+    border-bottom: 1px solid var(--rule) !important;
+    box-shadow: none !important;
+  }
+  #view-home .home-photo::before {
+    background-position: 50% 38% !important;
+    filter: grayscale(0.03) contrast(1.16) brightness(1.02) saturate(1.08) !important;
   }
 
   #view-home .home-services__grid {

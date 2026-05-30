@@ -1,0 +1,186 @@
+/* Tablet (768 – 1023px) — bridges the gap between the focused mobile layout
+   and the wide desktop layout. Keeps the editorial design language intact.
+   Applies to every page; nothing here should leak into mobile or desktop. */
+
+@media (min-width: 768px) and (max-width: 1023px) {
+  /* ---------- Layout shell ---------- */
+  main {
+    padding-inline: 2rem;
+  }
+
+  /* Top bar comfortable on mid screens */
+  .top-bar { font-size: 0.78rem; }
+  .top-bar__inner { padding: 0.65rem 1.5rem; gap: 1.5rem; }
+
+  /* Header — slightly trimmer than desktop */
+  header > div {
+    padding: 1rem 1.5rem !important;
+  }
+
+  /* ---------- Home hero ---------- */
+  #view-home .hero-grid {
+    grid-template-columns: 1.05fr 0.95fr !important;
+    gap: 2rem !important;
+    min-height: 64vh !important;
+    padding: 2.25rem 0 !important;
+  }
+  #view-home .h-display {
+    font-size: clamp(3.2rem, 7vw, 4.8rem) !important;
+    line-height: 0.96 !important;
+    max-width: 11ch !important;
+  }
+  #view-home .hero-lede {
+    font-size: 1.02rem !important;
+    line-height: 1.6 !important;
+    max-width: 38ch !important;
+  }
+  #view-home .hero-content .mt-10.flex {
+    gap: 0.75rem !important;
+  }
+  /* Hide mobile-only CTAs on tablet; show desktop quote + services */
+  #view-home .hero-cta__projects { display: none !important; }
+  #view-home .hero-cta__contact  { display: none !important; }
+  #view-home .hero-cta__quote,
+  #view-home .hero-cta__services { display: inline-flex !important; }
+
+  /* Hero trust badges in a row */
+  #view-home .hero-badges {
+    grid-template-columns: repeat(3, 1fr) !important;
+    gap: 1.25rem !important;
+  }
+
+  /* Show the bulb art column at a polite size */
+  #view-home .hero-art-col { display: flex !important; }
+  #view-home .hero-art svg {
+    width: 70%;
+    max-width: 260px;
+  }
+  #view-home .hero-trust-mini {
+    display: flex !important;
+    margin-top: 1.25rem !important;
+  }
+
+  /* ---------- Home services ---------- */
+  #view-home .home-services {
+    padding-top: 4rem !important;
+    padding-bottom: 4rem !important;
+  }
+  #view-home .home-services__head {
+    grid-template-columns: 1.1fr 1fr !important;
+    gap: 2.5rem !important;
+    align-items: center !important;
+  }
+  #view-home .home-services__head h2 span::after {
+    font-size: clamp(3rem, 5.4vw, 4.25rem) !important;
+    line-height: 1 !important;
+  }
+  #view-home .home-services__head .hero-lede span::after {
+    font-size: 1rem !important;
+    line-height: 1.65 !important;
+  }
+  #view-home .home-photo {
+    aspect-ratio: 4 / 3 !important;
+    height: auto !important;
+    width: 100% !important;
+    max-width: none !important;
+    margin: 0 !important;
+    border-radius: 6px !important;
+    border: 1px solid var(--rule) !important;
+  }
+  #view-home .home-photo::before {
+    border-radius: 6px !important;
+  }
+  #view-home .home-services__grid {
+    grid-template-columns: repeat(2, 1fr) !important;
+    gap: 1rem !important;
+    margin-top: 2.5rem !important;
+  }
+  #view-home .home-card {
+    padding: 1.6rem 1.4rem !important;
+  }
+  #view-home .home-card__title > span::after,
+  #view-home .home-card__title span::after {
+    font-size: 1.35rem !important;
+    line-height: 1.15 !important;
+  }
+  #view-home .home-card__desc > span::after,
+  #view-home .home-card__desc span::after {
+    font-size: 0.92rem !important;
+    line-height: 1.55 !important;
+  }
+
+  /* ---------- Stats row ---------- */
+  .stats-row {
+    grid-template-columns: repeat(2, 1fr) !important;
+    gap: 1.5rem !important;
+  }
+
+  /* ---------- About ---------- */
+  #view-about .about-intro {
+    grid-template-columns: 1fr 1fr !important;
+    gap: 2.5rem !important;
+    align-items: center !important;
+    padding-top: 4.5rem !important;
+    padding-bottom: 3.5rem !important;
+  }
+  #view-about .h-display {
+    font-size: clamp(2.85rem, 6vw, 4.4rem) !important;
+    line-height: 0.98 !important;
+  }
+  #view-about .about-photo--wide {
+    aspect-ratio: 4 / 3 !important;
+  }
+  #view-about .about-stats--rich {
+    grid-template-columns: repeat(3, 1fr) !important;
+    gap: 2rem !important;
+  }
+  #view-about .about-stats__lang {
+    font-size: 1.1rem !important;
+  }
+
+  /* ---------- Services page ---------- */
+  #view-services .h-display {
+    font-size: clamp(3rem, 6.5vw, 4.6rem) !important;
+  }
+  #view-services .service-row {
+    padding: 1.4rem 0 !important;
+  }
+  #view-services .service-title {
+    font-size: 1.65rem !important;
+    line-height: 1.18 !important;
+  }
+
+  /* ---------- Projecten ---------- */
+  #view-references .h-display {
+    font-size: clamp(2.85rem, 6vw, 4.4rem) !important;
+  }
+  .project-slide {
+    grid-template-columns: 1fr 1.2fr !important;
+    gap: 2rem !important;
+  }
+  .project-slide__detail {
+    padding: 1.85rem 1.6rem !important;
+  }
+  .project-slide__title {
+    font-size: 1.55rem !important;
+  }
+  .project-slide__photo--lead { aspect-ratio: 16 / 10; }
+
+  /* ---------- Contact ---------- */
+  #view-contact .h-display {
+    font-size: clamp(3rem, 6.5vw, 4.6rem) !important;
+  }
+  .contact-split {
+    grid-template-columns: 1fr 1fr !important;
+    gap: 3rem !important;
+  }
+
+  /* ---------- Trust bar (footer-adjacent) ---------- */
+  .trust-bar__inner {
+    grid-template-columns: repeat(4, 1fr) !important;
+    gap: 1.5rem !important;
+    padding: 2.5rem 1.5rem !important;
+  }
+  .trust-bar__title { font-size: 0.88rem !important; }
+  .trust-bar__sub   { font-size: 0.74rem !important; }
+}
