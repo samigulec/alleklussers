@@ -322,158 +322,91 @@
     margin-inline: 0;
   }
 
-  /* ===== HOME SERVICES (mobile) ===== */
   #view-home .home-services {
-    padding-top: 3rem !important;
-    padding-bottom: 3rem !important;
+    padding-top: 3.25rem !important;
+    padding-bottom: 3.25rem !important;
   }
 
   #view-home .home-services__head {
     display: grid !important;
     grid-template-columns: 1fr;
-    gap: 1.1rem;
+    gap: 1.35rem;
   }
 
   #view-home .home-services__head .eyebrow {
-    margin-bottom: 0.5rem !important;
-    font-size: 0.62rem;
-    letter-spacing: 0.22em;
+    margin-bottom: 0.95rem !important;
   }
 
-  /* Hide the original "Wat wij regisseren / Neyi yönetiyoruz" title on mobile,
-     show only the injected electrical-services line for a single clean h2 */
-  #view-home .home-services__head h2 > span {
-    display: none !important;
+  #view-home .home-services__head h2,
+  #view-home .h-section {
+    max-width: 8.5ch !important;
+    font-size: clamp(2.65rem, 12vw, 3.85rem) !important;
+    line-height: 0.96 !important;
+    letter-spacing: -0.045em;
   }
-  #view-home .home-services__head h2 {
-    max-width: 100% !important;
-    margin: 0 !important;
-  }
+
   #view-home .home-services__head h2 span::after {
-    display: block !important;
-    font-size: clamp(2.2rem, 9.5vw, 2.9rem) !important;
-    line-height: 1.02 !important;
-    letter-spacing: -0.035em !important;
+    font-size: clamp(2.65rem, 12vw, 3.85rem) !important;
+    line-height: 0.96 !important;
   }
 
   #view-home .home-services__head .hero-lede {
-    margin-top: 0.5rem !important;
+    margin-top: 1rem !important;
     font-size: 0.95rem !important;
-    line-height: 1.55 !important;
-    color: #444;
   }
 
   #view-home .home-services__head .hero-lede span::after {
     font-size: 0.95rem !important;
-    line-height: 1.55 !important;
   }
 
-  /* Wider, taller editorial photo with crisper crop */
   #view-home .home-photo {
-    width: calc(100% + 2rem);
-    margin-left: -1rem;
-    margin-right: -1rem;
-    height: clamp(220px, 60vw, 320px);
-    margin-top: 0.5rem;
-    box-shadow: none !important;
-    border-top: 1px solid var(--rule);
-    border-bottom: 1px solid var(--rule);
-  }
-  #view-home .home-photo::before {
-    background-position: 50% 35% !important;
-    filter: grayscale(0.03) contrast(1.15) brightness(1.02) saturate(1.06) !important;
+    width: 100%;
+    height: 210px;
+    margin-top: 0.25rem;
+    box-shadow: 0 16px 34px rgba(10,10,10,0.06);
   }
 
-  /* Compact card grid: stack with hairline dividers instead of separate cards */
   #view-home .home-services__grid {
     display: grid !important;
     grid-template-columns: 1fr;
-    gap: 0 !important;
-    margin-top: 1.5rem !important;
-    border-top: 1px solid var(--rule);
+    gap: 0.8rem;
+    margin-top: 1.45rem;
   }
 
   #view-home .home-card {
     min-height: auto !important;
-    padding: 1.15rem 0 1.05rem !important;
-    background: transparent !important;
-    border: 0 !important;
-    border-bottom: 1px solid var(--rule) !important;
-    box-shadow: none !important;
-    display: grid !important;
-    grid-template-columns: 28px 1fr auto;
-    grid-template-rows: auto auto;
-    column-gap: 0.85rem;
-    row-gap: 0.25rem;
-    align-items: start;
+    padding: 1.35rem 1.1rem 1.05rem !important;
+    background: #fff;
+    box-shadow: 0 12px 26px rgba(10,10,10,0.025);
   }
-  #view-home .home-card::before { content: none !important; }
-  #view-home .home-card::after { content: none !important; }
 
   #view-home .home-card__icon {
-    grid-row: 1 / 3;
-    grid-column: 1;
-    width: 22px !important;
-    height: 22px !important;
-    margin: 0.15rem 0 0 !important;
-    color: var(--accent) !important;
-    opacity: 1 !important;
+    width: 22px;
+    height: 22px;
+    margin-bottom: 1rem;
   }
 
   #view-home .home-card__title,
   #view-home .home-card__title span::after {
-    grid-row: 1;
-    grid-column: 2;
-    font-size: 1.05rem !important;
-    line-height: 1.2 !important;
-    font-weight: 500 !important;
-    font-family: 'Manrope', system-ui, sans-serif !important;
-    letter-spacing: -0.005em !important;
-    color: var(--ink) !important;
-    margin: 0 !important;
+    font-size: 1.42rem !important;
+    line-height: 1.08 !important;
   }
 
   #view-home .home-card__desc,
   #view-home .home-card__desc span::after {
-    grid-row: 2;
-    grid-column: 2 / 4;
-    font-size: 0.82rem !important;
-    line-height: 1.42 !important;
-    color: var(--muted) !important;
-    margin: 0 !important;
+    font-size: 0.86rem !important;
+    line-height: 1.5 !important;
   }
 
-  /* Per-row chevron on the right, replaces the "TEKLIF AL" CTA */
   #view-home .home-card__cta {
-    grid-row: 1;
-    grid-column: 3;
-    margin: 0 !important;
-    padding: 0 !important;
-    border-top: 0 !important;
-    font-size: 0 !important;       /* hide the "Teklif al" label */
-    color: var(--muted) !important;
-    align-self: center;
+    margin-top: 1.05rem;
+    padding-top: 0.9rem;
+    font-size: 0.66rem;
   }
-  #view-home .home-card__cta::after {
-    content: '→';
-    font-size: 1rem;
-    font-weight: 400;
-  }
-  #view-home .home-card__cta .arrow { display: none !important; }
-  #view-home .home-card:hover .home-card__cta { color: var(--accent) !important; }
 
   #view-home .home-services__all {
-    margin-top: 1.5rem;
+    margin-top: 1.35rem;
     text-align: left;
-  }
-  #view-home .home-services__all a {
-    display: inline-flex;
-    align-items: center;
-    gap: 0.5rem;
-    color: var(--ink);
-    font-weight: 600;
-    font-size: 0.8rem;
-    letter-spacing: 0.02em;
   }
 
   #view-about .pt-20,
