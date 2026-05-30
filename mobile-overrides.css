@@ -97,7 +97,7 @@
     position: relative;
     isolation: isolate;
   }
-  /* Photo backdrop — focal kept upper-right so the face stays clear of text */
+  /* Photo backdrop — pushed further right, sharper, more vibrant */
   #view-home .hero-grid::before {
     content: '';
     position: absolute;
@@ -106,10 +106,14 @@
     right: -1rem;
     height: 380px;
     z-index: -2;
-    background: url('hero.png') right 12% / cover no-repeat;
+    background-image: url('hero.png');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: calc(100% + 35px) top;
+    filter: grayscale(0.02) contrast(1.24) brightness(1.04) saturate(1.08);
   }
-  /* Paper scrim: stronger on the left so the headline never sits on the panel,
-     clear on the right (electrician visible), fading to paper above the buttons */
+  /* Paper scrim: lighter so the electrician reads sharper on the right,
+     still solid enough on the left to keep the headline crisp */
   #view-home .hero-grid::after {
     content: '';
     position: absolute;
@@ -120,8 +124,8 @@
     z-index: -1;
     pointer-events: none;
     background:
-      linear-gradient(to right, var(--paper) 0%, var(--paper) 36%, rgba(250,250,250,0.6) 60%, rgba(250,250,250,0) 84%),
-      linear-gradient(to top, var(--paper) 5%, rgba(250,250,250,0) 48%);
+      linear-gradient(to right, var(--paper) 0%, var(--paper) 30%, rgba(250,250,250,0.35) 55%, rgba(250,250,250,0) 80%),
+      linear-gradient(to top, var(--paper) 4%, rgba(250,250,250,0) 46%);
   }
 
   #view-home .hero-content {
@@ -213,9 +217,13 @@
     gap: 0.6rem !important;
     width: 100%;
   }
-  /* Offerte full width on top; WhatsApp + E-mail side by side below */
-  #view-home .hero-cta__quote { grid-column: 1 / -1; }
+  /* Mobile primary CTA: "Projecten bekijken" replaces "Offerte aanvragen" */
+  #view-home .hero-cta__quote { display: none !important; }
   #view-home .hero-cta__services { display: none !important; }
+  #view-home .hero-cta__projects {
+    display: inline-flex !important;
+    grid-column: 1 / -1;
+  }
   #view-home .hero-cta__contact {
     display: inline-flex !important;
     background: #fff;

@@ -717,8 +717,9 @@ ol li:last-child .service-row {
   opacity: 0.55;
   flex-shrink: 0;
 }
-/* WhatsApp / E-mail hero buttons — hidden on desktop, shown on mobile */
-.hero-cta__contact { display: none; }
+/* Mobile-only hero buttons — hidden on desktop, shown on mobile via overrides */
+.hero-cta__contact,
+.hero-cta__projects { display: none; }
 .hero-cta__icon { width: 1.05rem; height: 1.05rem; flex-shrink: 0; }
 
 .hairline { height: 1px; background: var(--ink); width: 100%; }
