@@ -109,7 +109,7 @@
     background-image: url('hero.png');
     background-repeat: no-repeat;
     background-size: cover;
-    background-position: calc(100% + 90px) top;
+    background-position: calc(100% + 150px) top;
     filter: grayscale(0.02) contrast(1.24) brightness(1.04) saturate(1.08);
   }
   /* Paper scrim: lighter so the electrician reads sharper on the right,
