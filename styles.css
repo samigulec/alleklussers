@@ -2092,3 +2092,103 @@ body.lightbox-open {
   .project-lightbox__nav--prev { left: 0.5rem; }
   .project-lightbox__nav--next { right: 0.5rem; }
 }
+
+/* ============================================================
+   PARTNERS — trusted-by showcase (replaces the old 01/02/03 values)
+   Clean billboard with editorial frame; logos render when files exist
+   at partners/marktplaats.png and partners/klussendirect.png; otherwise
+   a typographic fallback shows the partner name.
+   ============================================================ */
+.partners {
+  display: grid;
+  gap: 2.5rem;
+}
+.partners__head {
+  max-width: 56ch;
+}
+.partners__title {
+  font-size: clamp(2rem, 4.5vw, 3.25rem);
+  line-height: 1.05;
+  letter-spacing: -0.025em;
+  font-weight: 300;
+  margin: 0;
+  max-width: 16ch;
+}
+.partners__lede {
+  margin-top: 1rem;
+  font-size: clamp(0.95rem, 1.15vw, 1.05rem);
+  line-height: 1.6;
+  color: var(--muted);
+  max-width: 48ch;
+}
+
+.partners__list {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 1rem;
+}
+@media (min-width: 640px) {
+  .partners__list { grid-template-columns: repeat(2, 1fr); gap: 1.25rem; }
+}
+@media (min-width: 1024px) {
+  .partners {
+    grid-template-columns: 1fr 1.4fr;
+    gap: 4rem;
+    align-items: center;
+  }
+  .partners__list { gap: 1.5rem; }
+}
+
+.partners__item a {
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: clamp(110px, 14vw, 150px);
+  padding: 1.25rem 1.5rem;
+  background: var(--paper);
+  border: 1px solid var(--rule);
+  text-decoration: none;
+  color: var(--ink);
+  transition: border-color 240ms ease, transform 280ms ease, box-shadow 280ms ease;
+  overflow: hidden;
+}
+.partners__item a:hover {
+  border-color: var(--ink);
+  transform: translateY(-2px);
+  box-shadow: 0 14px 28px rgba(10, 10, 10, 0.06);
+}
+
+.partners__logo {
+  max-width: 80%;
+  max-height: 70%;
+  width: auto;
+  height: auto;
+  object-fit: contain;
+  display: block;
+  filter: grayscale(1);
+  opacity: 0.78;
+  transition: filter 240ms ease, opacity 240ms ease;
+}
+.partners__item a:hover .partners__logo {
+  filter: grayscale(0);
+  opacity: 1;
+}
+/* Hide the broken-image fallback chrome when the file is missing */
+.partners__logo.is-missing { display: none; }
+
+/* Typographic fallback shown only when the image fails to load */
+.partners__fallback {
+  display: none;
+  font-family: 'Fraunces', serif;
+  font-size: clamp(1.5rem, 3vw, 2rem);
+  font-weight: 400;
+  letter-spacing: -0.01em;
+  color: var(--ink);
+}
+.partners__logo.is-missing + .partners__fallback {
+  display: inline-block;
+}
