@@ -222,26 +222,7 @@
     more.querySelectorAll('a').forEach(a => a.addEventListener('click', closeMore));
   }
 
-  const widget = document.getElementById('contact-widget');
-  if (widget) {
-    const fab = widget.querySelector('#contact-fab');
-    const closeBtn = widget.querySelector('#contact-pop-close');
-    const setOpen = open => {
-      widget.classList.toggle('is-open', open);
-      if (fab) fab.setAttribute('aria-expanded', open ? 'true' : 'false');
-    };
-    if (fab) fab.addEventListener('click', e => {
-      e.stopPropagation();
-      setOpen(!widget.classList.contains('is-open'));
-    });
-    if (closeBtn) closeBtn.addEventListener('click', () => setOpen(false));
-    document.addEventListener('click', e => {
-      if (!widget.contains(e.target)) setOpen(false);
-    });
-    document.addEventListener('keydown', e => {
-      if (e.key === 'Escape') setOpen(false);
-    });
-  }
+  /* Floating contact buttons are now plain <a> links — no popover logic needed */
 
   const progressEl = document.getElementById('scroll-progress');
   if (progressEl) {
