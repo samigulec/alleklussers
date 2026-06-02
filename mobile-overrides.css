@@ -359,22 +359,22 @@
     font-size: 0.95rem !important;
   }
 
-  /* Editorial photo above the cards — wider, taller, crisper crop on the
-     electrician's working hands, subtle hairline frame */
+  /* Editorial photo above the cards — clean contained card (consistent with
+     desktop): fixed pleasant ratio, thin frame, soft shadow, crisp colour */
   #view-home .home-photo {
-    width: calc(100% + 2rem);
-    margin-left: -1rem;
-    margin-right: -1rem;
-    height: clamp(230px, 56vw, 320px);
-    margin-top: 1rem;
-    border: 0 !important;
-    border-top: 1px solid var(--rule) !important;
-    border-bottom: 1px solid var(--rule) !important;
-    box-shadow: none !important;
+    width: 100% !important;
+    margin: 1.25rem 0 0 !important;
+    aspect-ratio: 3 / 2 !important;
+    height: auto !important;
+    border: 1px solid var(--rule) !important;
+    border-radius: 6px !important;
+    overflow: hidden;
+    box-shadow: 0 16px 34px rgba(10, 10, 10, 0.08) !important;
   }
   #view-home .home-photo::before {
-    background-position: 50% 38% !important;
-    filter: grayscale(0.03) contrast(1.16) brightness(1.02) saturate(1.08) !important;
+    background: url('ana-sayfa-asaga.png') 50% 30% / cover no-repeat !important;
+    filter: grayscale(0.05) contrast(1.14) brightness(1.03) saturate(1.1) !important;
+    border-radius: 6px;
   }
 
   #view-home .home-services__grid {
