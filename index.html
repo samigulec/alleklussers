@@ -1,17 +1,16 @@
 <!doctype html>
-<html lang="nl" data-lang="nl">
+<html lang="nl" dir="ltr">
 <head>
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
   <title>AlleKlussers — Uw elektra, zonder gedoe.</title>
   <meta name="description" content="Storingen, groepenkasten, verlichting, bedrading en veilige installaties — snel, veilig en netjes afgewerkt door gecertificeerde elektriciens." />
+  <script>document.documentElement.classList.add('js');</script>
 
-  <!-- Favicon set — multiple sizes help Google show the brand mark in search results -->
   <link rel="icon" href="https://alleklussers.nl/icon.png" type="image/png" sizes="any" />
   <link rel="shortcut icon" href="https://alleklussers.nl/icon.png" type="image/png" />
   <link rel="apple-touch-icon" href="https://alleklussers.nl/icon.png" />
 
-  <!-- Open Graph — absolute URLs so social/search previews always load the logo -->
   <meta property="og:type" content="website" />
   <meta property="og:url" content="https://alleklussers.nl/" />
   <meta property="og:locale" content="nl_NL" />
@@ -23,16 +22,13 @@
   <meta property="og:site_name" content="AlleKlussers" />
   <meta property="og:title" content="AlleKlussers — Uw elektra, zonder gedoe." />
   <meta property="og:description" content="Storingen, groepenkasten, verlichting, bedrading en veilige installaties — snel, veilig en netjes afgewerkt door gecertificeerde elektriciens." />
-  <meta property="og:image" content="https://alleklussers.nl/logo.png" />
-  <meta property="og:image:alt" content="AlleKlussers — Elektrotechnisch specialist" />
-
-  <!-- Twitter / X -->
+  <meta property="og:image" content="https://alleklussers.nl/img/hero.jpg" />
+  <meta property="og:image:alt" content="Elektricien van AlleKlussers aan het werk" />
   <meta name="twitter:card" content="summary_large_image" />
   <meta name="twitter:title" content="AlleKlussers — Uw elektra, zonder gedoe." />
   <meta name="twitter:description" content="Gecertificeerde elektriciens voor storingen, groepenkasten, verlichting en veilige installaties." />
-  <meta name="twitter:image" content="https://alleklussers.nl/logo.png" />
+  <meta name="twitter:image" content="https://alleklussers.nl/img/hero.jpg" />
 
-  <!-- Search engine schema: tells Google this is an electrical company -->
   <script type="application/ld+json">
   {
     "@context": "https://schema.org",
@@ -40,15 +36,12 @@
     "name": "AlleKlussers",
     "url": "https://alleklussers.nl/",
     "logo": "https://alleklussers.nl/logo.png",
-    "image": "https://alleklussers.nl/logo.png",
+    "image": "https://alleklussers.nl/img/hero.jpg",
     "description": "Gecertificeerde elektriciens in Nederland voor storingen, groepenkasten, verlichting, bedrading en veilige elektrische installaties.",
     "telephone": "+31 6 8548 4000",
     "email": "info@alleklussers.nl",
     "areaServed": "NL",
-    "address": {
-      "@type": "PostalAddress",
-      "addressCountry": "NL"
-    },
+    "address": { "@type": "PostalAddress", "addressCountry": "NL" },
     "parentOrganization": {
       "@type": "Organization",
       "name": "Boss Tech VOF",
@@ -58,1240 +51,749 @@
   }
   </script>
 
-  <meta name="theme-color" content="#0a0a0a" />
-
+  <meta name="theme-color" content="#0c0c0d" />
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-  <link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,300;0,9..144,400;0,9..144,500;1,9..144,300;1,9..144,400&family=Manrope:wght@300;400;500;600&family=Noto+Naskh+Arabic:wght@400;500;700&display=swap" rel="stylesheet" />
-
-  <script src="https://cdn.tailwindcss.com"></script>
-  <script>
-    tailwind.config = {
-      theme: {
-        extend: {
-          colors: { ink: '#0a0a0a', paper: '#fafafa', rule: '#e5e5e5', muted: '#6b6b6b' },
-          fontFamily: { serif: ['Fraunces', 'serif'], sans: ['Manrope', 'system-ui', 'sans-serif'] },
-          borderRadius: { none: '0' },
-        },
-      },
-    };
-  </script>
-  <link rel="stylesheet" href="styles.css" />
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,300;0,9..144,400;1,9..144,300;1,9..144,400&family=Manrope:wght@400;500;600;700;800&family=Noto+Naskh+Arabic:wght@400;600;700&display=swap" />
+  <link rel="preload" as="image" href="img/hero-800.jpg" media="(max-width: 800px)" />
+  <link rel="preload" as="image" href="img/hero.jpg" media="(min-width: 801px)" />
+  <link rel="stylesheet" href="assets/site.css" />
 </head>
-<body class="bg-paper text-ink antialiased">
+<body>
 
-  <!-- Editorial scroll progress indicator -->
-  <div id="scroll-progress" aria-hidden="true"></div>
+<!-- Icon sprite -->
+<svg width="0" height="0" style="position:absolute" aria-hidden="true" focusable="false">
+  <defs>
+    <symbol id="i-bolt" viewBox="0 0 24 24"><path fill="none" stroke="currentColor" stroke-width="1.6" stroke-linejoin="round" d="M13 2L4 14h7l-1 8 9-12h-7z"/></symbol>
+    <symbol id="i-box" viewBox="0 0 24 24"><g fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round"><rect x="4" y="3" width="16" height="18" rx="2"/><path d="M8 8h8M8 12v2M11 12v2M14 12v2M17 12v2M8 17h3"/></g></symbol>
+    <symbol id="i-bulb" viewBox="0 0 24 24"><path fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" d="M9 18h6M10 21h4M12 3a6 6 0 0 0-4 10.5c.8.8 1 1.6 1 2.5h6c0-.9.2-1.7 1-2.5A6 6 0 0 0 12 3z"/></symbol>
+    <symbol id="i-socket" viewBox="0 0 24 24"><g fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round"><rect x="4" y="4" width="16" height="16" rx="3"/><circle cx="12" cy="12" r="4.5"/><path d="M10.3 11.2v1.6M13.7 11.2v1.6"/></g></symbol>
+    <symbol id="i-wire" viewBox="0 0 24 24"><g fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round"><path d="M3 7h5a4 4 0 0 1 4 4v2a4 4 0 0 0 4 4h5"/><circle cx="3" cy="7" r="1"/><circle cx="21" cy="17" r="1"/></g></symbol>
+    <symbol id="i-shield" viewBox="0 0 24 24"><g fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"><path d="M12 3l7 3v5c0 4.4-3 8.3-7 9.6C8 19.3 5 15.4 5 11V6z"/><path d="M9 12l2 2 4-4"/></g></symbol>
+    <symbol id="i-charger" viewBox="0 0 24 24"><g fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><rect x="4" y="3" width="10" height="18" rx="2"/><path d="M14 9h2a2 2 0 0 1 2 2v5a1.5 1.5 0 0 0 3 0V8l-2-2M9.5 7.5l-2 4h3l-2 4"/></g></symbol>
+    <symbol id="i-check" viewBox="0 0 24 24"><path fill="none" stroke="currentColor" stroke-width="2.3" stroke-linecap="round" stroke-linejoin="round" d="M5 12.5l4.2 4L19 7"/></symbol>
+    <symbol id="i-arrow" viewBox="0 0 24 24"><path fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" d="M5 12h14M13 6l6 6-6 6"/></symbol>
+    <symbol id="i-wa" viewBox="0 0 24 24"><path fill="none" stroke="currentColor" stroke-width="1.8" stroke-linejoin="round" d="M4 20l1.3-3.9A8 8 0 1 1 8 19z"/><path fill="currentColor" d="M9.2 8.4c.2-.4.4-.4.6-.4h.5c.2 0 .4 0 .5.4l.7 1.6c.1.2 0 .4-.1.5l-.5.6c-.1.1-.1.3 0 .4.6 1 1.4 1.8 2.4 2.3.2.1.3.1.4 0l.6-.7c.1-.2.3-.2.5-.1l1.5.7c.2.1.3.2.3.4 0 .5-.2 1.2-.7 1.5-.5.3-1.2.5-2.2.1-1.6-.6-3-1.8-3.9-3.2-.6-.9-.8-1.7-.8-2.3 0-.8.4-1.4.6-1.8z"/></symbol>
+    <symbol id="i-mail" viewBox="0 0 24 24"><g fill="none" stroke="currentColor" stroke-width="1.7" stroke-linejoin="round"><rect x="3" y="5" width="18" height="14" rx="2"/><path d="M3 7l9 6 9-6"/></g></symbol>
+    <symbol id="i-globe" viewBox="0 0 24 24"><g fill="none" stroke="currentColor" stroke-width="1.7"><circle cx="12" cy="12" r="9"/><path d="M3 12h18M12 3c2.5 2.6 3.8 5.6 3.8 9s-1.3 6.4-3.8 9c-2.5-2.6-3.8-5.6-3.8-9S9.5 5.6 12 3z"/></g></symbol>
+    <symbol id="i-star" viewBox="0 0 24 24"><path fill="currentColor" d="M12 2.8l2.8 5.8 6.3.9-4.6 4.4 1.1 6.3L12 17.3 6.4 20.2l1.1-6.3L2.9 9.5l6.3-.9z"/></symbol>
+    <symbol id="i-pin" viewBox="0 0 24 24"><g fill="none" stroke="currentColor" stroke-width="1.7"><path d="M12 22s7-6.5 7-13a7 7 0 0 0-14 0c0 6.5 7 13 7 13z"/><circle cx="12" cy="9" r="2.5"/></g></symbol>
+    <symbol id="i-clock" viewBox="0 0 24 24"><g fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round"><circle cx="12" cy="12" r="9"/><path d="M12 7v5l3 2"/></g></symbol>
+    <symbol id="i-chat" viewBox="0 0 24 24"><g fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"><path d="M21 15.5a2.5 2.5 0 0 1-2.5 2.5h-9L5 22V6.5A2.5 2.5 0 0 1 7.5 4h11A2.5 2.5 0 0 1 21 6.5z"/><path d="M9 10h8M9 13h5"/></g></symbol>
+    <symbol id="i-tag" viewBox="0 0 24 24"><g fill="none" stroke="currentColor" stroke-width="1.7" stroke-linejoin="round"><path d="M20.5 13.5L13 21 3 11V3h8z"/><circle cx="7.5" cy="7.5" r="1.2"/></g></symbol>
+    <symbol id="i-bath" viewBox="0 0 24 24"><g fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round"><path d="M3 11h18v4a3 3 0 0 1-3 3H6a3 3 0 0 1-3-3z"/><path d="M7 11V7a2 2 0 0 1 2-2"/><circle cx="10" cy="6.5" r="1.2"/><path d="M5 19l-1 2M19 19l1 2"/></g></symbol>
+    <symbol id="i-kitchen" viewBox="0 0 24 24"><g fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round"><path d="M4 10h16v8a2 2 0 0 1-2 2H6a2 2 0 0 1-2-2z"/><path d="M2 10h20M9 6c0-1 .5-2 1-2.5M13 6c0-1 .5-2 1-2.5"/></g></symbol>
+    <symbol id="i-house" viewBox="0 0 24 24"><path fill="none" stroke="currentColor" stroke-width="1.6" stroke-linejoin="round" d="M3 11l9-8 9 8v10a1 1 0 0 1-1 1h-5v-7H10v7H4a1 1 0 0 1-1-1z"/></symbol>
+    <symbol id="i-layers" viewBox="0 0 24 24"><g fill="none" stroke="currentColor" stroke-width="1.6"><rect x="4" y="3" width="16" height="18" rx="2"/><path d="M4 9h16M4 15h16"/></g></symbol>
+    <symbol id="i-pencil" viewBox="0 0 24 24"><g fill="none" stroke="currentColor" stroke-width="1.6" stroke-linejoin="round"><path d="M17 3l4 4-11 11-4 1 1-4z"/><path d="M14 6l4 4"/></g></symbol>
+    <symbol id="i-dimmer" viewBox="0 0 24 24"><g fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round"><circle cx="12" cy="12" r="9"/><path d="M12 12l4-2"/></g></symbol>
+    <symbol id="i-x" viewBox="0 0 24 24"><path fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" d="M6 6l12 12M18 6L6 18"/></symbol>
+    <symbol id="i-left" viewBox="0 0 24 24"><path fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" d="M15 6l-6 6 6 6"/></symbol>
+    <symbol id="i-right" viewBox="0 0 24 24"><path fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" d="M9 6l6 6-6 6"/></symbol>
+    <symbol id="i-caret" viewBox="0 0 24 24"><path fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" d="M6 9l6 6 6-6"/></symbol>
+  </defs>
+</svg>
 
-  <!-- ========== TOP INFO BAR ========== -->
-  <div class="top-bar">
-    <div class="top-bar__inner">
-      <div class="top-bar__cluster">
-        <span class="top-bar__item">
-          <svg class="top-bar__icon" viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="1.3" stroke-linecap="round" stroke-linejoin="round">
-            <circle cx="8" cy="8" r="6.5"/><polyline points="8 4 8 8 10.5 9.5"/>
-          </svg>
-          <span class="lang-nl">24/7 Bereikbaar</span><span class="lang-en">24/7 Reachable</span><span class="lang-tr">7/24 Ulaşılabilir</span><span class="lang-ar">متاحون 24/7</span><span class="lang-pl">Dostępni 24/7</span><span class="lang-de">24/7 erreichbar</span>
-        </span>
+<a class="skip" href="#main" data-i18n="nav.skip">Naar de inhoud</a>
+
+<!-- ===================== TOP BAR ===================== -->
+<div class="topbar">
+  <div class="wrap">
+    <div class="topbar__group">
+      <span class="topbar__item"><span class="dot dot--pulse" aria-hidden="true"></span><span data-i18n="top.247">24/7 bereikbaar</span></span>
+      <span class="topbar__item topbar__hide-sm" data-i18n="top.insured">Verzekerde vakmensen</span>
+      <span class="topbar__item topbar__hide-sm" data-i18n="top.nen">NEN 1010 gecertificeerd</span>
+    </div>
+    <div class="topbar__group">
+      <a href="https://wa.me/31685484000" target="_blank" rel="noopener noreferrer">WhatsApp +31 6 8548 4000</a>
+      <a class="topbar__hide-sm" href="mailto:info@alleklussers.nl">info@alleklussers.nl</a>
+    </div>
+  </div>
+</div>
+
+<!-- ===================== HEADER ===================== -->
+<header class="header" id="header">
+  <div class="wrap">
+    <a class="brand" href="#home" data-nav="home" aria-label="AlleKlussers — Home">
+      <img src="img/logo-dark.png" alt="AlleKlussers" width="600" height="150" />
+    </a>
+
+    <nav class="nav" aria-label="Hoofdmenu">
+      <a class="nav__link" href="#home" data-nav="home" data-i18n="nav.home">Home</a>
+      <a class="nav__link" href="#services" data-nav="services" data-i18n="nav.services">Diensten</a>
+      <a class="nav__link" href="#references" data-nav="references" data-i18n="nav.projects">Projecten</a>
+      <a class="nav__link" href="#about" data-nav="about" data-i18n="nav.about">Over ons</a>
+      <a class="nav__link" href="#contact" data-nav="contact" data-i18n="nav.contact">Contact</a>
+    </nav>
+
+    <div class="header__actions">
+      <div class="lang" data-lang>
+        <button type="button" class="lang__btn" aria-haspopup="true" aria-expanded="false" data-i18n-attr="aria-label:nav.lang" aria-label="Taal kiezen">
+          <svg width="16" height="16" aria-hidden="true"><use href="#i-globe"/></svg>
+          <span data-lang-code>NL</span>
+          <svg width="12" height="12" aria-hidden="true"><use href="#i-caret"/></svg>
+        </button>
+        <div class="lang__menu" role="menu">
+          <button type="button" role="menuitemradio" aria-checked="true" data-set-lang="nl"><span>NL</span>Nederlands</button>
+          <button type="button" role="menuitemradio" aria-checked="false" data-set-lang="en"><span>EN</span>English</button>
+          <button type="button" role="menuitemradio" aria-checked="false" data-set-lang="tr"><span>TR</span>Türkçe</button>
+          <button type="button" role="menuitemradio" aria-checked="false" data-set-lang="ar"><span>AR</span>العربية</button>
+          <button type="button" role="menuitemradio" aria-checked="false" data-set-lang="pl"><span>PL</span>Polski</button>
+          <button type="button" role="menuitemradio" aria-checked="false" data-set-lang="de"><span>DE</span>Deutsch</button>
+        </div>
       </div>
-      <div class="top-bar__cluster">
-        <span class="top-bar__item">
-          <svg class="top-bar__icon" viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="1.3" stroke-linecap="round" stroke-linejoin="round">
-            <path d="M8 1.5L13 3.5v4c0 3.5-2.5 6-5 7-2.5-1-5-3.5-5-7v-4l5-2z"/>
-            <polyline points="5.5 8 7 9.5 10.5 6"/>
-          </svg>
-          <span class="lang-nl">Verzekerde vakmensen</span><span class="lang-en">Insured craftsmen</span><span class="lang-tr">Sigortalı ustalar</span><span class="lang-ar">حرفيون مؤمَّنون</span><span class="lang-pl">Ubezpieczeni fachowcy</span><span class="lang-de">Versicherte Handwerker</span>
-        </span>
-      </div>
+      <a class="btn btn--ink btn--sm header__cta" href="#contact" data-nav="contact" data-i18n="cta.quote">Offerte aanvragen</a>
+      <button type="button" class="burger" id="burger" aria-controls="mobile-menu" aria-expanded="false" data-i18n-attr="aria-label:nav.menu" aria-label="Menu"><span></span></button>
     </div>
   </div>
 
-  <!-- ========== HEADER ========== -->
-  <header class="border-b border-rule sticky top-0 z-50 bg-paper/95 backdrop-blur">
-    <div class="max-w-[1400px] mx-auto px-6 lg:px-12 py-4 flex items-center justify-between gap-6">
-      <a href="#home" data-nav="home" class="flex items-center shrink-0">
-        <img src="logo.png" alt="AlleKlussers" class="logo-img h-12 md:h-14 lg:h-16 w-auto" />
-      </a>
+</header>
 
-      <nav class="hidden md:flex items-center gap-7 lg:gap-9 text-sm">
-        <a href="#home" data-nav="home" class="navlink"><span class="lang-nl">Startpagina</span><span class="lang-en">Home</span><span class="lang-tr">Ana sayfa</span><span class="lang-ar">الرئيسية</span><span class="lang-pl">Strona główna</span><span class="lang-de">Startseite</span></a>
-        <a href="#references" data-nav="references" class="navlink"><span class="lang-nl">Projecten</span><span class="lang-en">Projects</span><span class="lang-tr">Projeler</span><span class="lang-ar">المشاريع</span><span class="lang-pl">Projekty</span><span class="lang-de">Projekte</span></a>
-        <a href="#services" data-nav="services" class="navlink"><span class="lang-nl">Onze Diensten</span><span class="lang-en">Our Services</span><span class="lang-tr">Hizmetlerimiz</span><span class="lang-ar">خدماتنا</span><span class="lang-pl">Nasze usługi</span><span class="lang-de">Unsere Leistungen</span></a>
-        <a href="#about" data-nav="about" class="navlink"><span class="lang-nl">Over ons</span><span class="lang-en">About us</span><span class="lang-tr">Hakkımızda</span><span class="lang-ar">من نحن</span><span class="lang-pl">O nas</span><span class="lang-de">Über uns</span></a>
-        <div class="nav-more" data-more>
-          <button type="button" class="navlink nav-more__trigger" aria-haspopup="true" aria-expanded="false">
-            <span class="lang-nl">Meer</span><span class="lang-en">More</span><span class="lang-tr">Daha fazla</span><span class="lang-ar">المزيد</span><span class="lang-pl">Więcej</span><span class="lang-de">Mehr</span>
-            <svg class="nav-more__caret" width="10" height="6" viewBox="0 0 10 6" fill="none" stroke="currentColor" stroke-width="1.5" aria-hidden="true">
-              <polyline points="1 1 5 5 9 1"/>
-            </svg>
-          </button>
-          <div class="nav-more__menu" role="menu">
-            <a href="#contact" data-nav="contact" role="menuitem">Contact</a>
-            <a href="mailto:info@alleklussers.nl" role="menuitem" class="nav-more__ext">
-              E-mail <span aria-hidden="true">↗</span>
-            </a>
-            <a href="https://wa.me/31685484000" target="_blank" rel="noopener noreferrer" role="menuitem" class="nav-more__ext">
-              WhatsApp <span aria-hidden="true">↗</span>
-            </a>
-          </div>
+<div class="mobile-menu" id="mobile-menu">
+  <nav aria-label="Mobiel menu">
+    <a href="#home" data-nav="home"><span data-i18n="nav.home">Home</span><svg width="22" height="22" aria-hidden="true"><use href="#i-arrow"/></svg></a>
+    <a href="#services" data-nav="services"><span data-i18n="nav.services">Diensten</span><svg width="22" height="22" aria-hidden="true"><use href="#i-arrow"/></svg></a>
+    <a href="#references" data-nav="references"><span data-i18n="nav.projects">Projecten</span><svg width="22" height="22" aria-hidden="true"><use href="#i-arrow"/></svg></a>
+    <a href="#about" data-nav="about"><span data-i18n="nav.about">Over ons</span><svg width="22" height="22" aria-hidden="true"><use href="#i-arrow"/></svg></a>
+    <a href="#contact" data-nav="contact"><span data-i18n="nav.contact">Contact</span><svg width="22" height="22" aria-hidden="true"><use href="#i-arrow"/></svg></a>
+  </nav>
+  <div class="mobile-menu__foot">
+    <a class="btn btn--ink btn--block" href="#contact" data-nav="contact" data-i18n="cta.quote">Offerte aanvragen</a>
+    <a class="btn btn--line btn--block" href="https://wa.me/31685484000" target="_blank" rel="noopener noreferrer"><svg width="18" height="18" aria-hidden="true"><use href="#i-wa"/></svg>WhatsApp +31 6 8548 4000</a>
+    <a class="btn btn--line btn--block" href="mailto:info@alleklussers.nl"><svg width="18" height="18" aria-hidden="true"><use href="#i-mail"/></svg>info@alleklussers.nl</a>
+  </div>
+</div>
+
+<main id="main" tabindex="-1">
+
+<!-- =========================================================
+     HOME
+     ========================================================= -->
+<section class="view" id="view-home" aria-labelledby="home-title">
+
+  <!-- Hero -->
+  <div class="hero on-dark">
+    <div class="wrap hero__grid">
+      <div>
+        <p class="eyebrow eyebrow--dash" data-i18n="hero.eyebrow">Vakwerk in Nederland</p>
+        <h1 class="h-display" id="home-title" data-i18n="hero.title">Uw elektra, <em>zonder gedoe.</em></h1>
+        <p class="lede" data-i18n="hero.lede">Storingen, groepenkasten, verlichting, bedrading en veilige installaties — snel, veilig en netjes afgewerkt.</p>
+        <div class="hero__ctas">
+          <a class="btn btn--amber" href="#contact" data-nav="contact"><span data-i18n="cta.quote">Offerte aanvragen</span><svg class="arrow" width="18" height="18" aria-hidden="true"><use href="#i-arrow"/></svg></a>
+          <a class="btn btn--ghost" href="https://wa.me/31685484000" target="_blank" rel="noopener noreferrer"><svg width="18" height="18" aria-hidden="true"><use href="#i-wa"/></svg><span data-i18n="cta.whatsapp">Direct WhatsAppen</span></a>
         </div>
-      </nav>
-
-      <div class="flex items-center gap-3 lg:gap-4">
-        <a href="#contact" data-nav="contact" class="btn-ink btn-ink--sm hidden md:inline-flex">
-          <span class="lang-nl">Offerte</span><span class="lang-en">Quote</span><span class="lang-tr">Teklif</span><span class="lang-ar">عرض سعر</span><span class="lang-pl">Wycena</span><span class="lang-de">Angebot</span>
-          <span class="arrow">→</span>
-        </a>
-
-        <!-- Language selector — globe icon + 2-letter code, opens to 6 options -->
-        <div class="lang-select" data-lang-select>
-          <button type="button" class="lang-select__trigger" aria-haspopup="true" aria-expanded="false" aria-label="Language">
-            <svg class="lang-select__globe" viewBox="0 0 20 20" fill="none" stroke="currentColor" stroke-width="1.3" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
-              <circle cx="10" cy="10" r="7.5"/>
-              <ellipse cx="10" cy="10" rx="3.5" ry="7.5"/>
-              <line x1="2.5" y1="10" x2="17.5" y2="10"/>
-            </svg>
-            <span class="lang-select__code" data-lang-code>NL</span>
-            <svg class="lang-select__caret" width="10" height="6" viewBox="0 0 10 6" fill="none" stroke="currentColor" stroke-width="1.5" aria-hidden="true">
-              <polyline points="1 1 5 5 9 1"/>
-            </svg>
-          </button>
-          <div class="lang-select__menu" role="menu">
-            <button type="button" role="menuitem" data-lang-set="nl"><span>NL</span> Nederlands</button>
-            <button type="button" role="menuitem" data-lang-set="en"><span>EN</span> English</button>
-            <button type="button" role="menuitem" data-lang-set="tr"><span>TR</span> Türkçe</button>
-            <button type="button" role="menuitem" data-lang-set="ar"><span>AR</span> العربية</button>
-            <button type="button" role="menuitem" data-lang-set="pl"><span>PL</span> Polski</button>
-            <button type="button" role="menuitem" data-lang-set="de"><span>DE</span> Deutsch</button>
-          </div>
-        </div>
-
-        <button id="menu-btn" class="menu-btn md:hidden" aria-label="Menu" aria-expanded="false" aria-controls="mobile-menu">
-          <span class="menu-icon" aria-hidden="true">
-            <span class="menu-icon__bar"></span>
-            <span class="menu-icon__bar"></span>
-            <span class="menu-icon__bar"></span>
-          </span>
-        </button>
-      </div>
-    </div>
-
-    <!-- Mobile menu — full-screen overlay slides in from top. Hamburger morphs to X. -->
-    <div id="mobile-menu" class="mobile-menu md:hidden" role="dialog" aria-modal="true">
-      <nav class="mobile-menu__nav">
-        <a href="#home" data-nav="home" class="mobile-menu__link"><span class="lang-nl">Startpagina</span><span class="lang-en">Home</span><span class="lang-tr">Ana sayfa</span><span class="lang-ar">الرئيسية</span><span class="lang-pl">Strona główna</span><span class="lang-de">Startseite</span></a>
-        <a href="#references" data-nav="references" class="mobile-menu__link"><span class="lang-nl">Projecten</span><span class="lang-en">Projects</span><span class="lang-tr">Projeler</span><span class="lang-ar">المشاريع</span><span class="lang-pl">Projekty</span><span class="lang-de">Projekte</span></a>
-        <a href="#services" data-nav="services" class="mobile-menu__link"><span class="lang-nl">Onze Diensten</span><span class="lang-en">Our Services</span><span class="lang-tr">Hizmetlerimiz</span><span class="lang-ar">خدماتنا</span><span class="lang-pl">Nasze usługi</span><span class="lang-de">Unsere Leistungen</span></a>
-        <a href="#about" data-nav="about" class="mobile-menu__link"><span class="lang-nl">Over ons</span><span class="lang-en">About us</span><span class="lang-tr">Hakkımızda</span><span class="lang-ar">من نحن</span><span class="lang-pl">O nas</span><span class="lang-de">Über uns</span></a>
-        <a href="#contact" data-nav="contact" class="mobile-menu__link">Contact</a>
-      </nav>
-      <div class="mobile-menu__footer">
-        <a href="mailto:info@alleklussers.nl" class="mobile-menu__contact">info@alleklussers.nl <span aria-hidden="true">↗</span></a>
-        <a href="https://wa.me/31685484000" target="_blank" rel="noopener noreferrer" class="mobile-menu__contact">WhatsApp <span aria-hidden="true">↗</span></a>
-      </div>
-    </div>
-  </header>
-
-  <main class="max-w-[1400px] mx-auto px-6 lg:px-12">
-
-    <!-- ============ HOME ============ -->
-    <section id="view-home" class="view">
-
-      <!-- HERO -->
-      <div class="hero-grid py-20">
-        <div class="hero-content">
-          <p class="eyebrow eyebrow--dash mb-6">
-            <span class="lang-nl">Vakwerk in Nederland</span><span class="lang-en">Craftsmanship in the Netherlands</span><span class="lang-tr">Hollanda'da ustalık</span><span class="lang-ar">حِرفية في هولندا</span><span class="lang-pl">Rzemiosło w Holandii</span><span class="lang-de">Handwerk in den Niederlanden</span>
-          </p>
-          <h1 class="font-serif h-display max-w-[14ch]">
-            <span class="lang-nl">Uw elektra, <em>zonder gedoe</em>.</span>
-            <span class="lang-en">Your electrics, <em>without hassle</em>.</span>
-            <span class="lang-tr">Elektriğiniz, <em>sorunsuz</em>.</span>
-            <span class="lang-ar">كهرباؤكم، <em>دون عناء</em>.</span>
-            <span class="lang-pl">Twoja elektryka, <em>bez kłopotów</em>.</span>
-            <span class="lang-de">Ihre Elektrik, <em>ohne Stress</em>.</span>
-          </h1>
-          <p class="hero-lede mt-8 max-w-xl">
-            <span class="lang-nl">Storingen, groepenkasten, verlichting, bedrading en veilige installaties — snel, veilig en netjes afgewerkt.</span>
-            <span class="lang-en">Faults, fuse boxes, lighting, wiring and safe installations — fast, safe and neatly finished.</span>
-            <span class="lang-tr">Arızalar, sigorta kutuları, aydınlatma, kablolama ve güvenli tesisat — hızlı, güvenli ve özenle tamamlanır.</span>
-            <span class="lang-ar">أعطال، علب صمامات، إضاءة، تمديدات وتركيبات آمنة — بسرعة وأمان وإتقان.</span>
-            <span class="lang-pl">Awarie, skrzynki bezpieczników, oświetlenie, instalacja i bezpieczne systemy — szybko, bezpiecznie i starannie wykończone.</span>
-            <span class="lang-de">Störungen, Sicherungskästen, Beleuchtung, Verkabelung und sichere Installationen — schnell, sicher und sauber ausgeführt.</span>
-          </p>
-          <div class="mt-10 flex flex-wrap items-center gap-6 hero-cta">
-            <a href="#contact" data-nav="contact" class="btn-ink hero-cta__quote">
-              <span class="lang-nl">Offerte aanvragen</span><span class="lang-en">Request a quote</span><span class="lang-tr">Teklif al</span><span class="lang-ar">اطلب عرض سعر</span><span class="lang-pl">Poproś o wycenę</span><span class="lang-de">Angebot anfordern</span>
-              <span class="arrow">→</span>
-            </a>
-            <a href="#references" data-nav="references" class="btn-ink hero-cta__projects">
-              <span class="lang-nl">Projecten bekijken</span><span class="lang-en">View projects</span><span class="lang-tr">Projeleri gör</span><span class="lang-ar">عرض المشاريع</span><span class="lang-pl">Zobacz projekty</span><span class="lang-de">Projekte ansehen</span>
-              <span class="arrow">→</span>
-            </a>
-            <a href="#services" data-nav="services" class="btn-outline hero-cta__services">
-              <span class="lang-nl">Onze diensten</span><span class="lang-en">Services</span><span class="lang-tr">Hizmetlerimiz</span><span class="lang-ar">الخدمات</span><span class="lang-pl">Usługi</span><span class="lang-de">Leistungen</span>
-              <span class="arrow">→</span>
-            </a>
-            <a href="https://wa.me/31685484000" target="_blank" rel="noopener noreferrer" class="btn-outline hero-cta__contact">
-              <svg class="hero-cta__icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M21 11.5a8.38 8.38 0 0 1-.9 3.8 8.5 8.5 0 0 1-7.6 4.7 8.38 8.38 0 0 1-3.8-.9L3 21l1.9-5.7a8.38 8.38 0 0 1-.9-3.8 8.5 8.5 0 0 1 4.7-7.6 8.38 8.38 0 0 1 3.8-.9h.5a8.48 8.48 0 0 1 8 8v.5z"/></svg>
-              WhatsApp
-            </a>
-            <a href="mailto:info@alleklussers.nl" class="btn-outline hero-cta__contact">
-              <svg class="hero-cta__icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="3" y="5" width="18" height="14" rx="1"/><polyline points="3 7 12 13 21 7"/></svg>
-              E-mail
-            </a>
-          </div>
-          <ul class="hero-badges mt-10">
-            <li>
-              <svg class="hero-badge__icon" viewBox="0 0 20 20" fill="none" stroke="currentColor" stroke-width="1.2" stroke-linecap="round" stroke-linejoin="round">
-                <circle cx="10" cy="10" r="8"/><polyline points="6 10 9 13 14 7"/>
-              </svg>
-              <div>
-                <span class="hero-badge__title"><span class="lang-nl">Vrijblijvend gesprek</span><span class="lang-en">No-obligation talk</span><span class="lang-tr">Ücretsiz görüşme</span><span class="lang-ar">استشارة مجانية</span><span class="lang-pl">Niezobowiązująca rozmowa</span><span class="lang-de">Unverbindliches Gespräch</span></span>
-                <span class="hero-badge__sub"><span class="lang-nl">Bij u thuis</span><span class="lang-en">At your home</span><span class="lang-tr">Evinizde</span><span class="lang-ar">في منزلكم</span><span class="lang-pl">U Państwa w domu</span><span class="lang-de">Bei Ihnen zu Hause</span></span>
-              </div>
-            </li>
-            <li>
-              <svg class="hero-badge__icon" viewBox="0 0 20 20" fill="none" stroke="currentColor" stroke-width="1.2" stroke-linecap="round" stroke-linejoin="round">
-                <circle cx="10" cy="10" r="8"/><polyline points="10 5 10 10 13 12"/>
-              </svg>
-              <div>
-                <span class="hero-badge__title"><span class="lang-nl">Op tijd opgeleverd</span><span class="lang-en">Delivered on time</span><span class="lang-tr">Zamanında teslim</span><span class="lang-ar">تسليم في الموعد</span><span class="lang-pl">Dostarczone na czas</span><span class="lang-de">Pünktlich geliefert</span></span>
-                <span class="hero-badge__sub"><span class="lang-nl">Zoals afgesproken</span><span class="lang-en">As agreed</span><span class="lang-tr">Anlaştığımız gibi</span><span class="lang-ar">كما هو متفق عليه</span><span class="lang-pl">Zgodnie z umową</span><span class="lang-de">Wie vereinbart</span></span>
-              </div>
-            </li>
-            <li>
-              <svg class="hero-badge__icon" viewBox="0 0 20 20" fill="none" stroke="currentColor" stroke-width="1.2" stroke-linecap="round" stroke-linejoin="round">
-                <path d="M10 2l2.4 5 5.6.6-4 3.8 1 5.6L10 14.5 5 17l1-5.6L2 7.6l5.6-.6z"/>
-              </svg>
-              <div>
-                <span class="hero-badge__title"><span class="lang-nl">100% Tevredenheid</span><span class="lang-en">100% Satisfaction</span><span class="lang-tr">%100 Memnuniyet</span><span class="lang-ar">رضا 100٪</span><span class="lang-pl">100% Satysfakcji</span><span class="lang-de">100% Zufriedenheit</span></span>
-                <span class="hero-badge__sub"><span class="lang-nl">Kwaliteitsgarantie</span><span class="lang-en">Quality guarantee</span><span class="lang-tr">Kalite garantisi</span><span class="lang-ar">ضمان الجودة</span><span class="lang-pl">Gwarancja jakości</span><span class="lang-de">Qualitätsgarantie</span></span>
-              </div>
-            </li>
-          </ul>
-        </div>
-
-        <!-- Mobile editorial cover — framed photo with floating label + bulb mark -->
-        <div class="hero-photo">
-          <!-- Small monoline pendant bulb mark, echoes the desktop illustration -->
-          <svg class="hero-photo__bulb" viewBox="0 0 60 90" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
-            <line x1="30" y1="0" x2="30" y2="20"/>
-            <path d="M22 20 L22 30 L38 30 L38 20"/>
-            <path d="M22 30 C14 38 10 50 14 62 C18 74 42 74 46 62 C50 50 46 38 38 30"/>
-            <path d="M26 42 L26 58 L34 58 L34 42" stroke-width="1.4"/>
-          </svg>
-          <span class="hero-photo__tag" aria-hidden="true">
-            <span class="lang-nl">Vakwerk in Nederland</span><span class="lang-en">Craftsmanship in the Netherlands</span><span class="lang-tr">Hollanda'da ustalık</span><span class="lang-ar">حرفية في هولندا</span><span class="lang-pl">Rzemiosło w Holandii</span><span class="lang-de">Handwerk in den Niederlanden</span>
-          </span>
-        </div>
-
-        <!-- Right column: bulb illustration (decorative) + trust mini-cards -->
-        <div class="hero-art-col">
-        <div class="hero-art" aria-hidden="true">
-          <svg viewBox="80 0 400 540" fill="none" stroke="currentColor"
-               stroke-linecap="round" stroke-linejoin="round">
-
-            <defs>
-              <!-- Gaussian blur used to fake a soft glow around the filament -->
-              <filter id="filament-blur" x="-50%" y="-50%" width="200%" height="200%">
-                <feGaussianBlur in="SourceGraphic" stdDeviation="5.5" />
-              </filter>
-            </defs>
-
-            <!-- Group everything so we can swing it from the top of the cord -->
-            <g class="hero-bulb">
-
-              <!-- Hanging cord — d is updated each frame by JS to flex
-                   slightly toward the cursor, like a flexible wire. -->
-              <path id="hero-cord" d="M 200 0 Q 200 69 200 138" stroke-width="3" />
-
-              <!-- Bulb screw base — rectangle with three thread lines -->
-              <path stroke-width="2.5" d="M 180 138 L 180 184 L 220 184 L 220 138" />
-              <line x1="180" y1="151" x2="220" y2="151" stroke-width="1.5" />
-              <line x1="180" y1="164" x2="220" y2="164" stroke-width="1.5" />
-              <line x1="180" y1="177" x2="220" y2="177" stroke-width="1.5" />
-
-              <!-- Bulb glass — Edison pear shape, single continuous curve -->
-              <path stroke-width="2.5" d="
-                M 180 184
-                C 158 202 128 234 120 300
-                C 112 372 154 444 200 444
-                C 246 444 288 372 280 300
-                C 272 234 242 202 220 184
-              " />
-
-              <!-- Glow halo — same filament path, blurred, behind the real one -->
-              <path class="hero-filament-glow" stroke-width="3"
-                    filter="url(#filament-blur)"
-                    d="
-                M 188 198
-                Q 188 240, 173 270
-                L 168 320
-                L 168 384
-                L 232 384
-                L 232 320
-                L 227 270
-                Q 212 240, 212 198
-              " />
-
-              <!-- Filament — house silhouette in one continuous wire -->
-              <path class="hero-filament" stroke-width="1.5" d="
-                M 188 198
-                Q 188 240, 173 270
-                L 168 320
-                L 168 384
-                L 232 384
-                L 232 320
-                L 227 270
-                Q 212 240, 212 198
-              " />
-
-              <!-- Tiny door notch inside the house-filament -->
-              <line class="hero-filament" x1="200" y1="384" x2="200" y2="356" stroke-width="1.2" />
-
-              <!-- Two soft diverging lines suggesting a light cone on the floor -->
-              <g class="hero-cone">
-                <line x1="195" y1="450" x2="125" y2="514" stroke-width="1.2" />
-                <line x1="205" y1="450" x2="275" y2="514" stroke-width="1.2" />
-              </g>
-            </g>
-
-            <!-- Light particles drifting around the glass (outside the swing group
-                 so they're not yanked by the pendulum) -->
-            <g class="hero-radiance">
-              <circle cx="72"  cy="278" r="3.5" fill="currentColor" stroke="none" />
-              <circle cx="332" cy="258" r="3"   fill="currentColor" stroke="none" />
-              <circle cx="346" cy="358" r="2.5" fill="currentColor" stroke="none" />
-              <circle cx="58"  cy="362" r="2"   fill="currentColor" stroke="none" />
-              <circle cx="92"  cy="220" r="2"   fill="currentColor" stroke="none" />
-              <circle cx="308" cy="412" r="2.5" fill="currentColor" stroke="none" />
-              <circle cx="40"  cy="312" r="1.8" fill="currentColor" stroke="none" />
-              <circle cx="358" cy="305" r="1.8" fill="currentColor" stroke="none" />
-            </g>
-
-            <!-- Bottom hairline mark — horizontal counterweight -->
-            <line x1="80" y1="522" x2="210" y2="522" stroke-width="1.5" />
-          </svg>
-        </div>
-
-        <!-- 5 — trust mini-cards in the empty space below the bulb -->
-        <ul class="hero-trust-mini" role="list">
-          <li>
-            <svg class="hero-trust-mini__icon" viewBox="0 0 20 20" fill="none" stroke="currentColor" stroke-width="1.4" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
-              <path d="M10 2l8 4v5c0 4.5-3.2 8.2-8 9.2C5.2 19.2 2 15.5 2 11V6l8-4z"/>
-              <polyline points="7 10.5 9 12.5 13.5 8"/>
-            </svg>
-            <div>
-              <span class="hero-trust-mini__title"><span class="lang-nl">Gecertificeerde vakmensen</span><span class="lang-en">Certified craftsmen</span><span class="lang-tr">Sertifikalı ustalar</span><span class="lang-ar">حرفيون معتمدون</span><span class="lang-pl">Certyfikowani fachowcy</span><span class="lang-de">Zertifizierte Handwerker</span></span>
-              <span class="hero-trust-mini__sub"><span class="lang-nl">NEN 1010 gecertificeerd</span><span class="lang-en">NEN 1010 certified</span><span class="lang-tr">NEN 1010 sertifikalı</span><span class="lang-ar">معتمد وفق NEN 1010</span><span class="lang-pl">Certyfikat NEN 1010</span><span class="lang-de">NEN 1010 zertifiziert</span></span>
-            </div>
-          </li>
-          <li>
-            <svg class="hero-trust-mini__icon" viewBox="0 0 20 20" fill="none" stroke="currentColor" stroke-width="1.4" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
-              <circle cx="10" cy="10" r="7.5"/>
-              <polyline points="10 5.5 10 10 12.5 11.5"/>
-            </svg>
-            <div>
-              <span class="hero-trust-mini__title"><span class="lang-nl">24/7 bereikbaar</span><span class="lang-en">24/7 reachable</span><span class="lang-tr">7/24 ulaşılabilir</span><span class="lang-ar">متاحون 24/7</span><span class="lang-pl">Dostępni 24/7</span><span class="lang-de">24/7 erreichbar</span></span>
-              <span class="hero-trust-mini__sub"><span class="lang-nl">Via mail of WhatsApp</span><span class="lang-en">Via mail or WhatsApp</span><span class="lang-tr">Mail veya WhatsApp ile</span><span class="lang-ar">عبر البريد أو واتساب</span><span class="lang-pl">Przez mail lub WhatsApp</span><span class="lang-de">Per Mail oder WhatsApp</span></span>
-            </div>
-          </li>
-          <li>
-            <svg class="hero-trust-mini__icon" viewBox="0 0 20 20" fill="none" stroke="currentColor" stroke-width="1.4" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
-              <path d="M17 3H3a1 1 0 0 0-1 1v10a1 1 0 0 0 1 1h14a1 1 0 0 0 1-1V4a1 1 0 0 0-1-1z"/>
-              <polyline points="3 7 10 11 17 7"/>
-            </svg>
-            <div>
-              <span class="hero-trust-mini__title"><span class="lang-nl">Binnen 24 uur reactie</span><span class="lang-en">Reply within 24 hours</span><span class="lang-tr">24 saat içinde yanıt</span><span class="lang-ar">ردٌّ خلال 24 ساعة</span><span class="lang-pl">Odpowiedź w 24 godziny</span><span class="lang-de">Antwort innerhalb 24 h</span></span>
-              <span class="hero-trust-mini__sub"><span class="lang-nl">Inclusief offerte op maat</span><span class="lang-en">Including a tailored quote</span><span class="lang-tr">Özel teklif dahil</span><span class="lang-ar">بما في ذلك عرض مخصص</span><span class="lang-pl">W tym oferta na miarę</span><span class="lang-de">Inkl. maßgeschneidertem Angebot</span></span>
-            </div>
-          </li>
+        <ul class="hero__checks">
+          <li><svg width="18" height="18" aria-hidden="true"><use href="#i-check"/></svg><span><span data-i18n="trust.talk">Vrijblijvend gesprek</span> · <span data-i18n="trust.talkSub">Bij u thuis</span></span></li>
+          <li><svg width="18" height="18" aria-hidden="true"><use href="#i-check"/></svg><span data-i18n="trust.onTime">Op tijd opgeleverd</span></li>
+          <li><svg width="18" height="18" aria-hidden="true"><use href="#i-check"/></svg><span data-i18n="trust.reply24">Binnen 24 uur reactie</span></li>
         </ul>
-        </div>
       </div>
 
-      <!-- STATS — proof at a glance, four big serif numbers -->
-      <ul class="stats-row py-16 lg:py-20">
-        <li>
-          <span class="stats-row__num">24/7</span>
-          <span class="stats-row__label"><span class="lang-nl">Bereikbaar</span><span class="lang-en">Reachable</span><span class="lang-tr">Ulaşılabilir</span><span class="lang-ar">متاحون</span><span class="lang-pl">Dostępni</span><span class="lang-de">Erreichbar</span></span>
-          <span class="stats-row__sub"><span class="lang-nl">Mail of WhatsApp</span><span class="lang-en">Mail or WhatsApp</span><span class="lang-tr">Mail veya WhatsApp</span><span class="lang-ar">بريد أو واتساب</span><span class="lang-pl">Mail lub WhatsApp</span><span class="lang-de">Mail oder WhatsApp</span></span>
-        </li>
-        <li>
-          <span class="stats-row__num">120<span class="stats-row__plus">+</span></span>
-          <span class="stats-row__label"><span class="lang-nl">Projecten</span><span class="lang-en">Projects</span><span class="lang-tr">Projeler</span><span class="lang-ar">المشاريع</span><span class="lang-pl">Projekty</span><span class="lang-de">Projekte</span></span>
-          <span class="stats-row__sub"><span class="lang-nl">Succesvol opgeleverd</span><span class="lang-en">Successfully delivered</span><span class="lang-tr">Başarıyla teslim edildi</span><span class="lang-ar">تم التسليم بنجاح</span><span class="lang-pl">Pomyślnie dostarczone</span><span class="lang-de">Erfolgreich geliefert</span></span>
-        </li>
-        <li>
-          <span class="stats-row__num">4,9<span class="stats-row__den">/5</span></span>
-          <span class="stats-row__label"><span class="lang-nl">Beoordeling</span><span class="lang-en">Rating</span><span class="lang-tr">Değerlendirme</span><span class="lang-ar">التقييم</span><span class="lang-pl">Ocena</span><span class="lang-de">Bewertung</span></span>
-          <span class="stats-row__sub"><span class="lang-nl">Op basis van reviews</span><span class="lang-en">Based on reviews</span><span class="lang-tr">Yorumlara göre</span><span class="lang-ar">استناداً إلى المراجعات</span><span class="lang-pl">Na podstawie opinii</span><span class="lang-de">Basierend auf Bewertungen</span></span>
-        </li>
-        <li>
-          <span class="stats-row__num">100<span class="stats-row__den">%</span></span>
-          <span class="stats-row__label"><span class="lang-nl">Verzekerd</span><span class="lang-en">Insured</span><span class="lang-tr">Sigortalı</span><span class="lang-ar">مؤمَّن</span><span class="lang-pl">Ubezpieczeni</span><span class="lang-de">Versichert</span></span>
-          <span class="stats-row__sub"><span class="lang-nl">Vakmensen met certificaat</span><span class="lang-en">Certified craftsmen</span><span class="lang-tr">Sertifikalı ustalar</span><span class="lang-ar">حرفيون معتمدون</span><span class="lang-pl">Certyfikowani fachowcy</span><span class="lang-de">Zertifizierte Handwerker</span></span>
-        </li>
-      </ul>
-
-      <div class="hairline"></div>
-
-      <!-- HIZMETLERIMIZ — header row with a small editorial photo, then four service cards -->
-      <section class="home-services pt-20 lg:pt-24 pb-20 lg:pb-24">
-        <div class="home-services__head">
+      <div class="hero__media">
+        <div class="hero__photo">
+          <img src="img/hero.jpg" srcset="img/hero-800.jpg 800w, img/hero.jpg 1400w" sizes="(max-width: 960px) 100vw, 46vw" width="1400" height="1050" alt="Elektricien van AlleKlussers aan het werk" data-i18n-attr="alt:hero.photoAlt" fetchpriority="high" />
+        </div>
+        <div class="float-card float-card--light">
+          <div class="float-card__icon"><svg width="24" height="24" aria-hidden="true"><use href="#i-shield"/></svg></div>
           <div>
-            <p class="eyebrow mb-6"><span class="lang-nl">Onze diensten</span><span class="lang-en">Services</span><span class="lang-tr">Hizmetlerimiz</span><span class="lang-ar">الخدمات</span><span class="lang-pl">Usługi</span><span class="lang-de">Leistungen</span></p>
-            <h2 class="font-serif h-section max-w-[14ch]">
-              <span class="lang-nl">Wat wij <em>regisseren</em>.</span>
-              <span class="lang-en">What we <em>coordinate</em>.</span>
-              <span class="lang-tr">Neyi <em>yönetiyoruz</em>.</span>
-              <span class="lang-ar">ما <em>ننسقه</em>.</span>
-              <span class="lang-pl">Co <em>koordynujemy</em>.</span>
-              <span class="lang-de">Was wir <em>koordinieren</em>.</span>
-            </h2>
-            <p class="hero-lede mt-6 max-w-md">
-              <span class="lang-nl">Onze meest gevraagde diensten. Bekijk alle zeven op de dienstenpagina.</span>
-              <span class="lang-en">Our most-requested services. See all seven on the services page.</span>
-              <span class="lang-tr">En çok talep edilen hizmetlerimiz. Tamamına hizmetler sayfasından ulaşabilirsiniz.</span>
-              <span class="lang-ar">خدماتنا الأكثر طلباً. اطّلعوا على الخدمات السبع كاملةً في صفحة الخدمات.</span>
-              <span class="lang-pl">Nasze najpopularniejsze usługi. Wszystkie siedem znajdziesz na stronie usług.</span>
-              <span class="lang-de">Unsere gefragtesten Leistungen. Alle sieben sehen Sie auf der Leistungsseite.</span>
-            </p>
+            <div class="float-card__title" data-i18n="top.nen">NEN 1010 gecertificeerd</div>
+            <div class="float-card__sub" data-i18n="trust.certified">Gecertificeerde vakmensen</div>
           </div>
-          <!-- Small editorial photo. Drop a real image at /featured.jpg and it
-               replaces the placeholder; the <img> hides on load error. -->
-          <figure class="home-photo">
-            <img src="ana-sayfa-asaga.png" alt="Elektricien aan het werk" onerror="this.style.display='none'" />
-            <span class="home-photo__label">Foto</span>
-          </figure>
         </div>
-
-        <div class="home-services__grid">
-          <article class="home-card">
-            <svg class="home-card__icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.4" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
-              <line x1="9" y1="2" x2="9" y2="6"/><line x1="15" y1="2" x2="15" y2="6"/>
-              <path d="M6 6h12v4a6 6 0 0 1-12 0V6z"/><path d="M12 16v3a3 3 0 0 1-3 3"/>
-            </svg>
-            <h3 class="home-card__title"><span class="lang-nl">Elektra</span><span class="lang-en">Electrical</span><span class="lang-tr">Elektrik</span><span class="lang-ar">كهرباء</span><span class="lang-pl">Elektryka</span><span class="lang-de">Elektroinstallation</span></h3>
-            <p class="home-card__desc">
-              <span class="lang-nl">Groepenkast, bedrading, verlichting en stopcontacten door gecertificeerde vakmensen.</span>
-              <span class="lang-en">Fuse box, wiring, lighting and sockets by certified craftsmen.</span>
-              <span class="lang-tr">Sigorta kutusu, kablolama, aydınlatma ve prizler — sertifikalı ustalardan.</span>
-              <span class="lang-ar">علبة الصمامات، الأسلاك، الإضاءة والمقابس بأيدي حرفيين معتمدين.</span>
-              <span class="lang-pl">Skrzynka bezpieczników, instalacja, oświetlenie i gniazdka — przez certyfikowanych fachowców.</span>
-              <span class="lang-de">Sicherungskasten, Verkabelung, Beleuchtung und Steckdosen von zertifizierten Handwerkern.</span>
-            </p>
-            <a href="#contact" data-nav="contact" class="home-card__cta">
-              <span class="lang-nl">Offerte aanvragen</span><span class="lang-en">Request a quote</span><span class="lang-tr">Teklif al</span><span class="lang-ar">اطلب عرض سعر</span><span class="lang-pl">Poproś o wycenę</span><span class="lang-de">Angebot anfordern</span>
-              <span class="arrow">→</span>
-            </a>
-          </article>
-
-          <article class="home-card">
-            <svg class="home-card__icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.4" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
-              <path d="M3 11h18v4a3 3 0 0 1-3 3H6a3 3 0 0 1-3-3v-4z"/>
-              <path d="M7 11V7a2 2 0 0 1 2-2"/><circle cx="10" cy="6.5" r="1.2"/>
-              <path d="M5 19l-1 2M19 19l1 2"/>
-            </svg>
-            <h3 class="home-card__title"><span class="lang-nl">Badkamer</span><span class="lang-en">Bathroom</span><span class="lang-tr">Banyo</span><span class="lang-ar">حمّام</span><span class="lang-pl">Łazienka</span><span class="lang-de">Badezimmer</span></h3>
-            <p class="home-card__desc">
-              <span class="lang-nl">Tegelwerk, sanitair, ventilatie en elektra — als één samenhangend project.</span>
-              <span class="lang-en">Tiling, plumbing, ventilation and electrics — as one coherent project.</span>
-              <span class="lang-tr">Fayans, tesisat, havalandırma ve elektrik — tek bir uyumlu proje olarak.</span>
-              <span class="lang-ar">التبليط، السباكة، التهوية والكهرباء — كمشروع متكامل واحد.</span>
-              <span class="lang-pl">Glazura, hydraulika, wentylacja i elektryka — jako jeden spójny projekt.</span>
-              <span class="lang-de">Fliesen, Sanitär, Lüftung und Elektrik — als ein zusammenhängendes Projekt.</span>
-            </p>
-            <a href="#contact" data-nav="contact" class="home-card__cta">
-              <span class="lang-nl">Offerte aanvragen</span><span class="lang-en">Request a quote</span><span class="lang-tr">Teklif al</span><span class="lang-ar">اطلب عرض سعر</span><span class="lang-pl">Poproś o wycenę</span><span class="lang-de">Angebot anfordern</span>
-              <span class="arrow">→</span>
-            </a>
-          </article>
-
-          <article class="home-card">
-            <svg class="home-card__icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.4" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
-              <path d="M4 10h16v8a2 2 0 0 1-2 2H6a2 2 0 0 1-2-2v-8z"/>
-              <line x1="2" y1="10" x2="22" y2="10"/>
-              <path d="M9 6c0-1 .5-2 1-2.5M13 6c0-1 .5-2 1-2.5"/>
-            </svg>
-            <h3 class="home-card__title"><span class="lang-nl">Keuken</span><span class="lang-en">Kitchen</span><span class="lang-tr">Mutfak</span><span class="lang-ar">مطبخ</span><span class="lang-pl">Kuchnia</span><span class="lang-de">Küche</span></h3>
-            <p class="home-card__desc">
-              <span class="lang-nl">Van uitbreken tot inmeten, monteren en aansluiten. Eén planning, één aanspreekpunt.</span>
-              <span class="lang-en">From demolition to measuring, installation and connection. One schedule, one contact.</span>
-              <span class="lang-tr">Sökümden ölçüye, montaja ve bağlantıya kadar. Tek planlama, tek muhatap.</span>
-              <span class="lang-ar">من الهدم إلى القياس، التركيب والتوصيل. جدولٌ واحد، نقطةُ اتصالٍ واحدة.</span>
-              <span class="lang-pl">Od wyburzenia po pomiary, montaż i podłączenie. Jeden harmonogram, jedna osoba kontaktowa.</span>
-              <span class="lang-de">Vom Ausbruch über das Einmessen bis zur Montage und zum Anschluss. Ein Zeitplan, ein Ansprechpartner.</span>
-            </p>
-            <a href="#contact" data-nav="contact" class="home-card__cta">
-              <span class="lang-nl">Offerte aanvragen</span><span class="lang-en">Request a quote</span><span class="lang-tr">Teklif al</span><span class="lang-ar">اطلب عرض سعر</span><span class="lang-pl">Poproś o wycenę</span><span class="lang-de">Angebot anfordern</span>
-              <span class="arrow">→</span>
-            </a>
-          </article>
-
-          <article class="home-card">
-            <svg class="home-card__icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.4" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
-              <path d="M3 11l9-8 9 8v10a1 1 0 0 1-1 1h-5v-7H10v7H4a1 1 0 0 1-1-1V11z"/>
-            </svg>
-            <h3 class="home-card__title"><span class="lang-nl">Complete verbouwing</span><span class="lang-en">Full renovation</span><span class="lang-tr">Komple tadilat</span><span class="lang-ar">تجديد شامل</span><span class="lang-pl">Pełny remont</span><span class="lang-de">Komplettrenovierung</span></h3>
-            <p class="home-card__desc">
-              <span class="lang-nl">Een woning van A tot Z — wij regisseren alle disciplines en de planning voor u.</span>
-              <span class="lang-en">A home from A to Z — we coordinate every discipline and the schedule for you.</span>
-              <span class="lang-tr">Evin A'dan Z'ye — tüm disiplinleri ve planlamayı sizin için yönetiyoruz.</span>
-              <span class="lang-ar">منزلٌ من الألف إلى الياء — ننسّق جميع الحرف والجدول الزمني نيابةً عنكم.</span>
-              <span class="lang-pl">Dom od A do Z — koordynujemy wszystkie branże i harmonogram za Ciebie.</span>
-              <span class="lang-de">Eine Wohnung von A bis Z — wir koordinieren alle Gewerke und den Zeitplan für Sie.</span>
-            </p>
-            <a href="#contact" data-nav="contact" class="home-card__cta">
-              <span class="lang-nl">Offerte aanvragen</span><span class="lang-en">Request a quote</span><span class="lang-tr">Teklif al</span><span class="lang-ar">اطلب عرض سعر</span><span class="lang-pl">Poproś o wycenę</span><span class="lang-de">Angebot anfordern</span>
-              <span class="arrow">→</span>
-            </a>
-          </article>
+        <div class="float-card float-card--dark">
+          <span class="dot dot--pulse" aria-hidden="true"></span>
+          <div>
+            <div class="float-card__title" data-i18n="top.247">24/7 bereikbaar</div>
+            <div class="float-card__sub" data-i18n="trust.viaMail">Via mail of WhatsApp</div>
+          </div>
         </div>
-
-        <div class="home-services__all">
-          <a href="#services" data-nav="services" class="navlink text-sm">
-            <span class="lang-nl">Alle zeven diensten bekijken</span>
-            <span class="lang-en">See all seven services</span>
-            <span class="lang-tr">Yedi hizmetin tamamını gör</span>
-            <span class="lang-ar">عرض الخدمات السبع كاملةً</span>
-            <span class="lang-pl">Zobacz wszystkie siedem usług</span>
-            <span class="lang-de">Alle sieben Leistungen ansehen</span>
-            <span class="arrow">→</span>
-          </a>
-        </div>
-      </section>
-
-      <div class="hairline"></div>
-
-      <!-- PARTNERS — billboard-style logo showcase -->
-      <section class="partners py-16 lg:py-20">
-        <p class="partners__lead eyebrow">
-          <span class="lang-nl">Onze partners</span>
-          <span class="lang-en">Trusted partners</span>
-          <span class="lang-tr">Birlikte çalıştıklarımız</span>
-          <span class="lang-ar">شركاؤنا</span>
-          <span class="lang-pl">Nasi partnerzy</span>
-          <span class="lang-de">Unsere Partner</span>
-        </p>
-
-        <ul class="partners__list" role="list">
-          <li class="partners__item">
-            <a href="https://www.marktplaats.nl/v/diensten-en-vakmensen/elektriciens/m2404945176-elektricien-beschikbaar-storing-groepenkast-stopcontact" target="_blank" rel="noopener noreferrer" aria-label="Marktplaats">
-              <img src="marktplaats.png" alt="Marktplaats" class="partners__logo" onerror="this.classList.add('is-missing')" />
-              <span class="partners__fallback">Marktplaats</span>
-            </a>
-          </li>
-          <li class="partners__item">
-            <a href="https://klussendirect.nl/elektricien-nodig-in-rotterdam-en-omgeving/" target="_blank" rel="noopener noreferrer" aria-label="Klussendirect">
-              <img src="cropped-KLUSSENDIRECT.NL_.png" alt="Klussendirect" class="partners__logo" onerror="this.classList.add('is-missing')" />
-              <span class="partners__fallback">Klussendirect</span>
-            </a>
-          </li>
-        </ul>
-      </section>
-
-      <div class="hairline"></div>
-
-      <!-- PROCESS — minimal -->
-      <div class="py-24 lg:py-32">
-        <p class="eyebrow mb-12"><span class="lang-nl">Werkwijze</span><span class="lang-en">Process</span><span class="lang-tr">Çalışma şeklimiz</span><span class="lang-ar">منهجية العمل</span><span class="lang-pl">Proces</span><span class="lang-de">Vorgehen</span></p>
-        <ol class="grid grid-cols-2 md:grid-cols-4 gap-y-10 gap-x-8">
-          <li class="flex flex-col gap-3">
-            <span class="font-serif italic text-5xl font-light text-ink/35 leading-none">01</span>
-            <span class="font-serif text-xl"><span class="lang-nl">Kennismaking</span><span class="lang-en">Intake</span><span class="lang-tr">Tanışma</span><span class="lang-ar">تعارف</span><span class="lang-pl">Zapoznanie</span><span class="lang-de">Kennenlernen</span></span>
-          </li>
-          <li class="flex flex-col gap-3">
-            <span class="font-serif italic text-5xl font-light text-ink/35 leading-none">02</span>
-            <span class="font-serif text-xl"><span class="lang-nl">Voorstel</span><span class="lang-en">Proposal</span><span class="lang-tr">Teklif</span><span class="lang-ar">عرض</span><span class="lang-pl">Propozycja</span><span class="lang-de">Angebot</span></span>
-          </li>
-          <li class="flex flex-col gap-3">
-            <span class="font-serif italic text-5xl font-light text-ink/35 leading-none">03</span>
-            <span class="font-serif text-xl"><span class="lang-nl">Uitvoering</span><span class="lang-en">Execution</span><span class="lang-tr">Uygulama</span><span class="lang-ar">تنفيذ</span><span class="lang-pl">Realizacja</span><span class="lang-de">Ausführung</span></span>
-          </li>
-          <li class="flex flex-col gap-3">
-            <span class="font-serif italic text-5xl font-light text-ink/35 leading-none">04</span>
-            <span class="font-serif text-xl"><span class="lang-nl">Oplevering</span><span class="lang-en">Delivery</span><span class="lang-tr">Teslim</span><span class="lang-ar">تسليم</span><span class="lang-pl">Odbiór</span><span class="lang-de">Übergabe</span></span>
-          </li>
-        </ol>
       </div>
-    </section>
-
-    <!-- ============ ABOUT ============ -->
-    <section id="view-about" class="view">
-
-      <!-- Top: editorial text on the left, electrician photo card on the right -->
-      <div class="about-intro">
-        <div class="about-intro__text">
-          <p class="eyebrow mb-8"><span class="lang-nl">Over ons</span><span class="lang-en">About us</span><span class="lang-tr">Hakkımızda</span><span class="lang-ar">من نحن</span><span class="lang-pl">O nas</span><span class="lang-de">Über uns</span></p>
-          <h1 class="font-serif h-display max-w-[14ch]">
-            <span class="lang-nl">Wij regelen uw elektra. <em>U blijft zorgeloos.</em></span>
-            <span class="lang-en">We handle your electrics. <em>You stay worry-free.</em></span>
-            <span class="lang-tr">Elektriğinizi biz çözeriz. <em>Siz rahat edin.</em></span>
-            <span class="lang-ar">ننجز أعمال الكهرباء. <em>وأنتم مطمئنون.</em></span>
-            <span class="lang-pl">Zajmiemy się elektryką. <em>Ty masz spokój.</em></span>
-            <span class="lang-de">Wir regeln Ihre Elektroarbeiten. <em>Sie bleiben sorgenfrei.</em></span>
-          </h1>
-          <p class="about-lede mt-8 max-w-xl">
-            <span class="lang-nl">Wij zijn uw betrouwbare elektrotechnisch specialist voor particulieren en bedrijven. Met veilige installaties, snelle communicatie en netjes werk zorgen wij voor zekerheid in elke situatie.</span>
-            <span class="lang-en">We provide reliable electrical solutions for homes and businesses. With safe installations, clear communication and tidy workmanship, we make every job feel secure.</span>
-            <span class="lang-tr">Ev ve iş yerleri için güvenilir elektrik çözümleri sunuyoruz. Güvenli tesisat, hızlı iletişim ve temiz işçilikle her durumda yanınızdayız.</span>
-            <span class="lang-ar">نوفّر حلولاً كهربائية موثوقة للمنازل والشركات. بتركيبات آمنة وتواصل واضح وعمل مرتّب، نضمن لكم الثقة في كل موقف.</span>
-            <span class="lang-pl">Oferujemy niezawodne rozwiązania elektryczne dla domów i firm. Dzięki bezpiecznym instalacjom, przejrzystej komunikacji i schludnemu wykonaniu każda praca daje poczucie pewności.</span>
-            <span class="lang-de">Wir sind Ihr zuverlässiger Elektrotechnik-Spezialist für Privat- und Geschäftskunden. Mit sicheren Installationen, klarer Kommunikation und sauberer Ausführung sorgen wir in jeder Situation für Verlässlichkeit.</span>
-          </p>
-        </div>
-        <figure class="about-photo about-photo--wide">
-          <img src="overons.png" alt="Elektricien aan het werk" />
-        </figure>
-      </div>
-
-      <div class="hairline"></div>
-
-      <!-- Editorial stat row: label + value + supporting line -->
-      <dl class="about-stats about-stats--rich py-14 lg:py-16">
-        <div>
-          <dt class="eyebrow"><span class="lang-nl">Aanpak</span><span class="lang-en">Approach</span><span class="lang-tr">Yaklaşım</span><span class="lang-ar">نهجنا</span><span class="lang-pl">Podejście</span><span class="lang-de">Ansatz</span></dt>
-          <dd class="font-serif">1</dd>
-          <p class="about-stats__sub">
-            <span class="lang-nl">Eén aanspreekpunt voor uw elektra.</span>
-            <span class="lang-en">One point of contact for your electrics.</span>
-            <span class="lang-tr">Elektrik işleriniz için tek muhatap.</span>
-            <span class="lang-ar">نقطة اتصال واحدة لكل أعمال الكهرباء لديكم.</span>
-            <span class="lang-pl">Jedna osoba kontaktowa do Twojej elektryki.</span>
-            <span class="lang-de">Ein Ansprechpartner für Ihre Elektrik.</span>
-          </p>
-        </div>
-        <div>
-          <dt class="eyebrow"><span class="lang-nl">Projecten</span><span class="lang-en">Projects</span><span class="lang-tr">Projeler</span><span class="lang-ar">المشاريع</span><span class="lang-pl">Projekty</span><span class="lang-de">Projekte</span></dt>
-          <dd class="font-serif">120+</dd>
-          <p class="about-stats__sub">
-            <span class="lang-nl">Afgeronde elektra-opdrachten.</span>
-            <span class="lang-en">Completed electrical assignments.</span>
-            <span class="lang-tr">Tamamlanan elektrik işleri.</span>
-            <span class="lang-ar">مهام كهربائية مكتملة.</span>
-            <span class="lang-pl">Ukończone zlecenia elektryczne.</span>
-            <span class="lang-de">Abgeschlossene Elektroaufträge.</span>
-          </p>
-        </div>
-        <div>
-          <dt class="eyebrow"><span class="lang-nl">Talen</span><span class="lang-en">Languages</span><span class="lang-tr">Diller</span><span class="lang-ar">اللغات</span><span class="lang-pl">Języki</span><span class="lang-de">Sprachen</span></dt>
-          <dd class="font-serif about-stats__lang">NL · EN · TR · AR · PL · DE</dd>
-          <p class="about-stats__sub">
-            <span class="lang-nl">Duidelijke communicatie voor elke klant.</span>
-            <span class="lang-en">Clear communication for every client.</span>
-            <span class="lang-tr">Her müşteri için net iletişim.</span>
-            <span class="lang-ar">تواصل واضح مع كل عميل.</span>
-            <span class="lang-pl">Przejrzysta komunikacja z każdym klientem.</span>
-            <span class="lang-de">Klare Kommunikation für jeden Kunden.</span>
-          </p>
-        </div>
-      </dl>
-
-      <div class="pb-20"></div>
-    </section>
-
-    <!-- ============ SERVICES ============ -->
-    <section id="view-services" class="view">
-      <div class="pt-20 lg:pt-32 pb-12">
-        <p class="eyebrow mb-10"><span class="lang-nl">Diensten</span><span class="lang-en">Services</span><span class="lang-tr">Hizmetler</span><span class="lang-ar">الخدمات</span><span class="lang-pl">Usługi</span><span class="lang-de">Leistungen</span></p>
-        <h1 class="font-serif h-display max-w-[14ch]">
-          <span class="lang-nl">Wat wij <em>regisseren</em>.</span>
-          <span class="lang-en">What we <em>coordinate</em>.</span>
-          <span class="lang-tr">Neyi <em>yönetiyoruz</em>.</span>
-          <span class="lang-ar">ما <em>ننسّقه</em>.</span>
-          <span class="lang-pl">Co <em>koordynujemy</em>.</span>
-          <span class="lang-de">Was wir <em>koordinieren</em>.</span>
-        </h1>
-      </div>
-
-      <ol class="pb-28">
-        <li>
-          <a href="#contact" data-nav="contact" class="service-row">
-            <span class="font-serif text-xl text-ink/40">01</span>
-            <h3 class="service-title font-serif text-3xl lg:text-4xl leading-tight">
-              <span class="lang-nl">Badkamer</span><span class="lang-en">Bathroom</span><span class="lang-tr">Banyo</span><span class="lang-ar">حمّام</span><span class="lang-pl">Łazienka</span><span class="lang-de">Badezimmer</span>
-            </h3>
-            <span class="service-action">
-              <svg class="service-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
-                <path d="M3 11h18v4a3 3 0 0 1-3 3H6a3 3 0 0 1-3-3v-4z"/>
-                <path d="M7 11V7a2 2 0 0 1 2-2"/>
-                <circle cx="10" cy="6.5" r="1.2"/>
-                <path d="M5 19l-1 2M19 19l1 2"/>
-              </svg>
-              <span class="arrow">→</span>
-            </span>
-          </a>
-        </li>
-        <li>
-          <a href="#contact" data-nav="contact" class="service-row">
-            <span class="font-serif text-xl text-ink/40">02</span>
-            <h3 class="service-title font-serif text-3xl lg:text-4xl leading-tight">
-              <span class="lang-nl">Keuken</span><span class="lang-en">Kitchen</span><span class="lang-tr">Mutfak</span><span class="lang-ar">مطبخ</span><span class="lang-pl">Kuchnia</span><span class="lang-de">Küche</span>
-            </h3>
-            <span class="service-action">
-              <svg class="service-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
-                <path d="M4 10h16v8a2 2 0 0 1-2 2H6a2 2 0 0 1-2-2v-8z"/>
-                <line x1="2" y1="10" x2="22" y2="10"/>
-                <path d="M9 6c0-1 .5-2 1-2.5M13 6c0-1 .5-2 1-2.5"/>
-              </svg>
-              <span class="arrow">→</span>
-            </span>
-          </a>
-        </li>
-        <li>
-          <a href="#contact" data-nav="contact" class="service-row">
-            <span class="font-serif text-xl text-ink/40">03</span>
-            <h3 class="service-title font-serif text-3xl lg:text-4xl leading-tight">
-              <span class="lang-nl">Elektra</span><span class="lang-en">Electrical</span><span class="lang-tr">Elektrik</span><span class="lang-ar">كهرباء</span><span class="lang-pl">Elektryka</span><span class="lang-de">Elektroinstallation</span>
-            </h3>
-            <span class="service-action">
-              <svg class="service-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
-                <line x1="9" y1="2" x2="9" y2="6"/>
-                <line x1="15" y1="2" x2="15" y2="6"/>
-                <path d="M6 6h12v4a6 6 0 0 1-12 0V6z"/>
-                <path d="M12 16v3a3 3 0 0 1-3 3"/>
-              </svg>
-              <span class="arrow">→</span>
-            </span>
-          </a>
-        </li>
-        <li>
-          <a href="#contact" data-nav="contact" class="service-row">
-            <span class="font-serif text-xl text-ink/40">04</span>
-            <h3 class="service-title font-serif text-3xl lg:text-4xl leading-tight">
-              <span class="lang-nl">Schilderwerk</span><span class="lang-en">Painting</span><span class="lang-tr">Boyacılık</span><span class="lang-ar">الدهان</span><span class="lang-pl">Malowanie</span><span class="lang-de">Malerarbeiten</span>
-            </h3>
-            <span class="service-action">
-              <svg class="service-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
-                <path d="M17 3l4 4-10 10-4 1 1-4 9-11z"/>
-                <line x1="7" y1="14" x2="3" y2="21"/>
-                <line x1="14" y1="6" x2="18" y2="10"/>
-              </svg>
-              <span class="arrow">→</span>
-            </span>
-          </a>
-        </li>
-        <li>
-          <a href="#contact" data-nav="contact" class="service-row">
-            <span class="font-serif text-xl text-ink/40">05</span>
-            <h3 class="service-title font-serif text-3xl lg:text-4xl leading-tight">
-              <span class="lang-nl">Vloeren</span><span class="lang-en">Flooring</span><span class="lang-tr">Zemin döşeme</span><span class="lang-ar">الأرضيات</span><span class="lang-pl">Podłogi</span><span class="lang-de">Bodenbeläge</span>
-            </h3>
-            <span class="service-action">
-              <svg class="service-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" aria-hidden="true">
-                <rect x="3" y="3" width="8" height="8"/>
-                <rect x="13" y="3" width="8" height="8"/>
-                <rect x="3" y="13" width="8" height="8"/>
-                <rect x="13" y="13" width="8" height="8"/>
-              </svg>
-              <span class="arrow">→</span>
-            </span>
-          </a>
-        </li>
-        <li>
-          <a href="#contact" data-nav="contact" class="service-row">
-            <span class="font-serif text-xl text-ink/40">06</span>
-            <h3 class="service-title font-serif text-3xl lg:text-4xl leading-tight">
-              <span class="lang-nl">Mutatieonderhoud</span><span class="lang-en">Turnover maintenance</span><span class="lang-tr">Kiracı değişim bakımı</span><span class="lang-ar">صيانة الانتقال</span><span class="lang-pl">Konserwacja przy zmianie najemcy</span><span class="lang-de">Mietwechsel-Service</span>
-            </h3>
-            <span class="service-action">
-              <svg class="service-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
-                <circle cx="7" cy="12" r="4"/>
-                <line x1="11" y1="12" x2="22" y2="12"/>
-                <line x1="18" y1="12" x2="18" y2="15"/>
-                <line x1="22" y1="12" x2="22" y2="14"/>
-              </svg>
-              <span class="arrow">→</span>
-            </span>
-          </a>
-        </li>
-        <li>
-          <a href="#contact" data-nav="contact" class="service-row">
-            <span class="font-serif text-xl text-ink/40">07</span>
-            <h3 class="service-title font-serif text-3xl lg:text-4xl leading-tight">
-              <span class="lang-nl">Complete verbouwing</span><span class="lang-en">Full renovation</span><span class="lang-tr">Komple tadilat</span><span class="lang-ar">تجديد شامل</span><span class="lang-pl">Pełny remont</span><span class="lang-de">Komplettrenovierung</span>
-            </h3>
-            <span class="service-action">
-              <svg class="service-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
-                <path d="M3 11l9-8 9 8v10a1 1 0 0 1-1 1h-5v-7H10v7H4a1 1 0 0 1-1-1V11z"/>
-              </svg>
-              <span class="arrow">→</span>
-            </span>
-          </a>
-        </li>
-      </ol>
-    </section>
-
-    <!-- ============ REFERENCES ============ -->
-    <section id="view-references" class="view">
-      <div class="pt-20 lg:pt-32 pb-10">
-        <p class="eyebrow eyebrow--rule mb-8"><span class="lang-nl">Projecten</span><span class="lang-en">Projects</span><span class="lang-tr">Projeler</span><span class="lang-ar">المشاريع</span><span class="lang-pl">Projekty</span><span class="lang-de">Projekte</span></p>
-        <h1 class="font-serif h-display max-w-[18ch]">
-          <span class="lang-nl">Projecten die netjes zijn afgewerkt.</span>
-          <span class="lang-en">Projects, neatly finished.</span>
-          <span class="lang-tr">Özenle tamamlanan projeler.</span>
-          <span class="lang-ar">مشاريع منجزة بإتقان.</span>
-          <span class="lang-pl">Projekty starannie wykończone.</span>
-          <span class="lang-de">Projekte, sauber abgeschlossen.</span>
-        </h1>
-        <p class="hero-lede mt-8 max-w-2xl">
-          <span class="lang-nl">Bij AlleKlussers leveren we strak afgewerkt werk, van elektra tot renovatie. We denken mee, werken netjes en zorgen voor duurzame resultaten met oog voor detail, verlichting en moderne afwerking.</span>
-          <span class="lang-en">At AlleKlussers we deliver crisply finished work, from electrics to renovation. We think along, work tidy and ensure durable results with attention to detail, lighting and modern finishing.</span>
-          <span class="lang-tr">AlleKlussers olarak elektrikten yenilemeye kadar özenle tamamlanan işler sunuyoruz. Birlikte düşünür, temiz çalışır ve detaylara, aydınlatmaya ve modern bitirişe önem vererek kalıcı sonuçlar üretiriz.</span>
-          <span class="lang-ar">في AlleKlussers نقدّم أعمالاً منجزة بإتقان، من الكهرباء إلى التجديد. نُشارك بالأفكار ونعمل بترتيب ونضمن نتائج دائمة بعناية للتفاصيل والإضاءة واللمسات العصرية.</span>
-          <span class="lang-pl">W AlleKlussers wykonujemy prace z dbałością o detal, od elektryki po remont. Doradzamy, pracujemy schludnie i dbamy o trwałe efekty z myślą o szczegółach, oświetleniu i nowoczesnym wykończeniu.</span>
-          <span class="lang-de">Bei AlleKlussers liefern wir sauber abgeschlossene Arbeiten, von Elektrik bis Renovierung. Wir denken mit, arbeiten ordentlich und sorgen für langlebige Ergebnisse mit Blick fürs Detail, Beleuchtung und moderne Ausführung.</span>
-        </p>
-      </div>
-
-      <!-- Projects — horizontal swipe carousel; each slide is a featured card -->
-      <div class="project-carousel">
-        <button type="button" class="project-carousel__nav project-carousel__nav--prev" data-carousel-prev aria-label="Previous">
-          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><polyline points="15 6 9 12 15 18"/></svg>
-        </button>
-        <button type="button" class="project-carousel__nav project-carousel__nav--next" data-carousel-next aria-label="Next">
-          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><polyline points="9 6 15 12 9 18"/></svg>
-        </button>
-
-        <div class="project-carousel__track" data-carousel-track>
-
-          <!-- 1 — Badkamer -->
-          <article class="project-slide" data-project="badkamer">
-            <div class="project-slide__detail">
-              <h2 class="project-slide__title font-serif">
-                <span class="lang-nl">Badkamer renovatie met elektra en verlichting</span>
-                <span class="lang-en">Bathroom renovation with electrics and lighting</span>
-                <span class="lang-tr">Elektrik ve aydınlatma dahil banyo yenileme</span>
-                <span class="lang-ar">تجديد حمّام مع الكهرباء والإضاءة</span>
-                <span class="lang-pl">Remont łazienki z elektryką i oświetleniem</span>
-                <span class="lang-de">Badezimmerrenovierung mit Elektrik und Beleuchtung</span>
-              </h2>
-              <div class="project-slide__meta">
-                <span class="project-slide__meta-item">
-                  <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.4" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 22s7-6.5 7-13a7 7 0 0 0-14 0c0 6.5 7 13 7 13z"/><circle cx="12" cy="9" r="2.5"/></svg>
-                  Rotterdam
-                </span>
-                <span class="project-slide__meta-divider" aria-hidden="true">|</span>
-                <span class="project-slide__meta-item">
-                  <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.4" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M20.5 13.5L13 21 3 11V3h8z"/><circle cx="7.5" cy="7.5" r="1.2"/></svg>
-                  <span class="lang-nl">Badkamer renovatie</span><span class="lang-en">Bathroom renovation</span><span class="lang-tr">Banyo yenileme</span><span class="lang-ar">تجديد حمّام</span><span class="lang-pl">Remont łazienki</span><span class="lang-de">Badezimmerrenovierung</span>
-                </span>
-              </div>
-              <div class="hairline project-slide__rule"></div>
-              <p class="project-slide__desc">
-                <span class="lang-nl">Complete badkamer renovatie inclusief nieuwe elektra, LED spiegelverlichting, verlichtingsplan en strakke afwerking.</span>
-                <span class="lang-en">Complete bathroom renovation including new electrics, LED mirror lighting, a lighting plan and crisp finishing.</span>
-                <span class="lang-tr">Yeni elektrik tesisatı, LED ayna aydınlatması, aydınlatma planı ve özenli işçilik dahil komple banyo yenileme.</span>
-                <span class="lang-ar">تجديد كامل للحمّام يشمل الكهرباء الجديدة، إضاءة المرآة LED، خطة إضاءة وتشطيب أنيق.</span>
-                <span class="lang-pl">Kompletny remont łazienki obejmujący nową elektrykę, oświetlenie LED lustra, plan oświetleniowy i staranne wykończenie.</span>
-                <span class="lang-de">Komplette Badrenovierung inkl. neuer Elektrik, LED-Spiegelbeleuchtung, Lichtplan und sauberer Ausführung.</span>
-              </p>
-              <div class="project-slide__actions">
-                <button type="button" class="btn-ink btn-ink--sm" data-open-gallery="badkamer">
-                  <span class="lang-nl">Bekijk project</span><span class="lang-en">View project</span><span class="lang-tr">Projeyi gör</span><span class="lang-ar">عرض المشروع</span><span class="lang-pl">Zobacz projekt</span><span class="lang-de">Projekt ansehen</span>
-                  <span class="arrow">→</span>
-                </button>
-                <a href="#contact" data-nav="contact" class="btn-outline btn-outline--sm">
-                  <span class="lang-nl">Offerte aanvragen</span><span class="lang-en">Request a quote</span><span class="lang-tr">Teklif ver</span><span class="lang-ar">اطلب عرض سعر</span><span class="lang-pl">Poproś o wycenę</span><span class="lang-de">Angebot anfordern</span>
-                </a>
-              </div>
-              <ul class="project-slide__highlights">
-                <li>
-                  <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.3" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M9 18h6"/><path d="M10 21h4"/><path d="M12 3a6 6 0 0 0-4 10.5c.7.7 1 1.5 1 2.5h6c0-1 .3-1.8 1-2.5A6 6 0 0 0 12 3z"/></svg>
-                  <span><span class="lang-nl">LED spiegelverlichting</span><span class="lang-en">LED mirror lighting</span><span class="lang-tr">LED ayna aydınlatması</span><span class="lang-ar">إضاءة مرآة LED</span><span class="lang-pl">Oświetlenie LED lustra</span><span class="lang-de">LED-Spiegelbeleuchtung</span></span>
-                </li>
-                <li>
-                  <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.3" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="4" y="4" width="16" height="16"/><circle cx="10" cy="10" r="1.2" fill="currentColor"/><circle cx="14" cy="10" r="1.2" fill="currentColor"/><path d="M10 14h4"/></svg>
-                  <span><span class="lang-nl">Nieuwe aansluitpunten</span><span class="lang-en">New connection points</span><span class="lang-tr">Yeni bağlantı noktaları</span><span class="lang-ar">نقاط توصيل جديدة</span><span class="lang-pl">Nowe punkty podłączeń</span><span class="lang-de">Neue Anschlusspunkte</span></span>
-                </li>
-                <li>
-                  <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.3" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M17 3l4 4-11 11-4 1 1-4z"/><path d="M14 6l4 4"/></svg>
-                  <span><span class="lang-nl">Strakke afwerking</span><span class="lang-en">Crisp finishing</span><span class="lang-tr">Özenli işçilik</span><span class="lang-ar">تشطيب أنيق</span><span class="lang-pl">Staranne wykończenie</span><span class="lang-de">Saubere Ausführung</span></span>
-                </li>
-              </ul>
-            </div>
-            <div class="project-slide__gallery" data-gallery="badkamer">
-              <button type="button" class="project-slide__photo project-slide__photo--lead" data-photo-index="0">
-                <img src="badkamer/1.png" alt="Badkamer renovatie" loading="lazy" />
-              </button>
-              <div class="project-slide__grid">
-                <button type="button" class="project-slide__photo" data-photo-index="1"><img src="badkamer/2.png" alt="Badkamer detail" loading="lazy" /></button>
-                <button type="button" class="project-slide__photo" data-photo-index="2"><img src="badkamer/3.png" alt="Badkamer detail" loading="lazy" /></button>
-                <button type="button" class="project-slide__photo" data-photo-index="3"><img src="badkamer/4.png" alt="Badkamer detail" loading="lazy" /></button>
-                <button type="button" class="project-slide__photo project-slide__photo--more" data-photo-index="4">
-                  <img src="badkamer/5.png" alt="Badkamer detail" loading="lazy" />
-                  <span class="project-slide__count">+1</span>
-                </button>
-              </div>
-            </div>
-          </article>
-
-          <!-- 2 — Eettafel / hanglampen -->
-          <article class="project-slide" data-project="eettafel">
-            <div class="project-slide__detail">
-              <h2 class="project-slide__title font-serif">
-                <span class="lang-nl">Eettafelverlichting en aansluitpunten</span>
-                <span class="lang-en">Dining-table lighting and connections</span>
-                <span class="lang-tr">Yemek masası aydınlatması ve bağlantılar</span>
-                <span class="lang-ar">إضاءة طاولة الطعام والتوصيلات</span>
-                <span class="lang-pl">Oświetlenie nad stołem i przyłącza</span>
-                <span class="lang-de">Esstisch-Beleuchtung und Anschlüsse</span>
-              </h2>
-              <div class="project-slide__meta">
-                <span class="project-slide__meta-item">
-                  <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.4" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 22s7-6.5 7-13a7 7 0 0 0-14 0c0 6.5 7 13 7 13z"/><circle cx="12" cy="9" r="2.5"/></svg>
-                  Rotterdam
-                </span>
-                <span class="project-slide__meta-divider" aria-hidden="true">|</span>
-                <span class="project-slide__meta-item">
-                  <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.4" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M20.5 13.5L13 21 3 11V3h8z"/><circle cx="7.5" cy="7.5" r="1.2"/></svg>
-                  <span class="lang-nl">Verlichting</span><span class="lang-en">Lighting</span><span class="lang-tr">Aydınlatma</span><span class="lang-ar">إضاءة</span><span class="lang-pl">Oświetlenie</span><span class="lang-de">Beleuchtung</span>
-                </span>
-              </div>
-              <div class="hairline project-slide__rule"></div>
-              <p class="project-slide__desc">
-                <span class="lang-nl">Hanglampen op maat geplaatst met nieuwe bedrading en dimbare schakeling.</span>
-                <span class="lang-en">Custom pendant lights with new wiring and dimmable switching.</span>
-                <span class="lang-tr">Yeni kablolama ve dim'li anahtarla özel sarkıt aydınlatma.</span>
-                <span class="lang-ar">إنارة معلّقة مخصّصة مع تمديدات جديدة وتحكّم خافت.</span>
-                <span class="lang-pl">Lampy wiszące na wymiar z nową instalacją i ściemnianiem.</span>
-                <span class="lang-de">Maßgefertigte Pendelleuchten mit neuer Verkabelung und Dimmer.</span>
-              </p>
-              <div class="project-slide__actions">
-                <button type="button" class="btn-ink btn-ink--sm" data-open-gallery="eettafel">
-                  <span class="lang-nl">Bekijk project</span><span class="lang-en">View project</span><span class="lang-tr">Projeyi gör</span><span class="lang-ar">عرض المشروع</span><span class="lang-pl">Zobacz projekt</span><span class="lang-de">Projekt ansehen</span>
-                  <span class="arrow">→</span>
-                </button>
-                <a href="#contact" data-nav="contact" class="btn-outline btn-outline--sm">
-                  <span class="lang-nl">Offerte aanvragen</span><span class="lang-en">Request a quote</span><span class="lang-tr">Teklif ver</span><span class="lang-ar">اطلب عرض سعر</span><span class="lang-pl">Poproś o wycenę</span><span class="lang-de">Angebot anfordern</span>
-                </a>
-              </div>
-              <ul class="project-slide__highlights">
-                <li>
-                  <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.3" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M9 18h6"/><path d="M10 21h4"/><path d="M12 3a6 6 0 0 0-4 10.5c.7.7 1 1.5 1 2.5h6c0-1 .3-1.8 1-2.5A6 6 0 0 0 12 3z"/></svg>
-                  <span><span class="lang-nl">Hanglampen op maat</span><span class="lang-en">Custom pendants</span><span class="lang-tr">Özel sarkıt</span><span class="lang-ar">إنارة معلّقة مخصّصة</span><span class="lang-pl">Lampy na wymiar</span><span class="lang-de">Pendel nach Maß</span></span>
-                </li>
-                <li>
-                  <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.3" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M3 12c2-4 6-4 9 0s7 4 9 0"/><path d="M3 7c2-4 6-4 9 0s7 4 9 0"/></svg>
-                  <span><span class="lang-nl">Nieuwe bedrading</span><span class="lang-en">New wiring</span><span class="lang-tr">Yeni kablolama</span><span class="lang-ar">تمديدات جديدة</span><span class="lang-pl">Nowa instalacja</span><span class="lang-de">Neue Verkabelung</span></span>
-                </li>
-                <li>
-                  <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.3" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="12" cy="12" r="9"/><path d="M12 12l4-2"/></svg>
-                  <span><span class="lang-nl">Dimbare schakeling</span><span class="lang-en">Dimmable switching</span><span class="lang-tr">Dim'li anahtar</span><span class="lang-ar">تحكّم خافت</span><span class="lang-pl">Ściemnianie</span><span class="lang-de">Dimmer-Schaltung</span></span>
-                </li>
-              </ul>
-            </div>
-            <div class="project-slide__gallery" data-gallery="eettafel">
-              <button type="button" class="project-slide__photo project-slide__photo--lead" data-photo-index="0">
-                <img src="eettafel/1.png" alt="Eettafel verlichting" loading="lazy" />
-              </button>
-              <div class="project-slide__grid">
-                <button type="button" class="project-slide__photo" data-photo-index="1"><img src="eettafel/2.png" alt="Eettafel detail" loading="lazy" /></button>
-                <button type="button" class="project-slide__photo" data-photo-index="2"><img src="eettafel/3.png" alt="Eettafel detail" loading="lazy" /></button>
-                <button type="button" class="project-slide__photo" data-photo-index="3"><img src="eettafel/4.png" alt="Eettafel detail" loading="lazy" /></button>
-                <button type="button" class="project-slide__photo project-slide__photo--more" data-photo-index="4">
-                  <img src="eettafel/5.png" alt="Eettafel detail" loading="lazy" />
-                  <span class="project-slide__count">+1</span>
-                </button>
-              </div>
-            </div>
-          </article>
-
-          <!-- 3 — Fitness -->
-          <article class="project-slide" data-project="fitness">
-            <div class="project-slide__detail">
-              <h2 class="project-slide__title font-serif">
-                <span class="lang-nl">Verlichting voor fitnessruimte</span>
-                <span class="lang-en">Lighting for a home gym</span>
-                <span class="lang-tr">Fitness odası aydınlatması</span>
-                <span class="lang-ar">إضاءة غرفة لياقة</span>
-                <span class="lang-pl">Oświetlenie siłowni domowej</span>
-                <span class="lang-de">Beleuchtung für Fitnessraum</span>
-              </h2>
-              <div class="project-slide__meta">
-                <span class="project-slide__meta-item">
-                  <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.4" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 22s7-6.5 7-13a7 7 0 0 0-14 0c0 6.5 7 13 7 13z"/><circle cx="12" cy="9" r="2.5"/></svg>
-                  Rotterdam
-                </span>
-                <span class="project-slide__meta-divider" aria-hidden="true">|</span>
-                <span class="project-slide__meta-item">
-                  <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.4" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M20.5 13.5L13 21 3 11V3h8z"/><circle cx="7.5" cy="7.5" r="1.2"/></svg>
-                  <span class="lang-nl">Verlichting</span><span class="lang-en">Lighting</span><span class="lang-tr">Aydınlatma</span><span class="lang-ar">إضاءة</span><span class="lang-pl">Oświetlenie</span><span class="lang-de">Beleuchtung</span>
-                </span>
-              </div>
-              <div class="hairline project-slide__rule"></div>
-              <p class="project-slide__desc">
-                <span class="lang-nl">Sfeervolle LED-verlichting en extra groepen voor apparatuur.</span>
-                <span class="lang-en">Atmospheric LED lighting and extra circuits for equipment.</span>
-                <span class="lang-tr">Atmosferik LED aydınlatma ve cihazlar için ek hatlar.</span>
-                <span class="lang-ar">إضاءة LED مريحة ودوائر إضافية للأجهزة.</span>
-                <span class="lang-pl">Klimatyczne oświetlenie LED i dodatkowe obwody dla sprzętu.</span>
-                <span class="lang-de">Stimmungsvolle LED-Beleuchtung und Extra-Stromkreise für Geräte.</span>
-              </p>
-              <div class="project-slide__actions">
-                <button type="button" class="btn-ink btn-ink--sm" data-open-gallery="fitness">
-                  <span class="lang-nl">Bekijk project</span><span class="lang-en">View project</span><span class="lang-tr">Projeyi gör</span><span class="lang-ar">عرض المشروع</span><span class="lang-pl">Zobacz projekt</span><span class="lang-de">Projekt ansehen</span>
-                  <span class="arrow">→</span>
-                </button>
-                <a href="#contact" data-nav="contact" class="btn-outline btn-outline--sm">
-                  <span class="lang-nl">Offerte aanvragen</span><span class="lang-en">Request a quote</span><span class="lang-tr">Teklif ver</span><span class="lang-ar">اطلب عرض سعر</span><span class="lang-pl">Poproś o wycenę</span><span class="lang-de">Angebot anfordern</span>
-                </a>
-              </div>
-              <ul class="project-slide__highlights">
-                <li>
-                  <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.3" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M9 18h6"/><path d="M10 21h4"/><path d="M12 3a6 6 0 0 0-4 10.5c.7.7 1 1.5 1 2.5h6c0-1 .3-1.8 1-2.5A6 6 0 0 0 12 3z"/></svg>
-                  <span><span class="lang-nl">Sfeer-LED</span><span class="lang-en">Ambient LED</span><span class="lang-tr">Atmosfer LED</span><span class="lang-ar">إضاءة LED مريحة</span><span class="lang-pl">Klimatyczne LED</span><span class="lang-de">Ambiente-LED</span></span>
-                </li>
-                <li>
-                  <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.3" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="4" y="3" width="16" height="18"/><line x1="4" y1="9" x2="20" y2="9"/><line x1="4" y1="15" x2="20" y2="15"/></svg>
-                  <span><span class="lang-nl">Extra groepen</span><span class="lang-en">Extra circuits</span><span class="lang-tr">Ek hatlar</span><span class="lang-ar">دوائر إضافية</span><span class="lang-pl">Dodatkowe obwody</span><span class="lang-de">Extra-Stromkreise</span></span>
-                </li>
-                <li>
-                  <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.3" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 2l8 4v6c0 5-3.5 9-8 10-4.5-1-8-5-8-10V6l8-4z"/><polyline points="8.5 12.5 11 15 16 9.5"/></svg>
-                  <span><span class="lang-nl">Veilige montage</span><span class="lang-en">Safe installation</span><span class="lang-tr">Güvenli montaj</span><span class="lang-ar">تركيب آمن</span><span class="lang-pl">Bezpieczny montaż</span><span class="lang-de">Sichere Montage</span></span>
-                </li>
-              </ul>
-            </div>
-            <div class="project-slide__gallery project-slide__gallery--duo" data-gallery="fitness">
-              <button type="button" class="project-slide__photo project-slide__photo--lead" data-photo-index="0">
-                <img src="fitness/1.png" alt="Fitnessruimte verlichting" loading="lazy" />
-              </button>
-              <button type="button" class="project-slide__photo project-slide__photo--lead" data-photo-index="1">
-                <img src="fitness/2.png" alt="Fitnessruimte detail" loading="lazy" />
-              </button>
-            </div>
-          </article>
-
-        </div>
-
-        <div class="project-carousel__dots" data-carousel-dots aria-hidden="true"></div>
-      </div>
-
-      <a href="#contact" data-nav="contact" class="project-all-bar">
-        <span><span class="lang-nl">Alle projecten bekijken</span><span class="lang-en">View all projects</span><span class="lang-tr">Tüm projeleri gör</span><span class="lang-ar">عرض جميع المشاريع</span><span class="lang-pl">Zobacz wszystkie projekty</span><span class="lang-de">Alle Projekte ansehen</span></span>
-        <span class="arrow" aria-hidden="true">→</span>
-      </a>
-
-      <div class="hairline mt-20"></div>
-
-      <div class="pt-20 pb-12">
-        <p class="eyebrow mb-10"><span class="lang-nl">Klanten</span><span class="lang-en">Clients</span><span class="lang-tr">Müşteriler</span><span class="lang-ar">العملاء</span><span class="lang-pl">Klienci</span><span class="lang-de">Kunden</span></p>
-        <h2 class="font-serif h-section max-w-[14ch]">
-          <span class="lang-nl">Wat zij <em>zeggen</em>.</span>
-          <span class="lang-en">What they <em>say</em>.</span>
-          <span class="lang-tr">Onlar ne <em>diyor</em>.</span>
-          <span class="lang-ar">ما <em>يقولونه</em>.</span>
-          <span class="lang-pl">Co <em>mówią</em>.</span>
-          <span class="lang-de">Was sie <em>sagen</em>.</span>
-        </h2>
-      </div>
-
-      <div class="space-y-20 lg:space-y-28 pb-28 max-w-4xl">
-        <figure class="quote-figure"><span class="hanging-quote" aria-hidden="true">&ldquo;</span>
-          <blockquote class="font-serif text-3xl lg:text-4xl leading-[1.2]">
-            <span class="lang-nl">&ldquo;Eén nummer bellen, en alles werd geregeld. Precies wat ik nodig had.&rdquo;</span>
-            <span class="lang-en">&ldquo;One number to call, and everything was handled. Exactly what I needed.&rdquo;</span>
-            <span class="lang-tr">&ldquo;Tek bir numarayı aradım, her şey halloldu. Tam ihtiyacım olan şey.&rdquo;</span>
-            <span class="lang-ar">&rdquo;اتصالٌ برقمٍ واحد، وكل شيءٍ تم تدبيره. هذا تمامًا ما كنت أحتاجه.&ldquo;</span>
-            <span class="lang-pl">&bdquo;Jeden numer telefonu i wszystko zostało załatwione. Dokładnie to, czego potrzebowałem.&rdquo;</span>
-            <span class="lang-de">&bdquo;Eine Nummer anrufen — und alles wurde geregelt. Genau das, was ich brauchte.&ldquo;</span>
-          </blockquote>
-          <figcaption class="eyebrow mt-6">— Marleen &amp; Tom</figcaption>
-        </figure>
-
-        <figure class="quote-figure"><span class="hanging-quote" aria-hidden="true">&ldquo;</span>
-          <blockquote class="font-serif text-3xl lg:text-4xl leading-[1.2]">
-            <span class="lang-nl">&ldquo;De prijs in week één was ook de prijs op de eindfactuur. Geen kleine lettertjes.&rdquo;</span>
-            <span class="lang-en">&ldquo;The price agreed in week one was the price on the final invoice. No fine print.&rdquo;</span>
-            <span class="lang-tr">&ldquo;İlk haftada anlaştığımız fiyat, son faturadaki fiyatın aynısıydı. Küçük puntolar yok.&rdquo;</span>
-            <span class="lang-ar">&rdquo;السعر المتفق عليه في الأسبوع الأول كان نفسه في الفاتورة النهائية. لا بنود خفية.&ldquo;</span>
-            <span class="lang-pl">&bdquo;Cena ustalona w pierwszym tygodniu była ceną na końcowej fakturze. Bez drobnego druku.&rdquo;</span>
-            <span class="lang-de">&bdquo;Der Preis aus Woche eins stand auch auf der Schlussrechnung. Kein Kleingedrucktes.&ldquo;</span>
-          </blockquote>
-          <figcaption class="eyebrow mt-6">— Familie Yılmaz</figcaption>
-        </figure>
-
-        <figure class="quote-figure"><span class="hanging-quote" aria-hidden="true">&ldquo;</span>
-          <blockquote class="font-serif text-3xl lg:text-4xl leading-[1.2]">
-            <span class="lang-nl">&ldquo;Eindelijk een partij die de loodgieter en de tegelzetter laat samenwerken.&rdquo;</span>
-            <span class="lang-en">&ldquo;Finally — a party that gets the plumber and the tiler to work together.&rdquo;</span>
-            <span class="lang-tr">&ldquo;Sonunda — tesisatçıyla fayansçıyı birlikte çalıştıran bir firma.&rdquo;</span>
-            <span class="lang-ar">&rdquo;أخيرًا — جهةٌ تجعل السبّاك والمبلِّط يعملان معًا.&ldquo;</span>
-            <span class="lang-pl">&bdquo;Wreszcie firma, która sprawia, że hydraulik i glazurnik współpracują.&rdquo;</span>
-            <span class="lang-de">&bdquo;Endlich ein Partner, der Klempner und Fliesenleger zusammenarbeiten lässt.&ldquo;</span>
-          </blockquote>
-          <figcaption class="eyebrow mt-6">— S. Bakker</figcaption>
-        </figure>
-      </div>
-    </section>
-
-    <!-- ============ PROJECT LIGHTBOX ============ -->
-    <div id="project-lightbox" class="project-lightbox" aria-hidden="true" role="dialog" aria-label="Project gallery">
-      <button type="button" class="project-lightbox__close" data-lightbox-close aria-label="Close">
-        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" aria-hidden="true">
-          <line x1="6" y1="6" x2="18" y2="18"/><line x1="6" y1="18" x2="18" y2="6"/>
-        </svg>
-      </button>
-      <button type="button" class="project-lightbox__nav project-lightbox__nav--prev" data-lightbox-prev aria-label="Previous">
-        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
-          <polyline points="15 6 9 12 15 18"/>
-        </svg>
-      </button>
-      <button type="button" class="project-lightbox__nav project-lightbox__nav--next" data-lightbox-next aria-label="Next">
-        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
-          <polyline points="9 6 15 12 9 18"/>
-        </svg>
-      </button>
-      <figure class="project-lightbox__figure">
-        <img id="project-lightbox-img" src="" alt="" />
-        <figcaption class="project-lightbox__caption">
-          <span data-lightbox-counter></span>
-        </figcaption>
-      </figure>
     </div>
 
-    <!-- ============ CONTACT ============ -->
-    <section id="view-contact" class="view">
-      <div class="pt-20 lg:pt-32 pb-16">
-        <p class="eyebrow mb-10">Contact</p>
-        <h1 class="font-serif h-display max-w-[14ch]">
-          <span class="lang-nl">Stuur een <em>bericht</em>.</span>
-          <span class="lang-en">Send a <em>message</em>.</span>
-          <span class="lang-tr">Bir <em>mesaj</em> gönderin.</span>
-          <span class="lang-ar">أرسلوا <em>رسالةً</em>.</span>
-          <span class="lang-pl">Wyślij <em>wiadomość</em>.</span>
-          <span class="lang-de">Senden Sie eine <em>Nachricht</em>.</span>
-        </h1>
+    <div class="proof">
+      <ul class="wrap">
+        <li><div class="proof__num">24/7</div><span class="proof__label" data-i18n="stat.reach">Bereikbaar</span><span class="proof__sub" data-i18n="stat.reachSub">Mail of WhatsApp</span></li>
+        <li><div class="proof__num">120+</div><span class="proof__label" data-i18n="stat.projects">Projecten</span><span class="proof__sub" data-i18n="stat.projectsSub">Succesvol opgeleverd</span></li>
+        <li><div class="proof__num">4,9<small> / 5</small></div><span class="proof__label" data-i18n="stat.rating">Beoordeling</span><span class="proof__sub" data-i18n="stat.ratingSub">Op basis van reviews</span></li>
+        <li><div class="proof__num">100<small>%</small></div><span class="proof__label" data-i18n="stat.insured">Verzekerd</span><span class="proof__sub" data-i18n="stat.insuredSub">Vakmensen met certificaat</span></li>
+      </ul>
+    </div>
+  </div>
+
+  <!-- Services -->
+  <section class="section" aria-labelledby="home-svc">
+    <div class="wrap">
+      <div class="section-head reveal">
+        <div>
+          <p class="eyebrow" data-i18n="svc.eyebrow">Onze diensten</p>
+          <h2 class="h-section" id="home-svc" data-i18n="svc.title">Onze elektrische <em>diensten.</em></h2>
+        </div>
+        <p class="lede" data-i18n="svc.lede">Voor particulieren en bedrijven. Van een storing tot een complete installatie.</p>
       </div>
 
-      <!-- Two halves: e-mail + button | WhatsApp + button. Hairline divider between them on desktop. -->
-      <div class="contact-split pb-28">
-        <div class="contact-half">
-          <p class="eyebrow mb-6">E-mail</p>
-          <a href="mailto:info@alleklussers.nl" class="contact-value font-serif">info@alleklussers.nl</a>
-          <a href="mailto:info@alleklussers.nl" class="btn-ink mt-10">
-            <span class="lang-nl">Stuur een mail</span><span class="lang-en">Send an e-mail</span><span class="lang-tr">Mail gönder</span><span class="lang-ar">أرسل بريداً إلكترونياً</span><span class="lang-pl">Wyślij e-mail</span><span class="lang-de">E-Mail senden</span>
-            <span class="arrow">→</span>
-          </a>
+      <div class="svc-grid">
+        <a class="svc-card svc-card--dark reveal" href="#contact" data-nav="contact" data-service="svc.1">
+          <div class="svc-card__top"><svg class="svc-card__icon" width="34" height="34" aria-hidden="true"><use href="#i-bolt"/></svg><span class="svc-card__badge">24/7</span></div>
+          <h3 data-i18n="svc.1">Storingen en spoed</h3>
+          <p data-i18n="svc.1.desc">Snelle hulp bij stroomuitval, kortsluiting en urgente elektrische problemen.</p>
+        </a>
+        <a class="svc-card reveal" href="#contact" data-nav="contact" data-service="svc.2">
+          <div class="svc-card__top"><svg class="svc-card__icon" width="34" height="34" aria-hidden="true"><use href="#i-box"/></svg></div>
+          <svg class="svc-card__go" width="20" height="20" aria-hidden="true"><use href="#i-arrow"/></svg>
+          <h3 data-i18n="svc.2">Groepenkasten</h3>
+          <p data-i18n="svc.2.desc">Vervangen, uitbreiden en veilig aanpassen van groepenkasten en zekeringen.</p>
+        </a>
+        <a class="svc-card reveal" href="#contact" data-nav="contact" data-service="svc.3">
+          <div class="svc-card__top"><svg class="svc-card__icon" width="34" height="34" aria-hidden="true"><use href="#i-bulb"/></svg></div>
+          <svg class="svc-card__go" width="20" height="20" aria-hidden="true"><use href="#i-arrow"/></svg>
+          <h3 data-i18n="svc.3">Verlichting</h3>
+          <p data-i18n="svc.3.desc">Binnen- en buitenverlichting, spots, dimmers en nette montage.</p>
+        </a>
+        <a class="svc-card reveal" href="#contact" data-nav="contact" data-service="svc.4">
+          <div class="svc-card__top"><svg class="svc-card__icon" width="34" height="34" aria-hidden="true"><use href="#i-socket"/></svg></div>
+          <svg class="svc-card__go" width="20" height="20" aria-hidden="true"><use href="#i-arrow"/></svg>
+          <h3 data-i18n="svc.4">Stopcontacten en schakelaars</h3>
+          <p data-i18n="svc.4.desc">Extra stopcontacten, schakelaars en aansluitpunten veilig geplaatst.</p>
+        </a>
+        <a class="svc-card reveal" href="#contact" data-nav="contact" data-service="svc.5">
+          <div class="svc-card__top"><svg class="svc-card__icon" width="34" height="34" aria-hidden="true"><use href="#i-wire"/></svg></div>
+          <svg class="svc-card__go" width="20" height="20" aria-hidden="true"><use href="#i-arrow"/></svg>
+          <h3 data-i18n="svc.5">Bedrading en aansluitingen</h3>
+          <p data-i18n="svc.5.desc">Nieuwe leidingen en aansluitingen voor keuken, wasmachine en apparatuur.</p>
+        </a>
+        <a class="svc-card reveal" href="#contact" data-nav="contact" data-service="svc.6">
+          <div class="svc-card__top"><svg class="svc-card__icon" width="34" height="34" aria-hidden="true"><use href="#i-shield"/></svg></div>
+          <svg class="svc-card__go" width="20" height="20" aria-hidden="true"><use href="#i-arrow"/></svg>
+          <h3 data-i18n="svc.6">Keuring en veiligheid</h3>
+          <p data-i18n="svc.6.desc">Controle van uw elektrische installatie, veilig en volgens de norm.</p>
+        </a>
+        <a class="svc-card reveal" href="#contact" data-nav="contact" data-service="svc.7">
+          <div class="svc-card__top"><svg class="svc-card__icon" width="34" height="34" aria-hidden="true"><use href="#i-charger"/></svg></div>
+          <svg class="svc-card__go" width="20" height="20" aria-hidden="true"><use href="#i-arrow"/></svg>
+          <h3 data-i18n="svc.7">Laadpalen en slimme elektra</h3>
+          <p data-i18n="svc.7.desc">Een laadpaal bij uw woning en slimme schakelingen voor licht en apparaten.</p>
+        </a>
+        <div class="svc-card svc-card--plain reveal">
+          <p class="eyebrow" style="color: var(--muted)" data-i18n="svc.reno">Ook voor verbouwingen</p>
+          <div class="tags">
+            <span class="tag" data-i18n="svc.bath">Badkamer</span>
+            <span class="tag" data-i18n="svc.kitchen">Keuken</span>
+            <span class="tag" data-i18n="svc.paint">Schilderwerk</span>
+            <span class="tag" data-i18n="svc.floor">Vloeren</span>
+            <span class="tag" data-i18n="svc.turnover">Mutatieonderhoud</span>
+            <span class="tag" data-i18n="svc.reno.full">Complete verbouwing</span>
+          </div>
         </div>
+      </div>
+      <div class="more-row">
+        <a class="link-arrow" href="#services" data-nav="services"><span data-i18n="cta.allServices">Alle zeven diensten bekijken</span><svg width="16" height="16" aria-hidden="true"><use href="#i-arrow"/></svg></a>
+      </div>
+    </div>
+  </section>
 
-        <div class="contact-half">
-          <p class="eyebrow mb-6">WhatsApp</p>
-          <a href="https://wa.me/31685484000" target="_blank" rel="noopener noreferrer" class="contact-value font-serif">
-            +31 6 8548 4000
-          </a>
-          <a href="https://wa.me/31685484000" target="_blank" rel="noopener noreferrer" class="btn-ink mt-10">
-            <span class="lang-nl">Stuur een bericht</span><span class="lang-en">Send a message</span><span class="lang-tr">Mesaj gönder</span><span class="lang-ar">أرسل رسالة</span><span class="lang-pl">Wyślij wiadomość</span><span class="lang-de">Nachricht senden</span>
-            <span class="arrow">→</span>
-          </a>
+  <!-- Projects -->
+  <section class="section" style="padding-top: 0" aria-labelledby="home-proj">
+    <div class="wrap">
+      <div class="section-head reveal">
+        <div>
+          <p class="eyebrow" data-i18n="proj.eyebrow">Projecten</p>
+          <h2 class="h-section" id="home-proj" data-i18n="proj.title">Projecten die <em>netjes zijn afgewerkt.</em></h2>
         </div>
+        <a class="link-arrow" href="#references" data-nav="references"><span data-i18n="cta.allProjects">Alle projecten bekijken</span><svg width="16" height="16" aria-hidden="true"><use href="#i-arrow"/></svg></a>
       </div>
-    </section>
+      <div class="proj-grid">
+        <a class="proj-card reveal" href="#references" data-nav="references" data-scroll="case-badkamer">
+          <div class="proj-card__img">
+            <img src="img/projects/badkamer-1-800.jpg" width="800" height="600" loading="lazy" alt="Gerenoveerde badkamer met LED-spiegelverlichting" />
+            <span class="proj-card__count">5 <span data-i18n="proj.photos">foto's</span></span>
+          </div>
+          <div>
+            <div class="meta"><span>Rotterdam</span><span aria-hidden="true">·</span><span data-i18n="proj.bath.tag">Badkamer renovatie</span></div>
+            <h3 data-i18n="proj.bath.title">Badkamer renovatie met elektra en verlichting</h3>
+            <p data-i18n="proj.bath.desc">Complete badkamer renovatie inclusief nieuwe elektra, LED spiegelverlichting, verlichtingsplan en strakke afwerking.</p>
+          </div>
+        </a>
+        <a class="proj-card reveal" href="#references" data-nav="references" data-scroll="case-eettafel">
+          <div class="proj-card__img">
+            <img src="img/projects/eettafel-1-800.jpg" width="800" height="600" loading="lazy" alt="Hanglampen boven een eettafel" />
+            <span class="proj-card__count">5 <span data-i18n="proj.photos">foto's</span></span>
+          </div>
+          <div>
+            <div class="meta"><span>Rotterdam</span><span aria-hidden="true">·</span><span data-i18n="svc.3">Verlichting</span></div>
+            <h3 data-i18n="proj.dine.title">Eettafelverlichting en aansluitpunten</h3>
+            <p data-i18n="proj.dine.desc">Hanglampen op maat geplaatst met nieuwe bedrading en dimbare schakeling.</p>
+          </div>
+        </a>
+        <a class="proj-card reveal" href="#references" data-nav="references" data-scroll="case-fitness">
+          <div class="proj-card__img">
+            <img src="img/projects/fitness-1-800.jpg" width="800" height="600" loading="lazy" alt="Fitnessruimte met sfeervolle LED-verlichting" />
+            <span class="proj-card__count">2 <span data-i18n="proj.photos">foto's</span></span>
+          </div>
+          <div>
+            <div class="meta"><span>Rotterdam</span><span aria-hidden="true">·</span><span data-i18n="svc.3">Verlichting</span></div>
+            <h3 data-i18n="proj.gym.title">Verlichting voor fitnessruimte</h3>
+            <p data-i18n="proj.gym.desc">Sfeervolle LED-verlichting en extra groepen voor apparatuur.</p>
+          </div>
+        </a>
+      </div>
+    </div>
+  </section>
 
-  </main>
+  <!-- Process -->
+  <section class="section section--sand" aria-labelledby="home-steps">
+    <div class="wrap">
+      <div class="section-head reveal">
+        <div>
+          <p class="eyebrow" data-i18n="step.eyebrow">Werkwijze</p>
+          <h2 class="h-section" id="home-steps" data-i18n="step.title">In vier stappen <em>van vraag naar oplevering.</em></h2>
+        </div>
+      </div>
+      <ol class="steps">
+        <li class="reveal"><div class="step__num">1</div><h3 data-i18n="step.1">Kennismaking</h3><p data-i18n="step.1.desc">U vertelt wat er moet gebeuren, telefonisch of vrijblijvend bij u thuis.</p></li>
+        <li class="reveal"><div class="step__num">2</div><h3 data-i18n="step.2">Voorstel</h3><p data-i18n="step.2.desc">Binnen 24 uur een heldere offerte op maat. Geen verrassingen achteraf.</p></li>
+        <li class="reveal"><div class="step__num">3</div><h3 data-i18n="step.3">Uitvoering</h3><p data-i18n="step.3.desc">Gecertificeerde vakmensen werken veilig, netjes en volgens de norm.</p></li>
+        <li class="reveal"><div class="step__num"><svg width="26" height="26" aria-hidden="true"><use href="#i-check"/></svg></div><h3 data-i18n="step.4">Oplevering</h3><p data-i18n="step.4.desc">We lopen alles samen na en laten de ruimte netjes achter. Zoals afgesproken.</p></li>
+      </ol>
+    </div>
+  </section>
 
-  <!-- ========== TRUST BAR (above footer, every page) ========== -->
-  <section class="trust-bar" aria-label="Reasons to choose us">
-    <div class="trust-bar__inner">
-      <div class="trust-bar__item">
-        <svg class="trust-bar__icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.3" stroke-linecap="round" stroke-linejoin="round">
-          <path d="M20 7l-8-4-8 4v6c0 4.5 3.5 8.5 8 9.5 4.5-1 8-5 8-9.5V7z"/><polyline points="9 12 11 14 15 10"/>
-        </svg>
-        <div>
-          <span class="trust-bar__title"><span class="lang-nl">Transparante prijzen</span><span class="lang-en">Transparent pricing</span><span class="lang-tr">Şeffaf fiyatlar</span><span class="lang-ar">أسعار شفافة</span><span class="lang-pl">Przejrzyste ceny</span><span class="lang-de">Transparente Preise</span></span>
-          <span class="trust-bar__sub"><span class="lang-nl">Geen verrassingen achteraf.</span><span class="lang-en">No surprises afterwards.</span><span class="lang-tr">Sonradan sürpriz yok.</span><span class="lang-ar">لا مفاجآت لاحقاً.</span><span class="lang-pl">Bez niespodzianek na końcu.</span><span class="lang-de">Keine Überraschungen danach.</span></span>
-        </div>
+  <!-- About teaser -->
+  <section class="section" aria-labelledby="home-about">
+    <div class="wrap about">
+      <div class="about__photo reveal">
+        <img src="img/overons-800.jpg" srcset="img/overons-800.jpg 800w, img/overons.jpg 1400w" sizes="(max-width: 960px) 100vw, 50vw" width="800" height="600" loading="lazy" alt="Elektricien van AlleKlussers bij een groepenkast" data-i18n-attr="alt:about.photoAlt" />
       </div>
-      <div class="trust-bar__item">
-        <svg class="trust-bar__icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.3" stroke-linecap="round" stroke-linejoin="round">
-          <path d="M21 15.5a2.5 2.5 0 0 1-2.5 2.5h-9L5 22V6.5A2.5 2.5 0 0 1 7.5 4h11A2.5 2.5 0 0 1 21 6.5v9z"/><line x1="9" y1="10" x2="17" y2="10"/><line x1="9" y1="13" x2="14" y2="13"/>
-        </svg>
-        <div>
-          <span class="trust-bar__title"><span class="lang-nl">Gratis telefonisch advies</span><span class="lang-en">Free phone advice</span><span class="lang-tr">Ücretsiz telefonla danışma</span><span class="lang-ar">استشارة هاتفية مجانية</span><span class="lang-pl">Bezpłatna porada telefoniczna</span><span class="lang-de">Kostenlose Telefonberatung</span></span>
-          <span class="trust-bar__sub"><span class="lang-nl">Snel antwoord op al uw vragen.</span><span class="lang-en">Quick answer to all your questions.</span><span class="lang-tr">Sorularınıza hızlı yanıt.</span><span class="lang-ar">إجابة سريعة على كل أسئلتكم.</span><span class="lang-pl">Szybka odpowiedź na wszystkie pytania.</span><span class="lang-de">Schnelle Antwort auf alle Fragen.</span></span>
-        </div>
-      </div>
-      <div class="trust-bar__item">
-        <svg class="trust-bar__icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.3" stroke-linecap="round" stroke-linejoin="round">
-          <path d="M12 2l8 4v6c0 5-3.5 9-8 10-4.5-1-8-5-8-10V6l8-4z"/><polyline points="8.5 12.5 11 15 16 9.5"/>
-        </svg>
-        <div>
-          <span class="trust-bar__title"><span class="lang-nl">Vakkundige installatie</span><span class="lang-en">Expert installation</span><span class="lang-tr">Uzman montaj</span><span class="lang-ar">تركيب احترافي</span><span class="lang-pl">Fachowy montaż</span><span class="lang-de">Fachgerechte Installation</span></span>
-          <span class="trust-bar__sub"><span class="lang-nl">Veilig, netjes en volgens de norm.</span><span class="lang-en">Safe, tidy and to standard.</span><span class="lang-tr">Güvenli, temiz ve standartlara uygun.</span><span class="lang-ar">آمن ومرتّب ووفق المعايير.</span><span class="lang-pl">Bezpieczny, schludny i zgodny z normami.</span><span class="lang-de">Sicher, sauber und nach Norm.</span></span>
-        </div>
-      </div>
-      <div class="trust-bar__item">
-        <svg class="trust-bar__icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.3" stroke-linecap="round" stroke-linejoin="round">
-          <path d="M13 2L4 14h7l-1 8 9-12h-7l1-8z"/>
-        </svg>
-        <div>
-          <span class="trust-bar__title"><span class="lang-nl">24/7 bereikbaar</span><span class="lang-en">24/7 reachable</span><span class="lang-tr">7/24 ulaşılabilir</span><span class="lang-ar">متاحون 24/7</span><span class="lang-pl">Dostępni 24/7</span><span class="lang-de">24/7 erreichbar</span></span>
-          <span class="trust-bar__sub"><span class="lang-nl">Hulp wanneer u het nodig hebt.</span><span class="lang-en">Help when you need it.</span><span class="lang-tr">İhtiyacınız olduğunda yanınızda.</span><span class="lang-ar">مساعدة وقتما تحتاجونها.</span><span class="lang-pl">Pomoc, gdy jej potrzebujesz.</span><span class="lang-de">Hilfe, wann immer Sie sie brauchen.</span></span>
+      <div class="reveal">
+        <p class="eyebrow" data-i18n="about.eyebrow">Over ons</p>
+        <h2 class="h-section" id="home-about" data-i18n="about.title">Wij regelen uw elektra. <em>U blijft zorgeloos.</em></h2>
+        <p class="lede" data-i18n="about.lede">Wij zijn uw betrouwbare elektrotechnisch specialist voor particulieren en bedrijven. Met veilige installaties, snelle communicatie en netjes werk zorgen wij voor zekerheid in elke situatie.</p>
+        <dl class="facts">
+          <div class="fact"><dt data-i18n="about.approach">Aanpak</dt><dd>1</dd><p data-i18n="about.approachSub">Eén aanspreekpunt voor uw elektra.</p></div>
+          <div class="fact"><dt data-i18n="stat.projects">Projecten</dt><dd>120+</dd><p data-i18n="about.projectsSub">Afgeronde elektra-opdrachten.</p></div>
+          <div class="fact"><dt data-i18n="about.langs">Talen</dt><dd class="fact__small">NL · EN · TR · AR · PL · DE</dd><p data-i18n="about.langsSub">Duidelijke communicatie voor elke klant.</p></div>
+        </dl>
+        <div style="margin-top: 28px">
+          <a class="link-arrow" href="#about" data-nav="about"><span data-i18n="cta.moreAbout">Meer over ons</span><svg width="16" height="16" aria-hidden="true"><use href="#i-arrow"/></svg></a>
         </div>
       </div>
     </div>
   </section>
 
-  <!-- ========== FOOTER ========== -->
-  <footer class="footer-dark mt-12">
-    <div class="max-w-[1400px] mx-auto px-6 lg:px-12 py-16">
-      <div class="grid grid-cols-12 gap-8 items-end">
-        <div class="col-span-12 lg:col-span-6">
-          <a href="#home" data-nav="home" class="inline-flex items-center">
-            <img src="logo.png" alt="AlleKlussers" class="logo-img logo-img--inverted h-14 md:h-16 w-auto" />
-          </a>
+  <!-- Reviews -->
+  <section class="section" style="padding-top: 0" aria-labelledby="home-rev">
+    <div class="wrap">
+      <div class="section-head reveal">
+        <div>
+          <p class="eyebrow" data-i18n="rev.eyebrow">Klanten</p>
+          <h2 class="h-section" id="home-rev" data-i18n="rev.title">Wat zij <em>zeggen.</em></h2>
         </div>
-        <div class="col-span-12 lg:col-span-6 lg:text-right">
-          <p class="text-paper/90 text-sm space-x-4">
-            <a href="mailto:info@alleklussers.nl">info@alleklussers.nl</a>
-            <span class="text-paper/30">·</span>
-            <a href="https://wa.me/31685484000" target="_blank" rel="noopener noreferrer">WhatsApp</a>
-          </p>
+        <div class="rating">
+          <div class="stars" aria-hidden="true"><svg width="20" height="20"><use href="#i-star"/></svg><svg width="20" height="20"><use href="#i-star"/></svg><svg width="20" height="20"><use href="#i-star"/></svg><svg width="20" height="20"><use href="#i-star"/></svg><svg width="20" height="20"><use href="#i-star"/></svg></div>
+          <strong>4,9 / 5</strong><span data-i18n="stat.ratingSub">Op basis van reviews</span>
         </div>
       </div>
-
-      <div class="border-t border-paper/15 pt-6 mt-12 flex flex-wrap items-center justify-between gap-x-6 gap-y-2 text-[11px] text-paper/55 leading-relaxed">
-        <p>
-          © <span id="year">2026</span> AlleKlussers
-          <span class="text-paper/30 mx-1">·</span>
-          <span class="lang-nl">Onderdeel van Boss Tech VOF</span><span class="lang-en">Part of Boss Tech VOF</span><span class="lang-tr">Boss Tech VOF'a bağlıdır</span><span class="lang-ar">جزء من Boss Tech VOF</span><span class="lang-pl">Część Boss Tech VOF</span><span class="lang-de">Teil der Boss Tech VOF</span>
-        </p>
-        <p>
-          KvK 99149680
-          <span class="text-paper/30 mx-1">·</span>
-          BTW NL868827885B01
-        </p>
+      <div data-reviews></div>
+      <div class="partners reveal">
+        <span class="partners__label" data-i18n="partners">Onze partners</span>
+        <a href="https://www.marktplaats.nl/v/diensten-en-vakmensen/elektriciens/m2404945176-elektricien-beschikbaar-storing-groepenkast-stopcontact" target="_blank" rel="noopener noreferrer">Marktplaats</a>
+        <a href="https://klussendirect.nl/elektricien-nodig-in-rotterdam-en-omgeving/" target="_blank" rel="noopener noreferrer">Klussendirect</a>
       </div>
     </div>
-  </footer>
+  </section>
 
-  <!-- ========== Floating contact buttons (WhatsApp + E-mail) ========== -->
-  <div id="contact-widget" class="contact-stack">
-    <a href="https://wa.me/31685484000"
-       target="_blank" rel="noopener noreferrer"
-       class="contact-fab contact-fab--wa"
-       aria-label="WhatsApp">
-      <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"
-           stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
-        <path d="M21 11.5a8.38 8.38 0 0 1-.9 3.8 8.5 8.5 0 0 1-7.6 4.7 8.38 8.38 0 0 1-3.8-.9L3 21l1.9-5.7a8.38 8.38 0 0 1-.9-3.8 8.5 8.5 0 0 1 4.7-7.6 8.38 8.38 0 0 1 3.8-.9h.5a8.48 8.48 0 0 1 8 8v.5z"/>
-      </svg>
-      <span class="contact-fab__tooltip">WhatsApp</span>
-    </a>
-    <a href="mailto:info@alleklussers.nl"
-       class="contact-fab contact-fab--mail"
-       aria-label="E-mail">
-      <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"
-           stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
-        <rect x="3" y="5" width="18" height="14" rx="1.5"/>
-        <polyline points="3 7 12 13 21 7"/>
-      </svg>
-      <span class="contact-fab__tooltip">E-mail</span>
-    </a>
+  <!-- Contact band -->
+  <section class="section section--dark on-dark" aria-labelledby="home-contact">
+    <div class="wrap contact">
+      <div>
+        <p class="eyebrow" data-i18n="nav.contact">Contact</p>
+        <h2 class="h-section" id="home-contact" data-i18n="contact.title">Vraag een <em>offerte</em> aan.</h2>
+        <p class="lede" data-i18n="contact.lede">Vertel kort wat er moet gebeuren. U krijgt binnen 24 uur reactie, inclusief offerte op maat.</p>
+        <div data-contact-links></div>
+      </div>
+      <div data-qform="home"></div>
+    </div>
+  </section>
+</section>
+
+<!-- =========================================================
+     SERVICES
+     ========================================================= -->
+<section class="view" id="view-services" aria-labelledby="svc-title">
+  <div class="page-head on-dark">
+    <div class="wrap">
+      <p class="eyebrow eyebrow--dash" data-i18n="nav.services">Diensten</p>
+      <h1 class="h-page" id="svc-title" data-i18n="svc.title">Onze elektrische <em>diensten.</em></h1>
+      <p class="lede" data-i18n="svc.lede">Voor particulieren en bedrijven. Van een storing tot een complete installatie.</p>
+    </div>
   </div>
 
-  <script src="script.js"></script>
-  <script>document.getElementById('year').textContent = new Date().getFullYear();</script>
+  <section class="section" aria-label="Elektra">
+    <div class="wrap">
+      <ol class="svc-list">
+        <li><a class="svc-row" href="#contact" data-nav="contact" data-service="svc.1"><span class="svc-row__num">01</span><span class="svc-row__icon"><svg width="26" height="26" aria-hidden="true"><use href="#i-bolt"/></svg></span><h3 data-i18n="svc.1">Storingen en spoed</h3><p data-i18n="svc.1.desc">Snelle hulp bij stroomuitval, kortsluiting en urgente elektrische problemen.</p><span class="svc-row__go"><span data-i18n="cta.quote">Offerte aanvragen</span><svg width="16" height="16" aria-hidden="true"><use href="#i-arrow"/></svg></span></a></li>
+        <li><a class="svc-row" href="#contact" data-nav="contact" data-service="svc.2"><span class="svc-row__num">02</span><span class="svc-row__icon"><svg width="26" height="26" aria-hidden="true"><use href="#i-box"/></svg></span><h3 data-i18n="svc.2">Groepenkasten</h3><p data-i18n="svc.2.desc">Vervangen, uitbreiden en veilig aanpassen van groepenkasten en zekeringen.</p><span class="svc-row__go"><span data-i18n="cta.quote">Offerte aanvragen</span><svg width="16" height="16" aria-hidden="true"><use href="#i-arrow"/></svg></span></a></li>
+        <li><a class="svc-row" href="#contact" data-nav="contact" data-service="svc.3"><span class="svc-row__num">03</span><span class="svc-row__icon"><svg width="26" height="26" aria-hidden="true"><use href="#i-bulb"/></svg></span><h3 data-i18n="svc.3">Verlichting</h3><p data-i18n="svc.3.desc">Binnen- en buitenverlichting, spots, dimmers en nette montage.</p><span class="svc-row__go"><span data-i18n="cta.quote">Offerte aanvragen</span><svg width="16" height="16" aria-hidden="true"><use href="#i-arrow"/></svg></span></a></li>
+        <li><a class="svc-row" href="#contact" data-nav="contact" data-service="svc.4"><span class="svc-row__num">04</span><span class="svc-row__icon"><svg width="26" height="26" aria-hidden="true"><use href="#i-socket"/></svg></span><h3 data-i18n="svc.4">Stopcontacten en schakelaars</h3><p data-i18n="svc.4.desc">Extra stopcontacten, schakelaars en aansluitpunten veilig geplaatst.</p><span class="svc-row__go"><span data-i18n="cta.quote">Offerte aanvragen</span><svg width="16" height="16" aria-hidden="true"><use href="#i-arrow"/></svg></span></a></li>
+        <li><a class="svc-row" href="#contact" data-nav="contact" data-service="svc.5"><span class="svc-row__num">05</span><span class="svc-row__icon"><svg width="26" height="26" aria-hidden="true"><use href="#i-wire"/></svg></span><h3 data-i18n="svc.5">Bedrading en aansluitingen</h3><p data-i18n="svc.5.desc">Nieuwe leidingen en aansluitingen voor keuken, wasmachine en apparatuur.</p><span class="svc-row__go"><span data-i18n="cta.quote">Offerte aanvragen</span><svg width="16" height="16" aria-hidden="true"><use href="#i-arrow"/></svg></span></a></li>
+        <li><a class="svc-row" href="#contact" data-nav="contact" data-service="svc.6"><span class="svc-row__num">06</span><span class="svc-row__icon"><svg width="26" height="26" aria-hidden="true"><use href="#i-shield"/></svg></span><h3 data-i18n="svc.6">Keuring en veiligheid</h3><p data-i18n="svc.6.desc">Controle van uw elektrische installatie, veilig en volgens de norm.</p><span class="svc-row__go"><span data-i18n="cta.quote">Offerte aanvragen</span><svg width="16" height="16" aria-hidden="true"><use href="#i-arrow"/></svg></span></a></li>
+        <li><a class="svc-row" href="#contact" data-nav="contact" data-service="svc.7"><span class="svc-row__num">07</span><span class="svc-row__icon"><svg width="26" height="26" aria-hidden="true"><use href="#i-charger"/></svg></span><h3 data-i18n="svc.7">Laadpalen en slimme elektra</h3><p data-i18n="svc.7.desc">Een laadpaal bij uw woning en slimme schakelingen voor licht en apparaten.</p><span class="svc-row__go"><span data-i18n="cta.quote">Offerte aanvragen</span><svg width="16" height="16" aria-hidden="true"><use href="#i-arrow"/></svg></span></a></li>
+      </ol>
+    </div>
+  </section>
+
+  <section class="section section--sand" aria-labelledby="reno-title">
+    <div class="wrap">
+      <div class="section-head">
+        <div>
+          <p class="eyebrow" data-i18n="svc.eyebrow">Onze diensten</p>
+          <h2 class="h-section" id="reno-title" data-i18n="svc.reno">Ook voor verbouwingen</h2>
+        </div>
+        <div class="tags" style="max-width: 420px">
+          <span class="tag" data-i18n="svc.paint">Schilderwerk</span>
+          <span class="tag" data-i18n="svc.floor">Vloeren</span>
+          <span class="tag" data-i18n="svc.turnover">Mutatieonderhoud</span>
+        </div>
+      </div>
+      <div class="reno-grid">
+        <article class="reno-card"><span class="svc-row__icon"><svg width="26" height="26" aria-hidden="true"><use href="#i-bath"/></svg></span><h3 data-i18n="svc.bath">Badkamer</h3><p data-i18n="svc.bath.desc">Tegelwerk, sanitair, ventilatie en elektra — als één samenhangend project.</p><a class="link-arrow" href="#contact" data-nav="contact" data-service="other"><span data-i18n="cta.quote">Offerte aanvragen</span><svg width="16" height="16" aria-hidden="true"><use href="#i-arrow"/></svg></a></article>
+        <article class="reno-card"><span class="svc-row__icon"><svg width="26" height="26" aria-hidden="true"><use href="#i-kitchen"/></svg></span><h3 data-i18n="svc.kitchen">Keuken</h3><p data-i18n="svc.kitchen.desc">Van uitbreken tot inmeten, monteren en aansluiten. Eén planning, één aanspreekpunt.</p><a class="link-arrow" href="#contact" data-nav="contact" data-service="other"><span data-i18n="cta.quote">Offerte aanvragen</span><svg width="16" height="16" aria-hidden="true"><use href="#i-arrow"/></svg></a></article>
+        <article class="reno-card"><span class="svc-row__icon"><svg width="26" height="26" aria-hidden="true"><use href="#i-house"/></svg></span><h3 data-i18n="svc.reno.full">Complete verbouwing</h3><p data-i18n="svc.reno.full.desc">Een woning van A tot Z — wij regisseren alle disciplines en de planning voor u.</p><a class="link-arrow" href="#contact" data-nav="contact" data-service="other"><span data-i18n="cta.quote">Offerte aanvragen</span><svg width="16" height="16" aria-hidden="true"><use href="#i-arrow"/></svg></a></article>
+      </div>
+    </div>
+  </section>
+
+  <section class="section" aria-labelledby="svc-steps">
+    <div class="wrap">
+      <div class="section-head">
+        <div>
+          <p class="eyebrow" data-i18n="step.eyebrow">Werkwijze</p>
+          <h2 class="h-section" id="svc-steps" data-i18n="step.title">In vier stappen <em>van vraag naar oplevering.</em></h2>
+        </div>
+      </div>
+      <ol class="steps">
+        <li><div class="step__num">1</div><h3 data-i18n="step.1">Kennismaking</h3><p data-i18n="step.1.desc">U vertelt wat er moet gebeuren, telefonisch of vrijblijvend bij u thuis.</p></li>
+        <li><div class="step__num">2</div><h3 data-i18n="step.2">Voorstel</h3><p data-i18n="step.2.desc">Binnen 24 uur een heldere offerte op maat. Geen verrassingen achteraf.</p></li>
+        <li><div class="step__num">3</div><h3 data-i18n="step.3">Uitvoering</h3><p data-i18n="step.3.desc">Gecertificeerde vakmensen werken veilig, netjes en volgens de norm.</p></li>
+        <li><div class="step__num"><svg width="26" height="26" aria-hidden="true"><use href="#i-check"/></svg></div><h3 data-i18n="step.4">Oplevering</h3><p data-i18n="step.4.desc">We lopen alles samen na en laten de ruimte netjes achter. Zoals afgesproken.</p></li>
+      </ol>
+    </div>
+  </section>
+
+  <div class="wrap" style="padding-bottom: var(--section)" data-strip></div>
+</section>
+
+<!-- =========================================================
+     PROJECTS
+     ========================================================= -->
+<section class="view" id="view-references" aria-labelledby="proj-page-title">
+  <div class="page-head on-dark">
+    <div class="wrap">
+      <p class="eyebrow eyebrow--dash" data-i18n="proj.eyebrow">Projecten</p>
+      <h1 class="h-page" id="proj-page-title" data-i18n="proj.title">Projecten die <em>netjes zijn afgewerkt.</em></h1>
+      <p class="lede" data-i18n="proj.lede">Bij AlleKlussers leveren we strak afgewerkt werk, van elektra tot renovatie. We denken mee, werken netjes en zorgen voor duurzame resultaten met oog voor detail, verlichting en moderne afwerking.</p>
+    </div>
+  </div>
+
+  <div class="wrap" style="padding-top: clamp(24px, 4vw, 40px)">
+    <!-- Badkamer -->
+    <article class="case" id="case-badkamer" aria-labelledby="case-badkamer-title">
+      <div class="case__gallery" data-gallery="badkamer">
+        <button type="button" class="case__photo case__photo--lead" data-index="0"><img src="img/projects/badkamer-1.jpg" srcset="img/projects/badkamer-1-800.jpg 800w, img/projects/badkamer-1.jpg 1400w" sizes="(max-width: 900px) 100vw, 55vw" data-full="img/projects/badkamer-1.jpg" width="1400" height="1050" loading="lazy" alt="Badkamer renovatie — overzicht" /></button>
+        <button type="button" class="case__photo" data-index="1"><img src="img/projects/badkamer-2-800.jpg" data-full="img/projects/badkamer-2.jpg" width="800" height="600" loading="lazy" alt="Badkamer renovatie — detail 1" /></button>
+        <button type="button" class="case__photo" data-index="2"><img src="img/projects/badkamer-3-800.jpg" data-full="img/projects/badkamer-3.jpg" width="800" height="600" loading="lazy" alt="Badkamer renovatie — detail 2" /></button>
+        <button type="button" class="case__photo" data-index="3"><img src="img/projects/badkamer-4-800.jpg" data-full="img/projects/badkamer-4.jpg" width="800" height="600" loading="lazy" alt="Badkamer renovatie — detail 3" /></button>
+        <button type="button" class="case__photo" data-index="4"><img src="img/projects/badkamer-5-800.jpg" data-full="img/projects/badkamer-5.jpg" width="800" height="600" loading="lazy" alt="Badkamer renovatie — detail 4" /></button>
+      </div>
+      <div class="case__body">
+        <div class="meta"><span>Rotterdam</span><span aria-hidden="true">·</span><span data-i18n="proj.bath.tag">Badkamer renovatie</span></div>
+        <h2 id="case-badkamer-title" data-i18n="proj.bath.title">Badkamer renovatie met elektra en verlichting</h2>
+        <p data-i18n="proj.bath.desc">Complete badkamer renovatie inclusief nieuwe elektra, LED spiegelverlichting, verlichtingsplan en strakke afwerking.</p>
+        <ul class="case__highlights">
+          <li><svg width="22" height="22" aria-hidden="true"><use href="#i-bulb"/></svg><span data-i18n="proj.bath.h1">LED spiegelverlichting</span></li>
+          <li><svg width="22" height="22" aria-hidden="true"><use href="#i-socket"/></svg><span data-i18n="proj.bath.h2">Nieuwe aansluitpunten</span></li>
+          <li><svg width="22" height="22" aria-hidden="true"><use href="#i-pencil"/></svg><span data-i18n="proj.bath.h3">Strakke afwerking</span></li>
+        </ul>
+        <div class="case__actions">
+          <button type="button" class="btn btn--ink" data-open-gallery="badkamer"><span data-i18n="cta.viewProject">Bekijk project</span> · 5</button>
+          <a class="btn btn--line" href="#contact" data-nav="contact" data-service="svc.3" data-i18n="cta.quote">Offerte aanvragen</a>
+        </div>
+      </div>
+    </article>
+
+    <!-- Eettafel -->
+    <article class="case" id="case-eettafel" aria-labelledby="case-eettafel-title">
+      <div class="case__gallery" data-gallery="eettafel">
+        <button type="button" class="case__photo case__photo--lead" data-index="0"><img src="img/projects/eettafel-1.jpg" srcset="img/projects/eettafel-1-800.jpg 800w, img/projects/eettafel-1.jpg 1400w" sizes="(max-width: 900px) 100vw, 55vw" data-full="img/projects/eettafel-1.jpg" width="1400" height="1050" loading="lazy" alt="Eettafelverlichting — overzicht" /></button>
+        <button type="button" class="case__photo" data-index="1"><img src="img/projects/eettafel-2-800.jpg" data-full="img/projects/eettafel-2.jpg" width="800" height="600" loading="lazy" alt="Eettafelverlichting — detail 1" /></button>
+        <button type="button" class="case__photo" data-index="2"><img src="img/projects/eettafel-3-800.jpg" data-full="img/projects/eettafel-3.jpg" width="800" height="600" loading="lazy" alt="Eettafelverlichting — detail 2" /></button>
+        <button type="button" class="case__photo" data-index="3"><img src="img/projects/eettafel-4-800.jpg" data-full="img/projects/eettafel-4.jpg" width="800" height="600" loading="lazy" alt="Eettafelverlichting — detail 3" /></button>
+        <button type="button" class="case__photo" data-index="4"><img src="img/projects/eettafel-5-800.jpg" data-full="img/projects/eettafel-5.jpg" width="800" height="600" loading="lazy" alt="Eettafelverlichting — detail 4" /></button>
+      </div>
+      <div class="case__body">
+        <div class="meta"><span>Rotterdam</span><span aria-hidden="true">·</span><span data-i18n="svc.3">Verlichting</span></div>
+        <h2 id="case-eettafel-title" data-i18n="proj.dine.title">Eettafelverlichting en aansluitpunten</h2>
+        <p data-i18n="proj.dine.desc">Hanglampen op maat geplaatst met nieuwe bedrading en dimbare schakeling.</p>
+        <ul class="case__highlights">
+          <li><svg width="22" height="22" aria-hidden="true"><use href="#i-bulb"/></svg><span data-i18n="proj.dine.h1">Hanglampen op maat</span></li>
+          <li><svg width="22" height="22" aria-hidden="true"><use href="#i-wire"/></svg><span data-i18n="proj.dine.h2">Nieuwe bedrading</span></li>
+          <li><svg width="22" height="22" aria-hidden="true"><use href="#i-dimmer"/></svg><span data-i18n="proj.dine.h3">Dimbare schakeling</span></li>
+        </ul>
+        <div class="case__actions">
+          <button type="button" class="btn btn--ink" data-open-gallery="eettafel"><span data-i18n="cta.viewProject">Bekijk project</span> · 5</button>
+          <a class="btn btn--line" href="#contact" data-nav="contact" data-service="svc.3" data-i18n="cta.quote">Offerte aanvragen</a>
+        </div>
+      </div>
+    </article>
+
+    <!-- Fitness -->
+    <article class="case" id="case-fitness" aria-labelledby="case-fitness-title">
+      <div class="case__gallery case__gallery--duo" data-gallery="fitness">
+        <button type="button" class="case__photo" data-index="0"><img src="img/projects/fitness-1-800.jpg" data-full="img/projects/fitness-1.jpg" width="800" height="600" loading="lazy" alt="Fitnessruimte — LED-verlichting" /></button>
+        <button type="button" class="case__photo" data-index="1"><img src="img/projects/fitness-2-800.jpg" data-full="img/projects/fitness-2.jpg" width="800" height="600" loading="lazy" alt="Fitnessruimte — detail" /></button>
+      </div>
+      <div class="case__body">
+        <div class="meta"><span>Rotterdam</span><span aria-hidden="true">·</span><span data-i18n="svc.3">Verlichting</span></div>
+        <h2 id="case-fitness-title" data-i18n="proj.gym.title">Verlichting voor fitnessruimte</h2>
+        <p data-i18n="proj.gym.desc">Sfeervolle LED-verlichting en extra groepen voor apparatuur.</p>
+        <ul class="case__highlights">
+          <li><svg width="22" height="22" aria-hidden="true"><use href="#i-bulb"/></svg><span data-i18n="proj.gym.h1">Sfeer-LED</span></li>
+          <li><svg width="22" height="22" aria-hidden="true"><use href="#i-layers"/></svg><span data-i18n="proj.gym.h2">Extra groepen</span></li>
+          <li><svg width="22" height="22" aria-hidden="true"><use href="#i-shield"/></svg><span data-i18n="proj.gym.h3">Veilige montage</span></li>
+        </ul>
+        <div class="case__actions">
+          <button type="button" class="btn btn--ink" data-open-gallery="fitness"><span data-i18n="cta.viewProject">Bekijk project</span> · 2</button>
+          <a class="btn btn--line" href="#contact" data-nav="contact" data-service="svc.3" data-i18n="cta.quote">Offerte aanvragen</a>
+        </div>
+      </div>
+    </article>
+  </div>
+
+  <section class="section section--sand" aria-labelledby="proj-rev">
+    <div class="wrap">
+      <div class="section-head">
+        <div>
+          <p class="eyebrow" data-i18n="rev.eyebrow">Klanten</p>
+          <h2 class="h-section" id="proj-rev" data-i18n="rev.title">Wat zij <em>zeggen.</em></h2>
+        </div>
+        <div class="rating">
+          <div class="stars" aria-hidden="true"><svg width="20" height="20"><use href="#i-star"/></svg><svg width="20" height="20"><use href="#i-star"/></svg><svg width="20" height="20"><use href="#i-star"/></svg><svg width="20" height="20"><use href="#i-star"/></svg><svg width="20" height="20"><use href="#i-star"/></svg></div>
+          <strong>4,9 / 5</strong><span data-i18n="stat.ratingSub">Op basis van reviews</span>
+        </div>
+      </div>
+      <div data-reviews></div>
+    </div>
+  </section>
+
+  <div class="wrap" style="padding-block: var(--section)" data-strip></div>
+</section>
+
+<!-- =========================================================
+     ABOUT
+     ========================================================= -->
+<section class="view" id="view-about" aria-labelledby="about-page-title">
+  <div class="page-head on-dark">
+    <div class="wrap page-head__split">
+      <div>
+        <p class="eyebrow eyebrow--dash" data-i18n="about.eyebrow">Over ons</p>
+        <h1 class="h-page" id="about-page-title" data-i18n="about.title">Wij regelen uw elektra. <em>U blijft zorgeloos.</em></h1>
+        <p class="lede" data-i18n="about.lede">Wij zijn uw betrouwbare elektrotechnisch specialist voor particulieren en bedrijven. Met veilige installaties, snelle communicatie en netjes werk zorgen wij voor zekerheid in elke situatie.</p>
+      </div>
+      <div class="page-head__photo">
+        <img src="img/overons-800.jpg" srcset="img/overons-800.jpg 800w, img/overons.jpg 1400w" sizes="(max-width: 900px) 100vw, 45vw" width="800" height="600" loading="lazy" alt="Elektricien van AlleKlussers bij een groepenkast" data-i18n-attr="alt:about.photoAlt" />
+      </div>
+    </div>
+  </div>
+
+  <section class="section" aria-label="AlleKlussers">
+    <div class="wrap">
+      <dl class="facts" style="margin-top: 0">
+        <div class="fact"><dt data-i18n="about.approach">Aanpak</dt><dd>1</dd><p data-i18n="about.approachSub">Eén aanspreekpunt voor uw elektra.</p></div>
+        <div class="fact"><dt data-i18n="stat.projects">Projecten</dt><dd>120+</dd><p data-i18n="about.projectsSub">Afgeronde elektra-opdrachten.</p></div>
+        <div class="fact"><dt data-i18n="about.langs">Talen</dt><dd class="fact__small">NL · EN · TR · AR · PL · DE</dd><p data-i18n="about.langsSub">Duidelijke communicatie voor elke klant.</p></div>
+      </dl>
+    </div>
+  </section>
+
+  <section class="section" style="padding-top: 0" aria-label="Werk">
+    <div class="wrap about">
+      <div class="about__photo">
+        <img src="img/werk-800.jpg" srcset="img/werk-800.jpg 800w, img/werk.jpg 1400w" sizes="(max-width: 960px) 100vw, 50vw" width="800" height="450" loading="lazy" alt="Elektricien van AlleKlussers monteert een stopcontact" />
+      </div>
+      <ul class="trust" style="grid-template-columns: 1fr 1fr; gap: 28px">
+        <li><span class="trust__icon"><svg width="22" height="22" aria-hidden="true"><use href="#i-tag"/></svg></span><div><strong data-i18n="trust.prices">Transparante prijzen</strong><span data-i18n="trust.pricesSub">Geen verrassingen achteraf.</span></div></li>
+        <li><span class="trust__icon"><svg width="22" height="22" aria-hidden="true"><use href="#i-chat"/></svg></span><div><strong data-i18n="trust.advice">Gratis telefonisch advies</strong><span data-i18n="trust.adviceSub">Snel antwoord op al uw vragen.</span></div></li>
+        <li><span class="trust__icon"><svg width="22" height="22" aria-hidden="true"><use href="#i-shield"/></svg></span><div><strong data-i18n="trust.install">Vakkundige installatie</strong><span data-i18n="trust.installSub">Veilig, netjes en volgens de norm.</span></div></li>
+        <li><span class="trust__icon"><svg width="22" height="22" aria-hidden="true"><use href="#i-clock"/></svg></span><div><strong data-i18n="top.247">24/7 bereikbaar</strong><span data-i18n="trust.247Sub">Hulp wanneer u het nodig hebt.</span></div></li>
+        <li><span class="trust__icon"><svg width="22" height="22" aria-hidden="true"><use href="#i-house"/></svg></span><div><strong data-i18n="trust.talk">Vrijblijvend gesprek</strong><span data-i18n="trust.talkSub">Bij u thuis</span></div></li>
+        <li><span class="trust__icon"><svg width="22" height="22" aria-hidden="true"><use href="#i-mail"/></svg></span><div><strong data-i18n="trust.reply24">Binnen 24 uur reactie</strong><span data-i18n="trust.reply24Sub">Inclusief offerte op maat</span></div></li>
+      </ul>
+    </div>
+  </section>
+
+  <section class="section section--sand" aria-labelledby="about-steps">
+    <div class="wrap">
+      <div class="section-head">
+        <div>
+          <p class="eyebrow" data-i18n="step.eyebrow">Werkwijze</p>
+          <h2 class="h-section" id="about-steps" data-i18n="step.title">In vier stappen <em>van vraag naar oplevering.</em></h2>
+        </div>
+      </div>
+      <ol class="steps">
+        <li><div class="step__num">1</div><h3 data-i18n="step.1">Kennismaking</h3><p data-i18n="step.1.desc">U vertelt wat er moet gebeuren, telefonisch of vrijblijvend bij u thuis.</p></li>
+        <li><div class="step__num">2</div><h3 data-i18n="step.2">Voorstel</h3><p data-i18n="step.2.desc">Binnen 24 uur een heldere offerte op maat. Geen verrassingen achteraf.</p></li>
+        <li><div class="step__num">3</div><h3 data-i18n="step.3">Uitvoering</h3><p data-i18n="step.3.desc">Gecertificeerde vakmensen werken veilig, netjes en volgens de norm.</p></li>
+        <li><div class="step__num"><svg width="26" height="26" aria-hidden="true"><use href="#i-check"/></svg></div><h3 data-i18n="step.4">Oplevering</h3><p data-i18n="step.4.desc">We lopen alles samen na en laten de ruimte netjes achter. Zoals afgesproken.</p></li>
+      </ol>
+    </div>
+  </section>
+
+  <div class="wrap" style="padding-block: var(--section)" data-strip></div>
+</section>
+
+<!-- =========================================================
+     CONTACT
+     ========================================================= -->
+<section class="view" id="view-contact" aria-labelledby="contact-page-title">
+  <div class="section section--dark on-dark">
+    <div class="wrap contact">
+      <div>
+        <p class="eyebrow eyebrow--dash" data-i18n="nav.contact">Contact</p>
+        <h1 class="h-section" id="contact-page-title" data-i18n="contact.pageTitle">Stuur een <em>bericht.</em></h1>
+        <p class="lede" data-i18n="contact.lede">Vertel kort wat er moet gebeuren. U krijgt binnen 24 uur reactie, inclusief offerte op maat.</p>
+        <div data-contact-links></div>
+      </div>
+      <div data-qform="contact"></div>
+    </div>
+  </div>
+  <section class="section" aria-label="Waarom AlleKlussers">
+    <div class="wrap">
+      <ul class="trust">
+        <li><span class="trust__icon"><svg width="22" height="22" aria-hidden="true"><use href="#i-tag"/></svg></span><div><strong data-i18n="trust.prices">Transparante prijzen</strong><span data-i18n="trust.pricesSub">Geen verrassingen achteraf.</span></div></li>
+        <li><span class="trust__icon"><svg width="22" height="22" aria-hidden="true"><use href="#i-chat"/></svg></span><div><strong data-i18n="trust.advice">Gratis telefonisch advies</strong><span data-i18n="trust.adviceSub">Snel antwoord op al uw vragen.</span></div></li>
+        <li><span class="trust__icon"><svg width="22" height="22" aria-hidden="true"><use href="#i-shield"/></svg></span><div><strong data-i18n="trust.install">Vakkundige installatie</strong><span data-i18n="trust.installSub">Veilig, netjes en volgens de norm.</span></div></li>
+        <li><span class="trust__icon"><svg width="22" height="22" aria-hidden="true"><use href="#i-clock"/></svg></span><div><strong data-i18n="top.247">24/7 bereikbaar</strong><span data-i18n="trust.247Sub">Hulp wanneer u het nodig hebt.</span></div></li>
+      </ul>
+    </div>
+  </section>
+</section>
+
+</main>
+
+<!-- ===================== FOOTER ===================== -->
+<footer class="footer">
+  <div class="wrap footer__grid">
+    <div class="footer__brand">
+      <img src="img/logo-light.png" alt="AlleKlussers" width="600" height="150" loading="lazy" />
+      <p data-i18n="hero.lede">Storingen, groepenkasten, verlichting, bedrading en veilige installaties — snel, veilig en netjes afgewerkt.</p>
+    </div>
+    <nav aria-labelledby="f-svc">
+      <h2 id="f-svc" data-i18n="nav.services">Diensten</h2>
+      <ul>
+        <li><a href="#services" data-nav="services" data-i18n="svc.1">Storingen en spoed</a></li>
+        <li><a href="#services" data-nav="services" data-i18n="svc.2">Groepenkasten</a></li>
+        <li><a href="#services" data-nav="services" data-i18n="svc.3">Verlichting</a></li>
+        <li><a href="#services" data-nav="services" data-i18n="svc.7">Laadpalen en slimme elektra</a></li>
+      </ul>
+    </nav>
+    <nav aria-labelledby="f-co">
+      <h2 id="f-co" data-i18n="foot.company">Bedrijf</h2>
+      <ul>
+        <li><a href="#references" data-nav="references" data-i18n="nav.projects">Projecten</a></li>
+        <li><a href="#about" data-nav="about" data-i18n="nav.about">Over ons</a></li>
+        <li><a href="#contact" data-nav="contact" data-i18n="nav.contact">Contact</a></li>
+      </ul>
+    </nav>
+    <div>
+      <h2 data-i18n="nav.contact">Contact</h2>
+      <ul>
+        <li><a href="mailto:info@alleklussers.nl">info@alleklussers.nl</a></li>
+        <li><a href="https://wa.me/31685484000" target="_blank" rel="noopener noreferrer">WhatsApp +31 6 8548 4000</a></li>
+      </ul>
+    </div>
+  </div>
+  <div class="wrap footer__bottom">
+    <span>© <span data-year>2026</span> AlleKlussers · <span data-i18n="foot.part">Onderdeel van Boss Tech VOF</span></span>
+    <span>KvK 99149680 · BTW NL868827885B01</span>
+  </div>
+</footer>
+
+<a class="fab" href="https://wa.me/31685484000" target="_blank" rel="noopener noreferrer" aria-label="WhatsApp">
+  <svg width="28" height="28" aria-hidden="true"><use href="#i-wa"/></svg>
+</a>
+
+<!-- Lightbox -->
+<div class="lightbox" id="lightbox" role="dialog" aria-modal="true" aria-label="Foto's" hidden>
+  <button type="button" class="lightbox__btn lightbox__close" data-lb="close" data-i18n-attr="aria-label:nav.close" aria-label="Sluiten"><svg width="22" height="22" aria-hidden="true"><use href="#i-x"/></svg></button>
+  <button type="button" class="lightbox__btn lightbox__prev" data-lb="prev" data-i18n-attr="aria-label:nav.prev" aria-label="Vorige"><svg width="22" height="22" aria-hidden="true"><use href="#i-left"/></svg></button>
+  <figure>
+    <img id="lightbox-img" src="" alt="" />
+    <figcaption id="lightbox-count"></figcaption>
+  </figure>
+  <button type="button" class="lightbox__btn lightbox__next" data-lb="next" data-i18n-attr="aria-label:nav.next" aria-label="Volgende"><svg width="22" height="22" aria-hidden="true"><use href="#i-right"/></svg></button>
+</div>
+
+<!-- Templates filled in by assets/site.js -->
+<template id="tpl-contact-links">
+  <div class="contact__links">
+    <a class="contact__link" href="mailto:info@alleklussers.nl">
+      <svg width="22" height="22" aria-hidden="true" style="color: var(--amber)"><use href="#i-mail"/></svg>
+      <span><small>E-mail</small><strong>info@alleklussers.nl</strong></span>
+    </a>
+    <a class="contact__link" href="https://wa.me/31685484000" target="_blank" rel="noopener noreferrer">
+      <svg width="22" height="22" aria-hidden="true" style="color: var(--green)"><use href="#i-wa"/></svg>
+      <span><small>WhatsApp</small><strong>+31 6 8548 4000</strong></span>
+    </a>
+  </div>
+  <ul class="contact__checks">
+    <li><svg width="18" height="18" aria-hidden="true"><use href="#i-check"/></svg><span><span data-i18n="trust.prices">Transparante prijzen</span> — <span data-i18n="trust.pricesSub">Geen verrassingen achteraf.</span></span></li>
+    <li><svg width="18" height="18" aria-hidden="true"><use href="#i-check"/></svg><span data-i18n="trust.advice">Gratis telefonisch advies</span></li>
+    <li><svg width="18" height="18" aria-hidden="true"><use href="#i-check"/></svg><span><span data-i18n="trust.install">Vakkundige installatie</span> — <span data-i18n="trust.installSub">Veilig, netjes en volgens de norm.</span></span></li>
+  </ul>
+</template>
+
+<template id="tpl-qform">
+  <form class="qform" novalidate>
+    <div class="qform__row">
+      <div><label for="{p}-name" data-i18n="form.name">Naam</label><input class="field" id="{p}-name" name="name" autocomplete="name" required /></div>
+      <div><label for="{p}-postcode" data-i18n="form.postcode">Postcode</label><input class="field" id="{p}-postcode" name="postcode" autocomplete="postal-code" placeholder="3011 AD" /></div>
+    </div>
+    <div><label for="{p}-city" data-i18n="form.city">Plaats</label><input class="field" id="{p}-city" name="city" autocomplete="address-level2" /></div>
+    <fieldset>
+      <legend data-i18n="form.type">Soort werk</legend>
+      <div class="chips" data-chips></div>
+    </fieldset>
+    <div><label for="{p}-desc" data-i18n="form.desc">Omschrijving</label><textarea class="field" id="{p}-desc" name="desc" required placeholder="Beschrijf kort wat er moet gebeuren" data-i18n-attr="placeholder:form.descPh"></textarea></div>
+    <p class="qform__error" role="alert" data-error data-i18n="form.error">Vul uw naam en een korte omschrijving in.</p>
+    <div class="qform__send">
+      <button type="submit" class="btn btn--amber" data-send="wa"><svg width="18" height="18" aria-hidden="true"><use href="#i-wa"/></svg><span data-i18n="form.sendWa">Verstuur via WhatsApp</span></button>
+      <button type="submit" class="btn btn--ghost" data-send="mail"><svg width="18" height="18" aria-hidden="true"><use href="#i-mail"/></svg><span data-i18n="form.sendMail">Verstuur via e-mail</span></button>
+    </div>
+    <p class="qform__note" data-i18n="form.note">Uw bericht opent in WhatsApp of uw e-mailprogramma. Wij antwoorden binnen 24 uur.</p>
+  </form>
+</template>
+
+<template id="tpl-strip">
+  <div class="strip">
+    <div>
+      <h2 data-i18n="contact.strip">Hulp nodig met uw elektra?</h2>
+      <p><span data-i18n="trust.reply24">Binnen 24 uur reactie</span> · <span data-i18n="trust.reply24Sub">Inclusief offerte op maat</span></p>
+    </div>
+    <div class="strip__actions">
+      <a class="btn btn--ink" href="#contact" data-nav="contact"><span data-i18n="cta.quote">Offerte aanvragen</span><svg class="arrow" width="18" height="18" aria-hidden="true"><use href="#i-arrow"/></svg></a>
+      <a class="btn btn--line" href="https://wa.me/31685484000" target="_blank" rel="noopener noreferrer"><svg width="18" height="18" aria-hidden="true"><use href="#i-wa"/></svg>WhatsApp</a>
+    </div>
+  </div>
+</template>
+
+<template id="tpl-reviews">
+  <div class="reviews">
+    <figure class="review reveal"><span class="review__tag" data-i18n="rev.1.tag">Storingen</span><blockquote data-i18n="rev.1">“Snel geholpen bij een storing. Rustige communicatie, nette afwerking en geen verrassingen achteraf.”</blockquote><figcaption>— Marleen &amp; Tom</figcaption></figure>
+    <figure class="review review--dark reveal"><span class="review__tag" data-i18n="rev.2.tag">Groepenkast</span><blockquote data-i18n="rev.2">“Groepenkast netjes vervangen en alles duidelijk uitgelegd. Binnen één dag geregeld.”</blockquote><figcaption>— Familie Yılmaz</figcaption></figure>
+    <figure class="review reveal"><span class="review__tag" data-i18n="rev.3.tag">Verlichting</span><blockquote data-i18n="rev.3">“Nieuwe stopcontacten en verlichting laten plaatsen. Alles strak afgewerkt en schoon achtergelaten.”</blockquote><figcaption>— S. Bakker</figcaption></figure>
+  </div>
+</template>
+
+<script src="assets/i18n.js"></script>
+<script src="assets/site.js"></script>
 </body>
 </html>

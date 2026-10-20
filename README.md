@@ -11,7 +11,7 @@
   <img alt="HTML5" src="https://img.shields.io/badge/HTML5-0a0a0a?logo=html5&logoColor=white">
   <img alt="CSS3" src="https://img.shields.io/badge/CSS3-0a0a0a?logo=css3&logoColor=white">
   <img alt="JavaScript" src="https://img.shields.io/badge/JavaScript-vanilla-0a0a0a?logo=javascript&logoColor=white">
-  <img alt="Tailwind CSS" src="https://img.shields.io/badge/Tailwind-CDN-0a0a0a?logo=tailwindcss&logoColor=white">
+  <img alt="No framework" src="https://img.shields.io/badge/no%20framework-no%20build-0a0a0a">
   <img alt="Vercel" src="https://img.shields.io/badge/hosted%20on-Vercel-0a0a0a?logo=vercel&logoColor=white">
   <img alt="6 languages" src="https://img.shields.io/badge/languages-6-b45309">
 </p>
@@ -50,7 +50,7 @@ homeowner or business to see what they do, trust them, and ask for a quote in on
 
 ### 🖼 Projects
 - Real jobs with photo galleries: a bathroom with LED mirror lighting, dining-table lighting, a home gym
-- Swipeable carousel with arrows and dots
+- Each project shows what was done, with a lead photo and thumbnails
 - Full-screen lightbox, navigable with arrow keys, closes with Escape
 
 </td>
@@ -59,9 +59,10 @@ homeowner or business to see what they do, trust them, and ask for a quote in on
 <td valign="top">
 
 ### 💬 Getting in touch
-- "Request a quote" buttons throughout the page
-- Floating WhatsApp and e-mail buttons that stay in reach on every screen
-- Direct links to the company's Marktplaats and Klussendirect listings
+- A short quote form: name, postcode, type of work and a description
+- The form writes a ready-made message and opens it in WhatsApp or the visitor's e-mail app, so there is no server to run
+- Clicking a service opens the form with that service already selected
+- A floating WhatsApp button and direct links to the company's Marktplaats and Klussendirect listings
 
 </td>
 <td valign="top">
@@ -86,7 +87,7 @@ homeowner or business to see what they do, trust them, and ask for a quote in on
 </tr>
 <tr>
 <td><img src="docs/screenshots/about.png" alt="About us page"><br><sub><b>About us</b>: who they are and how they work</sub></td>
-<td><img src="docs/screenshots/contact.png" alt="Contact page"><br><sub><b>Contact</b>: e-mail or WhatsApp, no forms to fill in</sub></td>
+<td><img src="docs/screenshots/contact.png" alt="Contact page"><br><sub><b>Contact</b>: a short quote form that opens in WhatsApp or e-mail</sub></td>
 </tr>
 <tr>
 <td colspan="2"><img src="docs/screenshots/arabic.png" alt="Homepage in Arabic, right-to-left"><br><sub><b>Arabic</b>: the whole layout mirrors to right-to-left</sub></td>
@@ -94,7 +95,7 @@ homeowner or business to see what they do, trust them, and ask for a quote in on
 </table>
 
 <p align="center">
-  <img src="docs/screenshots/mobile.png" alt="Phone screens: home, services and menu" width="100%"><br>
+  <img src="docs/screenshots/mobile.png" alt="Phone screens: home, projects and menu" width="100%"><br>
   <sub><b>On the phone</b>: big tap targets, a full-screen menu and contact buttons always in reach</sub>
 </p>
 
@@ -104,10 +105,12 @@ homeowner or business to see what they do, trust them, and ask for a quote in on
 
 | | |
 |---|---|
-| **Markup** | One `index.html` with five views (home, projects, services, about, contact), switched with URL hashes so there are no page reloads |
-| **Styling** | Tailwind CSS via CDN plus hand-written CSS; Fraunces for headings, Manrope for body text |
-| **Behaviour** | Vanilla JavaScript: navigation, language switch, mobile menu, project carousel and lightbox |
-| **i18n** | Every text exists in six languages in the HTML; `data-lang` on `<html>` decides which one shows, `dir="rtl"` for Arabic |
+| **Markup** | One `index.html` with five views (home, services, projects, about, contact), switched with URL hashes; the back button works |
+| **Styling** | One hand-written stylesheet with design tokens (colours, radii, spacing) as CSS variables; logical properties, so Arabic mirrors without extra rules; Fraunces for headings, Manrope for body text |
+| **Behaviour** | Vanilla JavaScript: navigation, language switch, mobile menu, lightbox and the quote form |
+| **i18n** | Dutch is written in the HTML; `assets/i18n.js` holds every text in six languages and `data-i18n` keys swap them in; `dir="rtl"` for Arabic |
+| **Performance** | Photos converted from PNG to responsive JPEGs (`srcset`), about 30 MB down to 3.4 MB; lazy loading below the fold |
+| **Accessibility** | Real buttons and labels, skip link, visible focus, keyboard-friendly lightbox, `prefers-reduced-motion` respected |
 | **SEO** | Meta tags, Open Graph and JSON-LD structured data (`Electrician`, `Organization`) for local search |
 | **Hosting** | Vercel, deployed on every push |
 
@@ -116,13 +119,13 @@ No build step and no dependencies: the site is plain static files.
 ### Project layout
 
 ```
-index.html              The whole site: five views, all six languages
-script.js               Navigation, language switch, menu, carousel, lightbox
-styles.css              Base styles
-*-overrides.css         Section styles (hero, about, services, mobile)
-*-polish.css            Fine-tuning per section and for tablets
-badkamer/ eettafel/ fitness/   Project photos
-docs/                   README images
+index.html          The whole site: five views
+assets/site.css     All styles
+assets/site.js      Navigation, language switch, menu, lightbox, quote form
+assets/i18n.js      Every text in NL, EN, TR, AR, PL, DE
+img/                Logo and photos (full size + 800 px)
+img/projects/       Project photos
+docs/               README images
 ```
 
 ---
@@ -152,9 +155,9 @@ I decide what the site needs and check every change, Claude helps write and refi
 [alleklussers.nl](https://alleklussers.nl).
 
 - Zeven diensten, van storingen en groepenkasten tot laadpalen en slimme elektra
-- Projecten met fotogalerijen, carrousel en lightbox
-- Offerte aanvragen via WhatsApp of e-mail met zwevende contactknoppen
+- Projecten met fotogalerijen en lightbox
+- Offerteformulier dat een kant-en-klaar bericht opent in WhatsApp of e-mail
 - Zes talen (NL, EN, TR, AR, PL, DE), Arabisch van rechts naar links
-- Gebouwd met HTML, CSS, JavaScript en Tailwind, gehost op Vercel
+- Gebouwd met HTML, CSS en JavaScript zonder framework, gehost op Vercel
 
 Gemaakt door Sami Güleç, AI-first ontwikkeld samen met Claude.
