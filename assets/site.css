@@ -292,8 +292,8 @@ html:not(.js) #view-home { display: block; }
 .svc-card--dark .svc-card__icon { color: var(--amber); }
 .svc-card--dark p { color: var(--on-dark-2); }
 .svc-card--dark .svc-card__go { display: none; }
-.svc-card--plain { background: var(--sand); border-style: dashed; border-color: var(--line-2); cursor: default; }
-.svc-card--plain:hover { transform: none; box-shadow: none; border-color: var(--line-2); }
+.svc-card--plain { background: var(--sand); border-style: dashed; border-color: var(--line-2); }
+.svc-card--plain .link-arrow { margin-top: 4px; color: var(--amber-ink); }
 .tags { display: flex; flex-wrap: wrap; gap: 8px; margin-top: auto; }
 .tag { display: inline-flex; align-items: center; background: var(--white); border: 1px solid var(--line); border-radius: 999px; padding: 7px 14px; font-size: 14px; font-weight: 600; color: var(--ink); }
 .more-row { display: flex; justify-content: flex-end; margin-top: 28px; }
@@ -318,11 +318,6 @@ html[dir='rtl'] .svc-row__go svg { transform: scaleX(-1); }
   .svc-row__icon { grid-row: span 3; align-self: start; }
   .svc-row__go { margin-top: 6px; }
 }
-.reno-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(min(100%, 300px), 1fr)); gap: 18px; }
-.reno-card { background: var(--white); border: 1.5px solid var(--line); border-radius: var(--r-lg); padding: 28px; display: flex; flex-direction: column; gap: 12px; }
-.reno-card h3 { font-family: var(--serif); font-weight: 400; font-size: 26px; }
-.reno-card p { color: var(--muted); font-size: 15px; }
-.reno-card .link-arrow { margin-top: auto; }
 
 /* ---------- Project cards (home) ---------- */
 .proj-grid { display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); gap: 22px; }

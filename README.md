@@ -50,7 +50,7 @@ homeowner or business to see what they do, trust them, and ask for a quote in on
 <td width="50%" valign="top">
 
 ### 🖼 Projects
-- Real jobs with photo galleries: a bathroom with LED mirror lighting, dining-table lighting, a home gym
+- Real jobs with photo galleries: electrics and LED mirror lighting in a bathroom, dining-table lighting, a home gym
 - Each project shows what was done, with a lead photo and thumbnails
 - Full-screen lightbox, navigable with arrow keys, closes with Escape
 

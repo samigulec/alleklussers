@@ -147,59 +147,37 @@ window.AK_I18N = {
     'Ładowarka przy domu i inteligentne sterowanie oświetleniem i urządzeniami.',
     'Eine Ladestation an Ihrem Zuhause und smarte Schaltungen für Licht und Geräte.'
   ],
-  'svc.reno': ['Ook voor verbouwingen', 'Renovations too', 'Tadilat işleri de', 'وأعمال التجديد أيضاً', 'Również remonty', 'Auch für Renovierungen'],
-  'svc.bath': ['Badkamer', 'Bathroom', 'Banyo', 'حمّام', 'Łazienka', 'Badezimmer'],
-  'svc.bath.desc': [
-    'Tegelwerk, sanitair, ventilatie en elektra — als één samenhangend project.',
-    'Tiling, plumbing, ventilation and electrics — as one coherent project.',
-    'Fayans, tesisat, havalandırma ve elektrik — tek bir uyumlu proje olarak.',
-    'التبليط، السباكة، التهوية والكهرباء — كمشروع متكامل واحد.',
-    'Glazura, hydraulika, wentylacja i elektryka — jako jeden spójny projekt.',
-    'Fliesen, Sanitär, Lüftung und Elektrik — als ein zusammenhängendes Projekt.'
+  'svc.other.title': ['Staat uw klus er niet bij?', 'Not seeing your job?', 'İşiniz listede yok mu?', 'لا تجدون عملكم في القائمة؟', 'Nie widzisz swojego zlecenia?', 'Ihr Auftrag ist nicht dabei?'],
+  'svc.other.desc': [
+    'Alles wat met elektra te maken heeft: vertel ons wat er moet gebeuren en wij denken mee.',
+    'Anything to do with electrics: tell us what needs doing and we will think along.',
+    'Elektrikle ilgili her şey: ne yapılması gerektiğini anlatın, birlikte çözüm bulalım.',
+    'كل ما يتعلق بالكهرباء: أخبرونا بما يلزم وسنساعدكم في إيجاد الحل.',
+    'Wszystko, co dotyczy elektryki: powiedz, co trzeba zrobić, a my doradzimy.',
+    'Alles rund um Elektrik: Sagen Sie uns, was zu tun ist, und wir denken mit.'
   ],
-  'svc.kitchen': ['Keuken', 'Kitchen', 'Mutfak', 'مطبخ', 'Kuchnia', 'Küche'],
-  'svc.kitchen.desc': [
-    'Van uitbreken tot inmeten, monteren en aansluiten. Eén planning, één aanspreekpunt.',
-    'From demolition to measuring, installation and connection. One schedule, one contact.',
-    'Sökümden ölçüye, montaja ve bağlantıya kadar. Tek planlama, tek muhatap.',
-    'من الهدم إلى القياس، التركيب والتوصيل. جدولٌ واحد، نقطةُ اتصالٍ واحدة.',
-    'Od wyburzenia po pomiary, montaż i podłączenie. Jeden harmonogram, jedna osoba kontaktowa.',
-    'Vom Ausbruch über das Einmessen bis zur Montage und zum Anschluss. Ein Zeitplan, ein Ansprechpartner.'
-  ],
-  'svc.reno.full': ['Complete verbouwing', 'Full renovation', 'Komple tadilat', 'تجديد شامل', 'Pełny remont', 'Komplettrenovierung'],
-  'svc.reno.full.desc': [
-    'Een woning van A tot Z — wij regisseren alle disciplines en de planning voor u.',
-    'A home from A to Z — we coordinate every discipline and the schedule for you.',
-    "Evin A'dan Z'ye — tüm disiplinleri ve planlamayı sizin için yönetiyoruz.",
-    'منزلٌ من الألف إلى الياء — ننسّق جميع الحرف والجدول الزمني نيابةً عنكم.',
-    'Dom od A do Z — koordynujemy wszystkie branże i harmonogram za Ciebie.',
-    'Eine Wohnung von A bis Z — wir koordinieren alle Gewerke und den Zeitplan für Sie.'
-  ],
-  'svc.paint': ['Schilderwerk', 'Painting', 'Boyacılık', 'الدهان', 'Malowanie', 'Malerarbeiten'],
-  'svc.floor': ['Vloeren', 'Flooring', 'Zemin döşeme', 'الأرضيات', 'Podłogi', 'Bodenbeläge'],
-  'svc.turnover': ['Mutatieonderhoud', 'Turnover maintenance', 'Kiracı değişim bakımı', 'صيانة الانتقال', 'Konserwacja przy zmianie najemcy', 'Mietwechsel-Service'],
 
   // Projects
   'proj.eyebrow': ['Projecten', 'Projects', 'Projeler', 'المشاريع', 'Projekty', 'Projekte'],
   'proj.title': ['Projecten die <em>netjes zijn afgewerkt.</em>', 'Projects, <em>neatly finished.</em>', '<em>Özenle tamamlanan</em> projeler.', 'مشاريع <em>منجزة بإتقان.</em>', 'Projekty <em>starannie wykończone.</em>', 'Projekte, <em>sauber abgeschlossen.</em>'],
   'proj.lede': [
-    'Bij AlleKlussers leveren we strak afgewerkt werk, van elektra tot renovatie. We denken mee, werken netjes en zorgen voor duurzame resultaten met oog voor detail, verlichting en moderne afwerking.',
-    'At AlleKlussers we deliver crisply finished work, from electrics to renovation. We think along, work tidy and ensure durable results with attention to detail, lighting and modern finishing.',
-    'AlleKlussers olarak elektrikten yenilemeye kadar özenle tamamlanan işler sunuyoruz. Birlikte düşünür, temiz çalışır ve detaylara, aydınlatmaya ve modern bitirişe önem vererek kalıcı sonuçlar üretiriz.',
-    'في AlleKlussers نقدّم أعمالاً منجزة بإتقان، من الكهرباء إلى التجديد. نُشارك بالأفكار ونعمل بترتيب ونضمن نتائج دائمة بعناية للتفاصيل والإضاءة واللمسات العصرية.',
-    'W AlleKlussers wykonujemy prace z dbałością o detal, od elektryki po remont. Doradzamy, pracujemy schludnie i dbamy o trwałe efekty z myślą o szczegółach, oświetleniu i nowoczesnym wykończeniu.',
-    'Bei AlleKlussers liefern wir sauber abgeschlossene Arbeiten, von Elektrik bis Renovierung. Wir denken mit, arbeiten ordentlich und sorgen für langlebige Ergebnisse mit Blick fürs Detail, Beleuchtung und moderne Ausführung.'
+    'Bij AlleKlussers leveren we strak afgewerkt elektrawerk, van een extra stopcontact tot een compleet verlichtingsplan. We denken mee, werken netjes en zorgen voor veilige, duurzame resultaten met oog voor detail.',
+    'At AlleKlussers we deliver crisply finished electrical work, from an extra socket to a complete lighting plan. We think along, work tidily and ensure safe, durable results with attention to detail.',
+    'AlleKlussers olarak tek bir prizden komple aydınlatma planına kadar özenli elektrik işleri sunuyoruz. Birlikte düşünür, temiz çalışır ve detaylara önem vererek güvenli, kalıcı sonuçlar üretiriz.',
+    'في AlleKlussers نقدّم أعمالاً كهربائية منجزة بإتقان، من مقبس إضافي إلى خطة إضاءة كاملة. نُشارك بالأفكار ونعمل بترتيب ونضمن نتائج آمنة ودائمة بعناية للتفاصيل.',
+    'W AlleKlussers starannie wykonujemy prace elektryczne, od dodatkowego gniazdka po kompletny plan oświetlenia. Doradzamy, pracujemy schludnie i dbamy o bezpieczne, trwałe efekty z dbałością o detal.',
+    'Bei AlleKlussers liefern wir sauber ausgeführte Elektroarbeiten, von der zusätzlichen Steckdose bis zum kompletten Lichtplan. Wir denken mit, arbeiten ordentlich und sorgen für sichere, langlebige Ergebnisse mit Blick fürs Detail.'
   ],
   'proj.photos': ["foto's", 'photos', 'fotoğraf', 'صور', 'zdjęć', 'Fotos'],
-  'proj.bath.title': ['Badkamer renovatie met elektra en verlichting', 'Bathroom renovation with electrics and lighting', 'Elektrik ve aydınlatma dahil banyo yenileme', 'تجديد حمّام مع الكهرباء والإضاءة', 'Remont łazienki z elektryką i oświetleniem', 'Badezimmerrenovierung mit Elektrik und Beleuchtung'],
-  'proj.bath.tag': ['Badkamer renovatie', 'Bathroom renovation', 'Banyo yenileme', 'تجديد حمّام', 'Remont łazienki', 'Badezimmerrenovierung'],
+  'proj.bath.title': ['Elektra en LED-verlichting in een badkamer', 'Electrics and LED lighting in a bathroom', 'Banyoda elektrik tesisatı ve LED aydınlatma', 'كهرباء وإضاءة LED في حمّام', 'Elektryka i oświetlenie LED w łazience', 'Elektrik und LED-Beleuchtung im Badezimmer'],
+  'proj.bath.tag': ['Badkamer', 'Bathroom', 'Banyo', 'حمّام', 'Łazienka', 'Badezimmer'],
   'proj.bath.desc': [
-    'Complete badkamer renovatie inclusief nieuwe elektra, LED spiegelverlichting, verlichtingsplan en strakke afwerking.',
-    'Complete bathroom renovation including new electrics, LED mirror lighting, a lighting plan and crisp finishing.',
-    'Yeni elektrik tesisatı, LED ayna aydınlatması, aydınlatma planı ve özenli işçilik dahil komple banyo yenileme.',
-    'تجديد كامل للحمّام يشمل الكهرباء الجديدة، إضاءة المرآة LED، خطة إضاءة وتشطيب أنيق.',
-    'Kompletny remont łazienki obejmujący nową elektrykę, oświetlenie LED lustra, plan oświetleniowy i staranne wykończenie.',
-    'Komplette Badrenovierung inkl. neuer Elektrik, LED-Spiegelbeleuchtung, Lichtplan und sauberer Ausführung.'
+    'Nieuwe elektra, LED-spiegelverlichting en een verlichtingsplan voor de hele badkamer, strak afgewerkt.',
+    'New electrics, LED mirror lighting and a lighting plan for the whole bathroom, neatly finished.',
+    'Yeni elektrik tesisatı, LED ayna aydınlatması ve tüm banyo için aydınlatma planı, özenle tamamlandı.',
+    'كهرباء جديدة، إضاءة مرآة LED وخطة إضاءة للحمّام بالكامل، بتشطيب أنيق.',
+    'Nowa elektryka, oświetlenie LED lustra i plan oświetlenia całej łazienki, starannie wykończone.',
+    'Neue Elektrik, LED-Spiegelbeleuchtung und ein Lichtplan für das ganze Bad, sauber ausgeführt.'
   ],
   'proj.bath.h1': ['LED spiegelverlichting', 'LED mirror lighting', 'LED ayna aydınlatması', 'إضاءة مرآة LED', 'Oświetlenie LED lustra', 'LED-Spiegelbeleuchtung'],
   'proj.bath.h2': ['Nieuwe aansluitpunten', 'New connection points', 'Yeni bağlantı noktaları', 'نقاط توصيل جديدة', 'Nowe punkty podłączeń', 'Neue Anschlusspunkte'],
