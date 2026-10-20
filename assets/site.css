@@ -306,7 +306,7 @@ html:not(.js) #view-home { display: block; }
   transition: background-color .2s ease, padding .2s ease;
 }
 .svc-row:hover { background: var(--white); padding-inline: 20px; color: var(--ink); }
-.svc-row__num { font-family: 'Fraunces', Georgia, serif; font-size: 20px; color: #8a877f; }
+.svc-row__num { font-family: 'Fraunces', Georgia, serif; font-size: 20px; color: #6f6c65; }
 .svc-row__icon { width: 56px; height: 56px; border-radius: 16px; background: var(--amber-soft); color: var(--amber-ink); display: flex; align-items: center; justify-content: center; }
 .svc-row h3 { font-family: var(--serif); font-weight: 400; font-size: clamp(24px, 2.6vw, 32px); line-height: 1.15; }
 .svc-row p { color: var(--muted); font-size: 16px; }

@@ -1,4 +1,4 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="nl" dir="ltr">
 <head>
   <meta charset="utf-8" />
@@ -224,7 +224,7 @@
   </div>
 
   <!-- Services -->
-  <section class="section" aria-labelledby="home-svc">
+  <section class="section">
     <div class="wrap">
       <div class="section-head reveal">
         <div>
@@ -290,7 +290,7 @@
   </section>
 
   <!-- Projects -->
-  <section class="section" style="padding-top: 0" aria-labelledby="home-proj">
+  <section class="section" style="padding-top: 0">
     <div class="wrap">
       <div class="section-head reveal">
         <div>
@@ -338,7 +338,7 @@
   </section>
 
   <!-- Process -->
-  <section class="section section--sand" aria-labelledby="home-steps">
+  <section class="section section--sand">
     <div class="wrap">
       <div class="section-head reveal">
         <div>
@@ -380,7 +380,7 @@
   </section>
 
   <!-- About teaser -->
-  <section class="section" aria-labelledby="home-about">
+  <section class="section">
     <div class="wrap about">
       <div class="about__photo reveal">
         <img src="img/overons-800.jpg" srcset="img/overons-800.jpg 800w, img/overons.jpg 1400w" sizes="(max-width: 960px) 100vw, 50vw" width="800" height="600" loading="lazy" alt="Elektricien van AlleKlussers bij een groepenkast" data-i18n-attr="alt:about.photoAlt" />
@@ -402,7 +402,7 @@
   </section>
 
   <!-- Reviews -->
-  <section class="section" style="padding-top: 0" aria-labelledby="home-rev">
+  <section class="section" style="padding-top: 0">
     <div class="wrap">
       <div class="section-head reveal">
         <div>
@@ -464,7 +464,7 @@
     </div>
   </section>
 
-  <section class="section" aria-labelledby="svc-steps">
+  <section class="section">
     <div class="wrap">
       <div class="section-head">
         <div>
@@ -571,7 +571,7 @@
     </article>
   </div>
 
-  <section class="section section--sand" aria-labelledby="proj-rev">
+  <section class="section section--sand">
     <div class="wrap">
       <div class="section-head">
         <div>
@@ -634,7 +634,7 @@
     </div>
   </section>
 
-  <section class="section section--sand" aria-labelledby="about-steps">
+  <section class="section section--sand">
     <div class="wrap">
       <div class="section-head">
         <div>
@@ -730,7 +730,7 @@
   <button type="button" class="lightbox__btn lightbox__close" data-lb="close" data-i18n-attr="aria-label:nav.close" aria-label="Sluiten"><svg width="22" height="22" aria-hidden="true"><use href="#i-x"/></svg></button>
   <button type="button" class="lightbox__btn lightbox__prev" data-lb="prev" data-i18n-attr="aria-label:nav.prev" aria-label="Vorige"><svg width="22" height="22" aria-hidden="true"><use href="#i-left"/></svg></button>
   <figure>
-    <img id="lightbox-img" src="" alt="" />
+    <img id="lightbox-img" src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" alt="" />
     <figcaption id="lightbox-count"></figcaption>
   </figure>
   <button type="button" class="lightbox__btn lightbox__next" data-lb="next" data-i18n-attr="aria-label:nav.next" aria-label="Volgende"><svg width="22" height="22" aria-hidden="true"><use href="#i-right"/></svg></button>
@@ -759,10 +759,10 @@
   <div class="speaker qform__buddy"><p class="say" data-i18n="say.contact">“Vertel het maar. Binnen 24 uur hoort u van ons.”</p><svg class="ch ch-float speaker__ch ch-badge ch-badge--stekkie" aria-hidden="true"><use href="#ch-stekkie"/></svg></div>
   <form class="qform" novalidate>
     <div class="qform__row">
-      <div><label for="{p}-name" data-i18n="form.name">Naam</label><input class="field" id="{p}-name" name="name" autocomplete="name" required /></div>
-      <div><label for="{p}-postcode" data-i18n="form.postcode">Postcode</label><input class="field" id="{p}-postcode" name="postcode" autocomplete="postal-code" placeholder="3011 AD" /></div>
+      <div><label for="{p}-name" data-i18n="form.name">Naam</label><input type="text" class="field" id="{p}-name" name="name" autocomplete="name" required /></div>
+      <div><label for="{p}-postcode" data-i18n="form.postcode">Postcode</label><input type="text" class="field" id="{p}-postcode" name="postcode" autocomplete="postal-code" placeholder="3011 AD" /></div>
     </div>
-    <div><label for="{p}-city" data-i18n="form.city">Plaats</label><input class="field" id="{p}-city" name="city" autocomplete="address-level2" /></div>
+    <div><label for="{p}-city" data-i18n="form.city">Plaats</label><input type="text" class="field" id="{p}-city" name="city" autocomplete="address-level2" /></div>
     <fieldset>
       <legend data-i18n="form.type">Soort werk</legend>
       <div class="chips" data-chips></div>
