@@ -272,6 +272,7 @@
           $$('.chip', box).forEach(function (c) { c.setAttribute('aria-pressed', c === b ? 'true' : 'false'); });
         });
         box.appendChild(b);
+        box.appendChild(document.createTextNode(' '));
       });
     });
   }
