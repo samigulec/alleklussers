@@ -353,6 +353,38 @@ window.AK_I18N = {
   'msg.intro': ['Hallo AlleKlussers, ik wil graag een offerte aanvragen.', 'Hello AlleKlussers, I would like to request a quote.', 'Merhaba AlleKlussers, teklif almak istiyorum.', 'مرحباً AlleKlussers، أود طلب عرض سعر.', 'Dzień dobry AlleKlussers, chciałbym poprosić o wycenę.', 'Hallo AlleKlussers, ich möchte gerne ein Angebot anfordern.'],
   'msg.subject': ['Offerteaanvraag', 'Quote request', 'Teklif talebi', 'طلب عرض سعر', 'Prośba o wycenę', 'Angebotsanfrage'],
 
+  // De Stroomploeg (characters)
+  'cast.eyebrow': ['De Stroomploeg', 'The Power Crew', 'Akım Ekibi', 'فريق الكهرباء', 'Ekipa Prądu', 'Die Stromtruppe'],
+  'cast.title': ['Maak kennis met <em>de Stroomploeg.</em>', 'Meet <em>the Power Crew.</em>', '<em>Akım Ekibi</em> ile tanışın.', 'تعرّفوا على <em>فريق الكهرباء.</em>', 'Poznaj <em>Ekipę Prądu.</em>', 'Lernen Sie <em>die Stromtruppe</em> kennen.'],
+  'cast.lede': [
+    'Onze kleine helpers wijzen u de weg op de site. Het echte werk doen onze gecertificeerde vakmensen.',
+    'Our little helpers show you around the site. The real work is done by our certified craftsmen.',
+    'Küçük yardımcılarımız size sitede yol gösterir. Asıl işi sertifikalı ustalarımız yapar.',
+    'مساعدونا الصغار يرشدونكم في الموقع. أما العمل الحقيقي فيقوم به حرفيونا المعتمدون.',
+    'Nasi mali pomocnicy oprowadzą Cię po stronie. Prawdziwą pracę wykonują nasi certyfikowani fachowcy.',
+    'Unsere kleinen Helfer zeigen Ihnen die Seite. Die echte Arbeit machen unsere zertifizierten Handwerker.'
+  ],
+  'ch.stekkie': ['De regelaar', 'The fixer', 'İşleri yoluna koyan', 'المنظِّم', 'Złota rączka', 'Der Macher'],
+  'ch.vonk': ['Spoedhulp, 24/7', 'Urgent help, 24/7', 'Acil destek, 7/24', 'مساعدة عاجلة، 24/7', 'Pilna pomoc, 24/7', 'Notdienst, 24/7'],
+  'ch.kastje': ['Groepenkast-kenner', 'Fuse box expert', 'Sigorta panosu uzmanı', 'خبير لوحات التوزيع', 'Znawca rozdzielnic', 'Sicherungskasten-Profi'],
+  'ch.lampje': ['Lichtexpert', 'Lighting expert', 'Aydınlatma uzmanı', 'خبير الإضاءة', 'Ekspert od światła', 'Lichtexperte'],
+  'ch.dosie': ['Stopcontact-maatje', 'Socket buddy', 'Priz dostu', 'صديق المقابس', 'Kumpel od gniazdek', 'Steckdosen-Kumpel'],
+  'ch.schildje': ['Veiligheidscheck', 'Safety check', 'Güvenlik kontrolü', 'فحص السلامة', 'Kontrola bezpieczeństwa', 'Sicherheitscheck'],
+  'ch.laadie': ['Laadpaal-specialist', 'EV charger specialist', 'Şarj istasyonu uzmanı', 'خبير شواحن السيارات', 'Specjalista od ładowarek', 'Ladestation-Profi'],
+  'say.hero': ['“Even appen? Wij regelen het.”', '“Just send a WhatsApp. We’ll handle it.”', '“Bir mesaj atın, gerisini biz hallederiz.”', '”أرسلوا رسالة، ونحن نتولى الباقي.“', '„Napisz do nas — resztą się zajmiemy.”', '„Kurz schreiben? Wir regeln das.“'],
+  'say.services': ['“Stroom uit? Wij zijn 24/7 bereikbaar.”', '“Power out? We’re reachable 24/7.”', '“Elektrik mi kesildi? 7/24 ulaşılabiliriz.”', '”انقطعت الكهرباء؟ نحن متاحون 24/7.“', '„Brak prądu? Jesteśmy dostępni 24/7.”', '„Strom weg? Wir sind 24/7 erreichbar.“'],
+  'say.projects': ['“Kijk gerust rond!”', '“Have a look around!”', '“Rahatça göz atın!”', '”تفضّلوا بالاطلاع!“', '„Rozejrzyj się!”', '„Schauen Sie sich um!“'],
+  'say.about': ['“Veilig, netjes en volgens de norm.”', '“Safe, tidy and to standard.”', '“Güvenli, temiz ve standartlara uygun.”', '”آمن ومرتّب ووفق المعايير.“', '„Bezpiecznie, schludnie i zgodnie z normami.”', '„Sicher, sauber und nach Norm.“'],
+  'say.steps': ['“Eerst kijken, dan pas klussen.”', '“First we look, then we work.”', '“Önce bakarız, sonra işe koyuluruz.”', '”ننظر أولاً، ثم نبدأ العمل.“', '„Najpierw patrzymy, potem działamy.”', '„Erst schauen, dann loslegen.“'],
+  'say.contact': ['“Vertel het maar. Binnen 24 uur hoort u van ons.”', '“Tell us all about it. You’ll hear from us within 24 hours.”', '“Anlatın, 24 saat içinde size dönüyoruz.”', '”أخبرونا، وسنرد عليكم خلال 24 ساعة.“', '„Opowiedz nam — odezwiemy się w ciągu 24 godzin.”', '„Erzählen Sie es uns. Innerhalb von 24 Stunden hören Sie von uns.“'],
+
+  'say.stekkie': ['“Eén aanspreekpunt voor al uw elektra.”', '“One point of contact for all your electrics.”', '“Tüm elektrik işleriniz için tek muhatap.”', '”نقطة اتصال واحدة لكل أعمال الكهرباء.“', '„Jedna osoba kontaktowa do całej elektryki.”', '„Ein Ansprechpartner für Ihre ganze Elektrik.“'],
+  'say.kastje': ['“Slaan de stoppen door? Ik kijk even.”', '“Fuses keep tripping? Let me take a look.”', '“Sigortalar mı atıyor? Bir bakayım.”', '”القواطع تفصل باستمرار؟ دعوني أتحقق.“', '„Wywala korki? Zaraz sprawdzę.”', '„Fliegt die Sicherung raus? Ich schaue mal.“'],
+  'say.lampje': ['“Spots, dimmers of een hanglamp? Ik zorg voor sfeer.”', '“Spots, dimmers or a pendant? I bring the mood.”', '“Spot, dimmer ya da sarkıt? Ortamı ben ayarlarım.”', '”سبوتات أو مخفتات أو إنارة معلّقة؟ أنا أصنع الأجواء.“', '„Spoty, ściemniacze czy lampa wisząca? Zadbam o klimat.”', '„Spots, Dimmer oder Pendelleuchte? Ich sorge für Stimmung.“'],
+  'say.dosie': ['“Een stopcontact erbij? Komt goed.”', '“An extra socket? No problem.”', '“Bir priz daha mı? Hallederiz.”', '”مقبس إضافي؟ لا مشكلة.“', '„Dodatkowe gniazdko? Nie ma sprawy.”', '„Eine Steckdose mehr? Kein Problem.“'],
+  'say.laadie': ['“Thuis laden? Ik regel de laadpaal.”', '“Charging at home? I’ll sort the charger.”', '“Evde şarj mı? Şarj istasyonunu ben hallederim.”', '”الشحن في المنزل؟ أتولى أمر الشاحن.“', '„Ładowanie w domu? Zajmę się ładowarką.”', '„Zu Hause laden? Ich kümmere mich um die Ladestation.“'],
+  'cast.tap': ['Tik op een helper', 'Tap a helper', 'Bir yardımcıya dokunun', 'اضغطوا على أحد المساعدين', 'Kliknij pomocnika', 'Tippen Sie auf einen Helfer'],
+
   // Footer
   'foot.company': ['Bedrijf', 'Company', 'Şirket', 'الشركة', 'Firma', 'Unternehmen'],
   'foot.part': ['Onderdeel van Boss Tech VOF', 'Part of Boss Tech VOF', "Boss Tech VOF'a bağlıdır", 'جزء من Boss Tech VOF', 'Część Boss Tech VOF', 'Teil der Boss Tech VOF']

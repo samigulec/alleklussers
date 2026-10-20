@@ -20,6 +20,7 @@
   <a href="https://alleklussers.nl"><b>alleklussers.nl</b></a> ·
   <a href="#-what-it-does">Features</a> ·
   <a href="#-screens">Screens</a> ·
+  <a href="#-meet-the-crew">Characters</a> ·
   <a href="#-under-the-hood">Under the hood</a> ·
   <a href="#-run-it-locally">Run locally</a> ·
   <a href="#-nederlands">Nederlands</a>
@@ -101,6 +102,27 @@ homeowner or business to see what they do, trust them, and ask for a quote in on
 
 ---
 
+## ⚡ Meet the crew
+
+<p align="center">
+  <img src="docs/characters.png" alt="De Stroomploeg: Stekkie, Vonk, Kastje, Lampje, Dosie, Schildje and Laadie" width="100%">
+</p>
+
+**De Stroomploeg** is the site's own cast of small helpers, one for each service. They are original drawings in one
+style: a dark outline, a simple face and pink cheeks.
+
+- **Stekkie**, the plug from the logo, is the main character: he greets visitors on the homepage and above the quote form
+- The others stand in for the services as icons: Vonk for urgent help, Kastje for fuse boxes, Lampje for lighting,
+  Dosie for sockets, Schildje for inspections and Laadie for EV chargers
+- On the homepage you can tap a helper and it says its line, in all six languages
+- They blink and float gently; with `prefers-reduced-motion` they keep still
+- Only one or two appear in any one place, and they always say something short
+
+All seven are drawn in code in `tools/characters.py`, which writes the inline SVG sprite into `index.html` and separate
+files into `img/characters/`.
+
+---
+
 ## 🛠 Under the hood
 
 | | |
@@ -125,6 +147,8 @@ assets/site.js      Navigation, language switch, menu, lightbox, quote form
 assets/i18n.js      Every text in NL, EN, TR, AR, PL, DE
 img/                Logo and photos (full size + 800 px)
 img/projects/       Project photos
+img/characters/     De Stroomploeg, one SVG per character
+tools/characters.py Draws the characters and updates the sprite in index.html
 docs/               README images
 ```
 
@@ -156,6 +180,7 @@ I decide what the site needs and check every change, Claude helps write and refi
 
 - Zeven diensten, van storingen en groepenkasten tot laadpalen en slimme elektra
 - Projecten met fotogalerijen en lightbox
+- De Stroomploeg: zeven eigen karakters, één per dienst
 - Offerteformulier dat een kant-en-klaar bericht opent in WhatsApp of e-mail
 - Zes talen (NL, EN, TR, AR, PL, DE), Arabisch van rechts naar links
 - Gebouwd met HTML, CSS en JavaScript zonder framework, gehost op Vercel

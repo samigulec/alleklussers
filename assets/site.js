@@ -321,6 +321,13 @@
     });
   });
 
+  /* ---------- Talking cast ---------- */
+  $$('[data-cast]').forEach(function (btn) {
+    btn.addEventListener('click', function () {
+      $$('[data-cast]').forEach(function (b) { b.setAttribute('aria-pressed', b === btn ? 'true' : 'false'); });
+    });
+  });
+
   /* ---------- Start ---------- */
   var year = $('[data-year]');
   if (year) year.textContent = new Date().getFullYear();
