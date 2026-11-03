@@ -7,7 +7,7 @@
   var RTL = ['ar'];
   var VIEWS = ['home', 'services', 'references', 'about', 'contact'];
   var WHATSAPP = '31685484000';
-  var EMAIL = 'info@alleklussers.nl';
+  var EMAIL = 'alleklussers@gmail.com';
   var GOOGLE_TAG_ID = 'G-BS4BHXX0XL';
   var root = document.documentElement;
   var lang = 'nl';
