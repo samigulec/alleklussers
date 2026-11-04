@@ -1,0 +1,79 @@
+/* =========================================================
+   SEO landing pages (/elektricien-rotterdam/ etc.)
+   Loaded after site.css; only adds what those pages need.
+   ========================================================= */
+
+/* Header: no burger menu on these pages, keep one action visible on phones */
+.seo .header__wa { display: none; }
+@media (max-width: 960px) {
+  .seo .header__wa { display: inline-flex; }
+}
+
+/* Breadcrumb */
+.crumbs { display: flex; flex-wrap: wrap; gap: 8px; font-size: 13px; font-weight: 600; color: var(--on-dark-3); }
+.crumbs a { color: var(--on-dark-2); text-decoration: none; }
+.crumbs a:hover { color: var(--amber); }
+.crumbs span[aria-hidden] { opacity: .5; }
+
+/* Hero actions */
+.seo-actions { display: flex; flex-wrap: wrap; gap: 12px; margin-top: 32px; }
+
+/* Two-column body: text + sticky contact card */
+.seo-body { display: grid; grid-template-columns: minmax(0, 1fr) 360px; gap: clamp(32px, 5vw, 72px); align-items: start; }
+@media (max-width: 960px) { .seo-body { grid-template-columns: 1fr; } }
+
+.prose > * + * { margin-top: 18px; }
+.prose h2 { font-family: var(--serif); font-weight: 400; font-size: clamp(28px, 3.4vw, 40px); line-height: 1.1; letter-spacing: -0.01em; margin-top: 56px; }
+.prose h2:first-child { margin-top: 0; }
+.prose h2 em { font-style: italic; color: var(--amber-ink); }
+.prose h3 { font-size: 18px; font-weight: 800; margin-top: 28px; }
+.prose p { font-size: 17px; line-height: 1.75; color: var(--text-2); }
+.prose a { color: var(--amber-ink); font-weight: 700; }
+.prose a:hover { color: var(--amber-ink-hover); }
+
+.checks { display: grid; gap: 12px; margin-top: 22px; }
+.checks li { display: flex; gap: 12px; align-items: flex-start; font-size: 16.5px; line-height: 1.6; color: var(--text-2); }
+.checks li svg { flex: none; margin-top: 3px; color: var(--amber-ink); }
+.checks strong { color: var(--ink); }
+
+.note-box { background: var(--amber-soft); border-radius: var(--r-md); padding: 20px 22px; border-inline-start: 4px solid var(--amber); }
+.note-box p { font-size: 16px; line-height: 1.65; color: var(--text-2); }
+.note-box strong { color: var(--ink); }
+
+/* Sticky contact card */
+.seo-card { position: sticky; top: 104px; background: var(--ink); color: var(--on-dark); border-radius: var(--r-lg); padding: 28px; }
+.seo-card h2 { font-family: var(--serif); font-weight: 400; font-size: 26px; line-height: 1.15; }
+.seo-card h2 em { color: var(--amber); }
+.seo-card p { margin-top: 10px; color: var(--on-dark-2); font-size: 15px; line-height: 1.6; }
+.seo-card .btn { margin-top: 12px; }
+.seo-card .btn:first-of-type { margin-top: 22px; }
+.seo-card ul { margin-top: 22px; display: grid; gap: 10px; border-top: 1px solid var(--ink-line); padding-top: 18px; }
+.seo-card li { display: flex; gap: 10px; align-items: center; font-size: 14px; font-weight: 600; color: var(--on-dark-2); }
+.seo-card li svg { color: var(--amber); flex: none; }
+@media (max-width: 960px) { .seo-card { position: static; } }
+
+/* Service tiles (hub page + "other services") */
+.tiles { display: grid; grid-template-columns: repeat(auto-fill, minmax(260px, 1fr)); gap: 16px; margin-top: 28px; }
+.tile { display: flex; gap: 16px; align-items: center; padding: 18px; border: 1px solid var(--line); border-radius: var(--r-md); background: var(--white); text-decoration: none; color: var(--ink); transition: border-color .2s ease, transform .2s ease; }
+.tile:hover { border-color: var(--ink); transform: translateY(-2px); color: var(--ink); }
+.tile strong { display: block; font-size: 16px; font-weight: 800; }
+.tile span.tile__sub { display: block; font-size: 14px; color: var(--muted); margin-top: 2px; line-height: 1.45; }
+.tile .ch-tile { width: 56px; height: 56px; padding: 6px; border-radius: 16px; }
+
+/* Area chips */
+.areas { display: flex; flex-wrap: wrap; gap: 8px; margin-top: 20px; }
+.areas li { padding: 8px 14px; border-radius: 999px; background: var(--sand); border: 1px solid var(--line); font-size: 14px; font-weight: 600; color: var(--text-2); }
+
+/* FAQ */
+.faq { margin-top: 24px; border-top: 1px solid var(--line); }
+.faq details { border-bottom: 1px solid var(--line); }
+.faq summary { list-style: none; cursor: pointer; display: flex; justify-content: space-between; gap: 20px; align-items: center; padding: 20px 0; font-size: 17px; font-weight: 800; }
+.faq summary::-webkit-details-marker { display: none; }
+.faq summary::after { content: '+'; flex: none; width: 32px; height: 32px; border-radius: 50%; border: 1.5px solid var(--line-2); display: grid; place-items: center; font-weight: 600; font-size: 20px; line-height: 1; transition: transform .2s ease; }
+.faq details[open] summary::after { transform: rotate(45deg); }
+.faq details p { padding: 0 0 22px; font-size: 16.5px; line-height: 1.7; color: var(--text-2); max-width: 720px; }
+
+/* Closing CTA band */
+.seo-cta { display: flex; flex-wrap: wrap; justify-content: space-between; align-items: center; gap: 24px; }
+.seo-cta .h-section { max-width: 18ch; }
+.prose .tile, .prose .tile:hover { color: var(--ink); font-weight: 400; }
