@@ -169,7 +169,7 @@ PAGES = [
 
 <h2>Stekkerbatterij of <em>vaste batterij?</em></h2>
 <ul class="checks">
-  <li>{check}<span><strong>Stekkerbatterij:</strong> steekt u zelf in een stopcontact. Er is geen installateur nodig, maar de capaciteit is beperkt. Wij kunnen controleren of de groep waarop hij komt dat aankan.</span></li>
+  <li>{check}<span><strong>Stekkerbatterij:</strong> steekt u zelf in een stopcontact. Er is geen installateur nodig, maar de capaciteit is beperkt. Veiliger is een <a href="/vrije-groep-stekkerbatterij-rotterdam/">vrije groep voor uw stekkerbatterij</a>; die leggen wij aan.</span></li>
   <li>{check}<span><strong>Vaste thuisbatterij:</strong> meer capaciteit, maar die moet vakkundig worden aangesloten op een eigen groep in de meterkast. Daar komen wij in beeld.</span></li>
 </ul>
 
@@ -196,6 +196,50 @@ PAGES = [
              "Een vaste thuisbatterij die op het net is aangesloten, meldt u aan via energieleveren.nl, net als zonnepanelen. Wij helpen u daarbij."),
             ("Leveren jullie ook de batterij zelf?",
              "Wij richten ons op de elektrische aansluiting en de meterkast. Heeft u nog geen batterij, dan denken we graag mee over wat bij uw installatie past."),
+        ],
+    },
+    # ------------------------------------------------------- VRIJE GROEP
+    {
+        "slug": "vrije-groep-stekkerbatterij-rotterdam",
+        "short": "Vrije groep stekkerbatterij",
+        "sub": "Eigen groep en stopcontact voor uw stekkerbatterij.",
+        "title": "Vrije groep voor stekkerbatterij Rotterdam | AlleKlussers",
+        "desc": "Stekkerbatterij gekocht? Laat in Rotterdam een vrije groep met eigen stopcontact aanleggen, zodat uw bedrading niet overbelast raakt. Prijs vooraf, vaak binnen een dagdeel klaar.",
+        "service": "Vrije groep aanleggen voor stekkerbatterij",
+        "char": "dosie",
+        "say": "“Eigen stopcontact voor uw batterij? Komt goed.”",
+        "eyebrow": "Stekkerbatterij veilig aansluiten",
+        "h1": "Vrije groep voor uw <em>stekkerbatterij.</em>",
+        "lede": "Een stekkerbatterij steekt u zelf in het stopcontact. Op een eigen, vrije groep is dat een stuk veiliger. Wij leggen die groep en het stopcontact voor u aan, in Rotterdam en omgeving.",
+        "body": """
+<h2>Waarom een <em>vrije groep?</em></h2>
+<p>Een stekkerbatterij laadt op en levert stroom terug via een gewoon stopcontact. Zit dat stopcontact op een groep met andere apparaten, zoals de wasmachine of de oven, dan kan de bedrading van die groep meer stroom te verwerken krijgen dan waarvoor hij is beveiligd. De batterij levert namelijk stroom op de groep zelf, en die stroom ziet de zekering in de meterkast niet.</p>
+<p>Daarom wordt een vrije groep, waar alleen de batterij op zit, sterk aangeraden. Sommige fabrikanten vragen er ook om.</p>
+
+<h2>Wat wij <em>doen.</em></h2>
+<ul class="checks">
+  <li>{check}<span><strong>Meterkast controleren:</strong> is er ruimte voor een extra groep, en is uw groepenkast nog in orde?</span></li>
+  <li>{check}<span><strong>Nieuwe groep plaatsen</strong> met een eigen aardlekautomaat.</span></li>
+  <li>{check}<span><strong>Kabel en stopcontact</strong> naar de plek van de batterij: berging, zolder, meterkast of schuur. Buiten met een spatwaterdicht stopcontact.</span></li>
+  <li>{check}<span><strong>Testen en uitleg,</strong> zodat u weet welke groep bij de batterij hoort.</span></li>
+</ul>
+
+<div class="note-box"><p><strong>Groepenkast vol?</strong> Dan breiden we hem uit of adviseren we een nieuwe. Lees meer over <a href="/groepenkast-vervangen-rotterdam/">groepenkast vervangen</a>. Overweegt u een grotere, vaste batterij? Kijk dan bij <a href="/thuisbatterij-aansluiten-rotterdam/">thuisbatterij aansluiten</a>.</p></div>
+
+<h2>Zo <em>werkt het.</em></h2>
+<p>Stuur ons via WhatsApp een foto van uw meterkast en vertel waar de batterij komt te staan. U krijgt binnen 24 uur een vaste prijs. Meestal is het werk binnen een dagdeel klaar.</p>
+""",
+        "faq": [
+            ("Is een vrije groep verplicht voor een stekkerbatterij?",
+             "Niet altijd, maar het wordt sterk aangeraden voor de brandveiligheid, en sommige fabrikanten vragen erom. Zo weet u zeker dat de bedrading niet overbelast raakt."),
+            ("Hoe lang duurt het aanleggen van een vrije groep?",
+             "Meestal is het binnen een dagdeel klaar. De stroom is daarbij kort uit; dat stemmen we vooraf met u af."),
+            ("Wat als er geen ruimte is in mijn groepenkast?",
+             "Dan kan de groepenkast vaak worden uitgebreid. Is hij verouderd, dan adviseren we eerlijk of vervangen verstandiger is. U krijgt altijd eerst een prijs."),
+            ("Kan het stopcontact ook in de schuur of op het balkon?",
+             "Ja. Buiten gebruiken we een spatwaterdicht stopcontact en de juiste beveiliging in de meterkast."),
+            ("Moet ik mijn stekkerbatterij aanmelden?",
+             "Voor stekkerbatterijen geldt geen registratieplicht bij de netbeheerder. Een vaste thuisbatterij meldt u wel aan via energieleveren.nl."),
         ],
     },
     # ------------------------------------------------------------ VERLICHTING
