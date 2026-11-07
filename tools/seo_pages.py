@@ -25,7 +25,7 @@ PHONE_DISPLAY = "+31 6 8548 4000"
 PHONE_TEL = "+31685484000"
 WA = "https://wa.me/31685484000"
 EMAIL = "alleklussers@gmail.com"
-ASSET_V = "20261104"
+ASSET_V = "20261107"
 
 ICONS = ["i-wa", "i-arrow", "i-check", "i-tag", "i-chat", "i-shield", "i-clock", "i-pin", "i-mail", "i-phone"]
 
@@ -186,7 +186,7 @@ def page(p, sprite_svg):
     <div class="topbar__group">
       <span class="topbar__item"><span class="dot dot--pulse" aria-hidden="true"></span><span>24/7 bereikbaar</span></span>
       <span class="topbar__item topbar__hide-sm">Verzekerde vakmensen</span>
-      <span class="topbar__item topbar__hide-sm">NEN 1010 gecertificeerd</span>
+      <span class="topbar__item topbar__hide-sm">Werken volgens NEN 1010</span>
     </div>
     <div class="topbar__group">
       <a href="{WA}" target="_blank" rel="noopener noreferrer">WhatsApp {PHONE_DISPLAY}</a>
