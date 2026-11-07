@@ -18,7 +18,10 @@ import sys
 
 ROOT = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 sys.path.insert(0, os.path.join(ROOT, "tools"))
-from seo_content import AREAS_REGION, AREAS_ROTTERDAM, PAGES  # noqa: E402
+from seo_content import AREAS_REGION, AREAS_ROTTERDAM, CITY_PAGES, PAGES  # noqa: E402
+
+ALL_PAGES = PAGES + CITY_PAGES
+CITY_LINKS = {p["city"]: p["slug"] for p in CITY_PAGES}
 
 BASE = "https://www.alleklussers.nl"
 PHONE_DISPLAY = "+31 6 8548 4000"
@@ -55,7 +58,7 @@ CHECK = icon("i-check", 18)
 def tiles(exclude=None):
     items = []
     for p in PAGES:
-        if p.get("hub") or p["slug"] == exclude:
+        if p.get("hub") or p.get("city") or p["slug"] == exclude:
             continue
         items.append(
             f'<a class="tile" href="/{p["slug"]}/"><span class="ch-tile ch-tile--{p["char"]}">'
@@ -65,7 +68,9 @@ def tiles(exclude=None):
 
 
 def areas():
-    lis = "".join(f"<li>{a}</li>" for a in AREAS_ROTTERDAM + AREAS_REGION)
+    lis = "".join(
+        f'<li><a href="/{CITY_LINKS[a]}/">{a}</a></li>' if a in CITY_LINKS else f"<li>{a}</li>"
+        for a in AREAS_ROTTERDAM + AREAS_REGION)
     return f'<ul class="areas">{lis}</ul>'
 
 
@@ -99,7 +104,7 @@ def jsonld(p):
             "url": url,
             "description": p["desc"],
             "provider": {"@id": f"{BASE}/#business"},
-            "areaServed": {"@type": "City", "name": "Rotterdam"},
+            "areaServed": {"@type": "City", "name": p.get("city", "Rotterdam")},
         })
     graph.append({
         "@type": "FAQPage",
@@ -107,7 +112,7 @@ def jsonld(p):
                         "acceptedAnswer": {"@type": "Answer", "text": a}} for q, a in p["faq"]],
     })
     crumbs = [("Home", f"{BASE}/")]
-    if not p.get("hub"):
+    if not p.get("hub") and not p.get("city"):
         crumbs.append(("Elektricien Rotterdam", f"{BASE}/elektricien-rotterdam/"))
     crumbs.append((p["short"], url))
     graph.append({
@@ -128,12 +133,23 @@ def page(p, sprite_svg):
     faq = "".join(f"<details><summary>{html.escape(q)}</summary><p>{html.escape(a)}</p></details>" for q, a in p["faq"])
 
     crumbs = '<a href="/">Home</a> <span aria-hidden="true">/</span> '
-    if not p.get("hub"):
+    if not p.get("hub") and not p.get("city"):
         crumbs += '<a href="/elektricien-rotterdam/">Elektricien Rotterdam</a> <span aria-hidden="true">/</span> '
     crumbs += f'<span aria-current="page">{p["short"]}</span>'
 
     extra = ""
-    if not p.get("hub"):
+    if p.get("city"):
+        extra = f"""
+  <section class="section" style="padding-top: 0">
+    <div class="wrap prose">
+      <h2>Onze <em>diensten.</em></h2>
+      {tiles()}
+      <h2>Ook in <em>de buurt.</em></h2>
+      <p>We werken in heel Rotterdam en de gemeenten eromheen.</p>
+      {areas()}
+    </div>
+  </section>"""
+    elif not p.get("hub"):
         extra = f"""
   <section class="section" style="padding-top: 0">
     <div class="wrap prose">
@@ -313,14 +329,14 @@ def page(p, sprite_svg):
 def main():
     svg = sprite()
     today = datetime.date.today().isoformat()
-    for p in PAGES:
+    for p in ALL_PAGES:
         d = os.path.join(ROOT, p["slug"])
         os.makedirs(d, exist_ok=True)
         with open(os.path.join(d, "index.html"), "w", encoding="utf-8") as f:
             f.write(page(p, svg))
         print("wrote", f"/{p['slug']}/")
 
-    urls = [f"{BASE}/"] + [f"{BASE}/{p['slug']}/" for p in PAGES]
+    urls = [f"{BASE}/"] + [f"{BASE}/{p['slug']}/" for p in ALL_PAGES]
     sm = ['<?xml version="1.0" encoding="UTF-8"?>',
           '<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">']
     for u in urls:
