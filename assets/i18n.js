@@ -22,7 +22,7 @@ window.AK_I18N = {
   // Top bar + trust
   'top.247': ['24/7 bereikbaar', '24/7 reachable', '7/24 ulaşılabilir', 'متاحون 24/7', 'Dostępni 24/7', '24/7 erreichbar'],
   'top.insured': ['Verzekerde vakmensen', 'Insured craftsmen', 'Sigortalı ustalar', 'حرفيون مؤمَّنون', 'Ubezpieczeni fachowcy', 'Versicherte Handwerker'],
-  'top.nen': ['NEN 1010 gecertificeerd', 'NEN 1010 certified', 'NEN 1010 sertifikalı', 'معتمد وفق NEN 1010', 'Certyfikat NEN 1010', 'NEN 1010 zertifiziert'],
+  'top.nen': ['Werken volgens NEN 1010', 'Working to NEN 1010', 'NEN 1010’a uygun çalışma', 'نعمل وفق معيار NEN 1010', 'Praca zgodna z NEN 1010', 'Arbeiten nach NEN 1010'],
   'trust.certified': ['Gecertificeerde vakmensen', 'Certified craftsmen', 'Sertifikalı ustalar', 'حرفيون معتمدون', 'Certyfikowani fachowcy', 'Zertifizierte Handwerker'],
   'trust.viaMail': ['Via mail of WhatsApp', 'Via mail or WhatsApp', 'Mail veya WhatsApp ile', 'عبر البريد أو واتساب', 'Przez mail lub WhatsApp', 'Per Mail oder WhatsApp'],
   'trust.reply24': ['Binnen 24 uur reactie', 'Reply within 24 hours', '24 saat içinde yanıt', 'ردٌّ خلال 24 ساعة', 'Odpowiedź w 24 godziny', 'Antwort innerhalb 24 h'],

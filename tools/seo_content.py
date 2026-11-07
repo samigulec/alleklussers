@@ -4,7 +4,7 @@
     python3 tools/seo_pages.py
 
 Each page is Dutch only (that is what people search in Rotterdam).
-Keep claims in line with the homepage: certified (NEN 1010), insured,
+Keep claims in line with the homepage: work to NEN 1010, insured,
 24/7 reachable, reply within 24 hours, clear price up front.
 """
 
@@ -115,7 +115,7 @@ PAGES = [
         "short": "Groepenkast vervangen",
         "sub": "Vervangen of uitbreiden voor inductie, laadpaal of warmtepomp.",
         "title": "Groepenkast vervangen Rotterdam | AlleKlussers",
-        "desc": "Groepenkast vervangen of uitbreiden in Rotterdam? Voor inductie, laadpaal, warmtepomp of meer veiligheid. Gecertificeerd volgens NEN 1010, prijs vooraf.",
+        "desc": "Groepenkast vervangen of uitbreiden in Rotterdam? Voor inductie, laadpaal, warmtepomp of meer veiligheid. Werk volgens NEN 1010, prijs vooraf.",
         "service": "Groepenkast vervangen en uitbreiden",
         "char": "kastje",
         "say": "“Meer groepen nodig? Ik regel het.”",
@@ -128,7 +128,7 @@ PAGES = [
   <li>{check}<span><strong>U heeft nog een oude kast</strong> met draaistoppen of smeltzekeringen.</span></li>
   <li>{check}<span><strong>Er zit geen of maar één aardlekschakelaar in.</strong> Een moderne kast beveiligt beter tegen lekstroom.</span></li>
   <li>{check}<span><strong>Groepen slaan vaak door,</strong> omdat er te veel apparaten op dezelfde groep zitten.</span></li>
-  <li>{check}<span><strong>U neemt iets zwaars in gebruik,</strong> zoals een inductiekookplaat, laadpaal, warmtepomp of zonnepanelen.</span></li>
+  <li>{check}<span><strong>U neemt iets zwaars in gebruik,</strong> zoals een inductiekookplaat, laadpaal, warmtepomp, zonnepanelen of een <a href="/thuisbatterij-aansluiten-rotterdam/">thuisbatterij</a>.</span></li>
   <li>{check}<span><strong>U gaat verbouwen</strong> en er komen nieuwe aansluitingen bij.</span></li>
 </ul>
 
@@ -147,6 +147,55 @@ PAGES = [
              "Een 3-fase aansluiting kan meer vermogen leveren en is handig bij zware verbruikers zoals een laadpaal of warmtepomp. We kijken samen wat u heeft en wat u nodig heeft."),
             ("Wat kost een nieuwe groepenkast?",
              "Dat hangt af van het aantal groepen en wat er verder moet gebeuren. U krijgt eerst een offerte met een vaste prijs."),
+        ],
+    },
+    # -------------------------------------------------------- THUISBATTERIJ
+    {
+        "slug": "thuisbatterij-aansluiten-rotterdam",
+        "short": "Thuisbatterij aansluiten",
+        "sub": "Eigen groep en meterkast klaar voor 2027.",
+        "title": "Thuisbatterij aansluiten Rotterdam | Klaar voor 2027 | AlleKlussers",
+        "desc": "Thuisbatterij laten aansluiten in Rotterdam? Salderen stopt op 1 januari 2027. Wij controleren uw meterkast, leggen een eigen groep aan en sluiten de batterij veilig aan.",
+        "service": "Thuisbatterij aansluiten",
+        "char": "laadie",
+        "say": "“Zonnestroom bewaren? Ik sluit hem aan.”",
+        "eyebrow": "Thuisbatterij en meterkast",
+        "h1": "Thuisbatterij aansluiten in <em>Rotterdam.</em>",
+        "lede": "Op 1 januari 2027 stopt de salderingsregeling. Met een thuisbatterij gebruikt u meer van uw eigen zonnestroom. Wij zorgen dat uw meterkast er klaar voor is en sluiten de batterij veilig aan.",
+        "body": """
+<h2>Waarom nu <em>een thuisbatterij?</em></h2>
+<p>Tot en met 31 december 2026 mag u de stroom die uw zonnepanelen terugleveren nog wegstrepen tegen de stroom die u van het net gebruikt. Vanaf 1 januari 2027 kan dat niet meer. U krijgt dan alleen een terugleververgoeding, en die is meestal lager dan wat u voor stroom betaalt. Zonnestroom die u zelf gebruikt, wordt dus meer waard.</p>
+<p>Een thuisbatterij slaat overdag uw zonnestroom op, zodat u die 's avonds zelf kunt gebruiken. Of dat voor u loont, hangt af van uw zonnepanelen en uw verbruik. Reken het daarom eerst goed door, eventueel met uw leverancier.</p>
+
+<h2>Stekkerbatterij of <em>vaste batterij?</em></h2>
+<ul class="checks">
+  <li>{check}<span><strong>Stekkerbatterij:</strong> steekt u zelf in een stopcontact. Er is geen installateur nodig, maar de capaciteit is beperkt. Wij kunnen controleren of de groep waarop hij komt dat aankan.</span></li>
+  <li>{check}<span><strong>Vaste thuisbatterij:</strong> meer capaciteit, maar die moet vakkundig worden aangesloten op een eigen groep in de meterkast. Daar komen wij in beeld.</span></li>
+</ul>
+
+<h2>Wat wij <em>doen.</em></h2>
+<ul class="checks">
+  <li>{check}<span><strong>Meterkast controleren:</strong> heeft uw groepenkast ruimte voor een extra groep, en is uw aansluiting zwaar genoeg?</span></li>
+  <li>{check}<span><strong>Groepenkast aanpassen of uitbreiden</strong> als dat nodig is, met de juiste aardlekbeveiliging.</span></li>
+  <li>{check}<span><strong>Eigen groep en bekabeling</strong> van de meterkast naar de plek van de batterij.</span></li>
+  <li>{check}<span><strong>Aansluiten en testen,</strong> in overleg met de leverancier van uw batterij of omvormer.</span></li>
+</ul>
+
+<div class="note-box"><p><strong>Druk richting 2027.</strong> Veel mensen willen hun batterij vóór 1 januari 2027 regelen. Plan daarom op tijd, dan voorkomt u wachttijden.</p></div>
+
+<p>Moet uw groepenkast eerst worden vervangen of uitgebreid? Lees meer over <a href="/groepenkast-vervangen-rotterdam/">groepenkast vervangen in Rotterdam</a>.</p>
+""",
+        "faq": [
+            ("Heb ik na 2027 een thuisbatterij nodig?",
+             "Niet per se. Het hangt af van hoeveel zonnestroom u teruglevert en wanneer u stroom gebruikt. Wie veel teruglevert en 's avonds veel verbruikt, heeft er meer aan. Laat het goed doorrekenen voordat u koopt."),
+            ("Mag ik een stekkerbatterij zelf aansluiten?",
+             "Ja, een stekkerbatterij steekt u zelf in het stopcontact. Let wel op dat de groep niet overbelast raakt. Twijfelt u, dan controleren wij uw groep."),
+            ("Is mijn meterkast geschikt voor een vaste thuisbatterij?",
+             "Dat controleren we eerst. Vaak is een extra groep genoeg; soms moet de groepenkast worden uitgebreid of vervangen. Dat hoort u vooraf van ons, met een prijs."),
+            ("Moet ik een thuisbatterij ergens aanmelden?",
+             "Een vaste thuisbatterij die op het net is aangesloten, meldt u aan via energieleveren.nl, net als zonnepanelen. Wij helpen u daarbij."),
+            ("Leveren jullie ook de batterij zelf?",
+             "Wij richten ons op de elektrische aansluiting en de meterkast. Heeft u nog geen batterij, dan denken we graag mee over wat bij uw installatie past."),
         ],
     },
     # ------------------------------------------------------------ VERLICHTING
