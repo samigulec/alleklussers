@@ -51,7 +51,7 @@ window.AK_I18N = {
   'cta.sendMessage': ['Stuur een bericht', 'Send a message', 'Mesaj gönder', 'أرسل رسالة', 'Wyślij wiadomość', 'Nachricht senden'],
 
   // Hero
-  'hero.eyebrow': ['Vakwerk in Nederland', 'Craftsmanship in the Netherlands', "Hollanda'da ustalık", 'حِرفية في هولندا', 'Rzemiosło w Holandii', 'Handwerk in den Niederlanden'],
+  'hero.eyebrow': ['Elektricien in Rotterdam', 'Electrician in Rotterdam', "Rotterdam'da elektrikçi", 'كهربائي في روتردام', 'Elektryk w Rotterdamie', 'Elektriker in Rotterdam'],
   'hero.title': ['Uw elektra, <em>zonder gedoe.</em>', 'Your electrics, <em>without hassle.</em>', 'Elektriğiniz, <em>sorunsuz.</em>', 'كهرباؤكم، <em>دون عناء.</em>', 'Twoja elektryka, <em>bez kłopotów.</em>', 'Ihre Elektrik, <em>ohne Stress.</em>'],
   'hero.lede': [
     'Storingen, groepenkasten, verlichting, bedrading en veilige installaties — snel, veilig en netjes afgewerkt.',

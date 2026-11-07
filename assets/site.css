@@ -678,3 +678,8 @@ html[dir='rtl'] .lightbox__prev svg, html[dir='rtl'] .lightbox__next svg { trans
   .cast-grid li { flex: 0 0 150px; scroll-snap-align: start; }
   .cast-card { flex: 1; }
 }
+
+/* Links to the service landing pages under the services list */
+.svc-more { margin-top: 28px; font-size: 15px; line-height: 1.9; color: var(--muted); }
+.svc-more a { color: var(--ink); font-weight: 700; text-decoration: underline; text-decoration-color: var(--line-2); text-underline-offset: 3px; }
+.svc-more a:hover { color: var(--amber-ink); }

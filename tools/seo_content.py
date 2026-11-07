@@ -385,3 +385,78 @@ PAGES = [
         ],
     },
 ]
+
+
+# ---------------------------------------------------------------- CITIES
+# One page per nearby town ("elektricien Schiedam" etc.). Keep the local
+# paragraph specific to the town so the pages are not near-duplicates.
+def _city(slug, name, char, say, wijken_oud, wijken_nieuw, local, faq_extra):
+    return {
+        "slug": slug,
+        "city": name,
+        "short": f"Elektricien {name}",
+        "title": f"Elektricien {name} | AlleKlussers, snel ter plaatse",
+        "desc": f"Elektricien nodig in {name}? AlleKlussers helpt bij storingen, groepenkasten, verlichting, stopcontacten, laadpalen en thuisbatterijen. Binnen 24 uur reactie, prijs vooraf.",
+        "service": f"Elektricien in {name}",
+        "char": char,
+        "say": say,
+        "eyebrow": f"Elektricien in {name}",
+        "h1": f"Uw elektricien in <em>{name}.</em>",
+        "lede": f"Vanuit Rotterdam-Zuid zijn we snel in {name}. Voor storingen, groepenkasten, verlichting en alles wat met elektra te maken heeft.",
+        "body": f"""
+<h2>Elektra in {name}, <em>snel geregeld.</em></h2>
+<p>AlleKlussers is een elektrotechnisch bedrijf uit Rotterdam-Zuid. {name} ligt vlakbij, dus we zijn er snel. U krijgt binnen 24 uur reactie met een duidelijke prijs vooraf, en bij storingen zijn we 24/7 bereikbaar.</p>
+<p>{local}</p>
+<p>In oudere wijken zoals {wijken_oud} komen we vaak verouderde groepenkasten en bedrading tegen. In nieuwere wijken zoals {wijken_nieuw} gaat het vaker om een laadpaal, een thuisbatterij of extra groepen voor inductie.</p>
+
+<h2>Waarmee wij u <em>helpen in {name}.</em></h2>
+<ul class="checks">
+  <li>{{check}}<span><a href="/storing-elektra-rotterdam/">Storing verhelpen</a>: stroomuitval of een aardlekschakelaar die steeds doorslaat.</span></li>
+  <li>{{check}}<span><a href="/groepenkast-vervangen-rotterdam/">Groepenkast vervangen of uitbreiden</a>, bijvoorbeeld voor inductie of een warmtepomp.</span></li>
+  <li>{{check}}<span><a href="/thuisbatterij-aansluiten-rotterdam/">Thuisbatterij aansluiten</a> op een eigen groep, op tijd voor 2027.</span></li>
+  <li>{{check}}<span><a href="/lampen-ophangen-rotterdam/">Lampen ophangen</a>, spots en dimmers.</span></li>
+  <li>{{check}}<span><a href="/stopcontact-plaatsen-rotterdam/">Stopcontacten plaatsen</a> of verplaatsen, binnen en buiten.</span></li>
+  <li>{{check}}<span><a href="/laadpaal-installeren-rotterdam/">Laadpaal installeren</a> bij uw woning of bedrijf.</span></li>
+</ul>
+
+<h2>Zo <em>werkt het.</em></h2>
+<p>Stuur een berichtje via WhatsApp met wat er moet gebeuren, eventueel met een foto. U krijgt binnen 24 uur een prijs. We plannen een moment dat u uitkomt, voeren het werk uit en lopen alles samen met u na.</p>
+""",
+        "faq": [
+            (f"Komen jullie ook in {name}?",
+             f"Ja. We werken in heel {name} en de rest van de regio Rotterdam."),
+            (f"Hoe snel kan een elektricien in {name} bij mij zijn?",
+             "U krijgt binnen 24 uur reactie. Bij een storing zijn we 24/7 bereikbaar en plannen we zo snel mogelijk een afspraak in."),
+            ("Wat kost het?",
+             "Dat hangt af van de klus. U krijgt altijd eerst een prijs, zodat u vooraf weet waar u aan toe bent."),
+        ] + faq_extra,
+    }
+
+
+CITY_PAGES = [
+    _city("elektricien-schiedam", "Schiedam", "vonk", "“Schiedam? Daar zijn we zo.”",
+          "de binnenstad, Schiedam-Oost en Nieuwland", "Kethel en Woudhoek",
+          "Van de monumentale panden in de historische binnenstad tot de flats in Groenoord en de eengezinswoningen in Woudhoek: elke woning vraagt om een eigen aanpak. In oude panden kijken we extra goed naar de staat van de bedrading voordat we iets aanpassen.",
+          [("Werken jullie ook in oude panden in de binnenstad?",
+            "Ja. In oudere panden controleren we eerst de bestaande installatie en bespreken we met u wat nodig is voordat we beginnen.")]),
+    _city("elektricien-vlaardingen", "Vlaardingen", "kastje", "“Vlaardingen? Ik ben onderweg.”",
+          "Westwijk, Babberspolder en het centrum", "Holy en Ambacht",
+          "In Vlaardingen werken we in alle wijken, van de portiekflats in de Westwijk en Babberspolder tot de woningen in Holy en Ambacht. Veel woningen hier zijn decennia oud; een controle van de groepenkast is dan vaak een goed begin.",
+          [("Mijn groepenkast is oud. Moet hij vervangen worden?",
+            "Niet altijd. We kijken eerst wat er zit en wat u nodig heeft. Pas als vervangen echt verstandig is, krijgt u daar een prijs voor.")]),
+    _city("elektricien-capelle-aan-den-ijssel", "Capelle aan den IJssel", "dosie", "“Capelle? Gewoon even de brug over.”",
+          "Middelwatering, Oostgaarde en Schollevaar", "Fascinatio",
+          "Capelle aan den IJssel ligt direct naast Rotterdam. We werken in Middelwatering, Oostgaarde, Schollevaar, 's-Gravenland en Capelle-West, en ook in de nieuwbouw van Fascinatio. Voor bedrijven in de omgeving doen we ook onderhoud en storingen.",
+          [("Werken jullie ook voor bedrijven in Capelle?",
+            "Ja. Naast particulieren helpen we ook bedrijven, winkels en verhuurders met storingen, onderhoud en aanpassingen.")]),
+    _city("elektricien-barendrecht", "Barendrecht", "laadie", "“Barendrecht? Laden maar.”",
+          "het centrum en het oude dorp", "Carnisselande en Smitshoek",
+          "Barendrecht ligt op een paar minuten van ons in Rotterdam-Zuid. In Carnisselande en Smitshoek wonen veel gezinnen met een auto voor de deur en zonnepanelen op het dak; daar helpen we vaak met laadpalen, thuisbatterijen en extra groepen.",
+          [("Kunnen jullie een laadpaal en thuisbatterij tegelijk aansluiten?",
+            "Ja. We kijken eerst of uw meterkast en aansluiting dat aankunnen en zorgen dat beide een eigen groep krijgen.")]),
+    _city("elektricien-ridderkerk", "Ridderkerk", "lampje", "“Ridderkerk? Ik breng het licht.”",
+          "Bolnes, Slikkerveer en het centrum", "Drievliet en Het Zand",
+          "In Ridderkerk komen we in alle kernen: Bolnes, Slikkerveer, Rijsoord, Drievliet, Het Zand en het centrum. Ridderkerk ligt direct naast Rotterdam-Zuid, dus we zijn er snel bij een storing.",
+          [("Rekenen jullie extra voor Ridderkerk?",
+            "U krijgt vooraf één duidelijke prijs voor de klus, zodat u niet achteraf wordt verrast.")]),
+]
