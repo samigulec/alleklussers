@@ -18,6 +18,23 @@ AREAS_REGION = [
     "Krimpen aan den IJssel", "Albrandswaard",
 ]
 
+# Pre-filled WhatsApp message per page, so a visitor only has to add
+# details (or a photo) and press send. City pages build theirs in _city().
+FOTO = " Ik stuur een foto van mijn meterkast mee."
+WA_TEXT = {
+    "elektricien-rotterdam": "Hallo AlleKlussers, ik zoek een elektricien in Rotterdam. Het gaat om: ",
+    "storing-elektra-rotterdam": "Hallo AlleKlussers, ik heb een storing in mijn elektra. Wat er aan de hand is: ",
+    "aardlekschakelaar-rotterdam": "Hallo AlleKlussers, mijn aardlekschakelaar slaat steeds door." + FOTO,
+    "groepenkast-vervangen-rotterdam": "Hallo AlleKlussers, ik wil graag een prijs voor het vervangen of uitbreiden van mijn groepenkast." + FOTO,
+    "thuisbatterij-aansluiten-rotterdam": "Hallo AlleKlussers, ik wil graag een thuisbatterij laten aansluiten." + FOTO,
+    "vrije-groep-stekkerbatterij-rotterdam": "Hallo AlleKlussers, ik wil graag een vrije groep voor mijn stekkerbatterij." + FOTO,
+    "lampen-ophangen-rotterdam": "Hallo AlleKlussers, ik wil graag lampen laten ophangen. Het gaat om: ",
+    "stopcontact-plaatsen-rotterdam": "Hallo AlleKlussers, ik wil graag stopcontacten laten plaatsen. Het gaat om: ",
+    "bedrading-vervangen-rotterdam": "Hallo AlleKlussers, ik wil mijn bedrading laten controleren of vervangen. Het gaat om: ",
+    "elektra-keuring-rotterdam": "Hallo AlleKlussers, ik wil mijn elektrische installatie laten keuren. Het gaat om: ",
+    "laadpaal-installeren-rotterdam": "Hallo AlleKlussers, ik wil graag een laadpaal laten installeren." + FOTO,
+}
+
 # Order here = order of tiles on the hub page and in the footer.
 PAGES = [
     # ------------------------------------------------------------------ HUB
@@ -517,6 +534,7 @@ def _city(slug, name, char, say, wijken_oud, wijken_nieuw, local, faq_extra):
         "title": f"Elektricien {name} | AlleKlussers, snel ter plaatse",
         "desc": f"Elektricien nodig in {name}? AlleKlussers helpt bij storingen, groepenkasten, verlichting, stopcontacten, laadpalen en thuisbatterijen. Binnen 24 uur reactie, prijs vooraf.",
         "service": f"Elektricien in {name}",
+        "wa": f"Hallo AlleKlussers, ik zoek een elektricien in {name}. Het gaat om: ",
         "char": char,
         "say": say,
         "eyebrow": f"Elektricien in {name}",
