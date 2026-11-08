@@ -33,6 +33,7 @@ WA_TEXT = {
     "bedrading-vervangen-rotterdam": "Hallo AlleKlussers, ik wil mijn bedrading laten controleren of vervangen. Het gaat om: ",
     "elektra-keuring-rotterdam": "Hallo AlleKlussers, ik wil mijn elektrische installatie laten keuren. Het gaat om: ",
     "laadpaal-installeren-rotterdam": "Hallo AlleKlussers, ik wil graag een laadpaal laten installeren." + FOTO,
+    "elektricien-verhuurders-vve-rotterdam": "Hallo AlleKlussers, ik ben verhuurder of beheerder en zoek een vaste elektricien. Het gaat om: ",
 }
 
 # Order here = order of tiles on the hub page and in the footer.
@@ -466,7 +467,7 @@ PAGES = [
 <h2>Wanneer is een keuring <em>verstandig?</em></h2>
 <ul class="checks">
   <li>{check}<span><strong>Bij aankoop van een woning,</strong> zodat u weet of er kosten aankomen.</span></li>
-  <li>{check}<span><strong>Bij verhuur,</strong> voor de veiligheid van uw huurders en uw eigen gemoedsrust.</span></li>
+  <li>{check}<span><strong>Bij verhuur,</strong> voor de veiligheid van uw huurders en uw eigen gemoedsrust. Lees ook wat we doen <a href="/elektricien-verhuurders-vve-rotterdam/">voor verhuurders en VvE's</a>.</span></li>
   <li>{check}<span><strong>Na een verbouwing</strong> of als er door anderen aan de elektra is gewerkt.</span></li>
   <li>{check}<span><strong>In een ouder huis,</strong> of als groepen vaak doorslaan.</span></li>
 </ul>
@@ -518,6 +519,58 @@ PAGES = [
              "Dat hangt af van uw auto, uw aansluiting en of u slim wilt laden. We adviseren u graag."),
             ("Wat is loadbalancing?",
              "Loadbalancing zorgt dat de laadpaal minder vermogen gebruikt als andere apparaten veel stroom vragen. Zo slaat uw hoofdzekering niet door."),
+        ],
+    },
+    # ------------------------------------------------- VERHUURDERS / VVE
+    {
+        "slug": "elektricien-verhuurders-vve-rotterdam",
+        "short": "Voor verhuurders en VvE's",
+        "sub": "Eén aanspreekpunt voor storingen, mutaties en onderhoud.",
+        "title": "Elektricien voor verhuurders en VvE's in Rotterdam | AlleKlussers",
+        "desc": "Verhuurder, beheerder of VvE in Rotterdam? AlleKlussers regelt storingen bij huurders, keuringen bij mutatie, groepenkasten en verlichting in algemene ruimten. Prijs vooraf, 24/7 bereikbaar.",
+        "service": "Elektricien voor verhuurders, beheerders en VvE's",
+        "char": "stekkie",
+        "say": "“Uw huurder belt, wij regelen het.”",
+        "eyebrow": "Verhuurders, beheerders en VvE's",
+        "h1": "Elektricien voor verhuurders <em>en VvE's.</em>",
+        "lede": "Eén vast aanspreekpunt voor de elektra in uw huurwoningen of complex in Rotterdam. Van een storing bij een huurder tot een keuring bij mutatie of een nieuwe groepenkast.",
+        "body": """
+<h2>Wat wij <em>voor u regelen.</em></h2>
+<ul class="checks">
+  <li>{check}<span><strong>Storingen bij huurders.</strong> Valt de stroom uit of slaat de <a href="/aardlekschakelaar-rotterdam/">aardlekschakelaar</a> steeds door? We zijn 24/7 bereikbaar, plannen direct met de huurder en zoeken de oorzaak.</span></li>
+  <li>{check}<span><strong>Controle bij mutatie.</strong> Tussen twee huurders in de installatie laten nakijken, zodat de nieuwe huurder in een veilige woning start. Lees meer over <a href="/elektra-keuring-rotterdam/">keuring van de installatie</a>.</span></li>
+  <li>{check}<span><strong>Groepenkasten en bedrading.</strong> Een verouderde kast of oude bedrading vervangen, of <a href="/groepenkast-vervangen-rotterdam/">extra groepen</a> voor inductie of een warmtepomp bij een renovatie.</span></li>
+  <li>{check}<span><strong>Algemene ruimten.</strong> Verlichting en stopcontacten in het trappenhuis, de galerij, de bergingen of de fietsenstalling.</span></li>
+  <li>{check}<span><strong>Laadpalen voor VvE's.</strong> We kijken vooraf wat de installatie aankan en maken een offerte die u in de vergadering kunt bespreken. Zie <a href="/laadpaal-installeren-rotterdam/">laadpaal installeren</a>.</span></li>
+</ul>
+
+<h2>Zo werken we <em>samen.</em></h2>
+<ul class="checks">
+  <li>{check}<span><strong>Eén aanspreekpunt.</strong> U stuurt ons het adres en de contactgegevens van de huurder via WhatsApp of e-mail. Wij plannen de afspraak met de huurder zelf.</span></li>
+  <li>{check}<span><strong>Prijs vooraf.</strong> Voor elke reparatie krijgt u eerst een duidelijke prijs. Wilt u dat wij kleine storingen direct oplossen? Spreek dan met ons af tot welk bedrag dat mag zonder uw akkoord.</span></li>
+  <li>{check}<span><strong>Terugkoppeling na afloop.</strong> U hoort wat de oorzaak was en wat we hebben gedaan, zo nodig met foto's.</span></li>
+  <li>{check}<span><strong>Per klus of doorlopend.</strong> U kunt ons per klus inschakelen, of ons vast laten bellen voor al uw adressen.</span></li>
+</ul>
+<p>Alles volgens NEN 1010, door verzekerde vakmensen. U krijgt binnen 24 uur reactie op een aanvraag.</p>
+
+<h2>Huurder of verhuurder: <em>wie betaalt wat?</em></h2>
+<p>Kleine herstellingen zijn voor de huurder. Welke dat zijn, staat in het Besluit kleine herstellingen. Voor elektra gaat het om het vastzetten en vervangen van schakelaars, stopcontacten en deurbellen, als dat zonder noemenswaardige kosten kan. Ook lampen aan de buitenkant van de woning en in gemeenschappelijke ruimten vervangt de huurder.</p>
+<p>Groot onderhoud is voor de verhuurder, net als het vervangen van lamparmaturen in gemeenschappelijke ruimten. De groepenkast en de vaste bedrading staan niet in de lijst van kleine herstellingen. Ontstaat een kleine reparatie doordat de verhuurder een gebrek niet op tijd heeft verholpen, dan is die ook voor de verhuurder.</p>
+<div class="note-box"><p><strong>Twijfelt u?</strong> Kijk in het huurcontract en op <a href="https://www.rijksoverheid.nl/documenten/vraag-en-antwoord/woning-huren/welke-kosten-zijn-voor-de-huurder-en-welke-voor-de-verhuurder" target="_blank" rel="noopener noreferrer">rijksoverheid.nl</a>. Wij vertellen u na een storing wat de oorzaak was, zodat u kunt bepalen bij wie de kosten horen.</p></div>
+""",
+        "faq": [
+            ("Mogen mijn huurders jullie zelf bellen?",
+             "Ja, als u dat wilt. Spreek met ons af wat we zonder overleg mogen oplossen en vanaf welk bedrag we eerst uw akkoord vragen. U krijgt na afloop altijd een terugkoppeling."),
+            ("Werken jullie ook voor VvE's en beheerders?",
+             "Ja. We helpen VvE's en beheerders met storingen, verlichting in algemene ruimten, groepenkasten en laadpalen. Voor grotere werken maken we een offerte die u in de vergadering kunt bespreken."),
+            ("Moet een VvE een laadpaal in de parkeergarage eerst goedkeuren?",
+             "Meestal wel, omdat het om gemeenschappelijke delen gaat. Wij kunnen vooraf bekijken wat de installatie aankan, zodat de vergadering een besluit kan nemen op basis van een concrete offerte."),
+            ("Is de groepenkast in een huurwoning voor de huurder of de verhuurder?",
+             "De groepenkast staat niet in het Besluit kleine herstellingen. Onderhoud en vervanging horen daarom in de regel bij de verhuurder. Kijk voor uw situatie ook in het huurcontract."),
+            ("Moet ik een vast contract afsluiten?",
+             "Nee. U kunt ons per klus inschakelen. Heeft u meerdere adressen, dan maken we graag vaste afspraken over hoe we meldingen afhandelen."),
+            ("Wat kost het?",
+             "Dat hangt af van de klus. U krijgt altijd eerst een prijs, zodat u vooraf weet waar u aan toe bent."),
         ],
     },
 ]
