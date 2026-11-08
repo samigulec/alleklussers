@@ -29,7 +29,7 @@ PHONE_DISPLAY = "+31 6 8548 4000"
 PHONE_TEL = "+31685484000"
 WA = "https://wa.me/31685484000"
 EMAIL = "alleklussers@gmail.com"
-ASSET_V = "20261108c"
+ASSET_V = "20261108d"
 
 ICONS = ["i-wa", "i-arrow", "i-check", "i-tag", "i-chat", "i-shield", "i-clock", "i-pin", "i-mail", "i-phone"]
 
@@ -90,7 +90,8 @@ def jsonld(p):
         "image": f"{BASE}/img/hero.jpg",
         "telephone": PHONE_DISPLAY,
         "email": EMAIL,
-        "address": {"@type": "PostalAddress", "addressLocality": "Rotterdam", "addressCountry": "NL"},
+        "address": {"@type": "PostalAddress", "streetAddress": "Walravenstraat 17", "postalCode": "3074 NL",
+                    "addressLocality": "Rotterdam", "addressRegion": "Zuid-Holland", "addressCountry": "NL"},
         "areaServed": [{"@type": "City", "name": n} for n in ["Rotterdam"] + AREAS_REGION],
     }
     graph = []
@@ -196,7 +197,8 @@ def page(p, sprite_svg):
   </script>
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,300;0,9..144,400;1,9..144,300;1,9..144,400&family=Manrope:wght@400;500;600;700;800&display=swap" />
+  <link rel="preload" as="style" href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,300;0,9..144,400;1,9..144,300;1,9..144,400&family=Manrope:wght@400;500;600;700;800&display=swap" onload="this.onload=null;this.rel='stylesheet'" />
+  <noscript><link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,300;0,9..144,400;1,9..144,300;1,9..144,400&family=Manrope:wght@400;500;600;700;800&display=swap" /></noscript>
   <link rel="stylesheet" href="/assets/site.css?v={ASSET_V}" />
   <link rel="stylesheet" href="/assets/seo.css?v={ASSET_V}" />
 </head>
@@ -360,6 +362,34 @@ def main():
     open(os.path.join(ROOT, "sitemap.xml"), "w").write("\n".join(sm))
     open(os.path.join(ROOT, "robots.txt"), "w").write(f"User-agent: *\nAllow: /\n\nSitemap: {BASE}/sitemap.xml\n")
     print("wrote /sitemap.xml and /robots.txt")
+    open(os.path.join(ROOT, "llms.txt"), "w", encoding="utf-8").write(llms_txt())
+    print("wrote /llms.txt")
+
+
+def llms_txt():
+    """Plain overview for AI assistants (llmstxt.org format), built from the same page list."""
+    lines = [
+        "# AlleKlussers",
+        "",
+        "> Elektricien in Rotterdam en omgeving (Boss Tech VOF, Walravenstraat 17, 3074 NL Rotterdam). "
+        "Alleen elektra: storingen, groepenkasten, verlichting, stopcontacten, bedrading, keuringen en laadpalen. "
+        "Werken volgens NEN 1010, verzekerde vakmensen, 24/7 bereikbaar, binnen 24 uur reactie en een duidelijke prijs vooraf.",
+        "",
+        f"Contact: WhatsApp {PHONE_DISPLAY}, {EMAIL}. Werkgebied: Rotterdam, " + ", ".join(AREAS_REGION) + ".",
+        "",
+        "## Diensten",
+        "",
+    ]
+    for p in PAGES:
+        if p.get("hub"):
+            lines.append(f"- [{p['short']}]({BASE}/{p['slug']}/): overzicht van alle diensten en het werkgebied.")
+        else:
+            lines.append(f"- [{p['short']}]({BASE}/{p['slug']}/): {p['sub']}")
+    lines += ["", "## Werkgebied", ""]
+    for p in CITY_PAGES:
+        lines.append(f"- [{p['short']}]({BASE}/{p['slug']}/): elektricien in {p['city']} en omgeving.")
+    lines += ["", "## Overig", "", f"- [Homepage]({BASE}/): offerte aanvragen, projecten en over ons.", ""]
+    return "\n".join(lines)
 
 
 if __name__ == "__main__":
