@@ -97,7 +97,7 @@ PAGES = [
         "lede": "Valt de stroom uit of slaat de aardlekschakelaar steeds door? Wij zoeken de oorzaak en lossen het veilig op.",
         "body": """
 <h2>Eerst dit: <em>zelf controleren.</em></h2>
-<p>Sommige storingen kunt u zelf veilig nagaan voordat u belt:</p>
+<p>Sommige storingen kunt u zelf veilig nagaan voordat u ons een bericht stuurt:</p>
 <ul class="checks">
   <li>{check}<span><strong>Heeft de buurt ook geen stroom?</strong> Dan ligt de storing waarschijnlijk bij de netbeheerder. In Rotterdam is dat Stedin.</span></li>
   <li>{check}<span><strong>Kijk in de meterkast.</strong> Staat er een groep of aardlekschakelaar omlaag? Haal dan eerst de stekkers van apparaten op die groep uit het stopcontact en zet de schakelaar weer omhoog.</span></li>
@@ -120,10 +120,10 @@ PAGES = [
         "faq": [
             ("Mijn aardlekschakelaar slaat steeds door. Wat nu?",
              "Haal alle stekkers op die groep eruit en zet de aardlekschakelaar weer omhoog. Blijft hij staan, steek de apparaten dan één voor één terug om te zien welk apparaat de storing geeft. Slaat hij ook zonder apparaten door, dan zit de fout in de installatie en is een elektricien nodig."),
-            ("De hele straat heeft geen stroom. Moet ik jullie bellen?",
+            ("De hele straat heeft geen stroom. Moet ik jullie inschakelen?",
              "Nee, dan is het een storing in het net. Die meldt u bij de netbeheerder; in Rotterdam is dat Stedin."),
             ("Zijn jullie ook 's avonds en in het weekend bereikbaar?",
-             "Ja, we zijn 24/7 bereikbaar. Bel of app ons, dan kijken we hoe snel we bij u kunnen zijn."),
+             "Ja, we zijn 24/7 bereikbaar. Stuur ons een WhatsApp, dan kijken we hoe snel we bij u kunnen zijn."),
             ("Wat kost het verhelpen van een storing?",
              "Dat hangt af van de oorzaak. We bespreken de kosten met u voordat we aan de reparatie beginnen."),
         ],
@@ -530,7 +530,7 @@ PAGES = [
         "desc": "Verhuurder, beheerder of VvE in Rotterdam? AlleKlussers regelt storingen bij huurders, keuringen bij mutatie, groepenkasten en verlichting in algemene ruimten. Prijs vooraf, 24/7 bereikbaar.",
         "service": "Elektricien voor verhuurders, beheerders en VvE's",
         "char": "stekkie",
-        "say": "“Uw huurder belt, wij regelen het.”",
+        "say": "“Uw huurder appt, wij regelen het.”",
         "eyebrow": "Verhuurders, beheerders en VvE's",
         "h1": "Elektricien voor verhuurders <em>en VvE's.</em>",
         "lede": "Eén vast aanspreekpunt voor de elektra in uw huurwoningen of complex in Rotterdam. Van een storing bij een huurder tot een keuring bij mutatie of een nieuwe groepenkast.",
@@ -549,7 +549,7 @@ PAGES = [
   <li>{check}<span><strong>Eén aanspreekpunt.</strong> U stuurt ons het adres en de contactgegevens van de huurder via WhatsApp of e-mail. Wij plannen de afspraak met de huurder zelf.</span></li>
   <li>{check}<span><strong>Prijs vooraf.</strong> Voor elke reparatie krijgt u eerst een duidelijke prijs. Wilt u dat wij kleine storingen direct oplossen? Spreek dan met ons af tot welk bedrag dat mag zonder uw akkoord.</span></li>
   <li>{check}<span><strong>Terugkoppeling na afloop.</strong> U hoort wat de oorzaak was en wat we hebben gedaan, zo nodig met foto's.</span></li>
-  <li>{check}<span><strong>Per klus of doorlopend.</strong> U kunt ons per klus inschakelen, of ons vast laten bellen voor al uw adressen.</span></li>
+  <li>{check}<span><strong>Per klus of doorlopend.</strong> U kunt ons per klus inschakelen, of vast voor al uw adressen.</span></li>
 </ul>
 <p>Alles volgens NEN 1010, door verzekerde vakmensen. U krijgt binnen 24 uur reactie op een aanvraag.</p>
 
@@ -559,7 +559,7 @@ PAGES = [
 <div class="note-box"><p><strong>Twijfelt u?</strong> Kijk in het huurcontract en op <a href="https://www.rijksoverheid.nl/documenten/vraag-en-antwoord/woning-huren/welke-kosten-zijn-voor-de-huurder-en-welke-voor-de-verhuurder" target="_blank" rel="noopener noreferrer">rijksoverheid.nl</a>. Wij vertellen u na een storing wat de oorzaak was, zodat u kunt bepalen bij wie de kosten horen.</p></div>
 """,
         "faq": [
-            ("Mogen mijn huurders jullie zelf bellen?",
+            ("Mogen mijn huurders ons zelf een bericht sturen?",
              "Ja, als u dat wilt. Spreek met ons af wat we zonder overleg mogen oplossen en vanaf welk bedrag we eerst uw akkoord vragen. U krijgt na afloop altijd een terugkoppeling."),
             ("Werken jullie ook voor VvE's en beheerders?",
              "Ja. We helpen VvE's en beheerders met storingen, verlichting in algemene ruimten, groepenkasten en laadpalen. Voor grotere werken maken we een offerte die u in de vergadering kunt bespreken."),
