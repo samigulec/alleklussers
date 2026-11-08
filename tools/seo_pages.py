@@ -15,10 +15,11 @@ import json
 import os
 import re
 import sys
+import urllib.parse
 
 ROOT = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 sys.path.insert(0, os.path.join(ROOT, "tools"))
-from seo_content import AREAS_REGION, AREAS_ROTTERDAM, CITY_PAGES, PAGES  # noqa: E402
+from seo_content import AREAS_REGION, AREAS_ROTTERDAM, CITY_PAGES, PAGES, WA_TEXT  # noqa: E402
 
 ALL_PAGES = PAGES + CITY_PAGES
 CITY_LINKS = {p["city"]: p["slug"] for p in CITY_PAGES}
@@ -28,7 +29,7 @@ PHONE_DISPLAY = "+31 6 8548 4000"
 PHONE_TEL = "+31685484000"
 WA = "https://wa.me/31685484000"
 EMAIL = "alleklussers@gmail.com"
-ASSET_V = "20261108"
+ASSET_V = "20261108b"
 
 ICONS = ["i-wa", "i-arrow", "i-check", "i-tag", "i-chat", "i-shield", "i-clock", "i-pin", "i-mail", "i-phone"]
 
@@ -127,8 +128,16 @@ def footer_services():
     return "".join(f'<li><a href="/{p["slug"]}/">{p["short"]}</a></li>' for p in PAGES)
 
 
+def wa_link(p):
+    text = p.get("wa") or WA_TEXT.get(p["slug"])
+    if not text:
+        return WA
+    return WA + "?text=" + urllib.parse.quote(text)
+
+
 def page(p, sprite_svg):
     url = f"{BASE}/{p['slug']}/"
+    wa = html.escape(wa_link(p))
     body = p["body"].format(check=CHECK, tiles=tiles(), areas=areas())
     faq = "".join(f"<details><summary>{html.escape(q)}</summary><p>{html.escape(a)}</p></details>" for q, a in p["faq"])
 
@@ -205,7 +214,7 @@ def page(p, sprite_svg):
       <span class="topbar__item topbar__hide-sm">Werken volgens NEN 1010</span>
     </div>
     <div class="topbar__group">
-      <a href="{WA}" target="_blank" rel="noopener noreferrer">WhatsApp {PHONE_DISPLAY}</a>
+      <a href="{wa}" target="_blank" rel="noopener noreferrer" data-cta="topbar">WhatsApp {PHONE_DISPLAY}</a>
       <a class="topbar__hide-sm" href="mailto:{EMAIL}">{EMAIL}</a>
     </div>
   </div>
@@ -225,7 +234,7 @@ def page(p, sprite_svg):
     </nav>
     <div class="header__actions">
       <a class="btn btn--ink btn--sm header__cta" href="/#contact">Offerte aanvragen</a>
-      <a class="btn btn--ink btn--sm header__wa" href="{WA}" target="_blank" rel="noopener noreferrer">{icon("i-wa", 16)}WhatsApp</a>
+      <a class="btn btn--ink btn--sm header__wa" href="{wa}" data-cta="header" target="_blank" rel="noopener noreferrer">{icon("i-wa", 16)}WhatsApp</a>
     </div>
   </div>
 </header>
@@ -239,9 +248,10 @@ def page(p, sprite_svg):
       <h1 class="h-page">{p["h1"]}</h1>
       <p class="lede">{p["lede"]}</p>
       <div class="seo-actions">
-        <a class="btn btn--amber" href="{WA}" target="_blank" rel="noopener noreferrer">{icon("i-wa")}WhatsApp ons</a>
-        <a class="btn btn--ghost" href="tel:{PHONE_TEL}">{icon("i-phone")}Bel {PHONE_DISPLAY}</a>
+        <a class="btn btn--amber" href="{wa}" target="_blank" rel="noopener noreferrer" data-cta="hero">{icon("i-wa")}WhatsApp ons</a>
+        <a class="btn btn--ghost" href="tel:{PHONE_TEL}" data-cta="hero">{icon("i-phone")}Bel {PHONE_DISPLAY}</a>
       </div>
+      <p class="seo-hint">Stuur gerust een foto van uw meterkast of de klus mee. Dan krijgt u sneller een duidelijke prijs.</p>
       <div class="speaker page-head__buddy"><p class="say">{p["say"]}</p><svg class="ch ch-float speaker__ch ch-badge ch-badge--{p["char"]}" aria-hidden="true"><use href="#ch-{p["char"]}"/></svg></div>
     </div>
   </div>
@@ -254,9 +264,9 @@ def page(p, sprite_svg):
       <aside class="seo-card" aria-label="Contact">
         <h2>Offerte of advies <em>nodig?</em></h2>
         <p>Stuur een berichtje met wat er moet gebeuren, eventueel met een foto. U krijgt binnen 24 uur reactie met een prijs.</p>
-        <a class="btn btn--amber btn--block" href="{WA}" target="_blank" rel="noopener noreferrer">{icon("i-wa")}WhatsApp ons</a>
-        <a class="btn btn--ghost btn--block" href="tel:{PHONE_TEL}">{icon("i-phone")}{PHONE_DISPLAY}</a>
-        <a class="btn btn--ghost btn--block" href="mailto:{EMAIL}">{icon("i-mail")}{EMAIL}</a>
+        <a class="btn btn--amber btn--block" href="{wa}" data-cta="card" target="_blank" rel="noopener noreferrer">{icon("i-wa")}WhatsApp ons</a>
+        <a class="btn btn--ghost btn--block" href="tel:{PHONE_TEL}" data-cta="card">{icon("i-phone")}{PHONE_DISPLAY}</a>
+        <a class="btn btn--ghost btn--block" href="mailto:{EMAIL}" data-cta="card">{icon("i-mail")}{EMAIL}</a>
         <ul>
           <li>{icon("i-tag")}Duidelijke prijs vooraf</li>
           <li>{icon("i-clock")}Binnen 24 uur reactie</li>
@@ -277,7 +287,7 @@ def page(p, sprite_svg):
     <div class="wrap seo-cta">
       <h2 class="h-section">Elektra geregeld, <em>zonder gedoe.</em></h2>
       <div class="seo-actions" style="margin-top: 0">
-        <a class="btn btn--amber" href="{WA}" target="_blank" rel="noopener noreferrer">{icon("i-wa")}WhatsApp ons</a>
+        <a class="btn btn--amber" href="{wa}" target="_blank" rel="noopener noreferrer" data-cta="bottom">{icon("i-wa")}WhatsApp ons</a>
         <a class="btn btn--ghost" href="/#contact">Offerte aanvragen {icon("i-arrow", 16)}</a>
       </div>
     </div>
@@ -308,8 +318,8 @@ def page(p, sprite_svg):
       <h2>Contact</h2>
       <ul>
         <li><a href="mailto:{EMAIL}">{EMAIL}</a></li>
-        <li><a href="{WA}" target="_blank" rel="noopener noreferrer">WhatsApp {PHONE_DISPLAY}</a></li>
-        <li><a href="tel:{PHONE_TEL}">Bel {PHONE_DISPLAY}</a></li>
+        <li><a href="{wa}" target="_blank" rel="noopener noreferrer" data-cta="footer">WhatsApp {PHONE_DISPLAY}</a></li>
+        <li><a href="tel:{PHONE_TEL}" data-cta="footer">Bel {PHONE_DISPLAY}</a></li>
       </ul>
     </div>
   </div>
@@ -319,7 +329,14 @@ def page(p, sprite_svg):
   </div>
 </footer>
 
-<a class="fab" href="{WA}" target="_blank" rel="noopener noreferrer" aria-label="WhatsApp">{icon("i-wa", 28)}</a>
+<a class="fab" href="{wa}" target="_blank" rel="noopener noreferrer" aria-label="WhatsApp" data-cta="fab">{icon("i-wa", 28)}</a>
+
+<nav class="mbar" aria-label="Snel contact">
+  <a class="mbar__btn" href="tel:{PHONE_TEL}" data-cta="mbar">{icon("i-phone")}Bellen</a>
+  <a class="mbar__btn mbar__btn--wa" href="{wa}" target="_blank" rel="noopener noreferrer" data-cta="mbar">{icon("i-wa")}WhatsApp</a>
+</nav>
+
+<script src="/assets/track.js?v={ASSET_V}" defer></script>
 
 </body>
 </html>
