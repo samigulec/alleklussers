@@ -36,6 +36,11 @@
 .checks li svg { flex: none; margin-top: 3px; color: var(--amber-ink); }
 .checks strong { color: var(--ink); }
 
+.steps-list { counter-reset: step; display: grid; gap: 14px; margin-top: 22px; padding: 0; list-style: none; }
+.steps-list li { counter-increment: step; position: relative; padding-inline-start: 46px; font-size: 16.5px; line-height: 1.6; color: var(--text-2); }
+.steps-list li::before { content: counter(step); position: absolute; inset-inline-start: 0; top: 0; width: 30px; height: 30px; border-radius: 50%; display: grid; place-items: center; background: var(--amber-soft); color: var(--amber-ink); font-weight: 800; font-size: 15px; }
+.steps-list strong { color: var(--ink); }
+
 .note-box { background: var(--amber-soft); border-radius: var(--r-md); padding: 20px 22px; border-inline-start: 4px solid var(--amber); }
 .note-box p { font-size: 16px; line-height: 1.65; color: var(--text-2); }
 .note-box strong { color: var(--ink); }

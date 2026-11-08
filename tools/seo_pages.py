@@ -28,7 +28,7 @@ PHONE_DISPLAY = "+31 6 8548 4000"
 PHONE_TEL = "+31685484000"
 WA = "https://wa.me/31685484000"
 EMAIL = "alleklussers@gmail.com"
-ASSET_V = "20261107"
+ASSET_V = "20261108"
 
 ICONS = ["i-wa", "i-arrow", "i-check", "i-tag", "i-chat", "i-shield", "i-clock", "i-pin", "i-mail", "i-phone"]
 

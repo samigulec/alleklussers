@@ -97,6 +97,7 @@ PAGES = [
 
 <h2>Wat wij <em>doen.</em></h2>
 <p>Onze elektricien meet de installatie door en zoekt groep voor groep uit waar de fout zit. Daarna lossen we het op, of bespreken we eerst met u wat er nodig is als de reparatie groter is. U krijgt uitleg over de oorzaak en advies om herhaling te voorkomen.</p>
+<p>Gaat het om een aardlekschakelaar die steeds doorslaat? Op onze pagina over de <a href="/aardlekschakelaar-rotterdam/">aardlekschakelaar</a> staat een stappenplan om zelf de groep of het apparaat te vinden.</p>
 """,
         "faq": [
             ("Mijn aardlekschakelaar slaat steeds door. Wat nu?",
@@ -107,6 +108,80 @@ PAGES = [
              "Ja, we zijn 24/7 bereikbaar. Bel of app ons, dan kijken we hoe snel we bij u kunnen zijn."),
             ("Wat kost het verhelpen van een storing?",
              "Dat hangt af van de oorzaak. We bespreken de kosten met u voordat we aan de reparatie beginnen."),
+        ],
+    },
+    # ------------------------------------------------------------ AARDLEK
+    {
+        "slug": "aardlekschakelaar-rotterdam",
+        "short": "Aardlekschakelaar",
+        "sub": "Slaat hij steeds door, of is hij aan vervanging toe?",
+        "title": "Aardlekschakelaar slaat door? Elektricien Rotterdam | AlleKlussers",
+        "desc": "Slaat uw aardlekschakelaar steeds door in Rotterdam? Zo vindt u zelf de groep of het apparaat. Wij meten de oorzaak op en vervangen of verdelen uw aardlekbeveiliging volgens NEN 1010.",
+        "service": "Aardlekschakelaar storing en vervangen",
+        "char": "schildje",
+        "say": "“Ik bescherm u. Soms iets te graag.”",
+        "eyebrow": "Aardlekschakelaar",
+        "h1": "Aardlekschakelaar slaat <em>steeds door?</em>",
+        "lede": "Een aardlekschakelaar die uitvalt doet meestal precies zijn werk: hij ziet ergens stroom weglekken. Met dit stappenplan vindt u vaak zelf de groep of het apparaat. Lukt dat niet, dan zoeken wij het voor u uit.",
+        "body": """
+<h2>Wat doet een <em>aardlekschakelaar?</em></h2>
+<p>De aardlekschakelaar in uw meterkast vergelijkt de stroom die een groep in gaat met de stroom die terugkomt. Zit daar verschil tussen, dan lekt er ergens stroom weg, bijvoorbeeld via een defect apparaat, via vocht of in het ergste geval via iemand die iets aanraakt. Binnen een fractie van een seconde schakelt hij dan alles erachter uit. Op de meeste Nederlandse woningschakelaars staat 30 mA: zo weinig lekstroom is al genoeg.</p>
+<p>U herkent hem aan de testknop met een T. Meestal zitten er meerdere groepen achter. Daarom valt bij een aardlekstoring vaak een flink deel van het huis tegelijk uit.</p>
+
+<h2>Aardlek of groep: <em>wat is er uitgevallen?</em></h2>
+<ul class="checks">
+  <li>{check}<span><strong>Alleen één groepsschakelaar staat omlaag?</strong> Dan is het meestal overbelasting of kortsluiting op die ene groep, bijvoorbeeld te veel zware apparaten tegelijk. Dat is iets anders dan een aardlekstoring.</span></li>
+  <li>{check}<span><strong>De aardlekschakelaar staat omlaag?</strong> Dan is er lekstroom gemeten op een van de groepen erachter. Volg dan het stappenplan hieronder.</span></li>
+  <li>{check}<span><strong>Valt alles uit, ook bij de buren?</strong> Dan is het een storing in het net. Die meldt u bij de netbeheerder; in Rotterdam is dat Stedin.</span></li>
+</ul>
+
+<h2>Stappenplan: <em>zelf de oorzaak vinden.</em></h2>
+<ol class="steps-list">
+  <li><strong>Zet alle groepen onder de aardlekschakelaar uit</strong> en zet daarna de aardlekschakelaar weer omhoog.</li>
+  <li><strong>Zet de groepen één voor één weer aan.</strong> Slaat de aardlek door bij een bepaalde groep, dan weet u waar het probleem zit.</li>
+  <li><strong>Haal op die groep alle stekkers uit het stopcontact</strong> en probeer het opnieuw. Blijft hij nu staan, steek de apparaten dan één voor één terug. Het apparaat waarbij hij doorslaat, is vaak de boosdoener.</li>
+  <li><strong>Slaat hij door zonder dat er iets is aangesloten,</strong> of zelfs met alle groepen uit? Dan zit de fout in de vaste bedrading, een lamp of buitenpunt, of in de aardlekschakelaar zelf. Dat is werk voor een elektricien.</li>
+</ol>
+<div class="note-box"><p><strong>Nooit overbruggen of vastzetten.</strong> Een aardlekschakelaar die u "even" buiten werking zet, beschermt niemand meer tegen een elektrische schok. Ruikt u een brandlucht of ziet u rook of vonken? Zet de hoofdschakelaar uit als dat veilig kan en bel bij gevaar 112.</p></div>
+
+<h2>Veelvoorkomende <em>oorzaken.</em></h2>
+<ul class="checks">
+  <li>{check}<span><strong>Vocht en regen.</strong> Slaat hij vooral door bij regen of mist, kijk dan naar buitenlampen, een <a href="/stopcontact-plaatsen-rotterdam/">tuinstopcontact</a>, de schuur of de badkamer.</span></li>
+  <li>{check}<span><strong>Apparaten met een verwarmingselement,</strong> zoals een wasdroger, wasmachine, boiler, vaatwasser, oven of een oude koelkast.</span></li>
+  <li>{check}<span><strong>'s Nachts uitgevallen?</strong> Denk aan apparaten die op een tijdklok aanslaan, zoals een boiler, een vaatwasser met uitgestelde start of een opladende accu.</span></li>
+  <li>{check}<span><strong>Te veel op één aardlek.</strong> Elk apparaat lekt een heel klein beetje. Zitten veel apparaten achter dezelfde aardlekschakelaar, dan tellen die kleine lekstromen op tot hij zonder duidelijke reden uitvalt.</span></li>
+  <li>{check}<span><strong>Beschadigde of verouderde bedrading,</strong> bijvoorbeeld door een spijker of boorgat in een leiding. Lees meer over <a href="/bedrading-vervangen-rotterdam/">bedrading vervangen</a>.</span></li>
+  <li>{check}<span><strong>Een defecte aardlekschakelaar.</strong> Ook de schakelaar zelf kan versleten raken en te snel, of juist niet meer, uitschakelen.</span></li>
+</ul>
+
+<h2>Test uw aardlekschakelaar <em>een paar keer per jaar.</em></h2>
+<p>Druk op de testknop (T). De aardlekschakelaar moet direct uitschakelen; zet hem daarna weer omhoog. Gebeurt er niets, dan beschermt hij u niet meer en moet hij worden nagekeken. Een vaste regel voor hoe vaak u moet testen is er niet. Een paar keer per jaar, na een verbouwing en als u in een nieuw huis komt wonen, is een goede gewoonte.</p>
+
+<h2>Wat wij <em>doen.</em></h2>
+<ul class="checks">
+  <li>{check}<span><strong>Meten in plaats van gokken.</strong> We meten de installatie groep voor groep door en zoeken uit waar de lekstroom vandaan komt.</span></li>
+  <li>{check}<span><strong>De oorzaak oplossen:</strong> een vochtige buitenlamp vervangen, een beschadigde leiding herstellen of u vertellen welk apparaat defect is.</span></li>
+  <li>{check}<span><strong>Aardlekschakelaar vervangen</strong> als hij zelf defect of verouderd is.</span></li>
+  <li>{check}<span><strong>Groepen beter verdelen.</strong> Zitten bij u veel groepen achter één aardlekschakelaar, dan verdelen we ze over meer aardlekschakelaars of geven we groepen een eigen aardlekautomaat. Dan valt bij een storing niet meer het halve huis uit.</span></li>
+</ul>
+<p>Is de kast verouderd of vol, dan bespreken we eerlijk of <a href="/groepenkast-vervangen-rotterdam/">uitbreiden of vervangen</a> verstandiger is. Wilt u weten hoe uw hele installatie ervoor staat, kijk dan bij <a href="/elektra-keuring-rotterdam/">keuring van de installatie</a>. Alles volgens NEN 1010, door verzekerde vakmensen.</p>
+
+<h2>Zo <em>werkt het.</em></h2>
+<p>Stuur ons via WhatsApp een foto van uw meterkast en vertel wanneer de aardlek doorslaat: altijd, bij regen, 's nachts of bij één bepaald apparaat. Dat helpt ons de oorzaak sneller te vinden. U krijgt binnen 24 uur reactie met een duidelijke prijs vooraf, en bij een storing zijn we 24/7 bereikbaar.</p>
+""",
+        "faq": [
+            ("Wat is het verschil tussen een aardlekschakelaar en een groepsschakelaar?",
+             "Een groepsschakelaar (installatieautomaat) beschermt de leiding van één groep tegen overbelasting en kortsluiting. Een aardlekschakelaar beschermt mensen: hij schakelt meerdere groepen tegelijk uit zodra er ergens stroom weglekt."),
+            ("Mijn aardlekschakelaar slaat alleen door als het regent. Hoe kan dat?",
+             "Dan komt er waarschijnlijk vocht in een buitenlamp, buitenstopcontact, tuinverlichting of een leiding naar de schuur. Zet die groep zo nodig uit en laat het buitenpunt controleren; vocht in elektra wordt meestal niet vanzelf beter."),
+            ("Wat is een aardlekautomaat?",
+             "Een aardlekautomaat combineert een aardlekschakelaar en een groepsschakelaar in één module, voor één groep. Bij een storing valt dan alleen die ene groep uit en niet een heel deel van het huis."),
+            ("Kan ik een aardlekschakelaar zelf vervangen?",
+             "Dat raden we af. Ook met de hoofdschakelaar uit kan er in de meterkast nog spanning staan op de toevoer. Laat het werk in de groepenkast doen door een vakman die de installatie daarna ook doormeet."),
+            ("Hoe vaak moet ik op de testknop drukken?",
+             "Een vaste regel is er niet. Een paar keer per jaar testen, en ook na een verbouwing of bij een verhuizing, is een goede gewoonte. Schakelt hij bij de test niet uit, laat hem dan nakijken."),
+            ("Wat kost het om de oorzaak te laten zoeken?",
+             "Dat hangt af van de oorzaak en hoe groot de reparatie is. U hoort de prijs altijd voordat we aan de reparatie beginnen."),
         ],
     },
     # ---------------------------------------------------------- GROEPENKAST
