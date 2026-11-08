@@ -8,6 +8,7 @@ Public repo: no prices, margins or internal business details here.
 - 2026-11-08: New service page /aardlekschakelaar-rotterdam/ (aardlek slaat door: aardlek vs groep, stappenplan, oorzaken, testknop, aardlekautomaat, FAQ). Linked from /storing-elektra-rotterdam/; added to hub tiles, footer and sitemap. Added `.steps-list` style to assets/seo.css and bumped ASSET_V. Started this log.
 - 2026-11-08 (2): Conversion: pre-filled WhatsApp message per landing page (photo of the meterkast asked where useful), photo hint under the hero buttons, sticky Bellen/WhatsApp bar on phones (landing pages), and new assets/track.js that sends a GA4 `contact_click` event (method, cta, page) for WhatsApp/phone/e-mail clicks on all pages. Landing pages had no Google tag before; track.js now loads the same tag as the homepage.
 - 2026-11-08 (3): New page /elektricien-verhuurders-vve-rotterdam/ for landlords, property managers and VvE's (services, how we work together, who pays what per the Besluit kleine herstellingen, FAQ). Linked from the keuring page; in hub tiles, footer and sitemap.
+- 2026-11-08 (4): Messaging first (owner prefers WhatsApp over calls): landing-page hero 'Bel' button replaced by 'Offerte aanvragen', phone button removed from the side card, mobile bar is now one WhatsApp button, copy changed from 'bel' to 'app/bericht'. Phone number stays in footer and structured data. Future pages and posts: lead with WhatsApp, not calling.
 
 ## Backlog
 

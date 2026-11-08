@@ -90,11 +90,11 @@
 /* ---------- Photo hint under the hero buttons ---------- */
 .seo-hint { margin-top: 16px; font-size: 15px; line-height: 1.55; color: var(--on-dark-2); max-width: 560px; }
 
-/* ---------- Mobile contact bar (phones only; replaces the round button) ---------- */
+/* ---------- Mobile WhatsApp bar (phones only; replaces the round button) ---------- */
 .mbar { display: none; }
 @media (max-width: 720px) {
   .mbar {
-    position: fixed; inset-inline: 0; bottom: 0; z-index: 60; display: grid; grid-template-columns: 1fr 1fr; gap: 10px;
+    position: fixed; inset-inline: 0; bottom: 0; z-index: 60; display: grid; grid-template-columns: 1fr; gap: 10px;
     padding: 10px 16px calc(10px + env(safe-area-inset-bottom)); background: rgba(12,12,13,.96);
     border-top: 1px solid var(--ink-line); backdrop-filter: blur(8px);
   }

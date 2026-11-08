@@ -29,7 +29,7 @@ PHONE_DISPLAY = "+31 6 8548 4000"
 PHONE_TEL = "+31685484000"
 WA = "https://wa.me/31685484000"
 EMAIL = "alleklussers@gmail.com"
-ASSET_V = "20261108b"
+ASSET_V = "20261108c"
 
 ICONS = ["i-wa", "i-arrow", "i-check", "i-tag", "i-chat", "i-shield", "i-clock", "i-pin", "i-mail", "i-phone"]
 
@@ -249,7 +249,7 @@ def page(p, sprite_svg):
       <p class="lede">{p["lede"]}</p>
       <div class="seo-actions">
         <a class="btn btn--amber" href="{wa}" target="_blank" rel="noopener noreferrer" data-cta="hero">{icon("i-wa")}WhatsApp ons</a>
-        <a class="btn btn--ghost" href="tel:{PHONE_TEL}" data-cta="hero">{icon("i-phone")}Bel {PHONE_DISPLAY}</a>
+        <a class="btn btn--ghost" href="/#contact" data-cta="hero">Offerte aanvragen {icon("i-arrow", 16)}</a>
       </div>
       <p class="seo-hint">Stuur gerust een foto van uw meterkast of de klus mee. Dan krijgt u sneller een duidelijke prijs.</p>
       <div class="speaker page-head__buddy"><p class="say">{p["say"]}</p><svg class="ch ch-float speaker__ch ch-badge ch-badge--{p["char"]}" aria-hidden="true"><use href="#ch-{p["char"]}"/></svg></div>
@@ -265,7 +265,6 @@ def page(p, sprite_svg):
         <h2>Offerte of advies <em>nodig?</em></h2>
         <p>Stuur een berichtje met wat er moet gebeuren, eventueel met een foto. U krijgt binnen 24 uur reactie met een prijs.</p>
         <a class="btn btn--amber btn--block" href="{wa}" data-cta="card" target="_blank" rel="noopener noreferrer">{icon("i-wa")}WhatsApp ons</a>
-        <a class="btn btn--ghost btn--block" href="tel:{PHONE_TEL}" data-cta="card">{icon("i-phone")}{PHONE_DISPLAY}</a>
         <a class="btn btn--ghost btn--block" href="mailto:{EMAIL}" data-cta="card">{icon("i-mail")}{EMAIL}</a>
         <ul>
           <li>{icon("i-tag")}Duidelijke prijs vooraf</li>
@@ -319,7 +318,7 @@ def page(p, sprite_svg):
       <ul>
         <li><a href="mailto:{EMAIL}">{EMAIL}</a></li>
         <li><a href="{wa}" target="_blank" rel="noopener noreferrer" data-cta="footer">WhatsApp {PHONE_DISPLAY}</a></li>
-        <li><a href="tel:{PHONE_TEL}" data-cta="footer">Bel {PHONE_DISPLAY}</a></li>
+        <li><a href="tel:{PHONE_TEL}" data-cta="footer">{PHONE_DISPLAY}</a></li>
       </ul>
     </div>
   </div>
@@ -332,8 +331,7 @@ def page(p, sprite_svg):
 <a class="fab" href="{wa}" target="_blank" rel="noopener noreferrer" aria-label="WhatsApp" data-cta="fab">{icon("i-wa", 28)}</a>
 
 <nav class="mbar" aria-label="Snel contact">
-  <a class="mbar__btn" href="tel:{PHONE_TEL}" data-cta="mbar">{icon("i-phone")}Bellen</a>
-  <a class="mbar__btn mbar__btn--wa" href="{wa}" target="_blank" rel="noopener noreferrer" data-cta="mbar">{icon("i-wa")}WhatsApp</a>
+  <a class="mbar__btn mbar__btn--wa" href="{wa}" target="_blank" rel="noopener noreferrer" data-cta="mbar">{icon("i-wa")}Stuur ons een WhatsApp</a>
 </nav>
 
 <script src="/assets/track.js?v={ASSET_V}" defer></script>
