@@ -26,6 +26,7 @@ WA_TEXT = {
     "storing-elektra-rotterdam": "Hallo AlleKlussers, ik heb een storing in mijn elektra. Wat er aan de hand is: ",
     "aardlekschakelaar-rotterdam": "Hallo AlleKlussers, mijn aardlekschakelaar slaat steeds door." + FOTO,
     "groepenkast-vervangen-rotterdam": "Hallo AlleKlussers, ik wil graag een prijs voor het vervangen of uitbreiden van mijn groepenkast." + FOTO,
+    "inductiekookplaat-aansluiten-rotterdam": "Hallo AlleKlussers, ik wil graag een inductiekookplaat laten aansluiten." + FOTO,
     "thuisbatterij-aansluiten-rotterdam": "Hallo AlleKlussers, ik wil graag een thuisbatterij laten aansluiten." + FOTO,
     "vrije-groep-stekkerbatterij-rotterdam": "Hallo AlleKlussers, ik wil graag een vrije groep voor mijn stekkerbatterij." + FOTO,
     "lampen-ophangen-rotterdam": "Hallo AlleKlussers, ik wil graag lampen laten ophangen. Het gaat om: ",
@@ -221,7 +222,7 @@ PAGES = [
   <li>{check}<span><strong>U heeft nog een oude kast</strong> met draaistoppen of smeltzekeringen.</span></li>
   <li>{check}<span><strong>Er zit geen of maar één aardlekschakelaar in.</strong> Een moderne kast beveiligt beter tegen lekstroom.</span></li>
   <li>{check}<span><strong>Groepen slaan vaak door,</strong> omdat er te veel apparaten op dezelfde groep zitten.</span></li>
-  <li>{check}<span><strong>U neemt iets zwaars in gebruik,</strong> zoals een inductiekookplaat, laadpaal, warmtepomp, zonnepanelen of een <a href="/thuisbatterij-aansluiten-rotterdam/">thuisbatterij</a>.</span></li>
+  <li>{check}<span><strong>U neemt iets zwaars in gebruik,</strong> zoals een <a href="/inductiekookplaat-aansluiten-rotterdam/">inductiekookplaat</a>, laadpaal, warmtepomp, zonnepanelen of een <a href="/thuisbatterij-aansluiten-rotterdam/">thuisbatterij</a>.</span></li>
   <li>{check}<span><strong>U gaat verbouwen</strong> en er komen nieuwe aansluitingen bij.</span></li>
 </ul>
 
@@ -240,6 +241,74 @@ PAGES = [
              "Een 3-fase aansluiting kan meer vermogen leveren en is handig bij zware verbruikers zoals een laadpaal of warmtepomp. We kijken samen wat u heeft en wat u nodig heeft."),
             ("Wat kost een nieuwe groepenkast?",
              "Dat hangt af van het aantal groepen en wat er verder moet gebeuren. U krijgt eerst een offerte met een vaste prijs."),
+        ],
+    },
+    # ---------------------------------------------------------- INDUCTIE
+    {
+        "slug": "inductiekookplaat-aansluiten-rotterdam",
+        "short": "Inductiekookplaat aansluiten",
+        "sub": "Kookgroep en perilex, ook bij de overstap van gas.",
+        "title": "Inductiekookplaat aansluiten Rotterdam | Kookgroep | AlleKlussers",
+        "desc": "Inductiekookplaat laten aansluiten in Rotterdam? Wij controleren uw meterkast, plaatsen een kookgroep en perilex-aansluiting en sluiten de kookplaat veilig aan volgens NEN 1010.",
+        "service": "Inductiekookplaat aansluiten en kookgroep plaatsen",
+        "char": "vonk",
+        "say": "“Van gas naar inductie? Ik regel de stroom.”",
+        "eyebrow": "Inductie koken",
+        "h1": "Inductiekookplaat aansluiten in <em>Rotterdam.</em>",
+        "lede": "Een inductiekookplaat vraagt meer stroom dan een gewoon stopcontact kan leveren. Wij kijken wat uw meterkast aankan, leggen zo nodig een kookgroep aan en sluiten de kookplaat veilig aan.",
+        "body": """
+<h2>Welke aansluiting heeft <em>uw kookplaat nodig?</em></h2>
+<p>Kijk niet naar het aantal kookzones, maar naar het aansluitvermogen in de handleiding of op het typeplaatje. Een groep in de meterkast levert 230 volt bij 16 ampère, dus maximaal 3.680 watt. Daaruit volgen drie soorten aansluitingen:</p>
+<ul class="checks">
+  <li>{check}<span><strong>1-fase, tot 3.680 watt.</strong> Er zijn kleinere inductiekookplaten met een gewone stekker voor een geaard stopcontact. Ze zijn minder krachtig: u kunt bijvoorbeeld niet op alle zones tegelijk de boostfunctie gebruiken. Geef zo'n kookplaat een eigen groep; deelt hij een groep met de waterkoker of vaatwasser, dan slaat de groep door zodra die tegelijk aanstaan.</span></li>
+  <li>{check}<span><strong>2-fase met perilex, tot 7.360 watt.</strong> Dit is de gewone aansluiting voor een inductiekookplaat. In de meterkast zit dan een kookgroep: twee gekoppelde groepen met één hendel. In de keuken zit een rond perilex-stopcontact met vijf gaatjes. De meeste kookplaten werken hierop, ook als ze vijf zones hebben: de kookplaat verdeelt het vermogen zelf.</span></li>
+  <li>{check}<span><strong>3-fase krachtstroom, circa 11.000 watt.</strong> Alleen nodig voor sommige grote kookplaten en fornuizen. Kan uw kookplaat ook op twee fasen, dan is dat meestal de eenvoudigste keuze.</span></li>
+</ul>
+
+<h2>Zo herkent u wat er <em>nu in uw meterkast zit.</em></h2>
+<ul class="checks">
+  <li>{check}<span><strong>Een dubbele schakelaar met één hendel</strong> en een rond stopcontact met vijf gaatjes in de keuken: u heeft al een kookgroep. Dan is aansluiten vaak alleen de kookplaat monteren, een perilex-stekker aan het snoer zetten en testen.</span></li>
+  <li>{check}<span><strong>Geen kookgroep,</strong> wat vaak voorkomt in woningen waar altijd op gas is gekookt: dan plaatsen we een kookgroep in de groepenkast en trekken we een nieuwe kabel naar de keuken.</span></li>
+  <li>{check}<span><strong>Een volle of oude groepenkast,</strong> met draaistoppen of zonder plek voor een extra groep: dan moet de kast eerst worden <a href="/groepenkast-vervangen-rotterdam/">uitgebreid of vervangen</a>.</span></li>
+</ul>
+<p>Stuur ons een foto van uw meterkast en het typeplaatje of de productpagina van uw kookplaat. Dan zien we meestal al wat er nodig is.</p>
+
+<h2>Moet uw aansluiting <em>verzwaard worden?</em></h2>
+<p>Meestal niet. Ruim twee derde van de Nederlandse huishoudens heeft een 3x25A-aansluiting, en daar past een kookgroep voor inductie gewoon op. Heeft u een 1-fase aansluiting, dan kijken we of er naast de kookplaat genoeg ruimte overblijft voor de rest van het huis, zeker als er ook een warmtepomp of <a href="/laadpaal-installeren-rotterdam/">laadpaal</a> bij komt.</p>
+<div class="note-box"><p><strong>Niet uit voorzorg verzwaren.</strong> Een zwaardere aansluiting vraagt u aan bij de netbeheerder; in Rotterdam is dat Stedin. Door drukte op het stroomnet zijn er veel aanvragen en sinds 1 juli 2026 hebben huishoudens bij schaarse netcapaciteit geen voorrang meer. Laat daarom eerst uitrekenen of het echt nodig is. Wij vertellen u dat eerlijk.</p></div>
+
+<h2>Van gas <em>naar inductie.</em></h2>
+<ul class="checks">
+  <li>{check}<span><strong>Wij regelen de elektra:</strong> de kookgroep in de meterkast met de juiste aardlekbeveiliging, de kabel naar de keuken, de perilex-aansluiting en het aansluiten van de kookplaat.</span></li>
+  <li>{check}<span><strong>De gasleiding doen wij niet.</strong> Het afkoppelen en afdoppen van de gasaansluiting laat u doen door een gasinstallateur.</span></li>
+  <li>{check}<span><strong>Denk aan uw pannen.</strong> Inductie werkt alleen met pannen met een magnetische bodem. Blijft een magneet aan de onderkant hangen, dan is de pan geschikt.</span></li>
+  <li>{check}<span><strong>Oven en vaatwasser apart.</strong> Een inbouwoven, combimagnetron of vaatwasser in dezelfde keuken krijgt liefst een eigen gewone groep, los van de kookgroep. Ontbreken die stopcontacten, dan <a href="/stopcontact-plaatsen-rotterdam/">plaatsen we ze</a> in dezelfde ronde.</span></li>
+</ul>
+
+<h2>Wat wij <em>doen.</em></h2>
+<ol class="steps-list">
+  <li><strong>Meterkast en kookplaat beoordelen</strong> aan de hand van uw foto's, zodat u vooraf een duidelijke prijs krijgt.</li>
+  <li><strong>Kookgroep plaatsen</strong> in de groepenkast, met aardlekbeveiliging, en de groep duidelijk labelen.</li>
+  <li><strong>Kabel trekken</strong> van de meterkast naar de keuken en een perilex-wandcontactdoos monteren op de plek van de kookplaat.</li>
+  <li><strong>Kookplaat aansluiten en testen.</strong> We zetten de perilex-stekker aan het aansluitsnoer, sluiten aan zoals de fabrikant voorschrijft en testen alle zones.</li>
+</ol>
+<p>Alles volgens NEN 1010, door verzekerde vakmensen. Een perilex-stekker zelf aansluiten raden we af: een draad op de verkeerde klem kan de kookplaat beschadigen.</p>
+""",
+        "faq": [
+            ("Kan ik een inductiekookplaat op een gewoon stopcontact aansluiten?",
+             "Alleen als het een 1-fase kookplaat is met een aansluitvermogen tot 3.680 watt en een gewone stekker. Geef hem dan een eigen groep, zodat de groep niet doorslaat als ook de waterkoker of vaatwasser aanstaat. De meeste inductiekookplaten hebben een perilex-aansluiting op twee fasen nodig."),
+            ("Wat is een perilex-aansluiting?",
+             "Een rond stopcontact met vijf gaatjes voor zware keukenapparatuur. Het hoort bij een kookgroep in de meterkast: twee gekoppelde groepen met één hendel, samen goed voor 7.360 watt."),
+            ("Heb ik krachtstroom nodig voor inductie?",
+             "Meestal niet. Krachtstroom (3-fase) is alleen nodig voor sommige grote kookplaten en fornuizen. Kan uw kookplaat ook op twee fasen worden aangesloten, dan is een gewone kookgroep vaak genoeg."),
+            ("Moet ik mijn aansluiting bij Stedin laten verzwaren?",
+             "In de meeste gevallen niet. Met een 3x25A-aansluiting past een kookgroep gewoon. Bij een 1-fase aansluiting of als er ook een warmtepomp of laadpaal komt, rekenen we eerst uit of het nodig is voordat u iets aanvraagt."),
+            ("Koppelen jullie ook de gaskraan af?",
+             "Nee, wij doen alleen elektra. Het afkoppelen en afdoppen van de gasleiding laat u doen door een gasinstallateur. Wij zorgen dat de elektrische aansluiting klaar is voor uw nieuwe kookplaat."),
+            ("Moet de keuken open voor een nieuwe kabel?",
+             "Niet altijd. Vaak kan de kabel via bestaande leidingen of langs een verborgen route. Kan dat niet, dan bespreken we vooraf met u hoe en waar de kabel komt."),
+            ("Wat kost het aansluiten van een inductiekookplaat?",
+             "Dat hangt af van wat er al is. Met een bestaande kookgroep is het een kleine klus; moet er een groep en een nieuwe kabel bij, dan is het meer werk. Stuur een foto van uw meterkast, dan krijgt u vooraf een duidelijke prijs."),
         ],
     },
     # -------------------------------------------------------- THUISBATTERIJ
@@ -602,7 +671,7 @@ def _city(slug, name, char, say, wijken_oud, wijken_nieuw, local, faq_extra):
 <h2>Waarmee wij u <em>helpen in {name}.</em></h2>
 <ul class="checks">
   <li>{{check}}<span><a href="/storing-elektra-rotterdam/">Storing verhelpen</a>: stroomuitval of een aardlekschakelaar die steeds doorslaat.</span></li>
-  <li>{{check}}<span><a href="/groepenkast-vervangen-rotterdam/">Groepenkast vervangen of uitbreiden</a>, bijvoorbeeld voor inductie of een warmtepomp.</span></li>
+  <li>{{check}}<span><a href="/groepenkast-vervangen-rotterdam/">Groepenkast vervangen of uitbreiden</a>, bijvoorbeeld voor <a href="/inductiekookplaat-aansluiten-rotterdam/">inductie</a> of een warmtepomp.</span></li>
   <li>{{check}}<span><a href="/thuisbatterij-aansluiten-rotterdam/">Thuisbatterij aansluiten</a> op een eigen groep, op tijd voor 2027.</span></li>
   <li>{{check}}<span><a href="/lampen-ophangen-rotterdam/">Lampen ophangen</a>, spots en dimmers.</span></li>
   <li>{{check}}<span><a href="/stopcontact-plaatsen-rotterdam/">Stopcontacten plaatsen</a> of verplaatsen, binnen en buiten.</span></li>
