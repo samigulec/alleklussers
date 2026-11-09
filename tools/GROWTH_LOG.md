@@ -10,13 +10,13 @@ Public repo: no prices, margins or internal business details here.
 - 2026-11-08 (3): New page /elektricien-verhuurders-vve-rotterdam/ for landlords, property managers and VvE's (services, how we work together, who pays what per the Besluit kleine herstellingen, FAQ). Linked from the keuring page; in hub tiles, footer and sitemap.
 - 2026-11-08 (4): Messaging first (owner prefers WhatsApp over calls): landing-page hero 'Bel' button replaced by 'Offerte aanvragen', phone button removed from the side card, mobile bar is now one WhatsApp button, copy changed from 'bel' to 'app/bericht'. Phone number stays in footer and structured data. Future pages and posts: lead with WhatsApp, not calling.
 - 2026-11-08 (5): Speed and technical SEO after an external audit (homepage 77/100, LCP 5.4 s lab): WebP copies of all photos used in <img> tags (about 45% smaller; JPGs kept for og:image and lightbox), hero preload in WebP, Google Fonts loaded without blocking render (homepage and landing pages), homepage meta description shortened to 151 chars, full street address in JSON-LD, new generated /llms.txt.
+- 2026-11-09: New service page /inductiekookplaat-aansluiten-rotterdam/ (1-fase vs perilex 2-fase vs krachtstroom with wattages, how to recognise a kookgroep, when verzwaren is (not) needed incl. netcongestie and the 1 July 2026 rule change, gas-to-inductie checklist (gas disconnection by a gas installer, pans, separate oven group), steps, FAQ). Linked from /groepenkast-vervangen-rotterdam/ and from the service list on all town pages; in hub tiles, footer, sitemap and llms.txt.
 
 ## Backlog
 
 Highest value first.
 
 1. Service pages people search for:
-   - inductiekookplaat aansluiten (perilex, extra groep)
    - groep bijplaatsen
    - meterkast verzwaren / 3-fase
    - buitenverlichting en tuinstopcontact
