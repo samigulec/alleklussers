@@ -34,6 +34,7 @@ WA_TEXT = {
     "bedrading-vervangen-rotterdam": "Hallo AlleKlussers, ik wil mijn bedrading laten controleren of vervangen. Het gaat om: ",
     "elektra-keuring-rotterdam": "Hallo AlleKlussers, ik wil mijn elektrische installatie laten keuren. Het gaat om: ",
     "laadpaal-installeren-rotterdam": "Hallo AlleKlussers, ik wil graag een laadpaal laten installeren." + FOTO,
+    "meterkast-verzwaren-rotterdam": "Hallo AlleKlussers, ik wil weten of ik mijn aansluiting moet laten verzwaren. Ik wil gaan gebruiken: ",
     "elektricien-verhuurders-vve-rotterdam": "Hallo AlleKlussers, ik ben verhuurder of beheerder en zoek een vaste elektricien. Het gaat om: ",
 }
 
@@ -230,7 +231,7 @@ PAGES = [
 <p>We bekijken eerst uw huidige meterkast en bespreken wat u nodig heeft, nu en in de toekomst. Daarna vervangen of breiden we de groepenkast uit met de juiste aardlekbeveiliging, verdelen we de groepen logisch en zetten we op elke groep duidelijk waar hij voor is. Tot slot testen we alles en leggen we uit hoe uw nieuwe kast werkt.</p>
 <p>Alles volgens NEN 1010, door gecertificeerde en verzekerde elektriciens.</p>
 
-<div class="note-box"><p><strong>Zware aansluiting nodig?</strong> Voor bijvoorbeeld een laadpaal of warmtepomp kan uw aansluiting te licht zijn. Een verzwaring vraagt u aan bij de netbeheerder (Stedin). Wij vertellen u eerlijk of dat nodig is.</p></div>
+<div class="note-box"><p><strong>Zware aansluiting nodig?</strong> Voor bijvoorbeeld een laadpaal of warmtepomp kan uw aansluiting te licht zijn. Een verzwaring vraagt u aan bij de netbeheerder (Stedin). Wij vertellen u eerlijk of dat nodig is. Lees meer over <a href="/meterkast-verzwaren-rotterdam/">meterkast verzwaren</a>.</p></div>
 """,
         "faq": [
             ("Hoe lang duurt het vervangen van een groepenkast?",
@@ -274,8 +275,8 @@ PAGES = [
 <p>Stuur ons een foto van uw meterkast en het typeplaatje of de productpagina van uw kookplaat. Dan zien we meestal al wat er nodig is.</p>
 
 <h2>Moet uw aansluiting <em>verzwaard worden?</em></h2>
-<p>Meestal niet. Ruim twee derde van de Nederlandse huishoudens heeft een 3x25A-aansluiting, en daar past een kookgroep voor inductie gewoon op. Heeft u een 1-fase aansluiting, dan kijken we of er naast de kookplaat genoeg ruimte overblijft voor de rest van het huis, zeker als er ook een warmtepomp of <a href="/laadpaal-installeren-rotterdam/">laadpaal</a> bij komt.</p>
-<div class="note-box"><p><strong>Niet uit voorzorg verzwaren.</strong> Een zwaardere aansluiting vraagt u aan bij de netbeheerder; in Rotterdam is dat Stedin. Door drukte op het stroomnet zijn er veel aanvragen en sinds 1 juli 2026 hebben huishoudens bij schaarse netcapaciteit geen voorrang meer. Laat daarom eerst uitrekenen of het echt nodig is. Wij vertellen u dat eerlijk.</p></div>
+<p>Meestal niet. Met een 3x25A-aansluiting past een kookgroep voor inductie gewoon. In de regio Rotterdam hebben veel woningen nog 1-fase, vaak 1x35A; ook dan past inductie meestal, want de kookplaat verdeelt het vermogen zelf. Heeft u een 1-fase aansluiting, dan kijken we of er naast de kookplaat genoeg ruimte overblijft voor de rest van het huis, zeker als er ook een warmtepomp of <a href="/laadpaal-installeren-rotterdam/">laadpaal</a> bij komt.</p>
+<div class="note-box"><p><strong>Niet uit voorzorg verzwaren.</strong> Een zwaardere aansluiting vraagt u aan bij de netbeheerder; in Rotterdam is dat Stedin. Het stroomnet is op veel plekken vol en sinds 1 juli 2026 gaan alle aanvragen in één wachtrij, dus het kan lang duren. Laat daarom eerst uitrekenen of het echt nodig is. Lees meer over <a href="/meterkast-verzwaren-rotterdam/">meterkast verzwaren</a>.</p></div>
 
 <h2>Van gas <em>naar inductie.</em></h2>
 <ul class="checks">
@@ -309,6 +310,86 @@ PAGES = [
              "Niet altijd. Vaak kan de kabel via bestaande leidingen of langs een verborgen route. Kan dat niet, dan bespreken we vooraf met u hoe en waar de kabel komt."),
             ("Wat kost het aansluiten van een inductiekookplaat?",
              "Dat hangt af van wat er al is. Met een bestaande kookgroep is het een kleine klus; moet er een groep en een nieuwe kabel bij, dan is het meer werk. Stuur een foto van uw meterkast, dan krijgt u vooraf een duidelijke prijs."),
+        ],
+    },
+    # ------------------------------------------------------- VERZWAREN
+    {
+        "slug": "meterkast-verzwaren-rotterdam",
+        "short": "Meterkast verzwaren",
+        "sub": "Van 1-fase naar 3-fase, of slim op uw huidige aansluiting.",
+        "title": "Meterkast verzwaren Rotterdam | 1-fase naar 3-fase | AlleKlussers",
+        "desc": "Aansluiting verzwaren in Rotterdam? Eerst kijken of het nodig is. Wij maken uw meterkast klaar voor 3-fase of zorgen dat alles past op uw huidige aansluiting.",
+        "service": "Meterkast verzwaren en geschikt maken voor 3-fase",
+        "char": "kastje",
+        "say": "“Eerst rekenen, dan pas verzwaren.”",
+        "eyebrow": "Meterkast verzwaren",
+        "h1": "Meterkast verzwaren in <em>Rotterdam.</em>",
+        "lede": "Warmtepomp, inductie of een laadpaal op komst? Dan vraagt u zich af of uw aansluiting zwaarder moet. Wij rekenen eerst uit wat u nodig heeft, en maken uw meterkast klaar als verzwaren echt nodig is.",
+        "body": """
+<h2>Welke aansluiting <em>heeft u nu?</em></h2>
+<p>In uw meterkast zitten vóór de meter de verzegelde hoofdzekeringen van de netbeheerder. Ziet u er één, dan heeft u een 1-fase aansluiting; zijn het er drie, dan heeft u 3-fase. Het getal erop is het aantal ampère. Staat het er niet duidelijk op, kijk dan op de jaarafrekening van uw energieleverancier, of stuur ons een foto.</p>
+<ul class="checks">
+  <li>{check}<span><strong>1x25A:</strong> circa 5,7 kW tegelijk.</span></li>
+  <li>{check}<span><strong>1x35A:</strong> circa 8 kW tegelijk, zo'n 40% meer dan 1x25A.</span></li>
+  <li>{check}<span><strong>3x25A:</strong> circa 17,3 kW tegelijk. Dit is de standaard bij nieuwbouw.</span></li>
+</ul>
+<p>In het gebied van Stedin, waar Rotterdam onder valt, was in 2024 nog ongeveer 71% van de aansluitingen 1-fase, en 1x35A komt daarbij veel vaker voor dan 1x25A. Een 1-fase meterkast is hier dus heel gewoon.</p>
+
+<h2>Is verzwaren <em>wel nodig?</em></h2>
+<p>Vaak niet. Volgens een overzicht van RVO voor het ministerie van Economische Zaken en Klimaat (september 2026) is 1x35A voor veel huishoudens genoeg om vergaand elektrisch te gaan, zonder direct over te stappen op 3-fase. Wat telt is niet wat u in huis heeft, maar wat er <strong>tegelijk</strong> aanstaat:</p>
+<ul class="checks">
+  <li>{check}<span><strong><a href="/inductiekookplaat-aansluiten-rotterdam/">Inductiekookplaat</a>:</strong> meestal 2 tot 4 kW in gebruik. De kookplaat verdeelt het vermogen zelf over de zones.</span></li>
+  <li>{check}<span><strong>Hybride warmtepomp:</strong> rond 1,5 kW, op een eigen groep.</span></li>
+  <li>{check}<span><strong>Volledig elektrische warmtepomp:</strong> rond 3 kW, bij strenge kou 2 tot 4 kW. Een eventueel elektrisch bijverwarmingselement vraagt flink meer en zit vaak op een eigen groep.</span></li>
+  <li>{check}<span><strong><a href="/laadpaal-installeren-rotterdam/">Laadpaal</a> op 1-fase:</strong> maximaal 3,7 kW. In tien uur laadt u zo hooguit 37 kWh, genoeg voor de meeste dagelijkse ritten.</span></li>
+</ul>
+<p>Op 1x35A passen deze apparaten samen vaak, als de laadpaal en eventueel de warmtepomp terugschakelen wanneer het huis veel stroom vraagt. Op 1x25A is dat bij inductie, een warmtepomp én een elektrische auto meestal alleen haalbaar met zo'n slimme begrenzing.</p>
+
+<h2>Wanneer 3-fase <em>wel verstandig is.</em></h2>
+<ul class="checks">
+  <li>{check}<span><strong>U wilt snel laden met 11 kW.</strong> Dat kan alleen op drie fasen.</span></li>
+  <li>{check}<span><strong>Uw kookplaat, warmtepomp of ander apparaat</strong> is alleen in een 3-fase uitvoering te krijgen.</span></li>
+  <li>{check}<span><strong>Er draaien vaak meerdere zware apparaten tegelijk</strong> en terugschakelen is geen optie, bijvoorbeeld bij een groot gezin met twee elektrische auto's.</span></li>
+  <li>{check}<span><strong>Uw groepenkast moet toch al vervangen worden.</strong> Dan is het slim om een kast te kiezen die klaar is voor 3-fase, ook als u nu nog niet verzwaart.</span></li>
+</ul>
+<p>Van 1-fase naar 3x25A kost eenmalig geld bij de netbeheerder, maar uw vaste netbeheerkosten per jaar blijven in dezelfde categorie. Kiest u voor zwaarder dan 3x25A, zoals 3x35A, dan betaalt u elk jaar flink meer. Daarom adviseren we dat alleen als het echt nodig is.</p>
+
+<div class="note-box"><p><strong>Netcongestie in de regio.</strong> Het stroomnet is op veel plekken vol. Sinds 1 juli 2026 reserveren netbeheerders niet meer automatisch ruimte voor kleinverbruikers: alle aanvragen gaan in één wachtrij, op volgorde van maatschappelijke prioriteit. Volgens Stedin kan een verzwaring in het gunstigste geval maanden duren, maar ook jaren, afhankelijk van uw buurt. Vraag daarom niet uit voorzorg aan, maar laat eerst uitrekenen wat u nodig heeft.</p></div>
+
+<h2>Wie doet <em>wat?</em></h2>
+<ul class="checks">
+  <li>{check}<span><strong>De netbeheerder</strong> (in Rotterdam is dat Stedin; via mijnaansluiting.nl ziet u wie het bij u is) verzwaart de aansluiting zelf: de kabel, de hoofdzekeringen en zo nodig de meter. U vraagt dat online aan en krijgt eerst een offerte. De netbeheerder geeft geen technisch advies over uw installatie; daarvoor verwijst hij naar een installateur.</span></li>
+  <li>{check}<span><strong>Wij doen alles achter de meter.</strong> We controleren of uw groepenkast geschikt is voor 3-fase, plaatsen een 3-fase hoofdschakelaar als die er nog niet is, en <a href="/groepenkast-vervangen-rotterdam/">breiden de groepenkast uit of vervangen hem</a> als hij te oud of te vol is. Dat moet klaar zijn vóór de netbeheerder langskomt.</span></li>
+  <li>{check}<span><strong>Groepen verdelen over de fasen.</strong> Na de verzwaring zorgen we dat de zware verbruikers over de drie fasen verdeeld zijn, zodat niet één fase alles draagt. Daarna testen we de hele installatie.</span></li>
+</ul>
+
+<h2>Zo <em>pakken we het aan.</em></h2>
+<ol class="steps-list">
+  <li><strong>Stuur ons foto's</strong> van uw meterkast en vertel welke apparaten erbij komen: warmtepomp, inductie, laadpaal.</li>
+  <li><strong>Wij rekenen het door</strong> en vertellen u eerlijk of uw huidige aansluiting genoeg is, eventueel met een extra groep of slimme begrenzing.</li>
+  <li><strong>Is verzwaren nodig,</strong> dan vraagt u de verzwaring aan bij de netbeheerder. Wij vertellen u welke aansluiting u nodig heeft, zodat u niet zwaarder aanvraagt dan nodig.</li>
+  <li><strong>Wij maken de meterkast klaar</strong> vóór de afspraak met de netbeheerder, met een duidelijke prijs vooraf.</li>
+  <li><strong>Na de verzwaring</strong> verdelen we de groepen over de fasen, testen we alles en sluiten we de nieuwe apparaten aan.</li>
+</ol>
+<p>Alles volgens NEN 1010, door verzekerde vakmensen.</p>
+""",
+        "faq": [
+            ("Hoe zie ik of ik 1-fase of 3-fase heb?",
+             "Kijk in de meterkast naar de verzegelde hoofdzekeringen van de netbeheerder, vóór de meter. Eén zekering betekent 1-fase, drie zekeringen betekent 3-fase. Het getal erop is het aantal ampère, bijvoorbeeld 25 of 35. Twijfelt u, stuur ons dan een foto."),
+            ("Kan een warmtepomp op een 1-fase aansluiting?",
+             "Vaak wel. Een hybride warmtepomp vraagt rond 1,5 kW en een volledig elektrische warmtepomp rond 3 kW. Op 1x35A past dat in de meeste huizen, mits de warmtepomp een eigen groep krijgt. Komt er ook een laadpaal bij, dan is slim terugschakelen verstandig."),
+            ("Kan ik een laadpaal gebruiken zonder 3-fase?",
+             "Ja. Op 1-fase laadt u met maximaal 3,7 kW, genoeg voor de meeste dagelijkse ritten als de auto 's nachts aan de lader staat. Met loadbalancing laadt de auto langzamer als het huis veel stroom vraagt, zodat de hoofdzekering niet doorslaat. Snelladen met 11 kW kan alleen op 3-fase."),
+            ("Wordt mijn netbeheerrekening hoger met 3-fase?",
+             "Niet als u naar 3x25A gaat: 1-fase en 3x25A vallen in dezelfde tariefcategorie. U betaalt wel eenmalig voor de verzwaring zelf. Een aansluiting zwaarder dan 3x25A, zoals 3x35A, kost elk jaar duidelijk meer."),
+            ("Hoe lang duurt een verzwaring bij Stedin?",
+             "Dat verschilt per buurt. Is er ruimte op het net, dan plant de netbeheerder na uw akkoord op de offerte een afspraak. Waar het net vol is, kan het maanden tot jaren duren. Ons deel in de meterkast is meestal binnen een dag klaar."),
+            ("Moet mijn groepenkast vervangen worden als ik verzwaar?",
+             "Niet altijd. Soms is alleen een 3-fase hoofdschakelaar nodig. Is de kast oud, vol of zonder goede aardlekbeveiliging, dan is vervangen verstandig. Dat ziet u vooraf in onze prijs."),
+            ("Ik huur mijn woning. Kan ik zelf laten verzwaren?",
+             "Overleg eerst met uw verhuurder. De aansluiting en de groepenkast horen bij de woning, dus voor een verzwaring of nieuwe kast heeft u in de regel toestemming nodig."),
+            ("Wat kost het om de meterkast klaar te maken?",
+             "Dat hangt af van wat er nu zit. Stuur ons foto's van uw meterkast, dan krijgt u vooraf een duidelijke prijs voor ons deel van het werk."),
         ],
     },
     # -------------------------------------------------------- THUISBATTERIJ
@@ -579,11 +660,11 @@ PAGES = [
 <div class="note-box"><p><strong>Geen eigen oprit?</strong> Een laadkabel over de stoep is in Rotterdam meestal niet toegestaan. U kunt bij de gemeente een openbare laadpaal in de buurt aanvragen.</p></div>
 
 <h2>Slim laden <em>en slimme elektra.</em></h2>
-<p>Met een slimme laadpaal kunt u laden wanneer stroom goedkoop is of als uw zonnepanelen leveren. Met loadbalancing verdeelt de laadpaal het vermogen, zodat uw hoofdzekering niet doorslaat als ook de oven en de wasmachine aan staan. We helpen ook met andere slimme schakelingen voor licht en apparaten.</p>
+<p>Met een slimme laadpaal kunt u laden wanneer stroom goedkoop is of als uw zonnepanelen leveren. Met loadbalancing verdeelt de laadpaal het vermogen, zodat uw hoofdzekering niet doorslaat als ook de oven en de wasmachine aan staan. Zo is een laadpaal vaak ook mogelijk zonder uw <a href="/meterkast-verzwaren-rotterdam/">aansluiting te verzwaren</a>. We helpen ook met andere slimme schakelingen voor licht en apparaten.</p>
 """,
         "faq": [
             ("Is mijn meterkast geschikt voor een laadpaal?",
-             "Dat controleren we eerst. Vaak is een extra groep genoeg; soms is een zwaardere aansluiting bij Stedin nodig. Dat hoort u vooraf van ons."),
+             "Dat controleren we eerst. Vaak is een extra groep genoeg; soms is een zwaardere aansluiting bij Stedin nodig. Dat hoort u vooraf van ons. Meer uitleg vindt u op onze pagina over meterkast verzwaren."),
             ("Welke laadpaal moet ik kiezen?",
              "Dat hangt af van uw auto, uw aansluiting en of u slim wilt laden. We adviseren u graag."),
             ("Wat is loadbalancing?",
