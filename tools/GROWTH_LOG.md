@@ -13,19 +13,19 @@ Public repo: no prices, margins or internal business details here.
 - 2026-11-09: New service page /inductiekookplaat-aansluiten-rotterdam/ (1-fase vs perilex 2-fase vs krachtstroom with wattages, how to recognise a kookgroep, when verzwaren is (not) needed incl. netcongestie and the 1 July 2026 rule change, gas-to-inductie checklist (gas disconnection by a gas installer, pans, separate oven group), steps, FAQ). Linked from /groepenkast-vervangen-rotterdam/ and from the service list on all town pages; in hub tiles, footer, sitemap and llms.txt.
 - 2026-11-09 (2): Full site audit at the owner's request (static + rendered at 390 and 1280 px; no broken links, JSON-LD valid, layout clean). Fixed: page titles and meta descriptions that were too long are now within about 65 / 160 characters on all 18 landing pages (new `_city_title()` helper, shorter town description). Stopped early at the owner's request; not done and still open: homepage link lists and footer miss /aardlekschakelaar-rotterdam/, /inductiekookplaat-aansluiten-rotterdam/ and /elektricien-verhuurders-vve-rotterdam/; homepage WhatsApp links have no pre-filled text or data-cta; thin pages (lampen, stopcontact, bedrading, keuring, laadpaal) could use 2-3 more FAQs; 'Gratis telefonisch advies' on the homepage is not on the approved claims list; Barendrecht FAQ promises laadpaal + thuisbatterij together while the team has no thuisbatterij experience yet.
 - 2026-11-10: New service page /meterkast-verzwaren-rotterdam/ (how to read your connection, kW per 1x25A/1x35A/3x25A, what fits on 1-fase per appliance from the RVO overview of Sept 2026, when 3-fase makes sense, netcongestie and the 1 July 2026 single queue, who does what: netbeheerder vs. installer, steps, 8 FAQs). Linked from the groepenkast, inductie and laadpaal pages; in hub tiles, footer, sitemap and llms.txt. Accuracy fix on /inductiekookplaat-aansluiten-rotterdam/: removed 'ruim twee derde heeft 3x25A' (RVO: about 71% of Stedin connections are still 1-fase) and reworded the 1 July 2026 note to the single-queue rule.
+- 2026-11-11: New service page /groep-bijplaatsen-rotterdam/ (why a 16A group trips at about 3,680 W, which appliances get their own group, is there room in the kast: max four groups per aardlekschakelaar, aardlekautomaat, uitbreiden or vervangen for old kasten, an extra group does not add capacity (hoofdzekering), steps, 8 FAQs). Linked from /storing-elektra-rotterdam/, /groepenkast-vervangen-rotterdam/ and the service list on all town pages; in hub tiles, footer, sitemap and llms.txt. Accuracy fix on /elektricien-barendrecht/: no longer says we often do thuisbatterijen; FAQ now about a laadpaal plus a stekkerbatterij group (backlog item 5).
 
 ## Backlog
 
 Highest value first.
 
 1. Service pages people search for:
-   - groep bijplaatsen
    - buitenverlichting en tuinstopcontact
    - elektra keuring bij aankoop of verhuur
 2. Town pages: Krimpen aan den IJssel, Albrandswaard (Rhoon, Poortugaal), Spijkenisse, Lansingerland (Berkel en Rodenrijs), Hoogvliet.
 3. Knowledge articles (only if useful and accurate): "Salderen stopt 2027: wat betekent dat voor uw meterkast?".
    (The planned "Aardlek slaat steeds door" article is covered by /aardlekschakelaar-rotterdam/.)
 4. Conversion follow-ups: homepage pre-filled WhatsApp text per language, data-cta labels on homepage links.
-5. Accuracy: Barendrecht town page says we often do thuisbatterijen and promises laadpaal + thuisbatterij together; the team has no thuisbatterij experience yet. Reword once confirmed (or now, to 'laadpaal en extra groepen').
+5. Accuracy: town-page template still says newer wijken often need 'een thuisbatterij' and lists 'Thuisbatterij aansluiten'; revisit once the owner confirms the team does thuisbatterij work. (Barendrecht wording fixed 2026-11-11.)
 6. Technical SEO: privacy page (privacybeleid) for the contact form and Google Analytics; internal links from homepage views to landing pages; re-measure LCP after the WebP/font change; homepage has 5 H1s (one per view; site.js focuses the view's h1, so change carefully).
 7. Wording check: site-wide "gecertificeerd" wording (homepage i18n, page template sidebar, several landing pages) is not on the approved claims list. Waiting for the owner's confirmation before changing or keeping it.

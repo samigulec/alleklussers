@@ -26,6 +26,7 @@ WA_TEXT = {
     "storing-elektra-rotterdam": "Hallo AlleKlussers, ik heb een storing in mijn elektra. Wat er aan de hand is: ",
     "aardlekschakelaar-rotterdam": "Hallo AlleKlussers, mijn aardlekschakelaar slaat steeds door." + FOTO,
     "groepenkast-vervangen-rotterdam": "Hallo AlleKlussers, ik wil graag een prijs voor het vervangen of uitbreiden van mijn groepenkast." + FOTO,
+    "groep-bijplaatsen-rotterdam": "Hallo AlleKlussers, ik wil graag een extra groep in mijn meterkast. Het is voor: ",
     "inductiekookplaat-aansluiten-rotterdam": "Hallo AlleKlussers, ik wil graag een inductiekookplaat laten aansluiten." + FOTO,
     "thuisbatterij-aansluiten-rotterdam": "Hallo AlleKlussers, ik wil graag een thuisbatterij laten aansluiten." + FOTO,
     "vrije-groep-stekkerbatterij-rotterdam": "Hallo AlleKlussers, ik wil graag een vrije groep voor mijn stekkerbatterij." + FOTO,
@@ -118,6 +119,7 @@ PAGES = [
 <h2>Wat wij <em>doen.</em></h2>
 <p>Onze elektricien meet de installatie door en zoekt groep voor groep uit waar de fout zit. Daarna lossen we het op, of bespreken we eerst met u wat er nodig is als de reparatie groter is. U krijgt uitleg over de oorzaak en advies om herhaling te voorkomen.</p>
 <p>Gaat het om een aardlekschakelaar die steeds doorslaat? Op onze pagina over de <a href="/aardlekschakelaar-rotterdam/">aardlekschakelaar</a> staat een stappenplan om zelf de groep of het apparaat te vinden.</p>
+<p>Valt steeds dezelfde groep uit als twee zware apparaten tegelijk aanstaan, zoals de wasmachine en de droger? Dan zit die groep te vol en is <a href="/groep-bijplaatsen-rotterdam/">een extra groep</a> de oplossing.</p>
 """,
         "faq": [
             ("Mijn aardlekschakelaar slaat steeds door. Wat nu?",
@@ -230,6 +232,7 @@ PAGES = [
 <h2>Wat wij <em>doen.</em></h2>
 <p>We bekijken eerst uw huidige meterkast en bespreken wat u nodig heeft, nu en in de toekomst. Daarna vervangen of breiden we de groepenkast uit met de juiste aardlekbeveiliging, verdelen we de groepen logisch en zetten we op elke groep duidelijk waar hij voor is. Tot slot testen we alles en leggen we uit hoe uw nieuwe kast werkt.</p>
 <p>Alles volgens NEN 1010, door gecertificeerde en verzekerde elektriciens.</p>
+<p>Is uw kast nog goed en heeft u alleen een groep te weinig, bijvoorbeeld voor de droger of de airco? Dan is <a href="/groep-bijplaatsen-rotterdam/">een groep bijplaatsen</a> vaak genoeg.</p>
 
 <div class="note-box"><p><strong>Zware aansluiting nodig?</strong> Voor bijvoorbeeld een laadpaal of warmtepomp kan uw aansluiting te licht zijn. Een verzwaring vraagt u aan bij de netbeheerder (Stedin). Wij vertellen u eerlijk of dat nodig is. Lees meer over <a href="/meterkast-verzwaren-rotterdam/">meterkast verzwaren</a>.</p></div>
 """,
@@ -242,6 +245,75 @@ PAGES = [
              "Een 3-fase aansluiting kan meer vermogen leveren en is handig bij zware verbruikers zoals een laadpaal of warmtepomp. We kijken samen wat u heeft en wat u nodig heeft."),
             ("Wat kost een nieuwe groepenkast?",
              "Dat hangt af van het aantal groepen en wat er verder moet gebeuren. U krijgt eerst een offerte met een vaste prijs."),
+        ],
+    },
+    # ------------------------------------------------------ GROEP BIJPLAATSEN
+    {
+        "slug": "groep-bijplaatsen-rotterdam",
+        "short": "Groep bijplaatsen",
+        "sub": "Extra groep voor wasmachine, droger, oven of airco.",
+        "title": "Groep bijplaatsen Rotterdam | Extra groep | AlleKlussers",
+        "desc": "Slaat een groep door als de wasmachine en droger tegelijk draaien? Wij plaatsen een extra groep in uw meterkast in Rotterdam. Volgens NEN 1010, prijs vooraf.",
+        "service": "Extra groep bijplaatsen in de meterkast",
+        "char": "stekkie",
+        "say": "“Eén groep te weinig? Ik zet er een bij.”",
+        "eyebrow": "Extra groep in de meterkast",
+        "h1": "Groep bijplaatsen in <em>Rotterdam.</em>",
+        "lede": "Slaat de stroom uit zodra de wasmachine en de droger samen draaien? Dan zitten er te veel apparaten op één groep. Met een extra groep in de meterkast is dat meestal snel opgelost.",
+        "body": """
+<h2>Waarom een groep <em>doorslaat.</em></h2>
+<p>Een gewone groep in de meterkast is beveiligd met 16 ampère. Op 230 volt is dat samen ongeveer 3.680 watt. Een wasmachine die het water opwarmt, een droger, een vaatwasser of een oven vraagt elk al snel 2.000 watt of meer. Staan er twee van deze apparaten op dezelfde groep en draaien ze tegelijk, dan schakelt de installatieautomaat uit. Dat is geen defect, maar bescherming: zo wordt de bedrading niet te warm.</p>
+<p>Gebruikt u voor zulke apparaten een stekkerdoos of verlengsnoer, of wordt een stopcontact of stekker warm? Dat is een teken dat de groep zwaarder wordt belast dan goed is. Slaat juist de aardlekschakelaar door, dan is er vaak iets anders aan de hand; lees dan eerst <a href="/aardlekschakelaar-rotterdam/">aardlek slaat door</a>.</p>
+
+<h2>Welke apparaten <em>een eigen groep krijgen.</em></h2>
+<ul class="checks">
+  <li>{check}<span><strong>Wasmachine, droger en vaatwasser:</strong> elk op een eigen groep, zodat u ze tegelijk kunt gebruiken.</span></li>
+  <li>{check}<span><strong>Oven of combimagnetron</strong> die ingebouwd is: een eigen groep, los van de kookplaat.</span></li>
+  <li>{check}<span><strong>Inductiekookplaat:</strong> meestal een kookgroep met perilex-aansluiting op twee fasen. Zie <a href="/inductiekookplaat-aansluiten-rotterdam/">inductiekookplaat aansluiten</a>.</span></li>
+  <li>{check}<span><strong>Airco of warmtepomp:</strong> een eigen groep, zodat de rest van het huis niet uitvalt als het apparaat opstart.</span></li>
+  <li>{check}<span><strong><a href="/laadpaal-installeren-rotterdam/">Laadpaal</a>:</strong> altijd een eigen groep met de juiste aardlekbeveiliging.</span></li>
+  <li>{check}<span><strong>Stekkerbatterij:</strong> een vrije groep waar alleen de batterij op zit. Zie <a href="/vrije-groep-stekkerbatterij-rotterdam/">vrije groep voor stekkerbatterij</a>.</span></li>
+  <li>{check}<span><strong>Nieuwe ruimte:</strong> een aanbouw, zolderkamer of tuinhuis krijgt eigen groepen, en niet ‘nog een stopcontact erbij’ op een groep die al vol zit.</span></li>
+</ul>
+
+<h2>Is er ruimte <em>in uw groepenkast?</em></h2>
+<p>Volgens NEN 1010 horen er maximaal vier groepen achter één aardlekschakelaar. Of een extra groep zo bij te plaatsen is, hangt dus af van wat er nu in uw kast zit:</p>
+<ul class="checks">
+  <li>{check}<span><strong>Vrije plek achter een aardlekschakelaar met minder dan vier groepen:</strong> dan kan er vaak gewoon een installatieautomaat bij.</span></li>
+  <li>{check}<span><strong>Alle aardlekschakelaars hebben al vier groepen:</strong> dan plaatsen we een aardlekautomaat. Die combineert de aardlekbeveiliging en de automaat in één, voor die ene groep. Valt hij uit, dan blijft de rest van het huis gewoon aan.</span></li>
+  <li>{check}<span><strong>De kast is vol:</strong> dan kan hij soms worden uitgebreid met een extra rij of een kleine kast ernaast.</span></li>
+  <li>{check}<span><strong>Oude kast met draaistoppen of zonder aardlekschakelaar:</strong> dan raden we af om er nog iets bij te bouwen. <a href="/groepenkast-vervangen-rotterdam/">Vervangen</a> is dan veiliger en vaak ook verstandiger.</span></li>
+</ul>
+<p>In oudere Rotterdamse woningen, zoals portiekflats en vooroorlogse benedenwoningen, is de groepenkast vaak klein en zitten er soms maar een paar groepen in. Stuur ons een foto, dan ziet u vooraf welke van de vier situaties het is.</p>
+
+<div class="note-box"><p><strong>Een extra groep geeft geen extra vermogen.</strong> Een nieuwe groep verdeelt de stroom beter over uw installatie, maar wat u in totaal tegelijk kunt gebruiken blijft bepaald door de hoofdzekering van de netbeheerder, bijvoorbeeld 1x35A. Komen er meerdere zware apparaten bij, zoals een warmtepomp en een laadpaal? Lees dan ook <a href="/meterkast-verzwaren-rotterdam/">meterkast verzwaren</a>.</p></div>
+
+<h2>Zo <em>pakken we het aan.</em></h2>
+<ol class="steps-list">
+  <li><strong>Stuur een foto</strong> van uw open meterkast via WhatsApp en vertel voor welk apparaat de groep is en waar het staat.</li>
+  <li><strong>U krijgt een duidelijke prijs vooraf,</strong> met daarin de groep zelf, de kabel naar de plek en eventueel een nieuw stopcontact.</li>
+  <li><strong>Wij plaatsen de groep</strong> en trekken een nieuwe leiding naar de plek van het apparaat, waar het kan door bestaande buizen. Kan dat niet, dan bespreken we vooraf hoe de kabel loopt.</li>
+  <li><strong>We testen de groep en de aardlekbeveiliging,</strong> zetten op de kast waar de nieuwe groep voor is en laten zien welke schakelaar bij welk apparaat hoort.</li>
+</ol>
+<p>Alles volgens NEN 1010, door verzekerde vakmensen. De stroom is tijdens het werk een korte tijd uit; dat stemmen we vooraf met u af.</p>
+""",
+        "faq": [
+            ("Hoeveel watt kan er op één groep?",
+             "Op een gewone groep van 16 ampère kunt u samen ongeveer 3.680 watt tegelijk gebruiken. Een wasmachine die verwarmt en een droger halen dat samen al snel. Daarom krijgen zware apparaten elk een eigen groep."),
+            ("Mogen de wasmachine en de droger op dezelfde groep?",
+             "Het kan als u ze nooit tegelijk gebruikt, maar dan slaat de groep door zodra dat toch gebeurt. Met een eigen groep voor elk apparaat hoeft u daar niet meer op te letten."),
+            ("Hoeveel groepen mogen er achter één aardlekschakelaar?",
+             "Maximaal vier. Zitten alle aardlekschakelaars in uw kast al vol, dan plaatsen we voor de nieuwe groep een aardlekautomaat, of breiden we de kast uit."),
+            ("Wat is het verschil tussen een installatieautomaat en een aardlekautomaat?",
+             "Een installatieautomaat beschermt tegen overbelasting en kortsluiting. Een aardlekautomaat doet dat ook, en beschermt daarnaast tegen lekstroom. Hij heeft dus geen aparte aardlekschakelaar nodig en schakelt alleen zijn eigen groep uit."),
+            ("Hoe lang duurt het bijplaatsen van een groep?",
+             "Is er ruimte in de kast en is de kabel kort, dan is het meestal binnen een paar uur klaar. Moet er een lange nieuwe leiding komen, bijvoorbeeld naar de zolder of de schuur, dan kan het een dagdeel tot een dag duren."),
+            ("Mag ik zelf een groep bijplaatsen?",
+             "Wij raden het af. Ook als de hoofdschakelaar uit staat, blijft een deel van de meterkast onder spanning. Een verkeerd aangesloten groep of te dunne kabel merkt u vaak pas als er iets misgaat."),
+            ("Ik huur mijn woning. Kan ik een extra groep laten plaatsen?",
+             "Vraag eerst toestemming aan uw verhuurder, want de groepenkast hoort bij de woning. Verhuurders en VvE's helpen we ook rechtstreeks."),
+            ("Wat kost een extra groep?",
+             "Dat hangt af van de ruimte in uw kast en hoe ver de kabel moet. Stuur een foto van uw meterkast, dan krijgt u vooraf een duidelijke prijs."),
         ],
     },
     # ---------------------------------------------------------- INDUCTIE
@@ -759,6 +831,7 @@ def _city(slug, name, char, say, wijken_oud, wijken_nieuw, local, faq_extra):
 <ul class="checks">
   <li>{{check}}<span><a href="/storing-elektra-rotterdam/">Storing verhelpen</a>: stroomuitval of een aardlekschakelaar die steeds doorslaat.</span></li>
   <li>{{check}}<span><a href="/groepenkast-vervangen-rotterdam/">Groepenkast vervangen of uitbreiden</a>, bijvoorbeeld voor <a href="/inductiekookplaat-aansluiten-rotterdam/">inductie</a> of een warmtepomp.</span></li>
+  <li>{{check}}<span><a href="/groep-bijplaatsen-rotterdam/">Groep bijplaatsen</a> voor de wasmachine, droger, oven of airco.</span></li>
   <li>{{check}}<span><a href="/thuisbatterij-aansluiten-rotterdam/">Thuisbatterij aansluiten</a> op een eigen groep, op tijd voor 2027.</span></li>
   <li>{{check}}<span><a href="/lampen-ophangen-rotterdam/">Lampen ophangen</a>, spots en dimmers.</span></li>
   <li>{{check}}<span><a href="/stopcontact-plaatsen-rotterdam/">Stopcontacten plaatsen</a> of verplaatsen, binnen en buiten.</span></li>
@@ -797,9 +870,9 @@ CITY_PAGES = [
             "Ja. Naast particulieren helpen we ook bedrijven, winkels en verhuurders met storingen, onderhoud en aanpassingen.")]),
     _city("elektricien-barendrecht", "Barendrecht", "laadie", "“Barendrecht? Laden maar.”",
           "het centrum en het oude dorp", "Carnisselande en Smitshoek",
-          "Barendrecht ligt op een paar minuten van ons in Rotterdam-Zuid. In Carnisselande en Smitshoek wonen veel gezinnen met een auto voor de deur en zonnepanelen op het dak; daar helpen we vaak met laadpalen, thuisbatterijen en extra groepen.",
-          [("Kunnen jullie een laadpaal en thuisbatterij tegelijk aansluiten?",
-            "Ja. We kijken eerst of uw meterkast en aansluiting dat aankunnen en zorgen dat beide een eigen groep krijgen.")]),
+          "Barendrecht ligt op een paar minuten van ons in Rotterdam-Zuid. In Carnisselande en Smitshoek wonen veel gezinnen met een auto voor de deur en zonnepanelen op het dak; daar gaat het vaak om een laadpaal, extra groepen of een vrije groep voor een stekkerbatterij.",
+          [("Kunnen jullie een laadpaal en een groep voor een stekkerbatterij tegelijk aanleggen?",
+            "Ja. We kijken eerst of uw meterkast en aansluiting dat aankunnen en geven de laadpaal en de batterij elk een eigen groep.")]),
     _city("elektricien-ridderkerk", "Ridderkerk", "lampje", "“Ridderkerk? Ik breng het licht.”",
           "Bolnes, Slikkerveer en het centrum", "Drievliet en Het Zand",
           "In Ridderkerk komen we in alle kernen: Bolnes, Slikkerveer, Rijsoord, Drievliet, Het Zand en het centrum. Ridderkerk ligt direct naast Rotterdam-Zuid, dus we zijn er snel bij een storing.",
