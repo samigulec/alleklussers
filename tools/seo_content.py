@@ -32,6 +32,7 @@ WA_TEXT = {
     "vrije-groep-stekkerbatterij-rotterdam": "Hallo AlleKlussers, ik wil graag een vrije groep voor mijn stekkerbatterij." + FOTO,
     "lampen-ophangen-rotterdam": "Hallo AlleKlussers, ik wil graag lampen laten ophangen. Het gaat om: ",
     "stopcontact-plaatsen-rotterdam": "Hallo AlleKlussers, ik wil graag stopcontacten laten plaatsen. Het gaat om: ",
+    "buitenverlichting-tuinstopcontact-rotterdam": "Hallo AlleKlussers, ik wil graag buitenverlichting of een tuinstopcontact. Ik stuur een foto van de plek mee. Het gaat om: ",
     "bedrading-vervangen-rotterdam": "Hallo AlleKlussers, ik wil mijn bedrading laten controleren of vervangen. Het gaat om: ",
     "elektra-keuring-rotterdam": "Hallo AlleKlussers, ik wil mijn elektrische installatie laten keuren. Het gaat om: ",
     "laadpaal-installeren-rotterdam": "Hallo AlleKlussers, ik wil graag een laadpaal laten installeren." + FOTO,
@@ -111,7 +112,7 @@ PAGES = [
 <h2>Veelvoorkomende <em>oorzaken.</em></h2>
 <ul class="checks">
   <li>{check}<span><strong>Een defect apparaat,</strong> bijvoorbeeld een wasmachine, oven of waterkoker met lekstroom.</span></li>
-  <li>{check}<span><strong>Vocht,</strong> vaak bij buitenverlichting, buitenstopcontacten of in de badkamer.</span></li>
+  <li>{check}<span><strong>Vocht,</strong> vaak bij <a href="/buitenverlichting-tuinstopcontact-rotterdam/">buitenverlichting en buitenstopcontacten</a> of in de badkamer.</span></li>
   <li>{check}<span><strong>Een overbelaste groep,</strong> doordat te veel zware apparaten op dezelfde groep zitten.</span></li>
   <li>{check}<span><strong>Verouderde bedrading of een oude groepenkast</strong> die niet meer goed beveiligt.</span></li>
 </ul>
@@ -168,7 +169,7 @@ PAGES = [
 
 <h2>Veelvoorkomende <em>oorzaken.</em></h2>
 <ul class="checks">
-  <li>{check}<span><strong>Vocht en regen.</strong> Slaat hij vooral door bij regen of mist, kijk dan naar buitenlampen, een <a href="/stopcontact-plaatsen-rotterdam/">tuinstopcontact</a>, de schuur of de badkamer.</span></li>
+  <li>{check}<span><strong>Vocht en regen.</strong> Slaat hij vooral door bij regen of mist, kijk dan naar buitenlampen, een <a href="/buitenverlichting-tuinstopcontact-rotterdam/">tuinstopcontact</a>, de schuur of de badkamer.</span></li>
   <li>{check}<span><strong>Apparaten met een verwarmingselement,</strong> zoals een wasdroger, wasmachine, boiler, vaatwasser, oven of een oude koelkast.</span></li>
   <li>{check}<span><strong>'s Nachts uitgevallen?</strong> Denk aan apparaten die op een tijdklok aanslaan, zoals een boiler, een vaatwasser met uitgestelde start of een opladende accu.</span></li>
   <li>{check}<span><strong>Te veel op één aardlek.</strong> Elk apparaat lekt een heel klein beetje. Zitten veel apparaten achter dezelfde aardlekschakelaar, dan tellen die kleine lekstromen op tot hij zonder duidelijke reden uitvalt.</span></li>
@@ -577,7 +578,7 @@ PAGES = [
   <li>{check}<span><strong>Nieuwe lichtpunten maken,</strong> bijvoorbeeld boven de eettafel of het keukeneiland.</span></li>
   <li>{check}<span><strong>Inbouwspots plaatsen</strong> in plafonds, keukens en badkamers.</span></li>
   <li>{check}<span><strong>Dimmers en schakelaars</strong> die geschikt zijn voor LED, zonder geknipper of gezoem.</span></li>
-  <li>{check}<span><strong>Buitenverlichting</strong> aan de gevel, in de tuin of bij de voordeur, waterdicht aangesloten.</span></li>
+  <li>{check}<span><strong>Buitenverlichting</strong> aan de gevel, in de tuin of bij de voordeur, waterdicht aangesloten. Meer daarover bij <a href="/buitenverlichting-tuinstopcontact-rotterdam/">buitenverlichting en tuinstopcontact</a>.</span></li>
   <li>{check}<span><strong>Badkamerverlichting en LED-spiegels,</strong> veilig in een natte ruimte.</span></li>
 </ul>
 
@@ -615,7 +616,7 @@ PAGES = [
 <ul class="checks">
   <li>{check}<span><strong>Extra stopcontacten</strong> waar u ze nodig heeft, of een enkel stopcontact dubbel maken.</span></li>
   <li>{check}<span><strong>Stopcontacten en schakelaars verplaatsen,</strong> bijvoorbeeld na een verbouwing.</span></li>
-  <li>{check}<span><strong>Buitenstopcontacten</strong> voor tuin, balkon of terras, spatwaterdicht.</span></li>
+  <li>{check}<span><strong>Buitenstopcontacten</strong> voor tuin, balkon of terras, spatwaterdicht. Zie <a href="/buitenverlichting-tuinstopcontact-rotterdam/">tuinstopcontact en buitenverlichting</a>.</span></li>
   <li>{check}<span><strong>Aansluitingen voor zware apparaten</strong> zoals wasmachine, droger, vaatwasser en kookplaat, op een eigen groep.</span></li>
   <li>{check}<span><strong>Stopcontacten met USB</strong> voor bij het bed of op het bureau.</span></li>
 </ul>
@@ -634,6 +635,84 @@ PAGES = [
              "Ja, met een spatwaterdicht stopcontact en de juiste beveiliging in de meterkast."),
             ("Wat kost een extra stopcontact?",
              "Dat hangt af van de afstand tot de dichtstbijzijnde aansluiting en of het inbouw of opbouw wordt. U krijgt vooraf een prijs."),
+        ],
+    },
+    # ---------------------------------------------- BUITENVERLICHTING / TUIN
+    {
+        "slug": "buitenverlichting-tuinstopcontact-rotterdam",
+        "short": "Buitenverlichting en tuinstopcontact",
+        "sub": "Licht bij de deur en in de tuin, stroom buiten en in de schuur.",
+        "title": "Buitenverlichting en tuinstopcontact Rotterdam | AlleKlussers",
+        "desc": "Buitenlamp, tuinverlichting of een stopcontact in de tuin of op het balkon in Rotterdam? Waterdicht, op aardlekbeveiliging en volgens NEN 1010. Prijs vooraf.",
+        "service": "Buitenverlichting en tuinstopcontact aanleggen",
+        "char": "lampje",
+        "say": "“Donker buiten? Ik zet de tuin aan.”",
+        "eyebrow": "Buitenverlichting en tuin",
+        "h1": "Buitenverlichting en tuinstopcontact in <em>Rotterdam.</em>",
+        "lede": "Licht bij de voordeur en het achterom, sfeer in de tuin en een stopcontact buiten voor de heggenschaar of de kerstverlichting. Zonder verlengsnoer door het raam, en goed afgedicht tegen regen.",
+        "body": """
+<h2>Stroom buiten, <em>maar dan veilig.</em></h2>
+<p>Van november tot en met februari is het vroeg donker. Dan merkt u pas hoe weinig licht er bij de voordeur, op het tuinpad of bij de schuur is. Ook de politie raadt aan om bij een achterom te zorgen voor verlichting in de tuin, en om met een automatische schakelaar licht te laten branden als u niet thuis bent (<a href="https://www.politie.nl/informatie/tips-om-woninginbraak-te-voorkomen.html" target="_blank" rel="noopener noreferrer">politie.nl</a>).</p>
+<p>Wie buiten stroom nodig heeft, pakt vaak een verlengsnoer door het raam of de achterdeur. Dat gaat lang goed, tot het snoer bekneld raakt in de deur, de stekkerverbinding in het natte gras ligt of een opgerolde haspel warm wordt. Een vast buitenpunt is veiliger en een stuk handiger.</p>
+
+<h2>Wat wij <em>voor u aanleggen.</em></h2>
+<ul class="checks">
+  <li>{check}<span><strong>Buitenlamp bij de voordeur, de gevel of het achterom,</strong> met een schemerschakelaar of bewegingsmelder als u dat wilt.</span></li>
+  <li>{check}<span><strong>Tuinverlichting:</strong> wandlampen, staande lampen langs het pad, grondspots in de border of verlichting bij het terras.</span></li>
+  <li>{check}<span><strong>Tuinstopcontact</strong> aan de gevel, of op een paal achter in de tuin, voor het gereedschap, de vijverpomp of de kerstverlichting.</span></li>
+  <li>{check}<span><strong>Stroom naar de schuur of het tuinhuis:</strong> een kabel door de grond, met licht en stopcontacten in de schuur zelf.</span></li>
+  <li>{check}<span><strong>Stopcontact of lamp op het balkon,</strong> ook in een flat of portiekwoning.</span></li>
+  <li>{check}<span><strong>Een schakelaar binnen</strong> waarmee u het buitenstopcontact of de tuinverlichting uitzet als u hem niet gebruikt.</span></li>
+</ul>
+
+<h2>Waar wij <em>op letten.</em></h2>
+<ul class="checks">
+  <li>{check}<span><strong>De juiste IP-waarde.</strong> Het getal achter IP zegt hoe goed een lamp of stopcontact tegen stof en water kan. Onder een afdak of luifel is IP44 (spatwaterdicht) vaak genoeg. Staat het vol in de regen, dan kiezen we een hogere klasse zoals IP65. Grondspots die in de grond liggen hebben meestal IP67 nodig.</span></li>
+  <li>{check}<span><strong>Aardlekbeveiliging.</strong> Alles buiten komt op een groep met een aardlekschakelaar van 30 mA. Waar het kan krijgt het buitenwerk een eigen groep of een aardlekautomaat. Komt er toch vocht in een buitenlamp, dan valt alleen die groep uit en niet het halve huis. Lees meer over <a href="/groep-bijplaatsen-rotterdam/">een groep bijplaatsen</a>.</span></li>
+  <li>{check}<span><strong>Een kabel die tegen de grond kan.</strong> Voor een punt achter in de tuin gebruiken we grondkabel, op zo'n 50 tot 60 centimeter diepte. Waar de kabel uit de grond komt, loopt hij door een stevige buis, zodat een schop of de grasmaaier hem niet raakt.</span></li>
+  <li>{check}<span><strong>Hoogte en deksel.</strong> Een tuinstopcontact komt minstens zo'n 30 centimeter boven de grond, met een klapdeksel dat zichzelf sluit, zodat er geen plensbui of spatwater in komt.</span></li>
+  <li>{check}<span><strong>Een dichte doorvoer.</strong> Het gat waar de kabel door de gevel gaat, dichten we goed af. Zo loopt er geen water langs de kabel naar binnen en kruipt er geen vocht in de muur.</span></li>
+</ul>
+<div class="note-box"><p><strong>Slaat uw aardlekschakelaar nu al door bij regen?</strong> Dan zit er waarschijnlijk vocht in een bestaande buitenlamp of buitenstopcontact. Zet die groep zo nodig uit en lees eerst <a href="/aardlekschakelaar-rotterdam/">aardlek slaat door</a>. Wij zoeken de oorzaak en vervangen het punt door een goed afgedicht exemplaar.</p></div>
+
+<h2>Schemerschakelaar, bewegingsmelder <em>of tijdklok?</em></h2>
+<ul class="checks">
+  <li>{check}<span><strong>Schemerschakelaar:</strong> de lamp gaat aan als het donker wordt en uit als het licht wordt. Fijn bij de voordeur en het huisnummer, zodat bezoek en bezorgers uw deur vinden.</span></li>
+  <li>{check}<span><strong>Bewegingsmelder:</strong> het licht gaat alleen aan als iemand langsloopt. Handig bij het achterom, de schuur en de vuilcontainers, en zuinig omdat de lamp meestal uit is.</span></li>
+  <li>{check}<span><strong>Tijdschakelaar of slimme schakelaar:</strong> de tuinverlichting brandt op vaste tijden, of u zet hem aan met uw telefoon. Zo lijkt het ook thuis als u weg bent.</span></li>
+</ul>
+<p>Sommige buitenlampen combineren dit: de hele avond zacht licht, en fel licht zodra er beweging is. Een tip voor in de stad: richt de lamp naar beneden en niet op de ramen van de buren. Dat geeft minder verblinding en meer licht op het pad.</p>
+
+<h2>Buiten in <em>Rotterdam.</em></h2>
+<p>In Rotterdam zijn de tuinen vaak smal en diep, met een schuur achterin en een achterpad of steeg erachter. Juist daar is het 's avonds donker. Een lamp met bewegingsmelder bij de poort en een stopcontact in de schuur lossen dat in één afspraak op. In portiekflats en galerijwoningen gaat het meestal om een stopcontact of lamp op het balkon.</p>
+<p>Huurt u, of hoort de gevel bij een VvE? Vraag dan eerst toestemming aan de verhuurder of de VvE voordat we iets aan de buitenmuur bevestigen. Verhuurders en VvE's helpen we ook rechtstreeks; zie <a href="/elektricien-verhuurders-vve-rotterdam/">elektricien voor verhuurders en VvE's</a>.</p>
+
+<h2>Zo <em>pakken we het aan.</em></h2>
+<ol class="steps-list">
+  <li><strong>Stuur ons via WhatsApp foto's</strong> van de plek buiten en van uw meterkast, en vertel wat u wilt: hoeveel lampen, welk stopcontact, en hoe ver de schuur van het huis is.</li>
+  <li><strong>U krijgt een duidelijke prijs vooraf,</strong> met de kabelroute erbij: langs de gevel, door de grond of via de kruipruimte.</li>
+  <li><strong>Wij leggen alles aan</strong> en sluiten het aan in de meterkast. Heeft u de lampen zelf gekocht, dan kijken we vooraf of ze geschikt zijn voor de plek. Graaft u liever zelf de sleuf voor de grondkabel, dan spreken we af hoe diep en waar.</li>
+  <li><strong>We testen de aardlekbeveiliging,</strong> stellen de schemerschakelaar of bewegingsmelder met u in en zetten op de groepenkast welke groep voor buiten is.</li>
+</ol>
+<p>Alles volgens NEN 1010, door verzekerde vakmensen. Wilt u binnen ook meer licht of extra stopcontacten? Kijk dan bij <a href="/lampen-ophangen-rotterdam/">lampen ophangen</a> en <a href="/stopcontact-plaatsen-rotterdam/">stopcontact plaatsen</a>. Dat combineren we graag in dezelfde afspraak.</p>
+""",
+        "faq": [
+            ("Welke IP-waarde heeft een buitenlamp nodig?",
+             "Onder een afdak of luifel is IP44 vaak genoeg. Staat de lamp of het stopcontact vol in de regen, kies dan een hogere klasse zoals IP65. Grondspots die in de grond liggen hebben meestal IP67 nodig. Het staat op de verpakking of op de lamp zelf."),
+            ("Kan een buitenstopcontact op een bestaande groep?",
+             "Vaak wel, als die groep niet al vol zit en achter een aardlekschakelaar hangt. Gebruikt u buiten zware apparaten, zoals een hogedrukreiniger of een elektrische terrasverwarmer, dan is een eigen groep beter. Dan valt binnen ook niets uit als er buiten iets misgaat."),
+            ("Hoe diep moet een kabel in de tuin liggen?",
+             "Een grondkabel leggen we op zo'n 50 tot 60 centimeter diepte, en waar hij uit de grond komt in een stevige buis. Zo blijft hij heel bij spitten en tuinwerk. Gewone installatiekabel van binnen hoort niet in de grond."),
+            ("Kan ik mijn kerstverlichting op het buitenstopcontact aansluiten?",
+             "Ja, als de verlichting geschikt is voor buiten. Gebruik buiten ook een verlengsnoer dat daarvoor bedoeld is, en leg stekkerverbindingen niet in het gras of in een plas. Slaat de aardlek door als het regent, haal de verlichting er dan af en kijk welke verbinding nat is geworden."),
+            ("Bewegingsmelder of schemerschakelaar: wat is beter?",
+             "Bij de voordeur is een schemerschakelaar fijn: dan brandt het licht de hele avond. Bij het achterom, de schuur en de containers is een bewegingsmelder handiger en zuiniger. Er zijn ook lampen die beide doen."),
+            ("Kunnen jullie stroom naar mijn schuur of tuinhuis aanleggen?",
+             "Ja. We leggen een grondkabel van het huis naar de schuur en maken daar licht en stopcontacten. Voor een werkplaats of een vriezer in de schuur geven we de schuur een eigen groep in de meterkast."),
+            ("Ik woon in een flat. Kan ik een stopcontact op mijn balkon krijgen?",
+             "Meestal wel. Huurt u of hoort de gevel bij de VvE, vraag dan eerst toestemming. Daarna kijken we waar de dichtstbijzijnde aansluiting binnen zit en hoe de kabel netjes naar buiten kan."),
+            ("Wat kost buitenverlichting of een tuinstopcontact?",
+             "Dat hangt vooral af van de afstand tot de meterkast en of er een kabel door de grond moet. Stuur foto's van de plek en de meterkast, dan krijgt u vooraf een duidelijke prijs."),
         ],
     },
     # ------------------------------------------------------------ BEDRADING
