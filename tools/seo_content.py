@@ -34,7 +34,7 @@ WA_TEXT = {
     "stopcontact-plaatsen-rotterdam": "Hallo AlleKlussers, ik wil graag stopcontacten laten plaatsen. Het gaat om: ",
     "buitenverlichting-tuinstopcontact-rotterdam": "Hallo AlleKlussers, ik wil graag buitenverlichting of een tuinstopcontact. Ik stuur een foto van de plek mee. Het gaat om: ",
     "bedrading-vervangen-rotterdam": "Hallo AlleKlussers, ik wil mijn bedrading laten controleren of vervangen. Het gaat om: ",
-    "elektra-keuring-rotterdam": "Hallo AlleKlussers, ik wil mijn elektrische installatie laten keuren. Het gaat om: ",
+    "elektra-keuring-rotterdam": "Hallo AlleKlussers, ik wil mijn elektrische installatie laten keuren. Het is voor (aankoop, verhuur of eigen woning): ",
     "laadpaal-installeren-rotterdam": "Hallo AlleKlussers, ik wil graag een laadpaal laten installeren." + FOTO,
     "meterkast-verzwaren-rotterdam": "Hallo AlleKlussers, ik wil weten of ik mijn aansluiting moet laten verzwaren. Ik wil gaan gebruiken: ",
     "elektricien-verhuurders-vve-rotterdam": "Hallo AlleKlussers, ik ben verhuurder of beheerder en zoek een vaste elektricien. Het gaat om: ",
@@ -756,34 +756,80 @@ PAGES = [
         "slug": "elektra-keuring-rotterdam",
         "short": "Elektra keuring",
         "sub": "Controle bij aankoop, verhuur of na een verbouwing.",
-        "title": "Elektra keuring Rotterdam | Installatie keuren | AlleKlussers",
-        "desc": "Elektrische installatie laten keuren in Rotterdam? Bij aankoop, verhuur of na een verbouwing. U krijgt een helder overzicht van de bevindingen en advies.",
+        "title": "Elektra keuring Rotterdam | Bij aankoop of verhuur | AlleKlussers",
+        "desc": "Elektrische installatie laten keuren in Rotterdam? Bij aankoop, verhuur of na een verbouwing. Wij meten na, u krijgt een helder overzicht en advies vooraf.",
         "service": "Keuring van elektrische installaties",
         "char": "schildje",
         "say": "“Veilig of niet? Ik zoek het uit.”",
         "eyebrow": "Keuring en veiligheid",
         "h1": "Elektra keuring in <em>Rotterdam.</em>",
-        "lede": "Een controle van uw elektrische installatie, met een helder overzicht van wat in orde is en wat niet.",
+        "lede": "Een controle van de elektrische installatie in uw woning of huurwoning, met metingen waar nodig en een helder overzicht van wat in orde is, wat aandacht nodig heeft en wat meteen moet.",
         "body": """
 <h2>Wanneer is een keuring <em>verstandig?</em></h2>
 <ul class="checks">
-  <li>{check}<span><strong>Bij aankoop van een woning,</strong> zodat u weet of er kosten aankomen.</span></li>
-  <li>{check}<span><strong>Bij verhuur,</strong> voor de veiligheid van uw huurders en uw eigen gemoedsrust. Lees ook wat we doen <a href="/elektricien-verhuurders-vve-rotterdam/">voor verhuurders en VvE's</a>.</span></li>
-  <li>{check}<span><strong>Na een verbouwing</strong> of als er door anderen aan de elektra is gewerkt.</span></li>
-  <li>{check}<span><strong>In een ouder huis,</strong> of als groepen vaak doorslaan.</span></li>
+  <li>{check}<span><strong>Bij aankoop van een woning,</strong> zodat u voor de koop weet of er kosten aankomen aan de elektra.</span></li>
+  <li>{check}<span><strong>Bij verhuur en bij een wisseling van huurder,</strong> zodat de nieuwe huurder in een veilige woning start. Lees ook wat we doen <a href="/elektricien-verhuurders-vve-rotterdam/">voor verhuurders en VvE's</a>.</span></li>
+  <li>{check}<span><strong>Na een verbouwing,</strong> of als een vorige eigenaar of een klusser zelf aan de elektra heeft gewerkt.</span></li>
+  <li>{check}<span><strong>Voordat u zwaardere apparaten neemt,</strong> zoals een inductiekookplaat, warmtepomp of laadpaal. Dan weten we of de groepenkast en de aansluiting dat aankunnen.</span></li>
+  <li>{check}<span><strong>In een ouder huis,</strong> of als groepen of de aardlekschakelaar vaak doorslaan.</span></li>
 </ul>
 
+<h2>Is een keuring <em>verplicht?</em></h2>
+<p>Voor woningen is er in Nederland geen wettelijke keuringsplicht voor de elektra, ook niet bij verkoop of verhuur. Wel is de eigenaar verantwoordelijk voor een veilige installatie. Voor een vrijwillige veiligheidscontrole van bestaande woningen bestaat sinds 2005 de NTA 8025, ook bekend als de 'Woning-APK' (<a href="https://www.brandveilig.com/nieuws/nieuwe-woning-apk-nen-8025-op-komst-54008" target="_blank" rel="noopener noreferrer">brandveilig.com</a>).</p>
+<p>Voor bedrijfspanden ligt dat anders. Daar vraagt de verzekeraar of de Arbowet soms een SCIOS-inspectie, zoals Scope 8 of Scope 10, door een bedrijf dat volgens de SCIOS-regels keurt (<a href="https://www.unive.nl/zakelijk/blog/hoe-zit-het-ook-alweer-met-de-verplichte-elektrakeuringen" target="_blank" rel="noopener noreferrer">Univé</a>). De controle op deze pagina is bedoeld voor woningen en is geen SCIOS-inspectie. Punten die uit zo'n inspectie komen, kunnen we wel voor u herstellen.</p>
+
+<h2>Bij aankoop: meer dan <em>de bouwkundige keuring.</em></h2>
+<p>Een bouwkundige keuring is een globale, visuele inspectie. De elektra wordt daarbij meestal alleen bekeken, niet doorgemeten. Dat blijkt ook uit een uitspraak van de Geschillencommissie: een koper ontdekte pas na de overdracht problemen met de elektra, en de bouwkundig keurder was daar niet verantwoordelijk voor (<a href="https://www.degeschillencommissie.nl/uitspraken/gebreken-pas-na-aankoop-ontdekt-maar-keurder-niet-verantwoordelijk/" target="_blank" rel="noopener noreferrer">degeschillencommissie.nl</a>).</p>
+<p>Bij een elektra keuring kijken we gericht naar de installatie: we openen de groepenkast, testen de aardlekbeveiliging en meten waar dat nodig is. Zo weet u of er een nieuwe groepenkast, extra groepen of nieuwe bedrading nodig is, en kunt u dat meenemen in uw beslissing en uw budget.</p>
+<div class="note-box"><p><strong>Tip voor kopers:</strong> heeft u een voorbehoud voor een bouwkundige keuring, plan de elektra keuring dan in dezelfde periode, voordat die termijn verloopt. Vraag via de makelaar of de verkoper toestemming om de woning te bezoeken. Stuur ons alvast het adres, het bouwjaar en een foto van de meterkast uit de advertentie.</p></div>
+
+<h2>Bij verhuur en <em>mutatie.</em></h2>
+<p>Gevaarlijke elektra in een huurwoning is een gebrek. In het Gebrekenboek van de Huurcommissie staat bijvoorbeeld 'een gevaarlijke situatie door losliggende leidingen en/of onvoldoende afscherming van bedrading' (<a href="https://www.huurcommissie.nl/site/binaries/site-content/collections/documents/2025/07/01/beleidsboek-gebreken/Gebrekenboek.pdf" target="_blank" rel="noopener noreferrer">Huurcommissie</a>). Volgens hetzelfde boek moet een huurder zelf het deel van de installatie onderhouden dat hij op eigen kosten heeft aangelegd.</p>
+<p>Daarom is een controle bij de wisseling van huurder slim. U ziet wat de vertrekkende huurder heeft aangelegd of veranderd, zoals extra stopcontacten, een andere lamp of een losse groep, en of dat veilig is. Wat niet goed is, kunnen we in dezelfde periode herstellen, zodat de nieuwe huurder er meteen in kan.</p>
+
 <h2>Wat wij <em>controleren.</em></h2>
-<p>We kijken naar de groepenkast en de aardlekbeveiliging, de aarding, de staat van de bedrading, stopcontacten en schakelaars, en of groepen niet overbelast zijn. Waar nodig doen we metingen.</p>
-<p>Na afloop krijgt u een overzicht van de bevindingen en een advies. Moet er iets verbeterd worden, dan krijgt u daar een offerte voor. U beslist zelf of en wanneer u dat laat doen.</p>
+<ul class="checks">
+  <li>{check}<span><strong>De groepenkast:</strong> staat en leeftijd, verkleuring of warmteplekken, losse draden en of elke groep goed is aangegeven.</span></li>
+  <li>{check}<span><strong>De aardlekbeveiliging:</strong> is er een aardlekschakelaar, hoeveel groepen hangen eraan en schakelt hij op tijd af bij een test. Meer daarover leest u bij <a href="/aardlekschakelaar-rotterdam/">aardlekschakelaar</a>.</span></li>
+  <li>{check}<span><strong>De aarding:</strong> of er een goede aardverbinding is en of stopcontacten in de keuken, badkamer en bij de wasmachine randaarde hebben.</span></li>
+  <li>{check}<span><strong>De bedrading:</strong> oude katoen- of canvasdraad, beschadigde isolatie en verdeeldozen. Vereniging Eigen Huis noemt katoenen isolatiedraad onveilig en niet meer toegestaan (<a href="https://www.eigenhuis.nl/huis-verbeteren/klussen/zorgen-voor-je-huis/elektrische-installatie-controleren" target="_blank" rel="noopener noreferrer">eigenhuis.nl</a>). Zie ook <a href="/bedrading-vervangen-rotterdam/">bedrading vervangen</a>.</span></li>
+  <li>{check}<span><strong>Stopcontacten en schakelaars:</strong> los, gebarsten of verbrand, of te veel stekkerdozen achter elkaar.</span></li>
+  <li>{check}<span><strong>De belasting:</strong> staan zware apparaten zoals de oven, vaatwasser en wasmachine samen op één groep, en is er ruimte voor meer. Is de aansluiting zelf te klein, dan leest u meer bij <a href="/meterkast-verzwaren-rotterdam/">meterkast verzwaren</a>.</span></li>
+  <li>{check}<span><strong>Sporen van klussen:</strong> aanpassingen die niet volgens NEN 1010 zijn gedaan, zoals draden zonder kroonsteen of las, of een verkeerde draaddikte.</span></li>
+</ul>
+
+<h2>Oudere woningen <em>in Rotterdam.</em></h2>
+<p>In Rotterdam staan veel vooroorlogse woningen, zoals in Noord, Kralingen, Delfshaven en delen van Zuid, en veel portiekflats uit de jaren vijftig en zestig. Daar komen we vaak dezelfde dingen tegen: een groepenkast met maar één aardlekschakelaar of zelfs geen, stopcontacten zonder randaarde in slaapkamers en gangen, en een installatie die in delen is uitgebreid. Dat hoeft niet meteen gevaarlijk te zijn, maar het is wel goed om te weten voordat u gaat verbouwen of verhuren.</p>
+
+<h2>Wat u <em>krijgt.</em></h2>
+<p>Na afloop krijgt u een overzicht in gewone taal. Per punt staat erbij of het in orde is, aandacht nodig heeft, of beter direct opgelost kan worden. Moet er iets verbeterd worden, dan krijgt u daar een duidelijke prijs vooraf voor. U beslist zelf of en wanneer u dat laat doen. Vindt de monteur iets dat echt gevaarlijk is, dan zegt hij dat meteen ter plekke.</p>
+
+<h2>Zo <em>pakken we het aan.</em></h2>
+<ol class="steps-list">
+  <li><strong>Stuur ons via WhatsApp</strong> het adres of de wijk, het bouwjaar, waarvoor de keuring is (aankoop, verhuur of uw eigen woning) en een foto van de meterkast als u die heeft.</li>
+  <li><strong>U krijgt een duidelijke prijs vooraf</strong> en we plannen een moment. Bij aankoop stemmen we dat af met de makelaar of de verkoper.</li>
+  <li><strong>Wij controleren de installatie.</strong> Voor sommige metingen gaat de stroom per groep even uit. Houd daar rekening mee met de computer en de vriezer.</li>
+  <li><strong>U krijgt het overzicht en ons advies,</strong> en als u dat wilt een offerte voor het herstel.</li>
+</ol>
+<p>Alles volgens NEN 1010, door verzekerde vakmensen. Blijkt de groepenkast aan vervanging toe, kijk dan bij <a href="/groepenkast-vervangen-rotterdam/">groepenkast vervangen</a>.</p>
 """,
         "faq": [
+            ("Is een elektra keuring verplicht bij aankoop of verhuur?",
+             "Nee, voor woningen is er geen wettelijke keuringsplicht. De eigenaar is wel verantwoordelijk voor een veilige installatie. Een keuring geeft u zekerheid voordat u koopt, verhuurt of gaat verbouwen."),
+            ("Wat is het verschil met een bouwkundige keuring?",
+             "Een bouwkundige keuring is een globale, visuele inspectie van de hele woning. De elektra wordt daarbij meestal alleen bekeken. Bij een elektra keuring openen we de groepenkast, testen we de aardlekbeveiliging en meten we waar dat nodig is."),
             ("Hoe lang duurt een keuring?",
              "Dat hangt af van de grootte van de woning of het pand. Voor een gewone woning is het meestal binnen een paar uur klaar."),
+            ("Moet de stroom eraf tijdens de keuring?",
+             "Voor sommige metingen gaat de stroom per groep even uit. Dat duurt kort, maar zet de computer uit en houd de vriezer dicht."),
             ("Krijg ik een verslag?",
-             "Ja, u krijgt een overzicht van wat we hebben gecontroleerd, wat we hebben gevonden en wat we adviseren."),
+             "Ja, u krijgt een overzicht van wat we hebben gecontroleerd, wat we hebben gevonden en wat we adviseren. Per punt staat erbij hoe dringend het is."),
+            ("Doen jullie ook een SCIOS Scope 8 of Scope 10 inspectie?",
+             "Een SCIOS-inspectie voor een bedrijfspand moet worden gedaan door een bedrijf dat volgens de SCIOS-regels keurt. De keuring op deze pagina is bedoeld voor woningen en is geen SCIOS-inspectie. Punten uit een SCIOS-rapport kunnen we wel voor u herstellen."),
             ("Doen jullie ook keuringen voor verhuurders?",
-             "Ja. We keuren ook huurwoningen en kunnen gevonden punten direct voor u oplossen."),
+             "Ja. We controleren huurwoningen, bijvoorbeeld bij een wisseling van huurder, en kunnen gevonden punten direct voor u oplossen."),
+            ("Wat kost een elektra keuring?",
+             "Dat hangt af van de grootte en de leeftijd van de woning. Stuur ons het adres, het bouwjaar en een foto van de meterkast, dan krijgt u vooraf een duidelijke prijs."),
         ],
     },
     # -------------------------------------------------------------- LAADPAAL
@@ -913,8 +959,9 @@ def _city(slug, name, char, say, wijken_oud, wijken_nieuw, local, faq_extra):
   <li>{{check}}<span><a href="/groep-bijplaatsen-rotterdam/">Groep bijplaatsen</a> voor de wasmachine, droger, oven of airco.</span></li>
   <li>{{check}}<span><a href="/thuisbatterij-aansluiten-rotterdam/">Thuisbatterij aansluiten</a> op een eigen groep, op tijd voor 2027.</span></li>
   <li>{{check}}<span><a href="/lampen-ophangen-rotterdam/">Lampen ophangen</a>, spots en dimmers.</span></li>
-  <li>{{check}}<span><a href="/stopcontact-plaatsen-rotterdam/">Stopcontacten plaatsen</a> of verplaatsen, binnen en buiten.</span></li>
+  <li>{{check}}<span><a href="/stopcontact-plaatsen-rotterdam/">Stopcontacten plaatsen</a> of verplaatsen, binnen en <a href="/buitenverlichting-tuinstopcontact-rotterdam/">buiten in de tuin</a>.</span></li>
   <li>{{check}}<span><a href="/laadpaal-installeren-rotterdam/">Laadpaal installeren</a> bij uw woning of bedrijf.</span></li>
+  <li>{{check}}<span><a href="/elektra-keuring-rotterdam/">Elektra keuring</a> bij aankoop of verhuur van een woning in {name}.</span></li>
 </ul>
 
 <h2>Zo <em>werkt het.</em></h2>
