@@ -932,13 +932,19 @@ def _city_title(name):
     return title if len(title) <= 65 else f"Elektricien {name} | AlleKlussers Rotterdam"
 
 
-def _city(slug, name, char, say, wijken_oud, wijken_nieuw, local, faq_extra):
+def _city(slug, name, char, say, wijken_oud, wijken_nieuw, local, faq_extra,
+          extra="", mix=None, desc=None):
+    # extra: optional town-specific HTML sections (use {check} for the icon,
+    # no other braces). mix: replaces the old/new wijken sentence.
+    if mix is None:
+        mix = (f"In oudere wijken zoals {wijken_oud} komen we vaak verouderde groepenkasten en bedrading tegen. "
+               f"In nieuwere wijken zoals {wijken_nieuw} gaat het vaker om een laadpaal, een thuisbatterij of extra groepen voor inductie.")
     return {
         "slug": slug,
         "city": name,
         "short": f"Elektricien {name}",
         "title": _city_title(name),
-        "desc": f"Elektricien nodig in {name}? Voor storingen, groepenkasten, verlichting, stopcontacten en laadpalen. Binnen 24 uur reactie, prijs vooraf.",
+        "desc": desc or f"Elektricien nodig in {name}? Voor storingen, groepenkasten, verlichting, stopcontacten en laadpalen. Binnen 24 uur reactie, prijs vooraf.",
         "service": f"Elektricien in {name}",
         "wa": f"Hallo AlleKlussers, ik zoek een elektricien in {name}. Het gaat om: ",
         "char": char,
@@ -950,8 +956,8 @@ def _city(slug, name, char, say, wijken_oud, wijken_nieuw, local, faq_extra):
 <h2>Elektra in {name}, <em>snel geregeld.</em></h2>
 <p>AlleKlussers is een elektrotechnisch bedrijf uit Rotterdam-Zuid. {name} ligt vlakbij, dus we zijn er snel. U krijgt binnen 24 uur reactie met een duidelijke prijs vooraf, en bij storingen zijn we 24/7 bereikbaar.</p>
 <p>{local}</p>
-<p>In oudere wijken zoals {wijken_oud} komen we vaak verouderde groepenkasten en bedrading tegen. In nieuwere wijken zoals {wijken_nieuw} gaat het vaker om een laadpaal, een thuisbatterij of extra groepen voor inductie.</p>
-
+<p>{mix}</p>
+{extra}
 <h2>Waarmee wij u <em>helpen in {name}.</em></h2>
 <ul class="checks">
   <li>{{check}}<span><a href="/storing-elektra-rotterdam/">Storing verhelpen</a>: stroomuitval of een aardlekschakelaar die steeds doorslaat.</span></li>
@@ -991,9 +997,40 @@ CITY_PAGES = [
             "Niet altijd. We kijken eerst wat er zit en wat u nodig heeft. Pas als vervangen echt verstandig is, krijgt u daar een prijs voor.")]),
     _city("elektricien-capelle-aan-den-ijssel", "Capelle aan den IJssel", "dosie", "“Capelle? Gewoon even de brug over.”",
           "Middelwatering, Oostgaarde en Schollevaar", "Fascinatio",
-          "Capelle aan den IJssel ligt direct naast Rotterdam. We werken in Middelwatering, Oostgaarde, Schollevaar, 's-Gravenland en Capelle-West, en ook in de nieuwbouw van Fascinatio. Voor bedrijven in de omgeving doen we ook onderhoud en storingen.",
-          [("Werken jullie ook voor bedrijven in Capelle?",
-            "Ja. Naast particulieren helpen we ook bedrijven, winkels en verhuurders met storingen, onderhoud en aanpassingen.")]),
+          "Capelle aan den IJssel ligt direct naast Rotterdam. We werken in alle wijken: Middelwatering, 's-Gravenland, Capelle-West, Oostgaarde, Schenkel, Schollevaar en Fascinatio, en ook op bedrijvenpark Rivium. Net over de grens zijn we net zo goed in Rotterdam Prins Alexander.",
+          [("Mag ik in Capelle mijn auto laden met een kabel over de stoep?",
+            "Nee. De gemeente Capelle aan den IJssel staat niet toe dat u uw aansluiting in de openbare ruimte legt, omdat mensen over de kabel kunnen struikelen. Laad op eigen terrein, of vraag via laadpaalnodig.nl een openbare laadpaal aan. Heeft u een oprit, carport of garage, dan plaatsen wij daar een laadpaal op een eigen groep."),
+           ("Mijn flat in Oostgaarde heeft een oude meterkast. Kan ik inductie koken?",
+            "Vaak wel, maar meestal is er een extra groep of een perilex-aansluiting nodig. Stuur een foto van uw meterkast via WhatsApp, dan zeggen we wat er nodig is en krijgt u vooraf een prijs."),
+           ("Hoe zie ik of mijn groepenkast verouderd is?",
+            "Let op draaizekeringen (smeltpatronen), weinig groepen, geen aardlekschakelaar of één aardlekschakelaar voor alle groepen, en groepen die vaak doorslaan. Twijfelt u, stuur dan een foto van de meterkast, dan kijken we met u mee."),
+           ("Ik woon in een flat. Mag ik zelf een elektricien inschakelen?",
+            "Voor werk binnen uw eigen woning meestal wel, zoals een extra stopcontact of een nieuwe groep. Voor gemeenschappelijke delen, zoals de verlichting in het trappenhuis of een laadpaal in de parkeergarage, beslist de VvE. Huurt u, overleg dan eerst met uw verhuurder."),
+           ("Werken jullie ook in Prins Alexander?",
+            "Ja. Ommoord, Zevenkamp, Het Lage Land, Prinsenland, Nesselande en de rest van Prins Alexander horen gewoon bij ons werkgebied in Rotterdam."),
+           ("Werken jullie ook voor bedrijven in Capelle?",
+            "Ja. Naast particulieren helpen we ook bedrijven, winkels en verhuurders met storingen, onderhoud en aanpassingen, ook op het Rivium en de andere bedrijventerreinen.")],
+          mix="Veel woningen in Capelle zijn gebouwd tussen de jaren zestig en tachtig, toen het dorp uitgroeide tot stad. Daar komen we vaak een groepenkast tegen die nooit is aangepast aan wat er nu in huis staat. In Fascinatio, de jongste wijk, gaat het vaker om een laadpaal, een extra groep voor inductie of verlichting in de tuin.",
+          desc="Elektricien in Capelle aan den IJssel: Oostgaarde, Schollevaar, Middelwatering, Fascinatio en meer. Groepenkast, storing, laadpaal. Reactie binnen 24 uur.",
+          extra="""
+<h2>Elektra per wijk <em>in Capelle.</em></h2>
+<p>Capelle groeide na de oorlog van een dijkdorp uit tot een stad: van ongeveer 9.000 inwoners halverwege de jaren vijftig naar 57.000 in 1988. Elke wijk heeft daardoor een eigen bouwperiode, en dat ziet u terug in de meterkast.</p>
+<ul class="checks">
+  <li>{check}<span><strong>Oostgaarde.</strong> De bouw begon eind jaren zestig met de grote flats aan de Abram van Rijckevorselweg. In flats en portiekwoningen zit vaak nog een meterkast met weinig groepen. Komt er een inductiekookplaat, droger of vaatwasser bij, dan is een <a href="/groep-bijplaatsen-rotterdam/">extra groep</a> of een <a href="/groepenkast-vervangen-rotterdam/">nieuwe groepenkast</a> vaak nodig.</span></li>
+  <li>{check}<span><strong>Schollevaar.</strong> Gebouwd vanaf begin jaren zeventig, vooral laagbouw en woonerven. In eengezinswoningen uit die tijd zit soms nog een groepenkast met draaizekeringen, of zijn niet alle groepen beveiligd met een aardlekschakelaar. Slaat er iets door, kijk dan eerst op onze pagina over de <a href="/aardlekschakelaar-rotterdam/">aardlekschakelaar</a>.</span></li>
+  <li>{check}<span><strong>Middelwatering, 's-Gravenland, Schenkel en Capelle-West.</strong> Hier staan veel woningen uit de jaren van snelle groei. Bij een verbouwing of een nieuwe keuken loont het om de <a href="/bedrading-vervangen-rotterdam/">bedrading</a> en de groepenkast te laten nakijken, of om een <a href="/elektra-keuring-rotterdam/">keuring</a> te laten doen als u een woning koopt.</span></li>
+  <li>{check}<span><strong>Fascinatio.</strong> De jongste wijk van Capelle, sinds 2001, met veel wonen aan het water. De installatie is hier meestal moderner. Vragen gaan vaker over een laadpaal op eigen terrein, <a href="/buitenverlichting-tuinstopcontact-rotterdam/">buitenverlichting en een tuinstopcontact</a>, of een groep voor <a href="/inductiekookplaat-aansluiten-rotterdam/">inductie</a>.</span></li>
+  <li>{check}<span><strong>Rivium en bedrijventerreinen.</strong> Voor kantoren en bedrijfsruimtes verhelpen we storingen, plaatsen we verlichting en leggen we extra groepen aan.</span></li>
+</ul>
+
+<h2>Laadpaal in Capelle: <em>wat mag wel?</em></h2>
+<p>De gemeente Capelle aan den IJssel is duidelijk: laad uw auto op op uw eigen terrein. Een laadkabel over de stoep of door de openbare ruimte is niet toegestaan, omdat mensen erover kunnen struikelen. Ook mag u een openbare parkeerplek niet claimen als eigen laadplek.</p>
+<p>Heeft u een oprit, carport of garage, dan plaatsen wij daar een <a href="/laadpaal-installeren-rotterdam/">laadpaal</a> op een eigen groep en kijken we eerst of uw aansluiting het aankan. Heeft u geen eigen terrein, dan kunt u via laadpaalnodig.nl een openbare laadpaal in de buurt aanvragen.</p>
+<div class="note-box"><p><strong>Bron:</strong> <a href="https://www.duurzaamcapelle.nl/laadpalenbeleid-capelle-aan-den-ijssel/" target="_blank" rel="noopener noreferrer">laadpalenbeleid Capelle aan den IJssel 2025-2026</a> (Duurzaam Capelle, gemeente Capelle aan den IJssel).</p></div>
+
+<h2>Flat, huur <em>of VvE?</em></h2>
+<p>Veel Capellenaren wonen in een flat of portiekwoning. Werk binnen uw eigen woning, zoals een extra stopcontact of een nieuwe groep, kunt u meestal zelf laten doen. Voor gemeenschappelijke delen, zoals de verlichting in het trappenhuis of een laadpaal in de parkeergarage, beslist de VvE. Huurt u, overleg dan eerst met uw verhuurder. Voor VvE's en verhuurders hebben we een <a href="/elektricien-verhuurders-vve-rotterdam/">aparte pagina</a>.</p>
+"""),
     _city("elektricien-barendrecht", "Barendrecht", "laadie", "“Barendrecht? Laden maar.”",
           "het centrum en het oude dorp", "Carnisselande en Smitshoek",
           "Barendrecht ligt op een paar minuten van ons in Rotterdam-Zuid. In Carnisselande en Smitshoek wonen veel gezinnen met een auto voor de deur en zonnepanelen op het dak; daar gaat het vaak om een laadpaal, extra groepen of een vrije groep voor een stekkerbatterij.",
