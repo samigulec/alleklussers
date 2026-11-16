@@ -211,39 +211,84 @@ PAGES = [
     {
         "slug": "groepenkast-vervangen-rotterdam",
         "short": "Groepenkast vervangen",
-        "sub": "Vervangen of uitbreiden voor inductie, laadpaal of warmtepomp.",
-        "title": "Groepenkast vervangen Rotterdam | AlleKlussers",
-        "desc": "Groepenkast vervangen of uitbreiden in Rotterdam? Voor inductie, laadpaal, warmtepomp of meer veiligheid. Werk volgens NEN 1010, prijs vooraf.",
+        "sub": "Vervangen of uitbreiden, met hoofdschakelaar en ruimte voor later.",
+        "title": "Groepenkast vervangen of uitbreiden Rotterdam | AlleKlussers",
+        "desc": "Oude of volle groepenkast? We vervangen of breiden hem uit in Rotterdam en omgeving, met aardlek, hoofdschakelaar en ruimte voor later. Prijs vooraf.",
         "service": "Groepenkast vervangen en uitbreiden",
         "char": "kastje",
         "say": "“Meer groepen nodig? Ik regel het.”",
         "eyebrow": "Groepenkasten",
-        "h1": "Groepenkast vervangen in <em>Rotterdam.</em>",
-        "lede": "Een veilige, moderne groepenkast met genoeg groepen voor inductie, een laadpaal, een warmtepomp of extra apparaten.",
+        "h1": "Groepenkast vervangen of uitbreiden in <em>Rotterdam.</em>",
+        "lede": "Een veilige groepenkast met genoeg groepen voor inductie, een laadpaal, een warmtepomp of een verbouwing. Soms is uitbreiden genoeg, soms is een nieuwe kast verstandiger. Wij zeggen u eerlijk welke van de twee.",
         "body": """
-<h2>Wanneer is vervangen <em>verstandig?</em></h2>
+<h2>Uitbreiden of vervangen: <em>wat past bij uw kast?</em></h2>
+<p>Een groepenkast gaat gerust 30 tot 40 jaar mee. Er hoeft dus niet bij elke nieuwe wens een nieuwe kast te komen. Of uitbreiden genoeg is, hangt vooral af van wat er nu in zit.</p>
 <ul class="checks">
-  <li>{check}<span><strong>U heeft nog een oude kast</strong> met draaistoppen of smeltzekeringen.</span></li>
-  <li>{check}<span><strong>Er zit geen of maar één aardlekschakelaar in.</strong> Een moderne kast beveiligt beter tegen lekstroom.</span></li>
-  <li>{check}<span><strong>Groepen slaan vaak door,</strong> omdat er te veel apparaten op dezelfde groep zitten.</span></li>
-  <li>{check}<span><strong>U neemt iets zwaars in gebruik,</strong> zoals een <a href="/inductiekookplaat-aansluiten-rotterdam/">inductiekookplaat</a>, laadpaal, warmtepomp, zonnepanelen of een <a href="/thuisbatterij-aansluiten-rotterdam/">thuisbatterij</a>.</span></li>
-  <li>{check}<span><strong>U gaat verbouwen</strong> en er komen nieuwe aansluitingen bij.</span></li>
+  <li>{check}<span><strong>Uitbreiden kan vaak</strong> als de kast al aardlekschakelaars en een hoofdschakelaar heeft, en er nog plek is of een extra rij bij kan. Dan voegen we groepen of een aardlekautomaat toe. Gaat het om één apparaat, zoals een droger of airco? Dan is <a href="/groep-bijplaatsen-rotterdam/">een groep bijplaatsen</a> meestal genoeg.</span></li>
+  <li>{check}<span><strong>Vervangen is verstandig</strong> bij draaistoppen of smeltzekeringen, als er geen of maar één aardlekschakelaar in zit, als er geen hoofdschakelaar is, of als de kast vol is en er geen plek meer bij kan.</span></li>
+  <li>{check}<span><strong>Vervangen is ook slim bij een grote stap,</strong> zoals een nieuwe keuken met <a href="/inductiekookplaat-aansluiten-rotterdam/">inductie</a>, een warmtepomp, een <a href="/laadpaal-installeren-rotterdam/">laadpaal</a> of een aanbouw. Dan bouwt u niet steeds bij aan een kast die daar nooit voor gemaakt is.</span></li>
+  <li>{check}<span><strong>Niet wachten bij deze tekens:</strong> een kast of automaat die warm aanvoelt, bruine verkleuring, brandlucht of een zoemend geluid. Zet dan de groep uit als dat veilig kan en <a href="/storing-elektra-rotterdam/">meld het als storing</a>.</span></li>
 </ul>
 
-<h2>Wat wij <em>doen.</em></h2>
-<p>We bekijken eerst uw huidige meterkast en bespreken wat u nodig heeft, nu en in de toekomst. Daarna vervangen of breiden we de groepenkast uit met de juiste aardlekbeveiliging, verdelen we de groepen logisch en zetten we op elke groep duidelijk waar hij voor is. Tot slot testen we alles en leggen we uit hoe uw nieuwe kast werkt.</p>
-<p>Alles volgens NEN 1010, door gecertificeerde en verzekerde elektriciens.</p>
-<p>Is uw kast nog goed en heeft u alleen een groep te weinig, bijvoorbeeld voor de droger of de airco? Dan is <a href="/groep-bijplaatsen-rotterdam/">een groep bijplaatsen</a> vaak genoeg.</p>
+<h2>Hoe oud is <em>uw groepenkast?</em></h2>
+<p>Groepenkasten van voor ongeveer 1975 hebben vrijwel nooit een aardlekschakelaar, en de 1-fase kasten uit die tijd hebben meestal ook geen hoofdschakelaar. Zo herkent u een oude kast:</p>
+<ul class="checks">
+  <li>{check}<span><strong>Draaistoppen:</strong> porseleinen zekeringen met een kijkglaasje die u eruit kunt draaien, in plaats van automaten met een hendeltje.</span></li>
+  <li>{check}<span><strong>Geen testknop:</strong> een aardlekschakelaar heeft een knop met een T. Ziet u die nergens, dan heeft uw kast waarschijnlijk geen aardlekbeveiliging.</span></li>
+  <li>{check}<span><strong>Weinig groepen:</strong> twee tot vier groepen voor de hele woning, vaak met een stekkerdoos als oplossing in de keuken.</span></li>
+  <li>{check}<span><strong>Geen aarde:</strong> stopcontacten zonder randaarde of draden zonder groen-gele aardedraad wijzen op oude <a href="/bedrading-vervangen-rotterdam/">bedrading</a>. Die nemen we dan mee in het advies.</span></li>
+</ul>
+<p>Op of in veel kasten zit een sticker of groepenverklaring met een datum. Stuur ons een foto van de open meterkast, dan zien we meestal meteen wat er in zit.</p>
 
-<div class="note-box"><p><strong>Zware aansluiting nodig?</strong> Voor bijvoorbeeld een laadpaal of warmtepomp kan uw aansluiting te licht zijn. Een verzwaring vraagt u aan bij de netbeheerder (Stedin). Wij vertellen u eerlijk of dat nodig is. Lees meer over <a href="/meterkast-verzwaren-rotterdam/">meterkast verzwaren</a>.</p></div>
+<h2>Wat er in een <em>nieuwe kast</em> komt.</h2>
+<ul class="checks">
+  <li>{check}<span><strong>Een hoofdschakelaar.</strong> Volgens de huidige NEN 1010 hoort die erin. Zo maakt u in een noodgeval de hele installatie in één keer stroomloos.</span></li>
+  <li>{check}<span><strong>Aardlekschakelaars met maximaal vier groepen per stuk,</strong> zo verdeeld dat niet het hele huis donker is als er één uitschakelt.</span></li>
+  <li>{check}<span><strong>Eigen groepen voor zware apparaten:</strong> wasmachine, droger, vaatwasser en oven, en een kookgroep voor de kookplaat.</span></li>
+  <li>{check}<span><strong>Aardlekautomaten</strong> voor groepen die los moeten staan, zoals een laadpaal of een <a href="/vrije-groep-stekkerbatterij-rotterdam/">vrije groep voor een stekkerbatterij</a>.</span></li>
+  <li>{check}<span><strong>Ruimte voor later:</strong> lege plekken voor bijvoorbeeld een warmtepomp of zonnepanelen, en een kast die op 3-fase kan worden aangesloten als u later <a href="/meterkast-verzwaren-rotterdam/">verzwaart</a>.</span></li>
+  <li>{check}<span><strong>Een duidelijke groepenverklaring,</strong> zodat u bij elke groep ziet welke ruimte of welk apparaat erop zit.</span></li>
+</ul>
+
+<h2>Wat van de netbeheerder is, <em>en wat van u.</em></h2>
+<p>De aansluitkabel, de hoofdzekering en de meter zijn van de netbeheerder; in Rotterdam en omgeving is dat Stedin. Alles na de meter, dus de hoofdschakelaar, de groepenkast en de bedrading in huis, is uw eigen installatie. Daar werken wij aan.</p>
+<p>De netbeheerder verzegelt de aansluiting en de meter. Die zegels mogen alleen worden verbroken met toestemming van de netbeheerder: door de netbeheerder zelf of door een erkende installateur met zegelrecht. Bij het vervangen van een groepenkast is dat soms nodig, bijvoorbeeld om de kabel tussen meter en groepenkast te vervangen of om tijdens het werk de hoofdzekering te verwijderen. U hoort vooraf of dat bij uw meterkast speelt en hoe het wordt geregeld. Breek een zegel nooit zelf.</p>
+
+<h2>Groepenkasten in <em>Rotterdamse woningen.</em></h2>
+<p>In de vooroorlogse woningen in bijvoorbeeld Noord, Kralingen-Crooswijk, Delfshaven, Feijenoord en Charlois zit de meterkast vaak klein in de gang of onder de trap, met een kast die in de loop der jaren is aangepast. In de portiekflats uit de jaren vijftig en zestig komen we nog kasten met maar een paar groepen of met draaistoppen tegen. In woningen uit de jaren zeventig en tachtig zit meestal wel aardlekbeveiliging, maar vaak met weinig groepen. Daar is uitbreiden regelmatig genoeg.</p>
+<p>Ook buiten Rotterdam vervangen en breiden we groepenkasten uit, onder meer in <a href="/elektricien-schiedam/">Schiedam</a>, <a href="/elektricien-vlaardingen/">Vlaardingen</a>, <a href="/elektricien-capelle-aan-den-ijssel/">Capelle aan den IJssel</a>, <a href="/elektricien-barendrecht/">Barendrecht</a> en <a href="/elektricien-ridderkerk/">Ridderkerk</a>.</p>
+<div class="note-box"><p><strong>Huis van voor 1994?</strong> Dan kan de aftimmering van de meterkast, of de bekleding van de deur en het bovenlicht, asbesthoudend karton of plaat bevatten. Twijfelt u, zeg het ons vooraf of stuur een foto. We boren of zagen daar niet in zolang niet duidelijk is wat het is.</p></div>
+<p>Huurt u? De groepenkast hoort bij de woning, dus vraag eerst uw verhuurder of woningcorporatie. Verhuurders en VvE's helpen we ook rechtstreeks, zie <a href="/elektricien-verhuurders-vve-rotterdam/">elektricien voor verhuurders en VvE's</a>.</p>
+
+<h2>Zo <em>pakken we het aan.</em></h2>
+<ol class="steps-list">
+  <li><strong>Stuur een foto</strong> van uw open meterkast via WhatsApp en vertel wat u van plan bent, nu en de komende jaren.</li>
+  <li><strong>U krijgt een duidelijke prijs vooraf,</strong> met daarin of we uitbreiden of vervangen, hoeveel groepen er komen en wat er verder nodig is.</li>
+  <li><strong>Op de afgesproken dag is de stroom een aantal uur uit.</strong> Houd de koelkast en vriezer dicht en laad vooraf uw telefoon en laptop op.</li>
+  <li><strong>We bouwen de kast, sluiten alle groepen aan en testen ze,</strong> ook elke aardlekschakelaar.</li>
+  <li><strong>U krijgt uitleg:</strong> welke groep waarvoor is, hoe de hoofdschakelaar werkt en hoe u de testknop gebruikt. Druk die minimaal twee keer per jaar in.</li>
+</ol>
+<p>Alles volgens NEN 1010, door verzekerde vakmensen.</p>
+
+<div class="note-box"><p><strong>Bronnen:</strong> <a href="https://www.se.com/nl/nl/about-us/newsroom/news/press-releases/woning-renovatie%E2%80%A6-wel-of-geen-nieuwe-groepenkast-65f850cdb9f47a8ac107da47" target="_blank" rel="noopener noreferrer">Woning renovatie: wel of geen nieuwe groepenkast?</a> (Schneider Electric), <a href="https://www.stedin.net/zakelijk/techniek/zegelrecht" target="_blank" rel="noopener noreferrer">Zegelrecht</a> (Stedin), <a href="https://iplo.nl/thema/asbest/asbestwegwijzer/binnen-huis/" target="_blank" rel="noopener noreferrer">Asbest binnen in huis</a> (Informatiepunt Leefomgeving).</p></div>
 """,
         "faq": [
+            ("Kan mijn oude groepenkast worden uitgebreid in plaats van vervangen?",
+             "Vaak wel, als er al aardlekschakelaars en een hoofdschakelaar in zitten en er plek is voor een extra rij of automaat. Heeft de kast draaistoppen of geen aardlekbeveiliging, dan raden we uitbreiden af en adviseren we een nieuwe kast."),
+            ("Hoe weet ik hoe oud mijn groepenkast is?",
+             "Kijk naar een sticker of groepenverklaring met een datum. Draaistoppen en het ontbreken van een testknop met een T wijzen op een kast van voor ongeveer 1975. Stuur een foto, dan kijken we mee."),
+            ("Is een hoofdschakelaar verplicht?",
+             "Volgens de huidige NEN 1010 hoort er een hoofdschakelaar in de installatie. Veel oude 1-fase kasten hebben er geen. Bij een nieuwe kast plaatsen we er altijd een."),
+            ("Moet Stedin langskomen als mijn groepenkast wordt vervangen?",
+             "Voor de groepenkast zelf meestal niet. De netbeheerder komt in beeld als een zegel op de aansluiting of meter open moet, of als u uw aansluiting wilt verzwaren. Dat hoort u vooraf van ons."),
+            ("Moet de bedrading ook worden vervangen?",
+             "Niet altijd. Is de bedrading in goede staat, dan sluiten we die aan op de nieuwe kast. Zitten er nog oude draden zonder aarde of met stoffen isolatie in huis, dan bespreken we of die beter ook vervangen kunnen worden."),
+            ("Kan de nieuwe kast voorbereid worden op een laadpaal, warmtepomp of zonnepanelen?",
+             "Ja. We laten lege plekken over en kiezen een kast die op 3-fase kan worden aangesloten. Dan hoeft er later geen nieuwe kast te komen, alleen de groep zelf."),
             ("Hoe lang duurt het vervangen van een groepenkast?",
              "Meestal is het in één dag klaar. Tijdens het werk is de stroom een aantal uur uit; dat stemmen we vooraf met u af."),
-            ("Heb ik een aparte groep nodig voor een inductiekookplaat?",
-             "Ja, een inductiekookplaat heeft meestal een eigen, zwaardere aansluiting nodig. We kijken of uw meterkast dat aankan en passen hem zo nodig aan."),
-            ("Wat is het verschil tussen 1-fase en 3-fase?",
-             "Een 3-fase aansluiting kan meer vermogen leveren en is handig bij zware verbruikers zoals een laadpaal of warmtepomp. We kijken samen wat u heeft en wat u nodig heeft."),
+            ("Wie betaalt een nieuwe groepenkast in een huurwoning?",
+             "De groepenkast staat niet in het Besluit kleine herstellingen. Vervanging hoort daarom in de regel bij de verhuurder. Overleg altijd eerst met uw verhuurder of woningcorporatie."),
             ("Wat kost een nieuwe groepenkast?",
              "Dat hangt af van het aantal groepen en wat er verder moet gebeuren. U krijgt eerst een offerte met een vaste prijs."),
         ],
