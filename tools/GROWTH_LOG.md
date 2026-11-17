@@ -21,19 +21,21 @@ Public repo: no prices, margins or internal business details here.
 - 2026-11-16: Deep rewrite of /groepenkast-vervangen-rotterdam/ (core service page, thin before; searches for 'groepenkast uitbreiden' and 'installatie groepenkast' in several towns): uitbreiden vs vervangen with warning signs, how to recognise an old kast (pre-1975: almost never aardlek, 1-fase often no hoofdschakelaar), what goes in a new kast (hoofdschakelaar per current NEN 1010, max four groups per aardlek, own groups, aardlekautomaten, room for later and 3-fase ready, groepenverklaring), netbeheerder vs. own installation and Stedin seals (zegelrecht), Rotterdam housing types, asbestos note for homes before 1994 (IPLO), renters, steps, 9 FAQs, sources cited (Schneider Electric, Stedin, IPLO). New title/description with 'vervangen of uitbreiden'; links to all five town pages. Removed the unapproved 'gecertificeerde' wording from this page's body (sidebar template unchanged, see backlog 7).
 - 2026-11-17: Deepened /elektricien-vlaardingen/ (town page with search impressions for 'elektricien vlaardingen' and 'groepenkast vervangen vlaardingen' but a low position): new sections 'Elektra per wijk' (centrum/Oude Haven, Oostwijk mostly pre-war with many bovenwoningen, Vlaardinger Ambacht with jaren-30 homes and the Babberspolders from the 1950s, Westwijk built from 1954, Holy from the late 1960s, Rivierzone new-build; sources: Woonvisie Vlaardingen 2020-2030 and Wikipedia), 'Groepenkast, inductie of krachtstroom?' (three questions with links to groep bijplaatsen, groepenkast and meterkast verzwaren), 'Laadpaal in Vlaardingen' (the gemeente says requesting a public charger is not needed; it places chargers based on usage; source vlaardingen.nl), huur/flat/VvE; 9 FAQs; own meta description; Vlaardingen no longer uses the template sentence about thuisbatterijen.
 - 2026-11-17 (2): Homepage now links to the six landing pages it was missing (groep bijplaatsen, inductiekookplaat, meterkast verzwaren, aardlekschakelaar, buitenverlichting/tuinstopcontact, verhuurders/VvE) in both 'Meer per dienst' lists and the footer, so the homepage passes link value to every service page. Owner asked to focus fully on SEO.
+- 2026-11-17 (3): /inductiekookplaat-aansluiten-rotterdam/: new section 'Extra groep voor inductie: kookgroep en perilex' (what an extra groep for inductie is, room in the kast, perilex position, works on 1-fase, reuse of an old fornuis perilex); title and meta description now name kookgroep and perilex. Owner asked to focus on SEO; backlog reordered into an SEO plan.
 
 ## Backlog
 
-Highest value first.
+SEO plan, highest value first (owner asked on 2026-11-17 to focus on SEO). Competitors that rank in Rotterdam-Zuid win on Google reviews, visible prices, real project photos and directory listings, not on content length.
 
-1. Service pages people search for:
-   - thin pages still to deepen like the keuring page: bedrading, stopcontact, lampen (2-3 more FAQs, local detail); laadpaal done 2026-11-15, groepenkast done 2026-11-16
-   - inductie page: 'perilex aansluiten' searches show up; consider a short perilex section near the top
-   - other town pages (Schiedam, Ridderkerk, Barendrecht): same per-wijk treatment as Capelle and Vlaardingen via `_city(extra=...)`
-2. Town pages: Krimpen aan den IJssel, Albrandswaard (Rhoon, Poortugaal), Spijkenisse, Lansingerland (Berkel en Rodenrijs), Hoogvliet.
-3. Knowledge articles (only if useful and accurate): "Salderen stopt 2027: wat betekent dat voor uw meterkast?".
-   (The planned "Aardlek slaat steeds door" article is covered by /aardlekschakelaar-rotterdam/.)
-4. Conversion follow-ups: homepage pre-filled WhatsApp text per language, data-cta labels on homepage links.
-5. Accuracy: town-page template still says newer wijken often need 'een thuisbatterij' and lists 'Thuisbatterij aansluiten'; revisit once the owner confirms the team does thuisbatterij work. (Barendrecht wording fixed 2026-11-11.)
-6. Technical SEO: privacy page (privacybeleid) for the contact form and Google Analytics; (homepage links to all landing pages done 2026-11-17); re-measure LCP after the WebP/font change; homepage has 5 H1s (one per view; site.js focuses the view's h1, so change carefully).
-7. Wording check: site-wide "gecertificeerd" wording (homepage i18n, page template sidebar, several landing pages) is not on the approved claims list. Waiting for the owner's confirmation before changing or keeping it.
+1. Quick wins on pages close to page 1-2 (check Search Console positions first): titles and meta descriptions that invite the click; one extra section answering the query that already shows up (inductie done 2026-11-17).
+2. Problem pages for searches people type when something breaks (600-1000 words, what you can check yourself, when to call): e.g. 'stopcontact doet het niet', 'stroom uitgevallen in een kamer', 'groep slaat door bij wasmachine', 'lamp knippert of zoemt', 'zekering slaat door bij inschakelen'. One per run, only if accurate and not covered by an existing page.
+3. Town pages: per-wijk treatment for Schiedam, Barendrecht, Ridderkerk via `_city(extra=...)`; then new towns Krimpen aan den IJssel, Albrandswaard (Rhoon, Poortugaal), Spijkenisse, Hoogvliet.
+4. Project pages (`/projecten/...`): short page per real job with town, situation, what was done and one real photo. Needs photos from the owner; prepare the template when the first photos arrive.
+5. Price calculator for groepenkast / extra groep / perilex with a 'send via WhatsApp' button. Needs fixed prices confirmed by the owner; never publish prices before that.
+6. Review support: a /review link page and review count in titles/descriptions once there are real Google reviews. Needs the owner's Google review link.
+7. Thin pages still to deepen: bedrading, stopcontact, lampen.
+8. Technical SEO: privacy page (privacybeleid) for the contact form and Google Analytics; re-measure LCP after the WebP/font change; homepage has 5 H1s (one per view; site.js focuses the view's h1, so change carefully). (Homepage links to all landing pages done 2026-11-17.)
+9. Knowledge article (only if useful and accurate): "Salderen stopt 2027: wat betekent dat voor uw meterkast?".
+10. Conversion follow-ups: homepage pre-filled WhatsApp text per language, data-cta labels on homepage links.
+11. Accuracy: town-page template still says newer wijken often need 'een thuisbatterij' and lists 'Thuisbatterij aansluiten'; revisit once the owner confirms the team does thuisbatterij work.
+12. Wording check: site-wide "gecertificeerd" wording (homepage i18n, page template sidebar, several landing pages) is not on the approved claims list. Waiting for the owner's confirmation before changing or keeping it.
