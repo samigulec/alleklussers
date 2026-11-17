@@ -367,8 +367,8 @@ PAGES = [
         "slug": "inductiekookplaat-aansluiten-rotterdam",
         "short": "Inductiekookplaat aansluiten",
         "sub": "Kookgroep en perilex, ook bij de overstap van gas.",
-        "title": "Inductiekookplaat aansluiten Rotterdam | Kookgroep | AlleKlussers",
-        "desc": "Inductiekookplaat laten aansluiten in Rotterdam? Wij controleren uw meterkast, plaatsen een kookgroep met perilex en sluiten de kookplaat veilig aan.",
+        "title": "Inductie aansluiten Rotterdam | Kookgroep & perilex | AlleKlussers",
+        "desc": "Inductiekookplaat aansluiten in Rotterdam: extra kookgroep in de meterkast, perilex-aansluiting in de keuken en veilig aansluiten. Prijs vooraf via WhatsApp.",
         "service": "Inductiekookplaat aansluiten en kookgroep plaatsen",
         "char": "vonk",
         "say": "“Van gas naar inductie? Ik regel de stroom.”",
@@ -391,6 +391,15 @@ PAGES = [
   <li>{check}<span><strong>Een volle of oude groepenkast,</strong> met draaistoppen of zonder plek voor een extra groep: dan moet de kast eerst worden <a href="/groepenkast-vervangen-rotterdam/">uitgebreid of vervangen</a>.</span></li>
 </ul>
 <p>Stuur ons een foto van uw meterkast en het typeplaatje of de productpagina van uw kookplaat. Dan zien we meestal al wat er nodig is.</p>
+
+<h2>Extra groep voor inductie: <em>kookgroep en perilex.</em></h2>
+<p>Een "extra groep voor inductie" is bijna altijd een kookgroep: twee groepen van 16 ampère die samen met één hendel schakelen, beveiligd door een aardlekschakelaar. Vanuit die kookgroep loopt een eigen kabel naar de keuken, waar een perilex-wandcontactdoos komt. Daar gaat de stekker van de kookplaat in.</p>
+<ul class="checks">
+  <li>{check}<span><strong>Kookgroep in de meterkast.</strong> Is er plek in de groepenkast, dan plaatsen we de kookgroep erbij. Zitten er al vier groepen aan dezelfde aardlekschakelaar, dan komt er een aardlekschakelaar bij of gebruiken we aardlekautomaten. Is de kast vol of verouderd, dan leest u meer bij <a href="/groep-bijplaatsen-rotterdam/">groep bijplaatsen</a>.</span></li>
+  <li>{check}<span><strong>Perilex in de keuken.</strong> De perilex-wandcontactdoos komt achter of onder de kookplaat, op een plek die u na het monteren nog kunt bereiken.</span></li>
+  <li>{check}<span><strong>Ook op 1-fase.</strong> Een kookgroep met perilex werkt op twee groepen van dezelfde 1-fase aansluiting. Krachtstroom is daarvoor niet nodig.</span></li>
+</ul>
+<p>Ligt er al een perilex-aansluiting van een oud elektrisch fornuis? Dan controleren we of de kabel en de groep in orde zijn; vaak kan de nieuwe kookplaat er dan direct op.</p>
 
 <h2>Moet uw aansluiting <em>verzwaard worden?</em></h2>
 <p>Meestal niet. Met een 3x25A-aansluiting past een kookgroep voor inductie gewoon. In de regio Rotterdam hebben veel woningen nog 1-fase, vaak 1x35A; ook dan past inductie meestal, want de kookplaat verdeelt het vermogen zelf. Heeft u een 1-fase aansluiting, dan kijken we of er naast de kookplaat genoeg ruimte overblijft voor de rest van het huis, zeker als er ook een warmtepomp of <a href="/laadpaal-installeren-rotterdam/">laadpaal</a> bij komt.</p>
