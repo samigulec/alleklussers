@@ -1085,9 +1085,51 @@ CITY_PAGES = [
             "Ja. In oudere panden controleren we eerst de bestaande installatie en bespreken we met u wat nodig is voordat we beginnen.")]),
     _city("elektricien-vlaardingen", "Vlaardingen", "kastje", "“Vlaardingen? Ik ben onderweg.”",
           "Westwijk, Babberspolder en het centrum", "Holy en Ambacht",
-          "In Vlaardingen werken we in alle wijken, van de portiekflats in de Westwijk en Babberspolder tot de woningen in Holy en Ambacht. Veel woningen hier zijn decennia oud; een controle van de groepenkast is dan vaak een goed begin.",
+          "In Vlaardingen werken we in alle wijken: het centrum rond de Oude Haven, de Oostwijk, Vlaardinger Ambacht en de Babberspolders, de Westwijk, Holy-Zuid en Holy-Noord, en de nieuwbouw in de Rivierzone. Vanuit Rotterdam-Zuid zijn we er snel, en Schiedam ligt er direct naast.",
           [("Mijn groepenkast is oud. Moet hij vervangen worden?",
-            "Niet altijd. We kijken eerst wat er zit en wat u nodig heeft. Pas als vervangen echt verstandig is, krijgt u daar een prijs voor.")]),
+            "Niet altijd. Soms is uitbreiden genoeg, bijvoorbeeld met een extra groep of een aardlekschakelaar erbij. We kijken eerst wat er zit en wat u nodig heeft. Pas als vervangen echt verstandig is, krijgt u daar een prijs voor."),
+           ("Moet ik in Vlaardingen een openbare laadpaal aanvragen?",
+            "Nee. Volgens de gemeente Vlaardingen is aanvragen niet nodig: de gemeente kijkt zelf naar het gebruik van de bestaande laadpalen en het aantal elektrische auto's, en plaatst op basis daarvan nieuwe palen. Heeft u een oprit, carport of garage, dan kunt u ook een eigen laadpaal laten plaatsen op een eigen groep."),
+           ("Ik woon in een bovenwoning in de Oostwijk. Waar let u op?",
+            "In vooroorlogse woningen kijken we eerst naar de bedrading en de groepenkast: hoe oud is het, is alles geaard en zit er een aardlekschakelaar in? Daarna bespreken we wat er nodig is voor uw plannen, zoals inductie of extra stopcontacten. U krijgt vooraf een prijs."),
+           ("Kan ik inductie koken in mijn flat in de Westwijk of Holy?",
+            "Meestal wel. De meeste inductiekookplaten hebben een kookgroep met perilex nodig; die kan vaak gewoon op een 1-fase aansluiting. Stuur een foto van uw meterkast via WhatsApp, dan zeggen we of er een groep bij kan of dat de kast eerst moet worden uitgebreid."),
+           ("Heb ik krachtstroom nodig?",
+            "Voor een inductiekookplaat bijna nooit. Een 3-fase aansluiting is vooral zinvol als er een warmtepomp, laadpaal én inductie tegelijk komen. De netbeheerder verzwaart de aansluiting; wij passen daarna de groepenkast aan. We rekenen eerst uit of het nodig is."),
+           ("Ik huur mijn woning. Mag ik jullie inschakelen?",
+            "Voor kleine dingen die u zelf heeft aangebracht meestal wel. Voor de groepenkast, de bedrading of een nieuwe groep overlegt u eerst met uw verhuurder of woningcorporatie. Voor verhuurders en VvE's hebben we een aparte pagina.")],
+          mix="Vlaardingen heeft woningen uit bijna elke bouwperiode, en dat ziet u terug in de meterkast. In de vooroorlogse Oostwijk en de jaren-30 huizen in Ambacht komen we vaak oude bedrading en een groepenkast met weinig groepen tegen. In de naoorlogse Westwijk, de Babberspolders en Holy gaat het vaak om een kast die nooit is aangepast aan inductie, een droger of een warmtepomp.",
+          desc="Elektricien in Vlaardingen: Westwijk, Holy, Ambacht, Babberspolder, Oostwijk en centrum. Groepenkast vervangen, storing, inductie. Reactie binnen 24 uur.",
+          extra="""
+<h2>Elektra per wijk <em>in Vlaardingen.</em></h2>
+<p>Vlaardingen groeide na de oorlog snel. Eerst kwamen de Westwijk en de Babberspolders, daarna Holy, dat inmiddels ongeveer een derde van de bebouwde oppervlakte van de stad beslaat. Elke wijk heeft zo een eigen bouwperiode, en elke periode zijn eigen meterkast.</p>
+<ul class="checks">
+  <li>{check}<span><strong>Centrum en Oude Haven.</strong> Historische panden aan de Oost- en Westhavenkade en in de straten erachter, vaak met bovenwoningen. Voordat we iets aansluiten, kijken we naar de staat van de <a href="/bedrading-vervangen-rotterdam/">bedrading</a>. In een monumentaal pand overleggen we vooraf hoe nieuwe leidingen zo netjes en onzichtbaar mogelijk lopen.</span></li>
+  <li>{check}<span><strong>Oostwijk.</strong> Grotendeels gebouwd voor de Tweede Wereldoorlog; ruim 40 procent van de woningen is een bovenwoning of appartement. Hier komen we nog groepenkasten tegen met weinig groepen of zonder <a href="/aardlekschakelaar-rotterdam/">aardlekschakelaar</a>, en soms ruimtes waar niet alles geaard is.</span></li>
+  <li>{check}<span><strong>Vlaardinger Ambacht en de Babberspolders.</strong> Van het oude dorp Ambacht en de vele jaren-30 woningen tot de huizen uit de jaren vijftig in de Babberspolders en het vernieuwde Babberspolder-Oost. Bij een nieuwe keuken of verbouwing is <a href="/groepenkast-vervangen-rotterdam/">uitbreiden of vervangen van de groepenkast</a> vaak de eerste stap.</span></li>
+  <li>{check}<span><strong>Westwijk.</strong> De bouw begon in 1954 en de eerste bewoners kregen in 1957 de sleutel. Er staat vooral middelhoogbouw en wat laagbouw. In de flats is de meterkast vaak klein en zijn er weinig groepen; voor een <a href="/inductiekookplaat-aansluiten-rotterdam/">inductiekookplaat</a>, droger of vaatwasser is dan een <a href="/groep-bijplaatsen-rotterdam/">extra groep</a> nodig.</span></li>
+  <li>{check}<span><strong>Holy-Zuid en Holy-Noord.</strong> Gebouwd vanaf eind jaren zestig, met hoogbouw en sociale huur, maar ook buurten met eengezinswoningen en vrijstaande huizen. Bij de eengezinswoningen gaat het vaak om een laadpaal op eigen terrein, <a href="/buitenverlichting-tuinstopcontact-rotterdam/">buitenverlichting en een tuinstopcontact</a> of extra groepen.</span></li>
+  <li>{check}<span><strong>Rivierzone en nieuwbouw.</strong> Bij het gebied ten zuiden van station Vlaardingen Centrum en langs de rivier komen nieuwe woningen bij. De installatie is daar modern; vragen gaan vaker over <a href="/lampen-ophangen-rotterdam/">verlichting</a>, <a href="/stopcontact-plaatsen-rotterdam/">extra stopcontacten</a> of een laadpaal.</span></li>
+</ul>
+<div class="note-box"><p><strong>Bronnen:</strong> <a href="https://www.vlaardingswonen.nl/De_wijken" target="_blank" rel="noopener noreferrer">De wijken, Woonvisie Vlaardingen 2020-2030</a> (gemeente Vlaardingen) en Wikipedia over de <a href="https://nl.wikipedia.org/wiki/Westwijk_(Vlaardingen)" target="_blank" rel="noopener noreferrer">Westwijk</a> en <a href="https://nl.wikipedia.org/wiki/Vlaardingen-Holy" target="_blank" rel="noopener noreferrer">Vlaardingen-Holy</a>.</p></div>
+
+<h2>Groepenkast, inductie <em>of krachtstroom?</em></h2>
+<p>Wie in Vlaardingen van gas naar inductie gaat, of een droger en vaatwasser tegelijk wil laten draaien, loopt vaak tegen de groepenkast aan. Drie vragen bepalen wat er nodig is:</p>
+<ul class="checks">
+  <li>{check}<span><strong>Is er ruimte in de kast?</strong> Zit er nog plek voor een kookgroep of een extra groep, en hangen er niet meer dan vier groepen aan één aardlekschakelaar? Dan is <a href="/groep-bijplaatsen-rotterdam/">een groep bijplaatsen</a> vaak genoeg.</span></li>
+  <li>{check}<span><strong>Is de kast verouderd?</strong> Draaizekeringen, geen of maar één aardlekschakelaar, of geen hoofdschakelaar: dan is <a href="/groepenkast-vervangen-rotterdam/">een nieuwe groepenkast</a> meestal de betere keuze.</span></li>
+  <li>{check}<span><strong>Is uw aansluiting zwaar genoeg?</strong> Voor inductie meestal wel, ook op 1-fase. Komen er ook een warmtepomp en een laadpaal, dan rekenen we uit of <a href="/meterkast-verzwaren-rotterdam/">verzwaren naar 3-fase</a> nodig is.</span></li>
+</ul>
+<p>Stuur een foto van uw meterkast via WhatsApp. Dan ziet u vooraf wat er moet gebeuren en wat het kost.</p>
+
+<h2>Laadpaal <em>in Vlaardingen.</em></h2>
+<p>Een openbare laadpaal aanvragen is in Vlaardingen niet nodig. De gemeente houdt het gebruik van de bestaande laadpalen in de gaten en plaatst nieuwe palen waar ze nodig zijn, op basis van de drukte en het aantal elektrische auto's. Op een kaart van de gemeente staan de locaties waar in de toekomst mogelijk een laadpaal komt.</p>
+<p>Heeft u een oprit, carport of garage, dan plaatsen wij daar een <a href="/laadpaal-installeren-rotterdam/">eigen laadpaal</a> op een eigen groep. We kijken eerst of uw meterkast en aansluiting het aankunnen.</p>
+<div class="note-box"><p><strong>Bron:</strong> <a href="https://www.vlaardingen.nl/Onderwerpen/Duurzaamheid/Laadpaal_elektrisch_rijden" target="_blank" rel="noopener noreferrer">Laadpaal / elektrisch rijden</a>, gemeente Vlaardingen.</p></div>
+
+<h2>Huur, flat <em>of VvE?</em></h2>
+<p>Veel Vlaardingers huren hun woning of wonen in een flat met een VvE. Werk binnen uw eigen woning, zoals een extra stopcontact of lamp, kunt u meestal zelf laten doen. Voor de groepenkast, de bedrading of gemeenschappelijke delen zoals de verlichting in het trappenhuis beslist de verhuurder of de VvE. Voor hen hebben we een <a href="/elektricien-verhuurders-vve-rotterdam/">aparte pagina</a>.</p>
+"""),
     _city("elektricien-capelle-aan-den-ijssel", "Capelle aan den IJssel", "dosie", "“Capelle? Gewoon even de brug over.”",
           "Middelwatering, Oostgaarde en Schollevaar", "Fascinatio",
           "Capelle aan den IJssel ligt direct naast Rotterdam. We werken in alle wijken: Middelwatering, 's-Gravenland, Capelle-West, Oostgaarde, Schenkel, Schollevaar en Fascinatio, en ook op bedrijvenpark Rivium. Net over de grens zijn we net zo goed in Rotterdam Prins Alexander.",
