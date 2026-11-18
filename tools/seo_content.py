@@ -1447,3 +1447,49 @@ _zuid["body"] = _zuid["body"].replace(
     "AlleKlussers is een elektrotechnisch bedrijf uit Rotterdam-Zuid; ons adres is Walravenstraat 17. Op Zuid zijn we dus snel bij u.")
 _zuid["faq"] = [q for q in _zuid["faq"] if q[0] != "Komen jullie ook in Rotterdam-Zuid?"]
 CITY_PAGES.insert(0, _zuid)
+
+
+# Prins Alexander (Rotterdam-Oost): Search Console shows 'elektricien
+# prins alexander' and 'elektricien zevenkamp'. Same pattern as Zuid.
+_pa = _city("elektricien-prins-alexander", "Prins Alexander", "kastje", "“Ommoord, Zevenkamp of Nesselande? Wij komen.”",
+          "", "",
+          "We werken in alle wijken van Prins Alexander: Het Lage Land, Prinsenland en 's-Gravenland, Ommoord, Zevenkamp, Oosterflank, Kralingseveer en Nesselande. Ook net over de grens in Capelle aan den IJssel en Krimpen aan den IJssel zijn we snel.",
+          [("Komen jullie ook in Nesselande en Zevenkamp?",
+            "Ja. We werken in heel Prins Alexander, van Het Lage Land en Ommoord tot Zevenkamp en Nesselande, en ook in Capelle aan den IJssel."),
+           ("Mijn flat in Ommoord heeft nog de oude groepenkast. Moet die eruit?",
+            "Niet altijd. Ommoord is vanaf 1965 gebouwd; in woningen van voor 1975 zit vaak geen aardlekschakelaar, tenzij de kast later is vernieuwd. Soms is uitbreiden genoeg, soms is een nieuwe groepenkast verstandiger. Stuur een foto van uw meterkast via WhatsApp, dan krijgt u advies en een prijs."),
+           ("Kan ik inductie koken in mijn woning in Zevenkamp?",
+            "Meestal wel. De meeste inductiekookplaten hebben een kookgroep met perilex nodig; die kan vaak gewoon op een 1-fase aansluiting. We kijken of er ruimte is in de groepenkast of dat die eerst moet worden uitgebreid."),
+           ("Mag ik in Rotterdam mijn auto laden met een kabel over de stoep?",
+            "Nee. De gemeente Rotterdam staat geen laadkabel over of boven de stoep toe, ook niet afgedekt. Laad op eigen terrein of bij een openbare laadpaal."),
+           ("Ik woon in een appartement met een VvE. Wie beslist over een laadpaal in de garage?",
+            "De VvE, want de garage is gemeenschappelijk. Wij denken graag mee over de aansluiting en de capaciteit van de installatie, zodat er later meer laadpunten bij kunnen."),
+           ("Ik huur mijn woning. Mag ik jullie inschakelen?",
+            "Voor kleine dingen binnen uw woning, zoals een lamp of een extra stopcontact, meestal wel. De groepenkast, de bedrading en de meterkast zijn van de verhuurder; meld problemen daarmee eerst bij uw verhuurder of woningcorporatie.")],
+          mix="Prins Alexander is na de oorlog in fasen gebouwd, en dat ziet u terug in de meterkast. In de woningen uit de jaren zestig in Het Lage Land en Ommoord komen we vaak een groepenkast tegen die nooit is aangepast aan inductie, een droger of een warmtepomp, soms zonder aardlekschakelaar. In Zevenkamp, gebouwd vanaf 1979, is de kast vaak wat jonger maar ook vol. In Nesselande, de jongste wijk, gaat het vaker om een laadpaal, buitenverlichting of extra groepen.",
+          desc="Elektricien in Prins Alexander: Ommoord, Zevenkamp, Nesselande, Het Lage Land en Prinsenland. Groepenkast, storing, inductie. Reactie binnen 24 uur.",
+          extra="""
+<h2>Elektra per wijk <em>in Prins Alexander.</em></h2>
+<p>Prins Alexander telt bijna 100.000 inwoners. De wijken zijn na elkaar gebouwd, van begin jaren zestig tot na 2000.</p>
+<ul class="checks">
+  <li>{check}<span><strong>Het Lage Land, Prinsenland en 's-Gravenland.</strong> De bouw van Het Lage Land begon in november 1961; kort daarna volgde Prinsenland, waarvan een deel pas in de jaren negentig werd gebouwd. In de oudere woningen is <a href="/groepenkast-vervangen-rotterdam/">uitbreiden of vervangen van de groepenkast</a> bij een nieuwe keuken vaak de eerste stap.</span></li>
+  <li>{check}<span><strong>Ommoord.</strong> Vanaf 1965 gebouwd, met hoogbouw en laagbouw. In woningen van voor 1975 zit vaak geen <a href="/aardlekschakelaar-rotterdam/">aardlekschakelaar</a>, tenzij de kast later is vernieuwd. Voor een <a href="/inductiekookplaat-aansluiten-rotterdam/">inductiekookplaat</a> of droger is vaak een <a href="/groep-bijplaatsen-rotterdam/">extra groep</a> nodig.</span></li>
+  <li>{check}<span><strong>Zevenkamp.</strong> In maart 1979 ging de eerste paal de grond in voor een woonwijk van 220 hectare. Hier gaat het vaak om een groepenkast die vol zit, extra stopcontacten of <a href="/buitenverlichting-tuinstopcontact-rotterdam/">buitenverlichting en een tuinstopcontact</a> bij een eengezinswoning.</span></li>
+  <li>{check}<span><strong>Nesselande.</strong> Een Vinex-wijk waarvan de bouw in 2000 begon, met ruim 4.700 woningen. De installatie is hier nieuwer; vragen gaan vaker over een <a href="/laadpaal-installeren-rotterdam/">laadpaal</a> op eigen terrein, verlichting of een <a href="/vrije-groep-stekkerbatterij-rotterdam/">vrije groep voor een stekkerbatterij</a>.</span></li>
+  <li>{check}<span><strong>Oosterflank en Kralingseveer.</strong> In Oosterflank en in Kralingseveer aan de Hollandse IJssel werken we in appartementen en eengezinswoningen, voor storingen, verlichting en extra groepen.</span></li>
+</ul>
+<div class="note-box"><p><strong>Bronnen:</strong> Wikipedia over <a href="https://nl.wikipedia.org/wiki/Prins_Alexander_(stadsdeel)" target="_blank" rel="noopener noreferrer">Prins Alexander</a>, <a href="https://nl.wikipedia.org/wiki/Ommoord" target="_blank" rel="noopener noreferrer">Ommoord</a> en <a href="https://nl.wikipedia.org/wiki/Nesselande" target="_blank" rel="noopener noreferrer">Nesselande</a>.</p></div>
+
+<h2>Laden <em>in Rotterdam.</em></h2>
+<p>In Rotterdam mag een laadkabel niet over of boven de stoep, ook niet afgedekt. Heeft u een oprit, carport of garage, dan plaatsen we daar een <a href="/laadpaal-installeren-rotterdam/">laadpaal</a> op een eigen groep, en kijken we eerst of uw meterkast en aansluiting het aankunnen. Zonder eigen terrein laadt u bij een openbare laadpaal; op onze laadpaalpagina leest u hoe de gemeente die plaatst.</p>
+
+<h2>Huur, flat <em>of VvE?</em></h2>
+<p>Werk binnen uw eigen woning, zoals een extra stopcontact of lamp, kunt u meestal zelf laten doen. Voor de groepenkast, de bedrading of gemeenschappelijke delen zoals de verlichting in het trappenhuis of laadpalen in de parkeergarage beslist de verhuurder of de VvE. Voor hen hebben we een <a href="/elektricien-verhuurders-vve-rotterdam/">aparte pagina</a>.</p>
+""")
+_pa["title"] = "Elektricien Prins Alexander, Ommoord, Zevenkamp | AlleKlussers"
+_pa["lede"] = "Voor storingen, groepenkasten, inductie, verlichting en laadpalen in Ommoord, Zevenkamp, Nesselande, Het Lage Land, Prinsenland en Oosterflank."
+_pa["body"] = _pa["body"].replace(
+    "AlleKlussers is een elektrotechnisch bedrijf uit Rotterdam-Zuid. Prins Alexander ligt vlakbij, dus we zijn er snel.",
+    "AlleKlussers is een elektrotechnisch bedrijf uit Rotterdam. Prins Alexander ligt aan de oostkant van de stad; via de ring zijn we er vanaf Zuid snel.")
+_pa["faq"] = [q for q in _pa["faq"] if q[0] != "Komen jullie ook in Prins Alexander?"]
+CITY_PAGES.insert(1, _pa)
