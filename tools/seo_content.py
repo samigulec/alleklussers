@@ -1126,9 +1126,45 @@ def _city(slug, name, char, say, wijken_oud, wijken_nieuw, local, faq_extra,
 CITY_PAGES = [
     _city("elektricien-schiedam", "Schiedam", "vonk", "“Schiedam? Daar zijn we zo.”",
           "de binnenstad, Schiedam-Oost en Nieuwland", "Kethel en Woudhoek",
-          "Van de monumentale panden in de historische binnenstad tot de flats in Groenoord en de eengezinswoningen in Woudhoek: elke woning vraagt om een eigen aanpak. In oude panden kijken we extra goed naar de staat van de bedrading voordat we iets aanpassen.",
+          "We werken in heel Schiedam: in de historische binnenstad met haar havens en molens, in Oost, West en Zuid, in Nieuwland, en in Schiedam-Noord met Groenoord, Kethel, Woudhoek en Spaland/Sveaparken. Vanuit Rotterdam-Zuid zijn we er via de Beneluxtunnel of de Maastunnel snel.",
           [("Werken jullie ook in oude panden in de binnenstad?",
-            "Ja. In oudere panden controleren we eerst de bestaande installatie en bespreken we met u wat nodig is voordat we beginnen.")]),
+            "Ja. In oudere panden controleren we eerst de bestaande installatie en bespreken we met u wat nodig is voordat we beginnen. In een monument overleggen we vooraf hoe nieuwe leidingen zo netjes mogelijk lopen."),
+           ("Kan ik in Schiedam een openbare laadpaal aanvragen?",
+            "Nee. Sinds 1 januari 2026 plaatst de gemeente Schiedam openbare laadpalen op basis van voorspellingen, en kunt u zelf geen aanvraag meer indienen. Heeft u een eigen oprit of garage, dan kunnen wij daar een laadpaal plaatsen."),
+           ("Mag ik in Schiedam laden met een kabel over de stoep?",
+            "Nee. De gemeente staat geen kabel over of boven de stoep toe, ook niet als die is afgedekt met een kabelgoot, mat of tegels. Laad op eigen terrein of bij een openbare laadpaal."),
+           ("Ik woon in een flat in Groenoord. Kan ik inductie koken?",
+            "Meestal wel. De meeste inductiekookplaten hebben een kookgroep met perilex nodig; die kan vaak gewoon op een 1-fase aansluiting. Stuur een foto van uw meterkast via WhatsApp, dan zeggen we of er een groep bij kan of dat de kast eerst moet worden uitgebreid."),
+           ("Mijn portiekwoning in Nieuwland heeft een oude groepenkast. Moet die eruit?",
+            "Niet altijd. Soms is uitbreiden genoeg, bijvoorbeeld met een extra groep of een aardlekschakelaar erbij. Zitten er nog draaizekeringen in of is er geen aardlekschakelaar, dan is vervangen vaak verstandiger. U krijgt eerst advies en een prijs."),
+           ("Ik huur mijn woning. Mag ik jullie inschakelen?",
+            "Voor kleine dingen binnen uw woning, zoals een lamp of een extra stopcontact, meestal wel. De groepenkast, de bedrading en de meterkast zijn van de verhuurder; meld problemen daarmee eerst bij uw verhuurder of woningcorporatie.")],
+          mix="Schiedam heeft woningen uit bijna elke periode, en dat ziet u terug in de meterkast. In de binnenstad en de oudere wijken komen we oude bedrading en groepenkasten met weinig groepen tegen. In de naoorlogse portiekwoningen van Nieuwland en de flats van Groenoord is de kast vaak nooit aangepast aan inductie, een droger of een warmtepomp. In Woudhoek gaat het vaker om extra groepen, verlichting of een laadpaal bij een eengezinswoning.",
+          desc="Elektricien in Schiedam: binnenstad, Nieuwland, Groenoord, Kethel, Woudhoek en meer. Groepenkast, storing, inductie, laadpaal. Reactie binnen 24 uur.",
+          extra="""
+<h2>Elektra per wijk <em>in Schiedam.</em></h2>
+<p>Schiedam is een oude stad met veel naoorlogse wijken eromheen. Wat er in uw meterkast hangt, hangt vooral af van wanneer uw wijk is gebouwd.</p>
+<ul class="checks">
+  <li>{check}<span><strong>Binnenstad.</strong> De historische binnenstad met haar havens en de hoogste windmolens ter wereld. In oude panden en bovenwoningen kijken we eerst naar de staat van de <a href="/bedrading-vervangen-rotterdam/">bedrading</a> en of alles geaard is, voordat we iets bijplaatsen.</span></li>
+  <li>{check}<span><strong>Nieuwland.</strong> Direct na de Tweede Wereldoorlog in fasen aangelegd, met portiekwoningen van vier woonlagen en hogere flats. De meterkast is hier vaak klein; bij een nieuwe keuken is <a href="/groepenkast-vervangen-rotterdam/">uitbreiden of vervangen van de groepenkast</a> vaak de eerste stap.</span></li>
+  <li>{check}<span><strong>Groenoord.</strong> Gebouwd in de jaren zestig, vooral flats van 6, 8 of 12 lagen. Voor een <a href="/inductiekookplaat-aansluiten-rotterdam/">inductiekookplaat</a>, droger of vaatwasser is vaak een <a href="/groep-bijplaatsen-rotterdam/">extra groep</a> nodig. Voor de verlichting in hal en trappenhuis is de VvE of verhuurder aan zet.</span></li>
+  <li>{check}<span><strong>Kethel.</strong> Het oude dorp Kethel hoorde tot 1941 bij de gemeente Kethel en Spaland. Naast oudere huizen aan het lint staan hier nieuwere woningen; we passen onze aanpak aan op het bouwjaar.</span></li>
+  <li>{check}<span><strong>Woudhoek.</strong> Ontstaan in de jaren zeventig en tachtig, met gestapelde bouw en eengezinswoningen. Vragen gaan hier vaak over een laadpaal op eigen terrein, <a href="/buitenverlichting-tuinstopcontact-rotterdam/">buitenverlichting en een tuinstopcontact</a> of extra groepen.</span></li>
+</ul>
+<div class="note-box"><p><strong>Bronnen:</strong> Wikipedia over <a href="https://nl.wikipedia.org/wiki/Schiedam" target="_blank" rel="noopener noreferrer">Schiedam</a>, <a href="https://nl.wikipedia.org/wiki/Nieuwland_(Schiedam)" target="_blank" rel="noopener noreferrer">Nieuwland</a>, <a href="https://nl.wikipedia.org/wiki/Groenoord_(Schiedam)" target="_blank" rel="noopener noreferrer">Groenoord</a>, <a href="https://nl.wikipedia.org/wiki/Kethel" target="_blank" rel="noopener noreferrer">Kethel</a> en <a href="https://nl.wikipedia.org/wiki/Woudhoek" target="_blank" rel="noopener noreferrer">Woudhoek</a>.</p></div>
+
+<h2>Laadpaal in Schiedam: <em>wat mag wel?</em></h2>
+<p>De gemeente Schiedam heeft duidelijke regels voor elektrisch laden:</p>
+<ul class="checks">
+  <li>{check}<span><strong>Geen kabel over de stoep.</strong> Een laadkabel vanuit uw woning naar een openbare parkeerplaats mag niet, ook niet afgedekt met een kabelgoot, mat of tegels, of via een zwenkarm.</span></li>
+  <li>{check}<span><strong>Geen aanvraag meer.</strong> Sinds 1 januari 2026 plaatst de gemeente openbare laadpalen op basis van voorspellingen. U kunt zelf geen openbare laadpaal meer aanvragen.</span></li>
+  <li>{check}<span><strong>Eigen oprit of garage?</strong> Dan plaatsen wij daar een <a href="/laadpaal-installeren-rotterdam/">laadpaal</a> op een eigen groep. Alleen dan kunt u ook met stroom van uw eigen zonnepanelen laden. We kijken eerst of uw meterkast en aansluiting het aankunnen.</span></li>
+</ul>
+<div class="note-box"><p><strong>Bron:</strong> <a href="https://www.schiedam.nl/a-tot-z/veelgestelde-vragen-over-laadpalen" target="_blank" rel="noopener noreferrer">Veelgestelde vragen over laadpalen</a>, gemeente Schiedam.</p></div>
+
+<h2>Huur, flat <em>of VvE?</em></h2>
+<p>Veel Schiedammers huren hun woning of wonen in een flat met een VvE. Werk binnen uw eigen woning, zoals een extra stopcontact of lamp, kunt u meestal zelf laten doen. Voor de groepenkast, de bedrading of gemeenschappelijke delen zoals de verlichting in het trappenhuis beslist de verhuurder of de VvE. Voor hen hebben we een <a href="/elektricien-verhuurders-vve-rotterdam/">aparte pagina</a>.</p>
+"""),
     _city("elektricien-vlaardingen", "Vlaardingen", "kastje", "“Vlaardingen? Ik ben onderweg.”",
           "Westwijk, Babberspolder en het centrum", "Holy en Ambacht",
           "In Vlaardingen werken we in alle wijken: het centrum rond de Oude Haven, de Oostwijk, Vlaardinger Ambacht en de Babberspolders, de Westwijk, Holy-Zuid en Holy-Noord, en de nieuwbouw in de Rivierzone. Vanuit Rotterdam-Zuid zijn we er snel, en Schiedam ligt er direct naast.",
