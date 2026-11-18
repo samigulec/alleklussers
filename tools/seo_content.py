@@ -1287,3 +1287,54 @@ INFO_PAGES = [
         "faq": [],
     },
 ]
+
+
+# Rotterdam-Zuid: our own part of town. Built with _city() and then given
+# its own lede and intro, because "vanuit Rotterdam-Zuid naar Rotterdam-Zuid"
+# reads oddly.
+_zuid = _city("elektricien-rotterdam-zuid", "Rotterdam-Zuid", "schildje", "“Zuid? Daar zitten we zelf.”",
+          "", "",
+          "We werken in alle wijken op Zuid: in Feijenoord (Afrikaanderwijk, Bloemhof, Hillesluis, Feijenoord, Katendrecht, Noordereiland, Kop van Zuid en Vreewijk), in Charlois (Tarwewijk, Carnisse, Oud-Charlois, Zuidwijk, Pendrecht, Wielewaal en Heijplaat) en in IJsselmonde (Oud-IJsselmonde, Lombardijen, Groot-IJsselmonde, Beverwaard en De Veranda).",
+          [("Komen jullie in heel Rotterdam-Zuid?",
+            "Ja. We zitten zelf aan de Walravenstraat en werken in alle wijken van Feijenoord, Charlois en IJsselmonde, en ook net over de grens in Barendrecht, Ridderkerk en Albrandswaard."),
+           ("Mijn portiekwoning in de Tarwewijk heeft nog draaizekeringen. Is dat gevaarlijk?",
+            "Draaizekeringen zelf zijn niet meteen gevaarlijk, maar zo'n kast heeft meestal geen of te weinig aardlekschakelaars. Die schakelen de stroom uit als er stroom weglekt, bijvoorbeeld via een kapot apparaat. Stuur een foto van uw meterkast via WhatsApp, dan zeggen we of uitbreiden genoeg is of dat een nieuwe groepenkast verstandiger is."),
+           ("Werken jullie ook in Vreewijk, met al die monumenten?",
+            "Ja. Vreewijk is een beschermd stadsgezicht met bijna 300 monumenten. We overleggen vooraf hoe nieuwe leidingen zo netjes en onzichtbaar mogelijk lopen. Woont u in een rijksmonument, dan kan voor sommige aanpassingen een vergunning nodig zijn; dat zoeken we samen met u uit voordat we beginnen."),
+           ("Ik huur van een woningcorporatie. Mag ik jullie inschakelen?",
+            "Voor kleine dingen binnen uw woning, zoals een lamp of een extra stopcontact, meestal wel. De groepenkast, de bedrading en de meterkast zijn van de verhuurder; daarvoor meldt u zich eerst bij uw corporatie of verhuurder. Verhuurders en VvE's kunnen ons ook rechtstreeks inschakelen."),
+           ("Kan ik inductie koken in mijn flat in Zuidwijk of Pendrecht?",
+            "Meestal wel. De meeste inductiekookplaten hebben een kookgroep met perilex nodig; die kan vaak op een gewone 1-fase aansluiting. In flats uit de jaren vijftig zit vaak een kleine kast met weinig groepen, dus soms moet de kast eerst worden uitgebreid. Een foto van uw meterkast is genoeg voor een eerste antwoord."),
+           ("Ik woon in een appartement op de Kop van Zuid. Kan ik een laadpaal in de parkeergarage krijgen?",
+            "Dat beslist de VvE, want de parkeergarage is gemeenschappelijk. Vaak kiest een VvE voor één plan voor de hele garage, zodat de aansluiting niet overbelast raakt. We denken graag mee met het bestuur of de beheerder."),
+           ("Mag ik in Rotterdam mijn auto laden met een kabel over de stoep?",
+            "Nee. De gemeente Rotterdam staat geen laadkabel over of boven de stoep toe, ook niet afgedekt. Laad op eigen terrein of bij een openbare laadpaal. Meer staat op onze pagina over laadpalen.")],
+          mix="Op Zuid staan woningen uit bijna elke periode van de vorige eeuw. In de vooroorlogse wijken bij de Maas, zoals de Tarwewijk en Bloemhof, zitten vaak nog oude groepenkasten en bedrading. In de naoorlogse wijken, zoals Zuidwijk, Pendrecht en Lombardijen, is de meterkast vaak klein en nooit aangepast aan inductie, een droger of een warmtepomp. Op de Kop van Zuid en in De Veranda is de installatie nieuw, en gaan vragen vaker over verlichting, extra stopcontacten of laden in de parkeergarage.",
+          desc="Elektricien in Rotterdam-Zuid: Feijenoord, Charlois en IJsselmonde, van de Tarwewijk tot de Kop van Zuid. Storing, groepenkast, inductie. Reactie binnen 24 uur.",
+          extra="""
+<h2>Elektra per wijk <em>op Zuid.</em></h2>
+<p>Rotterdam-Zuid bestaat uit drie gebieden: Feijenoord, Charlois en IJsselmonde. Wat er in uw meterkast hangt, hangt vooral af van wanneer uw wijk is gebouwd.</p>
+<ul class="checks">
+  <li>{check}<span><strong>Tarwewijk, Bloemhof en de andere wijken bij de Maas.</strong> De Tarwewijk is tussen 1900 en 1930 gebouwd voor havenarbeiders, met vooral portiekwoningen en kleine eengezinswoningen. Bloemhof is begin jaren twintig gebouwd. Hier komen we nog groepenkasten met draaizekeringen tegen, weinig groepen, geen <a href="/aardlekschakelaar-rotterdam/">aardlekschakelaar</a> en soms ruimtes zonder randaarde. Voordat we iets bijplaatsen, kijken we eerst naar de <a href="/bedrading-vervangen-rotterdam/">bedrading</a>.</span></li>
+  <li>{check}<span><strong>Vreewijk.</strong> Het tuindorp waar in 1919 de eerste woningen werden opgeleverd. Vreewijk is een beschermd stadsgezicht met bijna 300 monumenten. We werken hier extra netjes en overleggen vooraf hoe nieuwe leidingen lopen.</span></li>
+  <li>{check}<span><strong>Zuidwijk en Pendrecht.</strong> Gebouwd in de jaren vijftig. In Pendrecht waren de woningen bewust klein, gemiddeld niet groter dan 53 vierkante meter. De meterkast is in deze flats vaak krap. Voor een <a href="/inductiekookplaat-aansluiten-rotterdam/">inductiekookplaat</a>, droger of vaatwasser is vaak een <a href="/groep-bijplaatsen-rotterdam/">extra groep</a> nodig.</span></li>
+  <li>{check}<span><strong>Lombardijen en Groot-IJsselmonde.</strong> Lombardijen is begin jaren zestig gebouwd, met rijtjeswoningen en flats. Bij een nieuwe keuken of verbouwing is <a href="/groepenkast-vervangen-rotterdam/">uitbreiden of vervangen van de groepenkast</a> hier vaak de eerste stap.</span></li>
+  <li>{check}<span><strong>Kop van Zuid, Katendrecht en De Veranda.</strong> De Kop van Zuid is vanaf 1994 gebouwd op oude haventerreinen. In deze appartementen is de installatie modern; vragen gaan vaker over <a href="/lampen-ophangen-rotterdam/">verlichting</a>, <a href="/stopcontact-plaatsen-rotterdam/">extra stopcontacten</a> of laden in de parkeergarage van de VvE.</span></li>
+</ul>
+<div class="note-box"><p><strong>Bronnen:</strong> Wikipedia over <a href="https://nl.wikipedia.org/wiki/Rotterdam-Zuid" target="_blank" rel="noopener noreferrer">Rotterdam-Zuid</a>, de <a href="https://nl.wikipedia.org/wiki/Tarwewijk" target="_blank" rel="noopener noreferrer">Tarwewijk</a>, <a href="https://nl.wikipedia.org/wiki/Bloemhof_(Rotterdam)" target="_blank" rel="noopener noreferrer">Bloemhof</a>, <a href="https://nl.wikipedia.org/wiki/Vreewijk_(Rotterdam)" target="_blank" rel="noopener noreferrer">Vreewijk</a>, <a href="https://nl.wikipedia.org/wiki/Zuidwijk_(Rotterdam)" target="_blank" rel="noopener noreferrer">Zuidwijk</a>, <a href="https://nl.wikipedia.org/wiki/Pendrecht" target="_blank" rel="noopener noreferrer">Pendrecht</a>, <a href="https://nl.wikipedia.org/wiki/Lombardijen" target="_blank" rel="noopener noreferrer">Lombardijen</a> en de <a href="https://nl.wikipedia.org/wiki/Kop_van_Zuid" target="_blank" rel="noopener noreferrer">Kop van Zuid</a>.</p></div>
+
+<h2>Storing op Zuid? <em>Wij zitten om de hoek.</em></h2>
+<p>Valt de stroom uit of slaat de aardlekschakelaar steeds door? Kijk eerst of het bij u alleen is of in de hele straat. Is het alleen bij u, zet dan alle groepen uit en schakel ze een voor een weer in; zo ziet u welke groep het probleem geeft. Lukt het niet, stuur ons dan een berichtje. We zijn 24/7 bereikbaar en zitten zelf op Zuid. Meer tips staan op onze pagina over <a href="/storing-elektra-rotterdam/">storingen</a>.</p>
+
+<h2>Huur, corporatie <em>of VvE?</em></h2>
+<p>Op Zuid huren veel mensen hun woning, vaak van een woningcorporatie. Kleine dingen binnen uw woning, zoals een lamp of een extra stopcontact, kunt u meestal zelf laten doen. De groepenkast, de bedrading en de meterkast zijn van de verhuurder: meld problemen daarmee eerst bij uw corporatie of verhuurder. In appartementengebouwen beslist de VvE over gemeenschappelijke delen, zoals de verlichting in het trappenhuis of laadpalen in de parkeergarage. Voor verhuurders en VvE's hebben we een <a href="/elektricien-verhuurders-vve-rotterdam/">aparte pagina</a>.</p>
+
+<h2>Laden <em>in Rotterdam.</em></h2>
+<p>In Rotterdam mag een laadkabel niet over of boven de stoep, ook niet afgedekt. Heeft u een eigen oprit of garage, dan plaatsen we daar een <a href="/laadpaal-installeren-rotterdam/">laadpaal</a> op een eigen groep. Zonder eigen terrein laadt u bij een openbare laadpaal; op onze laadpaalpagina leest u hoe de gemeente die plaatst.</p>
+""")
+_zuid["lede"] = "Wij zitten zelf op Zuid, aan de Walravenstraat. Voor storingen, groepenkasten, inductie, verlichting en alles wat met elektra te maken heeft, in Feijenoord, Charlois en IJsselmonde."
+_zuid["body"] = _zuid["body"].replace(
+    "AlleKlussers is een elektrotechnisch bedrijf uit Rotterdam-Zuid. Rotterdam-Zuid ligt vlakbij, dus we zijn er snel.",
+    "AlleKlussers is een elektrotechnisch bedrijf uit Rotterdam-Zuid; ons adres is Walravenstraat 17. Op Zuid zijn we dus snel bij u.")
+_zuid["faq"] = [q for q in _zuid["faq"] if q[0] != "Komen jullie ook in Rotterdam-Zuid?"]
+CITY_PAGES.insert(0, _zuid)
