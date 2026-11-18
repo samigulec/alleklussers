@@ -358,18 +358,32 @@ def page(p, sprite_svg):
 def main():
     svg = sprite()
     today = datetime.date.today().isoformat()
+    # Keep each page's previous <lastmod> unless its HTML really changed, so
+    # Google can trust the dates instead of seeing every page "new" each run.
+    old_lastmod = {}
+    sm_path = os.path.join(ROOT, "sitemap.xml")
+    if os.path.exists(sm_path):
+        for loc, mod in re.findall(r"<loc>(.*?)</loc><lastmod>(.*?)</lastmod>", open(sm_path).read()):
+            old_lastmod[loc] = mod
+    lastmod = {f"{BASE}/": old_lastmod.get(f"{BASE}/", today)}
     for p in ALL_PAGES:
         d = os.path.join(ROOT, p["slug"])
         os.makedirs(d, exist_ok=True)
-        with open(os.path.join(d, "index.html"), "w", encoding="utf-8") as f:
-            f.write(page(p, svg))
-        print("wrote", f"/{p['slug']}/")
+        path = os.path.join(d, "index.html")
+        new = page(p, svg)
+        old = open(path, encoding="utf-8").read() if os.path.exists(path) else None
+        url = f"{BASE}/{p['slug']}/"
+        lastmod[url] = old_lastmod.get(url, today) if old == new else today
+        if old != new:
+            with open(path, "w", encoding="utf-8") as f:
+                f.write(new)
+            print("wrote", f"/{p['slug']}/")
 
     urls = [f"{BASE}/"] + [f"{BASE}/{p['slug']}/" for p in ALL_PAGES]
     sm = ['<?xml version="1.0" encoding="UTF-8"?>',
           '<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">']
     for u in urls:
-        sm.append(f"  <url><loc>{u}</loc><lastmod>{today}</lastmod></url>")
+        sm.append(f"  <url><loc>{u}</loc><lastmod>{lastmod[u]}</lastmod></url>")
     sm.append("</urlset>\n")
     open(os.path.join(ROOT, "sitemap.xml"), "w").write("\n".join(sm))
     open(os.path.join(ROOT, "robots.txt"), "w").write(f"User-agent: *\nAllow: /\n\nSitemap: {BASE}/sitemap.xml\n")
