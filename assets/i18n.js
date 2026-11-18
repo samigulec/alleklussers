@@ -23,7 +23,7 @@ window.AK_I18N = {
   'top.247': ['24/7 bereikbaar', '24/7 reachable', '7/24 ulaşılabilir', 'متاحون 24/7', 'Dostępni 24/7', '24/7 erreichbar'],
   'top.insured': ['Verzekerde vakmensen', 'Insured craftsmen', 'Sigortalı ustalar', 'حرفيون مؤمَّنون', 'Ubezpieczeni fachowcy', 'Versicherte Handwerker'],
   'top.nen': ['Werken volgens NEN 1010', 'Working to NEN 1010', 'NEN 1010’a uygun çalışma', 'نعمل وفق معيار NEN 1010', 'Praca zgodna z NEN 1010', 'Arbeiten nach NEN 1010'],
-  'trust.certified': ['Gecertificeerde vakmensen', 'Certified craftsmen', 'Sertifikalı ustalar', 'حرفيون معتمدون', 'Certyfikowani fachowcy', 'Zertifizierte Handwerker'],
+  'trust.certified': ['Verzekerde vakmensen', 'Insured craftsmen', 'Sigortalı ustalar', 'حرفيون مؤمَّنون', 'Ubezpieczeni fachowcy', 'Versicherte Handwerker'],
   'trust.viaMail': ['Via mail of WhatsApp', 'Via mail or WhatsApp', 'Mail veya WhatsApp ile', 'عبر البريد أو واتساب', 'Przez mail lub WhatsApp', 'Per Mail oder WhatsApp'],
   'trust.reply24': ['Binnen 24 uur reactie', 'Reply within 24 hours', '24 saat içinde yanıt', 'ردٌّ خلال 24 ساعة', 'Odpowiedź w 24 godziny', 'Antwort innerhalb 24 h'],
   'trust.reply24Sub': ['Inclusief offerte op maat', 'Including a tailored quote', 'Özel teklif dahil', 'بما في ذلك عرض مخصص', 'W tym oferta na miarę', 'Inkl. maßgeschneidertem Angebot'],
@@ -33,7 +33,7 @@ window.AK_I18N = {
   'trust.onTimeSub': ['Zoals afgesproken', 'As agreed', 'Anlaştığımız gibi', 'كما هو متفق عليه', 'Zgodnie z umową', 'Wie vereinbart'],
   'trust.prices': ['Transparante prijzen', 'Transparent pricing', 'Şeffaf fiyatlar', 'أسعار شفافة', 'Przejrzyste ceny', 'Transparente Preise'],
   'trust.pricesSub': ['Geen verrassingen achteraf.', 'No surprises afterwards.', 'Sonradan sürpriz yok.', 'لا مفاجآت لاحقاً.', 'Bez niespodzianek na końcu.', 'Keine Überraschungen danach.'],
-  'trust.advice': ['Gratis telefonisch advies', 'Free phone advice', 'Ücretsiz telefonla danışma', 'استشارة هاتفية مجانية', 'Bezpłatna porada telefoniczna', 'Kostenlose Telefonberatung'],
+  'trust.advice': ['Advies via WhatsApp', 'Advice via WhatsApp', 'WhatsApp ile danışma', 'استشارة عبر واتساب', 'Porada przez WhatsApp', 'Beratung per WhatsApp'],
   'trust.adviceSub': ['Snel antwoord op al uw vragen.', 'Quick answer to all your questions.', 'Sorularınıza hızlı yanıt.', 'إجابة سريعة على كل أسئلتكم.', 'Szybka odpowiedź na wszystkie pytania.', 'Schnelle Antwort auf alle Fragen.'],
   'trust.install': ['Vakkundige installatie', 'Expert installation', 'Uzman montaj', 'تركيب احترافي', 'Fachowy montaż', 'Fachgerechte Installation'],
   'trust.installSub': ['Veilig, netjes en volgens de norm.', 'Safe, tidy and to standard.', 'Güvenli, temiz ve standartlara uygun.', 'آمن ومرتّب ووفق المعايير.', 'Bezpieczny, schludny i zgodny z normami.', 'Sicher, sauber und nach Norm.'],
@@ -71,7 +71,7 @@ window.AK_I18N = {
   'stat.rating': ['Beoordeling', 'Rating', 'Değerlendirme', 'التقييم', 'Ocena', 'Bewertung'],
   'stat.ratingSub': ['Op basis van reviews', 'Based on reviews', 'Yorumlara göre', 'استناداً إلى المراجعات', 'Na podstawie opinii', 'Basierend auf Bewertungen'],
   'stat.insured': ['Verzekerd', 'Insured', 'Sigortalı', 'مؤمَّن', 'Ubezpieczeni', 'Versichert'],
-  'stat.insuredSub': ['Vakmensen met certificaat', 'Certified craftsmen', 'Sertifikalı ustalar', 'حرفيون معتمدون', 'Certyfikowani fachowcy', 'Zertifizierte Handwerker'],
+  'stat.insuredSub': ['Werken volgens NEN 1010', 'Working to NEN 1010', 'NEN 1010’a uygun çalışma', 'نعمل وفق معيار NEN 1010', 'Praca zgodna z NEN 1010', 'Arbeiten nach NEN 1010'],
 
   // Services
   'svc.eyebrow': ['Onze diensten', 'Our services', 'Hizmetlerimiz', 'خدماتنا', 'Nasze usługi', 'Unsere Leistungen'],
@@ -230,12 +230,12 @@ window.AK_I18N = {
   ],
   'step.3': ['Uitvoering', 'Execution', 'Uygulama', 'تنفيذ', 'Realizacja', 'Ausführung'],
   'step.3.desc': [
-    'Gecertificeerde vakmensen werken veilig, netjes en volgens de norm.',
-    'Certified craftsmen work safely, tidily and to standard.',
-    'Sertifikalı ustalar güvenli, temiz ve standartlara uygun çalışır.',
-    'حرفيون معتمدون يعملون بأمان وترتيب ووفق المعايير.',
-    'Certyfikowani fachowcy pracują bezpiecznie, schludnie i zgodnie z normami.',
-    'Zertifizierte Handwerker arbeiten sicher, sauber und nach Norm.'
+    'Verzekerde vakmensen werken veilig, netjes en volgens NEN 1010.',
+    'Insured craftsmen work safely, tidily and to NEN 1010.',
+    'Sigortalı ustalar güvenli, temiz ve NEN 1010’a uygun çalışır.',
+    'حرفيون مؤمَّنون يعملون بأمان وترتيب ووفق معيار NEN 1010.',
+    'Ubezpieczeni fachowcy pracują bezpiecznie, schludnie i zgodnie z NEN 1010.',
+    'Versicherte Handwerker arbeiten sicher, sauber und nach NEN 1010.'
   ],
   'step.4': ['Oplevering', 'Delivery', 'Teslim', 'تسليم', 'Odbiór', 'Übergabe'],
   'step.4.desc': [
@@ -335,12 +335,12 @@ window.AK_I18N = {
   'cast.eyebrow': ['De Stroomploeg', 'The Power Crew', 'Akım Ekibi', 'فريق الكهرباء', 'Ekipa Prądu', 'Die Stromtruppe'],
   'cast.title': ['Maak kennis met <em>de Stroomploeg.</em>', 'Meet <em>the Power Crew.</em>', '<em>Akım Ekibi</em> ile tanışın.', 'تعرّفوا على <em>فريق الكهرباء.</em>', 'Poznaj <em>Ekipę Prądu.</em>', 'Lernen Sie <em>die Stromtruppe</em> kennen.'],
   'cast.lede': [
-    'Onze kleine helpers wijzen u de weg op de site. Het echte werk doen onze gecertificeerde vakmensen.',
-    'Our little helpers show you around the site. The real work is done by our certified craftsmen.',
-    'Küçük yardımcılarımız size sitede yol gösterir. Asıl işi sertifikalı ustalarımız yapar.',
-    'مساعدونا الصغار يرشدونكم في الموقع. أما العمل الحقيقي فيقوم به حرفيونا المعتمدون.',
-    'Nasi mali pomocnicy oprowadzą Cię po stronie. Prawdziwą pracę wykonują nasi certyfikowani fachowcy.',
-    'Unsere kleinen Helfer zeigen Ihnen die Seite. Die echte Arbeit machen unsere zertifizierten Handwerker.'
+    'Onze kleine helpers wijzen u de weg op de site. Het echte werk doen onze verzekerde vakmensen.',
+    'Our little helpers show you around the site. The real work is done by our insured craftsmen.',
+    'Küçük yardımcılarımız size sitede yol gösterir. Asıl işi sigortalı ustalarımız yapar.',
+    'مساعدونا الصغار يرشدونكم في الموقع. أما العمل الحقيقي فيقوم به حرفيونا المؤمَّنون.',
+    'Nasi mali pomocnicy oprowadzą Cię po stronie. Prawdziwą pracę wykonują nasi ubezpieczeni fachowcy.',
+    'Unsere kleinen Helfer zeigen Ihnen die Seite. Die echte Arbeit machen unsere versicherten Handwerker.'
   ],
   'ch.stekkie': ['De regelaar', 'The fixer', 'İşleri yoluna koyan', 'المنظِّم', 'Złota rączka', 'Der Macher'],
   'ch.vonk': ['Spoedhulp, 24/7', 'Urgent help, 24/7', 'Acil destek, 7/24', 'مساعدة عاجلة، 24/7', 'Pilna pomoc, 24/7', 'Notdienst, 24/7'],

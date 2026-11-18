@@ -271,7 +271,7 @@ def page(p, sprite_svg):
         <ul>
           <li>{icon("i-tag")}Duidelijke prijs vooraf</li>
           <li>{icon("i-clock")}Binnen 24 uur reactie</li>
-          <li>{icon("i-shield")}Gecertificeerd en verzekerd</li>
+          <li>{icon("i-shield")}Verzekerd, volgens NEN 1010</li>
         </ul>
       </aside>
     </div>
