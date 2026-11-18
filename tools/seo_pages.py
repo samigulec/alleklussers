@@ -414,7 +414,10 @@ def llms_txt():
     lines += ["", "## Werkgebied", ""]
     for p in CITY_PAGES:
         lines.append(f"- [{p['short']}]({BASE}/{p['slug']}/): elektricien in {p['city']} en omgeving.")
-    lines += ["", "## Overig", "", f"- [Homepage]({BASE}/): offerte aanvragen, projecten en over ons.", ""]
+    lines += ["", "## Overig", "", f"- [Homepage]({BASE}/): offerte aanvragen, projecten en over ons."]
+    for p in INFO_PAGES:
+        lines.append(f"- [{p['short']}]({BASE}/{p['slug']}/): {p['desc']}")
+    lines.append("")
     return "\n".join(lines)
 
 
