@@ -1177,9 +1177,50 @@ CITY_PAGES = [
 """),
     _city("elektricien-barendrecht", "Barendrecht", "laadie", "“Barendrecht? Laden maar.”",
           "het centrum en het oude dorp", "Carnisselande en Smitshoek",
-          "Barendrecht ligt op een paar minuten van ons in Rotterdam-Zuid. In Carnisselande en Smitshoek wonen veel gezinnen met een auto voor de deur en zonnepanelen op het dak; daar gaat het vaak om een laadpaal, extra groepen of een vrije groep voor een stekkerbatterij.",
-          [("Kunnen jullie een laadpaal en een groep voor een stekkerbatterij tegelijk aanleggen?",
-            "Ja. We kijken eerst of uw meterkast en aansluiting dat aankunnen en geven de laadpaal en de batterij elk een eigen groep.")]),
+          "Barendrecht ligt op een paar minuten van ons in Rotterdam-Zuid. We werken in het hele dorp: het oude dorp rond de watertoren en de Dorpsstraat, het centrum rond de Middenbaan, de wijken daaromheen en de wijken van Carnisselande en Smitshoek aan de andere kant van de A29. Smitshoek ligt zelfs op loopafstand van de Rotterdamse wijk Zuidwijk.",
+          [("Mag ik in Barendrecht mijn auto laden met een kabel over de stoep?",
+            "Nee. De gemeente Barendrecht staat laden vanuit de woning naar een openbare parkeerplaats met een kabel over de stoep niet toe en sluit daarmee aan bij de regels van Rotterdam. Laad op eigen terrein, of vraag een openbare laadpaal aan als u op een openbare parkeerplaats bent aangewezen."),
+           ("Wanneer kan ik een openbare laadpaal aanvragen?",
+            "Volgens het uitvoeringsplan laadpalen van de gemeente kan dat als u geen eigen parkeerplek heeft en een elektrische auto heeft of heeft besteld ('paal volgt auto'). De gemeente streeft naar een publiek laadpunt binnen 200 meter van de aanvrager. Heeft u wel een oprit of garage, dan komt er geen openbare paal en plaatsen wij graag een laadpaal op uw eigen terrein."),
+           ("Mijn huis in Carnisselande is van rond 2000. Is de groepenkast nog goed?",
+            "Vaak wel, maar hij is wel ingericht op de apparaten van toen. Wilt u inductie, een droger, een warmtepomp of een laadpaal erbij, dan is er vaak een extra groep nodig, of een ruimere kast als er geen plek meer is. Stuur een foto van uw meterkast via WhatsApp, dan zeggen we wat er nodig is."),
+           ("Kunnen jullie een laadpaal en een groep voor een stekkerbatterij tegelijk aanleggen?",
+            "Ja. We kijken eerst of uw meterkast en aansluiting dat aankunnen en geven de laadpaal en de batterij elk een eigen groep."),
+           ("Wat verandert er als het salderen in 2027 stopt?",
+            "Vanaf 1 januari 2027 mag u de stroom van uw zonnepanelen niet meer wegstrepen tegen wat u afneemt. Het loont dan meer om zelf op te gebruiken, bijvoorbeeld door de auto overdag te laden of apparaten aan te zetten als de zon schijnt. Voor een stekkerbatterij leggen we een vrije groep aan."),
+           ("Ik woon in het oude dorp. Waar let u op?",
+            "In oudere woningen kijken we eerst naar de bedrading en de groepenkast: hoe oud is het, is alles geaard en zitten er aardlekschakelaars in? Daarna bespreken we wat nodig is voor uw plannen. U krijgt vooraf een prijs."),
+           ("Werken jullie ook in Smitshoek en Rhoon?",
+            "Ja. Smitshoek hoort bij ons werkgebied, ook het deel met een Rhoonse postcode. Ook in Rhoon en Poortugaal kunt u ons vragen.")],
+          mix="Barendrecht groeide hard: van ongeveer 2.200 woningen in 1961 naar ruim 18.000 in 2011. Daardoor staan er naast oude dorpshuizen vooral woningen van na 1960. In de oudere straten komen we vaker een groepenkast met weinig groepen tegen. In Carnisselande en Smitshoek is de installatie jonger, maar ook die is ingericht op de apparaten van rond 2000: inductie, een warmtepomp of een laadpaal vragen dan vaak om extra groepen.",
+          desc="Elektricien in Barendrecht: Carnisselande, Smitshoek, oude dorp en centrum. Laadpaal, groepenkast, extra groep, storing. Reactie binnen 24 uur.",
+          extra="""
+<h2>Elektra per wijk <em>in Barendrecht.</em></h2>
+<p>In 1930 woonden er nog geen 5.000 mensen in Barendrecht, rond 2010 bijna 50.000. Die groei zit vooral in de wijken van na de oorlog en in de Vinex-wijk Carnisselande. Wat er in de meterkast hangt, hangt sterk af van de buurt.</p>
+<ul class="checks">
+  <li>{check}<span><strong>Oude dorp en centrum.</strong> Rond de watertoren, de Dorpsstraat en de Middenbaan staan de oudste huizen van Barendrecht, naast winkels en bovenwoningen. Hier kijken we eerst naar de staat van de <a href="/bedrading-vervangen-rotterdam/">bedrading</a> en of er een <a href="/aardlekschakelaar-rotterdam/">aardlekschakelaar</a> in de kast zit, voordat we iets bijplaatsen.</span></li>
+  <li>{check}<span><strong>Wijken uit de groeijaren.</strong> Rond het centrum staan veel eengezinswoningen en flats uit de periode van snelle groei na 1960. Bij een nieuwe keuken of verbouwing is <a href="/groepenkast-vervangen-rotterdam/">uitbreiden of vervangen van de groepenkast</a> vaak de eerste stap, zeker als er nog draaizekeringen in zitten.</span></li>
+  <li>{check}<span><strong>Carnisselande.</strong> De Vinex-wijk tussen het oude Barendrecht en Smitshoek, gebouwd vanaf 1997, met ongeveer 7.500 woningen en ruim 14.000 inwoners. Meerwede is het deel van Barendrecht met de meeste inwoners. De installatie is hier meestal in orde, maar heeft vaak weinig vrije plekken. Voor <a href="/inductiekookplaat-aansluiten-rotterdam/">inductie</a>, een droger of een warmtepomp is dan een <a href="/groep-bijplaatsen-rotterdam/">extra groep</a> nodig.</span></li>
+  <li>{check}<span><strong>Smitshoek, Riederhoek en Vrijheidsakker.</strong> De 'Dorpse Driehoek' van Carnisselande, met het oude lint van Smitshoek aan de dijk. Hier gaat het vaak om een laadpaal op eigen terrein, <a href="/buitenverlichting-tuinstopcontact-rotterdam/">buitenverlichting en een tuinstopcontact</a>, of een <a href="/vrije-groep-stekkerbatterij-rotterdam/">vrije groep voor een stekkerbatterij</a>.</span></li>
+  <li>{check}<span><strong>Bedrijventerreinen.</strong> Voor bedrijfsruimtes en winkels verhelpen we storingen, plaatsen we verlichting en leggen we extra groepen aan.</span></li>
+</ul>
+<div class="note-box"><p><strong>Bronnen:</strong> Wikipedia over <a href="https://en.wikipedia.org/wiki/Barendrecht" target="_blank" rel="noopener noreferrer">Barendrecht</a>, <a href="https://nl.wikipedia.org/wiki/Carnisselande" target="_blank" rel="noopener noreferrer">Carnisselande</a> en <a href="https://nl.wikipedia.org/wiki/Smitshoek" target="_blank" rel="noopener noreferrer">Smitshoek</a>.</p></div>
+
+<h2>Laadpaal in Barendrecht: <em>wat mag wel?</em></h2>
+<p>De gemeente Barendrecht werkt met de 'ladder van laden': eerst laden op eigen terrein, pas daarna in de openbare ruimte. Drie dingen om te weten:</p>
+<ul class="checks">
+  <li>{check}<span><strong>Geen kabel over de stoep.</strong> Laden vanuit uw woning naar een openbare parkeerplaats met een kabel over de stoep staat de gemeente niet toe. Daarmee volgt Barendrecht de regels van Rotterdam.</span></li>
+  <li>{check}<span><strong>Openbare laadpaal: paal volgt auto.</strong> Bent u aangewezen op een openbare parkeerplaats, dan kunt u een publiek laadpunt aanvragen zodra u een elektrische auto heeft of heeft besteld. De gemeente streeft ernaar dat zo'n laadpunt binnen 200 meter van de aanvrager komt.</span></li>
+  <li>{check}<span><strong>Eigen oprit of garage?</strong> Dan komt er geen openbare paal. Wij plaatsen een <a href="/laadpaal-installeren-rotterdam/">laadpaal op uw eigen terrein</a> op een eigen groep, en kijken eerst of uw meterkast en aansluiting het aankunnen. Is dat te krap, dan rekenen we uit of <a href="/meterkast-verzwaren-rotterdam/">verzwaren naar 3-fase</a> nodig is.</span></li>
+</ul>
+<div class="note-box"><p><strong>Bron:</strong> <a href="https://lokaleregelgeving.overheid.nl/CVDR663334" target="_blank" rel="noopener noreferrer">Uitvoeringsplan laadpalen Barendrecht 2021</a> (gemeente Barendrecht, geldend sinds 27 oktober 2021).</p></div>
+
+<h2>Zonnepanelen <em>en 2027.</em></h2>
+<p>Heeft u zonnepanelen? Vanaf 1 januari 2027 stopt de salderingsregeling: wat u teruglevert, mag u dan niet meer wegstrepen tegen wat u afneemt. Zelf meer stroom gebruiken als de zon schijnt wordt dan belangrijker, bijvoorbeeld met slim laden van de auto of een stekkerbatterij. Voor een stekkerbatterij leggen we een <a href="/vrije-groep-stekkerbatterij-rotterdam/">vrije groep</a> aan, zodat hij niet op een groep hangt die al vol zit met andere apparaten.</p>
+
+<h2>Huur <em>of VvE?</em></h2>
+<p>Huurt u, dan kunt u werk binnen uw eigen woning, zoals een extra stopcontact of lamp, meestal zelf laten doen. Voor de groepenkast, de bedrading of een nieuwe groep overlegt u eerst met uw verhuurder. In een appartementengebouw beslist de VvE over gemeenschappelijke delen, zoals de verlichting in de hal of laadpalen in de parkeergarage. Voor verhuurders en VvE's hebben we een <a href="/elektricien-verhuurders-vve-rotterdam/">aparte pagina</a>.</p>
+"""),
     _city("elektricien-ridderkerk", "Ridderkerk", "lampje", "“Ridderkerk? Ik breng het licht.”",
           "Bolnes, Slikkerveer en het centrum", "Drievliet en Het Zand",
           "In Ridderkerk komen we in alle kernen: Bolnes, Slikkerveer, Rijsoord, Drievliet, Het Zand en het centrum. Ridderkerk ligt direct naast Rotterdam-Zuid, dus we zijn er snel bij een storing.",
