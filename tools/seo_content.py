@@ -53,12 +53,12 @@ PAGES = [
         "say": "“Elektra in Rotterdam? Wij zitten om de hoek.”",
         "eyebrow": "Elektricien in Rotterdam",
         "h1": "Uw elektricien in <em>Rotterdam.</em>",
-        "lede": "Van een storing tot een complete installatie. Gecertificeerde elektriciens uit Rotterdam-Zuid, snel bij u in de stad en de regio.",
+        "lede": "Van een storing tot een complete installatie. Verzekerde elektriciens uit Rotterdam-Zuid, snel bij u in de stad en de regio.",
         "hub": True,
         "body": """
 <h2>Elektra geregeld, <em>zonder gedoe.</em></h2>
 <p>AlleKlussers is een elektrotechnisch bedrijf uit Rotterdam. Wij helpen particulieren, verhuurders en bedrijven met alles wat met elektra te maken heeft: van een lamp ophangen of een extra stopcontact tot een nieuwe groepenkast, een laadpaal of het verhelpen van een storing.</p>
-<p>U krijgt binnen 24 uur reactie met een duidelijke prijs vooraf. Onze elektriciens zijn gecertificeerd, verzekerd en werken volgens NEN 1010, de norm voor veilige elektrische installaties in Nederland.</p>
+<p>U krijgt binnen 24 uur reactie met een duidelijke prijs vooraf. Onze elektriciens zijn verzekerd en werken volgens NEN 1010, de norm voor veilige elektrische installaties in Nederland.</p>
 
 <h2>Waar kunnen wij <em>mee helpen?</em></h2>
 {tiles}
@@ -67,7 +67,7 @@ PAGES = [
 <ul class="checks">
   <li>{check}<span><strong>Duidelijke prijs vooraf.</strong> U weet waar u aan toe bent voordat we beginnen. Geen verrassingen achteraf.</span></li>
   <li>{check}<span><strong>Snel geregeld.</strong> Binnen 24 uur reactie, en bij storingen 24/7 bereikbaar.</span></li>
-  <li>{check}<span><strong>Veilig en volgens de norm.</strong> Gecertificeerde, verzekerde vakmensen die werken volgens NEN 1010.</span></li>
+  <li>{check}<span><strong>Veilig en volgens de norm.</strong> Verzekerde vakmensen die werken volgens NEN 1010.</span></li>
   <li>{check}<span><strong>Netjes opgeleverd.</strong> We lopen alles samen met u na en laten de ruimte schoon achter.</span></li>
 </ul>
 
@@ -80,8 +80,8 @@ PAGES = [
              "Dat hangt af van de klus. Voor kleine klussen zoals lampen ophangen of een stopcontact plaatsen spreken we vaak een vaste prijs af. Voor grotere klussen krijgt u eerst een offerte. U weet dus altijd vooraf wat het kost."),
             ("Hoe snel kunnen jullie komen?",
              "U krijgt binnen 24 uur reactie op uw aanvraag. Bij een storing zijn we 24/7 bereikbaar en plannen we zo snel mogelijk een afspraak in."),
-            ("Zijn jullie gecertificeerd en verzekerd?",
-             "Ja. Onze elektriciens zijn gecertificeerd, verzekerd en werken volgens NEN 1010."),
+            ("Zijn jullie verzekerd?",
+             "Ja. Onze vakmensen zijn verzekerd en werken volgens NEN 1010, de norm voor veilige elektrische installaties in Nederland."),
             ("Werken jullie ook voor verhuurders en bedrijven?",
              "Ja. Naast particulieren helpen we ook verhuurders, vastgoedbeheerders en bedrijven, voor losse klussen en voor terugkerend onderhoud."),
         ],
