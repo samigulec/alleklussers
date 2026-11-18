@@ -658,22 +658,51 @@ PAGES = [
         "short": "Stopcontact plaatsen",
         "sub": "Extra of verplaatste stopcontacten en schakelaars.",
         "title": "Stopcontact plaatsen of verplaatsen Rotterdam | AlleKlussers",
-        "desc": "Extra stopcontact laten plaatsen of verplaatsen in Rotterdam? Binnen en buiten, ook voor wasmachine, droger en kookplaat. Veilig aangesloten, prijs vooraf.",
+        "desc": "Stopcontact laten plaatsen of verplaatsen in Rotterdam, of doet een stopcontact het niet? Geaard, badkamer en keuken, binnen en buiten. Prijs vooraf.",
         "service": "Stopcontacten en schakelaars plaatsen",
         "char": "dosie",
         "say": "“Te weinig stopcontacten? Niet meer.”",
         "eyebrow": "Stopcontacten en schakelaars",
         "h1": "Stopcontact plaatsen in <em>Rotterdam.</em>",
-        "lede": "Extra stopcontacten, schakelaars en aansluitpunten, binnen en buiten, veilig aangesloten.",
+        "lede": "Extra stopcontacten, verplaatsen na een verbouwing of een stopcontact dat het niet meer doet. Binnen en buiten, veilig aangesloten.",
         "body": """
 <h2>Wat wij <em>voor u doen.</em></h2>
 <ul class="checks">
   <li>{check}<span><strong>Extra stopcontacten</strong> waar u ze nodig heeft, of een enkel stopcontact dubbel maken.</span></li>
-  <li>{check}<span><strong>Stopcontacten en schakelaars verplaatsen,</strong> bijvoorbeeld na een verbouwing.</span></li>
+  <li>{check}<span><strong>Stopcontacten en schakelaars verplaatsen,</strong> bijvoorbeeld na een verbouwing of voor een nieuwe keuken.</span></li>
+  <li>{check}<span><strong>Een stopcontact dat het niet doet</strong> nakijken en repareren of vervangen.</span></li>
+  <li>{check}<span><strong>Geaarde stopcontacten</strong> waar dat kan, en op verzoek met kinderbeveiliging of USB.</span></li>
   <li>{check}<span><strong>Buitenstopcontacten</strong> voor tuin, balkon of terras, spatwaterdicht. Zie <a href="/buitenverlichting-tuinstopcontact-rotterdam/">tuinstopcontact en buitenverlichting</a>.</span></li>
-  <li>{check}<span><strong>Aansluitingen voor zware apparaten</strong> zoals wasmachine, droger, vaatwasser en kookplaat, op een eigen groep.</span></li>
-  <li>{check}<span><strong>Stopcontacten met USB</strong> voor bij het bed of op het bureau.</span></li>
+  <li>{check}<span><strong>Aansluitingen voor zware apparaten</strong> zoals wasmachine, droger, vaatwasser en kookplaat, op een <a href="/groep-bijplaatsen-rotterdam/">eigen groep</a>.</span></li>
 </ul>
+
+<h2>Stopcontact doet het niet? <em>Eerst dit.</em></h2>
+<p>Vaak zit het probleem niet in het stopcontact zelf. Loop deze punten na voordat u ons een bericht stuurt:</p>
+<ol class="steps-list">
+  <li><strong>Probeer een ander apparaat.</strong> Een lamp of telefoonlader is genoeg. Werkt die wel, dan ligt het aan het apparaat of de stekkerdoos.</li>
+  <li><strong>Kijk naar de andere stopcontacten in de kamer.</strong> Doen die het ook niet, dan is waarschijnlijk de hele groep uitgevallen.</li>
+  <li><strong>Kijk in de meterkast.</strong> Staat een groep of aardlekschakelaar omlaag? Haal de stekkers uit de stopcontacten op die groep en zet de schakelaar weer omhoog. Slaat hij meteen weer door, lees dan onze pagina over de <a href="/aardlekschakelaar-rotterdam/">aardlekschakelaar</a>.</li>
+  <li><strong>Zit er een lichtschakelaar op?</strong> Sommige stopcontacten zijn geschakeld, bijvoorbeeld voor een staande lamp. Dan krijgt het stopcontact alleen stroom als de schakelaar aan staat.</li>
+  <li><strong>Buitenstopcontact?</strong> Vocht is een veelvoorkomende oorzaak. Gebruik het niet meer tot het is nagekeken.</li>
+</ol>
+<div class="note-box"><p><strong>Stop direct als het stopcontact warm wordt, verkleurd is, knettert of naar brand ruikt.</strong> Haal de stekker eruit als dat veilig kan, zet de groep in de meterkast uit en gebruik het stopcontact niet meer. Bij rook of vuur belt u 112.</p></div>
+<p>Lukt het niet, of valt een groep steeds uit? Stuur een berichtje via WhatsApp, eventueel met een foto van het stopcontact en de meterkast. Meer over uitval van groepen staat op onze pagina over <a href="/storing-elektra-rotterdam/">storingen</a>.</p>
+
+<h2>Stopcontact verplaatsen: <em>hoe gaat dat?</em></h2>
+<p>In de meeste woningen lopen de draden door buizen in de muur. Bij verplaatsen kijken we eerst hoe de leiding loopt en waar de dichtstbijzijnde aansluiting zit. Daarna zijn er grofweg drie manieren:</p>
+<ul class="checks">
+  <li>{check}<span><strong>Een nieuwe route in de muur</strong> (inbouw). De kabel verdwijnt in de muur; daarna moet de sleuf worden dichtgesmeerd.</span></li>
+  <li>{check}<span><strong>Een nette goot op de muur</strong> (opbouw). Sneller en zonder breekwerk, handig in huurwoningen en betonnen muren.</span></li>
+  <li>{check}<span><strong>Via de vloer of het plafond,</strong> als daar ruimte is, bijvoorbeeld bij een houten vloer.</span></li>
+</ul>
+<p>Het oude stopcontact halen we weg of we dekken het netjes af. Verbindingen verdwijnen nooit achter het stucwerk: een las komt altijd in een doos die bereikbaar blijft.</p>
+
+<h2>Geaard <em>of niet?</em></h2>
+<p>Apparaten met een aardesymbool, zoals een wasmachine, koelkast of waterkoker, moeten op een geaard stopcontact. In oudere woningen in Rotterdam komen we nog kamers tegen waar geen aardedraad naar het stopcontact loopt. Een geaard stopcontact op een leiding zonder aarde geeft schijnveiligheid: het lijkt geaard, maar is het niet. We kijken daarom eerst of er een aardedraad is. Is die er niet, dan bespreken we of een nieuwe leiding of nieuwe <a href="/bedrading-vervangen-rotterdam/">bedrading</a> nodig is.</p>
+
+<h2>Badkamer <em>en keuken.</em></h2>
+<p>In de badkamer gelden strenge regels. Rond het bad en de douche zijn zones; tot 60 centimeter naast het bad of de douchecabine mag geen stopcontact. Daarbuiten mag het wel, maar alleen geaard en achter een aardlekschakelaar. In de keuken zitten stopcontacten boven het aanrecht meestal op ongeveer 105 centimeter hoogte. Zware keukenapparaten, zoals een oven, vaatwasser of <a href="/inductiekookplaat-aansluiten-rotterdam/">inductiekookplaat</a>, horen op een eigen groep.</p>
+<div class="note-box"><p><strong>Bronnen:</strong> GAMMA klusadvies over <a href="https://www.gamma.nl/klusadvies/a/elektra-badkamer-aansluiten" target="_blank" rel="noopener noreferrer">elektra in de badkamer</a> en <a href="https://www.gamma.nl/klusadvies/a/regels-elektra-aanleggen" target="_blank" rel="noopener noreferrer">de basisregels voor elektra aanleggen</a>.</p></div>
 
 <div class="note-box"><p><strong>Veel stekkerdozen achter elkaar?</strong> Dat kan een groep overbelasten en is een bekende oorzaak van brand. Een paar extra stopcontacten zijn veiliger en netter.</p></div>
 
@@ -683,6 +712,14 @@ PAGES = [
         "faq": [
             ("Kan er overal een stopcontact bij?",
              "Bijna altijd. We kijken waar de dichtstbijzijnde aansluiting zit en welke route de kabel kan nemen."),
+            ("Hoeveel werk is een stopcontact verplaatsen?",
+             "Dat hangt af van de afstand en de muur. Een paar decimeter opzij via de bestaande buis is vaak snel gedaan. Een nieuwe route door een betonnen muur kost meer tijd; dan is een nette goot op de muur soms handiger. U krijgt vooraf een prijs."),
+            ("Mijn stopcontact doet het niet meer. Wat nu?",
+             "Probeer eerst een ander apparaat en kijk of de andere stopcontacten in de kamer het doen. Kijk daarna in de meterkast of er een groep of aardlekschakelaar omlaag staat. Wordt het stopcontact warm, is het verkleurd of ruikt het naar brand, gebruik het dan niet meer en zet de groep uit."),
+            ("Mag ik een geaard stopcontact plaatsen als er geen aarde is?",
+             "Liever niet. Dan lijkt het stopcontact geaard, maar is het dat niet. We kijken eerst of er een aardedraad naar het stopcontact loopt. Is die er niet, dan bespreken we een nieuwe leiding."),
+            ("Mag er een stopcontact in de badkamer?",
+             "Ja, maar niet vlak bij het bad of de douche. Tot 60 centimeter naast het bad of de douchecabine mag er geen stopcontact zitten. Verder weg mag het wel, geaard en achter een aardlekschakelaar."),
             ("Heeft mijn wasmachine een eigen groep nodig?",
              "Voor zware apparaten zoals een wasmachine, droger of vaatwasser is een eigen groep aan te raden. Zo raakt de groep niet overbelast."),
             ("Kunnen jullie een buitenstopcontact plaatsen?",

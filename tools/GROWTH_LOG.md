@@ -27,6 +27,7 @@ Public repo: no prices, margins or internal business details here.
 - 2026-11-18 (3): New /privacy/ page (privacyverklaring: who we are, what data we receive, the contact form only prepares a WhatsApp or e-mail message and stores nothing, what we use data for, retention incl. 7-year fiscal duty, Google Analytics cookies and opt-out, Google Fonts and Vercel logs, AVG rights and the Autoriteit Persoonsgegevens). Generator supports `plain` info pages via INFO_PAGES (WebPage schema, no FAQ or service lists). Linked from the footer of every page incl. the homepage (6 languages).
 - 2026-11-18 (4): Technical: the generator now only rewrites pages whose HTML changed and keeps their previous sitemap <lastmod>, so lastmod dates are meaningful to Google instead of all pages showing today's date after every run.
 - 2026-11-18 (5): New page /elektricien-rotterdam-zuid/ (our own part of town; Search Console already shows 'elektricien charlois', 'ijsselmonde' and 'kop van zuid'): all wijken of Feijenoord, Charlois and IJsselmonde, 'Elektra per wijk' (Tarwewijk 1900-1930 and Bloemhof early 1920s, Vreewijk tuindorp from 1919 and beschermd stadsgezicht, Zuidwijk and Pendrecht 1950s, Lombardijen early 1960s, Kop van Zuid from 1994; sources: Wikipedia), storing tips, huur/corporatie/VvE, laden in Rotterdam, 9 FAQs. Built with `_city()` plus its own lede/intro; linked from the area list on every landing page and the homepage town links.
+- 2026-11-18 (6): Deepened /stopcontact-plaatsen-rotterdam/ (thin page; 'stopcontact verplaatsen' already near page 2): new sections 'Stopcontact doet het niet? Eerst dit' (5-step check incl. geschakeld stopcontact, safety stop signs), 'Stopcontact verplaatsen: hoe gaat dat?' (inbouw, opbouw, via vloer/plafond; splices stay in an accessible box), 'Geaard of niet?' (no randaarde socket without an earth wire), 'Badkamer en keuken' (no socket within 60 cm of bath/shower, earthed and behind aardlek beyond that; kitchen sockets about 105 cm; sources: GAMMA klusadvies), 8 FAQs, new description.
 
 ## Backlog
 
@@ -38,7 +39,7 @@ SEO plan, highest value first (owner asked on 2026-11-17 to focus on SEO). Compe
 4. Project pages (`/projecten/...`): short page per real job with town, situation, what was done and one real photo. Needs photos from the owner; prepare the template when the first photos arrive.
 5. Price calculator for groepenkast / extra groep / perilex with a 'send via WhatsApp' button. Needs fixed prices confirmed by the owner; never publish prices before that.
 6. Review support: a /review link page and review count in titles/descriptions once there are real Google reviews. Needs the owner's Google review link.
-7. Thin pages still to deepen: bedrading, stopcontact, lampen.
+7. Thin pages still to deepen: bedrading, lampen (stopcontact done 2026-11-18).
 8. Technical SEO: (privacy page done 2026-11-18; Google Analytics runs without a consent banner, owner to check GA privacy settings or add consent) re-measure LCP after the WebP/font change; homepage has 5 H1s (one per view; site.js focuses the view's h1, so change carefully). (Homepage links to all landing pages done 2026-11-17.)
 9. Knowledge article (only if useful and accurate): "Salderen stopt 2027: wat betekent dat voor uw meterkast?".
 10. Conversion follow-ups: homepage pre-filled WhatsApp text per language, data-cta labels on homepage links.
