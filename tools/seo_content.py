@@ -609,7 +609,7 @@ PAGES = [
             ("Kan het stopcontact ook in de schuur of op het balkon?",
              "Ja. Buiten gebruiken we een spatwaterdicht stopcontact en de juiste beveiliging in de meterkast."),
             ("Moet ik mijn stekkerbatterij aanmelden?",
-             "Voor stekkerbatterijen geldt geen registratieplicht bij de netbeheerder. Een vaste thuisbatterij meldt u wel aan via energieleveren.nl."),
+             "Thuisbatterijen moet u registreren via energieleveren.nl (RVO, type A). Een stekkerbatterij van 800 watt zit op de ondergrens daarvan. Aanmelden is gratis en eenmalig, dus wij raden het aan."),
         ],
     },
     # ------------------------------------------------------------ VERLICHTING
@@ -1023,7 +1023,7 @@ PAGES = [
 </ul>
 
 <h2>Slim laden <em>en zonnepanelen na 2027.</em></h2>
-<p>Op 1 januari 2027 stopt de salderingsregeling (<a href="https://www.rijksoverheid.nl/onderwerpen/energie-thuis/salderingsregeling" target="_blank" rel="noopener noreferrer">Rijksoverheid</a>). Zonnestroom die u teruglevert, kunt u dan niet meer wegstrepen tegen de stroom die u 's avonds gebruikt. Het wordt dus interessanter om uw eigen zonnestroom direct te gebruiken, bijvoorbeeld door overdag te laden als de panelen leveren. Met een slimme laadpaal kunt u dat instellen, of laden op de uren dat stroom goedkoop is als u een dynamisch contract heeft. We helpen ook met andere slimme schakelingen voor licht en apparaten.</p>
+<p>Op 1 januari 2027 stopt de salderingsregeling (<a href="https://www.rijksoverheid.nl/onderwerpen/energie-thuis/salderingsregeling" target="_blank" rel="noopener noreferrer">Rijksoverheid</a>). Zonnestroom die u teruglevert, kunt u dan niet meer wegstrepen tegen de stroom die u 's avonds gebruikt. Het wordt dus interessanter om uw eigen zonnestroom direct te gebruiken, bijvoorbeeld door overdag te laden als de panelen leveren. Met een slimme laadpaal kunt u dat instellen, of laden op de uren dat stroom goedkoop is als u een dynamisch contract heeft. We helpen ook met andere slimme schakelingen voor licht en apparaten. Meer uitleg staat in <a href="/salderen-stopt-2027/">salderen stopt in 2027: wat moet er in uw meterkast?</a></p>
 
 <h2>Zo <em>pakken we het aan.</em></h2>
 <ol class="steps-list">
@@ -1337,7 +1337,7 @@ CITY_PAGES = [
 <div class="note-box"><p><strong>Bron:</strong> <a href="https://lokaleregelgeving.overheid.nl/CVDR663334" target="_blank" rel="noopener noreferrer">Uitvoeringsplan laadpalen Barendrecht 2021</a> (gemeente Barendrecht, geldend sinds 27 oktober 2021).</p></div>
 
 <h2>Zonnepanelen <em>en 2027.</em></h2>
-<p>Heeft u zonnepanelen? Vanaf 1 januari 2027 stopt de salderingsregeling: wat u teruglevert, mag u dan niet meer wegstrepen tegen wat u afneemt. Zelf meer stroom gebruiken als de zon schijnt wordt dan belangrijker, bijvoorbeeld met slim laden van de auto of een stekkerbatterij. Voor een stekkerbatterij leggen we een <a href="/vrije-groep-stekkerbatterij-rotterdam/">vrije groep</a> aan, zodat hij niet op een groep hangt die al vol zit met andere apparaten.</p>
+<p>Heeft u zonnepanelen? Vanaf 1 januari 2027 stopt de salderingsregeling: wat u teruglevert, mag u dan niet meer wegstrepen tegen wat u afneemt. Zelf meer stroom gebruiken als de zon schijnt wordt dan belangrijker, bijvoorbeeld met slim laden van de auto of een stekkerbatterij. Voor een stekkerbatterij leggen we een <a href="/vrije-groep-stekkerbatterij-rotterdam/">vrije groep</a> aan, zodat hij niet op een groep hangt die al vol zit met andere apparaten. Lees ook wat <a href="/salderen-stopt-2027/">het einde van salderen</a> betekent voor uw meterkast.</p>
 
 <h2>Huur <em>of VvE?</em></h2>
 <p>Huurt u, dan kunt u werk binnen uw eigen woning, zoals een extra stopcontact of lamp, meestal zelf laten doen. Voor de groepenkast, de bedrading of een nieuwe groep overlegt u eerst met uw verhuurder. In een appartementengebouw beslist de VvE over gemeenschappelijke delen, zoals de verlichting in de hal of laadpalen in de parkeergarage. Voor verhuurders en VvE's hebben we een <a href="/elektricien-verhuurders-vve-rotterdam/">aparte pagina</a>.</p>
@@ -1426,6 +1426,71 @@ CITY_PAGES = [
 # Plain information pages (no service schema, no FAQ, not in the service
 # lists). Keep them factual: they describe what the site really does.
 INFO_PAGES = [
+    {
+        "slug": "salderen-stopt-2027",
+        "plain": True,
+        "short": "Salderen stopt in 2027",
+        "title": "Salderen stopt in 2027: wat moet er in uw meterkast?",
+        "desc": "Op 1 januari 2027 stopt de salderingsregeling. Wat betekent dat voor uw zonnepanelen, meterkast, laadpaal en (stekker)batterij? Uitleg van een elektricien.",
+        "eyebrow": "Uitleg",
+        "h1": "Salderen stopt in 2027. <em>Wat nu?</em>",
+        "lede": "Vanaf 1 januari 2027 mag u zonnestroom niet meer wegstrepen tegen wat u afneemt. Wat verandert er, en wat kan een elektricien in uw meterkast doen om meer van uw eigen stroom te gebruiken?",
+        "body": """
+<p><em>Laatst bijgewerkt: 18 november 2026.</em></p>
+
+<h2>Wat verandert er <em>op 1 januari 2027?</em></h2>
+<ul class="checks">
+  <li>{check}<span><strong>Niet meer wegstrepen.</strong> Tot 2027 mag u de stroom die u teruglevert verrekenen met de stroom die u afneemt. Vanaf 1 januari 2027 mag dat niet meer.</span></li>
+  <li>{check}<span><strong>Wel een terugleververgoeding.</strong> U krijgt een vergoeding voor de stroom die u teruglevert. Tot 2030 moet die minimaal 50 procent van het kale leveringstarief zijn.</span></li>
+  <li>{check}<span><strong>Terugleverkosten blijven mogelijk.</strong> Leveranciers mogen alleen kosten rekenen die ze echt maken om de teruggeleverde stroom te verwerken. De ACM houdt toezicht.</span></li>
+  <li>{check}<span><strong>Zonnepanelen blijven lonen.</strong> Volgens de Rijksoverheid gaan zonnepanelen gemiddeld 25 jaar mee en verdienen ze zich ruim binnen die tijd terug, ook na het einde van het salderen.</span></li>
+</ul>
+<div class="note-box"><p><strong>Bron:</strong> Rijksoverheid, <a href="https://www.rijksoverheid.nl/themas/klimaat-milieu-en-natuur/energie-thuis/salderingsregeling" target="_blank" rel="noopener noreferrer">Salderingsregeling stopt in 2027</a>.</p></div>
+
+<h2>Zelf gebruiken <em>wordt belangrijker.</em></h2>
+<p>Stroom uit uw eigen panelen is volgens Milieu Centraal ongeveer vier keer goedkoper dan stroom die u inkoopt. Huishoudens met zonnepanelen gebruiken gemiddeld zo'n 30 procent van hun zonnestroom zelf, vooral via apparaten die altijd aanstaan. Wie meer zelf gebruikt, koopt minder in.</p>
+<p>De simpelste stap kost niets: zet de wasmachine, vaatwasser en droger aan als de zon schijnt, om de beurt. Heeft u een elektrische auto of een warmtepomp met een voorraadvat, laad of verwarm dan overdag.</p>
+<div class="note-box"><p><strong>Bron:</strong> Milieu Centraal, <a href="https://www.milieucentraal.nl/energie-besparen/zonnepanelen/zonnestroom-als-de-saldering-stopt-dit-moet-je-weten/" target="_blank" rel="noopener noreferrer">Zonnestroom zonder saldering: dit moet je weten</a>.</p></div>
+
+<h2>Wat een elektricien <em>in uw meterkast doet.</em></h2>
+<p>Meer zelf gebruiken betekent vaak dat er meer apparaten tegelijk overdag draaien. Daar moet de installatie op berekend zijn. Dit zijn de klussen die wij het vaakst tegenkomen:</p>
+<ul class="checks">
+  <li>{check}<span><strong>Een eigen groep voor de omvormer.</strong> Sinds 1 januari 2017 moet de omvormer van zonnepanelen of een thuisbatterij altijd op een aparte groep. Daarvoor gold dat pas vanaf 600 watt, dus bij oudere installaties zit de omvormer soms op een groep met andere apparaten.</span></li>
+  <li>{check}<span><strong>Losse groepen voor zware apparaten.</strong> Draaien wasmachine, droger en vaatwasser tegelijk, dan raakt één groep snel overbelast. <a href="/groep-bijplaatsen-rotterdam/">Een groep bijplaatsen</a> lost dat op.</span></li>
+  <li>{check}<span><strong>Slim laden.</strong> Met een <a href="/laadpaal-installeren-rotterdam/">laadpaal</a> die op zonnestroom kan laden, gaat de auto vooral overdag aan de lader. Loadbalancing voorkomt dat de hoofdzekering eruit slaat.</span></li>
+  <li>{check}<span><strong>Een vrije groep voor een stekkerbatterij.</strong> Op een groep met andere apparaten mag een stekkerbatterij volgens de NVWA maximaal 800 watt ontladen. Op een <a href="/vrije-groep-stekkerbatterij-rotterdam/">eigen, vrije groep</a> is het veiliger, omdat de bedrading dan niet ook andere apparaten hoeft te dragen.</span></li>
+  <li>{check}<span><strong>Ruimte in de groepenkast.</strong> Zit de kast vol, of is hij verouderd, dan is <a href="/groepenkast-vervangen-rotterdam/">uitbreiden of vervangen</a> de eerste stap. Komen er ook een warmtepomp en een laadpaal, dan rekenen we uit of <a href="/meterkast-verzwaren-rotterdam/">verzwaren naar 3-fase</a> nodig is.</span></li>
+</ul>
+
+<div class="note-box"><p><strong>Bronnen:</strong> Vereniging Eigen Huis, <a href="https://www.eigenhuis.nl/kennisbank/wanneer-moet-een-elektrisch-apparaat-op-een-aparte-groep-worden-aangesloten-1746" target="_blank" rel="noopener noreferrer">wanneer moet een apparaat op een aparte groep</a>; Zonneplan, <a href="https://www.zonneplan.nl/thuisbatterij/thuisbatterij-met-stekker/wet-en-regelgeving" target="_blank" rel="noopener noreferrer">wet- en regelgeving thuisbatterij met stekker</a> (NVWA-grens van 800 watt).</p></div>
+
+<h2>Thuisbatterij <em>of stekkerbatterij?</em></h2>
+<p>Een batterij slaat zonnestroom op voor 's avonds. Een stekkerbatterij is klein en steekt u in het stopcontact; een vaste thuisbatterij is groter en wordt vast aangesloten. Of een batterij voor u loont, hangt af van uw verbruik, uw energiecontract en de prijs van de batterij. Reken dat vooraf goed door.</p>
+<p>Thuisbatterijen moet u registreren via energieleveren.nl. Volgens RVO geldt die registratieplicht voor batterijsystemen van type A; een stekkerbatterij van 800 watt zit op de ondergrens daarvan. Aanmelden is gratis en eenmalig.</p>
+<div class="note-box"><p><strong>Bron:</strong> RVO, <a href="https://www.rvo.nl/onderwerpen/netcongestie/registreer-uw-batterijsysteem" target="_blank" rel="noopener noreferrer">Registreer uw batterijsysteem</a>.</p></div>
+
+<h2>Wat u <em>nu kunt doen.</em></h2>
+<ol class="steps-list">
+  <li><strong>Kijk naar uw verbruik.</strong> Welke apparaten kunt u naar overdag verplaatsen?</li>
+  <li><strong>Maak een foto van uw meterkast.</strong> Daarop zien wij of de omvormer een eigen groep heeft, of er ruimte is voor extra groepen en hoe oud de kast is.</li>
+  <li><strong>Stuur ons die foto via WhatsApp.</strong> U krijgt advies over wat zinvol is en een prijs vooraf. Geen batterij nodig? Dan zeggen we dat ook.</li>
+</ol>
+""",
+        "faq": [
+            ("Wanneer stopt de salderingsregeling?",
+             "Op 1 januari 2027. Vanaf dan mag u teruggeleverde stroom niet meer verrekenen met de stroom die u afneemt. U krijgt wel een terugleververgoeding."),
+            ("Hoe hoog is de terugleververgoeding na 2027?",
+             "Dat bepaalt uw energieleverancier. Volgens de Rijksoverheid moet de vergoeding tot 2030 minimaal 50 procent van het kale leveringstarief zijn."),
+            ("Moet ik mijn zonnepanelen uitzetten?",
+             "Nee. Stroom die u zelf gebruikt, hoeft u niet in te kopen. Volgens Milieu Centraal is uw eigen zonnestroom ongeveer vier keer goedkoper dan ingekochte stroom."),
+            ("Heb ik een thuisbatterij nodig?",
+             "Niet per se. Eerst apparaten verplaatsen naar overdag en slim laden levert vaak al veel op. Of een batterij loont, hangt af van uw verbruik, contract en de prijs van de batterij."),
+            ("Mag ik een stekkerbatterij in elk stopcontact steken?",
+             "Op een groep met andere apparaten mag een stekkerbatterij volgens de NVWA maximaal 800 watt ontladen. Een eigen, vrije groep is veiliger, omdat de bedrading dan niet ook andere apparaten hoeft te dragen."),
+            ("Moet de omvormer op een eigen groep?",
+             "Ja. Sinds 1 januari 2017 moet de omvormer van zonnepanelen of een thuisbatterij altijd op een aparte groep. Bij oudere installaties zit hij soms op een groep met andere apparaten. Stuur ons een foto van uw meterkast, dan kijken we mee."),
+        ],
+    },
     {
         "slug": "privacy",
         "plain": True,
