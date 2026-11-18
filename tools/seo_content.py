@@ -953,7 +953,7 @@ PAGES = [
   <li>{check}<span><strong>Openbare laadpalen</strong> plaatst de gemeente op basis van data over waar ze nodig zijn. Op de kaart van <a href="https://viewer.evmaps.nl/rotterdam" target="_blank" rel="noopener noreferrer">EVmaps</a> ziet u welke palen er staan en welke in behandeling zijn. Heeft u een gehandicaptenparkeerplaats op kenteken, dan kunt u wel zelf een laadpaal bij die plek aanvragen.</span></li>
   <li>{check}<span><strong>Delen met de buren kan.</strong> Heeft een buurman of een bedrijf in de buurt een eigen laadpaal, dan kunt u afspraken maken om die te delen. De gemeente verwijst naar een modelovereenkomst van RVO.</span></li>
 </ul>
-<p>Buiten Rotterdam bepaalt elke gemeente dit zelf; de ene staat een kabelmat of kabelgoot toe, de andere niet (<a href="https://www.evupdate.nl/explainers/artikel/thuisladen-zonder-eigen-oprit-je-postcode-bepaalt-wat-wel-en-niet-mag" target="_blank" rel="noopener noreferrer">EV Update</a>). In Capelle aan den IJssel moet u op eigen terrein laden (<a href="https://www.duurzaamcapelle.nl/laadpalenbeleid-capelle-aan-den-ijssel/" target="_blank" rel="noopener noreferrer">duurzaamcapelle.nl</a>). Zonder toestemming loopt u volgens de ANWB het risico op een boete, en u kunt aansprakelijk zijn als iemand over uw kabel struikelt (<a href="https://www.anwb.nl/auto/elektrisch-rijden/opladen/laadkabel-over-de-stoep" target="_blank" rel="noopener noreferrer">ANWB</a>).</p>
+<p>Buiten Rotterdam bepaalt elke gemeente dit zelf; de ene staat een kabelmat of kabelgoot toe, de andere niet (<a href="https://www.evupdate.nl/explainers/artikel/thuisladen-zonder-eigen-oprit-je-postcode-bepaalt-wat-wel-en-niet-mag" target="_blank" rel="noopener noreferrer">EV Update</a>). In Capelle aan den IJssel moet u op eigen terrein laden (<a href="https://www.duurzaamcapelle.nl/laadpalenbeleid-capelle-aan-den-ijssel/" target="_blank" rel="noopener noreferrer">duurzaamcapelle.nl</a>). In de regio verschilt het per gemeente: in <a href="/elektricien-capelle-aan-den-ijssel/">Capelle</a>, <a href="/elektricien-schiedam/">Schiedam</a>, <a href="/elektricien-barendrecht/">Barendrecht</a> en <a href="/elektricien-ridderkerk/">Ridderkerk</a> mag een kabel over de stoep niet, terwijl u in <a href="/elektricien-krimpen-aan-den-ijssel/">Krimpen aan den IJssel</a> kabelgoottegels bij de gemeente kunt aanvragen. Zonder toestemming loopt u volgens de ANWB het risico op een boete, en u kunt aansprakelijk zijn als iemand over uw kabel struikelt (<a href="https://www.anwb.nl/auto/elektrisch-rijden/opladen/laadkabel-over-de-stoep" target="_blank" rel="noopener noreferrer">ANWB</a>).</p>
 
 <h2>Appartement <em>of VvE.</em></h2>
 <p>Heeft u in een VvE een eigen parkeerplaats, bijvoorbeeld in een parkeergarage onder het gebouw, dan kan daar een laadpaal bij. Omdat de kabel meestal door gemeenschappelijke ruimte loopt, beslist de VvE mee. De gemeente Rotterdam verwijst naar het stappenplan op <a href="https://vveladen.nl/" target="_blank" rel="noopener noreferrer">vveladen.nl</a> en naar Stichting VVE-010. Wij kunnen voor de VvE uitzoeken waar de laadpunten op aangesloten kunnen worden. Lees ook wat we doen <a href="/elektricien-verhuurders-vve-rotterdam/">voor verhuurders en VvE's</a>.</p>
@@ -1293,6 +1293,42 @@ CITY_PAGES = [
 
 <h2>Huur <em>of VvE?</em></h2>
 <p>Huurt u, dan kunt u werk binnen uw eigen woning, zoals een extra stopcontact of lamp, meestal zelf laten doen. Voor de groepenkast, de bedrading of een nieuwe groep overlegt u eerst met uw verhuurder. In een appartementengebouw beslist de VvE over gemeenschappelijke delen, zoals de verlichting in de hal of laadpalen in de parkeergarage. Voor verhuurders en VvE's hebben we een <a href="/elektricien-verhuurders-vve-rotterdam/">aparte pagina</a>.</p>
+"""),
+    _city("elektricien-krimpen-aan-den-ijssel", "Krimpen aan den IJssel", "laadie", "“Krimpen? Gewoon de Algerabrug over.”",
+          "", "",
+          "In Krimpen aan den IJssel werken we in de hele gemeente: in de oude bebouwing langs de dijken, in de wijken die vanaf de jaren zestig zijn gebouwd, zoals Kortland en Langeland, en op bedrijventerrein Stormpolder. Via de Algerabrug en Capelle aan den IJssel zijn we er vanuit Rotterdam snel.",
+          [("Mag ik in Krimpen mijn auto laden met een kabel over de stoep?",
+            "Alleen via kabelgoottegels van de gemeente. Dat zijn speciale tegels met een afgedekte goot voor de laadkabel. U vraagt ze aan bij de gemeente; die beoordeelt of het bij uw woning kan en legt ze tegen kostprijs aan. Een losse kabel of mat over de stoep mag niet."),
+           ("Wat zijn de voorwaarden voor kabelgoottegels?",
+            "Volgens de gemeente onder meer: u heeft een elektrische auto, u kunt niet binnen 100 meter van uw woning op eigen terrein parkeren, er zit alleen een stoep tussen uw woning en de parkeerplaats, de goot loopt in een rechte lijn en is maximaal 3,2 meter lang, en de parkeerplaats blijft openbaar. De precieze voorwaarden staan bij de gemeente."),
+           ("Wat doen jullie als ik kabelgoottegels krijg?",
+            "Wij zorgen voor de aansluiting aan uw kant: een laadpunt aan de gevel of op uw eigen terrein, op een eigen groep in de meterkast met de juiste beveiliging. We kijken eerst of uw groepenkast en aansluiting het aankunnen."),
+           ("Mijn woning is uit de jaren zeventig. Is mijn groepenkast nog goed?",
+            "Vaak werkt hij nog, maar hij is ingericht op de apparaten van toen. In woningen van voor 1975 zit vaak geen aardlekschakelaar, tenzij de kast later is vernieuwd. Wilt u inductie, een droger of een laadpunt erbij, dan is er vaak een extra groep of een nieuwe kast nodig. Stuur een foto van uw meterkast."),
+           ("Werken jullie ook voor bedrijven op de Stormpolder?",
+            "Ja. Voor bedrijfsruimtes verhelpen we storingen, plaatsen we verlichting en leggen we extra groepen aan.")],
+          mix="Krimpen groeide pas echt na 1958, toen de Algerabrug de eerste vaste verbinding met de overkant van de IJssel werd. Vanaf halverwege de jaren zestig werd Krimpen een forensengemeente van Rotterdam en breidde het flink uit. Veel woningen komen dus uit de jaren zestig en zeventig. Daar komen we vaak een groepenkast tegen die nooit is aangepast aan inductie, een droger of een laadpunt.",
+          desc="Elektricien in Krimpen aan den IJssel: groepenkast, storing, inductie en laden met de kabelgoottegels van de gemeente. Reactie binnen 24 uur, prijs vooraf.",
+          extra="""
+<h2>Laden in Krimpen: <em>kabelgoottegels.</em></h2>
+<p>Krimpen aan den IJssel heeft een eigen oplossing voor wie geen oprit heeft. Inwoners met een elektrische auto kunnen bij de gemeente kabelgoottegels aanvragen: speciale stoeptegels met een goot voor de laadkabel, afgedekt met een rubberen strip. Zo kunt u vanuit uw eigen woning laden, bijvoorbeeld met stroom van uw zonnepanelen, terwijl de auto op een openbare parkeerplaats staat. Volgens de gemeente is dit de enige manier waarop een laadkabel over de openbare weg mag.</p>
+<ul class="checks">
+  <li>{check}<span><strong>Voorwaarden van de gemeente.</strong> U heeft een elektrische auto en kunt niet binnen 100 meter van uw woning op eigen terrein parkeren. Tussen uw woning en de parkeerplaats ligt alleen een stoep. De goot loopt recht en is maximaal 3,2 meter. De parkeerplaats blijft openbaar en de tegels blijven van de gemeente.</span></li>
+  <li>{check}<span><strong>Aanvragen.</strong> Via het e-loket van de gemeente, met een foto van de situatie. De gemeente legt de tegels aan tegen kostprijs en besluit binnen zes weken.</span></li>
+  <li>{check}<span><strong>Wat wij doen.</strong> Een laadpunt aan de gevel of op uw eigen terrein, op een <a href="/groep-bijplaatsen-rotterdam/">eigen groep</a> met de juiste aardlekbeveiliging. We kijken eerst of uw <a href="/groepenkast-vervangen-rotterdam/">groepenkast</a> en aansluiting het aankunnen, en of <a href="/meterkast-verzwaren-rotterdam/">verzwaren</a> nodig is. Meer over laadpunten leest u op onze <a href="/laadpaal-installeren-rotterdam/">laadpaalpagina</a>.</span></li>
+</ul>
+<div class="note-box"><p><strong>Bron:</strong> <a href="https://krimpenaandenijssel.nl/producten/kabelgoottegels/" target="_blank" rel="noopener noreferrer">Kabelgoottegels</a>, gemeente Krimpen aan den IJssel (met een link naar de bindende voorwaarden).</p></div>
+
+<h2>Elektra in <em>Krimpen.</em></h2>
+<ul class="checks">
+  <li>{check}<span><strong>Oude bebouwing langs de dijken.</strong> Hier kijken we eerst naar de staat van de <a href="/bedrading-vervangen-rotterdam/">bedrading</a> en of er een <a href="/aardlekschakelaar-rotterdam/">aardlekschakelaar</a> in de kast zit.</span></li>
+  <li>{check}<span><strong>Wijken uit de jaren zestig en zeventig.</strong> In Kortland, Langeland en de andere uitbreidingswijken zit de groepenkast vaak vol. Voor <a href="/inductiekookplaat-aansluiten-rotterdam/">inductie</a>, een droger of een laadpunt is dan een extra groep of een nieuwe kast nodig.</span></li>
+  <li>{check}<span><strong>Stormpolder.</strong> Voor bedrijfsruimtes verhelpen we storingen, plaatsen we verlichting en leggen we extra groepen aan.</span></li>
+</ul>
+<div class="note-box"><p><strong>Bron:</strong> Wikipedia over <a href="https://nl.wikipedia.org/wiki/Krimpen_aan_den_IJssel" target="_blank" rel="noopener noreferrer">Krimpen aan den IJssel</a>.</p></div>
+
+<h2>Huur, flat <em>of VvE?</em></h2>
+<p>Werk binnen uw eigen woning, zoals een extra stopcontact of lamp, kunt u meestal zelf laten doen. Voor de groepenkast, de bedrading of een laadpunt aan de gevel overlegt u eerst met uw verhuurder of VvE. Voor verhuurders en VvE's hebben we een <a href="/elektricien-verhuurders-vve-rotterdam/">aparte pagina</a>.</p>
 """),
     _city("elektricien-ridderkerk", "Ridderkerk", "lampje", "“Ridderkerk? Ik breng het licht.”",
           "Bolnes, Slikkerveer en het centrum", "Drievliet en Het Zand",
