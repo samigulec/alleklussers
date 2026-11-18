@@ -24,6 +24,7 @@ window.AK_I18N = {
   'top.insured': ['Verzekerde vakmensen', 'Insured craftsmen', 'Sigortalı ustalar', 'حرفيون مؤمَّنون', 'Ubezpieczeni fachowcy', 'Versicherte Handwerker'],
   'top.nen': ['Werken volgens NEN 1010', 'Working to NEN 1010', 'NEN 1010’a uygun çalışma', 'نعمل وفق معيار NEN 1010', 'Praca zgodna z NEN 1010', 'Arbeiten nach NEN 1010'],
   'trust.certified': ['Verzekerde vakmensen', 'Insured craftsmen', 'Sigortalı ustalar', 'حرفيون مؤمَّنون', 'Ubezpieczeni fachowcy', 'Versicherte Handwerker'],
+  'nav.privacy': ['Privacyverklaring', 'Privacy policy', 'Gizlilik bildirimi', 'سياسة الخصوصية', 'Polityka prywatności', 'Datenschutzerklärung'],
   'trust.viaMail': ['Via mail of WhatsApp', 'Via mail or WhatsApp', 'Mail veya WhatsApp ile', 'عبر البريد أو واتساب', 'Przez mail lub WhatsApp', 'Per Mail oder WhatsApp'],
   'trust.reply24': ['Binnen 24 uur reactie', 'Reply within 24 hours', '24 saat içinde yanıt', 'ردٌّ خلال 24 ساعة', 'Odpowiedź w 24 godziny', 'Antwort innerhalb 24 h'],
   'trust.reply24Sub': ['Inclusief offerte op maat', 'Including a tailored quote', 'Özel teklif dahil', 'بما في ذلك عرض مخصص', 'W tym oferta na miarę', 'Inkl. maßgeschneidertem Angebot'],

@@ -1227,3 +1227,63 @@ CITY_PAGES = [
           [("Rekenen jullie extra voor Ridderkerk?",
             "U krijgt vooraf één duidelijke prijs voor de klus, zodat u niet achteraf wordt verrast.")]),
 ]
+
+
+# ---------------------------------------------------------------- INFO
+# Plain information pages (no service schema, no FAQ, not in the service
+# lists). Keep them factual: they describe what the site really does.
+INFO_PAGES = [
+    {
+        "slug": "privacy",
+        "plain": True,
+        "short": "Privacyverklaring",
+        "title": "Privacyverklaring | AlleKlussers",
+        "desc": "Hoe AlleKlussers (Boss Tech VOF) omgaat met uw gegevens: offerteaanvragen via WhatsApp of e-mail, Google Analytics, bewaartermijnen en uw rechten.",
+        "eyebrow": "Privacy",
+        "h1": "Privacy<em>verklaring.</em>",
+        "lede": "Welke gegevens we van u krijgen, waarvoor we ze gebruiken en wat uw rechten zijn. Kort en in gewone taal.",
+        "body": """
+<p><em>Laatst bijgewerkt: 18 november 2026.</em></p>
+
+<h2>Wie <em>wij zijn.</em></h2>
+<p>AlleKlussers is een handelsnaam van Boss Tech VOF, Walravenstraat 17, 3074 NL Rotterdam (KvK 99149680). Wij zijn verantwoordelijk voor de gegevens die u ons geeft. Vragen over privacy kunt u sturen naar <a href="mailto:alleklussers@gmail.com">alleklussers@gmail.com</a>.</p>
+
+<h2>Welke gegevens <em>we krijgen.</em></h2>
+<p>We krijgen alleen gegevens die u zelf aan ons stuurt, bijvoorbeeld als u een offerte aanvraagt of een storing meldt:</p>
+<ul class="checks">
+  <li>{check}<span>uw naam, telefoonnummer en e-mailadres;</span></li>
+  <li>{check}<span>het adres of de postcode en plaats waar de klus is;</span></li>
+  <li>{check}<span>een omschrijving van de klus en eventueel foto's, bijvoorbeeld van uw meterkast;</span></li>
+  <li>{check}<span>als u klant wordt: de afspraken, de offerte en de factuur.</span></li>
+</ul>
+
+<h2>Het formulier <em>op de website.</em></h2>
+<p>Het offerteformulier op onze website slaat niets op. Als u op verzenden drukt, zet het formulier uw bericht klaar in WhatsApp of in uw eigen e-mailprogramma. U verstuurt het daar zelf. Uw gegevens gaan dus pas naar ons als u het bericht echt verstuurt.</p>
+<p>Berichten via WhatsApp lopen via WhatsApp (Meta). E-mails komen binnen in ons Gmail-account (Google). Daarvoor gelden ook de privacyregels van die diensten.</p>
+
+<h2>Waarvoor <em>we ze gebruiken.</em></h2>
+<ul class="checks">
+  <li>{check}<span><strong>Uw vraag beantwoorden en een prijs maken.</strong> Dat doen we omdat u erom vraagt.</span></li>
+  <li>{check}<span><strong>De klus plannen en uitvoeren.</strong> De vakmensen die het werk voor ons uitvoeren, krijgen alleen wat ze daarvoor nodig hebben: uw naam, het adres, uw telefoonnummer en wat er moet gebeuren.</span></li>
+  <li>{check}<span><strong>Factureren en de administratie.</strong> Dat moeten we volgens de wet.</span></li>
+</ul>
+<p>We verkopen uw gegevens niet en gebruiken ze niet voor reclame van anderen.</p>
+
+<h2>Hoe lang <em>we ze bewaren.</em></h2>
+<p>We bewaren uw gegevens niet langer dan nodig. Wordt uw aanvraag geen opdracht, dan verwijderen we de gegevens als ze niet meer nodig zijn voor uw vraag. Facturen en de administratie bewaren we 7 jaar, omdat de Belastingdienst dat verplicht.</p>
+
+<h2>Google Analytics <em>en cookies.</em></h2>
+<p>We gebruiken Google Analytics om te zien hoe bezoekers onze website gebruiken, bijvoorbeeld welke pagina's worden bekeken en hoe vaak er op de WhatsApp-knop wordt gedrukt. Google Analytics plaatst daarvoor cookies. We gebruiken die cijfers alleen om de website te verbeteren.</p>
+<p>U kunt cookies weigeren of verwijderen in de instellingen van uw browser. Google biedt ook een <a href="https://tools.google.com/dlpage/gaoptout" target="_blank" rel="noopener noreferrer">browser-add-on</a> om Google Analytics uit te zetten.</p>
+<p>De lettertypen van de website worden geladen van Google Fonts. Daarbij ziet Google het IP-adres van uw apparaat. De website zelf staat bij Vercel; zoals elke webserver registreren hun servers technische gegevens, zoals uw IP-adres en het tijdstip van een bezoek.</p>
+
+<h2>Uw <em>rechten.</em></h2>
+<p>U mag ons vragen welke gegevens we van u hebben, en ze laten verbeteren of verwijderen. U kunt ook bezwaar maken tegen het gebruik ervan, het gebruik laten beperken of uw gegevens opvragen om ze aan een ander te geven. Stuur daarvoor een e-mail naar <a href="mailto:alleklussers@gmail.com">alleklussers@gmail.com</a>. We reageren binnen een maand.</p>
+<p>Bent u het niet eens met hoe we met uw gegevens omgaan? Dan kunt u een klacht indienen bij de <a href="https://www.autoriteitpersoonsgegevens.nl/" target="_blank" rel="noopener noreferrer">Autoriteit Persoonsgegevens</a>.</p>
+
+<h2>Wijzigingen</h2>
+<p>Als we deze verklaring aanpassen, ziet u dat aan de datum bovenaan deze pagina.</p>
+""",
+        "faq": [],
+    },
+]
