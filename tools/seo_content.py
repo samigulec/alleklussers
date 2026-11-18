@@ -617,37 +617,66 @@ PAGES = [
         "slug": "lampen-ophangen-rotterdam",
         "short": "Lampen ophangen",
         "sub": "Plafondlampen, spots, dimmers en buitenverlichting.",
-        "title": "Lampen ophangen Rotterdam | Verlichting | AlleKlussers",
-        "desc": "Lampen laten ophangen of verlichting installeren in Rotterdam? Plafondlampen, hanglampen, spots, dimmers en buitenverlichting, netjes en veilig aangesloten.",
+        "title": "Elektricien lampen ophangen Rotterdam | AlleKlussers",
+        "desc": "Lampen laten ophangen in Rotterdam: hanglampen, kroonluchters, spots en LED-dimmers. LED knippert of gloeit na? Wij lossen het op. Prijs vooraf.",
         "service": "Lampen ophangen en verlichting installeren",
         "char": "lampje",
         "say": "“Meer licht? Daar ben ik voor.”",
         "eyebrow": "Verlichting",
         "h1": "Lampen ophangen in <em>Rotterdam.</em>",
-        "lede": "Plafondlampen, hanglampen, wandlampen, spots en dimmers: netjes gemonteerd en veilig aangesloten.",
+        "lede": "Plafondlampen, hanglampen, kroonluchters, spots en dimmers: netjes gemonteerd en veilig aangesloten. En een LED die knippert of nagloeit, lossen we op.",
         "body": """
 <h2>Wat wij <em>voor u doen.</em></h2>
 <ul class="checks">
-  <li>{check}<span><strong>Lampen ophangen</strong> op bestaande aansluitpunten: plafondlampen, hanglampen en wandlampen.</span></li>
+  <li>{check}<span><strong>Lampen ophangen</strong> op bestaande aansluitpunten: plafondlampen, hanglampen, kroonluchters en wandlampen.</span></li>
   <li>{check}<span><strong>Nieuwe lichtpunten maken,</strong> bijvoorbeeld boven de eettafel of het keukeneiland.</span></li>
   <li>{check}<span><strong>Inbouwspots plaatsen</strong> in plafonds, keukens en badkamers.</span></li>
-  <li>{check}<span><strong>Dimmers en schakelaars</strong> die geschikt zijn voor LED, zonder geknipper of gezoem.</span></li>
+  <li>{check}<span><strong>Dimmers en schakelaars</strong> die geschikt zijn voor LED, zonder geknipper of gezoem, en een tweede schakelaar, bijvoorbeeld onder en boven aan de trap.</span></li>
   <li>{check}<span><strong>Buitenverlichting</strong> aan de gevel, in de tuin of bij de voordeur, waterdicht aangesloten. Meer daarover bij <a href="/buitenverlichting-tuinstopcontact-rotterdam/">buitenverlichting en tuinstopcontact</a>.</span></li>
   <li>{check}<span><strong>Badkamerverlichting en LED-spiegels,</strong> veilig in een natte ruimte.</span></li>
 </ul>
 
-<div class="note-box"><p><strong>Tip:</strong> heeft u meerdere lampen? Laat ze in één afspraak ophangen. Dat scheelt tijd en is per lamp voordeliger.</p></div>
+<div class="note-box"><p><strong>Tip:</strong> heeft u meerdere lampen? Laat ze in één afspraak ophangen. Dan hoeft u maar één keer thuis te blijven.</p></div>
+
+<h2>LED knippert, zoemt <em>of gloeit na?</em></h2>
+<p>LED-lampen gebruiken heel weinig stroom. Daardoor gaan ze sneller knipperen of nagloeien dan oude gloeilampen. De oorzaak zit bijna altijd in de combinatie van lamp, dimmer en bedrading:</p>
+<ul class="checks">
+  <li>{check}<span><strong>Een oude dimmer.</strong> Klassieke dimmers (fase-aansnijding) werken pas goed vanaf een minimale belasting. Met een paar zuinige LED-lampen haalt u die vaak niet, en dan knippert of zoemt de lamp. Een dimmer met fase-afsnijding is veel beter geschikt voor LED.</span></li>
+  <li>{check}<span><strong>Te weinig of te veel vermogen.</strong> Elke dimmer heeft een bereik, bijvoorbeeld 5 tot 100 watt. Zit het totaal van uw lampen onder het minimum, dan knippert het; komt u boven het maximum, dan wordt de dimmer te warm. Bij veel dimmers kunt u de laagste stand ook bijstellen.</span></li>
+  <li>{check}<span><strong>Nagloeien als het licht uit staat.</strong> Een zwak schijnsel nadat u het licht uitzet, kan komen door een slechte aarding van een metalen armatuur of door lange draden die naast andere draden lopen. We controleren de aarding en de aansluiting.</span></li>
+  <li>{check}<span><strong>Een lamp die niet dimbaar is.</strong> Op de verpakking staat of een LED-lamp dimbaar is. Een niet-dimbare lamp op een dimmer gaat knipperen en slijt snel.</span></li>
+</ul>
+<p>Wij kiezen een dimmer die past bij uw lampen en het totale vermogen, en controleren de aansluiting. Knippert een lamp zonder dimmer, of gaan er meerdere lampen tegelijk raar doen? Dan kan er iets met de groep of de bedrading zijn; kijk ook op onze pagina over <a href="/storing-elektra-rotterdam/">storingen</a>.</p>
+<div class="note-box"><p><strong>Bron:</strong> Volta, <a href="https://volta-org.be/media/pwvfq2vq/leds-zijn-gevoelig-herken-en-verhelp-flikkeren-en-nagloeien.pdf" target="_blank" rel="noopener noreferrer">Leds zijn gevoelig: herken en verhelp flikkeren en nagloeien</a>.</p></div>
+
+<h2>Hanglamp of kroonluchter: <em>waar we op letten.</em></h2>
+<ul class="checks">
+  <li>{check}<span><strong>Het plafond.</strong> In een betonnen plafond gebruiken we andere bevestiging dan in gipsplaat of een houten plafond. Bij een zware lamp kijken we eerst of het plafond het gewicht kan dragen.</span></li>
+  <li>{check}<span><strong>Het lichtpunt.</strong> Zit het aansluitpunt niet waar de lamp moet hangen, bijvoorbeeld boven de eettafel, dan verplaatsen we het of maken we een nieuw lichtpunt.</span></li>
+  <li>{check}<span><strong>De aarde.</strong> Een metalen lamp met een aardedraad sluiten we aan op de aarde, als die bij het lichtpunt aanwezig is. In oudere woningen is dat niet altijd zo; dat bespreken we vooraf.</span></li>
+</ul>
+
+<h2>Inbouwspots: <em>wat kan er?</em></h2>
+<p>Inbouwspots hebben ruimte boven het plafond nodig. In een verlaagd plafond of een houten plafond kan dat meestal; in een betonnen plafond niet zonder een verlaagd plafond eronder. We plannen de spots zo dat het licht gelijkmatig valt en de kabels netjes lopen.</p>
+<p>In de badkamer gelden zones. Rond het bad en de douche mogen alleen spots die daarvoor geschikt zijn: vlak erboven alleen verlichting op 12 volt met een hoge waterdichtheid (IPX5), en tot 60 centimeter ernaast minimaal IPX4. Daarbuiten is IP44 genoeg. Meer over de zones staat op onze pagina over <a href="/stopcontact-plaatsen-rotterdam/">stopcontacten</a>.</p>
+<div class="note-box"><p><strong>Bron:</strong> GAMMA klusadvies over <a href="https://www.gamma.nl/klusadvies/a/elektra-badkamer-aansluiten" target="_blank" rel="noopener noreferrer">elektra in de badkamer</a>.</p></div>
 
 <h2>Zo <em>werkt het.</em></h2>
-<p>Stuur ons een berichtje met het aantal lampen en, als dat kan, een foto van de plek. U krijgt binnen 24 uur een prijs. Onze elektricien neemt het kleine materiaal mee, zoals schroeven, pluggen en lasklemmen, hangt alles op en test of het werkt.</p>
+<p>Stuur ons een berichtje met het aantal lampen en, als dat kan, een foto van de plek en de lamp. U krijgt binnen 24 uur een prijs. Onze elektricien neemt het kleine materiaal mee, zoals schroeven, pluggen en lasklemmen, hangt alles op en test of het werkt.</p>
 """,
         "faq": [
             ("Kunnen jullie ook zware lampen of kroonluchters ophangen?",
-             "Ja. We kijken eerst of het plafond het gewicht kan dragen en gebruiken de juiste bevestiging."),
+             "Ja. We kijken eerst of het plafond het gewicht kan dragen en gebruiken de juiste bevestiging voor beton, gipsplaat of hout."),
             ("Mijn LED-lamp knippert met de dimmer. Kunnen jullie dat oplossen?",
-             "Meestal is de dimmer niet geschikt voor LED. We vervangen hem door een LED-dimmer die bij uw lampen past."),
+             "Meestal is de dimmer niet geschikt voor LED, of komt het totale vermogen van de lampen onder het minimum van de dimmer. We vervangen hem door een LED-dimmer die bij uw lampen past."),
+            ("Mijn LED-lamp gloeit zacht na als het licht uit staat. Is dat gevaarlijk?",
+             "Meestal niet direct, maar het wijst op een aansluiting die beter kan, bijvoorbeeld een metalen armatuur zonder goede aarding. We controleren de aarding en de bedrading en lossen het op."),
+            ("Kan ik een tweede schakelaar krijgen, bijvoorbeeld boven aan de trap?",
+             "Ja. Met een wisselschakeling kunt u dezelfde lamp op twee plekken aan- en uitzetten. Daarvoor trekken we een extra kabel tussen de twee schakelaars."),
+            ("Kunnen jullie inbouwspots in een betonnen plafond plaatsen?",
+             "Niet direct in het beton. Daarvoor is een verlaagd plafond nodig. In een houten of gipsplaten plafond kan het meestal wel."),
             ("Moet ik de lampen zelf kopen?",
-             "Meestal wel, dan kiest u precies wat u mooi vindt. Klein materiaal zoals schroeven, pluggen en lasklemmen nemen wij mee."),
+             "Meestal wel, dan kiest u precies wat u mooi vindt. Klein materiaal zoals schroeven, pluggen en lasklemmen nemen wij mee. Twijfelt u over een dimbare lamp of een dimmer? Vraag het ons vooraf."),
             ("Kunnen jullie een nieuw lichtpunt maken waar nog geen aansluiting zit?",
              "Ja, dan trekken we een nieuwe kabel naar de gewenste plek. De prijs hangt af van de route; dat bespreken we vooraf."),
         ],
