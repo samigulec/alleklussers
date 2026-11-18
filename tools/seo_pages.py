@@ -19,9 +19,9 @@ import urllib.parse
 
 ROOT = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 sys.path.insert(0, os.path.join(ROOT, "tools"))
-from seo_content import AREAS_REGION, AREAS_ROTTERDAM, CITY_PAGES, PAGES, WA_TEXT  # noqa: E402
+from seo_content import AREAS_REGION, AREAS_ROTTERDAM, CITY_PAGES, INFO_PAGES, PAGES, WA_TEXT  # noqa: E402
 
-ALL_PAGES = PAGES + CITY_PAGES
+ALL_PAGES = PAGES + CITY_PAGES + INFO_PAGES
 CITY_LINKS = {p["city"]: p["slug"] for p in CITY_PAGES}
 
 BASE = "https://www.alleklussers.nl"
@@ -95,7 +95,11 @@ def jsonld(p):
         "areaServed": [{"@type": "City", "name": n} for n in ["Rotterdam"] + AREAS_REGION],
     }
     graph = []
-    if p.get("hub"):
+    if p.get("plain"):
+        graph.append(business)
+        graph.append({"@type": "WebPage", "name": p["short"], "url": url, "description": p["desc"],
+                      "publisher": {"@id": f"{BASE}/#business"}})
+    elif p.get("hub"):
         graph.append(dict(business, description=p["desc"]))
     else:
         graph.append(business)
@@ -108,13 +112,14 @@ def jsonld(p):
             "provider": {"@id": f"{BASE}/#business"},
             "areaServed": {"@type": "City", "name": p.get("city", "Rotterdam")},
         })
-    graph.append({
+    if p["faq"]:
+        graph.append({
         "@type": "FAQPage",
         "mainEntity": [{"@type": "Question", "name": q,
                         "acceptedAnswer": {"@type": "Answer", "text": a}} for q, a in p["faq"]],
-    })
+        })
     crumbs = [("Home", f"{BASE}/")]
-    if not p.get("hub") and not p.get("city"):
+    if not p.get("hub") and not p.get("city") and not p.get("plain"):
         crumbs.append(("Elektricien Rotterdam", f"{BASE}/elektricien-rotterdam/"))
     crumbs.append((p["short"], url))
     graph.append({
@@ -143,12 +148,14 @@ def page(p, sprite_svg):
     faq = "".join(f"<details><summary>{html.escape(q)}</summary><p>{html.escape(a)}</p></details>" for q, a in p["faq"])
 
     crumbs = '<a href="/">Home</a> <span aria-hidden="true">/</span> '
-    if not p.get("hub") and not p.get("city"):
+    if not p.get("hub") and not p.get("city") and not p.get("plain"):
         crumbs += '<a href="/elektricien-rotterdam/">Elektricien Rotterdam</a> <span aria-hidden="true">/</span> '
     crumbs += f'<span aria-current="page">{p["short"]}</span>'
 
     extra = ""
-    if p.get("city"):
+    if p.get("plain"):
+        extra = ""
+    elif p.get("city"):
         extra = f"""
   <section class="section" style="padding-top: 0">
     <div class="wrap prose">
@@ -171,6 +178,16 @@ def page(p, sprite_svg):
     </div>
   </section>"""
 
+    hint_buddy = "" if p.get("plain") else (
+        '      <p class="seo-hint">Stuur gerust een foto van uw meterkast of de klus mee. Dan krijgt u sneller een duidelijke prijs.</p>\n'
+        f'      <div class="speaker page-head__buddy"><p class="say">{p["say"]}</p><svg class="ch ch-float speaker__ch ch-badge ch-badge--{p["char"]}" aria-hidden="true"><use href="#ch-{p["char"]}"/></svg></div>')
+    faq_section = "" if not p["faq"] else f"""
+  <section class="section section--sand">
+    <div class="wrap prose">
+      <h2>Veelgestelde <em>vragen.</em></h2>
+      <div class="faq">{faq}</div>
+    </div>
+  </section>"""
     title = html.escape(p["title"])
     desc = html.escape(p["desc"])
     return f"""<!DOCTYPE html>
@@ -253,8 +270,7 @@ def page(p, sprite_svg):
         <a class="btn btn--amber" href="{wa}" target="_blank" rel="noopener noreferrer" data-cta="hero">{icon("i-wa")}WhatsApp ons</a>
         <a class="btn btn--ghost" href="/#contact" data-cta="hero">Offerte aanvragen {icon("i-arrow", 16)}</a>
       </div>
-      <p class="seo-hint">Stuur gerust een foto van uw meterkast of de klus mee. Dan krijgt u sneller een duidelijke prijs.</p>
-      <div class="speaker page-head__buddy"><p class="say">{p["say"]}</p><svg class="ch ch-float speaker__ch ch-badge ch-badge--{p["char"]}" aria-hidden="true"><use href="#ch-{p["char"]}"/></svg></div>
+{hint_buddy}
     </div>
   </div>
 
@@ -277,12 +293,7 @@ def page(p, sprite_svg):
     </div>
   </section>
 
-  <section class="section section--sand">
-    <div class="wrap prose">
-      <h2>Veelgestelde <em>vragen.</em></h2>
-      <div class="faq">{faq}</div>
-    </div>
-  </section>
+{faq_section}
 {extra}
   <section class="section section--dark on-dark">
     <div class="wrap seo-cta">
@@ -313,6 +324,7 @@ def page(p, sprite_svg):
         <li><a href="/#references">Projecten</a></li>
         <li><a href="/#about">Over ons</a></li>
         <li><a href="/#contact">Contact</a></li>
+        <li><a href="/privacy/">Privacyverklaring</a></li>
       </ul>
     </nav>
     <div>
