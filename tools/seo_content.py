@@ -524,14 +524,14 @@ PAGES = [
         "slug": "thuisbatterij-aansluiten-rotterdam",
         "short": "Thuisbatterij aansluiten",
         "sub": "Eigen groep en meterkast klaar voor 2027.",
-        "title": "Thuisbatterij aansluiten Rotterdam | Vóór 2027 | AlleKlussers",
-        "desc": "Thuisbatterij laten aansluiten in Rotterdam? Salderen stopt op 1 januari 2027. Wij controleren uw meterkast en sluiten de batterij aan op een eigen groep.",
+        "title": "Thuisbatterij Rotterdam: meterkast en eigen groep | AlleKlussers",
+        "desc": "Thuisbatterij in Rotterdam? Salderen stopt op 1 januari 2027. Wij maken uw meterkast klaar: eigen groep, aardlekbeveiliging en bekabeling naar de batterij.",
         "service": "Thuisbatterij aansluiten",
         "char": "laadie",
         "say": "“Zonnestroom bewaren? Ik sluit hem aan.”",
         "eyebrow": "Thuisbatterij en meterkast",
         "h1": "Thuisbatterij aansluiten in <em>Rotterdam.</em>",
-        "lede": "Op 1 januari 2027 stopt de salderingsregeling. Met een thuisbatterij gebruikt u meer van uw eigen zonnestroom. Wij zorgen dat uw meterkast er klaar voor is en sluiten de batterij veilig aan.",
+        "lede": "Op 1 januari 2027 stopt de salderingsregeling. Met een thuisbatterij gebruikt u meer van uw eigen zonnestroom. Wij zorgen dat uw meterkast er klaar voor is: een eigen groep, de juiste beveiliging en de bekabeling naar de plek van de batterij.",
         "body": """
 <h2>Waarom nu <em>een thuisbatterij?</em></h2>
 <p>Tot en met 31 december 2026 mag u de stroom die uw zonnepanelen terugleveren nog wegstrepen tegen de stroom die u van het net gebruikt. Vanaf 1 januari 2027 kan dat niet meer. U krijgt dan alleen een terugleververgoeding, en die is meestal lager dan wat u voor stroom betaalt. Zonnestroom die u zelf gebruikt, wordt dus meer waard.</p>
@@ -540,7 +540,7 @@ PAGES = [
 <h2>Stekkerbatterij of <em>vaste batterij?</em></h2>
 <ul class="checks">
   <li>{check}<span><strong>Stekkerbatterij:</strong> steekt u zelf in een stopcontact. Er is geen installateur nodig, maar de capaciteit is beperkt. Veiliger is een <a href="/vrije-groep-stekkerbatterij-rotterdam/">vrije groep voor uw stekkerbatterij</a>; die leggen wij aan.</span></li>
-  <li>{check}<span><strong>Vaste thuisbatterij:</strong> meer capaciteit, maar die moet vakkundig worden aangesloten op een eigen groep in de meterkast. Daar komen wij in beeld.</span></li>
+  <li>{check}<span><strong>Vaste thuisbatterij:</strong> meer capaciteit, maar die hoort op een eigen groep in de meterkast. Die groep en de bekabeling leggen wij aan; de batterij en omvormer zelf worden ingesteld door de leverancier of zijn installateur.</span></li>
 </ul>
 
 <h2>Wat wij <em>doen.</em></h2>
@@ -548,12 +548,12 @@ PAGES = [
   <li>{check}<span><strong>Meterkast controleren:</strong> heeft uw groepenkast ruimte voor een extra groep, en is uw aansluiting zwaar genoeg?</span></li>
   <li>{check}<span><strong>Groepenkast aanpassen of uitbreiden</strong> als dat nodig is, met de juiste aardlekbeveiliging.</span></li>
   <li>{check}<span><strong>Eigen groep en bekabeling</strong> van de meterkast naar de plek van de batterij.</span></li>
-  <li>{check}<span><strong>Aansluiten en testen,</strong> in overleg met de leverancier van uw batterij of omvormer.</span></li>
+  <li>{check}<span><strong>Afstemmen met uw leverancier,</strong> zodat de groep, de beveiliging en de kabel passen bij de batterij en omvormer die u kiest.</span></li>
 </ul>
 
 <div class="note-box"><p><strong>Druk richting 2027.</strong> Veel mensen willen hun batterij vóór 1 januari 2027 regelen. Plan daarom op tijd, dan voorkomt u wachttijden.</p></div>
 
-<p>Moet uw groepenkast eerst worden vervangen of uitgebreid? Lees meer over <a href="/groepenkast-vervangen-rotterdam/">groepenkast vervangen in Rotterdam</a>.</p>
+<p>Moet uw groepenkast eerst worden vervangen of uitgebreid? Lees meer over <a href="/groepenkast-vervangen-rotterdam/">groepenkast vervangen in Rotterdam</a>. Twijfelt u nog of een batterij loont? Lees eerst <a href="/salderen-stopt-2027/">wat het einde van salderen betekent</a>.</p>
 """,
         "faq": [
             ("Heb ik na 2027 een thuisbatterij nodig?",
@@ -563,9 +563,9 @@ PAGES = [
             ("Is mijn meterkast geschikt voor een vaste thuisbatterij?",
              "Dat controleren we eerst. Vaak is een extra groep genoeg; soms moet de groepenkast worden uitgebreid of vervangen. Dat hoort u vooraf van ons, met een prijs."),
             ("Moet ik een thuisbatterij ergens aanmelden?",
-             "Een vaste thuisbatterij die op het net is aangesloten, meldt u aan via energieleveren.nl, net als zonnepanelen. Wij helpen u daarbij."),
-            ("Leveren jullie ook de batterij zelf?",
-             "Wij richten ons op de elektrische aansluiting en de meterkast. Heeft u nog geen batterij, dan denken we graag mee over wat bij uw installatie past."),
+             "Ja. Een thuisbatterij registreert u via energieleveren.nl, net als zonnepanelen. Volgens RVO geldt die registratieplicht voor batterijsystemen van type A."),
+            ("Leveren of installeren jullie ook de batterij zelf?",
+             "Nee. Wij richten ons op de meterkast: een eigen groep, de juiste beveiliging en de bekabeling naar de plek van de batterij. De batterij en omvormer worden geleverd en ingesteld door de leverancier of zijn installateur. Wij stemmen met hen af."),
         ],
     },
     # ------------------------------------------------------- VRIJE GROEP
