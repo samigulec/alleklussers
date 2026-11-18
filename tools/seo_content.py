@@ -1700,3 +1700,43 @@ _alb["title"] = "Elektricien Rhoon, Poortugaal, Portland | AlleKlussers"
 _alb["lede"] = "Vanuit Rotterdam-Zuid zijn we snel in Rhoon, Poortugaal en Portland. Voor storingen, groepenkasten, verlichting, laadpalen en alles wat met elektra te maken heeft."
 _alb["faq"] = [q for q in _alb["faq"] if q[0] != "Komen jullie ook in Albrandswaard?"]
 CITY_PAGES.append(_alb)
+
+
+# Hoogvliet (Rotterdam): district on the Oude Maas, grew in the 1950s-60s.
+_hv = _city("elektricien-hoogvliet", "Hoogvliet", "vonk", "“Hoogvliet? Via de A15 zijn we er zo.”",
+          "", "",
+          "We werken in heel Hoogvliet: in het Middengebied rond de Binnenban en de oude Dorpskerk, in Oudeland, Nieuw Engeland, Zalmplaat, Meeuwenplaat, Westpunt, Boomgaardshoek en Tussenwater, en op bedrijventerrein Gadering. Vanuit Rotterdam-Zuid zijn we er via de A15 snel, en ook in Pernis, Poortugaal en Rhoon komen we graag.",
+          [("Komen jullie in heel Hoogvliet?",
+            "Ja. Van Oudeland en Nieuw Engeland tot Zalmplaat, Meeuwenplaat, Boomgaardshoek en Tussenwater, en ook in Pernis en Poortugaal."),
+           ("Mijn flat in Zalmplaat heeft een oude groepenkast. Moet die eruit?",
+            "Niet altijd. In woningen van voor 1975 zit vaak geen aardlekschakelaar, tenzij de kast later is vernieuwd. Soms is uitbreiden genoeg, soms is vervangen verstandiger. Stuur een foto van uw meterkast via WhatsApp, dan krijgt u advies en een prijs."),
+           ("Kan ik inductie koken in mijn woning in Hoogvliet?",
+            "Meestal wel. De meeste inductiekookplaten hebben een kookgroep met perilex nodig; die kan vaak gewoon op een 1-fase aansluiting. We kijken eerst of er ruimte is in de groepenkast."),
+           ("Mag ik in Hoogvliet mijn auto laden met een kabel over de stoep?",
+            "Nee. Hoogvliet hoort bij de gemeente Rotterdam, en Rotterdam staat geen laadkabel over of boven de stoep toe, ook niet afgedekt. Laad op eigen terrein of bij een openbare laadpaal."),
+           ("Ik huur mijn woning. Mag ik jullie inschakelen?",
+            "Voor kleine dingen binnen uw woning, zoals een lamp of een extra stopcontact, meestal wel. De groepenkast, de bedrading en de meterkast zijn van de verhuurder; meld problemen daarmee eerst bij uw verhuurder of woningcorporatie."),
+           ("Werken jullie ook voor bedrijven op Gadering?",
+            "Ja. Voor bedrijfsruimtes verhelpen we storingen, plaatsen we verlichting en leggen we extra groepen aan.")],
+          mix="Hoogvliet was lang een klein dijkdorp. In de jaren vijftig en zestig groeide het enorm, toen veel mensen kwamen wonen die in de petrochemische industrie werkten. Een groot deel van de woningen komt uit die periode; daar zit vaak een groepenkast die nooit is aangepast aan inductie, een droger of een warmtepomp. In Boomgaardshoek uit de jaren tachtig, het vernieuwde Nieuw Engeland en de jongste wijk Tussenwater is de installatie nieuwer.",
+          desc="Elektricien in Hoogvliet: Oudeland, Zalmplaat, Meeuwenplaat, Boomgaardshoek en Tussenwater. Groepenkast, storing, inductie, laadpaal. Reactie binnen 24 uur.",
+          extra="""
+<h2>Elektra per wijk <em>in Hoogvliet.</em></h2>
+<p>Hoogvliet hoort sinds 1934 bij Rotterdam en telt ruim 36.000 inwoners. Van het oude dorp is na de groei in de jaren vijftig en zestig weinig over; alleen rond de Dorpskerk staan nog enkele oorspronkelijke gebouwen.</p>
+<ul class="checks">
+  <li>{check}<span><strong>Middengebied en Oudeland.</strong> Rond winkelcentrum de Binnenban, metrostation Hoogvliet en de Wilhelm Tellplaats staan veel woningen uit de groeijaren. Bij een nieuwe keuken of verbouwing is <a href="/groepenkast-vervangen-rotterdam/">uitbreiden of vervangen van de groepenkast</a> vaak de eerste stap.</span></li>
+  <li>{check}<span><strong>Zalmplaat en Meeuwenplaat.</strong> Wijken met hoog- en laagbouw; Meeuwenplaat is grootschalig gemoderniseerd. In flats is de meterkast vaak klein. Voor een <a href="/inductiekookplaat-aansluiten-rotterdam/">inductiekookplaat</a>, droger of vaatwasser is dan een <a href="/groep-bijplaatsen-rotterdam/">extra groep</a> nodig.</span></li>
+  <li>{check}<span><strong>Nieuw Engeland.</strong> De eerste nieuwbouwwijk, uit de jaren dertig en kort na 1945, eind jaren tachtig grotendeels vervangen door nieuwe woningen. Vragen gaan hier vaker over extra stopcontacten, verlichting of een groep voor de droger.</span></li>
+  <li>{check}<span><strong>Boomgaardshoek.</strong> Een typische jaren-80-wijk met woonerven en veel groen. Hier gaat het vaak om <a href="/buitenverlichting-tuinstopcontact-rotterdam/">buitenverlichting en een tuinstopcontact</a>, een laadpaal op eigen terrein of een <a href="/vrije-groep-stekkerbatterij-rotterdam/">vrije groep voor een stekkerbatterij</a>.</span></li>
+  <li>{check}<span><strong>Tussenwater en Westpunt.</strong> Tussenwater is de jongste wijk van Hoogvliet; Westpunt ligt aan de Oude Maas bij het Ruigeplaatbos. In nieuwere woningen is de installatie modern; we helpen met <a href="/lampen-ophangen-rotterdam/">verlichting</a>, extra stopcontacten en storingen.</span></li>
+</ul>
+<div class="note-box"><p><strong>Bron:</strong> Wikipedia over <a href="https://nl.wikipedia.org/wiki/Hoogvliet_(stadsdeel)" target="_blank" rel="noopener noreferrer">Hoogvliet</a>.</p></div>
+
+<h2>Laden <em>in Hoogvliet.</em></h2>
+<p>Hoogvliet hoort bij Rotterdam, dus de Rotterdamse regels gelden: een laadkabel mag niet over of boven de stoep, ook niet afgedekt. Heeft u een oprit, carport of garage, dan plaatsen we daar een <a href="/laadpaal-installeren-rotterdam/">laadpaal</a> op een eigen groep, en kijken we eerst of uw meterkast en aansluiting het aankunnen. Zonder eigen terrein laadt u bij een openbare laadpaal.</p>
+
+<h2>Huur, flat <em>of VvE?</em></h2>
+<p>Werk binnen uw eigen woning, zoals een extra stopcontact of lamp, kunt u meestal zelf laten doen. Voor de groepenkast, de bedrading of gemeenschappelijke delen zoals de verlichting in het trappenhuis beslist de verhuurder of de VvE. Voor hen hebben we een <a href="/elektricien-verhuurders-vve-rotterdam/">aparte pagina</a>.</p>
+""")
+_hv["faq"] = [q for q in _hv["faq"] if q[0] != "Komen jullie ook in Hoogvliet?"]
+CITY_PAGES.insert(2, _hv)
