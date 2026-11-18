@@ -1296,9 +1296,45 @@ CITY_PAGES = [
 """),
     _city("elektricien-ridderkerk", "Ridderkerk", "lampje", "“Ridderkerk? Ik breng het licht.”",
           "Bolnes, Slikkerveer en het centrum", "Drievliet en Het Zand",
-          "In Ridderkerk komen we in alle kernen: Bolnes, Slikkerveer, Rijsoord, Drievliet, Het Zand en het centrum. Ridderkerk ligt direct naast Rotterdam-Zuid, dus we zijn er snel bij een storing.",
+          "In Ridderkerk komen we in alle kernen: Bolnes, Slikkerveer, Rijsoord, het centrum, Oost, West en Drievliet/Het Zand, en ook op bedrijvenpark Donkersloot. Ridderkerk ligt direct naast Rotterdam-Zuid, dus we zijn er snel bij een storing.",
           [("Rekenen jullie extra voor Ridderkerk?",
-            "U krijgt vooraf één duidelijke prijs voor de klus, zodat u niet achteraf wordt verrast.")]),
+            "U krijgt vooraf één duidelijke prijs voor de klus, zodat u niet achteraf wordt verrast."),
+           ("Kan ik in Ridderkerk een openbare laadpaal aanvragen?",
+            "Meestal niet meer. Sinds 2026 plaatst de gemeente openbare laadpalen op plekken waar de gegevens laten zien dat ze het meest nodig zijn. Een aanvraag kan alleen nog als u een eigen gehandicaptenparkeerplaats heeft. De gemeente verwacht medio 2027 nieuwe laadpalen te plaatsen."),
+           ("Mag ik laden met een kabel over de stoep?",
+            "Nee. In Ridderkerk mag u alleen vanuit uw woning laden als de auto op eigen terrein staat. Een kabel over de stoep mag niet, ook niet met een kabelgoot, mat of arm. De proef met een verlengd private aansluiting is afgerond; de gemeente werkt aan nieuw beleid."),
+           ("Heb ik een vergunning nodig voor een laadpaal op mijn oprit?",
+            "Nee, volgens de gemeente is voor een laadpaal op eigen terrein geen vergunning nodig. Huurt u, dan heeft u wel toestemming van de verhuurder nodig. Wij sluiten de laadpaal aan op een eigen groep in uw meterkast."),
+           ("Ik heb een plek in een parkeergarage. Hoe kan ik laden?",
+            "Dan gaat u in gesprek met uw VvE, want de garage is gemeenschappelijk. Een VvE kan subsidie krijgen voor onafhankelijk advies over laden. Wij denken graag mee over de aansluiting en de capaciteit van de installatie."),
+           ("Mijn groepenkast in Bolnes of Slikkerveer is oud. Moet hij eruit?",
+            "Niet altijd. Soms is uitbreiden genoeg, bijvoorbeeld met een extra groep of een aardlekschakelaar erbij. Zitten er nog draaizekeringen in of is er geen aardlekschakelaar, dan is vervangen vaak verstandiger. Stuur een foto van de meterkast, dan krijgt u advies en een prijs.")],
+          mix="Ridderkerk bestaat uit oude dijkdorpen en nieuwere wijken. In de oudere straten van Bolnes, Slikkerveer, Rijsoord en het oude centrum komen we vaker een groepenkast met weinig groepen tegen. In Drievliet/Het Zand, de jongste uitbreiding, is de installatie nieuwer en gaan vragen vaker over een laadpaal, extra groepen of buitenverlichting.",
+          desc="Elektricien in Ridderkerk: Bolnes, Slikkerveer, Rijsoord, centrum en Drievliet/Het Zand. Groepenkast, storing, laadpaal. Reactie binnen 24 uur.",
+          extra="""
+<h2>Elektra per kern <em>in Ridderkerk.</em></h2>
+<p>Ridderkerk is gegroeid uit een paar dorpen langs de rivieren. Elke kern heeft zijn eigen karakter, en dat ziet u vaak terug in de meterkast.</p>
+<ul class="checks">
+  <li>{check}<span><strong>Bolnes en Slikkerveer.</strong> De twee kernen aan de rivier, waar vroeger scheepswerven zaten. In oudere woningen kijken we eerst naar de <a href="/bedrading-vervangen-rotterdam/">bedrading</a> en of er een <a href="/aardlekschakelaar-rotterdam/">aardlekschakelaar</a> in de kast zit, voordat we iets bijplaatsen.</span></li>
+  <li>{check}<span><strong>Rijsoord.</strong> Het kleinste dorp van de gemeente, met molen De Kersenboom. Hier werken we vaak in vrijstaande en oudere woningen, waar een <a href="/groepenkast-vervangen-rotterdam/">nieuwe groepenkast</a> of een groep voor de schuur aan de orde is.</span></li>
+  <li>{check}<span><strong>Centrum, Oost en West.</strong> Het centrum heeft een oude kern en sinds 2007 een nieuw centrum met gemeentehuis en winkels. In de wijken eromheen gaat het vaak om <a href="/groep-bijplaatsen-rotterdam/">extra groepen</a> voor een nieuwe keuken of <a href="/inductiekookplaat-aansluiten-rotterdam/">inductie</a>.</span></li>
+  <li>{check}<span><strong>Drievliet/Het Zand.</strong> De jongste uitbreiding van Ridderkerk, met ruim 11.000 inwoners. Vragen gaan hier vaker over een laadpaal op eigen terrein, <a href="/buitenverlichting-tuinstopcontact-rotterdam/">buitenverlichting en een tuinstopcontact</a> of een <a href="/vrije-groep-stekkerbatterij-rotterdam/">vrije groep voor een stekkerbatterij</a>.</span></li>
+  <li>{check}<span><strong>Donkersloot en andere bedrijventerreinen.</strong> Voor bedrijfsruimtes verhelpen we storingen, plaatsen we verlichting en leggen we extra groepen aan.</span></li>
+</ul>
+<div class="note-box"><p><strong>Bron:</strong> Wikipedia over <a href="https://nl.wikipedia.org/wiki/Ridderkerk" target="_blank" rel="noopener noreferrer">Ridderkerk</a>.</p></div>
+
+<h2>Laadpaal in Ridderkerk: <em>wat mag wel?</em></h2>
+<ul class="checks">
+  <li>{check}<span><strong>Laden op eigen terrein.</strong> Dat mag, en voor een laadpaal op uw eigen oprit is geen vergunning nodig. Huurt u, vraag dan eerst toestemming aan de verhuurder. Wij plaatsen de <a href="/laadpaal-installeren-rotterdam/">laadpaal</a> op een eigen groep en kijken eerst of uw meterkast en aansluiting het aankunnen.</span></li>
+  <li>{check}<span><strong>Geen kabel over de stoep.</strong> Ook niet met een kabelgoot, mat of arm over het trottoir. De proef met een verlengd private aansluiting is afgerond; de gemeente werkt aan nieuw beleid.</span></li>
+  <li>{check}<span><strong>Openbare laadpalen op basis van gegevens.</strong> Sinds 2026 kiest de gemeente zelf de plekken. Een aanvraag kan alleen nog met een eigen gehandicaptenparkeerplaats. Staat er binnen 200 meter een laadpaal met genoeg capaciteit, dan komt er geen nieuwe bij.</span></li>
+  <li>{check}<span><strong>Parkeergarage van een VvE?</strong> Dan regelt de VvE de laadoplossing. Voor onafhankelijk advies kan een VvE subsidie aanvragen bij RVO.</span></li>
+</ul>
+<div class="note-box"><p><strong>Bronnen:</strong> gemeente Ridderkerk over <a href="https://www.ridderkerk.nl/direct-regelen/wonen-leefomgeving-verbouwen/verkeer-en-vervoer/laadpalen-elektrische-autos/" target="_blank" rel="noopener noreferrer">laadpalen voor elektrische auto's</a> en de <a href="https://www.ridderkerk.nl/direct-regelen/wonen-leefomgeving-verbouwen/duurzaamheid/duurzaam/verlengd-private-aansluiting/" target="_blank" rel="noopener noreferrer">verlengd private aansluiting</a>.</p></div>
+
+<h2>Huur <em>of VvE?</em></h2>
+<p>Huurt u, dan kunt u werk binnen uw eigen woning, zoals een extra stopcontact of lamp, meestal zelf laten doen. Voor de groepenkast, de bedrading of een nieuwe groep overlegt u eerst met uw verhuurder. In een appartementengebouw beslist de VvE over gemeenschappelijke delen. Voor verhuurders en VvE's hebben we een <a href="/elektricien-verhuurders-vve-rotterdam/">aparte pagina</a>.</p>
+"""),
 ]
 
 
