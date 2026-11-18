@@ -917,6 +917,15 @@ PAGES = [
 <p>Voor woningen is er in Nederland geen wettelijke keuringsplicht voor de elektra, ook niet bij verkoop of verhuur. Wel is de eigenaar verantwoordelijk voor een veilige installatie. Voor een vrijwillige veiligheidscontrole van bestaande woningen bestaat sinds 2005 de NTA 8025, ook bekend als de 'Woning-APK' (<a href="https://www.brandveilig.com/nieuws/nieuwe-woning-apk-nen-8025-op-komst-54008" target="_blank" rel="noopener noreferrer">brandveilig.com</a>).</p>
 <p>Voor bedrijfspanden ligt dat anders. Daar vraagt de verzekeraar of de Arbowet soms een SCIOS-inspectie, zoals Scope 8 of Scope 10, door een bedrijf dat volgens de SCIOS-regels keurt (<a href="https://www.unive.nl/zakelijk/blog/hoe-zit-het-ook-alweer-met-de-verplichte-elektrakeuringen" target="_blank" rel="noopener noreferrer">Univé</a>). De controle op deze pagina is bedoeld voor woningen en is geen SCIOS-inspectie. Punten die uit zo'n inspectie komen, kunnen we wel voor u herstellen.</p>
 
+<h2>NEN 1010-inspectie <em>of Woning-APK?</em></h2>
+<p>Wie zoekt naar een 'NEN 1010-inspectie' voor een woning, bedoelt meestal een controle of de elektra veilig is en volgens de norm is aangelegd. Twee normen spelen daarbij een rol:</p>
+<ul class="checks">
+  <li>{check}<span><strong>NEN 1010</strong> is de norm voor het aanleggen van elektrische installaties. Nieuwe woningen worden volgens NEN 1010 opgeleverd. Bij een kleine reparatie mag u volgens NEN voldoen aan de eisen die golden toen de woning werd gebouwd; bij een ingrijpende renovatie moet de installatie aan de eisen van nu voldoen.</span></li>
+  <li>{check}<span><strong>NEN 8025, de 'Woning-APK',</strong> is een korte, periodieke inspectie van de technische installaties in bestaande woningen: gas, water en elektra. De overheid heeft deze norm niet verplicht gesteld. Verhuurders, corporaties en VvE's gebruiken haar om aan te tonen dat ze zorgen voor de veiligheid van hun bewoners.</span></li>
+</ul>
+<p>Onze keuring op deze pagina is een praktische controle van alleen de elektra in uw woning, met metingen en een helder overzicht van wat goed is en wat aandacht nodig heeft. Werk dat we daarna uitvoeren, doen we volgens NEN 1010.</p>
+<div class="note-box"><p><strong>Bron:</strong> NEN, <a href="https://www.nen.nl/elektrotechniek/inspecteren/woning-apk" target="_blank" rel="noopener noreferrer">Woning-APK: inspecteren met NEN 8025</a>.</p></div>
+
 <h2>Bij aankoop: meer dan <em>de bouwkundige keuring.</em></h2>
 <p>Een bouwkundige keuring is een globale, visuele inspectie. De elektra wordt daarbij meestal alleen bekeken, niet doorgemeten. Dat blijkt ook uit een uitspraak van de Geschillencommissie: een koper ontdekte pas na de overdracht problemen met de elektra, en de bouwkundig keurder was daar niet verantwoordelijk voor (<a href="https://www.degeschillencommissie.nl/uitspraken/gebreken-pas-na-aankoop-ontdekt-maar-keurder-niet-verantwoordelijk/" target="_blank" rel="noopener noreferrer">degeschillencommissie.nl</a>).</p>
 <p>Bij een elektra keuring kijken we gericht naar de installatie: we openen de groepenkast, testen de aardlekbeveiliging en meten waar dat nodig is. Zo weet u of er een nieuwe groepenkast, extra groepen of nieuwe bedrading nodig is, en kunt u dat meenemen in uw beslissing en uw budget.</p>
@@ -963,6 +972,8 @@ PAGES = [
              "Voor sommige metingen gaat de stroom per groep even uit. Dat duurt kort, maar zet de computer uit en houd de vriezer dicht."),
             ("Krijg ik een verslag?",
              "Ja, u krijgt een overzicht van wat we hebben gecontroleerd, wat we hebben gevonden en wat we adviseren. Per punt staat erbij hoe dringend het is."),
+            ("Wat is het verschil tussen NEN 1010 en NEN 8025?",
+             "NEN 1010 is de norm voor het aanleggen van elektrische installaties. NEN 8025, de 'Woning-APK', is een korte periodieke inspectie van gas, water en elektra in bestaande woningen. Die is niet verplicht, maar verhuurders gebruiken haar om hun zorgplicht aan te tonen."),
             ("Doen jullie ook een SCIOS Scope 8 of Scope 10 inspectie?",
              "Een SCIOS-inspectie voor een bedrijfspand moet worden gedaan door een bedrijf dat volgens de SCIOS-regels keurt. De keuring op deze pagina is bedoeld voor woningen en is geen SCIOS-inspectie. Punten uit een SCIOS-rapport kunnen we wel voor u herstellen."),
             ("Doen jullie ook keuringen voor verhuurders?",
