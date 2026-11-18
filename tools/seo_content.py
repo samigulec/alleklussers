@@ -1529,3 +1529,50 @@ _pa["body"] = _pa["body"].replace(
     "AlleKlussers is een elektrotechnisch bedrijf uit Rotterdam. Prins Alexander ligt aan de oostkant van de stad; via de ring zijn we er vanaf Zuid snel.")
 _pa["faq"] = [q for q in _pa["faq"] if q[0] != "Komen jullie ook in Prins Alexander?"]
 CITY_PAGES.insert(1, _pa)
+
+
+# Albrandswaard (Rhoon, Poortugaal, Portland): people search the village
+# names, so the title leads with them.
+_alb = _city("elektricien-albrandswaard", "Albrandswaard", "lampje", "“Rhoon, Poortugaal of Portland? Wij komen.”",
+          "", "",
+          "Albrandswaard bestaat uit drie kernen: Rhoon, Poortugaal en Portland. We werken in alle drie, van de oude dijkbebouwing tot de nieuwbouw in Essendael en Portland. Vanuit Rotterdam-Zuid zijn we er via de A15 snel.",
+          [("Komen jullie in Rhoon, Poortugaal en Portland?",
+            "Ja. We werken in heel Albrandswaard, en ook in het naastgelegen Barendrecht en Hoogvliet."),
+           ("Kan ik in Albrandswaard een openbare laadpaal aanvragen?",
+            "Nee. Volgens de gemeente kunt u zelf geen openbare laadpaal meer aanvragen. Nieuwe laadpalen worden geplaatst op basis van verwachtingen en het gebruik van de bestaande palen. Heeft u een eigen oprit of garage, dan kunnen wij daar een laadpaal plaatsen."),
+           ("Mag ik laden met een kabel over de stoep of door een kabelgoot?",
+            "Nee. De gemeente Albrandswaard staat laden met een kabelgoot over de stoep niet toe. Laad op eigen terrein of bij een openbare laadpaal."),
+           ("Mijn huis in 't Ghijseland is uit de jaren zeventig. Is de groepenkast nog goed?",
+            "Vaak werkt hij nog, maar hij is ingericht op de apparaten van toen. In woningen van voor 1975 zit vaak geen aardlekschakelaar, tenzij de kast later is vernieuwd. Wilt u inductie, een droger of een laadpaal erbij, dan is er vaak een extra groep of een nieuwe kast nodig. Stuur een foto van uw meterkast."),
+           ("Ik woon in Portland of Essendael. Wat kunnen jullie voor mij doen?",
+            "In nieuwere woningen gaat het vaak om een laadpaal op eigen terrein, buitenverlichting, extra stopcontacten of een vrije groep voor een stekkerbatterij. We kijken eerst of er ruimte is in de groepenkast."),
+           ("Ik heb een plek in een parkeergarage. Hoe kan ik laden?",
+            "Dan gaat u in gesprek met uw VvE, want de garage is gemeenschappelijk. Een VvE kan subsidie krijgen voor onafhankelijk advies over laden. Wij denken graag mee over de aansluiting en de capaciteit van de installatie.")],
+          mix="Rhoon en Poortugaal waren tot halverwege de vorige eeuw dijkdorpen. Daarna kwamen er in fasen nieuwe wijken bij, van de jaren vijftig tot na 2000. In de oudere straten komen we vaker een groepenkast met weinig groepen tegen; in Portland en Essendael is de installatie nieuwer en gaan vragen vaker over laden, verlichting en extra groepen.",
+          desc="Elektricien in Albrandswaard: Rhoon, Poortugaal en Portland. Groepenkast, storing, inductie, laadpaal en verlichting. Reactie binnen 24 uur, prijs vooraf.",
+          extra="""
+<h2>Elektra per kern <em>in Albrandswaard.</em></h2>
+<p>De gemeente Albrandswaard ontstond in 1985 uit Rhoon en Poortugaal. Sinds 2000 is Portland de derde kern, als deel van de Vinex-locatie Midden-IJsselmonde, samen met Carnisselande in Barendrecht.</p>
+<ul class="checks">
+  <li>{check}<span><strong>Rhoon.</strong> Tot halverwege de twintigste eeuw een lang dijkdorp, daarna sterk uitgebreid: rond de L.G. Molenaarstraat in de jaren vijftig, Rhoon-Zuid in de jaren vijftig en zestig, 't Ghijseland in de jaren zeventig, de Huyters en Rhoon-Noord in de jaren tachtig, en Essendael aan het begin van deze eeuw. Hoe ouder de wijk, hoe vaker <a href="/groepenkast-vervangen-rotterdam/">uitbreiden of vervangen van de groepenkast</a> nodig is voor inductie of een droger.</span></li>
+  <li>{check}<span><strong>Poortugaal.</strong> Een oud dorp tussen de Rotterdamse havens en de Oude Maas, met wijken als Poortugaal-dorp, Valckestijn en Kasteeltuin. In oudere woningen kijken we eerst naar de <a href="/bedrading-vervangen-rotterdam/">bedrading</a> en of er een <a href="/aardlekschakelaar-rotterdam/">aardlekschakelaar</a> in de kast zit.</span></li>
+  <li>{check}<span><strong>Portland.</strong> De jongste kern, gebouwd vanaf 2000. Hier gaat het vaak om een <a href="/laadpaal-installeren-rotterdam/">laadpaal</a> op eigen terrein, <a href="/buitenverlichting-tuinstopcontact-rotterdam/">buitenverlichting en een tuinstopcontact</a> of een <a href="/vrije-groep-stekkerbatterij-rotterdam/">vrije groep voor een stekkerbatterij</a>.</span></li>
+</ul>
+<div class="note-box"><p><strong>Bronnen:</strong> Wikipedia over <a href="https://nl.wikipedia.org/wiki/Albrandswaard" target="_blank" rel="noopener noreferrer">Albrandswaard</a>, <a href="https://nl.wikipedia.org/wiki/Rhoon" target="_blank" rel="noopener noreferrer">Rhoon</a> en <a href="https://nl.wikipedia.org/wiki/Poortugaal" target="_blank" rel="noopener noreferrer">Poortugaal</a>.</p></div>
+
+<h2>Laadpaal in Albrandswaard: <em>wat mag wel?</em></h2>
+<ul class="checks">
+  <li>{check}<span><strong>Eigen terrein.</strong> Met een oprit, carport of garage kunt u een eigen laadpaal laten plaatsen en aansluiten op uw meterkast. Wij doen dat op een eigen groep en kijken eerst of uw aansluiting het aankan.</span></li>
+  <li>{check}<span><strong>Geen kabelgoot over de stoep.</strong> Laden met een kabel door een kabelgoot over de stoep staat de gemeente niet toe.</span></li>
+  <li>{check}<span><strong>Openbare laadpalen.</strong> Zelf aanvragen kan niet meer. De gemeente plaatst nieuwe palen op basis van verwachtingen en het gebruik van de bestaande palen; volgens de planning van de gemeente start de uitvoering van de nieuwe regionale concessie vanaf oktober 2026.</span></li>
+  <li>{check}<span><strong>Parkeergarage van een VvE?</strong> Dan regelt de VvE de laadoplossing. Voor onafhankelijk advies kan een VvE subsidie aanvragen bij RVO.</span></li>
+</ul>
+<div class="note-box"><p><strong>Bron:</strong> <a href="https://www.albrandswaard.nl/direct-regelen/wonen-leefomgeving-verbouwen/parkeren/laadpalen-elektrische-autos/" target="_blank" rel="noopener noreferrer">Laadpalen elektrische auto's</a>, gemeente Albrandswaard.</p></div>
+
+<h2>Huur <em>of VvE?</em></h2>
+<p>Huurt u, dan kunt u werk binnen uw eigen woning, zoals een extra stopcontact of lamp, meestal zelf laten doen. Voor de groepenkast, de bedrading of een nieuwe groep overlegt u eerst met uw verhuurder. In een appartementengebouw beslist de VvE over gemeenschappelijke delen. Voor verhuurders en VvE's hebben we een <a href="/elektricien-verhuurders-vve-rotterdam/">aparte pagina</a>.</p>
+""")
+_alb["title"] = "Elektricien Rhoon, Poortugaal, Portland | AlleKlussers"
+_alb["lede"] = "Vanuit Rotterdam-Zuid zijn we snel in Rhoon, Poortugaal en Portland. Voor storingen, groepenkasten, verlichting, laadpalen en alles wat met elektra te maken heeft."
+_alb["faq"] = [q for q in _alb["faq"] if q[0] != "Komen jullie ook in Albrandswaard?"]
+CITY_PAGES.append(_alb)
