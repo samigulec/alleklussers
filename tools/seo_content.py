@@ -841,7 +841,7 @@ PAGES = [
         "short": "Bedrading en aansluitingen",
         "sub": "Oude bedrading vervangen, aansluitingen voor de keuken.",
         "title": "Bedrading vervangen Rotterdam | Aansluitingen | AlleKlussers",
-        "desc": "Oude bedrading vervangen of nieuwe aansluitingen nodig in Rotterdam? Voor keuken, wasmachine en apparatuur. Verzekerde vakmensen, duidelijke prijs vooraf.",
+        "desc": "Oude bedrading vervangen in Rotterdam? Signalen, alles of een deel vervangen, nieuwe draden door bestaande buizen en aansluitingen voor de keuken. Prijs vooraf.",
         "service": "Bedrading vervangen en aansluitingen maken",
         "char": "stekkie",
         "say": "“Oude draden? Ik maak het weer veilig.”",
@@ -855,18 +855,37 @@ PAGES = [
   <li>{check}<span><strong>Stopcontacten zonder randaarde,</strong> waar een moderne stekker niet goed in past.</span></li>
   <li>{check}<span><strong>Verkleurde of warme stopcontacten en schakelaars.</strong></span></li>
   <li>{check}<span><strong>Draden met een stoffen omhulsel</strong> of een broos, gebarsten omhulsel.</span></li>
+  <li>{check}<span><strong>Andere draadkleuren dan nu gebruikelijk.</strong> Tegenwoordig is de fase bruin, de nul blauw, de aarde geel-groen en de schakeldraad zwart. Ziet u andere kleuren, dan is de installatie vaak oud. Ga er nooit van uit welke draad wat is; dat meten wij.</span></li>
   <li>{check}<span><strong>Groepen die vaak doorslaan</strong> of een brandlucht bij een stopcontact.</span></li>
 </ul>
+<div class="note-box"><p><strong>Ruikt u een brandlucht of is een stopcontact heet?</strong> Gebruik het niet meer en zet de groep in de meterkast uit. Bij rook of vuur belt u 112.</p></div>
 
-<h2>Wat wij <em>doen.</em></h2>
-<p>We controleren eerst de installatie en vertellen u eerlijk wat echt vervangen moet worden en wat nog goed is. Waar mogelijk trekken we nieuwe draden door de bestaande buizen; als er gefreesd moet worden, werken we dat netjes af.</p>
-<p>Gaat u een keuken plaatsen of verbouwen? Dan leggen we de aansluitingen aan voor oven, kookplaat, vaatwasser, koelkast en afzuigkap, ieder op de juiste groep.</p>
+<h2>Alles vervangen <em>of een deel?</em></h2>
+<p>Niet elke oude installatie hoeft er helemaal uit. We meten de installatie groep voor groep door en kijken naar de staat van de draden, de aarding en de groepenkast. Daarna hoort u eerlijk wat echt vervangen moet worden en wat nog goed is. Vaak is het verstandig om eerst de groepen aan te pakken waar zware apparaten op zitten, zoals de keuken en de wasmachine.</p>
+<p>Is de groepenkast zelf ook oud, bijvoorbeeld met draaizekeringen of zonder aardlekschakelaar? Dan combineren we het vervangen van de bedrading met een <a href="/groepenkast-vervangen-rotterdam/">nieuwe groepenkast</a>.</p>
+
+<h2>Hoe we <em>het aanpakken.</em></h2>
+<p>In de meeste woningen lopen de draden door buizen in de muren en plafonds. Elke kamer heeft een centraaldoos, meestal in het plafond, van waaruit de stroom naar de lampen, schakelaars en stopcontacten gaat. Waar het kan, trekken we de nieuwe draden door de bestaande buizen; dan hoeven de muren niet open. Waar dat niet lukt, frezen we een nieuwe sleuf of gebruiken we een nette goot op de muur. Dat bespreken we vooraf.</p>
+<p>Voor stopcontacten in een woning gebruiken we draad van 2,5 mm². Aftakkingen en verbindingen komen in een centraaldoos of lasdoos die bereikbaar blijft.</p>
+<div class="note-box"><p><strong>Bron:</strong> Elektramat kennisbank, <a href="https://www.elektramat.nl/kennisbank/elektriciteit-aanleggen" target="_blank" rel="noopener noreferrer">elektriciteitsleiding aanleggen</a>.</p></div>
+
+<h2>Nieuwe keuken <em>of nieuwe apparaten?</em></h2>
+<p>Gaat u een keuken plaatsen of verbouwen? Dan leggen we de aansluitingen aan voor oven, kookplaat, vaatwasser, koelkast en afzuigkap, ieder op de juiste groep. Een <a href="/inductiekookplaat-aansluiten-rotterdam/">inductiekookplaat</a>, droger, warmtepomp of <a href="/laadpaal-installeren-rotterdam/">laadpaal</a> vraagt om een eigen groep; oude bedrading is daar niet op gemaakt. Zie ook <a href="/groep-bijplaatsen-rotterdam/">een groep bijplaatsen</a>.</p>
+
+<h2>Huur, koop <em>of verkoop?</em></h2>
+<p>Huurt u, dan is de vaste elektrische installatie van de verhuurder. Meld oude of onveilige bedrading bij uw verhuurder of woningcorporatie. Koopt u een ouder huis, dan geeft een <a href="/elektra-keuring-rotterdam/">elektra keuring</a> vooraf inzicht in de staat van de bedrading. Verhuurders en VvE's kunnen ons ook rechtstreeks inschakelen; zie onze <a href="/elektricien-verhuurders-vve-rotterdam/">pagina voor verhuurders</a>.</p>
 """,
         "faq": [
             ("Moet in een oud huis alle bedrading vervangen worden?",
-             "Niet altijd. Na een controle weet u precies wat nodig is. Soms is vervangen van een deel genoeg."),
+             "Niet altijd. We meten de installatie groep voor groep door. Daarna weet u precies wat nodig is. Soms is vervangen van een deel genoeg."),
             ("Moeten de muren open?",
-             "Vaak kunnen we via de bestaande buizen nieuwe draden trekken. Als frezen nodig is, bespreken we dat vooraf en werken we het netjes af."),
+             "Vaak kunnen we via de bestaande buizen nieuwe draden trekken. Als frezen nodig is, bespreken we dat vooraf en werken we het netjes af. Een goot op de muur is ook mogelijk."),
+            ("Welke kleuren hebben elektriciteitsdraden tegenwoordig?",
+             "De fase is bruin, de nul blauw, de aarde geel-groen en de schakeldraad zwart. In oude installaties kunnen andere kleuren zitten. Ga er nooit vanuit welke draad wat is; laat het meten."),
+            ("Is bedrading met een stoffen omhulsel gevaarlijk?",
+             "Het omhulsel kan na veel jaren broos worden, waardoor draden bloot kunnen komen te liggen. Laat het controleren, zeker als er ook verkleurde stopcontacten zijn of groepen vaak doorslaan."),
+            ("Ik huur mijn woning. Wie betaalt nieuwe bedrading?",
+             "De vaste elektrische installatie is van de verhuurder. Meld het bij uw verhuurder of woningcorporatie. Werk dat u zelf heeft laten aanbrengen, onderhoudt u zelf."),
             ("Kunnen jullie de elektra voor mijn nieuwe keuken aanleggen?",
              "Ja. Stuur ons de keukentekening, dan zorgen we dat alle apparaten de juiste aansluiting en groep krijgen."),
         ],
