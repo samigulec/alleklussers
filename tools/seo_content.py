@@ -37,6 +37,7 @@ WA_TEXT = {
     "elektra-keuring-rotterdam": "Hallo AlleKlussers, ik wil mijn elektrische installatie laten keuren. Het is voor (aankoop, verhuur of eigen woning): ",
     "laadpaal-installeren-rotterdam": "Hallo AlleKlussers, ik wil graag een laadpaal laten installeren." + FOTO,
     "meterkast-verzwaren-rotterdam": "Hallo AlleKlussers, ik wil weten of ik mijn aansluiting moet laten verzwaren. Ik wil gaan gebruiken: ",
+    "krachtstroom-aansluiten-rotterdam": "Hallo AlleKlussers, ik wil graag krachtstroom laten aanleggen. Het is voor dit apparaat en deze plek: ",
     "elektricien-verhuurders-vve-rotterdam": "Hallo AlleKlussers, ik ben verhuurder of beheerder en zoek een vaste elektricien. Het gaat om: ",
 }
 
@@ -381,7 +382,7 @@ PAGES = [
 <ul class="checks">
   <li>{check}<span><strong>1-fase, tot 3.680 watt.</strong> Er zijn kleinere inductiekookplaten met een gewone stekker voor een geaard stopcontact. Ze zijn minder krachtig: u kunt bijvoorbeeld niet op alle zones tegelijk de boostfunctie gebruiken. Geef zo'n kookplaat een eigen groep; deelt hij een groep met de waterkoker of vaatwasser, dan slaat de groep door zodra die tegelijk aanstaan.</span></li>
   <li>{check}<span><strong>2-fase met perilex, tot 7.360 watt.</strong> Dit is de gewone aansluiting voor een inductiekookplaat. In de meterkast zit dan een kookgroep: twee gekoppelde groepen met één hendel. In de keuken zit een rond perilex-stopcontact met vijf gaatjes. De meeste kookplaten werken hierop, ook als ze vijf zones hebben: de kookplaat verdeelt het vermogen zelf.</span></li>
-  <li>{check}<span><strong>3-fase krachtstroom, circa 11.000 watt.</strong> Alleen nodig voor sommige grote kookplaten en fornuizen. Kan uw kookplaat ook op twee fasen, dan is dat meestal de eenvoudigste keuze.</span></li>
+  <li>{check}<span><strong>3-fase krachtstroom, circa 11.000 watt.</strong> Alleen nodig voor sommige grote kookplaten en fornuizen. Kan uw kookplaat ook op twee fasen, dan is dat meestal de eenvoudigste keuze. Meer over het verschil leest u bij <a href="/krachtstroom-aansluiten-rotterdam/">krachtstroom aansluiten</a>.</span></li>
 </ul>
 
 <h2>Zo herkent u wat er <em>nu in uw meterkast zit.</em></h2>
@@ -475,7 +476,7 @@ PAGES = [
 <h2>Wanneer 3-fase <em>wel verstandig is.</em></h2>
 <ul class="checks">
   <li>{check}<span><strong>U wilt snel laden met 11 kW.</strong> Dat kan alleen op drie fasen.</span></li>
-  <li>{check}<span><strong>Uw kookplaat, warmtepomp of ander apparaat</strong> is alleen in een 3-fase uitvoering te krijgen.</span></li>
+  <li>{check}<span><strong>Uw kookplaat, warmtepomp of ander apparaat</strong> is alleen in een 3-fase uitvoering te krijgen, of u wilt <a href="/krachtstroom-aansluiten-rotterdam/">krachtstroom</a> voor een machine of sauna.</span></li>
   <li>{check}<span><strong>Er draaien vaak meerdere zware apparaten tegelijk</strong> en terugschakelen is geen optie, bijvoorbeeld bij een groot gezin met twee elektrische auto's.</span></li>
   <li>{check}<span><strong>Uw groepenkast moet toch al vervangen worden.</strong> Dan is het slim om een kast te kiezen die klaar is voor 3-fase, ook als u nu nog niet verzwaart.</span></li>
 </ul>
@@ -517,6 +518,95 @@ PAGES = [
              "Overleg eerst met uw verhuurder. De aansluiting en de groepenkast horen bij de woning, dus voor een verzwaring of nieuwe kast heeft u in de regel toestemming nodig."),
             ("Wat kost het om de meterkast klaar te maken?",
              "Dat hangt af van wat er nu zit. Stuur ons foto's van uw meterkast, dan krijgt u vooraf een duidelijke prijs voor ons deel van het werk."),
+        ],
+    },
+    # ----------------------------------------------------- KRACHTSTROOM
+    {
+        "slug": "krachtstroom-aansluiten-rotterdam",
+        "short": "Krachtstroom aansluiten",
+        "sub": "400V-groep en krachtstroomstopcontact voor garage, werkplaats of sauna.",
+        "title": "Krachtstroom aansluiten Rotterdam | 400V-groep | AlleKlussers",
+        "desc": "Krachtstroom aansluiten in Rotterdam: een 400V-groep en krachtstroomstopcontact voor garage, werkplaats of sauna. Eerst kijken of het nodig is, prijs vooraf.",
+        "service": "Krachtstroom aanleggen: krachtgroep en krachtstroomstopcontact",
+        "char": "vonk",
+        "say": "“Drie fasen voor de zware jongens.”",
+        "eyebrow": "Krachtstroom (400 volt)",
+        "h1": "Krachtstroom aansluiten in <em>Rotterdam.</em>",
+        "lede": "Een draaibank, compressor of saunakachel die 400 volt vraagt? Dan heeft u een krachtstroomgroep met een eigen stopcontact nodig. Wij kijken eerst of uw meterkast er klaar voor is, en of u krachtstroom echt nodig heeft.",
+        "body": """
+<h2>Wat is <em>krachtstroom?</em></h2>
+<p>Krachtstroom, ook wel draaistroom genoemd, is stroom die via drie fasen naar een apparaat gaat. Tussen twee fasen staat 400 volt, terwijl een gewoon stopcontact 230 volt geeft. Een apparaat op krachtstroom kan daardoor veel meer vermogen opnemen zonder dat één groep overbelast raakt.</p>
+<p>Ter vergelijking: een gewone groep van 16 ampère levert ongeveer 3.680 watt. Een krachtstroomgroep van 3x16A levert ongeveer 11 kW, verdeeld over de drie fasen.</p>
+
+<h2>Heeft u krachtstroom <em>echt nodig?</em></h2>
+<p>In een gewone woning is krachtstroom bijna nooit nodig. Veel mensen die "krachtstroom" zoeken, bedoelen eigenlijk iets anders:</p>
+<ul class="checks">
+  <li>{check}<span><strong>Inductiekookplaat:</strong> die sluiten we in een woning normaal aan op een kookgroep met perilex, op één of twee fasen. Krachtstroom is daar meestal niet voor nodig. Zie <a href="/inductiekookplaat-aansluiten-rotterdam/">inductiekookplaat aansluiten</a>.</span></li>
+  <li>{check}<span><strong>Laadpaal:</strong> laden over drie fasen gaat sneller, tot 11 kW, maar daarvoor komt er een eigen 3-fase groep voor de laadpaal, geen krachtstroomstopcontact. Zie <a href="/laadpaal-installeren-rotterdam/">laadpaal installeren</a>.</span></li>
+  <li>{check}<span><strong>Warmtepomp:</strong> dat is vooral een vraag of uw aansluiting genoeg capaciteit heeft. Lees daarvoor <a href="/meterkast-verzwaren-rotterdam/">meterkast verzwaren</a>.</span></li>
+</ul>
+<p>Krachtstroom is wel nodig voor apparaten die zelf 400 volt vragen. Op het typeplaatje of in de handleiding staat dan bijvoorbeeld 400 V of 3N~. Voorbeelden:</p>
+<ul class="checks">
+  <li>{check}<span><strong>Werkplaats in de garage of schuur:</strong> een draaibank, zaagtafel of andere zware machine.</span></li>
+  <li>{check}<span><strong>Compressor</strong> voor een hobbywerkplaats of klein bedrijf.</span></li>
+  <li>{check}<span><strong>Sauna</strong> met een zware kachel die de fabrikant op 400 volt laat aansluiten.</span></li>
+  <li>{check}<span><strong>Beregeningspomp</strong> of professionele keukenapparatuur.</span></li>
+</ul>
+<p>Twijfelt u? Stuur ons een foto van het typeplaatje van het apparaat. Dan zeggen we u eerlijk of het op een gewone groep kan, op een kookgroep, of dat er echt krachtstroom moet komen.</p>
+
+<h2>Heeft u al <em>3-fase in de meterkast?</em></h2>
+<p>Krachtstroom kan alleen als uw woning of pand een 3-fase aansluiting heeft. Dat ziet u zo:</p>
+<ul class="checks">
+  <li>{check}<span><strong>1-fase:</strong> één hoofdzekering van de netbeheerder in de meterkast en twee draden op de kWh-meter. Op de jaarafrekening staat bijvoorbeeld 1x25A of 1x35A.</span></li>
+  <li>{check}<span><strong>3-fase:</strong> drie hoofdzekeringen en vier draden op de meter. Op de jaarafrekening staat bijvoorbeeld 3x25A.</span></li>
+</ul>
+<p>Heeft u al 3-fase, dan kunnen wij de krachtstroomgroep gewoon aanleggen. Heeft u 1-fase, dan moet de netbeheerder de aansluiting eerst verzwaren; in Rotterdam is dat meestal Stedin. Omdat het stroomnet in de regio op veel plekken vol is, kan dat lang duren. Lees eerst <a href="/meterkast-verzwaren-rotterdam/">meterkast verzwaren</a> voordat u iets aanvraagt.</p>
+
+<h2>3-fase aansluiting of krachtstroomgroep: <em>het verschil.</em></h2>
+<p>Die twee worden vaak door elkaar gehaald. Een <strong>3-fase aansluiting</strong> is wat de netbeheerder levert: drie fasen tot aan uw meter. Daarmee kunt u het verbruik in huis over drie fasen verdelen, en het is de voorwaarde voor krachtstroom. Een <strong>krachtstroomgroep</strong> is wat de installateur daarachter aanlegt: één eigen groep met een eigen stopcontact of vaste aansluiting voor één apparaat dat 400 volt vraagt. Veel woningen met 3-fase hebben dus nog geen krachtstroomstopcontact.</p>
+
+<h2>Wat wij <em>aanleggen.</em></h2>
+<ul class="checks">
+  <li>{check}<span><strong>Een krachtgroep in de groepenkast:</strong> een 3-polige installatieautomaat met nul, beveiligd met een aardlekschakelaar die alle drie de fasen bewaakt, of een 4-polige aardlekautomaat. Zit de kast vol of is hij verouderd, dan <a href="/groepenkast-vervangen-rotterdam/">breiden we hem uit of vervangen we hem</a>.</span></li>
+  <li>{check}<span><strong>Een eigen kabel naar de plek,</strong> met aders voor de drie fasen, de nul en de aarde. De dikte kiezen we op het vermogen van het apparaat en de lengte van de kabel.</span></li>
+  <li>{check}<span><strong>Een krachtstroomstopcontact:</strong> een rond CEE-stopcontact met vier of vijf pennen, meestal rood voor 400 volt, in 16 of 32 ampère. In een garage, schuur of buiten kiezen we een spatwaterdichte uitvoering. Schrijft de fabrikant een vaste aansluiting voor, dan sluiten we het apparaat direct aan.</span></li>
+  <li>{check}<span><strong>De juiste draairichting.</strong> Bij een draaistroommotor maakt de volgorde van de fasen uit: verkeerd aangesloten draait de motor de verkeerde kant op. Wij controleren de fasevolgorde voordat u de machine gebruikt.</span></li>
+</ul>
+
+<div class="note-box"><p><strong>Een perilex-stopcontact is geen krachtstroom.</strong> Perilex, het ronde stopcontact met vijf gaatjes in de keuken, is een stekkervorm. Hoeveel fasen erop zitten, hangt af van hoe de groep is aangelegd; in een woning is het bijna altijd een kookgroep op twee fasen. Sluit een machine die 400 volt vraagt dus niet aan op een perilex-aansluiting of via een verloopstekker.</p></div>
+
+<h2>Krachtstroom in de schuur <em>of garage.</em></h2>
+<p>In Rotterdam en omgeving staat de werkplaats vaak in een schuur achter in de tuin, of in een garage naast of onder de woning. Dan loopt de kabel van de meterkast naar buiten, en vaak onder de grond door de tuin. Dat doen we net zo zorgvuldig als bij een <a href="/buitenverlichting-tuinstopcontact-rotterdam/">tuinstopcontact</a>: diep genoeg, in een beschermbuis en goed afgedicht waar de kabel de muur in gaat. In de schuur komt dan het krachtstroomstopcontact, en vaak ook meteen een gewone groep voor licht en een paar stopcontacten.</p>
+<p>Huurt u een garagebox, een bedrijfsunit of uw woning, dan is de aansluiting meestal niet van u. Vraag dan eerst toestemming aan de eigenaar; wij kunnen het werk daarna met de eigenaar afstemmen.</p>
+
+<h2>Zo <em>pakken we het aan.</em></h2>
+<ol class="steps-list">
+  <li><strong>Stuur foto's via WhatsApp</strong> van uw open meterkast en het typeplaatje van het apparaat, en vertel waar het komt te staan.</li>
+  <li><strong>Wij beoordelen</strong> of u krachtstroom echt nodig heeft, of uw aansluiting 3-fase is en of er ruimte in de groepenkast is. U krijgt een duidelijke prijs vooraf.</li>
+  <li><strong>Wij leggen de krachtgroep aan,</strong> trekken de kabel naar de plek en monteren het krachtstroomstopcontact of de vaste aansluiting.</li>
+  <li><strong>We testen de groep, de aardlekbeveiliging en de draairichting,</strong> en zetten op de groepenkast waar de nieuwe groep voor is.</li>
+</ol>
+<p>Alles volgens NEN 1010, door verzekerde vakmensen. Zelf krachtstroom aanleggen raden we af: met 400 volt tussen de fasen is een fout veel gevaarlijker dan bij een gewoon stopcontact.</p>
+
+<div class="note-box"><p><strong>Bronnen:</strong> Selectra over <a href="https://selectra.nl/energie/energiemeter/krachtstroom" target="_blank" rel="noopener noreferrer">krachtstroom: wat het is en wanneer u het nodig heeft</a> (met informatie van netbeheerder Enexis), Elektramat kennisbank over <a href="https://www.elektramat.nl/kennisbank/aanpassen-groepenkast" target="_blank" rel="noopener noreferrer">het aanpassen van de groepenkast</a>.</p></div>
+""",
+        "faq": [
+            ("Wat is het verschil tussen krachtstroom en 3-fase?",
+             "Een 3-fase aansluiting is wat de netbeheerder levert: drie fasen tot aan uw meter. Krachtstroom is het gebruik daarvan: een eigen groep en stopcontact voor een apparaat dat 400 volt vraagt. Zonder 3-fase aansluiting kan er geen krachtstroom komen."),
+            ("Heb ik krachtstroom nodig voor een inductiekookplaat?",
+             "Meestal niet. Een inductiekookplaat sluiten we in een woning normaal aan op een kookgroep met perilex, op één of twee fasen. Alleen sommige grote kookplaten en fornuizen vragen echt drie fasen."),
+            ("Kan ik krachtstroom krijgen met een 1-fase aansluiting?",
+             "Nee. Daarvoor moet de netbeheerder uw aansluiting eerst verzwaren naar 3-fase. Wij rekenen vooraf met u uit of dat nodig is, want in de regio Rotterdam kan een verzwaring lang duren."),
+            ("Hoeveel vermogen levert een krachtstroomgroep?",
+             "Een krachtstroomgroep van 3x16A levert ongeveer 11 kW, verdeeld over drie fasen. Voor zwaardere apparaten is er 32 ampère, met een dikkere kabel. Welke u nodig heeft, staat op het typeplaatje of in de handleiding van het apparaat."),
+            ("Is een perilex-stopcontact krachtstroom?",
+             "Niet vanzelf. Perilex is een stekkervorm; hoeveel fasen erop zitten hangt af van de groep erachter. In een woning is het bijna altijd een kookgroep op twee fasen. Sluit er geen 400V-machine op aan."),
+            ("Mijn machine draait de verkeerde kant op. Wat nu?",
+             "Dan is de fasevolgorde verkeerd aangesloten. Zet de machine uit en gebruik hem niet meer tot een installateur de fasen heeft omgezet. Wij controleren de draairichting altijd bij oplevering."),
+            ("Kunnen jullie krachtstroom naar mijn schuur aanleggen?",
+             "Ja. We trekken een eigen kabel van de meterkast naar de schuur, onder de grond in een beschermbuis, en plaatsen daar een krachtstroomstopcontact. Vaak komt er meteen een gewone groep bij voor licht en stopcontacten."),
+            ("Wat kost krachtstroom aanleggen?",
+             "Dat hangt af van uw aansluiting, de ruimte in de groepenkast en de afstand naar de plek. Stuur foto's van de meterkast en het typeplaatje via WhatsApp, dan krijgt u vooraf een duidelijke prijs."),
         ],
     },
     # -------------------------------------------------------- THUISBATTERIJ
@@ -1161,7 +1251,8 @@ def _city(slug, name, char, say, wijken_oud, wijken_nieuw, local, faq_extra,
   <li>{{check}}<span><a href="/storing-elektra-rotterdam/">Storing verhelpen</a>: stroomuitval of een aardlekschakelaar die steeds doorslaat.</span></li>
   <li>{{check}}<span><a href="/groepenkast-vervangen-rotterdam/">Groepenkast vervangen of uitbreiden</a>, bijvoorbeeld voor <a href="/inductiekookplaat-aansluiten-rotterdam/">inductie</a> of een warmtepomp.</span></li>
   <li>{{check}}<span><a href="/groep-bijplaatsen-rotterdam/">Groep bijplaatsen</a> voor de wasmachine, droger, oven of airco.</span></li>
-  <li>{{check}}<span><a href="/thuisbatterij-aansluiten-rotterdam/">Thuisbatterij aansluiten</a> op een eigen groep, op tijd voor 2027.</span></li>
+  <li>{{check}}<span><a href="/meterkast-verzwaren-rotterdam/">Meterkast verzwaren</a> of <a href="/krachtstroom-aansluiten-rotterdam/">krachtstroom aansluiten</a> voor een werkplaats, sauna of zware machine.</span></li>
+  <li>{{check}}<span><a href="/vrije-groep-stekkerbatterij-rotterdam/">Vrije groep voor een stekkerbatterij</a>, of de meterkast klaarmaken voor een <a href="/thuisbatterij-aansluiten-rotterdam/">thuisbatterij</a>, op tijd voor 2027.</span></li>
   <li>{{check}}<span><a href="/lampen-ophangen-rotterdam/">Lampen ophangen</a>, spots en dimmers.</span></li>
   <li>{{check}}<span><a href="/stopcontact-plaatsen-rotterdam/">Stopcontacten plaatsen</a> of verplaatsen, binnen en <a href="/buitenverlichting-tuinstopcontact-rotterdam/">buiten in de tuin</a>.</span></li>
   <li>{{check}}<span><a href="/laadpaal-installeren-rotterdam/">Laadpaal installeren</a> bij uw woning of bedrijf.</span></li>
