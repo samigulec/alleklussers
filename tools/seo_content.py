@@ -23,7 +23,7 @@ AREAS_REGION = [
 FOTO = " Ik stuur een foto van mijn meterkast mee."
 WA_TEXT = {
     "elektricien-rotterdam": "Hallo AlleKlussers, ik zoek een elektricien in Rotterdam. Het gaat om: ",
-    "storing-elektra-rotterdam": "Hallo AlleKlussers, ik heb een storing in mijn elektra. Wat er aan de hand is: ",
+    "storing-elektra-rotterdam": "Hallo AlleKlussers, ik heb een storing in mijn elektra." + FOTO + " Wat er aan de hand is: ",
     "aardlekschakelaar-rotterdam": "Hallo AlleKlussers, mijn aardlekschakelaar slaat steeds door." + FOTO,
     "groepenkast-vervangen-rotterdam": "Hallo AlleKlussers, ik wil graag een prijs voor het vervangen of uitbreiden van mijn groepenkast." + FOTO,
     "groep-bijplaatsen-rotterdam": "Hallo AlleKlussers, ik wil graag een extra groep in mijn meterkast. Het is voor: ",
@@ -92,44 +92,91 @@ PAGES = [
         "slug": "storing-elektra-rotterdam",
         "short": "Storing verhelpen",
         "sub": "Stroomuitval en een aardlekschakelaar die steeds doorslaat.",
-        "title": "Storing elektra Rotterdam | Stroomuitval? AlleKlussers helpt",
-        "desc": "Stroomuitval of slaat uw aardlekschakelaar steeds door in Rotterdam? AlleKlussers spoort de oorzaak op en lost de storing veilig op. 24/7 bereikbaar.",
+        "title": "Storing elektra Rotterdam | Stroom uitgevallen? AlleKlussers",
+        "desc": "Stroom uitgevallen in Rotterdam? Zo ziet u of het aan het net of uw meterkast ligt, wat u zelf kunt nagaan en wanneer u ons appt. 24/7 bereikbaar.",
         "service": "Storing elektra verhelpen",
         "char": "vonk",
         "say": "“Stroom uit? Wij zijn 24/7 bereikbaar.”",
         "eyebrow": "Storingen en spoed",
         "h1": "Storing of stroomuitval in <em>Rotterdam?</em>",
-        "lede": "Valt de stroom uit of slaat de aardlekschakelaar steeds door? Wij zoeken de oorzaak en lossen het veilig op.",
+        "lede": "Valt de stroom uit, of slaat er steeds iets door in de meterkast? Met de stappen hieronder ziet u in een paar minuten of het bij u thuis zit of in het net. Zit het bij u, dan zoeken wij de oorzaak en lossen het veilig op.",
         "body": """
-<h2>Eerst dit: <em>zelf controleren.</em></h2>
-<p>Sommige storingen kunt u zelf veilig nagaan voordat u ons een bericht stuurt:</p>
-<ul class="checks">
-  <li>{check}<span><strong>Heeft de buurt ook geen stroom?</strong> Dan ligt de storing waarschijnlijk bij de netbeheerder. In Rotterdam is dat Stedin.</span></li>
-  <li>{check}<span><strong>Kijk in de meterkast.</strong> Staat er een groep of aardlekschakelaar omlaag? Haal dan eerst de stekkers van apparaten op die groep uit het stopcontact en zet de schakelaar weer omhoog.</span></li>
-  <li>{check}<span><strong>Slaat hij direct weer door?</strong> Probeer het niet steeds opnieuw. Er is dan een fout in de installatie of in een apparaat, en die moet worden opgespoord.</span></li>
-</ul>
-<div class="note-box"><p><strong>Ruikt u een brandlucht, ziet u rook of zijn er vonken?</strong> Zet de hoofdschakelaar in de meterkast uit als dat veilig kan en bel bij gevaar direct 112.</p></div>
+<div class="note-box"><p><strong>Ruikt u een brandlucht, ziet u rook of vonken, of voelt de meterkast warm aan?</strong> Zet de hoofdschakelaar in de meterkast uit als dat veilig kan en bel bij gevaar direct 112. Komt er water in of bij de meterkast, raak dan niets aan.</p></div>
 
-<h2>Veelvoorkomende <em>oorzaken.</em></h2>
+<h2>Stap 1: <em>bij u of in de buurt?</em></h2>
+<p>Kijk eerst of de buren, het trappenhuis of de straatverlichting ook geen stroom hebben. Is het hele blok of de straat donker, dan is het een storing in het net. Daar kan geen elektricien iets aan doen; dat lost de netbeheerder op. In Rotterdam en omgeving is dat Stedin.</p>
 <ul class="checks">
-  <li>{check}<span><strong>Een defect apparaat,</strong> bijvoorbeeld een wasmachine, oven of waterkoker met lekstroom.</span></li>
-  <li>{check}<span><strong>Vocht,</strong> vaak bij <a href="/buitenverlichting-tuinstopcontact-rotterdam/">buitenverlichting en buitenstopcontacten</a> of in de badkamer.</span></li>
-  <li>{check}<span><strong>Een overbelaste groep,</strong> doordat te veel zware apparaten op dezelfde groep zitten.</span></li>
-  <li>{check}<span><strong>Verouderde bedrading of een oude groepenkast</strong> die niet meer goed beveiligt.</span></li>
+  <li>{check}<span><strong>Melden:</strong> bel het landelijke storingsnummer <strong>0800-9009</strong>. Dat is gratis en dag en nacht bereikbaar, voor stroom en gas. Houd uw postcode en huisnummer bij de hand. Bekende storingen staan ook op de website van Stedin.</span></li>
+  <li>{check}<span><strong>Niet uw energieleverancier:</strong> die gaat niet over storingen in het net. De netbeheerder wel.</span></li>
+  <li>{check}<span><strong>Lang zonder stroom?</strong> Duurt een storing in het net vier uur of langer achter elkaar, dan kunt u recht hebben op een vergoeding van de netbeheerder. Voor gepland onderhoud geldt dat niet.</span></li>
+</ul>
+<p>Hebben de buren wel stroom en u niet, dan ligt het bijna altijd aan uw eigen installatie. Ga dan naar stap 2.</p>
+
+<h2>Stap 2: <em>wat staat er omlaag in de meterkast?</em></h2>
+<p>Open de meterkast en kijk welke schakelaar naar beneden staat. Dat vertelt al veel over de oorzaak.</p>
+<ul class="checks">
+  <li>{check}<span><strong>Eén groepsschakelaar staat omlaag.</strong> Die groep is overbelast of er is kortsluiting. Viel hij uit nadat er een tijdje veel aanstond, zoals een kachel, waterkoker en magnetron tegelijk? Dan is het overbelasting. Viel hij direct uit toen u iets aanzette of insteekte? Dan is het vaak kortsluiting in dat apparaat, het snoer of een stekkerdoos.</span></li>
+  <li>{check}<span><strong>De aardlekschakelaar staat omlaag</strong> (de schakelaar met een testknop T), en daarmee een heel deel van het huis. Dan is er ergens lekstroom gemeten, vaak door een apparaat of door vocht. Op de pagina over de <a href="/aardlekschakelaar-rotterdam/">aardlekschakelaar</a> staat een stappenplan om de groep en het apparaat te vinden.</span></li>
+  <li>{check}<span><strong>De hoofdschakelaar staat uit.</strong> Zet eerst alle groepen uit, dan de hoofdschakelaar aan, en daarna de groepen één voor één. Valt hij meteen weer uit, stop dan en stuur ons een bericht.</span></li>
+  <li>{check}<span><strong>Niets staat omlaag, toch is alles donker.</strong> Dan kan het probleem vóór uw groepenkast zitten: bij de hoofdzekering, de meter of de aansluitkabel. Die zijn van de netbeheerder en zitten achter een zegel. Kom daar niet aan en bel het storingsnummer 0800-9009.</span></li>
+  <li>{check}<span><strong>Een oude kast met draaistoppen?</strong> Bij een gesprongen smeltzekering is het gekleurde plaatje achter het kijkglaasje weg. Gebeurt dat vaker, dan is de kast toe aan <a href="/groepenkast-vervangen-rotterdam/">vervanging</a>: zo'n kast heeft meestal ook geen aardlekbeveiliging.</span></li>
+</ul>
+
+<h2>Stap 3: <em>de schakelaar weer omhoog.</em></h2>
+<ol class="steps-list">
+  <li><strong>Haal de stekkers eruit</strong> van de apparaten op de groep die uitviel, of zet die apparaten uit.</li>
+  <li><strong>Zet de schakelaar één keer omhoog.</strong> Blijft hij staan, steek de apparaten dan één voor één terug. Het apparaat waarbij hij weer uitvalt, gebruikt u niet meer tot het is nagekeken.</li>
+  <li><strong>Valt hij direct weer uit, ook zonder apparaten?</strong> Probeer het dan niet steeds opnieuw. De fout zit dan in de vaste installatie, bijvoorbeeld in een lamp, een losse draad of een beschadigde leiding. Dat is werk voor een elektricien.</li>
+</ol>
+<p>Een schakelaar die uitvalt, doet precies zijn werk. Plak hem nooit vast en overbrug hem nooit: dan beschermt hij niemand meer tegen brand of een schok.</p>
+
+<h2>In de winter: <em>kachel, kerstverlichting en droger.</em></h2>
+<p>In de koude maanden krijgen we meer meldingen van groepen die doorslaan. Dat heeft meestal een eenvoudige oorzaak.</p>
+<ul class="checks">
+  <li>{check}<span><strong>Elektrische kachel.</strong> Een normale groep van 16 ampère kan ongeveer 3.680 watt aan. Een kachel van 2.000 watt met daarbij een waterkoker of föhn op dezelfde groep is al te veel. Zet de kachel op een andere groep, of laat <a href="/groep-bijplaatsen-rotterdam/">een extra groep</a> aanleggen als dit vaak gebeurt.</span></li>
+  <li>{check}<span><strong>Kerstverlichting buiten.</strong> Slaat de aardlek vooral door bij regen of mist, dan zit er vaak vocht in een stekker of verlengsnoer buiten. Gebruik verlichting en snoeren die geschikt zijn voor buiten, of een vast <a href="/buitenverlichting-tuinstopcontact-rotterdam/">buitenstopcontact</a>.</span></li>
+  <li>{check}<span><strong>Wasdroger en wasmachine tegelijk.</strong> Twee apparaten die warmte maken op één groep, dat gaat vaak mis. Ieder hoort een eigen groep te hebben.</span></li>
+  <li>{check}<span><strong>Stekkerdozen achter elkaar.</strong> Koppel geen stekkerdozen aan elkaar en zet geen zware apparaten op een stekkerdoos. Een snoer dat warm wordt, is een waarschuwing.</span></li>
+</ul>
+
+<h2>Tijdens de <em>stroomuitval.</em></h2>
+<ul class="checks">
+  <li>{check}<span><strong>Houd de vriezer en koelkast dicht.</strong> Een dichte vriezer houdt eten vaak 10 tot 18 uur bevroren; in de handleiding van uw vriezer staat hoe lang precies. Vries eten dat ontdooid is niet opnieuw in.</span></li>
+  <li>{check}<span><strong>Zet zware apparaten uit,</strong> zoals de kookplaat, oven, kachel en het strijkijzer. Dan slaat er niet alles tegelijk aan als de stroom terugkomt, en blijft er niets onverwacht aan staan.</span></li>
+  <li>{check}<span><strong>Liever een zaklamp dan kaarsen.</strong> Gebruikt u toch kaarsen, laat ze dan niet alleen branden.</span></li>
 </ul>
 
 <h2>Wat wij <em>doen.</em></h2>
-<p>Onze elektricien meet de installatie door en zoekt groep voor groep uit waar de fout zit. Daarna lossen we het op, of bespreken we eerst met u wat er nodig is als de reparatie groter is. U krijgt uitleg over de oorzaak en advies om herhaling te voorkomen.</p>
-<p>Gaat het om een aardlekschakelaar die steeds doorslaat? Op onze pagina over de <a href="/aardlekschakelaar-rotterdam/">aardlekschakelaar</a> staat een stappenplan om zelf de groep of het apparaat te vinden.</p>
-<p>Valt steeds dezelfde groep uit als twee zware apparaten tegelijk aanstaan, zoals de wasmachine en de droger? Dan zit die groep te vol en is <a href="/groep-bijplaatsen-rotterdam/">een extra groep</a> de oplossing.</p>
+<p>Zit de storing in uw eigen installatie, dan komt onze elektricien met meetapparatuur. We meten de installatie groep voor groep door en zoeken uit waar de fout zit: een defect apparaat, een losse verbinding in een lasdoos, een beschadigde leiding, vocht in een buitenpunt of een versleten schakelaar in de groepenkast. Daarna lossen we het op. Is de reparatie groter, dan bespreken we eerst met u wat er nodig is en wat het kost.</p>
+<p>U krijgt uitleg over de oorzaak en advies om herhaling te voorkomen, bijvoorbeeld door groepen beter te verdelen. Is de kast oud of vol, dan zeggen we eerlijk of <a href="/groepenkast-vervangen-rotterdam/">uitbreiden of vervangen</a> verstandig is. Alles volgens NEN 1010, door verzekerde vakmensen.</p>
+
+<h2>Zo <em>werkt het.</em></h2>
+<ol class="steps-list">
+  <li><strong>Stuur een WhatsApp</strong> met een foto van uw open meterkast. Vertel welke schakelaar omlaag staat, wanneer het gebeurt (altijd, bij regen, 's nachts of bij één apparaat) en wat u al geprobeerd heeft.</li>
+  <li><strong>We reageren zo snel mogelijk.</strong> Bij een storing zijn we 24/7 bereikbaar. Soms is het met dit advies al opgelost; anders plannen we een afspraak.</li>
+  <li><strong>U hoort de prijs vooraf,</strong> voordat we aan de reparatie beginnen.</li>
+</ol>
+<p>Huurt u? Een storing in de vaste installatie meldt u eerst bij uw verhuurder of woningcorporatie. Verhuurders en VvE's helpen we ook rechtstreeks, zie <a href="/elektricien-verhuurders-vve-rotterdam/">elektricien voor verhuurders en VvE's</a>.</p>
+
+<div class="note-box"><p><strong>Bronnen:</strong> Selectra over <a href="https://selectra.nl/energie/netbeheerder/stedin/storing" target="_blank" rel="noopener noreferrer">wat te doen bij een Stedin-storing</a> (storingsnummer en vergoeding), Energievergelijk over <a href="https://www.energievergelijk.nl/onderwerpen/stroomstoring" target="_blank" rel="noopener noreferrer">stroomstoring: thuis of in het net</a>, Beko over <a href="https://www.beko.com/be-nl/Ondersteuning/vriezer--gebruiken--veelgestelde-vragen/de-stroom-naar-mijn-vriezer-is-uitgevallen-door-een-stroomstoring-hoe-zorg-ik-ervoor-dat-mijn-etenswaren-tijdens-een-stroomstoring-goed-blijven" target="_blank" rel="noopener noreferrer">de vriezer bij een stroomstoring</a>.</p></div>
 """,
         "faq": [
-            ("Mijn aardlekschakelaar slaat steeds door. Wat nu?",
-             "Haal alle stekkers op die groep eruit en zet de aardlekschakelaar weer omhoog. Blijft hij staan, steek de apparaten dan één voor één terug om te zien welk apparaat de storing geeft. Slaat hij ook zonder apparaten door, dan zit de fout in de installatie en is een elektricien nodig."),
             ("De hele straat heeft geen stroom. Moet ik jullie inschakelen?",
-             "Nee, dan is het een storing in het net. Die meldt u bij de netbeheerder; in Rotterdam is dat Stedin."),
+             "Nee, dan is het een storing in het net. Die meldt u bij het landelijke storingsnummer 0800-9009 (gratis, dag en nacht). In Rotterdam lost netbeheerder Stedin de storing op."),
+            ("Alleen bij mij is de stroom uit, maar er staat niets omlaag. Wat nu?",
+             "Kijk of de hoofdschakelaar aan staat. Staat alles goed en is het toch donker, dan kan het probleem bij de hoofdzekering, de meter of de aansluiting zitten. Die zijn van de netbeheerder en verzegeld: bel dan 0800-9009 en kom zelf niet aan de verzegelde delen."),
+            ("Mijn aardlekschakelaar slaat steeds door. Wat nu?",
+             "Zet de groepen eronder uit, zet de aardlekschakelaar omhoog en zet de groepen één voor één weer aan. Zo vindt u de groep, en daarna met de stekkers het apparaat. Slaat hij ook zonder apparaten door, dan zit de fout in de installatie en is een elektricien nodig."),
+            ("Mijn groep valt uit als de elektrische kachel aan staat. Hoe komt dat?",
+             "Een gewone groep van 16 ampère kan ongeveer 3.680 watt aan. Een kachel gebruikt vaak 2.000 watt of meer, dus samen met een waterkoker of föhn is de groep overbelast. Gebruik de kachel op een andere groep of laat een extra groep aanleggen."),
+            ("Wat is het verschil tussen overbelasting en kortsluiting?",
+             "Bij overbelasting vraagt u meer stroom dan de groep aankan; de schakelaar valt dan na een tijdje uit. Bij kortsluiting raken twee draden elkaar, vaak in een defect apparaat of snoer; de schakelaar valt dan direct uit, meestal op het moment dat u iets aanzet."),
+            ("Hoe lang blijft eten in de vriezer goed bij stroomuitval?",
+             "Houd de vriezer dicht. Een dichte vriezer houdt eten vaak 10 tot 18 uur bevroren; de handleiding van uw model geeft de precieze tijd. Eten dat ontdooid is, vriest u niet opnieuw in."),
+            ("Krijg ik een vergoeding als de stroom lang uitvalt?",
+             "Bij een storing in het net van vier uur of langer achter elkaar kunt u recht hebben op een vergoeding van de netbeheerder. Ligt de oorzaak in uw eigen installatie of gaat het om gepland onderhoud, dan niet."),
             ("Zijn jullie ook 's avonds en in het weekend bereikbaar?",
-             "Ja, we zijn 24/7 bereikbaar. Stuur ons een WhatsApp, dan kijken we hoe snel we bij u kunnen zijn."),
+             "Ja, we zijn 24/7 bereikbaar. Stuur ons een WhatsApp met een foto van de meterkast, dan kijken we hoe snel we bij u kunnen zijn."),
             ("Wat kost het verhelpen van een storing?",
              "Dat hangt af van de oorzaak. We bespreken de kosten met u voordat we aan de reparatie beginnen."),
         ],
