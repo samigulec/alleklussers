@@ -37,6 +37,7 @@ WA_TEXT = {
     "elektra-keuring-rotterdam": "Hallo AlleKlussers, ik wil mijn elektrische installatie laten keuren. Het is voor (aankoop, verhuur of eigen woning): ",
     "laadpaal-installeren-rotterdam": "Hallo AlleKlussers, ik wil graag een laadpaal laten installeren." + FOTO,
     "meterkast-verzwaren-rotterdam": "Hallo AlleKlussers, ik wil weten of ik mijn aansluiting moet laten verzwaren. Ik wil gaan gebruiken: ",
+    "infraroodpanelen-aansluiten-rotterdam": "Hallo AlleKlussers, ik wil graag een infraroodpaneel laten ophangen en aansluiten." + FOTO + " Het paneel is (watt) en komt in: ",
     "krachtstroom-aansluiten-rotterdam": "Hallo AlleKlussers, ik wil graag krachtstroom laten aanleggen. Het is voor dit apparaat en deze plek: ",
     "elektricien-verhuurders-vve-rotterdam": "Hallo AlleKlussers, ik ben verhuurder of beheerder en zoek een vaste elektricien. Het gaat om: ",
 }
@@ -133,7 +134,7 @@ PAGES = [
 <h2>In de winter: <em>kachel, kerstverlichting en droger.</em></h2>
 <p>In de koude maanden krijgen we meer meldingen van groepen die doorslaan. Dat heeft meestal een eenvoudige oorzaak.</p>
 <ul class="checks">
-  <li>{check}<span><strong>Elektrische kachel.</strong> Een normale groep van 16 ampère kan ongeveer 3.680 watt aan. Een kachel van 2.000 watt met daarbij een waterkoker of föhn op dezelfde groep is al te veel. Zet de kachel op een andere groep, of laat <a href="/groep-bijplaatsen-rotterdam/">een extra groep</a> aanleggen als dit vaak gebeurt.</span></li>
+  <li>{check}<span><strong>Elektrische kachel.</strong> Een normale groep van 16 ampère kan ongeveer 3.680 watt aan. Een kachel van 2.000 watt met daarbij een waterkoker of föhn op dezelfde groep is al te veel. Zet de kachel op een andere groep, of laat <a href="/groep-bijplaatsen-rotterdam/">een extra groep</a> aanleggen als dit vaak gebeurt. Wilt u een kamer vaker elektrisch verwarmen, kijk dan ook naar <a href="/infraroodpanelen-aansluiten-rotterdam/">infraroodpanelen</a> met een vaste aansluiting.</span></li>
   <li>{check}<span><strong>Kerstverlichting buiten.</strong> Slaat de aardlek vooral door bij regen of mist, dan zit er vaak vocht in een stekker of verlengsnoer buiten. Gebruik verlichting en snoeren die geschikt zijn voor buiten, of een vast <a href="/buitenverlichting-tuinstopcontact-rotterdam/">buitenstopcontact</a>.</span></li>
   <li>{check}<span><strong>Wasdroger en wasmachine tegelijk.</strong> Twee apparaten die warmte maken op één groep, dat gaat vaak mis. Ieder hoort een eigen groep te hebben.</span></li>
   <li>{check}<span><strong>Stekkerdozen achter elkaar.</strong> Koppel geen stekkerdozen aan elkaar en zet geen zware apparaten op een stekkerdoos. Een snoer dat warm wordt, is een waarschuwing.</span></li>
@@ -365,6 +366,7 @@ PAGES = [
   <li>{check}<span><strong>Oven of combimagnetron</strong> die ingebouwd is: een eigen groep, los van de kookplaat.</span></li>
   <li>{check}<span><strong>Inductiekookplaat:</strong> meestal een kookgroep met perilex-aansluiting op twee fasen. Zie <a href="/inductiekookplaat-aansluiten-rotterdam/">inductiekookplaat aansluiten</a>.</span></li>
   <li>{check}<span><strong>Airco of warmtepomp:</strong> een eigen groep, zodat de rest van het huis niet uitvalt als het apparaat opstart.</span></li>
+  <li>{check}<span><strong>Infraroodpanelen:</strong> verwarming die urenlang aanstaat. Eén klein paneel past vaak op een bestaande groep, meerdere panelen krijgen liever een eigen groep. Zie <a href="/infraroodpanelen-aansluiten-rotterdam/">infraroodpanelen aansluiten</a>.</span></li>
   <li>{check}<span><strong><a href="/laadpaal-installeren-rotterdam/">Laadpaal</a>:</strong> altijd een eigen groep met de juiste aardlekbeveiliging.</span></li>
   <li>{check}<span><strong>Stekkerbatterij:</strong> een vrije groep waar alleen de batterij op zit. Zie <a href="/vrije-groep-stekkerbatterij-rotterdam/">vrije groep voor stekkerbatterij</a>.</span></li>
   <li>{check}<span><strong>Nieuwe ruimte:</strong> een aanbouw, zolderkamer of tuinhuis krijgt eigen groepen, en niet ‘nog een stopcontact erbij’ op een groep die al vol zit.</span></li>
@@ -565,6 +567,99 @@ PAGES = [
              "Overleg eerst met uw verhuurder. De aansluiting en de groepenkast horen bij de woning, dus voor een verzwaring of nieuwe kast heeft u in de regel toestemming nodig."),
             ("Wat kost het om de meterkast klaar te maken?",
              "Dat hangt af van wat er nu zit. Stuur ons foto's van uw meterkast, dan krijgt u vooraf een duidelijke prijs voor ons deel van het werk."),
+        ],
+    },
+    # ------------------------------------------------------- INFRAROOD
+    {
+        "slug": "infraroodpanelen-aansluiten-rotterdam",
+        "short": "Infraroodpanelen aansluiten",
+        "sub": "Vast aansluitpunt op plafond of muur, en een eigen groep als het nodig is.",
+        "title": "Infraroodpanelen aansluiten Rotterdam | AlleKlussers",
+        "desc": "Infraroodpaneel ophangen en aansluiten in Rotterdam: vast aansluitpunt op plafond of muur, eigen groep als het nodig is, ook in de badkamer. Prijs vooraf.",
+        "service": "Infraroodpanelen ophangen en elektrisch aansluiten",
+        "char": "stekkie",
+        "say": "“Warm, zonder snoer over de muur.”",
+        "eyebrow": "Infraroodpanelen",
+        "h1": "Infraroodpanelen aansluiten in <em>Rotterdam.</em>",
+        "lede": "Een infraroodpaneel op zolder, in de badkamer of in een koude kamer? Wij hangen het op, maken een vast aansluitpunt zonder snoer over de muur, en kijken of uw groep de extra warmte aankan.",
+        "body": """
+<h2>Bijverwarming of <em>hoofdverwarming?</em></h2>
+<p>Een infraroodpaneel verwarmt niet de lucht, maar alles wat de straling raakt: mensen, de vloer, muren en meubels. Dat voelt snel warm aan, een beetje zoals de zon op uw huid. Volgens het Duurzaam Bouwloket is een paneel vooral geschikt als <strong>lokale bijverwarming</strong>: een werkplek op zolder, de badkamer, of een kamer die u maar een paar uur per dag gebruikt. Dan hoeft de cv niet het hele huis warm te stoken voor die ene kamer.</p>
+<p>Als <strong>hoofdverwarming</strong> ligt het anders. Het Duurzaam Bouwloket wijst erop dat verwarmen met stroom per eenheid warmte flink duurder is dan met gas, en dat panelen als enige warmtebron alleen goed werken in een goed geïsoleerd huis en met een goede berekening per ruimte. De ANWB rekent voor dat een warmtepomp hetzelfde huis met minder stroom verwarmt. Wilt u het hele huis met infrarood verwarmen, laat dan eerst een warmteberekening maken. Wij zijn elektriciens: wij zorgen dat de elektra het veilig aankan.</p>
+
+<h2>Hoeveel watt <em>heeft u nodig?</em></h2>
+<p>Dat hangt af van de grootte van de ruimte, de isolatie en de hoogte van het plafond. Als ruwe vuistregel noemt de ANWB ongeveer 1.000 watt voor 25 tot 30 m². Gangbare panelen zitten tussen zo'n 300 en 1.000 watt. Een paneel van 600 watt verbruikt 0,6 kWh voor elk uur dat het vol aanstaat.</p>
+<p>Voor de elektra telt vooral het totaal: hoeveel panelen er komen, in welke kamers, en wat er verder op die groepen zit.</p>
+
+<h2>Hoeveel panelen <em>op één groep?</em></h2>
+<p>Een gewone groep van 16 ampère kan ongeveer 3.680 watt leveren. Dat lijkt veel, maar op die groep zitten meestal ook stopcontacten en lampen, en verwarming staat urenlang achter elkaar aan. Daarom houden we ruim marge:</p>
+<ul class="checks">
+  <li>{check}<span><strong>Eén klein paneel</strong> in een slaapkamer, werkkamer of op het toilet kan vaak op de bestaande groep, als die niet al zwaar belast is.</span></li>
+  <li>{check}<span><strong>Meerdere panelen,</strong> of een paneel in een kamer waar ook een kachel, föhn of computer aanstaat: dan geven we de panelen liever <a href="/groep-bijplaatsen-rotterdam/">een eigen groep</a>. Ook het Duurzaam Bouwloket noemt dat er bij het plaatsen van panelen één of meer groepen in de meterkast nodig kunnen zijn.</span></li>
+  <li>{check}<span><strong>Een hele verdieping of het hele huis</strong> op infrarood: dan kijken we ook naar uw aansluiting. Een extra groep geeft geen extra vermogen; wat u in totaal tegelijk kunt gebruiken, bepaalt de hoofdzekering van de netbeheerder. Lees dan ook <a href="/meterkast-verzwaren-rotterdam/">meterkast verzwaren</a>.</span></li>
+</ul>
+<p>Valt een groep nu al uit als het paneel en de waterkoker tegelijk aanstaan? Dan is die groep overbelast. Lees wat u zelf kunt doen bij <a href="/storing-elektra-rotterdam/">stroom uitgevallen</a>.</p>
+
+<h2>Stekker of <em>vaste aansluiting?</em></h2>
+<p>Veel panelen worden geleverd met een snoer en een stekker. Dat werkt, maar aan het plafond wilt u geen snoer naar een stopcontact laag op de muur. Daarom maken we meestal een vast aansluitpunt op de plek van het paneel:</p>
+<ul class="checks">
+  <li>{check}<span><strong>Plafond heeft vaak de voorkeur.</strong> Volgens het Duurzaam Bouwloket wordt de straling dan minder snel tegengehouden door meubels. We maken een aansluitpunt in het plafond, of gebruiken een bestaand lichtpunt als dat op de goede plek zit en de groep het aankan.</span></li>
+  <li>{check}<span><strong>Aan de muur</strong> komt het aansluitpunt achter of naast het paneel, zodat er geen snoer te zien is.</span></li>
+  <li>{check}<span><strong>Betonnen plafonds.</strong> In veel Rotterdamse portiekwoningen en flats is het plafond van beton. Een nieuwe leiding in beton frezen is veel werk; vaak is een nette opbouwleiding of een bestaand lichtpunt handiger. Dat overleggen we vooraf.</span></li>
+  <li>{check}<span><strong>Regeling.</strong> Een thermostaat per ruimte, vaak draadloos met een kleine ontvanger die we in een inbouwdoos wegwerken. Zo staat het paneel niet onnodig aan.</span></li>
+</ul>
+<p>Een thermostaat kan het verbruik volgens Zonneplan met 30 tot 40 procent verlagen, omdat het paneel uitschakelt zodra de kamer warm is. Een bewegingsmelder raadt het Duurzaam Bouwloket juist af: het paneel gaat dan pas aan als u binnenkomt, en de kamer wordt te laat warm. In de badkamer werkt een timer vaak goed, bijvoorbeeld 's ochtends een half uur.</p>
+
+<h2>Infrarood <em>in de badkamer.</em></h2>
+<p>De badkamer is een populaire plek voor een paneel, vaak als spiegel- of handdoekpaneel. Daar gelden strengere regels, omdat water en stroom dicht bij elkaar komen. De ruimte rond het bad en de douche is verdeeld in zones (volgens NEN 1010; uitleg van GAMMA klusadvies):</p>
+<ul class="checks">
+  <li>{check}<span><strong>Zone 0 en 1:</strong> in en direct boven het bad of de douchebak, en bij een inloopdouche zonder cabine een straal van 1,2 meter rond de douchekop. Hier hoort geen paneel van 230 volt.</span></li>
+  <li>{check}<span><strong>Zone 2:</strong> tot 60 cm naast het bad of de douchecabine. Hier mag alleen apparatuur van minstens IPX4.</span></li>
+  <li>{check}<span><strong>Daarbuiten</strong> is er meer mogelijk, maar de badkamer moet altijd achter een aardlekschakelaar van 30 mA zitten.</span></li>
+</ul>
+<p>Kies dus een paneel dat de fabrikant geschikt noemt voor de badkamer; de IP-waarde staat op het typeplaatje. Wij kijken waar het paneel veilig kan hangen en of uw badkamer goed beveiligd is. Heeft uw groepenkast nog geen <a href="/aardlekschakelaar-rotterdam/">aardlekschakelaar</a>, dan komt die eerst.</p>
+
+<h2>Zolders en oudere woningen <em>in Rotterdam.</em></h2>
+<p>Op de zolder van een jaren-30 woning of in een naoorlogse portiekwoning zit vaak maar één groep voor de hele verdieping, soms nog met oude bedrading. Voordat er een paneel van 600 of 800 watt bij komt dat urenlang aanstaat, meten we die groep na. Zijn de draden oud of is er geen aarde, dan is <a href="/bedrading-vervangen-rotterdam/">de bedrading vervangen</a> of een nieuwe groep de veilige eerste stap.</p>
+<p>Huurt u uw woning? Vraag dan eerst toestemming aan de verhuurder voor een vast paneel aan plafond of muur.</p>
+
+<h2>Wat wij <em>doen.</em></h2>
+<ul class="checks">
+  <li>{check}<span><strong>De meterkast bekijken:</strong> op welke groep het paneel komt, wat er al op zit, en of er een aardlekschakelaar is.</span></li>
+  <li>{check}<span><strong>Een vast aansluitpunt</strong> op plafond of muur, en <a href="/groep-bijplaatsen-rotterdam/">een eigen groep</a> als dat nodig is.</span></li>
+  <li>{check}<span><strong>Het paneel ophangen</strong> met de beugels van de fabrikant en aansluiten, met de ontvanger van de thermostaat als u die heeft.</span></li>
+  <li>{check}<span><strong>Testen en uitleggen:</strong> we testen de groep en de aardlekbeveiliging, en zetten op de groepenkast waar de groep voor is.</span></li>
+</ul>
+<p>Het paneel zelf koopt u bij een winkel of leverancier naar keuze. Twijfelt u welk vermogen past bij de plek? Stuur het typeplaatje of de link van het paneel mee, dan kijken we of de elektra het aankan.</p>
+
+<h2>Zo <em>pakken we het aan.</em></h2>
+<ol class="steps-list">
+  <li><strong>Stuur foto's via WhatsApp</strong> van uw open meterkast en de plek waar het paneel komt, en vertel welk paneel het is (vermogen in watt).</li>
+  <li><strong>Wij beoordelen</strong> of het op een bestaande groep kan of een eigen groep nodig heeft, en hoe de leiding naar de plek loopt. U krijgt een duidelijke prijs vooraf.</li>
+  <li><strong>Wij hangen het paneel op en sluiten het aan,</strong> met een vast aansluitpunt en eventueel een nieuwe groep.</li>
+  <li><strong>We testen alles en lopen het met u na,</strong> zodat u weet hoe de thermostaat of timer werkt.</li>
+</ol>
+<p>Alles volgens NEN 1010, door verzekerde vakmensen.</p>
+
+<div class="note-box"><p><strong>Bronnen:</strong> Duurzaam Bouwloket, <a href="https://res.cloudinary.com/duurzaambouwloket/image/upload/v1619613396/Factsheets/Factsheet_Infrarood_panelen_2021.pdf" target="_blank" rel="noopener noreferrer">factsheet infraroodpanelen</a>; ANWB, <a href="https://www.anwb.nl/huis/energie/alles-over-infraroodverwarming" target="_blank" rel="noopener noreferrer">10 dingen over infraroodverwarming</a>; Zonneplan, <a href="https://www.zonneplan.nl/energie/besparen/hoeveel-stroom-verbruikt-een-infrarood-paneel/" target="_blank" rel="noopener noreferrer">hoeveel stroom verbruikt een infraroodpaneel</a>; GAMMA klusadvies, <a href="https://www.gamma.nl/klusadvies/a/elektra-badkamer-aansluiten" target="_blank" rel="noopener noreferrer">elektra in de badkamer</a>.</p></div>
+""",
+        "faq": [
+            ("Kan ik een infraroodpaneel gewoon in het stopcontact steken?",
+             "Een paneel met stekker kunt u in een gewoon geaard stopcontact steken. Let wel op wat er nog meer op die groep staat, want het paneel staat lang aan. Aan het plafond of in de badkamer is een vaste aansluiting netter, zonder snoer over de muur."),
+            ("Hoeveel infraroodpanelen kunnen op één groep?",
+             "Een groep van 16 ampère kan ongeveer 3.680 watt leveren, maar er zitten meestal ook stopcontacten en lampen op, en verwarming staat lang aan. Eén klein paneel past vaak; bij meerdere panelen geven we ze liever een eigen groep. Stuur een foto van uw meterkast, dan rekenen we het na."),
+            ("Moet mijn meterkast verzwaard worden voor infrarood?",
+             "Voor een paar panelen als bijverwarming bijna nooit. Wilt u een hele verdieping of het hele huis met infrarood verwarmen, zeker samen met inductie of een laadpaal, dan rekenen we eerst uit of uw aansluiting dat aankan."),
+            ("Mag een infraroodpaneel in de badkamer?",
+             "Ja, als het paneel daarvoor geschikt is en niet in zone 0 of 1 hangt, dus niet in of direct boven het bad of de douche. In zone 2, tot 60 cm naast bad of douchecabine, moet het minstens IPX4 zijn. De badkamer moet achter een aardlekschakelaar van 30 mA zitten."),
+            ("Hang ik een infraroodpaneel aan het plafond of aan de muur?",
+             "Het plafond heeft vaak de voorkeur, omdat meubels de straling dan minder tegenhouden. Aan de muur kan ook, bijvoorbeeld als spiegel- of handdoekpaneel. Wij maken op beide plekken een vast aansluitpunt."),
+            ("Is infrarood goedkoper dan de cv?",
+             "Als bijverwarming voor één kamer kan het voordelig zijn, omdat de cv dan niet het hele huis hoeft te verwarmen. Als hoofdverwarming is stroom per eenheid warmte meestal duurder dan gas, en verwarmt een warmtepomp hetzelfde huis met minder stroom. Laat voor hoofdverwarming eerst een warmteberekening maken."),
+            ("Kunnen jullie een bestaand lichtpunt gebruiken?",
+             "Vaak wel, als het lichtpunt op de goede plek zit en de groep het extra vermogen aankan. Dat meten we eerst na. Zit het lichtpunt verkeerd, dan maken we een nieuw aansluitpunt."),
+            ("Wat kost een infraroodpaneel laten aansluiten?",
+             "Dat hangt af van de plek, de afstand tot de meterkast en of er een eigen groep nodig is. Stuur foto's van de meterkast en de plek via WhatsApp, dan krijgt u vooraf een duidelijke prijs."),
         ],
     },
     # ----------------------------------------------------- KRACHTSTROOM
@@ -1297,7 +1392,7 @@ def _city(slug, name, char, say, wijken_oud, wijken_nieuw, local, faq_extra,
 <ul class="checks">
   <li>{{check}}<span><a href="/storing-elektra-rotterdam/">Storing verhelpen</a>: stroomuitval of een aardlekschakelaar die steeds doorslaat.</span></li>
   <li>{{check}}<span><a href="/groepenkast-vervangen-rotterdam/">Groepenkast vervangen of uitbreiden</a>, bijvoorbeeld voor <a href="/inductiekookplaat-aansluiten-rotterdam/">inductie</a> of een warmtepomp.</span></li>
-  <li>{{check}}<span><a href="/groep-bijplaatsen-rotterdam/">Groep bijplaatsen</a> voor de wasmachine, droger, oven of airco.</span></li>
+  <li>{{check}}<span><a href="/groep-bijplaatsen-rotterdam/">Groep bijplaatsen</a> voor de wasmachine, droger, oven of airco, of voor <a href="/infraroodpanelen-aansluiten-rotterdam/">infraroodpanelen</a>.</span></li>
   <li>{{check}}<span><a href="/meterkast-verzwaren-rotterdam/">Meterkast verzwaren</a> of <a href="/krachtstroom-aansluiten-rotterdam/">krachtstroom aansluiten</a> voor een werkplaats, sauna of zware machine.</span></li>
   <li>{{check}}<span><a href="/vrije-groep-stekkerbatterij-rotterdam/">Vrije groep voor een stekkerbatterij</a>, of de meterkast klaarmaken voor een <a href="/thuisbatterij-aansluiten-rotterdam/">thuisbatterij</a>, op tijd voor 2027.</span></li>
   <li>{{check}}<span><a href="/lampen-ophangen-rotterdam/">Lampen ophangen</a>, spots en dimmers.</span></li>
