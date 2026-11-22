@@ -31,6 +31,7 @@ WA_TEXT = {
     "thuisbatterij-aansluiten-rotterdam": "Hallo AlleKlussers, ik wil graag een thuisbatterij laten aansluiten." + FOTO,
     "vrije-groep-stekkerbatterij-rotterdam": "Hallo AlleKlussers, ik wil graag een vrije groep voor mijn stekkerbatterij." + FOTO,
     "lampen-ophangen-rotterdam": "Hallo AlleKlussers, ik wil graag lampen laten ophangen. Het gaat om: ",
+    "elektra-badkamer-rotterdam": "Hallo AlleKlussers, ik ga mijn badkamer verbouwen en zoek een elektricien." + FOTO + " In de badkamer komt: ",
     "stopcontact-plaatsen-rotterdam": "Hallo AlleKlussers, ik wil graag stopcontacten laten plaatsen. Het gaat om: ",
     "buitenverlichting-tuinstopcontact-rotterdam": "Hallo AlleKlussers, ik wil graag buitenverlichting of een tuinstopcontact. Ik stuur een foto van de plek mee. Het gaat om: ",
     "bedrading-vervangen-rotterdam": "Hallo AlleKlussers, ik wil mijn bedrading laten controleren of vervangen. Het gaat om: ",
@@ -617,7 +618,7 @@ PAGES = [
   <li>{check}<span><strong>Zone 2:</strong> tot 60 cm naast het bad of de douchecabine. Hier mag alleen apparatuur van minstens IPX4.</span></li>
   <li>{check}<span><strong>Daarbuiten</strong> is er meer mogelijk, maar de badkamer moet altijd achter een aardlekschakelaar van 30 mA zitten.</span></li>
 </ul>
-<p>Kies dus een paneel dat de fabrikant geschikt noemt voor de badkamer; de IP-waarde staat op het typeplaatje. Wij kijken waar het paneel veilig kan hangen en of uw badkamer goed beveiligd is. Heeft uw groepenkast nog geen <a href="/aardlekschakelaar-rotterdam/">aardlekschakelaar</a>, dan komt die eerst.</p>
+<p>Kies dus een paneel dat de fabrikant geschikt noemt voor de badkamer; de IP-waarde staat op het typeplaatje. Wij kijken waar het paneel veilig kan hangen en of uw badkamer goed beveiligd is. Verbouwt u de hele badkamer, lees dan ook <a href="/elektra-badkamer-rotterdam/">elektra in de badkamer</a>. Heeft uw groepenkast nog geen <a href="/aardlekschakelaar-rotterdam/">aardlekschakelaar</a>, dan komt die eerst.</p>
 
 <h2>Zolders en oudere woningen <em>in Rotterdam.</em></h2>
 <p>Op de zolder van een jaren-30 woning of in een naoorlogse portiekwoning zit vaak maar één groep voor de hele verdieping, soms nog met oude bedrading. Voordat er een paneel van 600 of 800 watt bij komt dat urenlang aanstaat, meten we die groep na. Zijn de draden oud of is er geen aarde, dan is <a href="/bedrading-vervangen-rotterdam/">de bedrading vervangen</a> of een nieuwe groep de veilige eerste stap.</p>
@@ -865,7 +866,7 @@ PAGES = [
   <li>{check}<span><strong>Inbouwspots plaatsen</strong> in plafonds, keukens en badkamers.</span></li>
   <li>{check}<span><strong>Dimmers en schakelaars</strong> die geschikt zijn voor LED, zonder geknipper of gezoem, en een tweede schakelaar, bijvoorbeeld onder en boven aan de trap.</span></li>
   <li>{check}<span><strong>Buitenverlichting</strong> aan de gevel, in de tuin of bij de voordeur, waterdicht aangesloten. Meer daarover bij <a href="/buitenverlichting-tuinstopcontact-rotterdam/">buitenverlichting en tuinstopcontact</a>.</span></li>
-  <li>{check}<span><strong>Badkamerverlichting en LED-spiegels,</strong> veilig in een natte ruimte.</span></li>
+  <li>{check}<span><strong>Badkamerverlichting en LED-spiegels,</strong> veilig in een natte ruimte. Verbouwt u de hele badkamer? Lees <a href="/elektra-badkamer-rotterdam/">elektra in de badkamer</a>.</span></li>
 </ul>
 
 <div class="note-box"><p><strong>Tip:</strong> heeft u meerdere lampen? Laat ze in één afspraak ophangen. Dan hoeft u maar één keer thuis te blijven.</p></div>
@@ -890,7 +891,7 @@ PAGES = [
 
 <h2>Inbouwspots: <em>wat kan er?</em></h2>
 <p>Inbouwspots hebben ruimte boven het plafond nodig. In een verlaagd plafond of een houten plafond kan dat meestal; in een betonnen plafond niet zonder een verlaagd plafond eronder. We plannen de spots zo dat het licht gelijkmatig valt en de kabels netjes lopen.</p>
-<p>In de badkamer gelden zones. Rond het bad en de douche mogen alleen spots die daarvoor geschikt zijn: vlak erboven alleen verlichting op 12 volt met een hoge waterdichtheid (IPX5), en tot 60 centimeter ernaast minimaal IPX4. Daarbuiten is IP44 genoeg. Meer over de zones staat op onze pagina over <a href="/stopcontact-plaatsen-rotterdam/">stopcontacten</a>.</p>
+<p>In de badkamer gelden zones. Rond het bad en de douche mogen alleen spots die daarvoor geschikt zijn: vlak erboven alleen verlichting op 12 volt met een hoge waterdichtheid (IPX5), en tot 60 centimeter ernaast minimaal IPX4. Daarbuiten is IP44 genoeg. Meer over de zones, spiegelverlichting en de ventilator staat bij <a href="/elektra-badkamer-rotterdam/">elektra en verlichting in de badkamer</a>.</p>
 <div class="note-box"><p><strong>Bron:</strong> GAMMA klusadvies over <a href="https://www.gamma.nl/klusadvies/a/elektra-badkamer-aansluiten" target="_blank" rel="noopener noreferrer">elektra in de badkamer</a>.</p></div>
 
 <h2>Zo <em>werkt het.</em></h2>
@@ -911,6 +912,116 @@ PAGES = [
              "Meestal wel, dan kiest u precies wat u mooi vindt. Klein materiaal zoals schroeven, pluggen en lasklemmen nemen wij mee. Twijfelt u over een dimbare lamp of een dimmer? Vraag het ons vooraf."),
             ("Kunnen jullie een nieuw lichtpunt maken waar nog geen aansluiting zit?",
              "Ja, dan trekken we een nieuwe kabel naar de gewenste plek. De prijs hangt af van de route; dat bespreken we vooraf."),
+        ],
+    },
+    # ------------------------------------------------------------ BADKAMER
+    {
+        "slug": "elektra-badkamer-rotterdam",
+        "short": "Elektra badkamer",
+        "sub": "Badkamerverlichting, stopcontacten, ventilator en vloerverwarming bij een verbouwing.",
+        "title": "Badkamerverlichting en elektra badkamer Rotterdam | AlleKlussers",
+        "desc": "Badkamer verbouwen in Rotterdam? Wij doen de elektra: badkamerverlichting en spots per zone, stopcontacten, ventilator en vloerverwarming. Prijs vooraf.",
+        "service": "Elektra en verlichting in de badkamer",
+        "char": "lampje",
+        "say": "“Licht bij de spiegel, droog bij de douche.”",
+        "eyebrow": "Badkamer",
+        "h1": "Elektra en verlichting in de <em>badkamer.</em>",
+        "lede": "Gaat uw badkamer op de schop? Wij doen het elektrische deel: verlichting en spots op de juiste plek, stopcontacten, een ventilator en vloerverwarming. Op tijd gepland, vóór de tegelzetter begint.",
+        "body": """
+<h2>Plan de elektra <em>vóór het tegelen.</em></h2>
+<p>Bij een badkamerverbouwing is de volgorde belangrijk. Leidingen voor lampen, stopcontacten en de ventilator lopen in de muur of het plafond. Zitten de tegels er eenmaal op, dan is iets verplaatsen veel werk. Voor elektrische vloerverwarming geldt het nog sterker: een mat leg je alleen onder een nieuwe vloer, niet onder bestaande tegels (Selectra).</p>
+<p>Daarom komen we het liefst twee keer:</p>
+<ol class="steps-list">
+  <li><strong>Voor het tegelen</strong> trekken we de leidingen en zetten we de inbouwdozen op de goede hoogte, en leggen we eventueel de vloerverwarming met de sensor.</li>
+  <li><strong>Na het tegelen</strong> monteren we de lampen, spots, schakelaars, stopcontacten en de ventilator, sluiten alles aan en testen het.</li>
+</ol>
+<p>Werkt u met een badkamerbedrijf of een eigen tegelzetter? Dan stemmen we de planning met hen af. Maak voor uzelf foto's van de open muren met de leidingen, voordat de tegels erop gaan. Dan weet u later waar u niet mag boren.</p>
+
+<h2>Eerst de meterkast: <em>aardlek en groepen.</em></h2>
+<p>Volgens GAMMA klusadvies moet de groepenkast sinds 1975 beveiligd zijn met een aardlekschakelaar van 30 milliampère. Die schakelt de stroom uit bij het kleinste lek, en juist in een natte ruimte is dat de belangrijkste bescherming. In oudere Rotterdamse woningen zit de badkamer soms nog op een groep zonder aardlek. Dan komt die eerst; lees meer bij <a href="/aardlekschakelaar-rotterdam/">aardlekschakelaar</a> of <a href="/groepenkast-vervangen-rotterdam/">groepenkast vervangen</a>.</p>
+<p>Daarna kijken we wat er in de nieuwe badkamer bij komt. Verlichting en een ventilator vragen weinig. Vloerverwarming, een elektrische handdoekradiator of een wasmachine in de badkamer vragen meer. Voor zware apparaten maken we liever <a href="/groep-bijplaatsen-rotterdam/">een eigen groep</a>, zodat de groep niet uitvalt als de föhn ook aangaat.</p>
+<p>In oudere woningen ziet u soms een blanke of geel-groene aardedraad naar de waterleiding, de badkuip of metalen vloerdelen. Die hoort bij de veiligheid van de badkamer. Haal hem bij het slopen niet weg; wij controleren bij de verbouwing of de aarding van leidingen en installatie in orde is.</p>
+
+<h2>De zones: <em>wat mag waar?</em></h2>
+<p>NEN 1010 deelt de badkamer in zones rond het bad en de douche. Hoe dichter bij het water, hoe strenger de eisen. Kort samengevat (uitleg van GAMMA klusadvies; wij werken volgens de norm zelf):</p>
+<ul class="checks">
+  <li>{check}<span><strong>Zone 0</strong> is de binnenkant van het bad of de douchebak. Hier hoort geen gewone elektrische apparatuur; alleen speciale lampjes op 12 volt die volledig waterdicht zijn (IPX8).</span></li>
+  <li>{check}<span><strong>Zone 1</strong> is de ruimte boven het bad of de douchebak. Bij een inloopdouche zonder cabine of bak is het een straal van 1,2 meter rond de douchekop. Hier alleen verlichting en apparatuur op veilige laagspanning (12 volt) met minimaal IPX5, geen lampen van 230 volt.</span></li>
+  <li>{check}<span><strong>Zone 2</strong> loopt tot 60 cm naast het bad of de douchecabine. Hier mag apparatuur van minimaal IPX4. Bij een inloopdouche zonder cabine is er geen zone 2, want zone 1 is daar al groter.</span></li>
+  <li>{check}<span><strong>Buiten de zones</strong> mogen schakelaars en geaarde stopcontacten, als alles achter een aardlekschakelaar zit.</span></li>
+</ul>
+<p>Een transformator of LED-driver voor spots op 12 volt hoort buiten de zones rond bad en douche, op een plek waar u er later nog bij kunt. De IP-waarde staat op de verpakking of het typeplaatje van de lamp. Twijfelt u bij een lamp of spiegel? Stuur ons de link, dan kijken we of hij past op de plek die u in gedachten heeft.</p>
+
+<h2>Badkamerverlichting <em>die goed werkt.</em></h2>
+<p>Een badkamer heeft meestal meer nodig dan één lamp in het midden van het plafond. Wij denken mee in drie lagen:</p>
+<ul class="checks">
+  <li>{check}<span><strong>Algemeen licht</strong> aan het plafond: een plafondlamp of een paar inbouwspots. Spots hebben ruimte boven het plafond nodig. In veel Rotterdamse flats en portiekwoningen is het plafond van beton; dan kan het alleen met een verlaagd plafond eronder, of kiest u een opbouwlamp.</span></li>
+  <li>{check}<span><strong>Licht bij de spiegel,</strong> van voren en niet alleen van boven, zodat u geen schaduw op uw gezicht krijgt bij het scheren of opmaken. Een spiegel met ingebouwde LED of een spiegelkast met verlichting heeft een aansluitpunt in de muur nodig, op de goede hoogte achter de spiegel.</span></li>
+  <li>{check}<span><strong>Sfeerlicht,</strong> bijvoorbeeld een LED-strip in een nis of onder het badmeubel. Ook hier telt de zone: in de douchenis alleen een strip op laagspanning die daarvoor gemaakt is, met de driver buiten de zones.</span></li>
+</ul>
+<p>Een dimmer op de plafondverlichting is fijn 's nachts en 's avonds in bad. Kies dan wel dimbare LED-lampen en een LED-dimmer; anders gaat het knipperen. Meer over dimmers en spots staat bij <a href="/lampen-ophangen-rotterdam/">lampen ophangen</a>.</p>
+
+<h2>Stopcontacten <em>in de badkamer.</em></h2>
+<p>Voor een föhn, een scheerapparaat of een elektrische tandenborstel wilt u een stopcontact bij de wastafel. Dat kan, maar niet overal:</p>
+<ul class="checks">
+  <li>{check}<span><strong>Buiten zone 2,</strong> dus verder dan 60 cm van het bad of de douchecabine, en bij een inloopdouche buiten de 1,2 meter rond de douchekop.</span></li>
+  <li>{check}<span><strong>Geaard en achter een aardlekschakelaar.</strong> Een stopcontact met klapdeksel houdt spatwater buiten.</span></li>
+  <li>{check}<span><strong>Op een handige hoogte</strong> naast de spiegel, niet vlak boven de kraan.</span></li>
+</ul>
+<p>Staat de wasmachine in de badkamer, wat in veel Rotterdamse appartementen zo is? Dan hoort ook dat stopcontact buiten de zones, en geven we de wasmachine liever een eigen groep. Lees ook <a href="/stopcontact-plaatsen-rotterdam/">stopcontact plaatsen of verplaatsen</a>.</p>
+
+<h2>Ventilator: <em>vocht eruit.</em></h2>
+<p>Zonder goede afzuiging blijft vocht hangen, en dat geeft schimmel en schade aan verf en voegen. Heeft uw woning mechanische ventilatie met een box op zolder of in een kast, dan zit er vaak al een afzuigpunt in de badkamer. Is er alleen een raam of een rooster, dan kan een losse badkamerventilator helpen:</p>
+<ul class="checks">
+  <li>{check}<span><strong>Capaciteit.</strong> Elektramat noemt als vuistregel dat de lucht ongeveer 10 keer per uur ververst moet worden: lengte x breedte x hoogte x 10 geeft de benodigde m³ per uur.</span></li>
+  <li>{check}<span><strong>Nalooptimer of vochtsensor.</strong> Met een nalooptimer draait de ventilator nog een tijd door nadat u het licht uitzet; Elektramat adviseert 15 tot 30 minuten na het douchen. Een vochtsensor (hygrostaat) zet hem zelf aan als het vochtig wordt.</span></li>
+  <li>{check}<span><strong>Aansluiting.</strong> Een ventilator met naloop heeft naast de gewone voeding een schakeldraad nodig, vaak vanaf de lichtschakelaar. Die leiding leggen we het liefst vóór het tegelen.</span></li>
+</ul>
+<p>Voor een afvoer naar buiten moet er soms een gat door de gevel of het dak. Dat werk, en het plaatsen of vervangen van een centrale ventilatiebox, laten we aan een ventilatie- of bouwbedrijf; wij zorgen voor de elektrische aansluiting.</p>
+
+<h2>Warme vloer en <em>handdoekradiator.</em></h2>
+<p><strong>Elektrische vloerverwarming</strong> is een dunne mat van 3 tot 5 mm onder de tegels, meestal 100 tot 150 watt per m² (Selectra). In een badkamer van 5 m² is dat zo'n 750 watt als alles aanstaat. Dat is genoeg voor warme tegels, maar zelden om de badkamer alleen daarmee op temperatuur te krijgen; reken erop dat er een radiator of handdoekradiator blijft. Wat wij erbij doen:</p>
+<ul class="checks">
+  <li>{check}<span><strong>Aansluitpunt en thermostaat buiten de zones</strong> rond bad en douche, op een groep met aardlekbeveiliging.</span></li>
+  <li>{check}<span><strong>Een vloersensor</strong> tussen de verwarmingslussen, niet onder het badmeubel of vlak bij de muur. We tekenen in waar hij ligt.</span></li>
+  <li>{check}<span><strong>Weerstand meten vóór en na het tegelen,</strong> want een beschadigde draad is na het tegelen niet meer te repareren zonder de vloer eruit te halen.</span></li>
+  <li>{check}<span><strong>Een klokthermostaat.</strong> Een elektrische mat is binnen ongeveer een half uur warm, dus aanzetten als u hem nodig heeft is goedkoper dan de hele dag laag stoken (Selectra).</span></li>
+</ul>
+<p>Een <strong>elektrische handdoekradiator</strong> heeft vaak een vermogen tussen 300 en 750 watt en hoort niet in zone 1; in zone 2 moet hij minimaal IP44 zijn (Elektramat). Wij maken een vast aansluitpunt achter de radiator, zonder snoer langs de muur. Wilt u liever een paneel aan de muur of het plafond? Kijk dan bij <a href="/infraroodpanelen-aansluiten-rotterdam/">infraroodpanelen aansluiten</a>.</p>
+
+<h2>Huurwoning, <em>flat of VvE.</em></h2>
+<p>Huurt u? Vraag dan eerst toestemming aan de verhuurder voor vaste aanpassingen zoals extra stopcontacten, spots of vloerverwarming. In een flat of portiekwoning loopt de afvoer van de ventilatie vaak via een gezamenlijk kanaal; daar mag u niet zomaar een eigen ventilator op aansluiten. Vraag dat na bij de VvE of de beheerder. Bent u verhuurder of beheerder? Kijk ook bij <a href="/elektricien-verhuurders-vve-rotterdam/">elektricien voor verhuurders en VvE's</a>.</p>
+
+<h2>Zo <em>pakken we het aan.</em></h2>
+<ol class="steps-list">
+  <li><strong>Stuur via WhatsApp</strong> een foto van uw open meterkast, een foto of schets van de badkamer en wat u wilt: verlichting, spiegel, stopcontacten, ventilator, vloerverwarming.</li>
+  <li><strong>Wij geven aan wat waar kan</strong> volgens de zones, of de meterkast het aankan, en u krijgt een duidelijke prijs vooraf.</li>
+  <li><strong>Voor het tegelen</strong> leggen we de leidingen en inbouwdozen, en eventueel de vloerverwarming.</li>
+  <li><strong>Na het tegelen</strong> monteren en testen we alles, inclusief de aardlekbeveiliging, en zetten op de groepenkast welke groep waarvoor is.</li>
+</ol>
+<p>Alles volgens NEN 1010, door verzekerde vakmensen. Lampen, spiegel en ventilator kiest u zelf; wij kijken graag vooraf mee of ze geschikt zijn voor de plek.</p>
+
+<div class="note-box"><p><strong>Bronnen:</strong> GAMMA klusadvies, <a href="https://www.gamma.nl/klusadvies/a/elektra-badkamer-aansluiten" target="_blank" rel="noopener noreferrer">elektra in de badkamer</a>; Elektramat, <a href="https://www.elektramat.nl/kennisbank/badkamer-afzuiging/" target="_blank" rel="noopener noreferrer">afzuiging in de badkamer</a> en <a href="https://www.elektramat.nl/kennisbank/elektrische-verwarming-badkamer/" target="_blank" rel="noopener noreferrer">elektrische verwarming in de badkamer</a>; Selectra, <a href="https://selectra.nl/energie/verwarming/elektrische-vloerverwarming-badkamer" target="_blank" rel="noopener noreferrer">elektrische vloerverwarming in de badkamer</a>.</p></div>
+""",
+        "faq": [
+            ("Mogen er spots boven de douche?",
+             "Ja, maar alleen spots die daarvoor gemaakt zijn. Direct boven de douchebak of het bad, en bij een inloopdouche binnen 1,2 meter van de douchekop, is zone 1: daar alleen verlichting op 12 volt met minimaal IPX5. De transformator of driver komt buiten de zones."),
+            ("Hoe ver moet een stopcontact van de douche af?",
+             "Buiten zone 2, dus verder dan 60 cm van het bad of de douchecabine. Bij een inloopdouche zonder cabine buiten de 1,2 meter rond de douchekop. Het stopcontact moet geaard zijn en achter een aardlekschakelaar zitten."),
+            ("Wanneer moet de elektricien komen bij een badkamerverbouwing?",
+             "Het liefst twee keer: voor het tegelen om leidingen, inbouwdozen en eventueel vloerverwarming te leggen, en na het tegelen om lampen, schakelaars, stopcontacten en de ventilator te monteren en te testen."),
+            ("Kan elektrische vloerverwarming onder mijn bestaande tegels?",
+             "Nee. Een verwarmingsmat komt onder een nieuwe tegelvloer. Gaat de vloer er toch uit bij de verbouwing, dan is dit het moment."),
+            ("Is vloerverwarming genoeg om de badkamer te verwarmen?",
+             "Meestal niet als enige bron. Een mat geeft warme tegels, maar een badkamer met een buitenmuur of raam heeft vaak ook een radiator of handdoekradiator nodig."),
+            ("Kan de ventilator vanzelf blijven draaien na het douchen?",
+             "Ja, met een ventilator met nalooptimer of vochtsensor. Voor een nalooptimer leggen we een extra schakeldraad vanaf de lichtschakelaar, het liefst voordat de tegels erop gaan."),
+            ("Mag de wasmachine in de badkamer staan?",
+             "Ja, als het stopcontact buiten de zones rond bad en douche zit, geaard is en achter een aardlekschakelaar zit. We geven de wasmachine bij voorkeur een eigen groep."),
+            ("Mijn badkamer zit op een groep zonder aardlekschakelaar. Is dat een probleem?",
+             "In een natte ruimte is een aardlekschakelaar van 30 mA de belangrijkste bescherming. Bij een verbouwing plaatsen we die eerst, of vervangen we de groepenkast als die verouderd is."),
+            ("Wat kost de elektra voor een nieuwe badkamer?",
+             "Dat hangt af van wat er komt: aantal lampen en spots, stopcontacten, ventilator, vloerverwarming en of er een groep bij moet. Stuur foto's van de badkamer en de meterkast via WhatsApp, dan krijgt u vooraf een duidelijke prijs."),
         ],
     },
     # ---------------------------------------------------------- STOPCONTACT
@@ -962,7 +1073,7 @@ PAGES = [
 <p>Apparaten met een aardesymbool, zoals een wasmachine, koelkast of waterkoker, moeten op een geaard stopcontact. In oudere woningen in Rotterdam komen we nog kamers tegen waar geen aardedraad naar het stopcontact loopt. Een geaard stopcontact op een leiding zonder aarde geeft schijnveiligheid: het lijkt geaard, maar is het niet. We kijken daarom eerst of er een aardedraad is. Is die er niet, dan bespreken we of een nieuwe leiding of nieuwe <a href="/bedrading-vervangen-rotterdam/">bedrading</a> nodig is.</p>
 
 <h2>Badkamer <em>en keuken.</em></h2>
-<p>In de badkamer gelden strenge regels. Rond het bad en de douche zijn zones; tot 60 centimeter naast het bad of de douchecabine mag geen stopcontact. Daarbuiten mag het wel, maar alleen geaard en achter een aardlekschakelaar. In de keuken zitten stopcontacten boven het aanrecht meestal op ongeveer 105 centimeter hoogte. Zware keukenapparaten, zoals een oven, vaatwasser of <a href="/inductiekookplaat-aansluiten-rotterdam/">inductiekookplaat</a>, horen op een eigen groep.</p>
+<p>In de badkamer gelden strenge regels. Rond het bad en de douche zijn zones; tot 60 centimeter naast het bad of de douchecabine mag geen stopcontact. Daarbuiten mag het wel, maar alleen geaard en achter een aardlekschakelaar. Verbouwt u de badkamer, lees dan <a href="/elektra-badkamer-rotterdam/">elektra in de badkamer</a>. In de keuken zitten stopcontacten boven het aanrecht meestal op ongeveer 105 centimeter hoogte. Zware keukenapparaten, zoals een oven, vaatwasser of <a href="/inductiekookplaat-aansluiten-rotterdam/">inductiekookplaat</a>, horen op een eigen groep.</p>
 <div class="note-box"><p><strong>Bronnen:</strong> GAMMA klusadvies over <a href="https://www.gamma.nl/klusadvies/a/elektra-badkamer-aansluiten" target="_blank" rel="noopener noreferrer">elektra in de badkamer</a> en <a href="https://www.gamma.nl/klusadvies/a/regels-elektra-aanleggen" target="_blank" rel="noopener noreferrer">de basisregels voor elektra aanleggen</a>.</p></div>
 
 <div class="note-box"><p><strong>Veel stekkerdozen achter elkaar?</strong> Dat kan een groep overbelasten en is een bekende oorzaak van brand. Een paar extra stopcontacten zijn veiliger en netter.</p></div>
@@ -1395,7 +1506,7 @@ def _city(slug, name, char, say, wijken_oud, wijken_nieuw, local, faq_extra,
   <li>{{check}}<span><a href="/groep-bijplaatsen-rotterdam/">Groep bijplaatsen</a> voor de wasmachine, droger, oven of airco, of voor <a href="/infraroodpanelen-aansluiten-rotterdam/">infraroodpanelen</a>.</span></li>
   <li>{{check}}<span><a href="/meterkast-verzwaren-rotterdam/">Meterkast verzwaren</a> of <a href="/krachtstroom-aansluiten-rotterdam/">krachtstroom aansluiten</a> voor een werkplaats, sauna of zware machine.</span></li>
   <li>{{check}}<span><a href="/vrije-groep-stekkerbatterij-rotterdam/">Vrije groep voor een stekkerbatterij</a>, of de meterkast klaarmaken voor een <a href="/thuisbatterij-aansluiten-rotterdam/">thuisbatterij</a>, op tijd voor 2027.</span></li>
-  <li>{{check}}<span><a href="/lampen-ophangen-rotterdam/">Lampen ophangen</a>, spots en dimmers.</span></li>
+  <li>{{check}}<span><a href="/lampen-ophangen-rotterdam/">Lampen ophangen</a>, spots en dimmers, en de <a href="/elektra-badkamer-rotterdam/">elektra voor een nieuwe badkamer</a>.</span></li>
   <li>{{check}}<span><a href="/stopcontact-plaatsen-rotterdam/">Stopcontacten plaatsen</a> of verplaatsen, binnen en <a href="/buitenverlichting-tuinstopcontact-rotterdam/">buiten in de tuin</a>.</span></li>
   <li>{{check}}<span><a href="/laadpaal-installeren-rotterdam/">Laadpaal installeren</a> bij uw woning of bedrijf.</span></li>
   <li>{{check}}<span><a href="/elektra-keuring-rotterdam/">Elektra keuring</a> bij aankoop of verhuur van een woning in {name}.</span></li>
