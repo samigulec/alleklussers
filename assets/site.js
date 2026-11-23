@@ -337,8 +337,12 @@
   try {
     var saved = localStorage.getItem('ak_lang');
     if (LANGS.indexOf(saved) > -1) initial = saved;
-    else if (navigator.language && LANGS.indexOf(navigator.language.slice(0, 2).toLowerCase()) > -1) {
-      initial = navigator.language.slice(0, 2).toLowerCase();
+    else if (navigator.language) {
+      // Auto-switch only for tr/ar/pl/de browsers. English browsers (and
+      // Googlebot, which renders as en-US) keep Dutch, so Google indexes the
+      // Dutch homepage. Visitors can still pick English in the menu.
+      var nav = navigator.language.slice(0, 2).toLowerCase();
+      if (nav !== 'en' && LANGS.indexOf(nav) > -1) initial = nav;
     }
   } catch (e) {}
   setLang(initial);
