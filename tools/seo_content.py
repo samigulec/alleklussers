@@ -28,6 +28,7 @@ WA_TEXT = {
     "groepenkast-vervangen-rotterdam": "Hallo AlleKlussers, ik wil graag een prijs voor het vervangen of uitbreiden van mijn groepenkast." + FOTO,
     "groep-bijplaatsen-rotterdam": "Hallo AlleKlussers, ik wil graag een extra groep in mijn meterkast. Het is voor: ",
     "inductiekookplaat-aansluiten-rotterdam": "Hallo AlleKlussers, ik wil graag een inductiekookplaat laten aansluiten." + FOTO,
+    "perilex-aansluiten-rotterdam": "Hallo AlleKlussers, ik wil graag een perilex laten aansluiten of verplaatsen." + FOTO + " Het gaat om: ",
     "thuisbatterij-aansluiten-rotterdam": "Hallo AlleKlussers, ik wil graag een thuisbatterij laten aansluiten." + FOTO,
     "vrije-groep-stekkerbatterij-rotterdam": "Hallo AlleKlussers, ik wil graag een vrije groep voor mijn stekkerbatterij." + FOTO,
     "lampen-ophangen-rotterdam": "Hallo AlleKlussers, ik wil graag lampen laten ophangen. Het gaat om: ",
@@ -450,7 +451,7 @@ PAGES = [
   <li>{check}<span><strong>Perilex in de keuken.</strong> De perilex-wandcontactdoos komt achter of onder de kookplaat, op een plek die u na het monteren nog kunt bereiken.</span></li>
   <li>{check}<span><strong>Ook op 1-fase.</strong> Een kookgroep met perilex werkt op twee groepen van dezelfde 1-fase aansluiting. Krachtstroom is daarvoor niet nodig.</span></li>
 </ul>
-<p>Ligt er al een perilex-aansluiting van een oud elektrisch fornuis? Dan controleren we of de kabel en de groep in orde zijn; vaak kan de nieuwe kookplaat er dan direct op.</p>
+<p>Ligt er al een perilex-aansluiting van een oud elektrisch fornuis? Dan controleren we of de kabel en de groep in orde zijn; vaak kan de nieuwe kookplaat er dan direct op. Moet de perilex naar een andere plek, bijvoorbeeld in een kookeiland, of wilt u weten wat er achter uw perilex zit? Lees <a href="/perilex-aansluiten-rotterdam/">perilex aansluiten en verplaatsen</a>.</p>
 
 <h2>Moet uw aansluiting <em>verzwaard worden?</em></h2>
 <p>Meestal niet. Met een 3x25A-aansluiting past een kookgroep voor inductie gewoon. In de regio Rotterdam hebben veel woningen nog 1-fase, vaak 1x35A; ook dan past inductie meestal, want de kookplaat verdeelt het vermogen zelf. Heeft u een 1-fase aansluiting, dan kijken we of er naast de kookplaat genoeg ruimte overblijft voor de rest van het huis, zeker als er ook een warmtepomp of <a href="/laadpaal-installeren-rotterdam/">laadpaal</a> bij komt.</p>
@@ -488,6 +489,97 @@ PAGES = [
              "Niet altijd. Vaak kan de kabel via bestaande leidingen of langs een verborgen route. Kan dat niet, dan bespreken we vooraf met u hoe en waar de kabel komt."),
             ("Wat kost het aansluiten van een inductiekookplaat?",
              "Dat hangt af van wat er al is. Met een bestaande kookgroep is het een kleine klus; moet er een groep en een nieuwe kabel bij, dan is het meer werk. Stuur een foto van uw meterkast, dan krijgt u vooraf een duidelijke prijs."),
+        ],
+    },
+    # ---------------------------------------------------------- PERILEX
+    {
+        "slug": "perilex-aansluiten-rotterdam",
+        "short": "Perilex aansluiten",
+        "sub": "Perilex plaatsen, verplaatsen of een stekker aan de kookplaat.",
+        "title": "Perilex aansluiten of verplaatsen Rotterdam | AlleKlussers",
+        "desc": "Perilex aansluiten in Rotterdam: nieuw perilex-stopcontact, verplaatsen bij een nieuwe keuken of kookeiland, stekker aan de kookplaat. Prijs vooraf.",
+        "service": "Perilex-aansluiting plaatsen, verplaatsen en aansluiten",
+        "char": "dosie",
+        "say": "“Vijf gaatjes, één goede aansluiting.”",
+        "eyebrow": "Perilex",
+        "h1": "Perilex aansluiten in <em>Rotterdam.</em>",
+        "lede": "Een nieuw perilex-stopcontact, een perilex die mee moet naar de nieuwe plek van uw kookplaat, of een kookplaat zonder stekker? Wij kijken eerst wat er achter uw perilex zit, en sluiten alles veilig aan.",
+        "body": """
+<h2>Wat is <em>perilex?</em></h2>
+<p>Perilex is het ronde stopcontact met vijf gaatjes dat u in de keuken ziet, met de bijpassende stekker. Het systeem bestaat sinds 1951 en werd in de jaren zestig gewoon, toen elektrische fornuizen opkwamen. Het wordt vooral in Nederland, Duitsland en Zweden gebruikt. In woningen gaat het vrijwel altijd om de uitvoering van 16 ampère (Wikipedia).</p>
+<p>De vijf polen zijn: één aarde in het midden, en daaromheen fasen en nul. Welke daarvan echt stroom krijgen, hangt af van hoe de groep in de meterkast is aangelegd. Van buiten zien twee perilex-stopcontacten er dus hetzelfde uit, terwijl er iets heel anders achter kan zitten.</p>
+
+<h2>Wat zit er achter <em>uw perilex?</em></h2>
+<ul class="checks">
+  <li>{check}<span><strong>Kookgroep op één fase (2-fase perilex).</strong> Het meest voorkomend. In de meterkast zitten twee groepen van 16 ampère met één hendel. Elke groep heeft zijn eigen fase- en nuldraad naar de perilex (GAMMA). Samen goed voor ongeveer 7.400 watt, genoeg voor de meeste inductiekookplaten met vier zones (Consumentenbond). Dit kan gewoon op een 1-fase aansluiting.</span></li>
+  <li>{check}<span><strong>Kookgroep op twee verschillende fasen.</strong> Hetzelfde idee, maar de twee groepen zitten op twee fasen van een 3-fase aansluiting. Voor de kookplaat werkt het hetzelfde; voor de meterkast wordt de belasting beter verdeeld.</span></li>
+  <li>{check}<span><strong>3-fase perilex.</strong> Drie fasen en één nul, met 400 volt tussen de fasen. Fabrikanten adviseren dit meestal bij een kookplaat van 7.600 watt of meer, bij kookplaten met ingebouwde afzuiging (downdraft) en bij sommige kookplaten met vijf of meer zones (Consumentenbond). Zie ook <a href="/krachtstroom-aansluiten-rotterdam/">krachtstroom aansluiten</a>.</span></li>
+</ul>
+<p>Wij meten dat na voordat er iets wordt aangesloten. Bij een 2-fase perilex staat op twee polen spanning, bij een 3-fase perilex op drie, met 400 volt tussen twee fasen (Coolblue). Ook kijken we in de meterkast welke groep erbij hoort en of er een <a href="/aardlekschakelaar-rotterdam/">aardlekschakelaar</a> voor zit.</p>
+<div class="note-box"><p><strong>Waarom dit belangrijk is.</strong> In de aansluitdoos van een kookplaat zitten bruggetjes die bepalen of hij op één, twee of drie fasen werkt. Past dat niet bij wat er in de muur zit, dan werkt de kookplaat maar half, helemaal niet, of slaan de stoppen door (Coolblue). Laat de stekker daarom aansluiten door iemand die eerst meet.</p></div>
+
+<h2>Nieuwe perilex <em>plaatsen.</em></h2>
+<p>Kookt u nu op gas, of heeft u alleen gewone stopcontacten in de keuken? Dan is er nog geen perilex. Een perilex-stopcontact is alleen veilig met een eigen kookgroep erachter:</p>
+<ul class="checks">
+  <li>{check}<span><strong>Kookgroep in de meterkast,</strong> beveiligd door een aardlekschakelaar. Is uw kast vol of oud, dan leest u bij <a href="/groep-bijplaatsen-rotterdam/">groep bijplaatsen</a> wat de mogelijkheden zijn.</span></li>
+  <li>{check}<span><strong>Een eigen kabel naar de keuken.</strong> De perilex hoort op zijn eigen kookgroep, niet op een groep die ook andere stopcontacten voedt.</span></li>
+  <li>{check}<span><strong>Inbouw of opbouw.</strong> In een gemetselde of gestucte muur werken we het liefst in. In een flat met betonnen muren, of in een keukenkastje, kan een opbouwdoos de beste keuze zijn.</span></li>
+</ul>
+<p>Gaat het om een inductiekookplaat, dan staat op <a href="/inductiekookplaat-aansluiten-rotterdam/">inductiekookplaat aansluiten</a> welke kookplaat welke aansluiting vraagt en of u moet verzwaren.</p>
+
+<h2>Perilex verplaatsen <em>bij een nieuwe keuken.</em></h2>
+<p>Bij een nieuwe keuken komt de kookplaat vaak op een andere plek: aan de andere muur, op een schiereiland of in een kookeiland. De perilex moet dan mee. Plan dit vóór de keukenmonteur komt, want als de kasten staan, kun je er slecht meer bij.</p>
+<ul class="checks">
+  <li>{check}<span><strong>Waar komt hij?</strong> In of achter het onderkastje onder de kookplaat, op een plek die u na het monteren nog kunt bereiken. Het aansluitsnoer van de kookplaat moet er zonder trekken bij kunnen.</span></li>
+  <li>{check}<span><strong>Kookeiland of schiereiland.</strong> Dan moet de kabel door of over de vloer naar het eiland. Ligt er een nieuwe vloer, dan leggen we een buis mee voordat die dicht gaat. Op een betonvloer, zoals in veel Rotterdamse flats, zoeken we samen met u en de keukenmonteur de beste route, bijvoorbeeld via de plint of de kastjes.</span></li>
+  <li>{check}<span><strong>Geen verborgen lassen.</strong> Moet de kabel langer worden, dan maken we de verbinding in een las- of inbouwdoos die bereikbaar blijft, of trekken we een nieuwe kabel vanaf de meterkast.</span></li>
+  <li>{check}<span><strong>De oude plek.</strong> Een perilex die niet meer nodig is, halen we weg of maken we veilig dood. Er blijft geen kabel onder spanning achter in een dichte muur.</span></li>
+</ul>
+<p>Een verlengsnoer of koppelstuk achter de keukenkastjes om het snoer van de kookplaat langer te maken raden we af. Bij een apparaat dat urenlang veel stroom trekt, is elke extra verbinding een plek die warm kan worden.</p>
+
+<h2>Kookplaat zonder <em>stekker?</em></h2>
+<p>Inbouwkookplaten met vier of meer zones worden meestal geleverd zonder snoer en stekker (Consumentenbond). De perilex-stekker koopt u apart, of wij nemen hem mee. Wij zetten de stekker aan het aansluitsnoer, stellen de bruggetjes in de kookplaat in volgens de handleiding en passend bij uw perilex, en testen daarna alle zones. Heeft uw kookplaat geen snoer, dan monteren we een passend aansluitsnoer.</p>
+
+<h2>Perilex is niet <em>voor machines.</em></h2>
+<p>Perilex is gemaakt voor vaste keukenapparaten zoals een kookplaat of fornuis. Voor een compressor, zaagmachine of ander apparaat met een 3-fase motor is het geen goede keuze: de volgorde van de fasen is bij perilex niet eenduidig, en dan kan een motor de verkeerde kant op draaien (Wikipedia). Daarvoor gebruiken we een CEE-krachtstroomcontactdoos. Lees meer bij <a href="/krachtstroom-aansluiten-rotterdam/">krachtstroom aansluiten</a>.</p>
+
+<h2>Oude perilex, <em>oude kookgroep.</em></h2>
+<p>In veel oudere Rotterdamse woningen zit nog een perilex van een elektrisch fornuis van jaren geleden. Die kan vaak prima blijven, maar we kijken eerst:</p>
+<ul class="checks">
+  <li>{check}<span><strong>Is het stopcontact of de stekker verkleurd,</strong> wordt hij warm of zit hij los? Gebruik hem dan niet meer en stuur ons een foto.</span></li>
+  <li>{check}<span><strong>Zit er een aardlekschakelaar voor de kookgroep?</strong> In kasten van vóór 1975 is die er bijna nooit. Dan komt die er eerst bij, of wordt de <a href="/groepenkast-vervangen-rotterdam/">groepenkast vervangen</a>.</span></li>
+  <li>{check}<span><strong>Is de kabel dik genoeg en heel?</strong> Een nieuwe kookplaat kan meer vermogen vragen dan het oude fornuis.</span></li>
+</ul>
+
+<h2>Wat wij <em>doen.</em></h2>
+<ol class="steps-list">
+  <li><strong>U stuurt foto's</strong> via WhatsApp: van de meterkast, de perilex of de plek in de keuken, en het typeplaatje of de productpagina van de kookplaat.</li>
+  <li><strong>U krijgt vooraf een duidelijke prijs,</strong> met wat er nodig is: alleen de stekker, een nieuwe of verplaatste perilex, of ook een kookgroep.</li>
+  <li><strong>We meten en sluiten aan:</strong> kookgroep en kabel waar nodig, de perilex op de goede plek, de stekker aan de kookplaat.</li>
+  <li><strong>We testen</strong> de aardlekschakelaar en alle kookzones, en labelen de groep in de meterkast.</li>
+</ol>
+<p>Alles volgens NEN 1010, door verzekerde vakmensen. Huurt u de woning? Vraag voor een nieuwe of verplaatste perilex eerst toestemming aan de verhuurder; met <a href="/elektricien-verhuurders-vve-rotterdam/">verhuurders en VvE's</a> werken we ook rechtstreeks.</p>
+<div class="note-box"><p><strong>Bronnen:</strong> Wikipedia, <a href="https://en.wikipedia.org/wiki/Perilex" target="_blank" rel="noopener noreferrer">Perilex</a>; GAMMA klusadvies, <a href="https://www.gamma.nl/klusadvies/a/elektriciteit-aanleggen/stappenplan/perilex-aansluiten" target="_blank" rel="noopener noreferrer">perilex aansluiten</a>; Consumentenbond, <a href="https://www.consumentenbond.nl/inductiekookplaat/inductiekookplaat-aansluiten" target="_blank" rel="noopener noreferrer">inductiekookplaat aansluiten</a>; Coolblue, <a href="https://www.coolblue.nl/advies/aansluiting-elektrische-kookplaat.html" target="_blank" rel="noopener noreferrer">aansluiting voor een elektrische kookplaat</a> en <a href="https://www.coolblue.nl/advies/hoe-meet-ik-een-perilex-stopcontact-met-een-multimeter.html" target="_blank" rel="noopener noreferrer">een perilex-stopcontact meten</a>.</p></div>
+""",
+        "faq": [
+            ("Wat is het verschil tussen perilex en krachtstroom?",
+             "Perilex is een stekkervorm met vijf polen. Hoeveel fasen erop zitten, hangt af van de groep erachter. In een woning is het meestal een kookgroep met twee groepen van 16 ampère. Bij krachtstroom zitten er drie fasen op, met 400 volt tussen de fasen."),
+            ("Kan ik een 2-fase kookplaat op een 3-fase perilex aansluiten?",
+             "Meestal wel, als de aansluiting in de kookplaat volgens de handleiding wordt ingesteld en past bij wat er in de muur zit. Wij meten de perilex eerst na en stellen de kookplaat daarop in."),
+            ("Kan ik een perilex-stekker zelf aansluiten?",
+             "Dat raden we af. De bruggetjes in de kookplaat moeten precies passen bij de perilex; een draad op de verkeerde klem kan de kookplaat beschadigen of de groep laten doorslaan."),
+            ("Waar komt de perilex bij een nieuwe keuken?",
+             "In of achter het onderkastje onder de kookplaat, op een plek die u na het monteren nog kunt bereiken. Plan het verplaatsen vóór de keuken wordt geplaatst."),
+            ("Kan er een perilex in een kookeiland?",
+             "Ja. De kabel moet dan door of over de vloer naar het eiland. Bij een nieuwe vloer leggen we vooraf een buis mee; op een betonvloer zoeken we samen met u en de keukenmonteur een route."),
+            ("Mag ik het snoer van mijn kookplaat verlengen?",
+             "Liever niet met een verlengsnoer of koppelstuk achter de kastjes. Beter is de perilex dichter bij de kookplaat te plaatsen, of een langer aansluitsnoer te monteren."),
+            ("Mijn perilex-stekker wordt warm of is verkleurd. Wat nu?",
+             "Gebruik de kookplaat niet meer en zet de kookgroep in de meterkast uit. Stuur een foto via WhatsApp; meestal is een stekker of contactdoos aan vervanging toe, of zit er een draad los."),
+            ("Kan een perilex op een 1-fase aansluiting?",
+             "Ja. Een kookgroep met twee groepen van 16 ampère werkt gewoon op een 1-fase aansluiting. Voor een 3-fase perilex heeft u wel een 3-fase aansluiting nodig."),
+            ("Wat kost een perilex aansluiten?",
+             "Dat hangt af van wat er al is. Alleen een stekker aan de kookplaat is een kleine klus; een nieuwe kookgroep met kabel is meer werk. Stuur foto's van de meterkast en de keuken, dan krijgt u vooraf een duidelijke prijs."),
         ],
     },
     # ------------------------------------------------------- VERZWAREN
@@ -716,7 +808,7 @@ PAGES = [
   <li>{check}<span><strong>De juiste draairichting.</strong> Bij een draaistroommotor maakt de volgorde van de fasen uit: verkeerd aangesloten draait de motor de verkeerde kant op. Wij controleren de fasevolgorde voordat u de machine gebruikt.</span></li>
 </ul>
 
-<div class="note-box"><p><strong>Een perilex-stopcontact is geen krachtstroom.</strong> Perilex, het ronde stopcontact met vijf gaatjes in de keuken, is een stekkervorm. Hoeveel fasen erop zitten, hangt af van hoe de groep is aangelegd; in een woning is het bijna altijd een kookgroep op twee fasen. Sluit een machine die 400 volt vraagt dus niet aan op een perilex-aansluiting of via een verloopstekker.</p></div>
+<div class="note-box"><p><strong>Een perilex-stopcontact is geen krachtstroom.</strong> Perilex, het ronde stopcontact met vijf gaatjes in de keuken, is een stekkervorm. Hoeveel fasen erop zitten, hangt af van hoe de groep is aangelegd; in een woning is het bijna altijd een kookgroep op twee fasen. Sluit een machine die 400 volt vraagt dus niet aan op een perilex-aansluiting of via een verloopstekker. Meer over perilex leest u bij <a href="/perilex-aansluiten-rotterdam/">perilex aansluiten</a>.</p></div>
 
 <h2>Krachtstroom in de schuur <em>of garage.</em></h2>
 <p>In Rotterdam en omgeving staat de werkplaats vaak in een schuur achter in de tuin, of in een garage naast of onder de woning. Dan loopt de kabel van de meterkast naar buiten, en vaak onder de grond door de tuin. Dat doen we net zo zorgvuldig als bij een <a href="/buitenverlichting-tuinstopcontact-rotterdam/">tuinstopcontact</a>: diep genoeg, in een beschermbuis en goed afgedicht waar de kabel de muur in gaat. In de schuur komt dan het krachtstroomstopcontact, en vaak ook meteen een gewone groep voor licht en een paar stopcontacten.</p>
@@ -1502,7 +1594,7 @@ def _city(slug, name, char, say, wijken_oud, wijken_nieuw, local, faq_extra,
 <h2>Waarmee wij u <em>helpen in {name}.</em></h2>
 <ul class="checks">
   <li>{{check}}<span><a href="/storing-elektra-rotterdam/">Storing verhelpen</a>: stroomuitval of een aardlekschakelaar die steeds doorslaat.</span></li>
-  <li>{{check}}<span><a href="/groepenkast-vervangen-rotterdam/">Groepenkast vervangen of uitbreiden</a>, bijvoorbeeld voor <a href="/inductiekookplaat-aansluiten-rotterdam/">inductie</a> of een warmtepomp.</span></li>
+  <li>{{check}}<span><a href="/groepenkast-vervangen-rotterdam/">Groepenkast vervangen of uitbreiden</a>, bijvoorbeeld voor <a href="/inductiekookplaat-aansluiten-rotterdam/">inductie</a> met een <a href="/perilex-aansluiten-rotterdam/">perilex-aansluiting</a> of een warmtepomp.</span></li>
   <li>{{check}}<span><a href="/groep-bijplaatsen-rotterdam/">Groep bijplaatsen</a> voor de wasmachine, droger, oven of airco, of voor <a href="/infraroodpanelen-aansluiten-rotterdam/">infraroodpanelen</a>.</span></li>
   <li>{{check}}<span><a href="/meterkast-verzwaren-rotterdam/">Meterkast verzwaren</a> of <a href="/krachtstroom-aansluiten-rotterdam/">krachtstroom aansluiten</a> voor een werkplaats, sauna of zware machine.</span></li>
   <li>{{check}}<span><a href="/vrije-groep-stekkerbatterij-rotterdam/">Vrije groep voor een stekkerbatterij</a>, of de meterkast klaarmaken voor een <a href="/thuisbatterij-aansluiten-rotterdam/">thuisbatterij</a>, op tijd voor 2027.</span></li>
