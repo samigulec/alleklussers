@@ -51,7 +51,7 @@ PAGES = [
         "slug": "elektricien-rotterdam",
         "short": "Elektricien Rotterdam",
         "title": "Elektricien Rotterdam | AlleKlussers, 24/7 bereikbaar",
-        "desc": "Elektricien nodig in Rotterdam? AlleKlussers helpt bij storingen, groepenkasten, verlichting, stopcontacten en laadpalen. Verzekerd, binnen 24 uur reactie.",
+        "desc": "Elektricien nodig in Rotterdam? Storing, groepenkast, inductie, lampen of laadpaal: app ons met een foto. Verzekerd, volgens NEN 1010, binnen 24 uur reactie.",
         "service": "Elektricien",
         "char": "stekkie",
         "say": "“Elektra in Rotterdam? Wij zitten om de hoek.”",
@@ -63,9 +63,58 @@ PAGES = [
 <h2>Elektra geregeld, <em>zonder gedoe.</em></h2>
 <p>AlleKlussers is een elektrotechnisch bedrijf uit Rotterdam. Wij helpen particulieren, verhuurders en bedrijven met alles wat met elektra te maken heeft: van een lamp ophangen of een extra stopcontact tot een nieuwe groepenkast, een laadpaal of het verhelpen van een storing.</p>
 <p>U krijgt binnen 24 uur reactie met een duidelijke prijs vooraf. Onze elektriciens zijn verzekerd en werken volgens NEN 1010, de norm voor veilige elektrische installaties in Nederland.</p>
+<p>We doen alleen elektra. Geen schilderwerk, vloeren of loodgieterswerk: daarvoor kunt u beter een specialist in dat vak zoeken.</p>
 
-<h2>Waar kunnen wij <em>mee helpen?</em></h2>
+<h2>Wat speelt er <em>bij u?</em></h2>
+<p>Kies de situatie die het meest op de uwe lijkt. Op elke pagina staat wat u zelf kunt nagaan, waar wij op letten en wat u ons het beste kunt sturen.</p>
+<ul class="checks">
+  <li>{check}<span><strong>Stroom uitgevallen of er slaat iets door.</strong> Begin bij <a href="/storing-elektra-rotterdam/">storing en stroomuitval</a>. Gaat steeds de schakelaar met de testknop omlaag, kijk dan bij <a href="/aardlekschakelaar-rotterdam/">aardlekschakelaar slaat door</a>.</span></li>
+  <li>{check}<span><strong>Oude meterkast of te weinig groepen.</strong> Lees over <a href="/groepenkast-vervangen-rotterdam/">groepenkast vervangen of uitbreiden</a> en <a href="/groep-bijplaatsen-rotterdam/">een groep bijplaatsen</a>.</span></li>
+  <li>{check}<span><strong>Nieuwe keuken of van het gas af.</strong> Zie <a href="/inductiekookplaat-aansluiten-rotterdam/">inductiekookplaat aansluiten</a>, <a href="/perilex-aansluiten-rotterdam/">perilex aansluiten of verplaatsen</a> en <a href="/meterkast-verzwaren-rotterdam/">meterkast verzwaren</a>.</span></li>
+  <li>{check}<span><strong>Verbouwing van badkamer of zolder.</strong> Zie <a href="/elektra-badkamer-rotterdam/">elektra in de badkamer</a>, <a href="/infraroodpanelen-aansluiten-rotterdam/">infraroodpanelen</a> en <a href="/bedrading-vervangen-rotterdam/">bedrading vervangen</a>.</span></li>
+  <li>{check}<span><strong>Lampen, stopcontacten en buiten.</strong> Zie <a href="/lampen-ophangen-rotterdam/">lampen ophangen</a>, <a href="/stopcontact-plaatsen-rotterdam/">stopcontact plaatsen of verplaatsen</a> en <a href="/buitenverlichting-tuinstopcontact-rotterdam/">buitenverlichting en tuinstopcontact</a>.</span></li>
+  <li>{check}<span><strong>Elektrische auto of zonnepanelen.</strong> Zie <a href="/laadpaal-installeren-rotterdam/">laadpaal installeren</a>, <a href="/vrije-groep-stekkerbatterij-rotterdam/">vrije groep voor een stekkerbatterij</a> en onze uitleg over <a href="/salderen-stopt-2027/">het einde van salderen in 2027</a>.</span></li>
+  <li>{check}<span><strong>Werkplaats, garage of machine op 400 volt.</strong> Zie <a href="/krachtstroom-aansluiten-rotterdam/">krachtstroom aansluiten</a>.</span></li>
+  <li>{check}<span><strong>Huis kopen, verhuren of beheren.</strong> Zie <a href="/elektra-keuring-rotterdam/">elektra keuring</a> en <a href="/elektricien-verhuurders-vve-rotterdam/">elektricien voor verhuurders en VvE's</a>.</span></li>
+</ul>
+
+<h2>Alle diensten <em>op een rij.</em></h2>
 {tiles}
+
+<h2>Elektra in Rotterdam: <em>oude huizen, veel flats.</em></h2>
+<p>Rotterdam is voor een elektricien een bijzondere stad. Van de ruim 330.000 woningen is 29 procent gebouwd vóór 1945; in heel Nederland is dat 18 procent. Vooral de jaren 1925 tot 1944 springen eruit: 15 procent van de Rotterdamse woningen komt uit die periode, bijna twee keer zoveel als landelijk. Ruim de helft van alle woningen in de stad is gebouwd vóór 1975. En driekwart is een flat, portiekwoning, boven- of benedenwoning; in heel Nederland is dat ruim een derde.</p>
+<p>Veel van die woningen hebben inmiddels een nieuwe installatie, maar lang niet allemaal. Wat er in een oudere Rotterdamse woning kan spelen:</p>
+<ul class="checks">
+  <li>{check}<span><strong>Geen of te weinig aardlekbeveiliging.</strong> In nieuwbouw is een aardlekschakelaar pas sinds 1975 verplicht. Een kast met draaistoppen heeft er meestal geen. Dan is <a href="/groepenkast-vervangen-rotterdam/">een nieuwe groepenkast</a> de veiligste stap.</span></li>
+  <li>{check}<span><strong>Weinig groepen.</strong> Een oude kast is gemaakt voor verlichting en een paar apparaten, niet voor een inductiekookplaat, vaatwasser, droger en elektrische kachel tegelijk. Slaan groepen vaak door, dan helpt een <a href="/groep-bijplaatsen-rotterdam/">extra groep</a> of een nieuwe kast.</span></li>
+  <li>{check}<span><strong>Oude bedrading.</strong> Stopcontacten met randaarde zonder aarddraad erachter, verkleurde draden of oude kleuren. Wij meten na wat er zit voordat we iets aansluiten. Zie <a href="/bedrading-vervangen-rotterdam/">bedrading vervangen</a>.</span></li>
+  <li>{check}<span><strong>Betonnen plafonds en muren.</strong> In veel portiekflats uit de jaren 50 en 60 is frezen lastig. Nieuwe leidingen komen dan vaak in een nette opbouwgoot of via een bestaand lichtpunt.</span></li>
+  <li>{check}<span><strong>Flat of VvE.</strong> Uw eigen meterkast en installatie zijn van u (of van uw verhuurder). Het trappenhuis, de lift en de gemeenschappelijke verlichting horen bij de VvE. Zie <a href="/elektricien-verhuurders-vve-rotterdam/">verhuurders en VvE's</a>.</span></li>
+</ul>
+<p>Wilt u weten hoe oud uw woning is? Het bouwjaar staat in het Kadaster (BAG). Stuur het gerust mee in uw bericht, samen met een foto van de meterkast.</p>
+
+<h2>Gaat uw wijk <em>van het gas af?</em></h2>
+<p>Rotterdam haalt wijk voor wijk woningen van het aardgas af. Woont u in een eigen woning in een van de aangewezen straten in Bospolder-Tussendijken, Heindijk, Pendrecht-Zuid of Reyeroord-West, en heeft u van de gemeente een persoonlijk aanbod gekregen om over te stappen op het warmtenet? Dan kunt u subsidie krijgen voor de overstap naar elektrisch koken: maximaal 500 euro per adres, één keer, aan te vragen tot en met 30 september 2030. Welke straten meedoen, staat op de pagina 'Subsidie elektrisch koken aanvragen' van de gemeente. Andere wijken komen later aan de beurt.</p>
+<p>Voor elektrisch koken is meestal een eigen kookgroep nodig, vaak met een perilex-aansluiting bij de kookplaat. In een oudere kast is daar niet altijd ruimte voor. Met een foto van uw meterkast zien wij of een <a href="/inductiekookplaat-aansluiten-rotterdam/">extra groep voor inductie</a> genoeg is, of dat de kast eerst moet worden uitgebreid of vervangen. Een zwaardere aansluiting is voor een gewone inductiekookplaat bijna nooit nodig; zie <a href="/meterkast-verzwaren-rotterdam/">meterkast verzwaren</a>.</p>
+
+<h2>Zo <em>werkt het.</em></h2>
+<ol class="steps-list">
+  <li><strong>Stuur een WhatsApp</strong> met wat er moet gebeuren, uw wijk of postcode en een foto van de meterkast of de plek.</li>
+  <li><strong>Binnen 24 uur reactie,</strong> met een duidelijke prijs vooraf. Bij grotere klussen krijgt u eerst een offerte; soms vragen we nog een foto of komen we kijken.</li>
+  <li><strong>We plannen een afspraak</strong> die u past. Bij een storing zijn we 24/7 bereikbaar.</li>
+  <li><strong>Verzekerde vakmensen voeren het werk uit</strong> volgens NEN 1010.</li>
+  <li><strong>Oplevering:</strong> we lopen alles samen met u na, vertellen wat er veranderd is en laten de ruimte schoon achter. Daarna krijgt u een factuur.</li>
+</ol>
+
+<h2>Waar let u op bij <em>een elektricien?</em></h2>
+<p>Of u nu ons inschakelt of een ander bedrijf: met deze punten voorkomt u verrassingen.</p>
+<ul class="checks">
+  <li>{check}<span><strong>Ingeschreven bij de KvK.</strong> Een echt bedrijf heeft een KvK-nummer en een adres dat u kunt controleren in het Handelsregister. Het onze staat onderaan elke pagina.</span></li>
+  <li>{check}<span><strong>Prijs vooraf, op schrift.</strong> Vraag wat er in de prijs zit: materiaal, voorrijden, afvoer van oude onderdelen. Zo kunt u eerlijk vergelijken.</span></li>
+  <li>{check}<span><strong>Verzekerd en volgens de norm.</strong> Werk aan de vaste installatie hoort te voldoen aan NEN 1010.</span></li>
+  <li>{check}<span><strong>Geen werk aan verzegelde delen.</strong> De hoofdzekering en de meter zijn van de netbeheerder (in Rotterdam Stedin) en zitten achter een zegel. Daar mag alleen aan worden gewerkt met toestemming van de netbeheerder.</span></li>
+  <li>{check}<span><strong>Een factuur achteraf.</strong> Met het KvK- en btw-nummer van het bedrijf. Die heeft u ook nodig als er later iets is.</span></li>
+</ul>
 
 <h2>Waarom kiezen voor <em>AlleKlussers?</em></h2>
 <ul class="checks">
@@ -78,6 +127,8 @@ PAGES = [
 <h2>Werkgebied</h2>
 <p>We werken in heel Rotterdam en in de gemeenten eromheen. Twijfelt u of we bij u in de buurt komen? Stuur ons gerust een berichtje.</p>
 {areas}
+
+<div class="note-box"><p><strong>Bronnen:</strong> Bouwjaarkaart over <a href="https://bouwjaarkaart.nl/gemeente/rotterdam" target="_blank" rel="noopener noreferrer">de bouwjaren van woningen in Rotterdam</a> (CBS StatLine 82550NED, peildatum 1 januari 2026), gemeente Rotterdam over <a href="https://www.rotterdam.nl/subsidie-elektrisch-koken-aanvragen" target="_blank" rel="noopener noreferrer">subsidie elektrisch koken aanvragen</a>.</p></div>
 """,
         "faq": [
             ("Wat kost een elektricien in Rotterdam?",
@@ -88,6 +139,16 @@ PAGES = [
              "Ja. Onze vakmensen zijn verzekerd en werken volgens NEN 1010, de norm voor veilige elektrische installaties in Nederland."),
             ("Werken jullie ook voor verhuurders en bedrijven?",
              "Ja. Naast particulieren helpen we ook verhuurders, vastgoedbeheerders en bedrijven, voor losse klussen en voor terugkerend onderhoud."),
+            ("Doen jullie ook andere klussen dan elektra?",
+             "Nee. We doen alleen elektra: storingen, groepenkasten, verlichting, stopcontacten, bedrading, keuringen, laadpalen en aansluitingen voor keuken en badkamer. Voor schilderwerk, vloeren of loodgieterswerk kunt u beter een specialist in dat vak zoeken."),
+            ("Mijn huis is van vóór 1975. Moet de groepenkast dan vervangen worden?",
+             "Niet altijd. Veel oudere woningen hebben al een nieuwere kast. Heeft uw kast nog draaistoppen of geen aardlekschakelaar, dan raden we vervangen wel aan. Stuur een foto van de open meterkast, dan zeggen we wat er nodig is."),
+            ("Is er in Rotterdam subsidie voor elektrisch koken?",
+             "Ja, maar alleen voor eigenaar-bewoners in aangewezen straten in Bospolder-Tussendijken, Heindijk, Pendrecht-Zuid en Reyeroord-West die een aanbod van de gemeente hebben gekregen om over te stappen op het warmtenet. Het gaat om maximaal 500 euro per adres, aan te vragen tot en met 30 september 2030. Kijk op de website van de gemeente Rotterdam of uw straat meedoet."),
+            ("Wat stuur ik het beste mee in mijn bericht?",
+             "Wat er moet gebeuren, uw wijk of postcode en een foto van de open meterkast of de plek waar het werk komt. Heeft u een nieuw apparaat, zoals een kookplaat of laadpaal, stuur dan ook een foto van het typeplaatje of het merk en type."),
+            ("Ik huur mijn woning. Kan ik jullie zelf inschakelen?",
+             "Een storing of gebrek in de vaste installatie meldt u eerst bij uw verhuurder of woningcorporatie. Wilt u zelf iets laten veranderen of bijplaatsen, vraag dan vooraf toestemming aan de verhuurder. Verhuurders en beheerders kunnen ons ook rechtstreeks inschakelen."),
         ],
     },
     # ------------------------------------------------------------- STORING
