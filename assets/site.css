@@ -480,6 +480,13 @@ textarea.field { height: 120px; padding: 14px 16px; resize: vertical; line-heigh
 .qform__note { font-size: 13px; color: var(--on-dark-3); text-align: center; }
 .qform__error { display: none; font-size: 14px; font-weight: 700; color: #fca5a5; }
 .qform__error.is-shown { display: block; }
+.qform__fail { font-size: 14px; font-weight: 700; color: #fca5a5; }
+.qform__hp { position: absolute; left: -9999px; width: 1px; height: 1px; overflow: hidden; }
+.qform .btn[disabled] { opacity: .65; cursor: progress; }
+.qform.is-done > :not(.qform__done) { display: none; }
+.qform__done { text-align: center; padding-block: 18px; outline: none; }
+.qform__done p { margin: 0 0 8px; color: var(--on-dark-2, var(--on-dark)); }
+.qform__done-title { font-size: 20px; font-weight: 800; color: var(--on-dark) !important; }
 
 /* ---------- Footer ---------- */
 .footer { background: var(--ink); color: var(--on-dark-3); border-top: 1px solid var(--ink-3); }

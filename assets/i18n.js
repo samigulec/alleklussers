@@ -322,14 +322,20 @@ window.AK_I18N = {
   'form.sendWa': ['Verstuur via WhatsApp', 'Send via WhatsApp', 'WhatsApp ile gönder', 'إرسال عبر واتساب', 'Wyślij przez WhatsApp', 'Per WhatsApp senden'],
   'form.sendMail': ['Verstuur via e-mail', 'Send via e-mail', 'E-posta ile gönder', 'إرسال عبر البريد', 'Wyślij e-mailem', 'Per E-Mail senden'],
   'form.note': [
-    'Uw bericht opent in WhatsApp of uw e-mailprogramma. Wij antwoorden binnen 24 uur.',
-    'Your message opens in WhatsApp or your e-mail app. We reply within 24 hours.',
-    "Mesajınız WhatsApp'ta veya e-posta uygulamanızda açılır. 24 saat içinde yanıt veririz.",
-    'تُفتح رسالتكم في واتساب أو تطبيق البريد. نرد خلال 24 ساعة.',
-    'Wiadomość otworzy się w WhatsApp lub programie pocztowym. Odpowiadamy w ciągu 24 godzin.',
-    'Ihre Nachricht öffnet sich in WhatsApp oder Ihrem E-Mail-Programm. Wir antworten innerhalb von 24 Stunden.'
+    'Uw aanvraag komt direct bij ons binnen. Wij antwoorden binnen 24 uur.',
+    'Your request reaches us directly. We reply within 24 hours.',
+    'Talebiniz doğrudan bize ulaşır. 24 saat içinde yanıt veririz.',
+    'يصلنا طلبكم مباشرة. نرد خلال 24 ساعة.',
+    'Zapytanie trafia bezpośrednio do nas. Odpowiadamy w ciągu 24 godzin.',
+    'Ihre Anfrage kommt direkt bei uns an. Wir antworten innerhalb von 24 Stunden.'
   ],
-  'form.error': ['Vul uw naam en een korte omschrijving in.', 'Please fill in your name and a short description.', 'Lütfen adınızı ve kısa bir açıklama yazın.', 'يرجى إدخال الاسم ووصف قصير.', 'Podaj imię i krótki opis.', 'Bitte Namen und eine kurze Beschreibung angeben.'],
+  'form.error': ['Vul uw naam, telefoon of e-mail en een korte omschrijving in.', 'Please fill in your name, phone or e-mail and a short description.', 'Lütfen adınızı, telefon veya e-postanızı ve kısa bir açıklama yazın.', 'يرجى إدخال الاسم والهاتف أو البريد الإلكتروني ووصف قصير.', 'Podaj imię, telefon lub e-mail i krótki opis.', 'Bitte Namen, Telefon oder E-Mail und eine kurze Beschreibung angeben.'],
+  'form.contact': ['Telefoon of e-mail', 'Phone or e-mail', 'Telefon veya e-posta', 'الهاتف أو البريد الإلكتروني', 'Telefon lub e-mail', 'Telefon oder E-Mail'],
+  'form.send': ['Verstuur aanvraag', 'Send request', 'Talebi gönder', 'إرسال الطلب', 'Wyślij zapytanie', 'Anfrage senden'],
+  'form.sending': ['Bezig met versturen…', 'Sending…', 'Gönderiliyor…', 'جارٍ الإرسال…', 'Wysyłanie…', 'Wird gesendet…'],
+  'form.doneTitle': ['Bedankt, uw aanvraag is verstuurd.', 'Thank you, your request has been sent.', 'Teşekkürler, talebiniz gönderildi.', 'شكراً، تم إرسال طلبكم.', 'Dziękujemy, zapytanie zostało wysłane.', 'Danke, Ihre Anfrage wurde gesendet.'],
+  'form.doneText': ['Wij nemen binnen 24 uur contact met u op. Heeft u haast? Stuur ons een WhatsApp-bericht.', 'We will contact you within 24 hours. In a hurry? Send us a WhatsApp message.', '24 saat içinde sizinle iletişime geçeceğiz. Acele mi? Bize WhatsApp mesajı gönderin.', 'سنتواصل معكم خلال 24 ساعة. مستعجلون؟ أرسلوا لنا رسالة واتساب.', 'Skontaktujemy się w ciągu 24 godzin. Pilne? Napisz do nas na WhatsApp.', 'Wir melden uns innerhalb von 24 Stunden. Eilig? Schicken Sie uns eine WhatsApp-Nachricht.'],
+  'form.fail': ['Versturen is niet gelukt. Stuur uw bericht via WhatsApp of mail naar alleklussers@gmail.com.', 'Sending failed. Please send your message via WhatsApp or e-mail alleklussers@gmail.com.', 'Gönderilemedi. Mesajınızı WhatsApp ile gönderin veya alleklussers@gmail.com adresine yazın.', 'تعذّر الإرسال. أرسلوا رسالتكم عبر واتساب أو إلى alleklussers@gmail.com.', 'Nie udało się wysłać. Napisz przez WhatsApp lub na alleklussers@gmail.com.', 'Senden fehlgeschlagen. Bitte per WhatsApp oder an alleklussers@gmail.com schreiben.'],
   'msg.intro': ['Hallo AlleKlussers, ik wil graag een offerte aanvragen.', 'Hello AlleKlussers, I would like to request a quote.', 'Merhaba AlleKlussers, teklif almak istiyorum.', 'مرحباً AlleKlussers، أود طلب عرض سعر.', 'Dzień dobry AlleKlussers, chciałbym poprosić o wycenę.', 'Hallo AlleKlussers, ich möchte gerne ein Angebot anfordern.'],
   'msg.subject': ['Offerteaanvraag', 'Quote request', 'Teklif talebi', 'طلب عرض سعر', 'Prośba o wycenę', 'Angebotsanfrage'],
 
