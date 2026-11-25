@@ -480,7 +480,7 @@ PAGES = [
         "slug": "inductiekookplaat-aansluiten-rotterdam",
         "short": "Inductiekookplaat aansluiten",
         "sub": "Kookgroep en perilex, ook bij de overstap van gas.",
-        "title": "Inductie aansluiten Rotterdam | Kookgroep & perilex | AlleKlussers",
+        "title": "Inductiekookplaat aansluiten Rotterdam | Kookgroep | AlleKlussers",
         "desc": "Inductiekookplaat aansluiten in Rotterdam: extra kookgroep in de meterkast, perilex-aansluiting in de keuken en veilig aansluiten. Prijs vooraf via WhatsApp.",
         "service": "Inductiekookplaat aansluiten en kookgroep plaatsen",
         "char": "vonk",
@@ -497,7 +497,7 @@ PAGES = [
   <li>{check}<span><strong>3-fase krachtstroom, circa 11.000 watt.</strong> Alleen nodig voor sommige grote kookplaten en fornuizen. Kan uw kookplaat ook op twee fasen, dan is dat meestal de eenvoudigste keuze. Meer over het verschil leest u bij <a href="/krachtstroom-aansluiten-rotterdam/">krachtstroom aansluiten</a>.</span></li>
 </ul>
 
-<h2>Zo herkent u wat er <em>nu in uw meterkast zit.</em></h2>
+<h2>Inductie aansluiten op uw meterkast: <em>wat zit er nu?</em></h2>
 <ul class="checks">
   <li>{check}<span><strong>Een dubbele schakelaar met één hendel</strong> en een rond stopcontact met vijf gaatjes in de keuken: u heeft al een kookgroep. Dan is aansluiten vaak alleen de kookplaat monteren, een perilex-stekker aan het snoer zetten en testen.</span></li>
   <li>{check}<span><strong>Geen kookgroep,</strong> wat vaak voorkomt in woningen waar altijd op gas is gekookt: dan plaatsen we een kookgroep in de groepenkast en trekken we een nieuwe kabel naar de keuken.</span></li>
@@ -1019,7 +1019,7 @@ PAGES = [
   <li>{check}<span><strong>Inbouwspots plaatsen</strong> in plafonds, keukens en badkamers.</span></li>
   <li>{check}<span><strong>Dimmers en schakelaars</strong> die geschikt zijn voor LED, zonder geknipper of gezoem, en een tweede schakelaar, bijvoorbeeld onder en boven aan de trap.</span></li>
   <li>{check}<span><strong>Buitenverlichting</strong> aan de gevel, in de tuin of bij de voordeur, waterdicht aangesloten. Meer daarover bij <a href="/buitenverlichting-tuinstopcontact-rotterdam/">buitenverlichting en tuinstopcontact</a>.</span></li>
-  <li>{check}<span><strong>Badkamerverlichting en LED-spiegels,</strong> veilig in een natte ruimte. Verbouwt u de hele badkamer? Lees <a href="/elektra-badkamer-rotterdam/">elektra in de badkamer</a>.</span></li>
+  <li>{check}<span><strong>Badkamerverlichting en LED-spiegels,</strong> veilig in een natte ruimte. Verbouwt u de hele badkamer? Lees alles over <a href="/elektra-badkamer-rotterdam/">badkamerverlichting en elektra in de badkamer</a>.</span></li>
 </ul>
 
 <div class="note-box"><p><strong>Tip:</strong> heeft u meerdere lampen? Laat ze in één afspraak ophangen. Dan hoeft u maar één keer thuis te blijven.</p></div>
