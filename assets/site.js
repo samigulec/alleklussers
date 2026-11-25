@@ -281,44 +281,101 @@
     renderChips();
   }
 
+  // Direct send: the request goes by FormSubmit to our mailbox, so the visitor
+  // does not have to press send again in WhatsApp or a mail app.
+  var FORM_ENDPOINT = 'https://formsubmit.co/ajax/' + EMAIL;
+
   forms.forEach(function (form) {
-    var via = 'wa';
+    var via = 'form';
     $$('[data-send]', form).forEach(function (b) {
       b.addEventListener('click', function () { via = b.getAttribute('data-send'); });
     });
     form.addEventListener('submit', function (e) {
       e.preventDefault();
       var name = form.elements.name;
+      var contact = form.elements.contact;
       var desc = form.elements.desc;
       var err = $('[data-error]', form);
+      var fail = $('[data-fail]', form);
+      var done = $('[data-done]', form);
+      if (fail) fail.hidden = true;
       var ok = true;
-      [name, desc].forEach(function (el) {
+      var needed = via === 'form' ? [name, contact, desc] : [name, desc];
+      [name, contact, desc].forEach(function (el) { el.setAttribute('aria-invalid', 'false'); });
+      needed.forEach(function (el) {
         var bad = !el.value.trim();
         el.setAttribute('aria-invalid', bad ? 'true' : 'false');
         if (bad) ok = false;
       });
       err.classList.toggle('is-shown', !ok);
-      if (!ok) { (name.value.trim() ? desc : name).focus(); return; }
+      if (!ok) {
+        for (var i = 0; i < needed.length; i++) { if (!needed[i].value.trim()) { needed[i].focus(); break; } }
+        return;
+      }
 
+      var pc = form.elements.postcode.value.trim();
+      var city = form.elements.city.value.trim();
       var lines = [
         t('msg.intro'),
         '',
         t('form.name') + ': ' + name.value.trim()
       ];
-      var pc = form.elements.postcode.value.trim();
-      var city = form.elements.city.value.trim();
+      if (contact.value.trim()) lines.push(t('form.contact') + ': ' + contact.value.trim());
       if (pc || city) lines.push(t('form.postcode') + ' / ' + t('form.city') + ': ' + [pc, city].filter(Boolean).join(' '));
       lines.push(t('form.type') + ': ' + chipLabel(form._service));
       lines.push('');
       lines.push(desc.value.trim());
       var text = lines.join('\n');
 
-      if (window.gtag) window.gtag('event', 'generate_lead', { method: via, service: form._service });
-      if (via === 'mail') {
-        location.href = 'mailto:' + EMAIL + '?subject=' + encodeURIComponent(t('msg.subject') + ' — ' + chipLabel(form._service)) + '&body=' + encodeURIComponent(text);
-      } else {
+      if (via === 'wa') {
+        if (window.gtag) window.gtag('event', 'generate_lead', { method: 'wa', service: form._service });
         window.open('https://wa.me/' + WHATSAPP + '?text=' + encodeURIComponent(text), '_blank', 'noopener');
+        return;
       }
+
+      var btn = $('[data-send="form"]', form);
+      var label = btn ? $('[data-label]', btn) : null;
+      if (btn) btn.disabled = true;
+      if (label) label.textContent = t('form.sending');
+      var c = contact.value.trim();
+      var payload = {
+        _subject: 'Offerteaanvraag website: ' + chipLabel(form._service) + ' (' + name.value.trim() + ')',
+        _template: 'table',
+        _honey: form.elements._honey ? form.elements._honey.value : '',
+        Naam: name.value.trim(),
+        'Telefoon of e-mail': c,
+        Postcode: pc,
+        Plaats: city,
+        'Soort werk': chipLabel(form._service),
+        Omschrijving: desc.value.trim(),
+        Taal: document.documentElement.lang || 'nl',
+        Pagina: location.pathname + location.hash
+      };
+      if (c.indexOf('@') > 0) payload._replyto = c;
+
+      function finish(success) {
+        if (btn) btn.disabled = false;
+        if (label) label.textContent = t('form.send');
+        if (success) {
+          if (window.gtag) window.gtag('event', 'generate_lead', { method: 'form', service: form._service });
+          form.reset();
+          form.classList.add('is-done');
+          if (done) { done.hidden = false; done.setAttribute('tabindex', '-1'); done.focus(); }
+        } else {
+          if (window.gtag) window.gtag('event', 'form_error', { service: form._service });
+          if (fail) fail.hidden = false;
+        }
+      }
+
+      try {
+        fetch(FORM_ENDPOINT, {
+          method: 'POST',
+          headers: { 'Content-Type': 'application/json', 'Accept': 'application/json' },
+          body: JSON.stringify(payload)
+        }).then(function (r) { return r.json(); })
+          .then(function (data) { finish(data && String(data.success) === 'true'); })
+          .catch(function () { finish(false); });
+      } catch (x) { finish(false); }
     });
   });
 

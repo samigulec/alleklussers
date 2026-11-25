@@ -2019,12 +2019,12 @@ INFO_PAGES = [
         "plain": True,
         "short": "Privacyverklaring",
         "title": "Privacyverklaring | AlleKlussers",
-        "desc": "Hoe AlleKlussers (Boss Tech VOF) omgaat met uw gegevens: offerteaanvragen via WhatsApp of e-mail, Google Analytics, bewaartermijnen en uw rechten.",
+        "desc": "Hoe AlleKlussers (Boss Tech VOF) omgaat met uw gegevens: offerteaanvragen via formulier, WhatsApp of e-mail, Analytics, bewaartermijnen en uw rechten.",
         "eyebrow": "Privacy",
         "h1": "Privacy<em>verklaring.</em>",
         "lede": "Welke gegevens we van u krijgen, waarvoor we ze gebruiken en wat uw rechten zijn. Kort en in gewone taal.",
         "body": """
-<p><em>Laatst bijgewerkt: 18 november 2026.</em></p>
+<p><em>Laatst bijgewerkt: 26 november 2026.</em></p>
 
 <h2>Wie <em>wij zijn.</em></h2>
 <p>AlleKlussers is een handelsnaam van Boss Tech VOF, Walravenstraat 17, 3074 NL Rotterdam (KvK 99149680). Wij zijn verantwoordelijk voor de gegevens die u ons geeft. Vragen over privacy kunt u sturen naar <a href="mailto:alleklussers@gmail.com">alleklussers@gmail.com</a>.</p>
@@ -2039,8 +2039,8 @@ INFO_PAGES = [
 </ul>
 
 <h2>Het formulier <em>op de website.</em></h2>
-<p>Het offerteformulier op onze website slaat niets op. Als u op verzenden drukt, zet het formulier uw bericht klaar in WhatsApp of in uw eigen e-mailprogramma. U verstuurt het daar zelf. Uw gegevens gaan dus pas naar ons als u het bericht echt verstuurt.</p>
-<p>Berichten via WhatsApp lopen via WhatsApp (Meta). E-mails komen binnen in ons Gmail-account (Google). Daarvoor gelden ook de privacyregels van die diensten.</p>
+<p>Drukt u in het offerteformulier op 'Verstuur aanvraag', dan gaat uw aanvraag (naam, telefoon of e-mail, postcode, plaats, soort werk en omschrijving) naar ons e-mailadres. Daarvoor gebruiken we de dienst FormSubmit (formsubmit.co), die het bericht doorstuurt naar ons Gmail-account. De website zelf slaat niets op.</p>
+<p>Kiest u in het formulier voor WhatsApp, dan zet het formulier uw bericht klaar in WhatsApp en verstuurt u het daar zelf. Berichten via WhatsApp lopen via WhatsApp (Meta), e-mails komen binnen in ons Gmail-account (Google). Voor FormSubmit, WhatsApp en Google gelden ook hun eigen privacyregels.</p>
 
 <h2>Waarvoor <em>we ze gebruiken.</em></h2>
 <ul class="checks">

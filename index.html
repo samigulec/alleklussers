@@ -62,7 +62,7 @@
   <noscript><link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,300;0,9..144,400;1,9..144,300;1,9..144,400&family=Manrope:wght@400;500;600;700;800&family=Noto+Naskh+Arabic:wght@400;600;700&display=swap" /></noscript>
   <link rel="preload" as="image" href="img/hero-800.webp" type="image/webp" media="(max-width: 800px)" />
   <link rel="preload" as="image" href="img/hero.webp" type="image/webp" media="(min-width: 801px)" />
-  <link rel="stylesheet" href="assets/site.css?v=20261107" />
+  <link rel="stylesheet" href="assets/site.css?v=20261126" />
 </head>
 <body>
 
@@ -786,20 +786,29 @@
   <form class="qform" novalidate>
     <div class="qform__row">
       <div><label for="{p}-name" data-i18n="form.name">Naam</label><input type="text" class="field" id="{p}-name" name="name" autocomplete="name" required /></div>
-      <div><label for="{p}-postcode" data-i18n="form.postcode">Postcode</label><input type="text" class="field" id="{p}-postcode" name="postcode" autocomplete="postal-code" placeholder="3011 AD" /></div>
+      <div><label for="{p}-contact" data-i18n="form.contact">Telefoon of e-mail</label><input type="text" class="field" id="{p}-contact" name="contact" autocomplete="tel" required /></div>
     </div>
-    <div><label for="{p}-city" data-i18n="form.city">Plaats</label><input type="text" class="field" id="{p}-city" name="city" autocomplete="address-level2" /></div>
+    <div class="qform__row">
+      <div><label for="{p}-postcode" data-i18n="form.postcode">Postcode</label><input type="text" class="field" id="{p}-postcode" name="postcode" autocomplete="postal-code" placeholder="3011 AD" /></div>
+      <div><label for="{p}-city" data-i18n="form.city">Plaats</label><input type="text" class="field" id="{p}-city" name="city" autocomplete="address-level2" /></div>
+    </div>
+    <div class="qform__hp" aria-hidden="true"><label for="{p}-hp">Laat dit veld leeg</label><input type="text" id="{p}-hp" name="_honey" tabindex="-1" autocomplete="off" /></div>
     <fieldset>
       <legend data-i18n="form.type">Soort werk</legend>
       <div class="chips" data-chips></div>
     </fieldset>
     <div><label for="{p}-desc" data-i18n="form.desc">Omschrijving</label><textarea class="field" id="{p}-desc" name="desc" required placeholder="Beschrijf kort wat er moet gebeuren" data-i18n-attr="placeholder:form.descPh"></textarea></div>
-    <p class="qform__error" role="alert" data-error data-i18n="form.error">Vul uw naam en een korte omschrijving in.</p>
+    <p class="qform__error" role="alert" data-error data-i18n="form.error">Vul uw naam, telefoon of e-mail en een korte omschrijving in.</p>
     <div class="qform__send">
-      <button type="submit" class="btn btn--amber" data-send="wa"><svg width="18" height="18" aria-hidden="true"><use href="#i-wa"/></svg><span data-i18n="form.sendWa">Verstuur via WhatsApp</span></button>
-      <button type="submit" class="btn btn--ghost" data-send="mail"><svg width="18" height="18" aria-hidden="true"><use href="#i-mail"/></svg><span data-i18n="form.sendMail">Verstuur via e-mail</span></button>
+      <button type="submit" class="btn btn--amber" data-send="form"><span data-i18n="form.send" data-label>Verstuur aanvraag</span><svg class="arrow" width="18" height="18" aria-hidden="true"><use href="#i-arrow"/></svg></button>
+      <button type="submit" class="btn btn--ghost" data-send="wa"><svg width="18" height="18" aria-hidden="true"><use href="#i-wa"/></svg><span data-i18n="form.sendWa">Verstuur via WhatsApp</span></button>
     </div>
-    <p class="qform__note" data-i18n="form.note">Uw bericht opent in WhatsApp of uw e-mailprogramma. Wij antwoorden binnen 24 uur.</p>
+    <p class="qform__fail" role="alert" data-fail hidden data-i18n="form.fail">Versturen is niet gelukt. Stuur uw bericht via WhatsApp of mail naar alleklussers@gmail.com.</p>
+    <p class="qform__note" data-i18n="form.note">Uw aanvraag komt direct bij ons binnen. Wij antwoorden binnen 24 uur.</p>
+    <div class="qform__done" role="status" data-done hidden>
+      <p class="qform__done-title" data-i18n="form.doneTitle">Bedankt, uw aanvraag is verstuurd.</p>
+      <p data-i18n="form.doneText">Wij nemen binnen 24 uur contact met u op. Heeft u haast? Stuur ons een WhatsApp-bericht.</p>
+    </div>
   </form>
 </template>
 
@@ -824,8 +833,8 @@
   </div>
 </template>
 
-<script src="assets/i18n.js?v=20261118c"></script>
-<script src="assets/site.js?v=20261123"></script>
+<script src="assets/i18n.js?v=20261126"></script>
+<script src="assets/site.js?v=20261126"></script>
 <script src="assets/track.js?v=20261108"></script>
 </body>
 </html>
