@@ -25,8 +25,8 @@ WA_TEXT = {
     "elektricien-rotterdam": "Hallo AlleKlussers, ik zoek een elektricien in Rotterdam. Het gaat om: ",
     "storing-elektra-rotterdam": "Hallo AlleKlussers, ik heb een storing in mijn elektra." + FOTO + " Wat er aan de hand is: ",
     "aardlekschakelaar-rotterdam": "Hallo AlleKlussers, mijn aardlekschakelaar slaat steeds door." + FOTO,
-    "groepenkast-vervangen-rotterdam": "Hallo AlleKlussers, ik wil graag een prijs voor het vervangen of uitbreiden van mijn groepenkast." + FOTO,
-    "groep-bijplaatsen-rotterdam": "Hallo AlleKlussers, ik wil graag een extra groep in mijn meterkast. Het is voor: ",
+    "groepenkast-vervangen-rotterdam": "Hallo AlleKlussers, ik wil graag een prijs voor een nieuwe groepenkast." + FOTO,
+    "groep-bijplaatsen-rotterdam": "Hallo AlleKlussers, ik wil mijn groepenkast laten uitbreiden met een extra groep." + FOTO + " Het is voor: ",
     "inductiekookplaat-aansluiten-rotterdam": "Hallo AlleKlussers, ik wil graag een inductiekookplaat laten aansluiten." + FOTO,
     "perilex-aansluiten-rotterdam": "Hallo AlleKlussers, ik wil graag een perilex laten aansluiten of verplaatsen." + FOTO + " Het gaat om: ",
     "thuisbatterij-aansluiten-rotterdam": "Hallo AlleKlussers, ik wil graag een thuisbatterij laten aansluiten." + FOTO,
@@ -69,7 +69,7 @@ PAGES = [
 <p>Kies de situatie die het meest op de uwe lijkt. Op elke pagina staat wat u zelf kunt nagaan, waar wij op letten en wat u ons het beste kunt sturen.</p>
 <ul class="checks">
   <li>{check}<span><strong>Stroom uitgevallen of er slaat iets door.</strong> Begin bij <a href="/storing-elektra-rotterdam/">storing en stroomuitval</a>. Gaat steeds de schakelaar met de testknop omlaag, kijk dan bij <a href="/aardlekschakelaar-rotterdam/">aardlekschakelaar slaat door</a>.</span></li>
-  <li>{check}<span><strong>Oude meterkast of te weinig groepen.</strong> Lees over <a href="/groepenkast-vervangen-rotterdam/">groepenkast vervangen of uitbreiden</a> en <a href="/groep-bijplaatsen-rotterdam/">een groep bijplaatsen</a>.</span></li>
+  <li>{check}<span><strong>Oude meterkast of te weinig groepen.</strong> Lees over <a href="/groepenkast-vervangen-rotterdam/">groepenkast vervangen</a> en <a href="/groep-bijplaatsen-rotterdam/">groepenkast uitbreiden of een groep bijplaatsen</a>.</span></li>
   <li>{check}<span><strong>Nieuwe keuken of van het gas af.</strong> Zie <a href="/inductiekookplaat-aansluiten-rotterdam/">inductiekookplaat aansluiten</a>, <a href="/perilex-aansluiten-rotterdam/">perilex aansluiten of verplaatsen</a> en <a href="/meterkast-verzwaren-rotterdam/">meterkast verzwaren</a>.</span></li>
   <li>{check}<span><strong>Verbouwing van badkamer of zolder.</strong> Zie <a href="/elektra-badkamer-rotterdam/">elektra in de badkamer</a>, <a href="/infraroodpanelen-aansluiten-rotterdam/">infraroodpanelen</a> en <a href="/bedrading-vervangen-rotterdam/">bedrading vervangen</a>.</span></li>
   <li>{check}<span><strong>Lampen, stopcontacten en buiten.</strong> Zie <a href="/lampen-ophangen-rotterdam/">lampen ophangen</a>, <a href="/stopcontact-plaatsen-rotterdam/">stopcontact plaatsen of verplaatsen</a> en <a href="/buitenverlichting-tuinstopcontact-rotterdam/">buitenverlichting en tuinstopcontact</a>.</span></li>
@@ -212,7 +212,7 @@ PAGES = [
 
 <h2>Wat wij <em>doen.</em></h2>
 <p>Zit de storing in uw eigen installatie, dan komt onze elektricien met meetapparatuur. We meten de installatie groep voor groep door en zoeken uit waar de fout zit: een defect apparaat, een losse verbinding in een lasdoos, een beschadigde leiding, vocht in een buitenpunt of een versleten schakelaar in de groepenkast. Daarna lossen we het op. Is de reparatie groter, dan bespreken we eerst met u wat er nodig is en wat het kost.</p>
-<p>U krijgt uitleg over de oorzaak en advies om herhaling te voorkomen, bijvoorbeeld door groepen beter te verdelen. Is de kast oud of vol, dan zeggen we eerlijk of <a href="/groepenkast-vervangen-rotterdam/">uitbreiden of vervangen</a> verstandig is. Alles volgens NEN 1010, door verzekerde vakmensen.</p>
+<p>U krijgt uitleg over de oorzaak en advies om herhaling te voorkomen, bijvoorbeeld door groepen beter te verdelen. Is de kast oud of vol, dan zeggen we eerlijk of <a href="/groep-bijplaatsen-rotterdam/">uitbreiden</a> of <a href="/groepenkast-vervangen-rotterdam/">vervangen</a> verstandig is. Alles volgens NEN 1010, door verzekerde vakmensen.</p>
 
 <h2>Zo <em>werkt het.</em></h2>
 <ol class="steps-list">
@@ -299,7 +299,7 @@ PAGES = [
   <li>{check}<span><strong>Aardlekschakelaar vervangen</strong> als hij zelf defect of verouderd is.</span></li>
   <li>{check}<span><strong>Groepen beter verdelen.</strong> Zitten bij u veel groepen achter één aardlekschakelaar, dan verdelen we ze over meer aardlekschakelaars of geven we groepen een eigen aardlekautomaat. Dan valt bij een storing niet meer het halve huis uit.</span></li>
 </ul>
-<p>Is de kast verouderd of vol, dan bespreken we eerlijk of <a href="/groepenkast-vervangen-rotterdam/">uitbreiden of vervangen</a> verstandiger is. Wilt u weten hoe uw hele installatie ervoor staat, kijk dan bij <a href="/elektra-keuring-rotterdam/">keuring van de installatie</a>. Alles volgens NEN 1010, door verzekerde vakmensen.</p>
+<p>Is de kast verouderd of vol, dan bespreken we eerlijk of <a href="/groep-bijplaatsen-rotterdam/">uitbreiden</a> of <a href="/groepenkast-vervangen-rotterdam/">vervangen</a> verstandiger is. Wilt u weten hoe uw hele installatie ervoor staat, kijk dan bij <a href="/elektra-keuring-rotterdam/">keuring van de installatie</a>. Alles volgens NEN 1010, door verzekerde vakmensen.</p>
 
 <h2>Zo <em>werkt het.</em></h2>
 <p>Stuur ons via WhatsApp een foto van uw meterkast en vertel wanneer de aardlek doorslaat: altijd, bij regen, 's nachts of bij één bepaald apparaat. Dat helpt ons de oorzaak sneller te vinden. U krijgt binnen 24 uur reactie met een duidelijke prijs vooraf, en bij een storing zijn we 24/7 bereikbaar.</p>
@@ -323,20 +323,20 @@ PAGES = [
     {
         "slug": "groepenkast-vervangen-rotterdam",
         "short": "Groepenkast vervangen",
-        "sub": "Vervangen of uitbreiden, met hoofdschakelaar en ruimte voor later.",
-        "title": "Groepenkast vervangen of uitbreiden Rotterdam | AlleKlussers",
-        "desc": "Oude of volle groepenkast? We vervangen of breiden hem uit in Rotterdam en omgeving, met aardlek, hoofdschakelaar en ruimte voor later. Prijs vooraf.",
-        "service": "Groepenkast vervangen en uitbreiden",
+        "sub": "Nieuwe kast met hoofdschakelaar, aardlek en ruimte voor later.",
+        "title": "Groepenkast vervangen of plaatsen Rotterdam | AlleKlussers",
+        "desc": "Oude groepenkast met draaistoppen of zonder aardlek? Wij plaatsen een nieuwe groepenkast in Rotterdam en omgeving, met hoofdschakelaar en ruimte voor later.",
+        "service": "Groepenkast vervangen en nieuwe groepenkast plaatsen",
         "char": "kastje",
         "say": "“Meer groepen nodig? Ik regel het.”",
         "eyebrow": "Groepenkasten",
-        "h1": "Groepenkast vervangen of uitbreiden in <em>Rotterdam.</em>",
-        "lede": "Een veilige groepenkast met genoeg groepen voor inductie, een laadpaal, een warmtepomp of een verbouwing. Soms is uitbreiden genoeg, soms is een nieuwe kast verstandiger. Wij zeggen u eerlijk welke van de twee.",
+        "h1": "Groepenkast vervangen in <em>Rotterdam.</em>",
+        "lede": "Een nieuwe, veilige groepenkast met genoeg groepen voor inductie, een laadpaal, een warmtepomp of een verbouwing. Is uw kast nog goed maar alleen te vol, dan is uitbreiden vaak genoeg. Wij zeggen u eerlijk welke van de twee.",
         "body": """
 <h2>Uitbreiden of vervangen: <em>wat past bij uw kast?</em></h2>
 <p>Een groepenkast gaat gerust 30 tot 40 jaar mee. Er hoeft dus niet bij elke nieuwe wens een nieuwe kast te komen. Of uitbreiden genoeg is, hangt vooral af van wat er nu in zit.</p>
 <ul class="checks">
-  <li>{check}<span><strong>Uitbreiden kan vaak</strong> als de kast al aardlekschakelaars en een hoofdschakelaar heeft, en er nog plek is of een extra rij bij kan. Dan voegen we groepen of een aardlekautomaat toe. Gaat het om één apparaat, zoals een droger of airco? Dan is <a href="/groep-bijplaatsen-rotterdam/">een groep bijplaatsen</a> meestal genoeg.</span></li>
+  <li>{check}<span><strong>Uitbreiden kan vaak</strong> als de kast al aardlekschakelaars en een hoofdschakelaar heeft, en er nog plek is of een extra rij bij kan. Dan voegen we groepen, een aardlekschakelaar of een aardlekautomaat toe. Hoe dat gaat, leest u bij <a href="/groep-bijplaatsen-rotterdam/">groepenkast uitbreiden</a>.</span></li>
   <li>{check}<span><strong>Vervangen is verstandig</strong> bij draaistoppen of smeltzekeringen, als er geen of maar één aardlekschakelaar in zit, als er geen hoofdschakelaar is, of als de kast vol is en er geen plek meer bij kan.</span></li>
   <li>{check}<span><strong>Vervangen is ook slim bij een grote stap,</strong> zoals een nieuwe keuken met <a href="/inductiekookplaat-aansluiten-rotterdam/">inductie</a>, een warmtepomp, een <a href="/laadpaal-installeren-rotterdam/">laadpaal</a> of een aanbouw. Dan bouwt u niet steeds bij aan een kast die daar nooit voor gemaakt is.</span></li>
   <li>{check}<span><strong>Niet wachten bij deze tekens:</strong> een kast of automaat die warm aanvoelt, bruine verkleuring, brandlucht of een zoemend geluid. Zet dan de groep uit als dat veilig kan en <a href="/storing-elektra-rotterdam/">meld het als storing</a>.</span></li>
@@ -408,16 +408,16 @@ PAGES = [
     # ------------------------------------------------------ GROEP BIJPLAATSEN
     {
         "slug": "groep-bijplaatsen-rotterdam",
-        "short": "Groep bijplaatsen",
-        "sub": "Extra groep voor wasmachine, droger, oven of airco.",
-        "title": "Groep bijplaatsen Rotterdam | Extra groep | AlleKlussers",
-        "desc": "Slaat een groep door als de wasmachine en droger tegelijk draaien? Wij plaatsen een extra groep in uw meterkast in Rotterdam. Volgens NEN 1010, prijs vooraf.",
-        "service": "Extra groep bijplaatsen in de meterkast",
+        "short": "Groepenkast uitbreiden",
+        "sub": "Extra groep of aardlekschakelaar, voor droger, inductie of laadpaal.",
+        "title": "Groepenkast uitbreiden Rotterdam | Extra groep | AlleKlussers",
+        "desc": "Groepenkast uitbreiden in Rotterdam: een extra groep, aardlekautomaat of extra rij in uw meterkast. Eerst kijken of het past, volgens NEN 1010. Prijs vooraf.",
+        "service": "Groepenkast uitbreiden en extra groep bijplaatsen",
         "char": "stekkie",
         "say": "“Eén groep te weinig? Ik zet er een bij.”",
-        "eyebrow": "Extra groep in de meterkast",
-        "h1": "Groep bijplaatsen in <em>Rotterdam.</em>",
-        "lede": "Slaat de stroom uit zodra de wasmachine en de droger samen draaien? Dan zitten er te veel apparaten op één groep. Met een extra groep in de meterkast is dat meestal snel opgelost.",
+        "eyebrow": "Groep bijplaatsen",
+        "h1": "Groepenkast uitbreiden in <em>Rotterdam.</em>",
+        "lede": "Meer groepen nodig voor een droger, inductie, een laadpaal of een zolderkamer? Vaak kan uw bestaande groepenkast worden uitgebreid met een extra groep, een aardlekautomaat of een extra rij.",
         "body": """
 <h2>Waarom een groep <em>doorslaat.</em></h2>
 <p>Een gewone groep in de meterkast is beveiligd met 16 ampère. Op 230 volt is dat samen ongeveer 3.680 watt. Een wasmachine die het water opwarmt, een droger, een vaatwasser of een oven vraagt elk al snel 2.000 watt of meer. Staan er twee van deze apparaten op dezelfde groep en draaien ze tegelijk, dan schakelt de installatieautomaat uit. Dat is geen defect, maar bescherming: zo wordt de bedrading niet te warm.</p>
@@ -445,7 +445,24 @@ PAGES = [
 </ul>
 <p>In oudere Rotterdamse woningen, zoals portiekflats en vooroorlogse benedenwoningen, is de groepenkast vaak klein en zitten er soms maar een paar groepen in. Stuur ons een foto, dan ziet u vooraf welke van de vier situaties het is.</p>
 
-<div class="note-box"><p><strong>Een extra groep geeft geen extra vermogen.</strong> Een nieuwe groep verdeelt de stroom beter over uw installatie, maar wat u in totaal tegelijk kunt gebruiken blijft bepaald door de hoofdzekering van de netbeheerder, bijvoorbeeld 1x35A. Komen er meerdere zware apparaten bij, zoals een warmtepomp en een laadpaal? Lees dan ook <a href="/meterkast-verzwaren-rotterdam/">meterkast verzwaren</a>.</p></div>
+<h2>Zo breiden we <em>een groepenkast uit.</em></h2>
+<p>Uitbreiden is geen standaardklus: wat er kan, hangt af van uw kast. Dit zijn de manieren die we het meest gebruiken, van klein naar groot.</p>
+<ul class="checks">
+  <li>{check}<span><strong>Een automaat bijplaatsen.</strong> Is er een vrije plek achter een aardlekschakelaar die nog geen vier groepen heeft, dan komt de nieuwe groep daar. Dit is de kleinste uitbreiding en vaak binnen een paar uur klaar.</span></li>
+  <li>{check}<span><strong>Een extra aardlekschakelaar met nieuwe groepen.</strong> Zit er een lege rij in de kast, dan plaatsen we een aardlekschakelaar met maximaal vier nieuwe groepen erachter. Handig als u meerdere groepen tegelijk nodig heeft, bijvoorbeeld bij een nieuwe keuken of een aanbouw.</span></li>
+  <li>{check}<span><strong>Aardlekautomaten.</strong> Voor één of twee groepen die los moeten staan, of als alle aardlekschakelaars al vol zitten. Elke aardlekautomaat beveiligt zijn eigen groep.</span></li>
+  <li>{check}<span><strong>Een extra rij of een uitbreidingskast.</strong> Is de kast vol maar verder in goede staat, en is er ruimte in de meterkast, dan kan er soms een rij of een kleine kast bij. Die wordt vanuit de bestaande kast gevoed en net zo beveiligd.</span></li>
+  <li>{check}<span><strong>Groepen beter verdelen.</strong> Soms is er geen nieuwe groep nodig, maar zitten de zware apparaten ongelukkig verdeeld, bijvoorbeeld de wasmachine en de droger op dezelfde groep. Dan verleggen we een aansluiting.</span></li>
+</ul>
+<p>We gebruiken onderdelen die passen bij het systeem van uw kast, met de juiste railverbindingen in plaats van losse draadbruggen. Na afloop werken we de groepenverklaring bij, zodat u bij elke groep ziet waar hij voor is. Heeft de kast draaistoppen of geen aardlekschakelaar, dan bouwen we er niets meer bij en adviseren we <a href="/groepenkast-vervangen-rotterdam/">een nieuwe groepenkast</a>.</p>
+
+<h2>Meterkast uitbreiden <em>of verzwaren?</em></h2>
+<p>Die twee worden vaak door elkaar gehaald, maar het zijn verschillende klussen.</p>
+<ul class="checks">
+  <li>{check}<span><strong>Uitbreiden</strong> betekent meer groepen in uw groepenkast. Dat is uw eigen installatie, achter de meter. Wij doen dat werk, de netbeheerder is er niet voor nodig en het is meestal binnen een dag klaar.</span></li>
+  <li>{check}<span><strong>Verzwaren</strong> betekent een zwaardere aansluiting, bijvoorbeeld van 1x35A naar 3x25A. Dat doet de netbeheerder, in Rotterdam en omgeving Stedin. U vraagt het zelf aan en door de drukte op het stroomnet kan het lang duren.</span></li>
+</ul>
+<p>Een extra groep verdeelt de stroom beter over uw installatie, maar geeft geen extra vermogen: wat u in totaal tegelijk kunt gebruiken blijft bepaald door de hoofdzekering van de netbeheerder. Slaat er één groep door, dan helpt uitbreiden. Valt de hele woning uit omdat de hoofdzekering het niet aankan, of komen er meerdere zware apparaten bij, zoals een warmtepomp en een laadpaal? Lees dan <a href="/meterkast-verzwaren-rotterdam/">meterkast verzwaren</a>. Vaak is uitbreiden met slimme begrenzing genoeg.</p>
 
 <h2>Zo <em>pakken we het aan.</em></h2>
 <ol class="steps-list">
@@ -457,6 +474,14 @@ PAGES = [
 <p>Alles volgens NEN 1010, door verzekerde vakmensen. De stroom is tijdens het werk een korte tijd uit; dat stemmen we vooraf met u af.</p>
 """,
         "faq": [
+            ("Kan mijn groepenkast worden uitgebreid?",
+             "Vaak wel, als er aardlekschakelaars en een hoofdschakelaar in zitten en er een vrije plek is of een rij bij kan. Heeft de kast draaistoppen of geen aardlekbeveiliging, dan raden we uitbreiden af en adviseren we een nieuwe groepenkast. Stuur een foto, dan ziet u het vooraf."),
+            ("Wat is het verschil tussen meterkast uitbreiden en verzwaren?",
+             "Uitbreiden is meer groepen in uw groepenkast; dat doen wij, achter de meter. Verzwaren is een zwaardere aansluiting van de netbeheerder, bijvoorbeeld van 1-fase naar 3-fase. Voor de meeste wensen, zoals een droger of inductie, is uitbreiden genoeg."),
+            ("Kan er een tweede kast naast mijn groepenkast?",
+             "Soms, als de bestaande kast in goede staat is en er ruimte is in de meterkast. De extra kast wordt dan vanuit de bestaande installatie gevoed en beveiligd. Is de meterkast te klein of de kast oud, dan is één nieuwe, grotere kast netter en veiliger."),
+            ("Moet de netbeheerder komen als mijn groepenkast wordt uitgebreid?",
+             "In de regel niet. Uitbreiden gebeurt in uw eigen installatie, achter de meter. De netbeheerder komt alleen in beeld als u een zwaardere aansluiting nodig heeft."),
             ("Hoeveel watt kan er op één groep?",
              "Op een gewone groep van 16 ampère kunt u samen ongeveer 3.680 watt tegelijk gebruiken. Een wasmachine die verwarmt en een droger halen dat samen al snel. Daarom krijgen zware apparaten elk een eigen groep."),
             ("Mogen de wasmachine en de droger op dezelfde groep?",
@@ -657,6 +682,8 @@ PAGES = [
         "h1": "Meterkast verzwaren in <em>Rotterdam.</em>",
         "lede": "Warmtepomp, inductie of een laadpaal op komst? Dan vraagt u zich af of uw aansluiting zwaarder moet. Wij rekenen eerst uit wat u nodig heeft, en maken uw meterkast klaar als verzwaren echt nodig is.",
         "body": """
+<div class="note-box"><p><strong>Bedoelt u meer groepen?</strong> Met ‘meterkast uitbreiden’ bedoelen de meeste mensen extra groepen in de groepenkast. Dat is geen verzwaring: het gebeurt in uw eigen installatie, achter de meter, en de netbeheerder is er niet voor nodig. Zie <a href="/groep-bijplaatsen-rotterdam/">groepenkast uitbreiden</a>. Op deze pagina gaat het over een zwaardere aansluiting.</p></div>
+
 <h2>Welke aansluiting <em>heeft u nu?</em></h2>
 <p>In uw meterkast zitten vóór de meter de verzegelde hoofdzekeringen van de netbeheerder. Ziet u er één, dan heeft u een 1-fase aansluiting; zijn het er drie, dan heeft u 3-fase. Het getal erop is het aantal ampère. Staat het er niet duidelijk op, kijk dan op de jaarafrekening van uw energieleverancier, of stuur ons een foto.</p>
 <ul class="checks">
@@ -690,7 +717,7 @@ PAGES = [
 <h2>Wie doet <em>wat?</em></h2>
 <ul class="checks">
   <li>{check}<span><strong>De netbeheerder</strong> (in Rotterdam is dat Stedin; via mijnaansluiting.nl ziet u wie het bij u is) verzwaart de aansluiting zelf: de kabel, de hoofdzekeringen en zo nodig de meter. U vraagt dat online aan en krijgt eerst een offerte. De netbeheerder geeft geen technisch advies over uw installatie; daarvoor verwijst hij naar een installateur.</span></li>
-  <li>{check}<span><strong>Wij doen alles achter de meter.</strong> We controleren of uw groepenkast geschikt is voor 3-fase, plaatsen een 3-fase hoofdschakelaar als die er nog niet is, en <a href="/groepenkast-vervangen-rotterdam/">breiden de groepenkast uit of vervangen hem</a> als hij te oud of te vol is. Dat moet klaar zijn vóór de netbeheerder langskomt.</span></li>
+  <li>{check}<span><strong>Wij doen alles achter de meter.</strong> We controleren of uw groepenkast geschikt is voor 3-fase, plaatsen een 3-fase hoofdschakelaar als die er nog niet is, en <a href="/groep-bijplaatsen-rotterdam/">breiden de groepenkast uit</a> of <a href="/groepenkast-vervangen-rotterdam/">vervangen hem</a> als hij te oud of te vol is. Dat moet klaar zijn vóór de netbeheerder langskomt.</span></li>
   <li>{check}<span><strong>Groepen verdelen over de fasen.</strong> Na de verzwaring zorgen we dat de zware verbruikers over de drie fasen verdeeld zijn, zodat niet één fase alles draagt. Daarna testen we de hele installatie.</span></li>
 </ul>
 
@@ -1670,7 +1697,7 @@ def _city(slug, name, char, say, wijken_oud, wijken_nieuw, local, faq_extra,
 <h2>Waarmee wij u <em>helpen in {name}.</em></h2>
 <ul class="checks">
   <li>{{check}}<span><a href="/storing-elektra-rotterdam/">Storing verhelpen</a>: stroomuitval of een aardlekschakelaar die steeds doorslaat.</span></li>
-  <li>{{check}}<span><a href="/groepenkast-vervangen-rotterdam/">Groepenkast vervangen of uitbreiden</a>, bijvoorbeeld voor <a href="/inductiekookplaat-aansluiten-rotterdam/">inductie</a> met een <a href="/perilex-aansluiten-rotterdam/">perilex-aansluiting</a> of een warmtepomp.</span></li>
+  <li>{{check}}<span><a href="/groepenkast-vervangen-rotterdam/">Groepenkast vervangen</a> of <a href="/groep-bijplaatsen-rotterdam/">uitbreiden</a>, bijvoorbeeld voor <a href="/inductiekookplaat-aansluiten-rotterdam/">inductie</a> met een <a href="/perilex-aansluiten-rotterdam/">perilex-aansluiting</a> of een warmtepomp.</span></li>
   <li>{{check}}<span><a href="/groep-bijplaatsen-rotterdam/">Groep bijplaatsen</a> voor de wasmachine, droger, oven of airco, of voor <a href="/infraroodpanelen-aansluiten-rotterdam/">infraroodpanelen</a>.</span></li>
   <li>{{check}}<span><a href="/meterkast-verzwaren-rotterdam/">Meterkast verzwaren</a> of <a href="/krachtstroom-aansluiten-rotterdam/">krachtstroom aansluiten</a> voor een werkplaats, sauna of zware machine.</span></li>
   <li>{{check}}<span><a href="/vrije-groep-stekkerbatterij-rotterdam/">Vrije groep voor een stekkerbatterij</a>, of de meterkast klaarmaken voor een <a href="/thuisbatterij-aansluiten-rotterdam/">thuisbatterij</a>, op tijd voor 2027.</span></li>
@@ -1717,7 +1744,7 @@ CITY_PAGES = [
 <p>Schiedam is een oude stad met veel naoorlogse wijken eromheen. Wat er in uw meterkast hangt, hangt vooral af van wanneer uw wijk is gebouwd.</p>
 <ul class="checks">
   <li>{check}<span><strong>Binnenstad.</strong> De historische binnenstad met haar havens en de hoogste windmolens ter wereld. In oude panden en bovenwoningen kijken we eerst naar de staat van de <a href="/bedrading-vervangen-rotterdam/">bedrading</a> en of alles geaard is, voordat we iets bijplaatsen.</span></li>
-  <li>{check}<span><strong>Nieuwland.</strong> Direct na de Tweede Wereldoorlog in fasen aangelegd, met portiekwoningen van vier woonlagen en hogere flats. De meterkast is hier vaak klein; bij een nieuwe keuken is <a href="/groepenkast-vervangen-rotterdam/">uitbreiden of vervangen van de groepenkast</a> vaak de eerste stap.</span></li>
+  <li>{check}<span><strong>Nieuwland.</strong> Direct na de Tweede Wereldoorlog in fasen aangelegd, met portiekwoningen van vier woonlagen en hogere flats. De meterkast is hier vaak klein; bij een nieuwe keuken is <a href="/groep-bijplaatsen-rotterdam/">uitbreiden</a> of <a href="/groepenkast-vervangen-rotterdam/">vervangen van de groepenkast</a> vaak de eerste stap.</span></li>
   <li>{check}<span><strong>Groenoord.</strong> Gebouwd in de jaren zestig, vooral flats van 6, 8 of 12 lagen. Voor een <a href="/inductiekookplaat-aansluiten-rotterdam/">inductiekookplaat</a>, droger of vaatwasser is vaak een <a href="/groep-bijplaatsen-rotterdam/">extra groep</a> nodig. Voor de verlichting in hal en trappenhuis is de VvE of verhuurder aan zet.</span></li>
   <li>{check}<span><strong>Kethel.</strong> Het oude dorp Kethel hoorde tot 1941 bij de gemeente Kethel en Spaland. Naast oudere huizen aan het lint staan hier nieuwere woningen; we passen onze aanpak aan op het bouwjaar.</span></li>
   <li>{check}<span><strong>Woudhoek.</strong> Ontstaan in de jaren zeventig en tachtig, met gestapelde bouw en eengezinswoningen. Vragen gaan hier vaak over een laadpaal op eigen terrein, <a href="/buitenverlichting-tuinstopcontact-rotterdam/">buitenverlichting en een tuinstopcontact</a> of extra groepen.</span></li>
@@ -1759,7 +1786,7 @@ CITY_PAGES = [
 <ul class="checks">
   <li>{check}<span><strong>Centrum en Oude Haven.</strong> Historische panden aan de Oost- en Westhavenkade en in de straten erachter, vaak met bovenwoningen. Voordat we iets aansluiten, kijken we naar de staat van de <a href="/bedrading-vervangen-rotterdam/">bedrading</a>. In een monumentaal pand overleggen we vooraf hoe nieuwe leidingen zo netjes en onzichtbaar mogelijk lopen.</span></li>
   <li>{check}<span><strong>Oostwijk.</strong> Grotendeels gebouwd voor de Tweede Wereldoorlog; ruim 40 procent van de woningen is een bovenwoning of appartement. Hier komen we nog groepenkasten tegen met weinig groepen of zonder <a href="/aardlekschakelaar-rotterdam/">aardlekschakelaar</a>, en soms ruimtes waar niet alles geaard is.</span></li>
-  <li>{check}<span><strong>Vlaardinger Ambacht en de Babberspolders.</strong> Van het oude dorp Ambacht en de vele jaren-30 woningen tot de huizen uit de jaren vijftig in de Babberspolders en het vernieuwde Babberspolder-Oost. Bij een nieuwe keuken of verbouwing is <a href="/groepenkast-vervangen-rotterdam/">uitbreiden of vervangen van de groepenkast</a> vaak de eerste stap.</span></li>
+  <li>{check}<span><strong>Vlaardinger Ambacht en de Babberspolders.</strong> Van het oude dorp Ambacht en de vele jaren-30 woningen tot de huizen uit de jaren vijftig in de Babberspolders en het vernieuwde Babberspolder-Oost. Bij een nieuwe keuken of verbouwing is <a href="/groep-bijplaatsen-rotterdam/">uitbreiden</a> of <a href="/groepenkast-vervangen-rotterdam/">vervangen van de groepenkast</a> vaak de eerste stap.</span></li>
   <li>{check}<span><strong>Westwijk.</strong> De bouw begon in 1954 en de eerste bewoners kregen in 1957 de sleutel. Er staat vooral middelhoogbouw en wat laagbouw. In de flats is de meterkast vaak klein en zijn er weinig groepen; voor een <a href="/inductiekookplaat-aansluiten-rotterdam/">inductiekookplaat</a>, droger of vaatwasser is dan een <a href="/groep-bijplaatsen-rotterdam/">extra groep</a> nodig.</span></li>
   <li>{check}<span><strong>Holy-Zuid en Holy-Noord.</strong> Gebouwd vanaf eind jaren zestig, met hoogbouw en sociale huur, maar ook buurten met eengezinswoningen en vrijstaande huizen. Bij de eengezinswoningen gaat het vaak om een laadpaal op eigen terrein, <a href="/buitenverlichting-tuinstopcontact-rotterdam/">buitenverlichting en een tuinstopcontact</a> of extra groepen.</span></li>
   <li>{check}<span><strong>Rivierzone en nieuwbouw.</strong> Bij het gebied ten zuiden van station Vlaardingen Centrum en langs de rivier komen nieuwe woningen bij. De installatie is daar modern; vragen gaan vaker over <a href="/lampen-ophangen-rotterdam/">verlichting</a>, <a href="/stopcontact-plaatsen-rotterdam/">extra stopcontacten</a> of een laadpaal.</span></li>
@@ -1843,7 +1870,7 @@ CITY_PAGES = [
 <p>In 1930 woonden er nog geen 5.000 mensen in Barendrecht, rond 2010 bijna 50.000. Die groei zit vooral in de wijken van na de oorlog en in de Vinex-wijk Carnisselande. Wat er in de meterkast hangt, hangt sterk af van de buurt.</p>
 <ul class="checks">
   <li>{check}<span><strong>Oude dorp en centrum.</strong> Rond de watertoren, de Dorpsstraat en de Middenbaan staan de oudste huizen van Barendrecht, naast winkels en bovenwoningen. Hier kijken we eerst naar de staat van de <a href="/bedrading-vervangen-rotterdam/">bedrading</a> en of er een <a href="/aardlekschakelaar-rotterdam/">aardlekschakelaar</a> in de kast zit, voordat we iets bijplaatsen.</span></li>
-  <li>{check}<span><strong>Wijken uit de groeijaren.</strong> Rond het centrum staan veel eengezinswoningen en flats uit de periode van snelle groei na 1960. Bij een nieuwe keuken of verbouwing is <a href="/groepenkast-vervangen-rotterdam/">uitbreiden of vervangen van de groepenkast</a> vaak de eerste stap, zeker als er nog draaizekeringen in zitten.</span></li>
+  <li>{check}<span><strong>Wijken uit de groeijaren.</strong> Rond het centrum staan veel eengezinswoningen en flats uit de periode van snelle groei na 1960. Bij een nieuwe keuken of verbouwing is <a href="/groep-bijplaatsen-rotterdam/">uitbreiden</a> of <a href="/groepenkast-vervangen-rotterdam/">vervangen van de groepenkast</a> vaak de eerste stap, zeker als er nog draaizekeringen in zitten.</span></li>
   <li>{check}<span><strong>Carnisselande.</strong> De Vinex-wijk tussen het oude Barendrecht en Smitshoek, gebouwd vanaf 1997, met ongeveer 7.500 woningen en ruim 14.000 inwoners. Meerwede is het deel van Barendrecht met de meeste inwoners. De installatie is hier meestal in orde, maar heeft vaak weinig vrije plekken. Voor <a href="/inductiekookplaat-aansluiten-rotterdam/">inductie</a>, een droger of een warmtepomp is dan een <a href="/groep-bijplaatsen-rotterdam/">extra groep</a> nodig.</span></li>
   <li>{check}<span><strong>Smitshoek, Riederhoek en Vrijheidsakker.</strong> De 'Dorpse Driehoek' van Carnisselande, met het oude lint van Smitshoek aan de dijk. Hier gaat het vaak om een laadpaal op eigen terrein, <a href="/buitenverlichting-tuinstopcontact-rotterdam/">buitenverlichting en een tuinstopcontact</a>, of een <a href="/vrije-groep-stekkerbatterij-rotterdam/">vrije groep voor een stekkerbatterij</a>.</span></li>
   <li>{check}<span><strong>Bedrijventerreinen.</strong> Voor bedrijfsruimtes en winkels verhelpen we storingen, plaatsen we verlichting en leggen we extra groepen aan.</span></li>
@@ -1982,7 +2009,7 @@ INFO_PAGES = [
   <li>{check}<span><strong>Losse groepen voor zware apparaten.</strong> Draaien wasmachine, droger en vaatwasser tegelijk, dan raakt één groep snel overbelast. <a href="/groep-bijplaatsen-rotterdam/">Een groep bijplaatsen</a> lost dat op.</span></li>
   <li>{check}<span><strong>Slim laden.</strong> Met een <a href="/laadpaal-installeren-rotterdam/">laadpaal</a> die op zonnestroom kan laden, gaat de auto vooral overdag aan de lader. Loadbalancing voorkomt dat de hoofdzekering eruit slaat.</span></li>
   <li>{check}<span><strong>Een vrije groep voor een stekkerbatterij.</strong> Op een groep met andere apparaten mag een stekkerbatterij volgens de NVWA maximaal 800 watt ontladen. Op een <a href="/vrije-groep-stekkerbatterij-rotterdam/">eigen, vrije groep</a> is het veiliger, omdat de bedrading dan niet ook andere apparaten hoeft te dragen.</span></li>
-  <li>{check}<span><strong>Ruimte in de groepenkast.</strong> Zit de kast vol, of is hij verouderd, dan is <a href="/groepenkast-vervangen-rotterdam/">uitbreiden of vervangen</a> de eerste stap. Komen er ook een warmtepomp en een laadpaal, dan rekenen we uit of <a href="/meterkast-verzwaren-rotterdam/">verzwaren naar 3-fase</a> nodig is.</span></li>
+  <li>{check}<span><strong>Ruimte in de groepenkast.</strong> Zit de kast vol, of is hij verouderd, dan is <a href="/groep-bijplaatsen-rotterdam/">uitbreiden</a> of <a href="/groepenkast-vervangen-rotterdam/">vervangen</a> de eerste stap. Komen er ook een warmtepomp en een laadpaal, dan rekenen we uit of <a href="/meterkast-verzwaren-rotterdam/">verzwaren naar 3-fase</a> nodig is.</span></li>
 </ul>
 
 <div class="note-box"><p><strong>Bronnen:</strong> Vereniging Eigen Huis, <a href="https://www.eigenhuis.nl/kennisbank/wanneer-moet-een-elektrisch-apparaat-op-een-aparte-groep-worden-aangesloten-1746" target="_blank" rel="noopener noreferrer">wanneer moet een apparaat op een aparte groep</a>; Zonneplan, <a href="https://www.zonneplan.nl/thuisbatterij/thuisbatterij-met-stekker/wet-en-regelgeving" target="_blank" rel="noopener noreferrer">wet- en regelgeving thuisbatterij met stekker</a> (NVWA-grens van 800 watt).</p></div>
@@ -2099,7 +2126,7 @@ _zuid = _city("elektricien-rotterdam-zuid", "Rotterdam-Zuid", "schildje", "“Zu
   <li>{check}<span><strong>Tarwewijk, Bloemhof en de andere wijken bij de Maas.</strong> De Tarwewijk is tussen 1900 en 1930 gebouwd voor havenarbeiders, met vooral portiekwoningen en kleine eengezinswoningen. Bloemhof is begin jaren twintig gebouwd. Hier komen we nog groepenkasten met draaizekeringen tegen, weinig groepen, geen <a href="/aardlekschakelaar-rotterdam/">aardlekschakelaar</a> en soms ruimtes zonder randaarde. Voordat we iets bijplaatsen, kijken we eerst naar de <a href="/bedrading-vervangen-rotterdam/">bedrading</a>.</span></li>
   <li>{check}<span><strong>Vreewijk.</strong> Het tuindorp waar in 1919 de eerste woningen werden opgeleverd. Vreewijk is een beschermd stadsgezicht met bijna 300 monumenten. We werken hier extra netjes en overleggen vooraf hoe nieuwe leidingen lopen.</span></li>
   <li>{check}<span><strong>Zuidwijk en Pendrecht.</strong> Gebouwd in de jaren vijftig. In Pendrecht waren de woningen bewust klein, gemiddeld niet groter dan 53 vierkante meter. De meterkast is in deze flats vaak krap. Voor een <a href="/inductiekookplaat-aansluiten-rotterdam/">inductiekookplaat</a>, droger of vaatwasser is vaak een <a href="/groep-bijplaatsen-rotterdam/">extra groep</a> nodig.</span></li>
-  <li>{check}<span><strong>Lombardijen en Groot-IJsselmonde.</strong> Lombardijen is begin jaren zestig gebouwd, met rijtjeswoningen en flats. Bij een nieuwe keuken of verbouwing is <a href="/groepenkast-vervangen-rotterdam/">uitbreiden of vervangen van de groepenkast</a> hier vaak de eerste stap.</span></li>
+  <li>{check}<span><strong>Lombardijen en Groot-IJsselmonde.</strong> Lombardijen is begin jaren zestig gebouwd, met rijtjeswoningen en flats. Bij een nieuwe keuken of verbouwing is <a href="/groep-bijplaatsen-rotterdam/">uitbreiden</a> of <a href="/groepenkast-vervangen-rotterdam/">vervangen van de groepenkast</a> hier vaak de eerste stap.</span></li>
   <li>{check}<span><strong>Kop van Zuid, Katendrecht en De Veranda.</strong> De Kop van Zuid is vanaf 1994 gebouwd op oude haventerreinen. In deze appartementen is de installatie modern; vragen gaan vaker over <a href="/lampen-ophangen-rotterdam/">verlichting</a>, <a href="/stopcontact-plaatsen-rotterdam/">extra stopcontacten</a> of laden in de parkeergarage van de VvE.</span></li>
 </ul>
 <div class="note-box"><p><strong>Bronnen:</strong> Wikipedia over <a href="https://nl.wikipedia.org/wiki/Rotterdam-Zuid" target="_blank" rel="noopener noreferrer">Rotterdam-Zuid</a>, de <a href="https://nl.wikipedia.org/wiki/Tarwewijk" target="_blank" rel="noopener noreferrer">Tarwewijk</a>, <a href="https://nl.wikipedia.org/wiki/Bloemhof_(Rotterdam)" target="_blank" rel="noopener noreferrer">Bloemhof</a>, <a href="https://nl.wikipedia.org/wiki/Vreewijk_(Rotterdam)" target="_blank" rel="noopener noreferrer">Vreewijk</a>, <a href="https://nl.wikipedia.org/wiki/Zuidwijk_(Rotterdam)" target="_blank" rel="noopener noreferrer">Zuidwijk</a>, <a href="https://nl.wikipedia.org/wiki/Pendrecht" target="_blank" rel="noopener noreferrer">Pendrecht</a>, <a href="https://nl.wikipedia.org/wiki/Lombardijen" target="_blank" rel="noopener noreferrer">Lombardijen</a> en de <a href="https://nl.wikipedia.org/wiki/Kop_van_Zuid" target="_blank" rel="noopener noreferrer">Kop van Zuid</a>.</p></div>
@@ -2144,7 +2171,7 @@ _pa = _city("elektricien-prins-alexander", "Prins Alexander", "kastje", "“Ommo
 <h2>Elektra per wijk <em>in Prins Alexander.</em></h2>
 <p>Prins Alexander telt bijna 100.000 inwoners. De wijken zijn na elkaar gebouwd, van begin jaren zestig tot na 2000.</p>
 <ul class="checks">
-  <li>{check}<span><strong>Het Lage Land, Prinsenland en 's-Gravenland.</strong> De bouw van Het Lage Land begon in november 1961; kort daarna volgde Prinsenland, waarvan een deel pas in de jaren negentig werd gebouwd. In de oudere woningen is <a href="/groepenkast-vervangen-rotterdam/">uitbreiden of vervangen van de groepenkast</a> bij een nieuwe keuken vaak de eerste stap.</span></li>
+  <li>{check}<span><strong>Het Lage Land, Prinsenland en 's-Gravenland.</strong> De bouw van Het Lage Land begon in november 1961; kort daarna volgde Prinsenland, waarvan een deel pas in de jaren negentig werd gebouwd. In de oudere woningen is <a href="/groep-bijplaatsen-rotterdam/">uitbreiden</a> of <a href="/groepenkast-vervangen-rotterdam/">vervangen van de groepenkast</a> bij een nieuwe keuken vaak de eerste stap.</span></li>
   <li>{check}<span><strong>Ommoord.</strong> Vanaf 1965 gebouwd, met hoogbouw en laagbouw. In woningen van voor 1975 zit vaak geen <a href="/aardlekschakelaar-rotterdam/">aardlekschakelaar</a>, tenzij de kast later is vernieuwd. Voor een <a href="/inductiekookplaat-aansluiten-rotterdam/">inductiekookplaat</a> of droger is vaak een <a href="/groep-bijplaatsen-rotterdam/">extra groep</a> nodig.</span></li>
   <li>{check}<span><strong>Zevenkamp.</strong> In maart 1979 ging de eerste paal de grond in voor een woonwijk van 220 hectare. Hier gaat het vaak om een groepenkast die vol zit, extra stopcontacten of <a href="/buitenverlichting-tuinstopcontact-rotterdam/">buitenverlichting en een tuinstopcontact</a> bij een eengezinswoning.</span></li>
   <li>{check}<span><strong>Nesselande.</strong> Een Vinex-wijk waarvan de bouw in 2000 begon, met ruim 4.700 woningen. De installatie is hier nieuwer; vragen gaan vaker over een <a href="/laadpaal-installeren-rotterdam/">laadpaal</a> op eigen terrein, verlichting of een <a href="/vrije-groep-stekkerbatterij-rotterdam/">vrije groep voor een stekkerbatterij</a>.</span></li>
@@ -2190,7 +2217,7 @@ _alb = _city("elektricien-albrandswaard", "Albrandswaard", "lampje", "“Rhoon, 
 <h2>Elektra per kern <em>in Albrandswaard.</em></h2>
 <p>De gemeente Albrandswaard ontstond in 1985 uit Rhoon en Poortugaal. Sinds 2000 is Portland de derde kern, als deel van de Vinex-locatie Midden-IJsselmonde, samen met Carnisselande in Barendrecht.</p>
 <ul class="checks">
-  <li>{check}<span><strong>Rhoon.</strong> Tot halverwege de twintigste eeuw een lang dijkdorp, daarna sterk uitgebreid: rond de L.G. Molenaarstraat in de jaren vijftig, Rhoon-Zuid in de jaren vijftig en zestig, 't Ghijseland in de jaren zeventig, de Huyters en Rhoon-Noord in de jaren tachtig, en Essendael aan het begin van deze eeuw. Hoe ouder de wijk, hoe vaker <a href="/groepenkast-vervangen-rotterdam/">uitbreiden of vervangen van de groepenkast</a> nodig is voor inductie of een droger.</span></li>
+  <li>{check}<span><strong>Rhoon.</strong> Tot halverwege de twintigste eeuw een lang dijkdorp, daarna sterk uitgebreid: rond de L.G. Molenaarstraat in de jaren vijftig, Rhoon-Zuid in de jaren vijftig en zestig, 't Ghijseland in de jaren zeventig, de Huyters en Rhoon-Noord in de jaren tachtig, en Essendael aan het begin van deze eeuw. Hoe ouder de wijk, hoe vaker <a href="/groep-bijplaatsen-rotterdam/">uitbreiden</a> of <a href="/groepenkast-vervangen-rotterdam/">vervangen van de groepenkast</a> nodig is voor inductie of een droger.</span></li>
   <li>{check}<span><strong>Poortugaal.</strong> Een oud dorp tussen de Rotterdamse havens en de Oude Maas, met wijken als Poortugaal-dorp, Valckestijn en Kasteeltuin. In oudere woningen kijken we eerst naar de <a href="/bedrading-vervangen-rotterdam/">bedrading</a> en of er een <a href="/aardlekschakelaar-rotterdam/">aardlekschakelaar</a> in de kast zit.</span></li>
   <li>{check}<span><strong>Portland.</strong> De jongste kern, gebouwd vanaf 2000. Hier gaat het vaak om een <a href="/laadpaal-installeren-rotterdam/">laadpaal</a> op eigen terrein, <a href="/buitenverlichting-tuinstopcontact-rotterdam/">buitenverlichting en een tuinstopcontact</a> of een <a href="/vrije-groep-stekkerbatterij-rotterdam/">vrije groep voor een stekkerbatterij</a>.</span></li>
 </ul>
@@ -2236,7 +2263,7 @@ _hv = _city("elektricien-hoogvliet", "Hoogvliet", "vonk", "“Hoogvliet? Via de 
 <h2>Elektra per wijk <em>in Hoogvliet.</em></h2>
 <p>Hoogvliet hoort sinds 1934 bij Rotterdam en telt ruim 36.000 inwoners. Van het oude dorp is na de groei in de jaren vijftig en zestig weinig over; alleen rond de Dorpskerk staan nog enkele oorspronkelijke gebouwen.</p>
 <ul class="checks">
-  <li>{check}<span><strong>Middengebied en Oudeland.</strong> Rond winkelcentrum de Binnenban, metrostation Hoogvliet en de Wilhelm Tellplaats staan veel woningen uit de groeijaren. Bij een nieuwe keuken of verbouwing is <a href="/groepenkast-vervangen-rotterdam/">uitbreiden of vervangen van de groepenkast</a> vaak de eerste stap.</span></li>
+  <li>{check}<span><strong>Middengebied en Oudeland.</strong> Rond winkelcentrum de Binnenban, metrostation Hoogvliet en de Wilhelm Tellplaats staan veel woningen uit de groeijaren. Bij een nieuwe keuken of verbouwing is <a href="/groep-bijplaatsen-rotterdam/">uitbreiden</a> of <a href="/groepenkast-vervangen-rotterdam/">vervangen van de groepenkast</a> vaak de eerste stap.</span></li>
   <li>{check}<span><strong>Zalmplaat en Meeuwenplaat.</strong> Wijken met hoog- en laagbouw; Meeuwenplaat is grootschalig gemoderniseerd. In flats is de meterkast vaak klein. Voor een <a href="/inductiekookplaat-aansluiten-rotterdam/">inductiekookplaat</a>, droger of vaatwasser is dan een <a href="/groep-bijplaatsen-rotterdam/">extra groep</a> nodig.</span></li>
   <li>{check}<span><strong>Nieuw Engeland.</strong> De eerste nieuwbouwwijk, uit de jaren dertig en kort na 1945, eind jaren tachtig grotendeels vervangen door nieuwe woningen. Vragen gaan hier vaker over extra stopcontacten, verlichting of een groep voor de droger.</span></li>
   <li>{check}<span><strong>Boomgaardshoek.</strong> Een typische jaren-80-wijk met woonerven en veel groen. Hier gaat het vaak om <a href="/buitenverlichting-tuinstopcontact-rotterdam/">buitenverlichting en een tuinstopcontact</a>, een laadpaal op eigen terrein of een <a href="/vrije-groep-stekkerbatterij-rotterdam/">vrije groep voor een stekkerbatterij</a>.</span></li>
