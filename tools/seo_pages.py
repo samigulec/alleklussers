@@ -29,7 +29,7 @@ PHONE_DISPLAY = "+31 6 8548 4000"
 PHONE_TEL = "+31685484000"
 WA = "https://wa.me/31685484000"
 EMAIL = "alleklussers@gmail.com"
-ASSET_V = "20261108d"
+ASSET_V = "20261128"
 
 ICONS = ["i-wa", "i-arrow", "i-check", "i-tag", "i-chat", "i-shield", "i-clock", "i-pin", "i-mail", "i-phone"]
 
@@ -242,7 +242,7 @@ def page(p, sprite_svg):
 <header class="header" id="header">
   <div class="wrap">
     <a class="brand" href="/" aria-label="AlleKlussers — Home">
-      <img src="/img/logo-dark.png" alt="AlleKlussers" width="600" height="150" />
+      <img src="/img/logo-dark.png" alt="AlleKlussers" width="360" height="90" />
     </a>
     <nav class="nav" aria-label="Hoofdmenu">
       <a class="nav__link" href="/">Home</a>
@@ -310,7 +310,7 @@ def page(p, sprite_svg):
 <footer class="footer">
   <div class="wrap footer__grid">
     <div class="footer__brand">
-      <img src="/img/logo-light.png" alt="AlleKlussers" width="600" height="150" loading="lazy" />
+      <img src="/img/logo-light.png" alt="AlleKlussers" width="360" height="90" loading="lazy" />
       <p>Storingen, groepenkasten, verlichting, bedrading en veilige installaties — snel, veilig en netjes afgewerkt.</p>
     </div>
     <nav aria-labelledby="f-svc">
