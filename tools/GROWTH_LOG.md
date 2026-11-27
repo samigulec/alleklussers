@@ -8,6 +8,7 @@ Public repo: no prices, margins or internal business details here.
 The owner works with two AI assistants in parallel. To avoid merge conflicts each one keeps to its own files:
 - Claude (daily run): landing-page content in tools/seo_content.py, the generator, generated pages, sitemap.xml, llms.txt, Search Console analysis, the daily report and Google profile post. Claude does not work on Gemini's lane below.
 - Gemini: homepage translations in assets/i18n.js (en, tr, ar, pl, de), accessibility and speed fixes in assets/site.css / assets/seo.css and img/, plus off-site work (Google profile texts, review requests, partner texts, directory listings).
+- Both, since vercel.json (2026-11-28) caches /assets/* for a year as immutable: every change to a file in assets/ MUST come with a new ?v= in the same PR (index.html for the homepage, ASSET_V in tools/seo_pages.py for landing pages, then regenerate). Without it visitors keep the old file.
 - Both: start from the latest claude/vigilant-cori-LrLuS, work on an own branch, merge via a PR, add one line to the Log below (tag "(Gemini)" for Gemini's runs), never hand-edit generated pages, never touch the contact-form logic in assets/site.js, the Google verification file, analytics tags or the canonical setup.
 
 ## Log
