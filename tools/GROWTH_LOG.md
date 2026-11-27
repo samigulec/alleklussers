@@ -3,6 +3,13 @@
 Running log of the daily website/SEO improvements. One line per run, newest at the bottom.
 Public repo: no prices, margins or internal business details here.
 
+## Werkverdeling (Claude + Gemini, from 2026-11-27)
+
+The owner works with two AI assistants in parallel. To avoid merge conflicts each one keeps to its own files:
+- Claude (daily run): landing-page content in tools/seo_content.py, the generator, generated pages, sitemap.xml, llms.txt, Search Console analysis, the daily report and Google profile post. Claude does not work on Gemini's lane below.
+- Gemini: homepage translations in assets/i18n.js (en, tr, ar, pl, de), accessibility and speed fixes in assets/site.css / assets/seo.css and img/, plus off-site work (Google profile texts, review requests, partner texts, directory listings).
+- Both: start from the latest claude/vigilant-cori-LrLuS, work on an own branch, merge via a PR, add one line to the Log below (tag "(Gemini)" for Gemini's runs), never hand-edit generated pages, never touch the contact-form logic in assets/site.js, the Google verification file, analytics tags or the canonical setup.
+
 ## Log
 
 - 2026-11-08: New service page /aardlekschakelaar-rotterdam/ (aardlek slaat door: aardlek vs groep, stappenplan, oorzaken, testknop, aardlekautomaat, FAQ). Linked from /storing-elektra-rotterdam/; added to hub tiles, footer and sitemap. Added `.steps-list` style to assets/seo.css and bumped ASSET_V. Started this log.
