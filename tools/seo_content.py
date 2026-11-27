@@ -39,6 +39,7 @@ WA_TEXT = {
     "elektra-keuring-rotterdam": "Hallo AlleKlussers, ik wil mijn elektrische installatie laten keuren. Het is voor (aankoop, verkoop, verhuur of eigen woning): ",
     "laadpaal-installeren-rotterdam": "Hallo AlleKlussers, ik wil graag een laadpaal laten installeren." + FOTO,
     "meterkast-verzwaren-rotterdam": "Hallo AlleKlussers, ik wil weten of ik mijn aansluiting moet laten verzwaren. Ik wil gaan gebruiken: ",
+    "warmtepomp-aansluiten-rotterdam": "Hallo AlleKlussers, er komt een warmtepomp en ik zoek een elektricien voor de meterkast." + FOTO + " Het gaat om (hybride of all-electric, merk en type): ",
     "infraroodpanelen-aansluiten-rotterdam": "Hallo AlleKlussers, ik wil graag een infraroodpaneel laten ophangen en aansluiten." + FOTO + " Het paneel is (watt) en komt in: ",
     "krachtstroom-aansluiten-rotterdam": "Hallo AlleKlussers, ik wil graag krachtstroom laten aanleggen. Het is voor dit apparaat en deze plek: ",
     "elektricien-verhuurders-vve-rotterdam": "Hallo AlleKlussers, ik ben verhuurder of beheerder en zoek een vaste elektricien. Het gaat om: ",
@@ -70,7 +71,7 @@ PAGES = [
 <ul class="checks">
   <li>{check}<span><strong>Stroom uitgevallen of er slaat iets door.</strong> Begin bij <a href="/storing-elektra-rotterdam/">storing en stroomuitval</a>. Gaat steeds de schakelaar met de testknop omlaag, kijk dan bij <a href="/aardlekschakelaar-rotterdam/">aardlekschakelaar slaat door</a>.</span></li>
   <li>{check}<span><strong>Oude meterkast of te weinig groepen.</strong> Lees over <a href="/groepenkast-vervangen-rotterdam/">groepenkast vervangen</a> en <a href="/groep-bijplaatsen-rotterdam/">groepenkast uitbreiden of een groep bijplaatsen</a>.</span></li>
-  <li>{check}<span><strong>Nieuwe keuken of van het gas af.</strong> Zie <a href="/inductiekookplaat-aansluiten-rotterdam/">inductiekookplaat aansluiten</a>, <a href="/perilex-aansluiten-rotterdam/">perilex aansluiten of verplaatsen</a> en <a href="/meterkast-verzwaren-rotterdam/">meterkast verzwaren</a>.</span></li>
+  <li>{check}<span><strong>Nieuwe keuken of van het gas af.</strong> Zie <a href="/inductiekookplaat-aansluiten-rotterdam/">inductiekookplaat aansluiten</a>, <a href="/perilex-aansluiten-rotterdam/">perilex aansluiten of verplaatsen</a>, <a href="/warmtepomp-aansluiten-rotterdam/">warmtepomp aansluiten op de meterkast</a> en <a href="/meterkast-verzwaren-rotterdam/">meterkast verzwaren</a>.</span></li>
   <li>{check}<span><strong>Verbouwing van badkamer of zolder.</strong> Zie <a href="/elektra-badkamer-rotterdam/">elektra in de badkamer</a>, <a href="/infraroodpanelen-aansluiten-rotterdam/">infraroodpanelen</a> en <a href="/bedrading-vervangen-rotterdam/">bedrading vervangen</a>.</span></li>
   <li>{check}<span><strong>Lampen, stopcontacten en buiten.</strong> Zie <a href="/lampen-ophangen-rotterdam/">lampen ophangen</a>, <a href="/stopcontact-plaatsen-rotterdam/">stopcontact plaatsen of verplaatsen</a> en <a href="/buitenverlichting-tuinstopcontact-rotterdam/">buitenverlichting en tuinstopcontact</a>.</span></li>
   <li>{check}<span><strong>Elektrische auto of zonnepanelen.</strong> Zie <a href="/laadpaal-installeren-rotterdam/">laadpaal installeren</a>, <a href="/vrije-groep-stekkerbatterij-rotterdam/">vrije groep voor een stekkerbatterij</a> en onze uitleg over <a href="/salderen-stopt-2027/">het einde van salderen in 2027</a>.</span></li>
@@ -428,7 +429,7 @@ PAGES = [
   <li>{check}<span><strong>Wasmachine, droger en vaatwasser:</strong> elk op een eigen groep, zodat u ze tegelijk kunt gebruiken.</span></li>
   <li>{check}<span><strong>Oven of combimagnetron</strong> die ingebouwd is: een eigen groep, los van de kookplaat.</span></li>
   <li>{check}<span><strong>Inductiekookplaat:</strong> meestal een kookgroep met perilex-aansluiting op twee fasen. Zie <a href="/inductiekookplaat-aansluiten-rotterdam/">inductiekookplaat aansluiten</a>.</span></li>
-  <li>{check}<span><strong>Airco of warmtepomp:</strong> een eigen groep, zodat de rest van het huis niet uitvalt als het apparaat opstart.</span></li>
+  <li>{check}<span><strong>Airco of warmtepomp:</strong> een eigen groep, zodat de rest van het huis niet uitvalt als het apparaat opstart. Zie <a href="/warmtepomp-aansluiten-rotterdam/">warmtepomp aansluiten op de meterkast</a>.</span></li>
   <li>{check}<span><strong>Infraroodpanelen:</strong> verwarming die urenlang aanstaat. Eén klein paneel past vaak op een bestaande groep, meerdere panelen krijgen liever een eigen groep. Zie <a href="/infraroodpanelen-aansluiten-rotterdam/">infraroodpanelen aansluiten</a>.</span></li>
   <li>{check}<span><strong><a href="/laadpaal-installeren-rotterdam/">Laadpaal</a>:</strong> altijd een eigen groep met de juiste aardlekbeveiliging.</span></li>
   <li>{check}<span><strong>Stekkerbatterij:</strong> een vrije groep waar alleen de batterij op zit. Zie <a href="/vrije-groep-stekkerbatterij-rotterdam/">vrije groep voor stekkerbatterij</a>.</span></li>
@@ -697,7 +698,7 @@ PAGES = [
 <p>Vaak niet. Volgens een overzicht van RVO voor het ministerie van Economische Zaken en Klimaat (september 2026) is 1x35A voor veel huishoudens genoeg om vergaand elektrisch te gaan, zonder direct over te stappen op 3-fase. Wat telt is niet wat u in huis heeft, maar wat er <strong>tegelijk</strong> aanstaat:</p>
 <ul class="checks">
   <li>{check}<span><strong><a href="/inductiekookplaat-aansluiten-rotterdam/">Inductiekookplaat</a>:</strong> meestal 2 tot 4 kW in gebruik. De kookplaat verdeelt het vermogen zelf over de zones.</span></li>
-  <li>{check}<span><strong>Hybride warmtepomp:</strong> rond 1,5 kW, op een eigen groep.</span></li>
+  <li>{check}<span><strong>Hybride warmtepomp:</strong> rond 1,5 kW, op een eigen groep. Wat er in de meterkast moet gebeuren, leest u bij <a href="/warmtepomp-aansluiten-rotterdam/">warmtepomp aansluiten</a>.</span></li>
   <li>{check}<span><strong>Volledig elektrische warmtepomp:</strong> rond 3 kW, bij strenge kou 2 tot 4 kW. Een eventueel elektrisch bijverwarmingselement vraagt flink meer en zit vaak op een eigen groep.</span></li>
   <li>{check}<span><strong><a href="/laadpaal-installeren-rotterdam/">Laadpaal</a> op 1-fase:</strong> maximaal 3,7 kW. In tien uur laadt u zo hooguit 37 kWh, genoeg voor de meeste dagelijkse ritten.</span></li>
 </ul>
@@ -748,6 +749,91 @@ PAGES = [
              "Overleg eerst met uw verhuurder. De aansluiting en de groepenkast horen bij de woning, dus voor een verzwaring of nieuwe kast heeft u in de regel toestemming nodig."),
             ("Wat kost het om de meterkast klaar te maken?",
              "Dat hangt af van wat er nu zit. Stuur ons foto's van uw meterkast, dan krijgt u vooraf een duidelijke prijs voor ons deel van het werk."),
+        ],
+    },
+    # ------------------------------------------------------- WARMTEPOMP
+    {
+        "slug": "warmtepomp-aansluiten-rotterdam",
+        "short": "Warmtepomp aansluiten",
+        "sub": "Eigen groep, kabel en werkschakelaar voor uw warmtepomp.",
+        "title": "Warmtepomp aansluiten op de meterkast Rotterdam | AlleKlussers",
+        "desc": "Warmtepomp op komst? Wij maken in Rotterdam uw meterkast klaar: eigen groep, aardlekbeveiliging, kabel naar de buitenunit en een werkschakelaar. Prijs vooraf.",
+        "service": "Elektrische aansluiting van een warmtepomp: eigen groep en bekabeling",
+        "char": "kastje",
+        "say": "“Een warmtepomp draait uren. Dan wil ik een eigen groep.”",
+        "eyebrow": "Elektra voor de warmtepomp",
+        "h1": "Warmtepomp aansluiten op <em>de meterkast.</em>",
+        "lede": "Komt er een hybride of volledig elektrische warmtepomp? De warmtepompinstallateur plaatst het toestel; voor de meterkast heeft u vaak een elektricien nodig. Wij leggen de eigen groep, de kabel en de werkschakelaar aan, en kijken eerst of uw aansluiting het aankan.",
+        "body": """
+<h2>Wie doet <em>wat?</em></h2>
+<p>Bij een warmtepomp werken meestal twee vakmensen samen. Het is handig om vooraf te weten wie waarvoor zorgt, zodat er op de dag zelf niets blijft liggen.</p>
+<ul class="checks">
+  <li>{check}<span><strong>De warmtepompinstallateur</strong> adviseert over het type, plaatst de binnen- en buitenunit, legt de leidingen aan, koppelt het toestel aan de cv of het afgiftesysteem en stelt de warmtepomp in bedrijf.</span></li>
+  <li>{check}<span><strong>Wij, de elektricien,</strong> zorgen voor de elektra: we controleren de meterkast en de aansluiting, leggen een eigen groep aan, trekken de voedingskabel naar de warmtepomp en plaatsen een werkschakelaar bij de buitenunit. Altijd volgens het aansluitschema van de fabrikant.</span></li>
+</ul>
+<p>Vraag uw warmtepompinstallateur daarom om de installatiehandleiding of het aansluitschema. Daarin staat welke groep (bijvoorbeeld 16 of 20 ampère), welke beveiliging en welke kabeldikte de fabrikant voorschrijft. Wij werken die gegevens uit voor uw meterkast.</p>
+
+<h2>Hybride of all-electric: <em>wat vraagt het van uw meterkast?</em></h2>
+<p>Een warmtepomp vraagt minder stroom dan veel mensen denken, maar hij draait wel uren achter elkaar. Volgens een overzicht van RVO (oktober 2026):</p>
+<ul class="checks">
+  <li>{check}<span><strong>Hybride warmtepomp:</strong> neemt in normaal bedrijf ongeveer 0,8 kW op, bij kou ongeveer 1,3 tot 2 kW. De cv-ketel springt bij voor warm water en de koudste dagen. Een eigen groep van 16 ampère (ongeveer 3,7 kW) is meestal genoeg.</span></li>
+  <li>{check}<span><strong>Volledig elektrische (all-electric) warmtepomp:</strong> kleinere modellen zijn er in een 1-fase uitvoering, op een eigen groep van 16 of 20 ampère, afhankelijk van het type. Met buitenlucht als bron vraagt zo'n warmtepomp bij kou ongeveer 2 tot 4 kW.</span></li>
+  <li>{check}<span><strong>Elektrisch bijverwarmingselement:</strong> veel all-electric warmtepompen hebben een element dat bijspringt bij strenge kou of voor warm tapwater. Dat zet stroom één op één om in warmte en vraagt dus flink meer vermogen. Zo'n element zit vaak op een eigen groep.</span></li>
+</ul>
+<p>Volgens Techniek Nederland kan in veel woningen een hybride warmtepomp zonder zwaardere aansluiting. Komen er ook inductie en een laadpaal bij, dan telt wat er tegelijk aanstaat. Lees daarvoor <a href="/meterkast-verzwaren-rotterdam/">meterkast verzwaren: is het nodig?</a> Wij rekenen het vooraf met u uit voordat u iets bij de netbeheerder aanvraagt.</p>
+
+<h2>Wat wij <em>aanleggen.</em></h2>
+<ul class="checks">
+  <li>{check}<span><strong>Een eigen groep in de groepenkast,</strong> met de waarde die de fabrikant voorschrijft. Bij een 3-fase warmtepomp wordt dat een 3-polige automaat met nul. Zit de kast vol, dan <a href="/groep-bijplaatsen-rotterdam/">breiden we hem uit</a>; is hij verouderd, dan is <a href="/groepenkast-vervangen-rotterdam/">vervangen</a> verstandiger.</span></li>
+  <li>{check}<span><strong>De juiste aardlekbeveiliging.</strong> Fabrikanten vragen vaak dat de warmtepomp een aardlekbeveiliging niet deelt met andere groepen. Wij lossen dat op met een aardlekautomaat of een eigen aardlekschakelaar, zodat een storing elders de warmtepomp niet uitschakelt en andersom.</span></li>
+  <li>{check}<span><strong>Een voedingskabel naar de buitenunit,</strong> geschikt voor buiten, goed bevestigd en met een afgedichte muurdoorvoer. Staat de buitenunit verderop in de tuin, dan gaat de kabel in een beschermbuis onder de grond, net als bij een <a href="/buitenverlichting-tuinstopcontact-rotterdam/">tuinstopcontact</a>.</span></li>
+  <li>{check}<span><strong>Een werkschakelaar bij de buitenunit.</strong> Daarmee kan een monteur de warmtepomp ter plekke spanningsloos maken voor onderhoud. Fabrikanten zoals NIBE schrijven zo'n werkschakelaar of een CEE-stekkerverbinding in de voeding voor.</span></li>
+  <li>{check}<span><strong>Een groep voor het bijverwarmingselement</strong> als de fabrikant die voorschrijft, soms met een relais in de groepenkast.</span></li>
+  <li>{check}<span><strong>Een netwerkkabel naar de binnenunit</strong> als u de warmtepomp via internet of een energiesysteem wilt aansturen. Die trekken we desgewenst meteen mee.</span></li>
+</ul>
+<p>Na afloop zetten we op de groepenkast welke groep voor de warmtepomp is. De stuur- en sensorkabels tussen binnen- en buitenunit en de instellingen van het toestel horen bij de warmtepompinstallateur.</p>
+
+<div class="note-box"><p><strong>Niet zomaar "een groep erbij".</strong> In juli 2026 meldden experts bij RTL Nieuws en de NOS dat warmtepompen en laadpalen steeds vaker verkeerd op de meterkast worden aangesloten. Een warmtepomp vraagt urenlang stroom, waardoor een oude of overvolle kast warm wordt; met losse of te dunne bedrading neemt de kans op brand toe. Daarom kijken wij eerst naar de hele kast, niet alleen naar één lege plek. En: gebruik de meterkast niet als opbergkast.</p></div>
+
+<h2>Slim aansturen <em>en de ISDE-subsidie.</em></h2>
+<p>Voor een warmtepomp in een koopwoning kunt u ISDE-subsidie aanvragen bij RVO. Volgens RVO wijzigt de ISDE op 1 januari 2027 (voorgenomen wijzigingen, kijk voor de actuele stand altijd op rvo.nl):</p>
+<ul class="checks">
+  <li>{check}<span><strong>Minder subsidie voor lucht-waterwarmtepompen.</strong> Het bedrag per kW gaat flink omlaag. Koopt u de warmtepomp vóór of op 31 december 2026 en laat u hem in 2027 installeren, dan geldt een overgangsregeling met het bedrag van 2026. U heeft dan bewijs nodig, zoals een getekende offerte of opdrachtbevestiging uit 2026.</span></li>
+  <li>{check}<span><strong>Bonus voor een slimme warmtepomp.</strong> Vanaf 2027 komt er een eenmalige bonus voor warmtepompen die met andere apparaten kunnen communiceren, zoals uw slimme meter of zonnepanelen, via EEBus, S2 of Matter. Dat geldt niet voor warmtepompen die in 2026 zijn gekocht.</span></li>
+</ul>
+<p>De subsidie vraagt u zelf aan; die loopt niet via ons. Wel helpt het als de meterkast op tijd klaar is, zodat de warmtepompinstallateur niet hoeft te wachten. Gaat u na 2027 meer stroom zelf gebruiken, lees dan ook <a href="/salderen-stopt-2027/">wat het einde van salderen betekent</a>.</p>
+
+<h2>Warmtepomp in een flat, <em>huurhuis of VvE.</em></h2>
+<p>In Rotterdam wonen veel mensen in een appartement of portiekwoning. De buitenunit komt dan vaak op het balkon, het dak of tegen de gevel, en de meterkast zit soms ver weg in de hal. Dan bepaalt de kabelroute het werk: door een plafond, langs een kozijn of via een leidinggoot. Voor de gevel, het dak en andere gemeenschappelijke delen heeft u meestal toestemming van de VvE nodig, en in een huurwoning altijd van de verhuurder. Regel dat eerst; wij stemmen het werk daarna graag af met de VvE of de beheerder. Zie ook <a href="/elektricien-verhuurders-vve-rotterdam/">elektricien voor verhuurders en VvE's</a>.</p>
+
+<h2>Zo <em>pakken we het aan.</em></h2>
+<ol class="steps-list">
+  <li><strong>Stuur via WhatsApp</strong> foto's van uw open meterkast, het type warmtepomp (of de offerte) en de plek waar de buitenunit komt.</li>
+  <li><strong>Wij beoordelen</strong> of er ruimte in de groepenkast is, of uw aansluiting genoeg capaciteit heeft en welke kabelroute nodig is. U krijgt een duidelijke prijs vooraf voor ons deel van het werk.</li>
+  <li><strong>Wij stemmen af met de warmtepompinstallateur</strong> over de groep, de beveiliging en de planning, zodat de elektra klaar is als het toestel er komt.</li>
+  <li><strong>Wij leggen de groep, de kabel en de werkschakelaar aan,</strong> testen de groep en de aardlekbeveiliging en zetten de groep op de kast.</li>
+</ol>
+<p>Alles volgens NEN 1010, door verzekerde vakmensen.</p>
+
+<div class="note-box"><p><strong>Bronnen:</strong> RVO, <a href="https://www.rvo.nl/sites/default/files/2026-10/Wat-kan-wel-met-een-1-fase-stroomaansluiting.pdf" target="_blank" rel="noopener noreferrer">Wat kan er wél met een 1-fase stroomaansluiting</a> (oktober 2026); RVO, <a href="https://www.rvo.nl/subsidies-financiering/isde/isde-wat-wijzigt-er-2027" target="_blank" rel="noopener noreferrer">ISDE: wat wijzigt er vanaf 2027?</a>; Solar Magazine over Techniek Nederland, <a href="https://solarmagazine.nl/nieuws-zonne-energie/i43653/hybride-warmtepomp-vaak-mogelijk-zonder-zwaardere-stroomaansluiting" target="_blank" rel="noopener noreferrer">hybride warmtepomp vaak mogelijk zonder zwaardere stroomaansluiting</a> (mei 2026); NOS, <a href="https://nos.nl/artikel/2624596-steeds-vaker-brand-in-meterkast-door-verkeerd-aansluiten-van-warmtepomp-en-laadpaal" target="_blank" rel="noopener noreferrer">steeds vaker brand in meterkast door verkeerd aansluiten van warmtepomp en laadpaal</a> (juli 2026); NIBE, <a href="https://www.nibe.eu/download/18.143da023196a65e6d0fda/1746693878984/Aandachtspunten-luchtwater-warmtepompenV25.pdf" target="_blank" rel="noopener noreferrer">aandachtspunten lucht-waterwarmtepompen</a>.</p></div>
+""",
+        "faq": [
+            ("Heeft een warmtepomp een eigen groep nodig?",
+             "Ja. Een warmtepomp draait vaak uren achter elkaar en hoort op een eigen groep, met de waarde die de fabrikant voorschrijft, meestal 16 of 20 ampère. Zo valt de rest van het huis niet uit als de warmtepomp veel vraagt, en andersom."),
+            ("Kan een warmtepomp op een 1-fase aansluiting?",
+             "Vaak wel. Een hybride warmtepomp vraagt volgens RVO bij kou ongeveer 1,3 tot 2 kW, een kleinere all-electric warmtepomp ongeveer 2 tot 4 kW. Komen er ook inductie en een laadpaal bij, dan rekenen we eerst uit of slim terugregelen genoeg is of dat verzwaren nodig is."),
+            ("Sluiten jullie de warmtepomp zelf ook aan?",
+             "Wij doen de elektra: de groep in de meterkast, de voedingskabel en de werkschakelaar bij de buitenunit, volgens het aansluitschema van de fabrikant. De warmtepompinstallateur plaatst het toestel, legt de leidingen aan en stelt de warmtepomp in bedrijf."),
+            ("Wat is een werkschakelaar en waarom is die nodig?",
+             "Een werkschakelaar is een schakelaar in de voeding bij de buitenunit. Daarmee kan een monteur de warmtepomp ter plekke spanningsloos maken voor onderhoud of een reparatie, zonder naar de meterkast te lopen. Veel fabrikanten schrijven hem voor."),
+            ("Mag de warmtepomp op dezelfde aardlekschakelaar als andere groepen?",
+             "Liever niet, en veel fabrikanten vragen het ook niet te doen. Wij geven de warmtepomp een aardlekautomaat of een eigen aardlekschakelaar. Dan schakelt een storing in bijvoorbeeld de wasmachine niet ook uw verwarming uit."),
+            ("Moet mijn groepenkast vervangen worden voor een warmtepomp?",
+             "Niet altijd. Is er een plek vrij en is de kast in goede staat, dan is een extra groep genoeg. Is de kast oud, vol of al warm, dan adviseren we uitbreiden of vervangen. Dat hoort u vooraf van ons, met een prijs."),
+            ("Wat verandert er in 2027 aan de subsidie voor een warmtepomp?",
+             "Volgens de voorgenomen wijzigingen van RVO gaat de ISDE voor lucht-waterwarmtepompen per kW flink omlaag, en komt er een bonus voor slimme warmtepompen. Wie vóór of op 31 december 2026 koopt en in 2027 laat installeren, valt onder een overgangsregeling. Kijk voor de actuele regels op rvo.nl."),
+            ("Wat kost de elektrische aansluiting van een warmtepomp?",
+             "Dat hangt af van de ruimte in uw groepenkast, de afstand naar de buitenunit en wat de fabrikant voorschrijft. Stuur foto's van de meterkast en het type warmtepomp via WhatsApp, dan krijgt u vooraf een duidelijke prijs."),
         ],
     },
     # ------------------------------------------------------- INFRAROOD
@@ -866,7 +952,7 @@ PAGES = [
 <ul class="checks">
   <li>{check}<span><strong>Inductiekookplaat:</strong> die sluiten we in een woning normaal aan op een kookgroep met perilex, op één of twee fasen. Krachtstroom is daar meestal niet voor nodig. Zie <a href="/inductiekookplaat-aansluiten-rotterdam/">inductiekookplaat aansluiten</a>.</span></li>
   <li>{check}<span><strong>Laadpaal:</strong> laden over drie fasen gaat sneller, tot 11 kW, maar daarvoor komt er een eigen 3-fase groep voor de laadpaal, geen krachtstroomstopcontact. Zie <a href="/laadpaal-installeren-rotterdam/">laadpaal installeren</a>.</span></li>
-  <li>{check}<span><strong>Warmtepomp:</strong> dat is vooral een vraag of uw aansluiting genoeg capaciteit heeft. Lees daarvoor <a href="/meterkast-verzwaren-rotterdam/">meterkast verzwaren</a>.</span></li>
+  <li>{check}<span><strong>Warmtepomp:</strong> die krijgt een eigen groep, vaak gewoon op 230 volt; zie <a href="/warmtepomp-aansluiten-rotterdam/">warmtepomp aansluiten</a>. Of uw aansluiting genoeg capaciteit heeft, leest u bij <a href="/meterkast-verzwaren-rotterdam/">meterkast verzwaren</a>.</span></li>
 </ul>
 <p>Krachtstroom is wel nodig voor apparaten die zelf 400 volt vragen. Op het typeplaatje of in de handleiding staat dan bijvoorbeeld 400 V of 3N~. Voorbeelden:</p>
 <ul class="checks">
