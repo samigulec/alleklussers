@@ -79,6 +79,14 @@ def strip_tags(s):
     return re.sub(r"<[^>]+>", "", s)
 
 
+MAPS_URL = "https://maps.google.com/?cid=4191167344034971887"
+SAME_AS = [
+    MAPS_URL,
+    "https://www.facebook.com/alleklussers",
+    "https://nl.nextdoor.com/page/alleklussers-rotterdam-zh/",
+]
+
+
 def jsonld(p):
     url = f"{BASE}/{p['slug']}/"
     business = {
@@ -93,6 +101,15 @@ def jsonld(p):
         "address": {"@type": "PostalAddress", "streetAddress": "Walravenstraat 17", "postalCode": "3074 NL",
                     "addressLocality": "Rotterdam", "addressRegion": "Zuid-Holland", "addressCountry": "NL"},
         "areaServed": [{"@type": "City", "name": n} for n in ["Rotterdam"] + AREAS_REGION],
+        # Same profiles as the homepage JSON-LD; hours match the Google Business Profile (open 24 hours, 7 days).
+        "hasMap": MAPS_URL,
+        "sameAs": SAME_AS,
+        "openingHoursSpecification": [{
+            "@type": "OpeningHoursSpecification",
+            "dayOfWeek": ["Monday", "Tuesday", "Wednesday", "Thursday", "Friday", "Saturday", "Sunday"],
+            "opens": "00:00",
+            "closes": "23:59",
+        }],
     }
     graph = []
     if p.get("plain"):
@@ -207,6 +224,7 @@ def page(p, sprite_svg):
   <meta property="og:title" content="{title}" />
   <meta property="og:description" content="{desc}" />
   <meta property="og:image" content="{BASE}/img/hero.jpg" />
+  <meta property="og:image:alt" content="Elektricien van AlleKlussers aan het werk" />
   <meta name="twitter:card" content="summary_large_image" />
   <meta name="theme-color" content="#0c0c0d" />
   <script type="application/ld+json">
