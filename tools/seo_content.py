@@ -1453,14 +1453,14 @@ PAGES = [
         "slug": "bedrading-vervangen-rotterdam",
         "short": "Bedrading en aansluitingen",
         "sub": "Oude bedrading vervangen, aansluitingen voor de keuken.",
-        "title": "Bedrading vervangen Rotterdam | Aansluitingen | AlleKlussers",
-        "desc": "Oude bedrading vervangen in Rotterdam? Signalen, alles of een deel vervangen, nieuwe draden door bestaande buizen en aansluitingen voor de keuken. Prijs vooraf.",
+        "title": "Bedrading vervangen Rotterdam, ook bedrijfspand | AlleKlussers",
+        "desc": "Oude bedrading vervangen in Rotterdam, in huis of in uw bedrijfspand: signalen, alles of een deel vervangen, punten uit een keuringsrapport herstellen. Prijs vooraf.",
         "service": "Bedrading vervangen en aansluitingen maken",
         "char": "stekkie",
         "say": "“Oude draden? Ik maak het weer veilig.”",
         "eyebrow": "Bedrading en aansluitingen",
         "h1": "Bedrading vervangen in <em>Rotterdam.</em>",
-        "lede": "Nieuwe leidingen en aansluitingen voor keuken, wasmachine en apparatuur, en vervanging van verouderde bedrading.",
+        "lede": "Nieuwe leidingen en aansluitingen voor keuken, wasmachine en apparatuur, en vervanging van verouderde bedrading. In woningen en in kleinere bedrijfspanden zoals een winkel, kantoor of werkplaats.",
         "body": """
 <h2>Tekenen van <em>oude bedrading.</em></h2>
 <p>In veel Rotterdamse woningen zit nog bedrading van tientallen jaren oud. Let op deze signalen:</p>
@@ -1485,6 +1485,24 @@ PAGES = [
 <h2>Nieuwe keuken <em>of nieuwe apparaten?</em></h2>
 <p>Gaat u een keuken plaatsen of verbouwen? Dan leggen we de aansluitingen aan voor oven, kookplaat, vaatwasser, koelkast en afzuigkap, ieder op de juiste groep. Een <a href="/inductiekookplaat-aansluiten-rotterdam/">inductiekookplaat</a>, droger, warmtepomp of <a href="/laadpaal-installeren-rotterdam/">laadpaal</a> vraagt om een eigen groep; oude bedrading is daar niet op gemaakt. Zie ook <a href="/groep-bijplaatsen-rotterdam/">een groep bijplaatsen</a>.</p>
 
+<h2>Bedrading vernieuwen <em>in een bedrijfspand.</em></h2>
+<p>Ook in kleinere bedrijfspanden vernieuwen we bedrading: een winkel, kantoor, praktijkruimte of werkplaats. De aanleiding is vaak een van deze:</p>
+<ul class="checks">
+  <li>{check}<span><strong>Punten uit een keuringsrapport.</strong> Na een NEN 3140-inspectie of een SCIOS Scope 8- of Scope 10-inspectie krijgt u een lijst met gebreken. Die herstellen we, volgens NEN 1010, zodat u ze bij een herkeuring kunt laten afvinken.</span></li>
+  <li>{check}<span><strong>Een nieuwe huurder of een ander gebruik.</strong> Een winkel wordt een praktijk, een kantoor krijgt een pantry: dan passen de groepen en de stopcontacten vaak niet meer bij het gebruik.</span></li>
+  <li>{check}<span><strong>Meer apparatuur dan de installatie aankan:</strong> koeling, een kassa en server, of machines in de werkplaats. Zware machines die 400 volt vragen, krijgen <a href="/krachtstroom-aansluiten-rotterdam/">krachtstroom</a>.</span></li>
+  <li>{check}<span><strong>Oude bedrading</strong> met dezelfde signalen als in een woning: verkleurde stopcontacten, groepen die doorslaan, geen randaarde.</span></li>
+</ul>
+<p>Wat de regels zeggen: als werkgever moet u zorgen voor een veilige werkplek. Het Arbobesluit (artikel 3.4) vraagt dat elektrische installaties veilig blijven en voldoende regelmatig worden geïnspecteerd; in de praktijk gebeurt dat volgens NEN 3140. Een Scope 8-keuring staat niet in de wet, maar verzekeraars vragen er steeds vaker om bij een brandverzekering. Ontbreekt een keuringsrapport, dan kan de verzekeraar een uitkering beperken of weigeren. Meestal geldt een herkeurtermijn van vier jaar (<a href="https://www.dezaak.nl/blog-content/elektrische-installatie-laten-keuren-verplicht-dit-moet-je-als/" target="_blank" rel="noopener noreferrer">De Zaak</a>).</p>
+<p>De keuring zelf laat u doen door een inspectiebedrijf; die doen wij niet. Wij doen het werk ervoor en erna: de bedrading vernieuwen, groepen beter verdelen en de punten uit het rapport herstellen.</p>
+<ul class="checks">
+  <li>{check}<span><strong>Rekening houden met uw zaak.</strong> We spreken vooraf af wanneer de stroom per groep uit kan, zodat uw bedrijf er zo min mogelijk last van heeft.</span></li>
+  <li>{check}<span><strong>Kabels netjes weggewerkt,</strong> bijvoorbeeld in buizen boven een systeemplafond of in een kabelgoot langs de wand.</span></li>
+  <li>{check}<span><strong>Kassa, koeling en server op een eigen groep,</strong> zodat één apparaat dat doorslaat niet de hele zaak stillegt.</span></li>
+  <li>{check}<span><strong>Een bijgewerkt overzicht van de groepen,</strong> zodat u en de inspecteur zien wat waar op zit.</span></li>
+</ul>
+<p>Huurt u de bedrijfsruimte? Kijk dan in uw huurcontract wie verantwoordelijk is voor de elektrische installatie. Wij kunnen het werk met de eigenaar afstemmen.</p>
+
 <h2>Huur, koop <em>of verkoop?</em></h2>
 <p>Huurt u, dan is de vaste elektrische installatie van de verhuurder. Meld oude of onveilige bedrading bij uw verhuurder of woningcorporatie. Koopt u een ouder huis, dan geeft een <a href="/elektra-keuring-rotterdam/">elektra keuring</a> vooraf inzicht in de staat van de bedrading. Verhuurders en VvE's kunnen ons ook rechtstreeks inschakelen; zie onze <a href="/elektricien-verhuurders-vve-rotterdam/">pagina voor verhuurders</a>.</p>
 """,
@@ -1499,6 +1517,10 @@ PAGES = [
              "Het omhulsel kan na veel jaren broos worden, waardoor draden bloot kunnen komen te liggen. Laat het controleren, zeker als er ook verkleurde stopcontacten zijn of groepen vaak doorslaan."),
             ("Ik huur mijn woning. Wie betaalt nieuwe bedrading?",
              "De vaste elektrische installatie is van de verhuurder. Meld het bij uw verhuurder of woningcorporatie. Werk dat u zelf heeft laten aanbrengen, onderhoudt u zelf."),
+            ("Vernieuwen jullie ook de bedrading in een bedrijfspand?",
+             "Ja, in kleinere bedrijfspanden zoals een winkel, kantoor, praktijk of werkplaats. We stemmen vooraf af wanneer de stroom per groep uit kan, zodat uw zaak er zo min mogelijk last van heeft. Stuur ons foto's van de groepenkast en, als u dat heeft, het keuringsrapport."),
+            ("Is een keuring van de elektrische installatie in een bedrijfspand verplicht?",
+             "Als werkgever moet u volgens het Arbobesluit zorgen dat de installatie veilig blijft en regelmatig wordt geïnspecteerd, in de praktijk volgens NEN 3140. Verzekeraars vragen daarnaast vaak een Scope 8-rapport. De keuring zelf doet een inspectiebedrijf; wij herstellen de punten uit het rapport."),
             ("Kunnen jullie de elektra voor mijn nieuwe keuken aanleggen?",
              "Ja. Stuur ons de keukentekening, dan zorgen we dat alle apparaten de juiste aansluiting en groep krijgen."),
         ],
