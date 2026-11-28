@@ -303,7 +303,7 @@ PAGES = [
 <p>Is de kast verouderd of vol, dan bespreken we eerlijk of <a href="/groep-bijplaatsen-rotterdam/">uitbreiden</a> of <a href="/groepenkast-vervangen-rotterdam/">vervangen</a> verstandiger is. Wilt u weten hoe uw hele installatie ervoor staat, kijk dan bij <a href="/elektra-keuring-rotterdam/">keuring van de installatie</a>. Alles volgens NEN 1010, door verzekerde vakmensen.</p>
 
 <h2>Zo <em>werkt het.</em></h2>
-<p>Stuur ons via WhatsApp een foto van uw meterkast en vertel wanneer de aardlek doorslaat: altijd, bij regen, 's nachts of bij één bepaald apparaat. Dat helpt ons de oorzaak sneller te vinden. U krijgt binnen 24 uur reactie met een duidelijke prijs vooraf, en bij een storing zijn we 24/7 bereikbaar.</p>
+<p>Stuur ons via WhatsApp een foto van uw meterkast en vertel wanneer de aardlek doorslaat: altijd, bij regen, 's nachts of bij één bepaald apparaat. Dat helpt ons de oorzaak sneller te vinden. U krijgt binnen 24 uur reactie en altijd een duidelijke prijs vooraf, en bij een storing zijn we 24/7 bereikbaar.</p>
 """,
         "faq": [
             ("Wat is het verschil tussen een aardlekschakelaar en een groepsschakelaar?",
@@ -432,6 +432,7 @@ PAGES = [
   <li>{check}<span><strong>Airco of warmtepomp:</strong> een eigen groep, zodat de rest van het huis niet uitvalt als het apparaat opstart. Zie <a href="/warmtepomp-aansluiten-rotterdam/">warmtepomp aansluiten op de meterkast</a>.</span></li>
   <li>{check}<span><strong>Infraroodpanelen:</strong> verwarming die urenlang aanstaat. Eén klein paneel past vaak op een bestaande groep, meerdere panelen krijgen liever een eigen groep. Zie <a href="/infraroodpanelen-aansluiten-rotterdam/">infraroodpanelen aansluiten</a>.</span></li>
   <li>{check}<span><strong><a href="/laadpaal-installeren-rotterdam/">Laadpaal</a>:</strong> altijd een eigen groep met de juiste aardlekbeveiliging.</span></li>
+  <li>{check}<span><strong>Omvormer van zonnepanelen of een batterij:</strong> sinds 2017 altijd een eigen groep. Nu het salderen op 1 januari 2027 stopt, gaan er overdag vaak meer apparaten tegelijk aan; lees wat <a href="/salderen-stopt-2027/">het einde van salderen</a> betekent voor uw groepenkast.</span></li>
   <li>{check}<span><strong>Stekkerbatterij:</strong> een vrije groep waar alleen de batterij op zit. Zie <a href="/vrije-groep-stekkerbatterij-rotterdam/">vrije groep voor stekkerbatterij</a>.</span></li>
   <li>{check}<span><strong>Nieuwe ruimte:</strong> een aanbouw, zolderkamer of tuinhuis krijgt eigen groepen, en niet ‘nog een stopcontact erbij’ op een groep die al vol zit.</span></li>
 </ul>
@@ -704,6 +705,8 @@ PAGES = [
 </ul>
 <p>Op 1x35A passen deze apparaten samen vaak, als de laadpaal en eventueel de warmtepomp terugschakelen wanneer het huis veel stroom vraagt. Op 1x25A is dat bij inductie, een warmtepomp én een elektrische auto meestal alleen haalbaar met zo'n slimme begrenzing.</p>
 
+<div class="note-box"><p><strong>Zonnepanelen en 2027.</strong> Wilt u na het einde van het salderen op 1 januari 2027 meer zonnestroom zelf gebruiken, met een laadpaal, warmtepomp of batterij? Dan is slim verdelen over de dag, bijvoorbeeld laden als de zon schijnt, vaak een alternatief voor verzwaren. Lees wat <a href="/salderen-stopt-2027/">het einde van salderen</a> betekent voor uw meterkast.</p></div>
+
 <h2>Wanneer 3-fase <em>wel verstandig is.</em></h2>
 <ul class="checks">
   <li>{check}<span><strong>U wilt snel laden met 11 kW.</strong> Dat kan alleen op drie fasen.</span></li>
@@ -934,7 +937,7 @@ PAGES = [
         "slug": "krachtstroom-aansluiten-rotterdam",
         "short": "Krachtstroom aansluiten",
         "sub": "400V-groep en krachtstroomstopcontact voor garage, werkplaats of sauna.",
-        "title": "Krachtstroom aansluiten Rotterdam | 400V-groep | AlleKlussers",
+        "title": "Krachtstroom aanleggen of aansluiten Rotterdam | AlleKlussers",
         "desc": "Krachtstroom aansluiten in Rotterdam: een 400V-groep en krachtstroomstopcontact voor garage, werkplaats of sauna. Eerst kijken of het nodig is, prijs vooraf.",
         "service": "Krachtstroom aanleggen: krachtgroep en krachtstroomstopcontact",
         "char": "vonk",
@@ -1084,6 +1087,7 @@ PAGES = [
 <h2>Waarom een <em>vrije groep?</em></h2>
 <p>Een stekkerbatterij laadt op en levert stroom terug via een gewoon stopcontact. Zit dat stopcontact op een groep met andere apparaten, zoals de wasmachine of de oven, dan kan de bedrading van die groep meer stroom te verwerken krijgen dan waarvoor hij is beveiligd. De batterij levert namelijk stroom op de groep zelf, en die stroom ziet de zekering in de meterkast niet.</p>
 <p>Daarom wordt een vrije groep, waar alleen de batterij op zit, sterk aangeraden. Sommige fabrikanten vragen er ook om.</p>
+<p>Veel mensen kopen een stekkerbatterij omdat het salderen op 1 januari 2027 stopt: zonnestroom die u zelf opslaat en 's avonds gebruikt, wordt dan meer waard. Lees wat <a href="/salderen-stopt-2027/">het einde van salderen</a> nog meer betekent voor uw meterkast.</p>
 
 <h2>Wat wij <em>doen.</em></h2>
 <ul class="checks">
@@ -1096,7 +1100,7 @@ PAGES = [
 <div class="note-box"><p><strong>Groepenkast vol?</strong> Dan breiden we hem uit of adviseren we een nieuwe. Lees meer over <a href="/groepenkast-vervangen-rotterdam/">groepenkast vervangen</a>. Overweegt u een grotere, vaste batterij? Kijk dan bij <a href="/thuisbatterij-aansluiten-rotterdam/">thuisbatterij aansluiten</a>.</p></div>
 
 <h2>Zo <em>werkt het.</em></h2>
-<p>Stuur ons via WhatsApp een foto van uw meterkast en vertel waar de batterij komt te staan. U krijgt binnen 24 uur een vaste prijs. Meestal is het werk binnen een dagdeel klaar.</p>
+<p>Stuur ons via WhatsApp een foto van uw meterkast en vertel waar de batterij komt te staan. U krijgt binnen 24 uur reactie en een duidelijke prijs vooraf. Meestal is het werk binnen een dagdeel klaar.</p>
 """,
         "faq": [
             ("Is een vrije groep verplicht voor een stekkerbatterij?",
@@ -1161,7 +1165,7 @@ PAGES = [
 <div class="note-box"><p><strong>Bron:</strong> GAMMA klusadvies over <a href="https://www.gamma.nl/klusadvies/a/elektra-badkamer-aansluiten" target="_blank" rel="noopener noreferrer">elektra in de badkamer</a>.</p></div>
 
 <h2>Zo <em>werkt het.</em></h2>
-<p>Stuur ons een berichtje met het aantal lampen en, als dat kan, een foto van de plek en de lamp. U krijgt binnen 24 uur een prijs. Onze elektricien neemt het kleine materiaal mee, zoals schroeven, pluggen en lasklemmen, hangt alles op en test of het werkt.</p>
+<p>Stuur ons een berichtje met het aantal lampen en, als dat kan, een foto van de plek en de lamp. U krijgt binnen 24 uur reactie en een duidelijke prijs vooraf. Onze elektricien neemt het kleine materiaal mee, zoals schroeven, pluggen en lasklemmen, hangt alles op en test of het werkt.</p>
 """,
         "faq": [
             ("Kunnen jullie ook zware lampen of kroonluchters ophangen?",
@@ -1714,7 +1718,7 @@ PAGES = [
         "slug": "elektricien-verhuurders-vve-rotterdam",
         "short": "Voor verhuurders en VvE's",
         "sub": "Eén aanspreekpunt voor storingen, mutaties en onderhoud.",
-        "title": "Elektricien voor verhuurders en VvE's in Rotterdam | AlleKlussers",
+        "title": "Elektricien voor verhuurders en VvE Rotterdam | AlleKlussers",
         "desc": "Verhuurder, beheerder of VvE in Rotterdam? AlleKlussers regelt storingen bij huurders, controle bij mutatie, groepenkasten en verlichting. 24/7 bereikbaar.",
         "service": "Elektricien voor verhuurders, beheerders en VvE's",
         "char": "stekkie",
@@ -1795,7 +1799,7 @@ def _city(slug, name, char, say, wijken_oud, wijken_nieuw, local, faq_extra,
         "lede": f"Vanuit Rotterdam-Zuid zijn we snel in {name}. Voor storingen, groepenkasten, verlichting en alles wat met elektra te maken heeft.",
         "body": f"""
 <h2>Elektra in {name}, <em>snel geregeld.</em></h2>
-<p>AlleKlussers is een elektrotechnisch bedrijf uit Rotterdam-Zuid. {name} ligt vlakbij, dus we zijn er snel. U krijgt binnen 24 uur reactie met een duidelijke prijs vooraf, en bij storingen zijn we 24/7 bereikbaar.</p>
+<p>AlleKlussers is een elektrotechnisch bedrijf uit Rotterdam-Zuid. {name} ligt vlakbij, dus we zijn er snel. U krijgt binnen 24 uur reactie en altijd een duidelijke prijs vooraf, en bij storingen zijn we 24/7 bereikbaar.</p>
 <p>{local}</p>
 <p>{mix}</p>
 {extra}
@@ -1813,7 +1817,7 @@ def _city(slug, name, char, say, wijken_oud, wijken_nieuw, local, faq_extra,
 </ul>
 
 <h2>Zo <em>werkt het.</em></h2>
-<p>Stuur een berichtje via WhatsApp met wat er moet gebeuren, eventueel met een foto. U krijgt binnen 24 uur een prijs. We plannen een moment dat u uitkomt, voeren het werk uit en lopen alles samen met u na.</p>
+<p>Stuur een berichtje via WhatsApp met wat er moet gebeuren, eventueel met een foto. U krijgt binnen 24 uur reactie en een duidelijke prijs vooraf. We plannen een moment dat u uitkomt, voeren het werk uit en lopen alles samen met u na.</p>
 """,
         "faq": [
             (f"Komen jullie ook in {name}?",
