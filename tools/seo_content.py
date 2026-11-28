@@ -1505,7 +1505,7 @@ PAGES = [
         "short": "Elektra keuring",
         "sub": "Controle bij aankoop, verhuur of na een verbouwing.",
         "title": "Keuring elektrische installatie Rotterdam | AlleKlussers",
-        "desc": "Keuring van de elektrische installatie in uw woning in Rotterdam: bij aankoop, verkoop, verhuur of na een verbouwing. Wij meten na en geven helder advies.",
+        "desc": "Keuring van de elektrische installatie in Rotterdam: bij aankoop, verkoop, verhuur, na een verbouwing of met zonnepanelen. Wij meten na en geven helder advies.",
         "service": "Keuring van elektrische installaties",
         "char": "schildje",
         "say": "“Veilig of niet? Ik zoek het uit.”",
@@ -1521,6 +1521,7 @@ PAGES = [
   <li>{check}<span><strong>Na een verbouwing,</strong> of als een vorige eigenaar of een klusser zelf aan de elektra heeft gewerkt.</span></li>
   <li>{check}<span><strong>Voordat u zwaardere apparaten neemt,</strong> zoals een inductiekookplaat, warmtepomp of laadpaal. Dan weten we of de groepenkast en de aansluiting dat aankunnen.</span></li>
   <li>{check}<span><strong>In een ouder huis,</strong> of als groepen of de aardlekschakelaar vaak doorslaan.</span></li>
+  <li>{check}<span><strong>Als u zonnepanelen heeft,</strong> zeker als ze een paar jaar oud zijn of als u na het einde van het salderen meer zonnestroom zelf wilt gaan gebruiken. Lees hieronder <a href="#zonnepanelen-controleren">wat we bij zonnepanelen bekijken</a>.</span></li>
 </ul>
 
 <h2>Is een keuring <em>verplicht?</em></h2>
@@ -1566,6 +1567,20 @@ PAGES = [
   <li>{check}<span><strong>Sporen van klussen:</strong> aanpassingen die niet volgens NEN 1010 zijn gedaan, zoals draden zonder kroonsteen of las, of een verkeerde draaddikte.</span></li>
 </ul>
 
+<h2 id="zonnepanelen-controleren">Zonnepanelen laten <em>controleren.</em></h2>
+<p>Heeft u zonnepanelen, dan horen de omvormer, de kabel naar de meterkast en de groep waarop hij is aangesloten bij uw elektrische installatie. Zonnepanelen moeten worden aangesloten volgens de veiligheidseisen van NEN 1010; dat volgt uit het Besluit bouwwerken leefomgeving, schreef de minister van Volkshuisvesting in 2025 aan de Tweede Kamer.</p>
+<p>Brand door zonnepanelen is zeldzaam. Volgens onderzoek van TNO, het NIPV en NEN waren tussen 2022 en 2023 ongeveer 0,005 procent van alle zonnestroominstallaties in Nederland betrokken bij een gebouwbrand, en lag de oorzaak even vaak wel als niet in de installatie zelf (<a href="https://solarmagazine.nl/nieuws-zonne-energie/i40819/minister-keijzer-zonnepanelen-vormen-nauwelijks-veiligheidsrisico" target="_blank" rel="noopener noreferrer">Solar Magazine</a>). Gaat het mis, dan zit het vaak in de aansluitingen: een eerder TNO-onderzoek uit 2019 wees slecht aangesloten connectoren, de stekkers tussen de kabels van de panelen, aan als veelvoorkomende oorzaak (<a href="https://solarmagazine.nl/nieuws-zonne-energie/i18082/onderzoeksrapport-tno-slecht-aangesloten-connectoren-veelal-oorzaak-van-brand-bij-zonnepanelen" target="_blank" rel="noopener noreferrer">Solar Magazine</a>).</p>
+<p>Bij een keuring met zonnepanelen bekijken we:</p>
+<ul class="checks">
+  <li>{check}<span><strong>Een eigen groep voor de omvormer.</strong> Sinds 1 januari 2017 hoort de omvormer altijd op een aparte groep. Bij oudere installaties zit hij soms nog op een groep met andere apparaten. Meer daarover in onze uitleg over <a href="/salderen-stopt-2027/">het einde van salderen</a>.</span></li>
+  <li>{check}<span><strong>De beveiliging en de kabel:</strong> of de automaat en de kabeldikte passen bij het vermogen van de omvormer, en of de kabel goed is weggewerkt en vastgezet.</span></li>
+  <li>{check}<span><strong>De plek van de omvormer.</strong> Univé adviseert een brandveilige ondergrond, zoals steen of gips, en ruimte rondom zodat de omvormer zijn warmte kwijt kan. Een omvormer op een houten zolderwand tussen dozen is dus een aandachtspunt.</span></li>
+  <li>{check}<span><strong>Zichtbare kabels en connectoren</strong> bij de omvormer en op zolder: loshangende of beschadigde kabels, en connectoren van verschillende merken die op elkaar zijn gestoken. Volgens Univé kan juist dat laatste een onveilige situatie geven.</span></li>
+  <li>{check}<span><strong>Meldingen en opbrengst.</strong> Geeft de omvormer een foutmelding, of ziet u in de app een afwijkende opbrengst, dan nemen we dat mee in de controle.</span></li>
+</ul>
+<p>Wat we niet doen: het dak op. De panelen zelf, de bevestiging en de kabels en connectoren op het dak horen bij de installateur van uw zonnepanelen. Zien we vanaf binnen of vanaf de grond iets dat niet klopt, dan zeggen we dat en kunt u uw installateur inschakelen. Voor zonnestroominstallaties op bedrijfsdaken bestaat een aparte SCIOS-inspectie, Scope 12 (<a href="https://www.rvo.nl/onderwerpen/zonne-energie/veiligheid-en-verzekering" target="_blank" rel="noopener noreferrer">RVO</a>); die doen wij niet.</p>
+<div class="note-box"><p><strong>Hoe vaak?</strong> Voor zonnepanelen op een woning is er geen wettelijke keuringsplicht. Brandweer Nederland adviseert in zijn onderhoudswijzer: bij panelen van 1 tot 3 jaar zelf af en toe kijken (vanaf de grond, niet zelf het dak op), na 3 tot 5 jaar een onderhoudscheck door een installateur, en bij 10 jaar of ouder laten nakijken of de omvormer aan vervanging toe is (<a href="https://solarmagazine.nl/nieuws-zonne-energie/i34395/brandweer-geeft-consumenten-tips-voor-brandveilige-zonnepanelen" target="_blank" rel="noopener noreferrer">Solar Magazine</a>; <a href="https://www.unive.nl/inspiratie-en-voordeel/blog/zonnepanelen-voorkom-onveilige-situaties-met-onze-tips" target="_blank" rel="noopener noreferrer">Univé</a>).</p></div>
+
 <h2>Oudere woningen <em>in Rotterdam.</em></h2>
 <p>In Rotterdam staan veel vooroorlogse woningen, zoals in Noord, Kralingen, Delfshaven en delen van Zuid, en veel portiekflats uit de jaren vijftig en zestig. Daar komen we vaak dezelfde dingen tegen: een groepenkast met maar één aardlekschakelaar of zelfs geen, stopcontacten zonder randaarde in slaapkamers en gangen, en een installatie die in delen is uitgebreid. Dat hoeft niet meteen gevaarlijk te zijn, maar het is wel goed om te weten voordat u gaat verbouwen of verhuren.</p>
 
@@ -1600,6 +1615,10 @@ PAGES = [
              "NEN 1010 is de norm voor het aanleggen van elektrische installaties. NEN 8025, de 'Woning-APK', is een korte periodieke inspectie van gas, water en elektra in bestaande woningen. Die is niet verplicht, maar verhuurders gebruiken haar om hun zorgplicht aan te tonen."),
             ("Doen jullie ook een SCIOS Scope 8 of Scope 10 inspectie?",
              "Een SCIOS-inspectie voor een bedrijfspand moet worden gedaan door een bedrijf dat volgens de SCIOS-regels keurt. De keuring op deze pagina is bedoeld voor woningen en is geen SCIOS-inspectie. Punten uit een SCIOS-rapport kunnen we wel voor u herstellen."),
+            ("Kunnen jullie mijn zonnepanelen keuren?",
+             "We controleren het elektrische deel in huis: of de omvormer een eigen groep heeft, de beveiliging en de kabel, de plek van de omvormer en de zichtbare kabels en connectoren bij de omvormer en op zolder. Het dak gaan we niet op; de panelen, de bevestiging en de kabels op het dak horen bij de installateur van uw zonnepanelen."),
+            ("Hoe vaak moet ik mijn zonnepanelen laten controleren?",
+             "Voor woningen is er geen wettelijke plicht. Brandweer Nederland adviseert na 3 tot 5 jaar een onderhoudscheck door een installateur, en bij panelen van 10 jaar of ouder te laten nakijken of de omvormer aan vervanging toe is. Tussendoor kunt u zelf vanaf de grond kijken en de opbrengst in de app volgen."),
             ("Doen jullie ook keuringen voor verhuurders?",
              "Ja. We controleren huurwoningen, bijvoorbeeld bij een wisseling van huurder, en kunnen gevonden punten direct voor u oplossen."),
             ("Wat kost een elektra keuring?",
@@ -2091,7 +2110,7 @@ INFO_PAGES = [
 <h2>Wat een elektricien <em>in uw meterkast doet.</em></h2>
 <p>Meer zelf gebruiken betekent vaak dat er meer apparaten tegelijk overdag draaien. Daar moet de installatie op berekend zijn. Dit zijn de klussen die wij het vaakst tegenkomen:</p>
 <ul class="checks">
-  <li>{check}<span><strong>Een eigen groep voor de omvormer.</strong> Sinds 1 januari 2017 moet de omvormer van zonnepanelen of een thuisbatterij altijd op een aparte groep. Daarvoor gold dat pas vanaf 600 watt, dus bij oudere installaties zit de omvormer soms op een groep met andere apparaten.</span></li>
+  <li>{check}<span><strong>Een eigen groep voor de omvormer.</strong> Sinds 1 januari 2017 moet de omvormer van zonnepanelen of een thuisbatterij altijd op een aparte groep. Daarvoor gold dat pas vanaf 600 watt, dus bij oudere installaties zit de omvormer soms op een groep met andere apparaten. Twijfelt u, dan kijken we dat na bij een <a href="/elektra-keuring-rotterdam/#zonnepanelen-controleren">controle van uw zonnepanelen en meterkast</a>.</span></li>
   <li>{check}<span><strong>Losse groepen voor zware apparaten.</strong> Draaien wasmachine, droger en vaatwasser tegelijk, dan raakt één groep snel overbelast. <a href="/groep-bijplaatsen-rotterdam/">Een groep bijplaatsen</a> lost dat op.</span></li>
   <li>{check}<span><strong>Slim laden.</strong> Met een <a href="/laadpaal-installeren-rotterdam/">laadpaal</a> die op zonnestroom kan laden, gaat de auto vooral overdag aan de lader. Loadbalancing voorkomt dat de hoofdzekering eruit slaat.</span></li>
   <li>{check}<span><strong>Een vrije groep voor een stekkerbatterij.</strong> Op een groep met andere apparaten mag een stekkerbatterij volgens de NVWA maximaal 800 watt ontladen. Op een <a href="/vrije-groep-stekkerbatterij-rotterdam/">eigen, vrije groep</a> is het veiliger, omdat de bedrading dan niet ook andere apparaten hoeft te dragen.</span></li>
